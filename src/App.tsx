@@ -50,8 +50,8 @@ export function App() {
         selectedTags={state.weapon.tags}
         onTagClick={f.addWeaponTag}
         lang={lang}
-        getOverclockName={ocEditor.getName}
-        getOverclockEffect={ocEditor.getEffect}
+        getOverclockName={(id) => ocEditor.getName(id, lang)}
+        getOverclockEffect={(id) => ocEditor.getEffect(id, lang)}
       />
     ))
   } else if (state.activeModule === 'equipments') {
@@ -63,8 +63,8 @@ export function App() {
       <OverclockCard
           key={oc.id}
           oc={oc}
-          currentName={ocEditor.getName(oc.id)}
-          currentEffect={ocEditor.getEffect(oc.id)}
+          currentName={ocEditor.getName(oc.id, lang)}
+          currentEffect={ocEditor.getEffect(oc.id, lang)}
           onSave={ocEditor.saveEdit}
           lang={lang}
         />

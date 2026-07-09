@@ -90,8 +90,10 @@ export interface Overclock {
   chineseName: string
   /** 平衡型(黄) / 不稳定型(红) */
   type: 'balanced' | 'unstable'
-  /** 效果描述 */
+  /** 效果描述（中文） */
   effect: string
+  /** 效果描述（英文，原始 Wiki） */
+  enEffect?: string
 }
 
 export interface Weapon {

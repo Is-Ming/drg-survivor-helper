@@ -122,7 +122,7 @@ export function WeaponCard({
               return (
                 <Typography key={id} variant="body2" sx={{ mb: 0.3 }}>
                   <Box component="span" fontWeight={600} color="warning.main">{name}</Box>
-                  ：{eff}
+                  {lang === 'zh' ? '：' : ': '}{eff}
                 </Typography>
               )
             })}
@@ -146,7 +146,7 @@ export function WeaponCard({
               return (
                 <Typography key={id} variant="body2" sx={{ mb: 0.3 }}>
                   <Box component="span" fontWeight={600} color="error.main">{name}</Box>
-                  ：{eff}
+                  {lang === 'zh' ? '：' : ': '}{eff}
                 </Typography>
               )
             })}

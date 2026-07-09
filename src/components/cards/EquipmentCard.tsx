@@ -1,6 +1,21 @@
-// 装备卡片：类型/来源 chip + 关联成就（决策 6：装备仅中文展示）
+// 装备卡片：双语展示（中英文切换）
 import { Card, CardContent, Typography, Box, Chip } from '@mui/material'
 import type { Equipment, Lang } from '../../data/types'
+
+const TYPE_EN: Record<string, string> = {
+  '发育': 'Development',
+  '拾取': 'Pickup',
+  '生存': 'Survival',
+  '经验': 'Experience',
+  '武器': 'Weapon',
+  '直伤/混伤': 'Direct/Hybrid Dmg',
+  '战力': 'Combat Power',
+  '生存/升级': 'Survival/Level Up',
+  '直伤核心': 'Direct Dmg Core',
+  '闪避': 'Dodge',
+  '暴击': 'Critical',
+  '召唤': 'Summon',
+}
 
 export function EquipmentCard({
   equip,
@@ -12,17 +27,22 @@ export function EquipmentCard({
   lang: Lang
 }) {
   const isUnlock = equip.source === '成就解锁'
+  const displayName = lang === 'en' && equip.officialName ? equip.officialName : equip.name
+  const displayType = lang === 'en' ? (TYPE_EN[equip.type] ?? equip.type) : equip.type
+  const sourceLabel = isUnlock
+    ? (lang === 'zh' ? '成就解锁' : 'Unlock')
+    : (lang === 'zh' ? '局内附加' : 'In-run')
   return (
     <Card sx={{ height: '100%' }}>
       <CardContent>
         <Typography variant="subtitle1" fontWeight={700}>
-          {equip.name}
+          {displayName}
         </Typography>
 
         <Box mt={1} mb={1} display="flex" flexWrap="wrap" gap={0.5} alignItems="center">
           <Chip
             size="small"
-            label={equip.type}
+            label={displayType}
             color="primary"
             variant="outlined"
             clickable={!!onTypeClick}
@@ -30,7 +50,7 @@ export function EquipmentCard({
           />
           <Chip
             size="small"
-            label={isUnlock ? '成就解锁' : '局内附加'}
+            label={sourceLabel}
             color={isUnlock ? 'warning' : 'default'}
             variant="outlined"
           />

@@ -1,6 +1,7 @@
 // 超频中文名 + 效果编辑器：可编辑 + localStorage 持久化
 import { useState, useCallback } from 'react'
 import { overclockMap } from '../data/overclocks'
+import type { Lang } from '../data/types'
 
 const STORAGE_KEY = 'drg-overclock-edits'
 
@@ -34,11 +35,17 @@ export function useOverclockEditor() {
     [edits],
   )
 
-  /** 获取超频当前显示名称（优先用户自定义） */
-  const getName = useCallback((id: string): string => getEntry(id).chineseName, [getEntry])
+  /** 获取超频当前显示名称（lang-aware：en 时显示英文名） */
+  const getName = useCallback((id: string, lang?: Lang): string => {
+    if (lang === 'en') return getEntry(id).englishName
+    return getEntry(id).chineseName
+  }, [getEntry])
 
-  /** 获取超频当前显示效果（优先用户自定义） */
-  const getEffect = useCallback((id: string): string => getEntry(id).effect, [getEntry])
+  /** 获取超频当前显示效果（lang-aware：en 时显示英文效果） */
+  const getEffect = useCallback((id: string, lang?: Lang): string => {
+    if (lang === 'en') return overclockMap[id]?.enEffect ?? getEntry(id).effect
+    return getEntry(id).effect
+  }, [getEntry])
 
   /** 获取超频英文名 */
   const getEnglishName = useCallback((id: string): string => getEntry(id).englishName, [getEntry])
