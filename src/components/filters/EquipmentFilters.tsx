@@ -1,6 +1,6 @@
 // 装备筛选：类型 + 来源
 import { Box, FormControl, InputLabel, MenuItem, Select } from '@mui/material'
-import { EQUIPMENT_SOURCES } from '../../data/enums'
+import { EQUIPMENT_SOURCES, EQUIPMENT_SOURCE_LABEL, EQUIPMENT_TYPE_LABEL } from '../../data/enums'
 import { equipments } from '../../data/equipments'
 import type { EquipmentSource, Lang, SearchState } from '../../data/types'
 
@@ -30,7 +30,7 @@ export function EquipmentFilters({
           <MenuItem value="">{lang === 'zh' ? '全部' : 'All'}</MenuItem>
           {EQUIPMENT_TYPES.map((t) => (
             <MenuItem key={t} value={t}>
-              {t}
+              {EQUIPMENT_TYPE_LABEL[t]?.[lang] ?? t}
             </MenuItem>
           ))}
         </Select>
@@ -47,7 +47,7 @@ export function EquipmentFilters({
           <MenuItem value="">{lang === 'zh' ? '全部' : 'All'}</MenuItem>
           {EQUIPMENT_SOURCES.map((s) => (
             <MenuItem key={s} value={s}>
-              {s}
+              {EQUIPMENT_SOURCE_LABEL[s]?.[lang] ?? s}
             </MenuItem>
           ))}
         </Select>

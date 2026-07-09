@@ -1,7 +1,7 @@
 // 成就卡片：中/英文名 + 分类 + 解锁条件 + 生物群系档位 + 疑难分档徽标
 import { Card, CardContent, Typography, Box, Chip } from '@mui/material'
 import type { Achievement, Lang } from '../../data/types'
-import { getDifficultyTier } from '../../data/enums'
+import { getDifficultyTier, ACHIEVEMENT_CATEGORY_LABEL } from '../../data/enums'
 import { DifficultyBadge } from '../badges/DifficultyBadge'
 
 export function AchievementCard({
@@ -41,7 +41,7 @@ export function AchievementCard({
         </Box>
 
         <Box mt={1} mb={1}>
-          <Chip size="small" label={ach.category} variant="outlined" />
+          <Chip size="small" label={ACHIEVEMENT_CATEGORY_LABEL[ach.category]?.[lang] ?? ach.category} variant="outlined" />
           {ach.biomeTier && (
             <Chip
               size="small"

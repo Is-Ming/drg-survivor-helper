@@ -32,6 +32,29 @@ export const ACHIEVEMENT_CATEGORIES: AchievementCategory[] = [
   '其他动作',
 ]
 
+/** 成就分类中英双存映射（用于筛选下拉与卡片展示） */
+export const ACHIEVEMENT_CATEGORY_LABEL: Record<AchievementCategory, { zh: string; en: string }> = {
+  '职业解锁': { zh: '职业解锁', en: 'Class Unlock' },
+  '职业进阶': { zh: '职业进阶', en: 'Class Mastery' },
+  '属性统计': { zh: '属性统计', en: 'Stats' },
+  '装备': { zh: '装备', en: 'Equipment' },
+  '武器超频': { zh: '武器超频', en: 'Weapon OC' },
+  '武器专精': { zh: '武器专精', en: 'Weapon Mastery' },
+  '武器真专精': { zh: '武器真专精', en: 'Weapon True Mastery' },
+  '生物群系': { zh: '生物群系', en: 'Biomes' },
+  '武器标签': { zh: '武器标签', en: 'Weapon Tags' },
+  '生物': { zh: '生物', en: 'Enemies' },
+  '资源': { zh: '资源', en: 'Resources' },
+  '神器': { zh: '神器', en: 'Artifacts' },
+  '商店': { zh: '商店', en: 'Shop' },
+  '环境': { zh: '环境', en: 'Environment' },
+  '伤害': { zh: '伤害', en: 'Damage' },
+  '护卫': { zh: '护卫', en: 'Escort' },
+  '异常·先锋·致命': { zh: '异常·先锋·致命', en: 'Anomaly·Vanguard·Lethal' },
+  '耐力': { zh: '耐力', en: 'Endurance' },
+  '其他动作': { zh: '其他动作', en: 'Other Actions' },
+}
+
 /** 生物群系档位 */
 export const BIOME_TIERS: BiomeTier[] = ['H5', 'Mastery', 'TrueMastery']
 
@@ -43,6 +66,27 @@ export const RATINGS: Rating[] = ['S', 'A', 'B', 'C', '-']
 
 /** 装备来源 */
 export const EQUIPMENT_SOURCES: EquipmentSource[] = ['局内附加', '成就解锁']
+
+export const EQUIPMENT_SOURCE_LABEL: Record<EquipmentSource, { zh: string; en: string }> = {
+  '局内附加': { zh: '局内附加', en: 'In-run' },
+  '成就解锁': { zh: '成就解锁', en: 'Unlock' },
+}
+
+/** 装备类型中英映射 */
+export const EQUIPMENT_TYPE_LABEL: Record<string, { zh: string; en: string }> = {
+  '发育': { zh: '发育', en: 'Development' },
+  '拾取': { zh: '拾取', en: 'Pickup' },
+  '生存': { zh: '生存', en: 'Survival' },
+  '经验': { zh: '经验', en: 'Experience' },
+  '武器': { zh: '武器', en: 'Weapon' },
+  '直伤/混伤': { zh: '直伤/混伤', en: 'Direct/Hybrid' },
+  '战力': { zh: '战力', en: 'Combat Power' },
+  '生存/升级': { zh: '生存/升级', en: 'Survival/Lv Up' },
+  '直伤核心': { zh: '直伤核心', en: 'Direct Core' },
+  '闪避': { zh: '闪避', en: 'Dodge' },
+  '暴击': { zh: '暴击', en: 'Critical' },
+  '召唤': { zh: '召唤', en: 'Summon' },
+}
 
 /**
  * 武器官网标签中英双存映射（源自官方 Wiki Survivor:Weapons，四类）。

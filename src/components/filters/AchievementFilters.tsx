@@ -1,6 +1,6 @@
 // 成就筛选：19 类下拉 + 疑难高亮开关
 import { Box, FormControl, InputLabel, MenuItem, Select, Switch, FormControlLabel, ToggleButton, ToggleButtonGroup } from '@mui/material'
-import { ACHIEVEMENT_CATEGORIES, DIFFICULTY_LABEL } from '../../data/enums'
+import { ACHIEVEMENT_CATEGORIES, ACHIEVEMENT_CATEGORY_LABEL, DIFFICULTY_LABEL } from '../../data/enums'
 import type { Lang, SearchState, DifficultyTier } from '../../data/types'
 
 export function AchievementFilters({
@@ -27,7 +27,7 @@ export function AchievementFilters({
           <MenuItem value="">{lang === 'zh' ? '全部' : 'All'}</MenuItem>
           {ACHIEVEMENT_CATEGORIES.map((c) => (
             <MenuItem key={c} value={c}>
-              {c}
+              {ACHIEVEMENT_CATEGORY_LABEL[c][lang]}
             </MenuItem>
           ))}
         </Select>
