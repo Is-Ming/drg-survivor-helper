@@ -1,9 +1,12 @@
 // 成就卡片：中/英文名 + 分类 + 解锁条件 + 生物群系档位 + 疑难分档徽标（支持管理页编辑）
 import { useState, useEffect } from 'react'
-import { Card, CardContent, Typography, Box, Chip, TextField } from '@mui/material'
+import { Card, CardContent, Typography, Box, Chip, TextField, IconButton } from '@mui/material'
+import AddIcon from '@mui/icons-material/Add'
 import type { Achievement, Lang } from '../../data/types'
 import { getDifficultyTier, ACHIEVEMENT_CATEGORY_LABEL } from '../../data/enums'
 import { DifficultyBadge } from '../badges/DifficultyBadge'
+import { getAchievementCategories } from '../../hooks/useTagEditor'
+import { TagPickerDialog } from '../TagPickerDialog'
 
 export function AchievementCard({
   ach,
@@ -61,6 +64,16 @@ export function AchievementCard({
     if (onSave) onSave({ [field]: value })
   }
 
+  const [catPickerOpen, setCatPickerOpen] = useState(false)
+  const allCategories = getAchievementCategories()
+  const catLabel = ACHIEVEMENT_CATEGORY_LABEL[ach.category as keyof typeof ACHIEVEMENT_CATEGORY_LABEL]?.[lang] ?? ach.category
+
+  const handleCategoryChange = (newCat: string) => {
+    if (newCat !== ach.category) {
+      commitEdit('category', newCat)
+    }
+  }
+
   return (
     <Card sx={{ borderColor, borderWidth: highlight && tier ? 2 : 1, height: '100%' }}>
       <CardContent>
@@ -101,16 +114,21 @@ export function AchievementCard({
           </Box>
         </Box>
 
-        <Box mt={1} mb={1}>
-          <Chip size="small" label={ACHIEVEMENT_CATEGORY_LABEL[ach.category]?.[lang] ?? ach.category} variant="outlined" />
+        <Box mt={1} mb={1} display="flex" flexWrap="wrap" gap={0.5} alignItems="center">
+          {editable ? (
+            <>
+              <Chip size="small" label={catLabel} variant="outlined" onClick={() => setCatPickerOpen(true)}
+                sx={{ cursor: 'pointer', '&:hover': { borderColor: 'primary.main' } }} />
+              <IconButton size="small" color="primary" onClick={() => setCatPickerOpen(true)}
+                sx={{ border: 1, borderColor: 'divider', borderRadius: 1.5, width: 28, height: 28 }}>
+                <AddIcon sx={{ fontSize: 16 }} />
+              </IconButton>
+            </>
+          ) : (
+            <Chip size="small" label={catLabel} variant="outlined" />
+          )}
           {ach.biomeTier && (
-            <Chip
-              size="small"
-              label={ach.biomeTier}
-              color="secondary"
-              variant="outlined"
-              sx={{ ml: 0.5 }}
-            />
+            <Chip size="small" label={ach.biomeTier} color="secondary" variant="outlined" />
           )}
         </Box>
 
@@ -147,6 +165,17 @@ export function AchievementCard({
           </Typography>
         )}
       </CardContent>
+
+      <TagPickerDialog
+        open={catPickerOpen}
+        onClose={() => setCatPickerOpen(false)}
+        title={lang === 'zh' ? '选择分类' : 'Select Category'}
+        availableTags={allCategories}
+        selectedTags={[ach.category]}
+        onToggle={(tag) => handleCategoryChange(tag)}
+        getLabel={(tag) => ACHIEVEMENT_CATEGORY_LABEL[tag as keyof typeof ACHIEVEMENT_CATEGORY_LABEL]?.[lang] ?? tag}
+        lang={lang}
+      />
     </Card>
   )
 }

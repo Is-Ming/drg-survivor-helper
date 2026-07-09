@@ -2,27 +2,17 @@
 import {
   Dialog, DialogTitle, DialogContent, DialogActions, Button, Chip, Box, Typography,
 } from '@mui/material'
-import { useLang } from '../i18n/LangContext'
+import type { Lang } from '../data/types'
 
 export function TagPickerDialog({
-  open,
-  onClose,
-  title,
-  availableTags,
-  selectedTags,
-  onToggle,
-  getLabel,
+  open, onClose, title, availableTags, selectedTags, onToggle, getLabel, lang,
 }: {
-  open: boolean
-  onClose: () => void
-  title: string
-  availableTags: string[]
-  selectedTags: string[]
+  open: boolean; onClose: () => void; title: string
+  availableTags: string[]; selectedTags: string[]
   onToggle: (tag: string) => void
   getLabel?: (tag: string) => string
+  lang: Lang
 }) {
-  const { lang } = useLang()
-
   return (
     <Dialog open={open} onClose={onClose} maxWidth="sm" fullWidth>
       <DialogTitle>{title}</DialogTitle>
@@ -36,22 +26,15 @@ export function TagPickerDialog({
           {availableTags.map((t) => {
             const selected = selectedTags.includes(t)
             return (
-              <Chip
-                key={t}
-                label={getLabel ? getLabel(t) : t}
-                color={selected ? 'primary' : 'default'}
-                variant={selected ? 'filled' : 'outlined'}
-                onClick={() => onToggle(t)}
-                sx={{ cursor: 'pointer' }}
-              />
+              <Chip key={t} label={getLabel ? getLabel(t) : t}
+                color={selected ? 'primary' : 'default'} variant={selected ? 'filled' : 'outlined'}
+                onClick={() => onToggle(t)} sx={{ cursor: 'pointer' }} />
             )
           })}
         </Box>
       </DialogContent>
       <DialogActions>
-        <Button onClick={onClose}>
-          {lang === 'zh' ? '完成' : 'Done'}
-        </Button>
+        <Button onClick={onClose}>{lang === 'zh' ? '完成' : 'Done'}</Button>
       </DialogActions>
     </Dialog>
   )

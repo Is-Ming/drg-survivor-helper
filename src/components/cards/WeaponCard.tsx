@@ -10,7 +10,10 @@ import { weapons } from '../../data/weapons'
 import { RatingBadge } from '../badges/RatingBadge'
 import { TagChip } from '../badges/TagChip'
 import { useWeaponOverclockEditor } from '../../hooks/useWeaponOverclockEditor'
-import { getWeaponTagLabel } from '../../hooks/useTagEditor'
+import { getWeaponTags, getWeaponTagLabel } from '../../hooks/useTagEditor'
+import { TagPickerDialog } from '../TagPickerDialog'
+import { OverclockPickerDialog } from '../OverclockPickerDialog'
+import { overclocks } from '../../data/overclocks'
 
 const RATING_STORAGE_PREFIX = 'drg-wpn-rating-'
 const CARD_TAG_STORAGE_PREFIX = 'drg-wpn-cardtags-'
@@ -65,6 +68,8 @@ export function WeaponCard({
   const yellowIds = ocEditor.getWeaponOverclockIds(weapon.englishName, 'yellow')
   const redIds = ocEditor.getWeaponOverclockIds(weapon.englishName, 'red')
   const [, forceUpdate] = useState(0)
+  const [tagPickerOpen, setTagPickerOpen] = useState(false)
+  const [ocPickerOpen, setOcPickerOpen] = useState(false)
 
   const handleRatingChange = (r: Rating) => { setStoredRating(weapon.englishName, r); setCurrentRating(r) }
 
@@ -126,10 +131,8 @@ export function WeaponCard({
             )
           ))}
           {editable && (
-            <IconButton size="small" color="primary" onClick={() => {
-              const newTag = prompt(lang === 'zh' ? '输入新标签ID（大写英文）：' : 'Enter tag ID (uppercase):')
-              if (newTag && newTag.trim()) addTag(newTag.trim().toUpperCase() as WeaponTag)
-            }} sx={{ border: 1, borderColor: 'divider', borderRadius: 1.5, width: 28, height: 28 }}>
+            <IconButton size="small" color="primary" onClick={() => setTagPickerOpen(true)}
+              sx={{ border: 1, borderColor: 'divider', borderRadius: 1.5, width: 28, height: 28 }}>
               <AddIcon sx={{ fontSize: 16 }} />
             </IconButton>
           )}
@@ -213,13 +216,7 @@ export function WeaponCard({
         {editable && (
           <Box sx={{ mt: 1.5, display: 'flex', gap: 1, alignItems: 'center', flexWrap: 'wrap' }}>
             <Button size="small" variant="outlined" startIcon={<AddIcon />} color="warning"
-              onClick={() => {
-                const type = prompt(lang === 'zh' ? '输入超频类型 (yellow/red)：' : 'OC type (yellow/red):')
-                const id = prompt(lang === 'zh' ? '输入超频 ID：' : 'OC ID:')
-                if (type && id && (type === 'yellow' || type === 'red')) {
-                  ocEditor.addOverclock(weapon.englishName, type, id)
-                }
-              }}>
+              onClick={() => setOcPickerOpen(true)}>
               {lang === 'zh' ? '超频' : 'OC'}
             </Button>
           </Box>
@@ -229,6 +226,38 @@ export function WeaponCard({
           <Typography variant="caption" sx={{ mt: 0.5, display: 'block', opacity: 0.6 }}>⚠ {weapon.version}</Typography>
         )}
       </CardContent>
+      {/* 标签选择弹窗 */}
+      <TagPickerDialog
+        open={tagPickerOpen}
+        onClose={() => setTagPickerOpen(false)}
+        title={lang === 'zh' ? '选择标签添加到卡片' : 'Add Tags'}
+        availableTags={getWeaponTags()}
+        selectedTags={cardTags}
+        onToggle={(tag) => {
+          if (cardTags.includes(tag as WeaponTag)) {
+            removeTag(tag as WeaponTag)
+          } else {
+            addTag(tag as WeaponTag)
+          }
+        }}
+        getLabel={(tag) => getWeaponTagLabel(tag, lang)}
+        lang={lang}
+      />
+
+      {/* 超频选取弹窗 */}
+      <OverclockPickerDialog
+        open={ocPickerOpen}
+        onClose={() => setOcPickerOpen(false)}
+        title={lang === 'zh' ? '选择超频添加到武器' : 'Add Overclock'}
+        yellowOptions={overclocks.filter((oc) => oc.type === 'balanced' && !yellowIds.includes(oc.id)).map((oc) => ({
+          id: oc.id, label: ocLabel(oc.id),
+        }))}
+        redOptions={overclocks.filter((oc) => oc.type === 'unstable' && !redIds.includes(oc.id)).map((oc) => ({
+          id: oc.id, label: ocLabel(oc.id),
+        }))}
+        onSelect={(type, id) => ocEditor.addOverclock(weapon.englishName, type, id)}
+        lang={lang}
+      />
     </Card>
   )
 }

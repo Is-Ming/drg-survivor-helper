@@ -1,8 +1,11 @@
 // 装备卡片：类型/来源 chip + 关联成就 + 官网/攻略双区块 + 管理编辑
 import { useState } from 'react'
-import { Card, CardContent, Typography, Box, Chip, TextField } from '@mui/material'
+import { Card, CardContent, Typography, Box, Chip, TextField, IconButton } from '@mui/material'
+import AddIcon from '@mui/icons-material/Add'
 import type { Equipment, Lang } from '../../data/types'
 import { EQUIPMENT_SOURCE_LABEL } from '../../data/enums'
+import { getEquipmentTypes } from '../../hooks/useTagEditor'
+import { TagPickerDialog } from '../TagPickerDialog'
 
 export function EquipmentCard({
   equip,
@@ -17,20 +20,6 @@ export function EquipmentCard({
 }) {
   const isUnlock = equip.source === '成就解锁'
   const [, forceUpdate] = useState(0)
-
-  const typeKey = equip.type
-  const typeLabel =
-    lang === 'zh'
-      ? ({
-          '生存': '生存',
-          '发育': '发育',
-          '战力': '战力',
-        }[typeKey] ?? typeKey)
-      : ({
-          '生存': 'Survival',
-          '发育': 'Development',
-          '战力': 'Combat Power',
-        }[typeKey] ?? typeKey)
 
   const sourceLabel = EQUIPMENT_SOURCE_LABEL[equip.source]?.[lang] ?? equip.source
 
@@ -53,6 +42,23 @@ export function EquipmentCard({
     } catch { /* ignore */ }
   }
 
+  const [typePickerOpen, setTypePickerOpen] = useState(false)
+  const allEqTypes = getEquipmentTypes()
+
+  const eqTypeLabel = allEqTypes.includes(equip.type)
+    ? (lang === 'zh' ? equip.type : ({
+        '生存': 'Survival', '发育': 'Development', '战力': 'Combat Power',
+        '拾取': 'Loot', '经验': 'XP', '武器': 'Weapon', '直伤/混伤': 'Raw/Hybrid',
+        '生存/升级': 'Survival/Level', '直伤核心': 'Raw Core', '闪避': 'Dodge',
+        '暴击': 'Crit', '召唤': 'Summon',
+      }[equip.type] ?? equip.type))
+    : equip.type
+
+  const handleTypeChange = (newType: string) => {
+    doSave('type', newType)
+    forceUpdate((n) => n + 1)
+  }
+
   return (
     <Card
       sx={{
@@ -70,13 +76,19 @@ export function EquipmentCard({
             variant="subtitle1"
             fontWeight={700}
           />
-          <Box display="flex" gap={0.5}>
-            <Chip
-              size="small"
-              label={typeLabel}
-              clickable={!!onTypeClick}
-              onClick={onTypeClick}
-            />
+          <Box display="flex" gap={0.5} alignItems="center">
+            {editable ? (
+              <>
+                <Chip size="small" label={eqTypeLabel} clickable onClick={() => setTypePickerOpen(true)}
+                  sx={{ cursor: 'pointer', '&:hover': { borderColor: 'primary.main' } }} />
+                <IconButton size="small" color="primary" onClick={() => setTypePickerOpen(true)}
+                  sx={{ border: 1, borderColor: 'divider', borderRadius: 1.5, width: 28, height: 28 }}>
+                  <AddIcon sx={{ fontSize: 16 }} />
+                </IconButton>
+              </>
+            ) : (
+              <Chip size="small" label={eqTypeLabel} clickable={!!onTypeClick} onClick={onTypeClick} />
+            )}
             <Chip
               size="small"
               label={sourceLabel}
@@ -161,6 +173,20 @@ export function EquipmentCard({
           </Typography>
         )}
       </CardContent>
+
+      <TagPickerDialog
+        open={typePickerOpen}
+        onClose={() => setTypePickerOpen(false)}
+        title={lang === 'zh' ? '选择装备类型' : 'Select Type'}
+        availableTags={allEqTypes}
+        selectedTags={[equip.type]}
+        onToggle={(tag) => {
+          handleTypeChange(tag)
+          setTypePickerOpen(false)
+        }}
+        getLabel={(tag) => tag}
+        lang={lang}
+      />
     </Card>
   )
 }
