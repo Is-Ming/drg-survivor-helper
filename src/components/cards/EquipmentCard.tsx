@@ -1,81 +1,157 @@
-// 装备卡片：双语展示（中英文切换）
-import { Card, CardContent, Typography, Box, Chip } from '@mui/material'
+// 装备卡片：类型/来源 chip + 关联成就 + 官网/攻略双区块 + 管理编辑
+import { useState } from 'react'
+import { Card, CardContent, Typography, Box, Chip, TextField } from '@mui/material'
 import type { Equipment, Lang } from '../../data/types'
-
-const TYPE_EN: Record<string, string> = {
-  '发育': 'Development',
-  '拾取': 'Pickup',
-  '生存': 'Survival',
-  '经验': 'Experience',
-  '武器': 'Weapon',
-  '直伤/混伤': 'Direct/Hybrid Dmg',
-  '战力': 'Combat Power',
-  '生存/升级': 'Survival/Level Up',
-  '直伤核心': 'Direct Dmg Core',
-  '闪避': 'Dodge',
-  '暴击': 'Critical',
-  '召唤': 'Summon',
-}
+import { EQUIPMENT_SOURCE_LABEL } from '../../data/enums'
 
 export function EquipmentCard({
   equip,
   onTypeClick,
   lang,
+  editable,
 }: {
   equip: Equipment
   onTypeClick?: () => void
   lang: Lang
+  editable?: boolean
 }) {
   const isUnlock = equip.source === '成就解锁'
-  const displayName = lang === 'en' && equip.officialName ? equip.officialName : equip.name
-  const displayType = lang === 'en' ? (TYPE_EN[equip.type] ?? equip.type) : equip.type
-  const sourceLabel = isUnlock
-    ? (lang === 'zh' ? '成就解锁' : 'Unlock')
-    : (lang === 'zh' ? '局内附加' : 'In-run')
+  const [, forceUpdate] = useState(0)
+
+  const typeKey = equip.type
+  const typeLabel =
+    lang === 'zh'
+      ? ({
+          '生存': '生存',
+          '发育': '发育',
+          '战力': '战力',
+        }[typeKey] ?? typeKey)
+      : ({
+          '生存': 'Survival',
+          '发育': 'Development',
+          '战力': 'Combat Power',
+        }[typeKey] ?? typeKey)
+
+  const sourceLabel = EQUIPMENT_SOURCE_LABEL[equip.source]?.[lang] ?? equip.source
+
+  // 可编辑字段的状态
+  const storageKey = `drg-eqp-edit-${equip.name}`
+
+  const getSaved = (field: string, fallback: string): string => {
+    try {
+      const s = JSON.parse(localStorage.getItem(storageKey) || '{}')
+      return s[field] ?? fallback
+    } catch { return fallback }
+  }
+
+  const doSave = (field: string, value: string) => {
+    try {
+      const s = JSON.parse(localStorage.getItem(storageKey) || '{}')
+      s[field] = value
+      localStorage.setItem(storageKey, JSON.stringify(s))
+      forceUpdate((n) => n + 1)
+    } catch { /* ignore */ }
+  }
+
   return (
-    <Card sx={{ height: '100%' }}>
+    <Card
+      sx={{
+        height: '100%',
+        borderLeft: equip.officialName ? '4px solid' : undefined,
+        borderLeftColor: 'info.main',
+      }}
+    >
       <CardContent>
-        <Typography variant="subtitle1" fontWeight={700}>
-          {displayName}
-        </Typography>
-
-        <Box mt={1} mb={1} display="flex" flexWrap="wrap" gap={0.5} alignItems="center">
-          <Chip
-            size="small"
-            label={displayType}
-            color="primary"
-            variant="outlined"
-            clickable={!!onTypeClick}
-            onClick={onTypeClick}
+        <Box display="flex" justifyContent="space-between" alignItems="center">
+          <EditableField
+            value={getSaved('name', equip.name)}
+            onSave={(v) => doSave('name', v)}
+            editable={editable}
+            variant="subtitle1"
+            fontWeight={700}
           />
-          <Chip
-            size="small"
-            label={sourceLabel}
-            color={isUnlock ? 'warning' : 'default'}
-            variant="outlined"
-          />
-        </Box>
-
-        {equip.officialName || equip.officialEffect ? (
-          <Box sx={{ borderLeft: '3px solid', borderColor: 'info.main', pl: 1, mb: 1 }}>
-            <Typography variant="caption" color="info.main" display="block" fontWeight={700}>
-              {lang === 'zh' ? '官网' : 'Official'}
-              {equip.officialName ? ` · ${equip.officialName}` : ''}
-            </Typography>
-            <Typography variant="body2">{equip.officialEffect ?? '—'}</Typography>
+          <Box display="flex" gap={0.5}>
+            <Chip
+              size="small"
+              label={typeLabel}
+              clickable={!!onTypeClick}
+              onClick={onTypeClick}
+            />
+            <Chip
+              size="small"
+              label={sourceLabel}
+              variant="outlined"
+            />
           </Box>
-        ) : null}
-
-        <Box sx={{ borderLeft: '3px solid', borderColor: 'warning.main', pl: 1, mb: 1 }}>
-          <Typography variant="caption" color="warning.main" display="block" fontWeight={700}>
-            {lang === 'zh' ? '攻略' : 'Guide'}
-          </Typography>
-          <Typography variant="body2">{equip.effect}</Typography>
         </Box>
 
-        {equip.relatedAchievement && (
-          <Typography variant="caption" color="text.secondary" display="block">
-            关联成就：{equip.relatedAchievement}
+        {/* 官网描述区块（蓝色） */}
+        {equip.officialName && (
+          <Box
+            sx={{
+              mt: 1.5,
+              p: 1,
+              bgcolor: 'info.dark',
+              borderRadius: 1,
+              borderLeft: 3,
+              borderColor: 'info.light',
+            }}
+          >
+            <Typography variant="caption" color="info.light" fontWeight={700}>
+              {lang === 'zh' ? '📖 官网' : '📖 Official'}
+            </Typography>
+            <Typography variant="subtitle2" fontWeight={600} sx={{ mt: 0.3 }}>
+              <EditableField
+                value={getSaved('officialName', equip.officialName)}
+                onSave={(v) => doSave('officialName', v)}
+                editable={editable}
+                variant="subtitle2"
+                fontWeight={600}
+              />
+            </Typography>
+            <Typography variant="body2" sx={{ mt: 0.3, opacity: 0.9 }}>
+              <EditableField
+                value={getSaved('officialEffect', equip.officialEffect ?? '')}
+                onSave={(v) => doSave('officialEffect', v)}
+                editable={editable}
+                variant="body2"
+              />
+            </Typography>
+            {equip.officialName?.includes('待核') && (
+              <Typography variant="caption" sx={{ mt: 0.5, display: 'block', opacity: 0.6 }}>
+                ⚠ {lang === 'zh' ? '待核：官方无确切对应的 Artifact 名称' : 'Unverified: no exact Artifact match'}
+              </Typography>
+            )}
+          </Box>
+        )}
+
+        {/* 攻略描述区块（橙色） */}
+        <Box
+          sx={{
+            mt: 1,
+            p: 1,
+            bgcolor: 'warning.dark',
+            borderRadius: 1,
+            borderLeft: 3,
+            borderColor: 'warning.light',
+          }}
+        >
+          <Typography variant="caption" color="warning.light" fontWeight={700}>
+            {lang === 'zh' ? '📝 攻略' : '📝 Guide'}
+          </Typography>
+          <Typography variant="body2" sx={{ mt: 0.3, opacity: 0.9 }}>
+            <EditableField
+              value={getSaved('effect', equip.effect)}
+              onSave={(v) => doSave('effect', v)}
+              editable={editable}
+              variant="body2"
+            />
+          </Typography>
+        </Box>
+
+        {isUnlock && equip.relatedAchievement && (
+          <Typography variant="caption" display="block" sx={{ mt: 1, opacity: 0.6 }}>
+            {lang === 'zh' ? `关联成就：${equip.relatedAchievement}` : `Achievement: ${equip.relatedAchievement}`}
           </Typography>
         )}
 
@@ -86,5 +162,60 @@ export function EquipmentCard({
         )}
       </CardContent>
     </Card>
+  )
+}
+
+/** 可编辑文本：点击切换为输入框，Enter保存 */
+function EditableField({
+  value,
+  onSave,
+  editable,
+  variant,
+  fontWeight,
+}: {
+  value: string
+  onSave: (v: string) => void
+  editable?: boolean
+  variant: 'subtitle1' | 'subtitle2' | 'body2'
+  fontWeight?: number
+}) {
+  const [editing, setEditing] = useState(false)
+  const [draft, setDraft] = useState(value)
+
+  if (!editable) {
+    return (
+      <Typography variant={variant} fontWeight={fontWeight}>
+        {value}
+      </Typography>
+    )
+  }
+
+  if (editing) {
+    return (
+      <TextField
+        size="small"
+        fullWidth
+        value={draft}
+        onChange={(e) => setDraft(e.target.value)}
+        onBlur={() => { onSave(draft); setEditing(false) }}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter') { onSave(draft); setEditing(false) }
+          if (e.key === 'Escape') { setDraft(value); setEditing(false) }
+        }}
+        autoFocus
+        variant="standard"
+      />
+    )
+  }
+
+  return (
+    <Typography
+      variant={variant}
+      fontWeight={fontWeight}
+      onClick={() => { setDraft(value); setEditing(true) }}
+      sx={{ cursor: 'pointer', '&:hover': { textDecoration: 'underline', textDecorationColor: 'primary.main' } }}
+    >
+      {value}
+    </Typography>
   )
 }

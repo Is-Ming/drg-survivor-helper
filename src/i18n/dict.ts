@@ -54,6 +54,16 @@ export const ui: UiDict = {
   'footer.disclaimer': { zh: '武器评级为攻略作者主观评价，仅供参考', en: 'Weapon ratings are subjective author opinions, for reference only' },
   'footer.classModTentative': { zh: '小职业中文译名来源于官方 Wiki', en: 'Class Mod Chinese names are translated from the official Wiki' },
 
+  'admin.login': { zh: '管理员登录', en: 'Admin Login' },
+  'admin.password': { zh: '请输入管理密码', en: 'Enter admin password' },
+  'admin.logout': { zh: '退出管理', en: 'Logout' },
+  'admin.loginBtn': { zh: '登录', en: 'Login' },
+  'admin.verifying': { zh: '验证中…', en: 'Verifying…' },
+  'admin.wrongPassword': { zh: '密码错误', en: 'Incorrect password' },
+  'admin.verifyFailed': { zh: '验证失败，请重试', en: 'Verification failed, please retry' },
+  'admin.passwordField': { zh: '密码', en: 'Password' },
+  'admin.addOverclock': { zh: '添加超频', en: 'Add Overclock' },
+
   'class.subtitle': { zh: '职业', en: 'Class' },
   'class.mod': { zh: '小职业', en: 'Class Mod' },
   'weapon.startWeapon': { zh: '起始武器', en: 'Start weapon' },

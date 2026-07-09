@@ -1,12 +1,16 @@
 // 武器卡片：评级徽章 + 黄/红超频(名+效果1:1配对) + 职业 chip + 官网标签 chip
+// editable 模式：可增删超频引用
 import { useState } from 'react'
-import { Card, CardContent, Typography, Box, Chip, Popover } from '@mui/material'
+import { Card, CardContent, Typography, Box, Chip, Popover, IconButton, Select, MenuItem, Button, FormControl } from '@mui/material'
+import CloseIcon from '@mui/icons-material/Close'
 import type { Lang, Weapon, WeaponTag } from '../../data/types'
 import { WEAPON_CLASS_LABEL } from '../../data/enums'
 import { getClassByEnglishName } from '../../data/classes'
 import { weapons } from '../../data/weapons'
+import { overclocks } from '../../data/overclocks'
 import { RatingBadge } from '../badges/RatingBadge'
 import { TagChip } from '../badges/TagChip'
+import { useWeaponOverclockEditor } from '../../hooks/useWeaponOverclockEditor'
 
 export function WeaponCard({
   weapon,
@@ -15,6 +19,7 @@ export function WeaponCard({
   lang,
   getOverclockName,
   getOverclockEffect,
+  editable,
 }: {
   weapon: Weapon
   selectedTags: WeaponTag[]
@@ -22,10 +27,33 @@ export function WeaponCard({
   lang: Lang
   getOverclockName?: (id: string) => string
   getOverclockEffect?: (id: string) => string
+  editable?: boolean
 }) {
   const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null)
+  const [addType, setAddType] = useState<'yellow' | 'red' | null>(null)
+  const [selectedOcId, setSelectedOcId] = useState('')
   const open = Boolean(anchorEl)
   const gameClass = getClassByEnglishName(weapon.class)
+  const ocEditor = useWeaponOverclockEditor()
+
+  // 使用自定义或默认超频ID列表
+  const yellowIds = ocEditor.getWeaponOverclockIds(weapon.englishName, 'yellow')
+  const redIds = ocEditor.getWeaponOverclockIds(weapon.englishName, 'red')
+
+  // 可用超频（未被当前武器使用的）
+  const availableYellow = overclocks
+    .filter((oc) => oc.type === 'balanced' && !yellowIds.includes(oc.id))
+    .map((oc) => ({ id: oc.id, name: getOverclockName ? getOverclockName(oc.id) : oc.id }))
+  const availableRed = overclocks
+    .filter((oc) => oc.type === 'unstable' && !redIds.includes(oc.id))
+    .map((oc) => ({ id: oc.id, name: getOverclockName ? getOverclockName(oc.id) : oc.id }))
+
+  const handleAdd = () => {
+    if (!addType || !selectedOcId) return
+    ocEditor.addOverclock(weapon.englishName, addType, selectedOcId)
+    setAddType(null)
+    setSelectedOcId('')
+  }
 
   const classLabel =
     lang === 'zh'
@@ -109,18 +137,27 @@ export function WeaponCard({
           </Box>
         </Popover>
 
-        {/* 黄色超频 · 平衡 — 1:1 显示 */}
-        {weapon.yellowOverclockIds && weapon.yellowOverclockIds.length > 0 ? (
+        {/* 黄色超频 · 平衡 */}
+        {yellowIds.length > 0 ? (
           <Box sx={{ mt: 1 }}>
             <Typography variant="caption" color="text.secondary" display="block" sx={{ mb: 0.5 }}>
               {lang === 'zh' ? '黄色超频 · 平衡 (6/12级)' : 'Yellow OC · Balanced (Lv6/12)'}
             </Typography>
-            {weapon.yellowOverclockIds.map((id, i) => {
+            {yellowIds.map((id, i) => {
               const name = getOverclockName ? getOverclockName(id) : id
               const effects = weapon.yellowOverclock.split('；')
               const eff = getOverclockEffect ? getOverclockEffect(id) : (effects[i] ?? '')
               return (
-                <Typography key={id} variant="body2" sx={{ mb: 0.3 }}>
+                <Typography key={id} variant="body2" sx={{ mb: 0.3, display: 'flex', alignItems: 'center' }}>
+                  {editable && (
+                    <IconButton
+                      size="small"
+                      sx={{ mr: 0.5, color: 'error.light' }}
+                      onClick={() => ocEditor.removeOverclock(weapon.englishName, 'yellow', id)}
+                    >
+                      <CloseIcon fontSize="inherit" />
+                    </IconButton>
+                  )}
                   <Box component="span" fontWeight={600} color="warning.main">{name}</Box>
                   {lang === 'zh' ? '：' : ': '}{eff}
                 </Typography>
@@ -133,18 +170,27 @@ export function WeaponCard({
           </Typography>
         )}
 
-        {/* 红色超频 · 不稳定 — 1:1 显示 */}
-        {weapon.redOverclockIds && weapon.redOverclockIds.length > 0 ? (
+        {/* 红色超频 · 不稳定 */}
+        {redIds.length > 0 ? (
           <Box sx={{ mt: 1 }}>
             <Typography variant="caption" color="text.secondary" display="block" sx={{ mb: 0.5 }}>
               {lang === 'zh' ? '红色超频 · 不稳定 (18级)' : 'Red OC · Unstable (Lv18)'}
             </Typography>
-            {weapon.redOverclockIds.map((id, i) => {
+            {redIds.map((id, i) => {
               const name = getOverclockName ? getOverclockName(id) : id
               const effects = weapon.redOverclock.split('；')
               const eff = getOverclockEffect ? getOverclockEffect(id) : (effects[i] ?? '')
               return (
-                <Typography key={id} variant="body2" sx={{ mb: 0.3 }}>
+                <Typography key={id} variant="body2" sx={{ mb: 0.3, display: 'flex', alignItems: 'center' }}>
+                  {editable && (
+                    <IconButton
+                      size="small"
+                      sx={{ mr: 0.5, color: 'error.light' }}
+                      onClick={() => ocEditor.removeOverclock(weapon.englishName, 'red', id)}
+                    >
+                      <CloseIcon fontSize="inherit" />
+                    </IconButton>
+                  )}
                   <Box component="span" fontWeight={600} color="error.main">{name}</Box>
                   {lang === 'zh' ? '：' : ': '}{eff}
                 </Typography>
@@ -155,6 +201,54 @@ export function WeaponCard({
           <Typography variant="body2" sx={{ mt: 1, color: 'text.secondary' }}>
             {weapon.redOverclock}
           </Typography>
+        )}
+
+        {/* 管理模式下：增删超频 */}
+        {editable && (
+          <Box sx={{ mt: 1.5, display: 'flex', gap: 1, alignItems: 'center', flexWrap: 'wrap' }}>
+            <FormControl size="small" sx={{ minWidth: 120 }}>
+              <Select
+                value={addType ?? ''}
+                displayEmpty
+                onChange={(e) => { setAddType(e.target.value as 'yellow' | 'red'); setSelectedOcId('') }}
+              >
+                <MenuItem value="" disabled>
+                  {lang === 'zh' ? '选择类型' : 'Select type'}
+                </MenuItem>
+                <MenuItem value="yellow">
+                  {lang === 'zh' ? '+ 黄色超频' : '+ Yellow OC'}
+                </MenuItem>
+                <MenuItem value="red">
+                  {lang === 'zh' ? '+ 红色超频' : '+ Red OC'}
+                </MenuItem>
+              </Select>
+            </FormControl>
+            <FormControl size="small" sx={{ minWidth: 160 }}>
+              <Select
+                value={selectedOcId}
+                displayEmpty
+                onChange={(e) => setSelectedOcId(e.target.value)}
+                disabled={!addType}
+              >
+                <MenuItem value="" disabled>
+                  {lang === 'zh' ? '选择超频' : 'Select overclock'}
+                </MenuItem>
+                {(addType === 'yellow' ? availableYellow : addType === 'red' ? availableRed : []).map((oc) => (
+                  <MenuItem key={oc.id} value={oc.id}>
+                    {oc.name}
+                  </MenuItem>
+                ))}
+              </Select>
+            </FormControl>
+            <Button
+              size="small"
+              variant="contained"
+              disabled={!addType || !selectedOcId}
+              onClick={handleAdd}
+            >
+              {lang === 'zh' ? '添加' : 'Add'}
+            </Button>
+          </Box>
         )}
 
         {weapon.version !== '当前' && (
