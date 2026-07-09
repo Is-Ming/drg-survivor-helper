@@ -1,12 +1,12 @@
 // 标签管理页：成就分类 / 武器标签 / 装备类型 CRUD
 import { useState } from 'react'
 import {
-  Box, Typography, Card, CardContent, TextField, IconButton, Button, Chip, Divider,
+  Box, Typography, Card, CardContent, TextField, IconButton, Chip, Divider,
 } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add'
 import EditIcon from '@mui/icons-material/Edit'
 import { useLang } from '../i18n/LangContext'
-import { useTagEditor, resetAllCustomData } from '../hooks/useTagEditor'
+import { useTagEditor } from '../hooks/useTagEditor'
 
 interface EditableTagListProps {
   title: string
@@ -104,40 +104,11 @@ export function TagManager() {
   const tags = editor.getTags()
   const types = editor.getTypes()
 
-  const [confirmReset, setConfirmReset] = useState(false)
-
-  const handleReset = () => {
-    resetAllCustomData()
-    setConfirmReset(false)
-    // Force reload
-    window.location.reload()
-  }
-
   return (
     <Box>
-      {/* 一键恢复 */}
-      <Box display="flex" justifyContent="space-between" alignItems="center" sx={{ mb: 2 }}>
-        <Typography variant="h6" fontWeight={700}>
-          {lang === 'zh' ? '标签管理' : 'Tag Management'}
-        </Typography>
-        {confirmReset ? (
-          <Box display="flex" gap={1}>
-            <Typography variant="body2" color="error" sx={{ lineHeight: '36px' }}>
-              {lang === 'zh' ? '确认恢复所有数据？' : 'Reset all data?'}
-            </Typography>
-            <Button size="small" variant="contained" color="error" onClick={handleReset}>
-              {lang === 'zh' ? '确认' : 'Confirm'}
-            </Button>
-            <Button size="small" variant="outlined" onClick={() => setConfirmReset(false)}>
-              {lang === 'zh' ? '取消' : 'Cancel'}
-            </Button>
-          </Box>
-        ) : (
-          <Button size="small" variant="outlined" color="error" onClick={() => setConfirmReset(true)}>
-            {lang === 'zh' ? '恢复默认' : 'Reset to Default'}
-          </Button>
-        )}
-      </Box>
+      <Typography variant="h6" fontWeight={700} sx={{ mb: 2 }}>
+        {lang === 'zh' ? '标签管理' : 'Tag Management'}
+      </Typography>
 
       <Card>
         <CardContent>
@@ -174,7 +145,7 @@ export function TagManager() {
       <Typography variant="caption" color="text.secondary" sx={{ mt: 2, display: 'block' }}>
         {lang === 'zh'
           ? '修改即时生效。要恢复到原始数据请点击右上角「恢复默认」。'
-          : 'Changes take effect immediately. Click "Reset to Default" to restore original data.'}
+          : 'Changes take effect immediately. Use the reset button in the top-right corner to restore original data.'}
       </Typography>
     </Box>
   )

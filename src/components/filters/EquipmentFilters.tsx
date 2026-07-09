@@ -1,10 +1,8 @@
-// 装备筛选：类型 + 来源
+// 装备筛选：类型 + 来源（类型来自标签管理，实时生效）
 import { Box, FormControl, InputLabel, MenuItem, Select } from '@mui/material'
 import { EQUIPMENT_SOURCES, EQUIPMENT_SOURCE_LABEL, EQUIPMENT_TYPE_LABEL } from '../../data/enums'
-import { equipments } from '../../data/equipments'
 import type { EquipmentSource, Lang, SearchState } from '../../data/types'
-
-const EQUIPMENT_TYPES = Array.from(new Set(equipments.map((e) => e.type)))
+import { getEquipmentTypes } from '../../hooks/useTagEditor'
 
 export function EquipmentFilters({
   state,
@@ -17,6 +15,9 @@ export function EquipmentFilters({
   setEquipmentSource: (s?: EquipmentSource) => void
   lang: Lang
 }) {
+  // 从标签管理读取自定义装备类型（实时生效）
+  const eqTypes = getEquipmentTypes()
+
   return (
     <Box display="flex" flexWrap="wrap" gap={2} alignItems="center">
       <FormControl size="small" sx={{ minWidth: 140 }}>
@@ -28,7 +29,7 @@ export function EquipmentFilters({
           onChange={(e) => setEquipmentType(e.target.value || undefined)}
         >
           <MenuItem value="">{lang === 'zh' ? '全部' : 'All'}</MenuItem>
-          {EQUIPMENT_TYPES.map((t) => (
+          {eqTypes.map((t) => (
             <MenuItem key={t} value={t}>
               {EQUIPMENT_TYPE_LABEL[t]?.[lang] ?? t}
             </MenuItem>

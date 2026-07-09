@@ -1,7 +1,8 @@
-// 成就筛选：19 类下拉 + 疑难高亮开关
+// 成就筛选：分类下拉（支持自定义）+ 难度三档 + 疑难高亮开关
 import { Box, FormControl, InputLabel, MenuItem, Select, Switch, FormControlLabel, ToggleButton, ToggleButtonGroup } from '@mui/material'
-import { ACHIEVEMENT_CATEGORIES, ACHIEVEMENT_CATEGORY_LABEL, DIFFICULTY_LABEL } from '../../data/enums'
+import { ACHIEVEMENT_CATEGORY_LABEL, DIFFICULTY_LABEL } from '../../data/enums'
 import type { Lang, SearchState, DifficultyTier } from '../../data/types'
+import { getAchievementCategories } from '../../hooks/useTagEditor'
 
 export function AchievementFilters({
   state,
@@ -12,6 +13,9 @@ export function AchievementFilters({
   setAchievementFilter: (patch: Partial<SearchState['achievement']>) => void
   lang: Lang
 }) {
+  // 从标签管理读取自定义分类（实时生效）
+  const categories = getAchievementCategories()
+
   return (
     <Box display="flex" flexWrap="wrap" gap={2} alignItems="center">
       <FormControl size="small" sx={{ minWidth: 160 }}>
@@ -25,9 +29,9 @@ export function AchievementFilters({
           }
         >
           <MenuItem value="">{lang === 'zh' ? '全部' : 'All'}</MenuItem>
-          {ACHIEVEMENT_CATEGORIES.map((c) => (
+          {categories.map((c) => (
             <MenuItem key={c} value={c}>
-              {ACHIEVEMENT_CATEGORY_LABEL[c][lang]}
+              {ACHIEVEMENT_CATEGORY_LABEL[c as keyof typeof ACHIEVEMENT_CATEGORY_LABEL]?.[lang] ?? c}
             </MenuItem>
           ))}
         </Select>
