@@ -1,6 +1,7 @@
-// 武器卡片：评级徽章 + 黄/红超频 + 职业 chip(可点击 Popover 列小职业) + 官网标签 chip
+// 武器卡片：评级徽章 + 黄/红超频(名+可展开效果) + 职业 chip + 官网标签 chip
 import { useState } from 'react'
-import { Card, CardContent, Typography, Box, Chip, Popover } from '@mui/material'
+import { Card, CardContent, Typography, Box, Chip, Popover, Collapse, IconButton } from '@mui/material'
+import { ExpandMore, ExpandLess } from '@mui/icons-material'
 import type { Lang, Weapon, WeaponTag } from '../../data/types'
 import { WEAPON_CLASS_LABEL } from '../../data/enums'
 import { getClassByEnglishName } from '../../data/classes'
@@ -20,6 +21,8 @@ export function WeaponCard({
   lang: Lang
 }) {
   const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null)
+  const [yellowOpen, setYellowOpen] = useState(false)
+  const [redOpen, setRedOpen] = useState(false)
   const open = Boolean(anchorEl)
   const gameClass = getClassByEnglishName(weapon.class)
 
@@ -105,33 +108,75 @@ export function WeaponCard({
           </Box>
         </Popover>
 
-        <Typography variant="caption" color="text.secondary" display="block" sx={{ mt: 1 }}>
-          {lang === 'zh' ? '黄色超频 · 平衡 (6/12级)' : 'Yellow OC · Balanced (Lv6/12)'}
-        </Typography>
-        {weapon.yellowOverclockNames && weapon.yellowOverclockNames.length > 0 ? (
-          <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5, mb: 0.5 }}>
-            {weapon.yellowOverclockNames.map((n) => (
-              <Chip key={n} size="small" label={n} color="warning" variant="outlined" />
-            ))}
+        {/* 黄色超频 · 平衡 */}
+        <Box sx={{ mt: 1 }}>
+          <Box display="flex" alignItems="center" sx={{ cursor: 'pointer' }} onClick={() => setYellowOpen(!yellowOpen)}>
+            <Typography variant="caption" color="text.secondary" sx={{ flexGrow: 1 }}>
+              {lang === 'zh' ? '黄色超频 · 平衡 (6/12级)' : 'Yellow OC · Balanced (Lv6/12)'}
+            </Typography>
+            {weapon.yellowOverclockNames && weapon.yellowOverclockNames.length > 0 && weapon.yellowOverclock ? (
+              <IconButton size="small">
+                {yellowOpen ? <ExpandLess fontSize="small" /> : <ExpandMore fontSize="small" />}
+              </IconButton>
+            ) : null}
           </Box>
-        ) : null}
-        <Typography variant="body2" sx={{ mb: 1, color: 'text.secondary' }}>
-          {weapon.yellowOverclock}
-        </Typography>
+          {weapon.yellowOverclockNames && weapon.yellowOverclockNames.length > 0 ? (
+            <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5, mb: 0.5 }}>
+              {weapon.yellowOverclockNames.map((n) => (
+                <Chip key={n} size="small" label={n} color="warning" variant="outlined" />
+              ))}
+            </Box>
+          ) : (
+            <Typography variant="body2" sx={{ mb: 1, color: 'text.secondary' }}>
+              {weapon.yellowOverclock}
+            </Typography>
+          )}
+          {weapon.yellowOverclockNames && weapon.yellowOverclockNames.length > 0 && (
+            <Collapse in={yellowOpen}>
+              <Typography
+                variant="body2"
+                sx={{ mb: 1, color: 'text.secondary', whiteSpace: 'pre-line' }}
+              >
+                {weapon.yellowOverclock.split('；').join('\n')}
+              </Typography>
+            </Collapse>
+          )}
+        </Box>
 
-        <Typography variant="caption" color="text.secondary" display="block">
-          {lang === 'zh' ? '红色超频 · 不稳定 (18级)' : 'Red OC · Unstable (Lv18)'}
-        </Typography>
-        {weapon.redOverclockNames && weapon.redOverclockNames.length > 0 ? (
-          <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5, mb: 0.5 }}>
-            {weapon.redOverclockNames.map((n) => (
-              <Chip key={n} size="small" label={n} color="error" variant="outlined" />
-            ))}
+        {/* 红色超频 · 不稳定 */}
+        <Box sx={{ mt: 1 }}>
+          <Box display="flex" alignItems="center" sx={{ cursor: 'pointer' }} onClick={() => setRedOpen(!redOpen)}>
+            <Typography variant="caption" color="text.secondary" sx={{ flexGrow: 1 }}>
+              {lang === 'zh' ? '红色超频 · 不稳定 (18级)' : 'Red OC · Unstable (Lv18)'}
+            </Typography>
+            {weapon.redOverclockNames && weapon.redOverclockNames.length > 0 && weapon.redOverclock ? (
+              <IconButton size="small">
+                {redOpen ? <ExpandLess fontSize="small" /> : <ExpandMore fontSize="small" />}
+              </IconButton>
+            ) : null}
           </Box>
-        ) : null}
-        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          {weapon.redOverclock}
-        </Typography>
+          {weapon.redOverclockNames && weapon.redOverclockNames.length > 0 ? (
+            <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5, mb: 0.5 }}>
+              {weapon.redOverclockNames.map((n) => (
+                <Chip key={n} size="small" label={n} color="error" variant="outlined" />
+              ))}
+            </Box>
+          ) : (
+            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+              {weapon.redOverclock}
+            </Typography>
+          )}
+          {weapon.redOverclockNames && weapon.redOverclockNames.length > 0 && (
+            <Collapse in={redOpen}>
+              <Typography
+                variant="body2"
+                sx={{ color: 'text.secondary', whiteSpace: 'pre-line' }}
+              >
+                {weapon.redOverclock.split('；').join('\n')}
+              </Typography>
+            </Collapse>
+          )}
+        </Box>
 
         {weapon.version !== '当前' && (
           <Typography variant="caption" sx={{ mt: 0.5, display: 'block', opacity: 0.6 }}>

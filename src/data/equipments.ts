@@ -2,6 +2,7 @@ import type { Equipment } from './types'
 
 // 自动生成自 references 底稿；官网名/官网效果来自官方 Wiki Survivor:Equipment（Artifacts 表，见 references/incremental-prd-round2-2026-07-08.md §6.2）。共 20 条。
 // 三明治/狂人头盔/挖他命 官方无 exact 对应名 → 标「待核」，不杜撰。
+// 官网效果已译为中文（2026-07-09 用户要求）。
 export const equipments: Equipment[] = [
   {
     name: "商店折扣券",
@@ -9,7 +10,7 @@ export const equipments: Equipment[] = [
     effect: "商店打折，生态专精初期值得刷",
     source: "局内附加",
     officialName: "DRG Coupon",
-    officialEffect: "Gives a 20% discount to all shop purchases",
+    officialEffect: "所有商店购买享 20% 折扣",
     version: "当前",
   },
   {
@@ -18,7 +19,7 @@ export const equipments: Equipment[] = [
     effect: "自身拾取弱时拿，增强拾取能力",
     source: "局内附加",
     officialName: "Company-issued Magnet",
-    officialEffect: "Spawns a magnet at end of stage that collects 50% of the XP",
+    officialEffect: "关卡结束时生成磁铁，收集 50% 的经验值",
     version: "当前",
   },
   {
@@ -27,7 +28,7 @@ export const equipments: Equipment[] = [
     effect: "吃红糖加血量上限，多碰瓷吃红糖",
     source: "局内附加",
     officialName: "Red Sugar Cube",
-    officialEffect: "Collecting Red Sugar increases your Max HP by 3",
+    officialEffect: "拾取红糖时最大生命值 +3",
     version: "当前",
   },
   {
@@ -36,7 +37,7 @@ export const equipments: Equipment[] = [
     effect: "挖矿时概率获得资源，适合钻机/高挖速",
     source: "局内附加",
     officialName: "Gold Scanner / Nitra Scanner / XP Scanner",
-    officialEffect: "Small chance to find Gold/Nitra/XP when mining rock",
+    officialEffect: "挖矿时有概率额外获得黄金/硝石/经验",
     version: "当前",
   },
   {
@@ -45,7 +46,7 @@ export const equipments: Equipment[] = [
     effect: "受伤获得经验，熔岩之心碰瓷岩浆好用",
     source: "局内附加",
     officialName: "Clipboard of Grudges",
-    officialEffect: "+10% XP Gain; Gain XP when you take damage",
+    officialEffect: "+10% 经验获取；受伤时获得经验",
     version: "当前",
   },
   {
@@ -54,7 +55,7 @@ export const equipments: Equipment[] = [
     effect: "抽别的职业武器，上下限大，勿轻易开",
     source: "局内附加",
     officialName: "Weapon Box",
-    officialEffect: "Equip an additional random level 6 weapon with a random overclock",
+    officialEffect: "额外装备一把随机的 6 级武器（含随机超频）",
     version: "当前",
   },
   {
@@ -63,7 +64,7 @@ export const equipments: Equipment[] = [
     effect: "直升 3 级，后期 T2",
     source: "局内附加",
     officialName: "Ancient Knowledge",
-    officialEffect: "Gain 3 Levels",
+    officialEffect: "立即获得 3 级",
     version: "当前",
   },
   {
@@ -72,7 +73,7 @@ export const equipments: Equipment[] = [
     effect: "-30%伤害 +30%暴击 +100%暴伤，后期 T0.5",
     source: "局内附加",
     officialName: "Squint-EE5",
-    officialEffect: "+30% Critical Chance, +100% Critical Damage, -30% Damage",
+    officialEffect: "+30% 暴击率，+100% 暴击伤害，-30% 伤害",
     version: "当前",
   },
   {
@@ -81,7 +82,7 @@ export const equipments: Equipment[] = [
     effect: "原版每分钟-50黄金+100%伤；新版本改永久叠伤",
     source: "局内附加",
     officialName: "Pay2Win Console",
-    officialEffect: "Increases damage (+2.5%) whenever you reroll, stacks up to 100",
+    officialEffect: "每次重骰时伤害 +2.5%，可叠加至 100 层",
     version: "当前",
   },
   {
@@ -90,7 +91,7 @@ export const equipments: Equipment[] = [
     effect: "降挖速，加伤和装填；小心被地刺困",
     source: "局内附加",
     officialName: "Turbo Encabulator",
-    officialEffect: "+3% Damage, +3% Reload Speed, -5% Mining Speed for every equipped Overclock",
+    officialEffect: "每装备一个超频：+3% 伤害，+3% 装填速度，-5% 挖矿速度",
     version: "当前",
   },
   {
@@ -99,7 +100,7 @@ export const equipments: Equipment[] = [
     effect: "回血，配能量棒抵消扣血",
     source: "局内附加",
     officialName: "待核（疑似 Tactical Cookie）",
-    officialEffect: "Tactical Cookie: Heals 50% Max HP when entering Drop Pod（待核：官方无 exact 对应）",
+    officialEffect: "Tactical Cookie：进入逃生舱时回复 50% 最大生命值（待核：官方无 exact 对应）",
     version: "待核",
   },
   {
@@ -108,7 +109,7 @@ export const equipments: Equipment[] = [
     effect: "回血，配狂人头盔提低血脉容错",
     source: "局内附加",
     officialName: "Salty Pretzel",
-    officialEffect: "+1 Armor for every 2% of missing HP",
+    officialEffect: "+1 护甲（每损失 2% 生命值）",
     version: "当前",
   },
   {
@@ -117,7 +118,7 @@ export const equipments: Equipment[] = [
     effect: "配三明治",
     source: "局内附加",
     officialName: "Energy Bars",
-    officialEffect: "+1% Damage, -3 Max HP for every player level",
+    officialEffect: "每级 +1% 伤害，-3 最大生命值",
     version: "当前",
   },
   {
@@ -126,7 +127,7 @@ export const equipments: Equipment[] = [
     effect: "提升升级回复血量，后期收益低",
     source: "局内附加",
     officialName: "待核（疑似 Vita-miner Pills）",
-    officialEffect: "Vita-miner Pills: +5% Max HP; increases healing on level up（待核：官方无 exact 对应）",
+    officialEffect: "Vita-miner Pills：+5% 最大生命值；升级时提升治疗效果（待核：官方无 exact 对应）",
     version: "待核",
   },
   {
@@ -144,7 +145,7 @@ export const equipments: Equipment[] = [
     effect: "加伤，直伤流关键",
     source: "局内附加",
     officialName: "Pickled Nitra",
-    officialEffect: "+2% Damage and -0.5% Move Speed for every Nitra you have",
+    officialEffect: "每拥有 1 Nitra：+2% 伤害，-0.5% 移动速度",
     version: "当前",
   },
   {
@@ -153,7 +154,7 @@ export const equipments: Equipment[] = [
     effect: "每次受伤+5%闪避，最高 5 层",
     source: "局内附加",
     officialName: "Reflex Calibrator",
-    officialEffect: "+5% Armor; +5% Dodge for 10s when taking damage, stacks 5",
+    officialEffect: "+5% 护甲；受伤时 +5% 闪避持续 10 秒，可叠 5 层",
     version: "当前",
   },
   {
@@ -163,7 +164,7 @@ export const equipments: Equipment[] = [
     source: "成就解锁",
     relatedAchievement: "油滑矮人（Slick, like butter / Greased Little Dwarf）",
     officialName: "Armor Grease",
-    officialEffect: "+5% Move Speed; +2% Dodge while moving, stacks 5",
+    officialEffect: "+5% 移动速度；移动时 +2% 闪避，可叠 5 层",
     version: "当前",
   },
   {
@@ -173,7 +174,7 @@ export const equipments: Equipment[] = [
     source: "成就解锁",
     relatedAchievement: "硝石井喷（Sprinkle of Nitra，收集 2000 Nitra）",
     officialName: "Nitragenic Powder",
-    officialEffect: "+0.5% Critical Chance for every Nitra, max 500 stacks",
+    officialEffect: "每拥有 1 Nitra：+0.5% 暴击率，上限 500 层",
     version: "当前",
   },
   {
@@ -183,7 +184,7 @@ export const equipments: Equipment[] = [
     source: "成就解锁",
     relatedAchievement: "永不空军（Got bait?，单次击杀 3 只 Huuli Hoarders）",
     officialName: "Huuli Bait",
-    officialEffect: "Lure out a bunch of Huuli Hoarders",
+    officialEffect: "引诱一群 Huuli Hoarders（嗜矿异虫）",
     version: "当前",
   },
 ]
