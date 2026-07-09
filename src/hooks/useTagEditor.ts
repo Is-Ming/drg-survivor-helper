@@ -1,6 +1,6 @@
-// 标签/分类编辑器：管理成就分类、武器标签、装备类型（localStorage 持久化）
+// 标签/分类编辑器：管理成就分类、武器标签（中英双语）、装备类型（localStorage 持久化）
 import { useCallback, useState } from 'react'
-import { ACHIEVEMENT_CATEGORIES } from '../data/enums'
+import { ACHIEVEMENT_CATEGORIES, WEAPON_TAG_LABEL } from '../data/enums'
 
 const STORAGE_KEY = 'drg-tag-edits'
 const ALL_RESET_PREFIXES = [
@@ -13,11 +13,8 @@ const ALL_RESET_PREFIXES = [
 ]
 
 interface TagData {
-  /** 自定义成就分类列表（覆盖默认） */
   achievementCategories?: string[]
-  /** 自定义武器标签列表（覆盖默认） */
   weaponTags?: string[]
-  /** 自定义装备类型列表（覆盖默认） */
   equipmentTypes?: string[]
 }
 
@@ -51,19 +48,30 @@ export function getAchievementCategories(): string[] {
   return data.achievementCategories ?? ACHIEVEMENT_CATEGORIES
 }
 
-/** 获取自定义武器标签列表（回落默认） */
+/** 获取自定义武器标签ID列表（回落默认） */
 export function getWeaponTags(): string[] {
   const data = loadData()
   return data.weaponTags ?? DEFAULT_WEAPON_TAGS
 }
 
-/** 获取自定义装备类型列表（回落默认） */
+/** 获取装备类型列表（回落默认） */
 export function getEquipmentTypes(): string[] {
   const data = loadData()
   return data.equipmentTypes ?? DEFAULT_EQUIPMENT_TYPES
 }
 
-/** 一键恢复所有自定义数据（清除所有 drg-* 前缀的 key） */
+/**
+ * 获取武器标签的显示名称（优先内置中英映射，回落原始ID）
+ * 用法: getWeaponTagLabel('KINETIC', 'zh') → '动能'
+ */
+export function getWeaponTagLabel(tag: string, lang: 'zh' | 'en'): string {
+  if (WEAPON_TAG_LABEL[tag as keyof typeof WEAPON_TAG_LABEL]) {
+    return WEAPON_TAG_LABEL[tag as keyof typeof WEAPON_TAG_LABEL][lang]
+  }
+  return tag
+}
+
+/** 一键恢复所有自定义数据 */
 export function resetAllCustomData(): void {
   try {
     for (const prefix of ALL_RESET_PREFIXES) {
@@ -105,12 +113,5 @@ export function useTagEditor() {
     setVersion((v) => v + 1)
   }, [])
 
-  return {
-    getCategories,
-    getTags,
-    getTypes,
-    setCategories,
-    setTags,
-    setTypes,
-  }
+  return { getCategories, getTags, getTypes, setCategories, setTags, setTypes }
 }

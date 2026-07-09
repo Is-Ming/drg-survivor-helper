@@ -1,7 +1,8 @@
-// 武器筛选：职业 + 评级 + 已选标签 chips + 标签多选下拉（共存共享 state.weapon.tags）
+// 武器筛选：职业 + 评级 + 标签多选（标签来自标签管理，实时联动）
 import { Box, FormControl, InputLabel, MenuItem, Select, Chip, Autocomplete, TextField } from '@mui/material'
 import { RATINGS, WEAPON_CLASSES, WEAPON_CLASS_LABEL, WEAPON_TAG_LABEL, WEAPON_TAG_GROUPS } from '../../data/enums'
 import type { Lang, Rating, SearchState, WeaponClass, WeaponTag } from '../../data/types'
+import { getWeaponTags, getWeaponTagLabel } from '../../hooks/useTagEditor'
 
 export function WeaponFilters({
   state,
@@ -18,10 +19,25 @@ export function WeaponFilters({
   removeWeaponTag: (tag: WeaponTag) => void
   lang: Lang
 }) {
-  // 标签下拉扁平选项（按四类顺序），用于 Autocomplete 分组
-  const allTags: WeaponTag[] = WEAPON_TAG_GROUPS.flatMap((g) => g.tags)
+  // 从标签管理读取自定义武器标签列表（实时联动）
+  const customTags = getWeaponTags()
+  // 对自定义标签按已有分组归类（未匹配的归入其他）
+  const groupedTags = WEAPON_TAG_GROUPS.map((g) => ({
+    group: g.group,
+    tags: g.tags.filter((t) => customTags.includes(t)),
+  }))
+  const otherTags = customTags.filter(
+    (t) => !WEAPON_TAG_GROUPS.some((g) => g.tags.includes(t as WeaponTag))
+  )
+  if (otherTags.length > 0) {
+    groupedTags.push({
+      group: lang === 'zh' ? { zh: '其他', en: 'Other' } : { zh: '其他', en: 'Other' },
+      tags: otherTags as WeaponTag[],
+    })
+  }
+
   const groupLabelOf = (tag: WeaponTag): string => {
-    const g = WEAPON_TAG_GROUPS.find((grp) => grp.tags.includes(tag))
+    const g = groupedTags.find((grp) => grp.tags.includes(tag))
     return g ? g.group[lang] : ''
   }
 
@@ -54,21 +70,23 @@ export function WeaponFilters({
         >
           <MenuItem value="">{lang === 'zh' ? '全部' : 'All'}</MenuItem>
           {RATINGS.map((r) => (
-            <MenuItem key={r} value={r}>
-              {r}
-            </MenuItem>
+            <MenuItem key={r} value={r}>{r}</MenuItem>
           ))}
         </Select>
       </FormControl>
 
-      {/* 标签多选 + 可搜索下拉（四类分组），写入 state.weapon.tags，与 chips 共存 */}
+      {/* 标签多选（从标签管理读取） */}
       <Autocomplete
         multiple
         size="small"
-        options={allTags}
+        options={customTags as WeaponTag[]}
         value={state.weapon.tags}
         groupBy={(option) => groupLabelOf(option)}
-        getOptionLabel={(option) => (lang === 'zh' ? `${WEAPON_TAG_LABEL[option].zh}(${WEAPON_TAG_LABEL[option].en})` : WEAPON_TAG_LABEL[option].en)}
+        getOptionLabel={(option) => {
+          const en = WEAPON_TAG_LABEL[option]?.en ?? option
+          const zh = WEAPON_TAG_LABEL[option]?.zh ?? option
+          return lang === 'zh' ? `${zh}(${en})` : en
+        }}
         isOptionEqualToValue={(opt, val) => opt === val}
         onChange={(_e, value) => {
           const added = value.filter((t) => !state.weapon.tags.includes(t))
@@ -87,7 +105,7 @@ export function WeaponFilters({
           <Chip
             key={tag}
             size="small"
-            label={lang === 'zh' ? `${WEAPON_TAG_LABEL[tag].zh}(${WEAPON_TAG_LABEL[tag].en})` : WEAPON_TAG_LABEL[tag].en}
+            label={getWeaponTagLabel(tag, lang)}
             color="primary"
             onDelete={() => removeWeaponTag(tag)}
           />
