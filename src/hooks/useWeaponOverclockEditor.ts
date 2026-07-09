@@ -1,10 +1,11 @@
 // 武器超频引用编辑器：管理每把武器关联的超频ID列表，持久化 localStorage
-import { useCallback } from 'react'
+import { useCallback, useState } from 'react'
 import { weapons } from '../data/weapons'
 
 const STORAGE_PREFIX = 'drg-wpn-oc-'
 
-function getIds(englishName: string, type: 'yellow' | 'red'): string[] {
+// ======== 纯函数（可外部调用，测试用） ========
+function getDefaultIds(englishName: string, type: 'yellow' | 'red'): string[] {
   const w = weapons.find((x) => x.englishName === englishName)
   if (!w) return []
   const field = type === 'yellow' ? 'yellowOverclockIds' : 'redOverclockIds'
@@ -29,33 +30,35 @@ function loadIds(englishName: string, type: 'yellow' | 'red'): string[] | null {
   return null
 }
 
-/** 获取武器某类型超频ID列表（优先自定义，回落默认） */
+/** 获取武器某类型超频ID列表（优先自定义，回落默认）—— 纯函数 */
 export function getWeaponOverclockIds(englishName: string, type: 'yellow' | 'red'): string[] {
   const custom = loadIds(englishName, type)
-  return custom ?? getIds(englishName, type)
+  return custom ?? getDefaultIds(englishName, type)
 }
 
 export function useWeaponOverclockEditor() {
-  /** 从武器移除一个超频 */
+  // forceUpdate 计数器，每次增删递增，触发消费组件重渲染
+  const [version, setVersion] = useState(0)
+
   const removeOverclock = useCallback((englishName: string, type: 'yellow' | 'red', id: string) => {
     const current = getWeaponOverclockIds(englishName, type)
     saveIds(englishName, type, current.filter((x) => x !== id))
+    setVersion((v) => v + 1)
   }, [])
 
-  /** 向武器添加一个超频 */
   const addOverclock = useCallback((englishName: string, type: 'yellow' | 'red', id: string) => {
     const current = getWeaponOverclockIds(englishName, type)
     if (!current.includes(id)) {
       saveIds(englishName, type, [...current, id])
+      setVersion((v) => v + 1)
     }
   }, [])
 
-  /** 重置武器超频引用（回到默认） */
   const resetOverclocks = useCallback((englishName: string) => {
     try {
       localStorage.removeItem(STORAGE_PREFIX + englishName)
     } catch { /* ignore */ }
   }, [])
 
-  return { getWeaponOverclockIds, removeOverclock, addOverclock, resetOverclocks }
+  return { getWeaponOverclockIds, removeOverclock, addOverclock, resetOverclocks, version }
 }

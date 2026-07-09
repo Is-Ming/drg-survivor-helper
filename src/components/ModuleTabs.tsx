@@ -1,4 +1,4 @@
-// 模块 Tab 导航：普通页面隐藏超频Tab
+// 模块 Tab 导航：普通页面隐藏超频/标签Tab
 import { Tabs, Tab } from '@mui/material'
 import { useLang } from '../i18n/LangContext'
 import type { ModuleKey } from '../data/types'
@@ -7,10 +7,12 @@ export function ModuleTabs({
   active,
   onChange,
   showOverclocks = false,
+  showTags = false,
 }: {
   active: ModuleKey
   onChange: (m: ModuleKey) => void
   showOverclocks?: boolean
+  showTags?: boolean
 }) {
   const { t } = useLang()
   return (
@@ -26,6 +28,7 @@ export function ModuleTabs({
       <Tab value="weapons" label={t('tab.weapons')} />
       <Tab value="equipments" label={t('tab.equipments')} />
       {showOverclocks && <Tab value="overclocks" label={t('tab.overclocks')} />}
+      {showTags && <Tab value="tags" label={t('tab.tags')} />}
     </Tabs>
   )
 }

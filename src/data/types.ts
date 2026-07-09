@@ -149,7 +149,7 @@ export interface UiPreferences {
 }
 
 /** 当前激活模块 */
-export type ModuleKey = 'achievements' | 'weapons' | 'equipments' | 'overclocks'
+export type ModuleKey = 'achievements' | 'weapons' | 'equipments' | 'overclocks' | 'tags'
 
 /** 疑难分档 */
 export type DifficultyTier = 'extreme' | 'hard' | 'moderate'

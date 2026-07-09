@@ -1,9 +1,9 @@
 // 武器卡片：评级徽章 + 黄/红超频(名+效果1:1配对) + 职业 chip + 官网标签 chip
-// editable 模式：可增删超频引用
+// editable 模式：可增删超频引用 + 编辑评级
 import { useState } from 'react'
 import { Card, CardContent, Typography, Box, Chip, Popover, IconButton, Select, MenuItem, Button, FormControl } from '@mui/material'
 import CloseIcon from '@mui/icons-material/Close'
-import type { Lang, Weapon, WeaponTag } from '../../data/types'
+import type { Lang, Rating, Weapon, WeaponTag } from '../../data/types'
 import { WEAPON_CLASS_LABEL } from '../../data/enums'
 import { getClassByEnglishName } from '../../data/classes'
 import { weapons } from '../../data/weapons'
@@ -11,6 +11,18 @@ import { overclocks } from '../../data/overclocks'
 import { RatingBadge } from '../badges/RatingBadge'
 import { TagChip } from '../badges/TagChip'
 import { useWeaponOverclockEditor } from '../../hooks/useWeaponOverclockEditor'
+
+const RATING_STORAGE_PREFIX = 'drg-wpn-rating-'
+
+function getRating(englishName: string, defaultRating: Rating): Rating {
+  try {
+    return (localStorage.getItem(RATING_STORAGE_PREFIX + englishName) as Rating) || defaultRating
+  } catch { return defaultRating }
+}
+
+function setRating(englishName: string, rating: Rating): void {
+  try { localStorage.setItem(RATING_STORAGE_PREFIX + englishName, rating) } catch { /* ignore */ }
+}
 
 export function WeaponCard({
   weapon,
@@ -32,6 +44,7 @@ export function WeaponCard({
   const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null)
   const [addType, setAddType] = useState<'yellow' | 'red' | null>(null)
   const [selectedOcId, setSelectedOcId] = useState('')
+  const [currentRating, setCurrentRating] = useState<Rating>(getRating(weapon.englishName, weapon.rating))
   const open = Boolean(anchorEl)
   const gameClass = getClassByEnglishName(weapon.class)
   const ocEditor = useWeaponOverclockEditor()
@@ -53,6 +66,11 @@ export function WeaponCard({
     ocEditor.addOverclock(weapon.englishName, addType, selectedOcId)
     setAddType(null)
     setSelectedOcId('')
+  }
+
+  const handleRatingChange = (r: Rating) => {
+    setRating(weapon.englishName, r)
+    setCurrentRating(r)
   }
 
   const classLabel =
@@ -79,7 +97,21 @@ export function WeaponCard({
               {lang === 'zh' ? weapon.englishName : weapon.chineseName}
             </Typography>
           </Box>
-          <RatingBadge rating={weapon.rating} lang={lang} />
+          {editable ? (
+            <FormControl size="small" sx={{ minWidth: 60 }}>
+              <Select
+                value={currentRating}
+                onChange={(e) => handleRatingChange(e.target.value as Rating)}
+                variant="standard"
+              >
+                {(['S', 'A', 'B', 'C', '-'] as Rating[]).map((r) => (
+                  <MenuItem key={r} value={r}>{r}</MenuItem>
+                ))}
+              </Select>
+            </FormControl>
+          ) : (
+            <RatingBadge rating={currentRating} lang={lang} />
+          )}
         </Box>
 
         <Box mt={1} mb={1} display="flex" flexWrap="wrap" gap={0.5} alignItems="center">
@@ -137,7 +169,7 @@ export function WeaponCard({
           </Box>
         </Popover>
 
-        {/* 黄色超频 · 平衡 */}
+        {/* 黄色超频 · 平衡 — 名字不换行，效果正常换行 */}
         {yellowIds.length > 0 ? (
           <Box sx={{ mt: 1 }}>
             <Typography variant="caption" color="text.secondary" display="block" sx={{ mb: 0.5 }}>
@@ -148,18 +180,19 @@ export function WeaponCard({
               const effects = weapon.yellowOverclock.split('；')
               const eff = getOverclockEffect ? getOverclockEffect(id) : (effects[i] ?? '')
               return (
-                <Typography key={id} variant="body2" sx={{ mb: 0.3, display: 'flex', alignItems: 'center' }}>
+                <Typography key={id} variant="body2" sx={{ mb: 0.3, display: 'flex', alignItems: 'flex-start' }}>
                   {editable && (
                     <IconButton
                       size="small"
-                      sx={{ mr: 0.5, color: 'error.light' }}
+                      sx={{ mr: 0.5, mt: '-2px', color: 'error.light' }}
                       onClick={() => ocEditor.removeOverclock(weapon.englishName, 'yellow', id)}
                     >
                       <CloseIcon fontSize="inherit" />
                     </IconButton>
                   )}
-                  <Box component="span" fontWeight={600} color="warning.main">{name}</Box>
-                  {lang === 'zh' ? '：' : ': '}{eff}
+                  <Box component="span" fontWeight={600} color="warning.main" sx={{ whiteSpace: 'nowrap', flexShrink: 0 }}>{name}</Box>
+                  <Box component="span" sx={{ mx: 0.5, flexShrink: 0 }}>{lang === 'zh' ? '：' : ': '}</Box>
+                  <Box component="span" sx={{ wordBreak: 'break-word' }}>{eff}</Box>
                 </Typography>
               )
             })}
@@ -181,18 +214,19 @@ export function WeaponCard({
               const effects = weapon.redOverclock.split('；')
               const eff = getOverclockEffect ? getOverclockEffect(id) : (effects[i] ?? '')
               return (
-                <Typography key={id} variant="body2" sx={{ mb: 0.3, display: 'flex', alignItems: 'center' }}>
+                <Typography key={id} variant="body2" sx={{ mb: 0.3, display: 'flex', alignItems: 'flex-start' }}>
                   {editable && (
                     <IconButton
                       size="small"
-                      sx={{ mr: 0.5, color: 'error.light' }}
+                      sx={{ mr: 0.5, mt: '-2px', color: 'error.light' }}
                       onClick={() => ocEditor.removeOverclock(weapon.englishName, 'red', id)}
                     >
                       <CloseIcon fontSize="inherit" />
                     </IconButton>
                   )}
-                  <Box component="span" fontWeight={600} color="error.main">{name}</Box>
-                  {lang === 'zh' ? '：' : ': '}{eff}
+                  <Box component="span" fontWeight={600} color="error.main" sx={{ whiteSpace: 'nowrap', flexShrink: 0 }}>{name}</Box>
+                  <Box component="span" sx={{ mx: 0.5, flexShrink: 0 }}>{lang === 'zh' ? '：' : ': '}</Box>
+                  <Box component="span" sx={{ wordBreak: 'break-word' }}>{eff}</Box>
                 </Typography>
               )
             })}

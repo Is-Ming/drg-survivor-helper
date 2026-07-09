@@ -1,4 +1,4 @@
-// 管理页面：完整 4 个 TAB + 全部编辑权限 + 登录门控
+// 管理页面：完整 5 个 TAB + 全部编辑权限 + 登录门控
 import { useState, type ReactNode } from 'react'
 import { Box, Typography } from '@mui/material'
 import { useLang } from '../i18n/LangContext'
@@ -14,6 +14,7 @@ import { WeaponCard } from '../components/cards/WeaponCard'
 import { EquipmentCard } from '../components/cards/EquipmentCard'
 import { OverclockCard } from '../components/cards/OverclockCard'
 import { OverclockFilters } from '../components/filters/OverclockFilters'
+import { TagManager } from '../components/TagManager'
 import { Footer } from '../components/Footer'
 import { AdminLogin, checkAdminLoggedIn } from '../components/AdminLogin'
 import type { ModuleKey } from '../data/types'
@@ -41,6 +42,22 @@ function AdminPageInner() {
 
   // 超频筛选结果
   const filteredOverclocks = useOverclockFilter({ ...ocFilterState, query })
+
+  // 标签管理页（独立渲染，不经过卡片网格）
+  if (state.activeModule === 'tags') {
+    return (
+      <Box component="main" sx={{ maxWidth: 1280, mx: 'auto', px: { xs: 1.5, sm: 3 }, py: 2 }}>
+        <ModuleTabs
+          active={state.activeModule}
+          onChange={(m: ModuleKey) => f.setActiveModule(m)}
+          showOverclocks
+          showTags
+        />
+        <TagManager />
+        <Footer />
+      </Box>
+    )
+  }
 
   let cards: ReactNode = null
   if (state.activeModule === 'achievements') {
@@ -103,6 +120,7 @@ function AdminPageInner() {
         active={state.activeModule}
         onChange={(m: ModuleKey) => f.setActiveModule(m)}
         showOverclocks
+        showTags
       />
       {state.activeModule === 'overclocks' ? (
         <OverclockFilters state={ocFilterState} setFilter={(p) => setOcFilterState((s) => ({ ...s, ...p }))} lang={lang} />

@@ -11,6 +11,7 @@ export const ui: UiDict = {
   'tab.weapons': { zh: '武器', en: 'Weapons' },
   'tab.equipments': { zh: '装备', en: 'Equipment' },
   'tab.overclocks': { zh: '超频管理', en: 'Overclocks' },
+  'tab.tags': { zh: '标签管理', en: 'Tags' },
 
   'search.placeholder': { zh: '搜索中/英文名、标签、条件…', en: 'Search name / tag / condition…' },
   'search.label': { zh: '全局搜索', en: 'Global Search' },
