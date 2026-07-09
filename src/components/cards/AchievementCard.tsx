@@ -31,10 +31,10 @@ export function AchievementCard({
       if (saved.chineseName) setEditName(saved.chineseName)
       else setEditName(ach.chineseName)
       if (saved.unlockCondition) setEditCondition(saved.unlockCondition)
-      else setEditCondition(ach.unlockCondition)
+      else setEditCondition(lang === 'zh' ? ach.unlockCondition : (ach.enUnlockCondition || ach.unlockCondition))
     } catch {
       setEditName(ach.chineseName)
-      setEditCondition(ach.unlockCondition)
+      setEditCondition(lang === 'zh' ? ach.unlockCondition : (ach.enUnlockCondition || ach.unlockCondition))
     }
   }
 
@@ -43,7 +43,9 @@ export function AchievementCard({
   }, [editable, ach.englishName])
 
   const displayName = editable ? editName || ach.chineseName : ach.chineseName
-  const displayCondition = editable ? editCondition || ach.unlockCondition : ach.unlockCondition
+  const displayCondition = editable
+    ? editCondition || (lang === 'zh' ? ach.unlockCondition : (ach.enUnlockCondition || ach.unlockCondition))
+    : lang === 'zh' ? ach.unlockCondition : (ach.enUnlockCondition || ach.unlockCondition)
   const tier = getDifficultyTier(ach.completionRate)
   const borderColor =
     highlight && tier

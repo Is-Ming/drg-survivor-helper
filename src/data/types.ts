@@ -30,6 +30,8 @@ export interface Achievement {
   chineseName: string
   category: AchievementCategory
   unlockCondition: string
+  /** 英文解锁条件（TrueAchievements 来源） */
+  enUnlockCondition?: string
   /** 仅生物群系类有值；其余为 undefined */
   biomeTier?: BiomeTier
   /** 关键：达成率。239/300 有值，61 条为空 → 用 number | null。
