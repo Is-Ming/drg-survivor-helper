@@ -66,10 +66,17 @@ export function AchievementCard({
 
   const [catPickerOpen, setCatPickerOpen] = useState(false)
   const allCategories = getAchievementCategories()
-  const catLabel = ACHIEVEMENT_CATEGORY_LABEL[ach.category as keyof typeof ACHIEVEMENT_CATEGORY_LABEL]?.[lang] ?? ach.category
+  // 分类显示：优先读取 localStorage 已保存的自定义分类，回落硬编码值
+  const currentCategory = (() => {
+    try {
+      const saved = JSON.parse(localStorage.getItem(storageKey) || '{}')
+      return saved.category || ach.category
+    } catch { return ach.category }
+  })()
+  const catLabel = ACHIEVEMENT_CATEGORY_LABEL[currentCategory as keyof typeof ACHIEVEMENT_CATEGORY_LABEL]?.[lang] ?? currentCategory
 
   const handleCategoryChange = (newCat: string) => {
-    if (newCat !== ach.category) {
+    if (newCat !== currentCategory) {
       commitEdit('category', newCat)
     }
   }
@@ -171,7 +178,7 @@ export function AchievementCard({
         onClose={() => setCatPickerOpen(false)}
         title={lang === 'zh' ? '选择分类' : 'Select Category'}
         availableTags={allCategories}
-        selectedTags={[ach.category]}
+        selectedTags={[currentCategory]}
         onToggle={(tag) => handleCategoryChange(tag)}
         getLabel={(tag) => ACHIEVEMENT_CATEGORY_LABEL[tag as keyof typeof ACHIEVEMENT_CATEGORY_LABEL]?.[lang] ?? tag}
         lang={lang}

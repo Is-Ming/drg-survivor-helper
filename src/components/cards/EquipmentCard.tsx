@@ -44,15 +44,21 @@ export function EquipmentCard({
 
   const [typePickerOpen, setTypePickerOpen] = useState(false)
   const allEqTypes = getEquipmentTypes()
-
-  const eqTypeLabel = allEqTypes.includes(equip.type)
-    ? (lang === 'zh' ? equip.type : ({
+  // 类型显示：优先读取 localStorage 已保存的自定义类型，回落硬编码值
+  const currentType = (() => {
+    try {
+      const saved = JSON.parse(localStorage.getItem(storageKey) || '{}')
+      return saved.type || equip.type
+    } catch { return equip.type }
+  })()
+  const eqTypeLabel = allEqTypes.includes(currentType)
+    ? (lang === 'zh' ? currentType : (({
         '生存': 'Survival', '发育': 'Development', '战力': 'Combat Power',
         '拾取': 'Loot', '经验': 'XP', '武器': 'Weapon', '直伤/混伤': 'Raw/Hybrid',
         '生存/升级': 'Survival/Level', '直伤核心': 'Raw Core', '闪避': 'Dodge',
         '暴击': 'Crit', '召唤': 'Summon',
-      }[equip.type] ?? equip.type))
-    : equip.type
+      } as Record<string, string>)[currentType] ?? currentType))
+    : currentType
 
   const handleTypeChange = (newType: string) => {
     doSave('type', newType)
@@ -179,7 +185,7 @@ export function EquipmentCard({
         onClose={() => setTypePickerOpen(false)}
         title={lang === 'zh' ? '选择装备类型' : 'Select Type'}
         availableTags={allEqTypes}
-        selectedTags={[equip.type]}
+        selectedTags={[currentType]}
         onToggle={(tag) => {
           handleTypeChange(tag)
           setTypePickerOpen(false)
