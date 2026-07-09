@@ -113,5 +113,5 @@ export function useTagEditor() {
     setVersion((v) => v + 1)
   }, [])
 
-  return { getCategories, getTags, getTypes, setCategories, setTags, setTypes }
+  return { getCategories, getTags, getTypes, setCategories, setTags, setTypes, version }
 }

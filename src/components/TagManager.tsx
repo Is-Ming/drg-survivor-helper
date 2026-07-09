@@ -123,6 +123,7 @@ export function TagManager() {
       <Card>
         <CardContent>
           <PlainTagList
+            key={'cat-' + editor.version}
             title={lang === 'zh' ? '📁 成就分类' : '📁 Achievement Categories'}
             items={editor.getCategories()}
             onSave={editor.setCategories}
@@ -132,6 +133,7 @@ export function TagManager() {
           <WeaponTagList items={editor.getTags()} onSave={editor.setTags} />
           <Divider sx={{ my: 2 }} />
           <PlainTagList
+            key={'type-' + editor.version}
             title={lang === 'zh' ? '🔧 装备类型' : '🔧 Equipment Types'}
             items={editor.getTypes()}
             onSave={editor.setTypes}
