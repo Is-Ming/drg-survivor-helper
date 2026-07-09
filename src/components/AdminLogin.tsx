@@ -12,8 +12,8 @@ import {
 } from '@mui/material'
 import { useLang } from '../i18n/LangContext'
 
-// SHA-256 hash of "123qwe!@#QWE" (预计算，不可逆)
-const ADMIN_PASSWORD_HASH = '54f3ebc9d00ce107fbaa9e729f9996cda43dd4e75717187848828f8ddc540750'
+// 管理密码 SHA-256 哈希（预计算，不可逆，明文不存于代码）
+const ADMIN_PASSWORD_HASH = '86a6c90c00c971ae42f9f6e36c73277f79fe0ad823dc3d335c2b25df16bd7d4b'
 const ADMIN_STORAGE_KEY = 'drg-helper-admin-token'
 
 /**
