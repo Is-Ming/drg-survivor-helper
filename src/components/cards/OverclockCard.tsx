@@ -1,54 +1,63 @@
-// 超频卡片：名称可内联编辑 + 效果展示
+// 超频卡片：名称 + 效果可内联编辑，支持中英切换
 import { useState, useRef, useEffect } from 'react'
 import { Card, CardContent, Typography, Box, Chip, TextField } from '@mui/material'
-import type { Overclock } from '../../data/types'
+import type { Overclock, Lang } from '../../data/types'
 
 export function OverclockCard({
   oc,
   currentName,
-  onNameChange,
+  currentEffect,
+  onSave,
+  lang,
 }: {
   oc: Overclock
   currentName: string
-  onNameChange: (id: string, name: string) => void
+  currentEffect: string
+  onSave: (id: string, patch: { chineseName?: string; effect?: string }) => void
+  lang: Lang
 }) {
-  const [editing, setEditing] = useState(false)
-  const [draft, setDraft] = useState(currentName)
-  const inputRef = useRef<HTMLInputElement>(null)
+  const [editingName, setEditingName] = useState(false)
+  const [editingEffect, setEditingEffect] = useState(false)
+  const [nameDraft, setNameDraft] = useState(currentName)
+  const [effectDraft, setEffectDraft] = useState(currentEffect)
+  const nameInput = useRef<HTMLInputElement>(null)
+  const effectInput = useRef<HTMLInputElement>(null)
 
-  // 当外部 currentName 变化时同步 draft
-  useEffect(() => {
-    setDraft(currentName)
-  }, [currentName])
+  useEffect(() => { setNameDraft(currentName) }, [currentName])
+  useEffect(() => { setEffectDraft(currentEffect) }, [currentEffect])
+  useEffect(() => { if (editingName && nameInput.current) nameInput.current.focus() }, [editingName])
+  useEffect(() => { if (editingEffect && effectInput.current) effectInput.current.focus() }, [editingEffect])
 
-  useEffect(() => {
-    if (editing && inputRef.current) inputRef.current.focus()
-  }, [editing])
+  const saveName = () => {
+    const v = nameDraft.trim()
+    if (v && v !== currentName) onSave(oc.id, { chineseName: v })
+    else setNameDraft(currentName)
+    setEditingName(false)
+  }
 
-  const handleSave = () => {
-    const trimmed = draft.trim()
-    if (trimmed && trimmed !== currentName) onNameChange(oc.id, trimmed)
-    setEditing(false)
+  const saveEffect = () => {
+    const v = effectDraft.trim()
+    if (v && v !== currentEffect) onSave(oc.id, { effect: v })
+    else setEffectDraft(currentEffect)
+    setEditingEffect(false)
   }
 
   return (
     <Card sx={{ height: '100%' }}>
       <CardContent>
-        <Box display="flex" justifyContent="space-between" alignItems="flex-start" gap={1}>
+        <Box display="flex" justifyContent="space-between" alignItems="flex-start" gap={1} mb={1}>
           <Box minWidth={0} flexGrow={1}>
-            {editing ? (
+            {editingName ? (
               <TextField
-                inputRef={inputRef}
+                inputRef={nameInput}
                 size="small"
-                value={draft}
-                onChange={(e) => setDraft(e.target.value)}
-                onBlur={handleSave}
+                fullWidth
+                value={nameDraft}
+                onChange={(e) => setNameDraft(e.target.value)}
+                onBlur={saveName}
                 onKeyDown={(e) => {
-                  if (e.key === 'Enter') handleSave()
-                  if (e.key === 'Escape') {
-                    setDraft(currentName)
-                    setEditing(false)
-                  }
+                  if (e.key === 'Enter') saveName()
+                  if (e.key === 'Escape') { setNameDraft(currentName); setEditingName(false) }
                 }}
                 sx={{ '& input': { fontWeight: 700, fontSize: '0.875rem' } }}
               />
@@ -58,8 +67,8 @@ export function OverclockCard({
                 fontWeight={700}
                 noWrap
                 sx={{ cursor: 'pointer', '&:hover': { textDecoration: 'underline' } }}
-                onClick={() => setEditing(true)}
-                title="点击编辑名称"
+                onClick={() => setEditingName(true)}
+                title={lang === 'zh' ? '点击编辑名称' : 'Click to edit name'}
               >
                 {currentName}
               </Typography>
@@ -70,15 +79,42 @@ export function OverclockCard({
           </Box>
           <Chip
             size="small"
-            label={oc.type === 'balanced' ? '平衡' : '不稳定'}
+            label={
+              oc.type === 'balanced'
+                ? (lang === 'zh' ? '平衡' : 'Balanced')
+                : (lang === 'zh' ? '不稳定' : 'Unstable')
+            }
             color={oc.type === 'balanced' ? 'warning' : 'error'}
             variant="outlined"
           />
         </Box>
 
-        <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
-          {oc.effect}
-        </Typography>
+        {editingEffect ? (
+          <TextField
+            inputRef={effectInput}
+            size="small"
+            fullWidth
+            multiline
+            maxRows={3}
+            value={effectDraft}
+            onChange={(e) => setEffectDraft(e.target.value)}
+            onBlur={saveEffect}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' && !e.shiftKey) saveEffect()
+              if (e.key === 'Escape') { setEffectDraft(currentEffect); setEditingEffect(false) }
+            }}
+          />
+        ) : (
+          <Typography
+            variant="body2"
+            color="text.secondary"
+            sx={{ cursor: 'pointer', '&:hover': { textDecoration: 'underline' } }}
+            onClick={() => setEditingEffect(true)}
+            title={lang === 'zh' ? '点击编辑效果' : 'Click to edit effect'}
+          >
+            {currentEffect}
+          </Typography>
+        )}
       </CardContent>
     </Card>
   )

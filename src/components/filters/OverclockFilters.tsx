@@ -1,4 +1,4 @@
-// 超频筛选：类型 ToggleButton
+// 超频筛选：类型 ToggleButton（多语言）
 import { Box, ToggleButton, ToggleButtonGroup } from '@mui/material'
 import type { Lang } from '../../data/types'
 import type { OverclockFilterState } from '../../hooks/useOverclockFilter'
