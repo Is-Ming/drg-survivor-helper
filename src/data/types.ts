@@ -80,6 +80,20 @@ export interface GameClass {
 /** 强度评级（攻略作者主观，UI 须标注仅供参考，决策 7） */
 export type Rating = 'S' | 'A' | 'B' | 'C' | '-'
 
+/** 超频主表条目（用于超频管理标签页与武器引用） */
+export interface Overclock {
+  /** 唯一标识，kebab-case */
+  id: string
+  /** 英文官方名 */
+  englishName: string
+  /** 用户可选中文名（可在超频管理页编辑，持久化 localStorage） */
+  chineseName: string
+  /** 平衡型(黄) / 不稳定型(红) */
+  type: 'balanced' | 'unstable'
+  /** 效果描述 */
+  effect: string
+}
+
 export interface Weapon {
   englishName: string
   chineseName: string
@@ -90,10 +104,10 @@ export interface Weapon {
   yellowOverclock: string
   /** 红色超频（18 级），整列文本展示 */
   redOverclock: string
-  /** 黄色超频正式名字（官方共享超频池，R3） */
-  yellowOverclockNames?: string[]
-  /** 红色超频正式名字（官方共享超频池，R3） */
-  redOverclockNames?: string[]
+  /** 黄色超频 ID 列表（引用 overclocks 主表） */
+  yellowOverclockIds?: string[]
+  /** 红色超频 ID 列表（引用 overclocks 主表） */
+  redOverclockIds?: string[]
   rating: Rating
   /** 版本标记；允许 '待核(规范名映射)'（决策 6） */
   version: string
@@ -131,7 +145,7 @@ export interface UiPreferences {
 }
 
 /** 当前激活模块 */
-export type ModuleKey = 'achievements' | 'weapons' | 'equipments'
+export type ModuleKey = 'achievements' | 'weapons' | 'equipments' | 'overclocks'
 
 /** 疑难分档 */
 export type DifficultyTier = 'extreme' | 'hard' | 'moderate'

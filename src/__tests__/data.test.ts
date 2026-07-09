@@ -81,12 +81,12 @@ describe('数据字段合法性', () => {
 })
 
 describe('R3 超频名字 / R5 官网数据（Round 2 增量）', () => {
-  it('每件武器均带超频名字数组（R3）', () => {
+  it('每件武器均带超频 ID 数组（R3）', () => {
     for (const w of weapons) {
-      expect(Array.isArray(w.yellowOverclockNames)).toBe(true)
-      expect(Array.isArray(w.redOverclockNames)).toBe(true)
-      expect(w.yellowOverclockNames!.length).toBeGreaterThan(0)
-      expect(w.redOverclockNames!.length).toBeGreaterThan(0)
+      expect(Array.isArray(w.yellowOverclockIds)).toBe(true)
+      expect(Array.isArray(w.redOverclockIds)).toBe(true)
+      expect(w.yellowOverclockIds!.length).toBeGreaterThan(0)
+      expect(w.redOverclockIds!.length).toBeGreaterThan(0)
     }
   })
   it('每件装备均带官网名与官网效果（R5）', () => {

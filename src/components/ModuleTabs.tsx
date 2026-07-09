@@ -23,6 +23,7 @@ export function ModuleTabs({
       <Tab value="achievements" label={t('tab.achievements')} />
       <Tab value="weapons" label={t('tab.weapons')} />
       <Tab value="equipments" label={t('tab.equipments')} />
+      <Tab value="overclocks" label={t('tab.overclocks')} />
     </Tabs>
   )
 }

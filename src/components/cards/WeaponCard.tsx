@@ -14,11 +14,13 @@ export function WeaponCard({
   selectedTags,
   onTagClick,
   lang,
+  getOverclockName,
 }: {
   weapon: Weapon
   selectedTags: WeaponTag[]
   onTagClick?: (tag: WeaponTag) => void
   lang: Lang
+  getOverclockName?: (id: string) => string
 }) {
   const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null)
   const [yellowOpen, setYellowOpen] = useState(false)
@@ -114,16 +116,16 @@ export function WeaponCard({
             <Typography variant="caption" color="text.secondary" sx={{ flexGrow: 1 }}>
               {lang === 'zh' ? '黄色超频 · 平衡 (6/12级)' : 'Yellow OC · Balanced (Lv6/12)'}
             </Typography>
-            {weapon.yellowOverclockNames && weapon.yellowOverclockNames.length > 0 && weapon.yellowOverclock ? (
+            {weapon.yellowOverclockIds && weapon.yellowOverclockIds.length > 0 && weapon.yellowOverclock ? (
               <IconButton size="small">
                 {yellowOpen ? <ExpandLess fontSize="small" /> : <ExpandMore fontSize="small" />}
               </IconButton>
             ) : null}
           </Box>
-          {weapon.yellowOverclockNames && weapon.yellowOverclockNames.length > 0 ? (
+          {weapon.yellowOverclockIds && weapon.yellowOverclockIds.length > 0 ? (
             <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5, mb: 0.5 }}>
-              {weapon.yellowOverclockNames.map((n) => (
-                <Chip key={n} size="small" label={n} color="warning" variant="outlined" />
+              {weapon.yellowOverclockIds.map((id) => (
+                <Chip key={id} size="small" label={getOverclockName ? getOverclockName(id) : id} color="warning" variant="outlined" />
               ))}
             </Box>
           ) : (
@@ -131,7 +133,7 @@ export function WeaponCard({
               {weapon.yellowOverclock}
             </Typography>
           )}
-          {weapon.yellowOverclockNames && weapon.yellowOverclockNames.length > 0 && (
+          {weapon.yellowOverclockIds && weapon.yellowOverclockIds.length > 0 && (
             <Collapse in={yellowOpen}>
               <Typography
                 variant="body2"
@@ -149,16 +151,16 @@ export function WeaponCard({
             <Typography variant="caption" color="text.secondary" sx={{ flexGrow: 1 }}>
               {lang === 'zh' ? '红色超频 · 不稳定 (18级)' : 'Red OC · Unstable (Lv18)'}
             </Typography>
-            {weapon.redOverclockNames && weapon.redOverclockNames.length > 0 && weapon.redOverclock ? (
+            {weapon.redOverclockIds && weapon.redOverclockIds.length > 0 && weapon.redOverclock ? (
               <IconButton size="small">
                 {redOpen ? <ExpandLess fontSize="small" /> : <ExpandMore fontSize="small" />}
               </IconButton>
             ) : null}
           </Box>
-          {weapon.redOverclockNames && weapon.redOverclockNames.length > 0 ? (
+          {weapon.redOverclockIds && weapon.redOverclockIds.length > 0 ? (
             <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5, mb: 0.5 }}>
-              {weapon.redOverclockNames.map((n) => (
-                <Chip key={n} size="small" label={n} color="error" variant="outlined" />
+              {weapon.redOverclockIds.map((id) => (
+                <Chip key={id} size="small" label={getOverclockName ? getOverclockName(id) : id} color="error" variant="outlined" />
               ))}
             </Box>
           ) : (
@@ -166,7 +168,7 @@ export function WeaponCard({
               {weapon.redOverclock}
             </Typography>
           )}
-          {weapon.redOverclockNames && weapon.redOverclockNames.length > 0 && (
+          {weapon.redOverclockIds && weapon.redOverclockIds.length > 0 && (
             <Collapse in={redOpen}>
               <Typography
                 variant="body2"
