@@ -1,26 +1,27 @@
-// 疑难分档徽标：极难<5% / 难5–20% / 普通>20%（用户决策 Round 2）
-// 硬约定（决策 5）：rate 为 null 或 show=false 时，不渲染任何徽标、不高亮、不回退 0%。
-import { getDifficultyTier, DIFFICULTY_LABEL } from '../../data/enums'
+// 稀有度徽标：按 rarity 着色（普通=低调灰蓝，稀有=高亮橙红）。
+// 不再使用「完成率动态分档（极难/难/普通）」——该分档逻辑保留在 enums.getDifficultyTier，
+// 仍供成就筛选器（useAchievementFilter）使用；此处仅按用户决策改为 rarity 着色。
+import { RARITY_LABEL } from '../../data/enums'
 import type { Lang } from '../../data/types'
 
-const TIER_COLOR: Record<'extreme' | 'hard' | 'moderate', string> = {
-  extreme: '#ff1744', // 极难：最强视觉权重（红）
-  hard: '#ff9100', // 难：橙
-  moderate: '#90a4ae', // 较难：灰蓝
+/** 稀有度配色：稀有高亮橙红，普通低调灰蓝。 */
+const RARITY_COLOR: Record<'普通' | '稀有', string> = {
+  '普通': '#90a4ae', // 普通：低调灰蓝
+  '稀有': '#ff9100', // 稀有：高亮橙红（用户偏好强调色）
 }
 
 export function DifficultyBadge({
-  rate,
+  rarity,
   show,
   lang,
 }: {
-  rate: number | null
+  rarity: '普通' | '稀有' | undefined
   show: boolean
   lang: Lang
 }) {
-  if (!show) return null
-  const tier = getDifficultyTier(rate)
-  if (!tier) return null // 空达成率或 ≥50%：不渲染
+  // 未开启高亮、或成就无稀有度（理论不应发生）→ 不渲染徽标
+  if (!show || !rarity) return null
+  const isRare = rarity === '稀有'
   return (
     <span
       style={{
@@ -29,16 +30,16 @@ export function DifficultyBadge({
         gap: 4,
         padding: '2px 8px',
         borderRadius: 999,
-        background: TIER_COLOR[tier],
+        background: RARITY_COLOR[rarity],
         color: '#fff',
         fontWeight: 700,
         fontSize: 12,
         lineHeight: 1.4,
-        boxShadow: tier === 'extreme' ? '0 0 0 2px rgba(255,23,68,0.35)' : 'none',
+        boxShadow: isRare ? '0 0 0 2px rgba(255,145,0,0.35)' : 'none',
       }}
     >
-      {tier === 'extreme' ? '★ ' : ''}
-      {DIFFICULTY_LABEL[tier][lang]} {rate}%
+      {isRare ? '★ ' : ''}
+      {RARITY_LABEL[rarity][lang]}
     </span>
   )
 }

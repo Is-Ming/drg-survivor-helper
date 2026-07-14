@@ -10,6 +10,7 @@ function mk(name: string, rate: number | null): Achievement {
     category: '其他动作',
     unlockCondition: '',
     completionRate: rate,
+    rarity: '普通',
     version: '当前',
   }
 }

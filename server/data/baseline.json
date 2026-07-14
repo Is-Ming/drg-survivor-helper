@@ -1060,2458 +1060,2100 @@
   "achievements": [
     {
       "englishName": "Run for the hills",
-      "chineseName": "跑向山丘",
+      "chineseName": "深入虫穴",
       "category": "职业解锁",
-      "unlockCondition": "解锁 侦察兵（默认解锁）",
+      "unlockCondition": "解锁侦察兵。",
       "enUnlockCondition": "Unlock the Scout",
       "completionRate": 99.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/758b780c1010de958e674bc547b33795.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Lock and load",
-      "chineseName": "上膛待发",
+      "chineseName": "全副武装",
       "category": "职业解锁",
-      "unlockCondition": "解锁 机枪手（玩家等级 3）",
+      "unlockCondition": "解锁枪手。",
       "enUnlockCondition": "Unlock the Gunner",
-      "completionRate": 83,
+      "completionRate": 86.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/8be17d9885f55d21fa4fa0388b728948.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Enjoy a relaxing stroll",
-      "chineseName": "享受轻松漫步",
+      "chineseName": "漫步虫群",
       "category": "职业解锁",
-      "unlockCondition": "解锁 工程师（玩家等级 5）",
+      "unlockCondition": "解锁工程师。",
       "enUnlockCondition": "Unlock the Engineer",
-      "completionRate": 76,
+      "completionRate": 79.6,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/7c208714f49d7da1f95feaeec7751dd4.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Dig down deep",
-      "chineseName": "向下深掘",
+      "chineseName": "深度挖掘",
       "category": "职业解锁",
-      "unlockCondition": "解锁 钻机手（玩家等级 7）",
+      "unlockCondition": "解锁钻机手。",
       "enUnlockCondition": "Unlock the Driller",
-      "completionRate": 71.2,
+      "completionRate": 73.4,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/fef7285e13e79c9bb2497d126344153b.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "The journey begins",
-      "chineseName": "旅程开始",
+      "chineseName": "正式启程",
       "category": "职业进阶",
-      "unlockCondition": "用 经典 侦察兵 完成一次深潜",
+      "unlockCondition": "使用子职业“经典装备”完成深潜。",
       "enUnlockCondition": "Complete a dive with the Classic",
-      "completionRate": 25.7,
+      "completionRate": 27,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/220f224d6992d6883d2b8aff2557036b.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Adventure awaits",
-      "chineseName": "冒险在召唤",
+      "chineseName": "探险时光",
       "category": "职业进阶",
-      "unlockCondition": "用 侦察 完成一次深潜（需 侦察兵 9 级）",
+      "unlockCondition": "使用子职业“侦查员”完成深潜。",
       "enUnlockCondition": "Complete a dive with the Recon",
-      "completionRate": 18,
+      "completionRate": 18.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/e66c7034bc947f4bba9a796214c36dca.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Measure twice, shoot once",
-      "chineseName": "量两次，射一次",
+      "chineseName": "瞄两次，射一次",
       "category": "职业进阶",
-      "unlockCondition": "用 神射手 完成一次深潜（需 侦察兵 18 级）",
+      "unlockCondition": "使用子职业“精准射手”完成深潜。",
       "enUnlockCondition": "Complete a dive with the Sharpshooter",
-      "completionRate": 12.3,
+      "completionRate": 12.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/56ca96f1e6d06964a00c2f166b53f324.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "10,000 rounds per minute",
       "chineseName": "每分钟一万发",
       "category": "职业进阶",
-      "unlockCondition": "用 武器专家 完成一次深潜",
+      "unlockCondition": "使用子职业“武器专家”完成深潜。",
       "enUnlockCondition": "Complete a dive with the Weapons Specialist",
-      "completionRate": 22.7,
+      "completionRate": 23.4,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/89ff4aecb12937abf886ad9918555a16.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Tough as nails",
-      "chineseName": "硬如铁钉",
+      "chineseName": "坚韧不拔",
       "category": "职业进阶",
-      "unlockCondition": "用 重装兵 完成一次深潜（需 机枪手 9 级）",
+      "unlockCondition": "使用子职业“突进手”完成深潜。",
       "enUnlockCondition": "Complete a dive with the Juggernaut",
-      "completionRate": 12.8,
+      "completionRate": 13,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/5d927271dfa7a0e44f80767953a7b9af.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Ka-boom!",
-      "chineseName": "咔 轰！",
+      "chineseName": "Ka-boom!",
       "category": "职业进阶",
-      "unlockCondition": "用 重机枪手 完成一次深潜（需 机枪手 18 级）",
+      "unlockCondition": "使用子职业“重型枪手”完成深潜。",
       "enUnlockCondition": "Complete a dive with the Heavy Gunner",
-      "completionRate": 9.5,
+      "completionRate": 9.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/1102a7d9062a9663d66af4323de70035.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "I solve problems",
-      "chineseName": "我解决问题",
+      "chineseName": "我负责解决问题",
       "category": "职业进阶",
-      "unlockCondition": "用 维修工 完成一次深潜",
+      "unlockCondition": "使用子职业“维护员”完成深潜。",
       "enUnlockCondition": "Complete a dive with the Maintenance Worker",
-      "completionRate": 22.3,
+      "completionRate": 22.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/87ac178b9c833d44b586b5b8480980e6.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Brainstorming",
       "chineseName": "头脑风暴",
       "category": "职业进阶",
-      "unlockCondition": "用 工匠 完成一次深潜（需 工程师 9 级）",
+      "unlockCondition": "使用子职业“枪匠”完成深潜。",
       "enUnlockCondition": "Complete a dive with the Tinkerer",
-      "completionRate": 13.1,
+      "completionRate": 13.2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/f2081b2dbc128758db71f9872ae61e82.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "A whiff of brimstone",
-      "chineseName": "一缕硫磺味",
+      "chineseName": "一股硫磺味",
       "category": "职业进阶",
-      "unlockCondition": "用 爆破手 完成一次深潜（需 工程师 18 级）",
+      "unlockCondition": "使用子职业“爆破手”完成深潜。",
       "enUnlockCondition": "Complete a dive with the Demolitionist",
       "completionRate": 8.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/ffc019a3d2f4d71f7647ec15f907e16d.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Diggy diggy hole",
-      "chineseName": "挖呀挖个坑",
+      "chineseName": "掘地潜工",
       "category": "职业进阶",
-      "unlockCondition": "用 工头 完成一次深潜",
+      "unlockCondition": "使用子职业“矿队工头”完成深潜。",
       "enUnlockCondition": "Complete a dive with the Foreman",
-      "completionRate": 16.8,
+      "completionRate": 17.3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/c1da1538cd6bc4fc88f04aeb44c25bc8.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Chemical burns",
-      "chineseName": "化学灼伤",
+      "chineseName": "化学灼烧",
       "category": "职业进阶",
-      "unlockCondition": "用 审讯者 完成一次深潜（需 钻机手 9 级）",
+      "unlockCondition": "使用子职业“审问者”完成深潜。",
       "enUnlockCondition": "Complete a dive with the Interrogator",
-      "completionRate": 15.4,
+      "completionRate": 16,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/0f5b46858d1a6eb8b190ad56058b9139.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "And my axe",
-      "chineseName": "还有我的斧",
+      "chineseName": "...还有我的斧头",
       "category": "职业进阶",
-      "unlockCondition": "用 强臂 完成一次深潜（需 钻机手 18 级）",
+      "unlockCondition": "使用子职业“投掷手”完成深潜。",
       "enUnlockCondition": "Complete a dive with the Strong Armed",
-      "completionRate": null,
+      "completionRate": 8.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/dd8ccae0b2ec2d4302bbbaf99d05e89d.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Grow fat from strength",
-      "chineseName": "从力量中变胖",
+      "chineseName": "不断“胖”大",
       "category": "职业进阶",
-      "unlockCondition": "作为 经典 侦察兵 拥有 1000 最大生命值",
+      "unlockCondition": "使用子职业“经典装备”，并拥有 1,000 最大血量。",
       "enUnlockCondition": "Have 1000 max HP as the Classic Scout",
-      "completionRate": null,
+      "completionRate": 1.2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/81124030dd77224404d9d3aba0262aa0.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "BOOM! Headshot",
-      "chineseName": "砰！爆头",
+      "chineseName": "Boom，爆头",
       "category": "职业进阶",
-      "unlockCondition": "作为 神射手 单次深潜拥有 +250% 暴击几率",
+      "unlockCondition": "使用子职业“精准射手”，并拥有 250% 暴击几率。",
       "enUnlockCondition": "Have +250% Crit Chance with the Sharpshooter in a single dive",
-      "completionRate": null,
+      "completionRate": 0.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/75699f821e74288dd02f2b1400a2a8ee.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "You're locked in here with me",
-      "chineseName": "你和我一起被锁在这里",
+      "chineseName": "是你们被迫和我关在一起",
       "category": "职业进阶",
-      "unlockCondition": "作为 侦察 在单一阶段存活 10 分钟",
+      "unlockCondition": "使用子职业“侦查员”，在单个阶段内度过 10 分钟。",
       "enUnlockCondition": "Survive in 1 stage for 10 minutes as the Recon",
-      "completionRate": null,
+      "completionRate": 1.4,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/d2dc9015a7ac10aad4ef6d8a2e6fb1cb.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Lord of war",
       "chineseName": "战争之王",
       "category": "职业进阶",
-      "unlockCondition": "作为 武器专家 单次发射 250,000 发子弹",
+      "unlockCondition": "使用子职业“武器专家”，在单次深潜中射出 250,000 个发射物。",
       "enUnlockCondition": "Fire 250,000 bullets as the Weapons Specialist in a single dive",
-      "completionRate": null,
+      "completionRate": 0.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/134c1f4bacbea478b6163d2de86b2770.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Know no fear",
-      "chineseName": "不知恐惧",
+      "chineseName": "无所畏惧",
       "category": "职业进阶",
-      "unlockCondition": "作为 重装兵 拥有 300 护甲",
+      "unlockCondition": "使用子职业“突进手”，并拥有 300 护盾。",
       "enUnlockCondition": "Have 300 armor as the Juggernaut",
       "completionRate": 3.3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/8ca37d3161ea56f1762d9b1837bfb2cd.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Walk without rhythm",
-      "chineseName": "无节奏行走",
+      "chineseName": "没有节奏地行走",
       "category": "职业进阶",
-      "unlockCondition": "作为 重机枪手 同时部署 30 个震击排斥炮塔",
+      "unlockCondition": "使用子职业“重型枪手”，使场上同时存在 30 个 “地震冲击” 重锤哨戒炮。",
       "enUnlockCondition": "Deploy 30 seismic repulsor turrets at the same time with the Heavy Gunner",
-      "completionRate": null,
+      "completionRate": 0.6,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/16c3039b0f7b6d7d8abfac8df36c395f.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Unreasonable uptime",
-      "chineseName": "不合理的在线率",
+      "chineseName": "过久运行",
       "category": "职业进阶",
-      "unlockCondition": "作为 维修工 使一件武器寿命达 30 秒（指南称 60 秒，1.0 以游戏内为准）",
+      "unlockCondition": "使用子职业“维护员”，使任一武器的持续寿命达到 30 秒。",
       "enUnlockCondition": "Have a 60 second lifetime on one weapon with the Maintenance Worker",
-      "completionRate": 3.8,
+      "completionRate": 3.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/26da3c95c9f5f0272d00a393205bc13e.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Fully overclocked",
-      "chineseName": "完全超频",
+      "chineseName": "超频魔改",
       "category": "职业进阶",
-      "unlockCondition": "作为 工匠 将 4 件武器升至 21 级（英文指南）/ TrueAchievements：5 件武器达 18 级（数值待核）",
+      "unlockCondition": "使用子职业“枪匠”，同时持有 4 把达到 21 级的武器。",
       "enUnlockCondition": "Get 5 weapons to level 18 as the Tinkerer",
-      "completionRate": null,
+      "completionRate": 1.2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/aa50602f424d6526c8f20eacec525c7a.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Going nuclear",
-      "chineseName": "进入核时代",
+      "chineseName": "核弹爆炸",
       "category": "职业进阶",
-      "unlockCondition": "作为 爆破手 拥有 +250% 爆炸半径",
+      "unlockCondition": "使用子职业“爆破手”，并拥有 +250% 爆炸范围。",
       "enUnlockCondition": "Have +250% explosion radius as the Demolitionist",
       "completionRate": 6.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/d36cf942e5d56b8fc745041078255966.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "With fire and blood",
-      "chineseName": "以火与血",
+      "chineseName": "热情似火",
       "category": "职业进阶",
-      "unlockCondition": "作为 工头 单次造成 10,000,000 火焰伤害",
+      "unlockCondition": "使用子职业“矿队工头”，在单次深潜中造成 10,000,000 燃烧伤害。",
       "enUnlockCondition": "Deal 10,000,000 fire damage as the Foreman in a single dive",
-      "completionRate": 7.2,
+      "completionRate": 7.3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/0636238acae66c77f85053fa0905ba5e.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Elemental avatar",
-      "chineseName": "元素化身",
+      "chineseName": "降世神通",
       "category": "职业进阶",
-      "unlockCondition": "作为 审讯者 单次施加 5,000,000 状态叠层",
+      "unlockCondition": "使用子职业“审问者”，在单次深潜中赋予 5,000,000 层持续效果。",
       "enUnlockCondition": "Apply 5,000,000 status effect stacks as the Interrogator in a single dive",
-      "completionRate": 3.3,
+      "completionRate": 3.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/add54a52c83bd54cdfd42f571fed2a22.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Fastest hands on the rig",
-      "chineseName": "钻机上最快的手",
+      "chineseName": "快手达人",
       "category": "职业进阶",
-      "unlockCondition": "作为 强臂 拥有 +500% 装填速度",
+      "unlockCondition": "使用子职业“投掷手”，并拥有 +500% 换弹速度。",
       "enUnlockCondition": "Have +500% reload speed as the Strong Armed",
-      "completionRate": 6.3,
+      "completionRate": 6.4,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/f8a01908072e982b5293b751f4fd8e86.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Delicious BLT",
-      "chineseName": "美味的 培根三明治",
+      "chineseName": "美味三明治",
       "category": "属性统计",
-      "unlockCondition": "达到 300 最大生命值",
+      "unlockCondition": "最大血量达到 300。",
       "enUnlockCondition": "Reach 300 Max HP",
-      "completionRate": 65.6,
+      "completionRate": 71.2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/2cb552753d14b1e60acba38978c30b31.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "It's got electrolytes",
-      "chineseName": "含电解质",
+      "chineseName": "内含电解质",
       "category": "属性统计",
-      "unlockCondition": "达到 50% 移动速度",
+      "unlockCondition": "移动速度达到 +50%。",
       "enUnlockCondition": "Reach 50% move speed",
-      "completionRate": 54.3,
+      "completionRate": 58.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/7af23df142fc42b7fbc86804606577a4.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Swift guns for swift hands",
-      "chineseName": "快手配快枪",
+      "chineseName": "快枪配快手",
       "category": "属性统计",
-      "unlockCondition": "达到 75% 装填速度",
+      "unlockCondition": "换弹速度达到 +75%。",
       "enUnlockCondition": "Reach 75% reload speed",
-      "completionRate": 42,
+      "completionRate": 52.3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/bfa3a8b47c3fbcce18a50034fb283bb6.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Squint and squeeze the trigger",
-      "chineseName": "眯眼扣扳机",
+      "chineseName": "瞄准再往死里打",
       "category": "属性统计",
-      "unlockCondition": "达到 75% 暴击几率",
+      "unlockCondition": "暴击几率达到 75%。",
       "enUnlockCondition": "Reach 75% crit chance",
-      "completionRate": 40.3,
+      "completionRate": 41,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/5086dd9bf81c91608887685de1f1a7d8.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Why so Salty?",
-      "chineseName": "为何如此咸",
+      "chineseName": "吃过的盐，挨过的打",
       "category": "属性统计",
-      "unlockCondition": "达到 50 护甲",
+      "unlockCondition": "护盾达到 50。",
       "enUnlockCondition": "Reach 50 armor",
-      "completionRate": 39,
+      "completionRate": 40.3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/27b9144178f4213abdb9ad2906760ab0.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Book of Experience",
-      "chineseName": "经验之书",
+      "chineseName": "经验之谈",
       "category": "属性统计",
-      "unlockCondition": "深潜期间达到等级 50",
+      "unlockCondition": "在单次深潜中达到 50 级。",
       "enUnlockCondition": "Reach level 50 during a dive",
-      "completionRate": 52.3,
+      "completionRate": 54.3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/3bf764fab29950e507da38ce7d28e8b4.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Feeling lucky punk?",
-      "chineseName": "觉得幸运吗，朋克",
+      "chineseName": "好运傍身",
       "category": "属性统计",
-      "unlockCondition": "单次深潜获得 5 个幸运升级",
+      "unlockCondition": "在单次深潜中获取 5 个运气升级。",
       "enUnlockCondition": "Get 5 luck upgrades in one dive",
       "completionRate": 15.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/8df313fd76d5f29be79fcc015599f99a.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Hangry?",
-      "chineseName": "饿怒？",
+      "chineseName": "急级国王",
       "category": "属性统计",
-      "unlockCondition": "累计获得 1,000 次等级提升",
+      "unlockCondition": "累计提升等级 1,000 次。",
       "enUnlockCondition": "Gain 1,000 level ups",
-      "completionRate": 31,
+      "completionRate": 31.4,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/11a1cc965ffaf502191f6b68bcb62aac.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Survivor squad",
-      "chineseName": "幸存者小队",
+      "chineseName": "幸存者联盟",
       "category": "属性统计",
-      "unlockCondition": "全部 4 个职业均达到等级 30",
+      "unlockCondition": "将四个职业的职业等级升至 30 级。",
       "enUnlockCondition": "Reach level 30 with all 4 classes",
-      "completionRate": 6,
+      "completionRate": 6.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/796d8ae58f920516232f837b397e36a3.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Fully armed and operational",
-      "chineseName": "全副武装且可运作",
+      "chineseName": "准备完全",
       "category": "属性统计",
-      "unlockCondition": "购买每一个 meta 升级",
+      "unlockCondition": "将全部局外升级升至满级。",
       "enUnlockCondition": "Purchase every single meta upgrade",
-      "completionRate": 8.9,
+      "completionRate": 9.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/02ac30e4f62bd643a72c47d7c845aecb.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Slick, like butter",
-      "chineseName": "油滑矮人（闪避）",
+      "chineseName": "油滑矮人",
       "category": "属性统计",
-      "unlockCondition": "单次深潜闪避 100 次（英文指南旧名 Greased Little Dwarf）",
+      "unlockCondition": "在单次深潜中闪避 100 次。",
       "enUnlockCondition": "Dodge 100 times during a run",
       "completionRate": 7.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/c6bedcf7464ffba51020da9fb42ea4c6.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "No pain, no gain",
       "chineseName": "不挨打，不成器",
       "category": "属性统计",
-      "unlockCondition": "单次深潜承受 2,000 伤害（英文指南旧名 Without Pain No Gain）",
+      "unlockCondition": "在单次深潜中承受 2,000 伤害。",
       "enUnlockCondition": "Took 2,000 damage during a dive",
-      "completionRate": 34.9,
+      "completionRate": 39,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/01eb4e5faa5f783af58c80f019c5b8d6.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "That's how the cookie crumbles",
       "chineseName": "甜食慰藉",
       "category": "属性统计",
-      "unlockCondition": "单次深潜累计回复 500 血量（英文指南旧名 Sweet Comfort）",
+      "unlockCondition": "在单次深潜中累计回复 500 血量。",
       "enUnlockCondition": "Heal 500 HP during one dive",
-      "completionRate": 31.4,
+      "completionRate": 32.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/5e39c28b15298ea196945c73455290bb.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Pillar of society",
-      "chineseName": "不动如山",
+      "chineseName": "“栋梁”之材",
       "category": "属性统计",
-      "unlockCondition": "站立不动时击杀 15,000 敌人",
+      "unlockCondition": "在站定不动的情况下累计击杀 15,000 只异虫。",
       "enUnlockCondition": "Kill 15,000 enemies while standing still",
-      "completionRate": 64.6,
+      "completionRate": 65,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/72e9697d0c5b4fa80c4c590edcbd95b2.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Back from the brink!",
-      "chineseName": "起死回生",
+      "chineseName": "逆境重生",
       "category": "属性统计",
-      "unlockCondition": "低于 5 生命值 后回满生命",
+      "unlockCondition": "将血量从低于 5 血量恢复至最大血量。",
       "enUnlockCondition": "Reach max HP after having dropped below 5 HP",
-      "completionRate": 11.9,
+      "completionRate": 12.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/1db3f1933f64172729f8515f5b77dcae.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Hoxxes Manual",
-      "chineseName": "霍克斯手册",
+      "chineseName": "希望你能够好好用功读书",
       "category": "属性统计",
-      "unlockCondition": "死亡 3 次",
+      "unlockCondition": "累计死亡 3 次。",
       "enUnlockCondition": "Die 3 times",
-      "completionRate": 61.3,
+      "completionRate": 64.6,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/f19738ef25b699e76ecd9e8f6bef5b0a.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Custom rig",
-      "chineseName": "定制装备",
+      "chineseName": "自定造型",
       "category": "装备",
-      "unlockCondition": "装备 6 件 普通 物品",
+      "unlockCondition": "在所有的栏位装备优秀品质装备。",
       "enUnlockCondition": "Have 6 uncommon items equipped",
-      "completionRate": 13.7,
+      "completionRate": 13.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/6808281ef0365f99d1bdf6f151e72d9b.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Professional setup",
-      "chineseName": "专业配置",
+      "chineseName": "专业装备",
       "category": "装备",
-      "unlockCondition": "装备 6 件 稀有 物品",
+      "unlockCondition": "在所有的栏位装备精良品质装备。",
       "enUnlockCondition": "Have 6 rare items equipped",
-      "completionRate": 11.8,
+      "completionRate": 12,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/1aac1b3d7141739a9fc0bd3cb3ff9d49.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Truly epic",
-      "chineseName": "真正史诗",
+      "chineseName": "史诗巨作",
       "category": "装备",
-      "unlockCondition": "装备 1 件 史诗 物品",
+      "unlockCondition": "装备一件史诗品质装备。",
       "enUnlockCondition": "Equip an epic item",
-      "completionRate": 27,
+      "completionRate": 28.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/0bd988275ecef87be89e9beb9ad705cf.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Expertly tuned",
-      "chineseName": "专家调校",
+      "chineseName": "精心调教",
       "category": "装备",
-      "unlockCondition": "装备 6 件 史诗 物品",
+      "unlockCondition": "在所有的栏位装备史诗品质装备。",
       "enUnlockCondition": "Have 6 epic items equipped",
-      "completionRate": null,
+      "completionRate": 9.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/c4696750f282fc65f3082dd75763269b.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Legendary!",
-      "chineseName": "传奇！",
+      "chineseName": "红色传说！",
       "category": "装备",
-      "unlockCondition": "装备 1 件 传说 物品",
+      "unlockCondition": "装备一件传奇品质装备。",
       "enUnlockCondition": "Equip a legendary item",
-      "completionRate": 17.5,
+      "completionRate": 18.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/1d5a7f95c5da468acd9d0ffb6e722d12.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Fabled fittings",
-      "chineseName": "传说配件",
+      "chineseName": "传奇行装",
       "category": "装备",
-      "unlockCondition": "装备 6 件 传说 物品",
+      "unlockCondition": "在所有的栏位装备传说品质装备。",
       "enUnlockCondition": "Have 6 legendary items equipped",
-      "completionRate": 3.5,
+      "completionRate": 3.6,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/ba771a704342afe24201746bcb699c47.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "We're keeping this one",
-      "chineseName": "这个我们留着",
+      "chineseName": "这件就留下吧",
       "category": "装备",
-      "unlockCondition": "完全升级一件装备",
+      "unlockCondition": "将任一装备升至满级。",
       "enUnlockCondition": "Fully upgrade a piece of gear",
-      "completionRate": null,
+      "completionRate": 8.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/4caf565ab997c5939981199d748209bf.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Master artificer",
-      "chineseName": "大师工匠",
+      "chineseName": "精益求精",
       "category": "装备",
-      "unlockCondition": "完全升级一件 传说 装备",
+      "unlockCondition": "将任一传说品质装备升至满级。",
       "enUnlockCondition": "Fully upgrade a legendary piece of gear",
-      "completionRate": 5.7,
+      "completionRate": 5.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/b76b45d699039ff667e79539ac56f55b.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Karl, is that you?",
-      "chineseName": "卡尔，是你吗？",
+      "chineseName": "是你吗，卡尔？",
       "category": "装备",
-      "unlockCondition": "装备 6 件完全升级的 传说 装备",
+      "unlockCondition": "在所有的栏位装备升至满级的传说品质装备。",
       "enUnlockCondition": "Have 6 fully upgraded legendary pieces of gear equipped",
       "completionRate": 2.4,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/e60920b8d3fc2ccfde3984001131fa57.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mind over matter",
-      "chineseName": "精神胜于物质",
+      "chineseName": "技高于物",
       "category": "装备",
-      "unlockCondition": "无任何装备完成 危险等级 4 深潜",
+      "unlockCondition": "完成风险等级 4 的深潜，且不携带任何装备。",
       "enUnlockCondition": "Complete a Hazard 4 dive without any gear equipped",
-      "completionRate": null,
+      "completionRate": 0.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/1aa0e33e33ca98f763ae3e7f8700b122.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Just like the old days",
-      "chineseName": "如同旧日",
+      "chineseName": "有如旧时光",
       "category": "装备",
-      "unlockCondition": "无任何装备完成 危险等级 5 深潜",
+      "unlockCondition": "完成风险等级 5 的深潜，且不携带任何装备。",
       "enUnlockCondition": "Complete a Hazard 5 dive without any gear equipped",
-      "completionRate": null,
+      "completionRate": 0.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/df150c82bc85dce07dbd61fba115fa70.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Overclock: DeepCore GK2",
-      "chineseName": {
-        "weaponRef": "deepcore_gk2",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - 深核 GK2 突击步枪",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "deepcore_gk2",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 深核 GK2 突击步枪 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the DeepCore GK2",
-      "completionRate": 25.6,
+      "completionRate": 25.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/81158a42ca76dbd393c041045f5336fe.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Zhukov NUK17",
-      "chineseName": {
-        "weaponRef": "zhukov_nuk17",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - 朱可夫 NUK17 双持冲锋枪",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "zhukov_nuk17",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 朱可夫 NUK17 双持冲锋枪 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Zhukov NUK17",
-      "completionRate": 20,
+      "completionRate": 20.2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/52fa3615cf77594135bb925a4c6515e7.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Cryo Grenade",
-      "chineseName": {
-        "weaponRef": "cryo_grenade",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - 急冻手雷",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "cryo_grenade",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 急冻手雷 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Cryo Grenade",
-      "completionRate": 12.1,
+      "completionRate": 12.3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/937477d43acf7a2352c110e83bf9f615.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Jury-Rigged Boomstick",
-      "chineseName": {
-        "weaponRef": "jury_rigged_boomstick",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - 应急霰弹枪",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "jury_rigged_boomstick",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 应急霰弹枪 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Jury-Rigged Boomstick",
       "completionRate": 15.4,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/6c6075a0afd34178e9f6ee0a162f3cd4.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: M1000",
-      "chineseName": {
-        "weaponRef": "m1000",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - M1000 经典型步枪",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "m1000",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 M1000 经典型步枪 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the M1000",
-      "completionRate": 22,
+      "completionRate": 22.3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/dcbe4bc82254f68093d75fe7f1e8c32a.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Stun Sweeper",
-      "chineseName": {
-        "weaponRef": "voltaic_stun_sweeper",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - “雷神之罚” 电击枪",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "voltaic_stun_sweeper",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 “雷神之罚” 电击枪 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Voltaic Stun Sweeper",
-      "completionRate": 12.8,
+      "completionRate": 10,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/75d61a057527cc27faa8f0995b874d37.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: TH-0R Bug Taser",
-      "chineseName": {
-        "weaponRef": "th_0r_bug_taser",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - 强电震击镖",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "th_0r_bug_taser",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 强电震击镖 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the TH-0R Bug Taser",
-      "completionRate": 9.8,
+      "completionRate": 12.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/89c2f77bb5016028fa1934277acab1ea.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Cryo Guard",
-      "chineseName": {
-        "weaponRef": "arc_tek_cryo_guard",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - Arc-Tek 急冻护卫无人机",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "arc_tek_cryo_guard",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 Arc-Tek 急冻护卫无人机 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Arc-Tek Cryo Guard",
       "completionRate": 9.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/92446caf3c4854391b85a0391e0eab7e.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Plasma Carbine",
-      "chineseName": {
-        "weaponRef": "drak_25_plasma_carbine",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - DRAK-25 电浆卡宾枪",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "drak_25_plasma_carbine",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 DRAK-25 电浆卡宾枪 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the DRAK-25 Plasma Carbine",
-      "completionRate": 10.2,
+      "completionRate": 10.3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/de18dca7d5d322e95194fd44ec8e8e77.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Nishanka Boltshark",
-      "chineseName": {
-        "weaponRef": "nishanka_boltshark",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - 尼桑卡 X-80 “闪电鲨” 战术弩",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "nishanka_boltshark",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 尼桑卡 X-80 “闪电鲨” 战术弩 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Nishanka Boltshark",
-      "completionRate": 8.3,
+      "completionRate": 8.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/37d1c773508b9ed2b751f9c189b68bff.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Heavy Revolver",
-      "chineseName": {
-        "weaponRef": "bulldog_heavy_revolver",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - “斗牛犬” 重型左轮手枪",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "bulldog_heavy_revolver",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 “斗牛犬” 重型左轮手枪 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Bulldog Heavy Revolver",
       "completionRate": 13.2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/17edc811e32208f49e00cabfcbdfa070.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Incendiary Grenade",
-      "chineseName": {
-        "weaponRef": "incendiary_grenade",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - 燃烧手雷",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "incendiary_grenade",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 燃烧手雷 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Incendiary Grenade",
-      "completionRate": 10.8,
+      "completionRate": 11.3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/ba5864f94e63791f1fda8783be8a61ca.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Powered Minigun",
-      "chineseName": {
-        "weaponRef": "lead_storm_powered_minigun",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - “铅暴” 转管机枪",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "lead_storm_powered_minigun",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 “铅暴” 转管机枪 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Lead Storm Powered Minigun",
-      "completionRate": 24.4,
+      "completionRate": 25.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/c75401e4ad1807012a55052a24a4c29e.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Burst Fire Gun",
-      "chineseName": {
-        "weaponRef": "brt7_burst_fire_gun",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - BRT7 连发手枪",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "brt7_burst_fire_gun",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 BRT7 连发手枪 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the BRT7 Burst Fire Gun",
       "completionRate": 11.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/0d2eb45463ce4b7400c16d09c199d05b.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Tactical Leadburster",
-      "chineseName": {
-        "weaponRef": "tactical_leadburster",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - 战术铅暴雷",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "tactical_leadburster",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 战术铅暴雷 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Tactical Leadburster",
       "completionRate": 10.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/a572fd970b01c6488146e2391183b506.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Heavy Autocannon",
-      "chineseName": {
-        "weaponRef": "thunderhead_heavy_autocannon",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - “雷暴云砧” 重型双管机炮",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "thunderhead_heavy_autocannon",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 “雷暴云砧” 重型双管机炮 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Thunderhead Heavy Autocannon",
-      "completionRate": 13.7,
+      "completionRate": 13.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/995a623859e88a8450890795ba144d19.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Firefly Hunter Drone",
-      "chineseName": {
-        "weaponRef": "firefly_hunter_drone",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - “萤火虫” 燃烧狩猎无人机",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "firefly_hunter_drone",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 “萤火虫” 燃烧狩猎无人机 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Firefly Hunter Drone",
-      "completionRate": 9.4,
+      "completionRate": 9.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/5e2e567ede181caae848a80f145632e7.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Hurricane",
-      "chineseName": {
-        "weaponRef": "hurricane_guided_rocket_system",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - “飓风” 制导火箭系统",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "hurricane_guided_rocket_system",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 “飓风” 制导火箭系统 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Hurricane Guided Rocket System",
       "completionRate": 8.3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/230374dfe9c7db8bdfa8ad337a08fde3.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Seismic Repulsor",
-      "chineseName": "完全超频：地震哨戒炮",
+      "chineseName": "完全超频 - “地震冲击” 重锤哨戒炮",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "seismic_repulsor",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 “地震冲击” 重锤哨戒炮 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Seismic Repulsor",
-      "completionRate": 5.9,
+      "completionRate": 6,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/93cdc7b79873ce77b418d1a3eea25dbc.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Coil Gun",
-      "chineseName": {
-        "weaponRef": "breach_cutter_armskore_coil_gun",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - “武装核心” 电磁手炮",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "armskore_coil_gun",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 “武装核心” 电磁手炮 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the ArmsKore Coil Gun",
       "completionRate": 5.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/5a00465ac1c5d46892ae6cb1251a1561.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Warthog Auto",
-      "chineseName": {
-        "weaponRef": "warthog_auto_210",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - “疣猪” 210 自动霰弹枪",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "warthog_auto_210",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 “疣猪” 210 自动霰弹枪 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Warthog Auto 210",
-      "completionRate": 16.1,
+      "completionRate": 16.3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/3f26b0a246794096c83d674104f7d904.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Voltaic SMG",
-      "chineseName": {
-        "weaponRef": "stubby_voltaic_smg",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - “百万” 伏特微型冲锋枪",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "stubby_voltaic_smg",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 “百万” 伏特微型冲锋枪 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Stubby Voltaic SMG",
-      "completionRate": 13,
+      "completionRate": 13.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/05900da9ef54b67cdb0ef4c318e9f0df.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Hi-Volt Thunderbird",
-      "chineseName": {
-        "weaponRef": "hi_volt_thunderbird",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - Hi-Volt “雷鸟” 电击护卫无人机",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "hi_volt_thunderbird",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 Hi-Volt “雷鸟” 电击护卫无人机 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Hi-Volt Thunderbird",
-      "completionRate": 11.7,
+      "completionRate": 11.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/fc23216907d94a9cc23eb22e745c8d75.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: LMG Gun Platform",
-      "chineseName": {
-        "weaponRef": "lmg_gun_platform",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - 轻机枪哨戒炮",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "lmg_gun_platform",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 轻机枪哨戒炮 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the LMG Gun Platform",
-      "completionRate": 25.1,
+      "completionRate": 25.2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/b1a15762b9e75a15a28c5ece4de70e97.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Voltaic Shock Fence",
-      "chineseName": {
-        "weaponRef": "voltaic_shock_fence",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - 强电防护网",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "voltaic_shock_fence",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 强电防护网 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Voltaic Shock Fence",
       "completionRate": 10.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/60c7192fb1764e4af78f2b4c1359e97f.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: LOK-1 Smart Rifle",
-      "chineseName": {
-        "weaponRef": "lok_1_smart_rifle",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - LOK-1 智能步枪",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "lok_1_smart_rifle",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 LOK-1 智能步枪 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the LOK-1 Smart Rifle",
-      "completionRate": 12.9,
+      "completionRate": 13,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/23315a59e70c509d95c2f65fe6eff576.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: DeepCore PGL",
-      "chineseName": {
-        "weaponRef": "deepcore_pgl",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - 深核 40mm 便携式榴弹发射器",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "deepcore_pgl",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 深核 40mm 便携式榴弹发射器 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the DeepCore PGL",
       "completionRate": 11.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/d30ac0813d9777f171163e6bc88a90e7.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Breach Cutter",
-      "chineseName": {
-        "weaponRef": "breach_cutter_armskore_coil_gun",
-        "name": "完全超频：{weapon}II"
-      },
+      "chineseName": "完全超频 - 等离子切割器",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "breach_cutter_armskore_coil_gun",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 等离子切割器 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Breach Cutter",
-      "completionRate": 10.1,
+      "completionRate": 10.2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/8de8afe621f6fd9d7440c3d5cdd03cf8.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Shard Diffractor",
-      "chineseName": {
-        "weaponRef": "shard_diffractor",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - 心石聚能炮",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "shard_diffractor",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 心石聚能炮 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Shard Diffractor",
       "completionRate": 7.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/16cf026cba928b4594381cced9c34a72.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Plasma Burster",
-      "chineseName": {
-        "weaponRef": "plasma_burster",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - 电浆连爆雷",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "plasma_burster",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 电浆连爆雷 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Plasma Burster",
       "completionRate": 7.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/e1472a6f691a9a713e0a19f593145dbf.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Swarm Grenade",
-      "chineseName": {
-        "weaponRef": "shredder_swarm_grenade",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - 蜂群手雷",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "shredder_swarm_grenade",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 蜂群手雷 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Shredder Swarm Grenade",
       "completionRate": 6.4,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/8482df7c22b6fc315bd662a91ad4c40c.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Subata 120",
-      "chineseName": {
-        "weaponRef": "subata_120",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - 苏巴特 120 半自动手枪",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "subata_120",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 苏巴特 120 半自动手枪 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Subata 120",
       "completionRate": 15.4,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/5d7c8019dabeb7c3b39c3b0e1a9cd5b9.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Krakatoa Sentinel",
-      "chineseName": {
-        "weaponRef": "krakatoa_sentinel",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - “喀拉喀托” 单兵喷火哨戒炮",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "krakatoa_sentinel",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 “喀拉喀托” 单兵喷火哨戒炮 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Krakatoa Sentinel",
-      "completionRate": 15.1,
+      "completionRate": 15.4,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/d80565efc73b4f22f7c6d1fa2a260347.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: HE Grenade",
-      "chineseName": {
-        "weaponRef": "high_explosive_grenade",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - 高爆手雷",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "high_explosive_grenade",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 高爆手雷 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the High Explosive Grenade",
-      "completionRate": null,
+      "completionRate": 8.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/66cd1db798c98d993edfbb84b1fec665.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Overclock: CRSPR Flamethrower",
-      "chineseName": {
-        "weaponRef": "crspr_flamethrower",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - CRSPR 火焰喷射器",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "crspr_flamethrower",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 CRSPR 火焰喷射器 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the CRSPR Flamethrower",
-      "completionRate": 18.8,
+      "completionRate": 19.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/61efa3f374e4ab1e768834d2e30cffd5.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Sludge Pump",
-      "chineseName": {
-        "weaponRef": "corrosive_sludge_pump",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - 蚀泥喷射泵",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "corrosive_sludge_pump",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 蚀泥喷射泵 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Corrosive Sludge Pump",
       "completionRate": 13.3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/7c85a101c48dc5d0c4ed86d8bdcc10d2.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Wave Cooker",
-      "chineseName": {
-        "weaponRef": "colette_wave_cooker",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - 柯莱特 微波烹调者",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "colette_wave_cooker",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 柯莱特 微波烹调者 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Colette Wave Cooker",
-      "completionRate": 13.2,
+      "completionRate": 13.3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/aa121709a00b714fa094112b12375e45.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Impact Axe",
-      "chineseName": {
-        "weaponRef": "impact_axe",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - 冲击战斧",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "impact_axe",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 冲击战斧 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Impact Axe",
       "completionRate": 10.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/162049af6ae58d7d3f9b87e0fcab2fdd.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Neurotoxin Grenade",
-      "chineseName": {
-        "weaponRef": "neurotoxin_grenade",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - 神经毒素手雷",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "neurotoxin_grenade",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 神经毒素手雷 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Neurotoxin Grenade",
-      "completionRate": 8.8,
+      "completionRate": 8.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/04a729c380e9b121231d56d7931f374c.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Cryo Cannon",
-      "chineseName": {
-        "weaponRef": "cryo_cannon",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - 急冻喷射炮",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "cryo_cannon",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 急冻喷射炮 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Cryo Cannon",
-      "completionRate": null,
+      "completionRate": 9.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/102c9ca3eb609ad89558d7383c169ab3.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Overclock: K1-P Viper Drone",
-      "chineseName": "完全超频：酸液无人机",
+      "chineseName": "完全超频 - K1-P “毒蟒” 腐蚀毒素无人机",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "k1_p_viper_drone",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 K1-P “毒蟒” 腐蚀毒素无人机 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the K1-P Viper Drone",
       "completionRate": 7.4,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/809a441edaaab4d5e12591ba5358e9be.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Overclock: Plasma Charger",
-      "chineseName": {
-        "weaponRef": "experimental_plasma_charger",
-        "name": "完全超频：{weapon}"
-      },
+      "chineseName": "完全超频 - 实验性等离子蓄能手枪",
       "category": "武器超频",
-      "unlockCondition": {
-        "weaponRef": "experimental_plasma_charger",
-        "unlockCondition": "{weapon} 达 18 级"
-      },
+      "unlockCondition": "将 实验性等离子蓄能手枪 升至 18 级。",
       "enUnlockCondition": "Reach level 18 with the Experimental Plasma Charger",
       "completionRate": 5.6,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/ff7d34f2ea83cde9a68f3fbb51e99057.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: DeepCore GK2",
-      "chineseName": {
-        "weaponRef": "deepcore_gk2",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - 深核 GK2 突击步枪",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "deepcore_gk2",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 深核 GK2 突击步枪 武器专精。",
       "enUnlockCondition": "Complete a DeepCore GK2 weapon mastery dive",
-      "completionRate": 14.6,
+      "completionRate": 15,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/c3bb198634e150931f579ca341244383.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Zhukov NUK17",
-      "chineseName": {
-        "weaponRef": "zhukov_nuk17",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - 朱可夫 NUK17 双持冲锋枪",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "zhukov_nuk17",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 朱可夫 NUK17 双持冲锋枪 武器专精。",
       "enUnlockCondition": "Complete a Zhukov NUK17 weapon mastery dive",
-      "completionRate": 12,
+      "completionRate": 12.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/ee3f74f52b30dafe46f77f45f7180cbe.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Cryo Grenade",
-      "chineseName": {
-        "weaponRef": "cryo_grenade",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - 急冻手雷",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "cryo_grenade",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 急冻手雷 武器专精。",
       "enUnlockCondition": "Complete a Cryo Grenade weapon mastery dive",
       "completionRate": 8.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/d0f11300ddb3c9a28e040f2c5cd3b5a2.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Jury-Rigged Boomstick",
-      "chineseName": {
-        "weaponRef": "jury_rigged_boomstick",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - 应急霰弹枪",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "jury_rigged_boomstick",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 应急霰弹枪 武器专精。",
       "enUnlockCondition": "Complete a Jury-Rigged Boomstick weapon mastery dive",
       "completionRate": 10.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/bd9082de8dfbc1157b28642f940dc60a.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Mastery: M1000",
-      "chineseName": {
-        "weaponRef": "m1000",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - M1000 经典型步枪",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "m1000",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 M1000 经典型步枪 武器专精。",
       "enUnlockCondition": "Complete a M1000 weapon mastery dive",
-      "completionRate": 11.4,
+      "completionRate": 11.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/34dfa432d3d37e42314762f3bd547e5f.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Stun Sweeper",
-      "chineseName": {
-        "weaponRef": "voltaic_stun_sweeper",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - “雷神之罚” 电击枪",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "voltaic_stun_sweeper",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 “雷神之罚” 电击枪 武器专精。",
       "enUnlockCondition": "Complete a Voltaic Stun Sweeper weapon mastery dive",
-      "completionRate": 8.3,
+      "completionRate": 7.4,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/851d844a901cbac6cbb176cee5b1070d.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: TH-0R Bug Taser",
-      "chineseName": {
-        "weaponRef": "th_0r_bug_taser",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - 强电震击镖",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "th_0r_bug_taser",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 强电震击镖 武器专精。",
       "enUnlockCondition": "Complete a TH-0R Bug Taser weapon mastery dive",
-      "completionRate": 7.3,
+      "completionRate": 8.3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/0f7c86eacca87686c9c368ba0b4eec2c.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Cryo Guard",
-      "chineseName": {
-        "weaponRef": "arc_tek_cryo_guard",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - Arc-Tek 急冻护卫无人机",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "arc_tek_cryo_guard",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 Arc-Tek 急冻护卫无人机 武器专精。",
       "enUnlockCondition": "Complete a Arc-Tek Cryo Guard weapon mastery dive",
       "completionRate": 7.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/3ba79fc6733d5d6cdfddedf387c1f3be.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Plasma Carbine",
-      "chineseName": {
-        "weaponRef": "drak_25_plasma_carbine",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - DRAK-25 电浆卡宾枪",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "drak_25_plasma_carbine",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 DRAK-25 电浆卡宾枪 武器专精。",
       "enUnlockCondition": "Complete a DRAK-25 Plasma Carbine weapon mastery dive",
-      "completionRate": 7.6,
+      "completionRate": 7.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/113a9abb6b6db3ae435b710092116f29.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Nishanka Boltshark",
-      "chineseName": {
-        "weaponRef": "nishanka_boltshark",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - 尼桑卡 X-80 “闪电鲨” 战术弩",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "nishanka_boltshark",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 尼桑卡 X-80 “闪电鲨” 战术弩 武器专精。",
       "enUnlockCondition": "Complete a Nishanka Boltshark weapon mastery dive",
-      "completionRate": 6.1,
+      "completionRate": 6.2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/1da2fd140ba142e81f29f18413fe9ac6.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Heavy Revolver",
-      "chineseName": {
-        "weaponRef": "bulldog_heavy_revolver",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - “斗牛犬” 重型左轮手枪",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "bulldog_heavy_revolver",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 “斗牛犬” 重型左轮手枪 武器专精。",
       "enUnlockCondition": "Complete a Bulldog Heavy Revolver weapon mastery dive",
       "completionRate": 8.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/fe8ac3099bdbc9dd13ad9b7f29d3b56c.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Incendiary Grenade",
-      "chineseName": {
-        "weaponRef": "incendiary_grenade",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - 燃烧手雷",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "incendiary_grenade",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 燃烧手雷 武器专精。",
       "enUnlockCondition": "Complete a Incendiary Grenade weapon mastery dive",
       "completionRate": 8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/0608dc6173e2c761dd4608ddeb7977cd.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Powered Minigun",
-      "chineseName": {
-        "weaponRef": "lead_storm_powered_minigun",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - “铅暴” 转管机枪",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "lead_storm_powered_minigun",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 “铅暴” 转管机枪 武器专精。",
       "enUnlockCondition": "Complete a Lead Storm Powered Minigun weapon mastery dive",
-      "completionRate": 13.8,
+      "completionRate": 14.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/68ba2a5c28856b50fae367ee3329029d.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Burst Fire Gun",
-      "chineseName": {
-        "weaponRef": "brt7_burst_fire_gun",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - BRT7 连发手枪",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "brt7_burst_fire_gun",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 BRT7 连发手枪 武器专精。",
       "enUnlockCondition": "Complete a BRT7 Burst Fire Gun weapon mastery dive",
       "completionRate": 7.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/0525319e204a3243325fe47f51c3448e.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Tactical Leadburster",
-      "chineseName": {
-        "weaponRef": "tactical_leadburster",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - 战术铅暴雷",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "tactical_leadburster",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 战术铅暴雷 武器专精。",
       "enUnlockCondition": "Complete a Tactical Leadburster weapon mastery dive",
       "completionRate": 7.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/fd453dbe0465bfd9ba287cd63517f710.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Heavy Autocannon",
-      "chineseName": {
-        "weaponRef": "thunderhead_heavy_autocannon",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - “雷暴云砧” 重型双管机炮",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "thunderhead_heavy_autocannon",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 “雷暴云砧” 重型双管机炮 武器专精。",
       "enUnlockCondition": "Complete a Thunderhead Heavy Autocannon weapon mastery dive",
       "completionRate": 9.2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/bf38d2676880de76e39e7224d84e894f.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Firefly Hunter Drone",
-      "chineseName": {
-        "weaponRef": "firefly_hunter_drone",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - “萤火虫” 燃烧狩猎无人机",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "firefly_hunter_drone",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 “萤火虫” 燃烧狩猎无人机 武器专精。",
       "enUnlockCondition": "Complete a Firefly Hunter Drone weapon mastery dive",
-      "completionRate": 7,
+      "completionRate": 7.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/68ad86d176ad31e0cc777ec1af345ec7.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Hurricane",
-      "chineseName": {
-        "weaponRef": "hurricane_guided_rocket_system",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - “飓风” 制导火箭系统",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "hurricane_guided_rocket_system",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 “飓风” 制导火箭系统 武器专精。",
       "enUnlockCondition": "Complete a Hurricane Guided Rocket System weapon mastery dive",
       "completionRate": 7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/91f2769acb5589dcfe8dcc78e75ed634.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Seismic Repulsor",
-      "chineseName": "由浅入深：地震哨戒炮",
+      "chineseName": "由浅入深 - “地震冲击” 重锤哨戒炮",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "seismic_repulsor",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 “地震冲击” 重锤哨戒炮 武器专精。",
       "enUnlockCondition": "Complete a Seismic Repulsor weapon mastery dive",
       "completionRate": 4.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/6997c556516b27a3c55961be01500adf.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Coil Gun",
-      "chineseName": {
-        "weaponRef": "breach_cutter_armskore_coil_gun",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - “武装核心” 电磁手炮",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "armskore_coil_gun",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 “武装核心” 电磁手炮 武器专精。",
       "enUnlockCondition": "Complete a ArmsKore Coil Gun weapon mastery dive",
-      "completionRate": 4.8,
+      "completionRate": 4.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/90482cc8b61240a71eb2bafdf543175f.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Warthog Auto",
-      "chineseName": {
-        "weaponRef": "warthog_auto_210",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - “疣猪” 210 自动霰弹枪",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "warthog_auto_210",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 “疣猪” 210 自动霰弹枪 武器专精。",
       "enUnlockCondition": "Complete a Warthog Auto 210 weapon mastery dive",
-      "completionRate": 10.6,
+      "completionRate": 10.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/5dc06824a7af5f69a6f4fbba182954d2.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Voltaic SMG",
-      "chineseName": {
-        "weaponRef": "stubby_voltaic_smg",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - “百万” 伏特微型冲锋枪",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "stubby_voltaic_smg",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 “百万” 伏特微型冲锋枪 武器专精。",
       "enUnlockCondition": "Complete a Stubby Voltaic SMG weapon mastery dive",
-      "completionRate": 8.1,
+      "completionRate": 8.2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/62056b3bb3bf2eb2367e87c8af5233ac.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Hi-Volt Thunderbird",
-      "chineseName": {
-        "weaponRef": "hi_volt_thunderbird",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - Hi-Volt “雷鸟” 电击护卫无人机",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "hi_volt_thunderbird",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 Hi-Volt “雷鸟” 电击护卫无人机 武器专精。",
       "enUnlockCondition": "Complete a Hi-Volt Thunderbird weapon mastery dive",
-      "completionRate": null,
+      "completionRate": 8.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/7d17ae6029f85d86709c6b2ee727da33.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: LMG Gun Platform",
-      "chineseName": {
-        "weaponRef": "lmg_gun_platform",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - 轻机枪哨戒炮",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "lmg_gun_platform",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 轻机枪哨戒炮 武器专精。",
       "enUnlockCondition": "Complete a LMG Gun Platform weapon mastery dive",
       "completionRate": 17.4,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/b57a12096234d49216b2671e22c57ba4.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Voltaic Shock Fence",
-      "chineseName": {
-        "weaponRef": "voltaic_shock_fence",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - 强电防护网",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "voltaic_shock_fence",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 强电防护网 武器专精。",
       "enUnlockCondition": "Complete a Voltaic Shock Fence weapon mastery dive",
-      "completionRate": 7.1,
+      "completionRate": 7.2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/e70c519e575ed3867718f0bd70e20202.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: LOK-1 Smart Rifle",
-      "chineseName": {
-        "weaponRef": "lok_1_smart_rifle",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - LOK-1 智能步枪",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "lok_1_smart_rifle",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 LOK-1 智能步枪 武器专精。",
       "enUnlockCondition": "Complete a LOK-1 Smart Rifle weapon mastery dive",
       "completionRate": 8.6,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/f678a694333cf34c53dee2463e17d935.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: DeepCore PGL",
-      "chineseName": {
-        "weaponRef": "deepcore_pgl",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - 深核 40mm 便携式榴弹发射器",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "deepcore_pgl",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 深核 40mm 便携式榴弹发射器 武器专精。",
       "enUnlockCondition": "Complete a DeepCore PGL weapon mastery dive",
-      "completionRate": 8,
+      "completionRate": 8.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/1aa7d9fdcca0186e57bffc93b7226183.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Breach Cutter",
-      "chineseName": {
-        "weaponRef": "breach_cutter_armskore_coil_gun",
-        "name": "由浅入深：{weapon}II"
-      },
+      "chineseName": "由浅入深 - 等离子切割器",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "breach_cutter_armskore_coil_gun",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 等离子切割器 武器专精。",
       "enUnlockCondition": "Complete a Breach Cutter weapon mastery dive",
       "completionRate": 7.3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/1d692fef6d7c33e0bc97df9bc925dd96.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Shard Diffractor",
-      "chineseName": {
-        "weaponRef": "shard_diffractor",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - 心石聚能炮",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "shard_diffractor",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 心石聚能炮 武器专精。",
       "enUnlockCondition": "Complete a Shard Diffractor weapon mastery dive",
       "completionRate": 5.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/5307ac431f1ef70656da3e6a9c65cf97.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Plasma Burster",
-      "chineseName": {
-        "weaponRef": "plasma_burster",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - 电浆连爆雷",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "plasma_burster",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 电浆连爆雷 武器专精。",
       "enUnlockCondition": "Complete a Plasma Burster weapon mastery dive",
-      "completionRate": 5.1,
+      "completionRate": 5.2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/3e12d9b8dd08ae16d5abfbce9d8a65bd.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Swarm Grenade",
-      "chineseName": {
-        "weaponRef": "shredder_swarm_grenade",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - 蜂群手雷",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "shredder_swarm_grenade",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 蜂群手雷 武器专精。",
       "enUnlockCondition": "Complete a Shredder Swarm Grenade weapon mastery dive",
       "completionRate": 4.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/c205f33a80e975974ce283ba158a7eb0.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Subata 120",
-      "chineseName": {
-        "weaponRef": "subata_120",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - 苏巴特 120 半自动手枪",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "subata_120",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 苏巴特 120 半自动手枪 武器专精。",
       "enUnlockCondition": "Complete a Subata 120 weapon mastery dive",
-      "completionRate": null,
+      "completionRate": 9.2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/43a8577117fc37beca1d3f7e02f60224.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Krakatoa Sentinel",
-      "chineseName": {
-        "weaponRef": "krakatoa_sentinel",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - “喀拉喀托” 单兵喷火哨戒炮",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "krakatoa_sentinel",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 “喀拉喀托” 单兵喷火哨戒炮 武器专精。",
       "enUnlockCondition": "Complete a Krakatoa Sentinel weapon mastery dive",
-      "completionRate": 10.7,
+      "completionRate": 10.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/ea0e1b4c0c68d907b5eea0f9886b3310.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Mastery: HE Grenade",
-      "chineseName": {
-        "weaponRef": "high_explosive_grenade",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - 高爆手雷",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "high_explosive_grenade",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 高爆手雷 武器专精。",
       "enUnlockCondition": "Complete a High Explosive Grenade weapon mastery dive",
-      "completionRate": 6.6,
+      "completionRate": 6.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/88c80198490567cee426760b30834b51.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: CRSPR Flamethrower",
-      "chineseName": {
-        "weaponRef": "crspr_flamethrower",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - CRSPR 火焰喷射器",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "crspr_flamethrower",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 CRSPR 火焰喷射器 武器专精。",
       "enUnlockCondition": "Complete a CRSPR Flamethrower weapon mastery dive",
       "completionRate": 12.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/158ba2ea9f683ea8a0fff76673019db5.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Sludge Pump",
-      "chineseName": {
-        "weaponRef": "corrosive_sludge_pump",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - 蚀泥喷射泵",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "corrosive_sludge_pump",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 蚀泥喷射泵 武器专精。",
       "enUnlockCondition": "Complete a Corrosive Sludge Pump weapon mastery dive",
       "completionRate": 8.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/c72a9ec0dfa6626b54898f075cde96eb.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Wave Cooker",
-      "chineseName": {
-        "weaponRef": "colette_wave_cooker",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - 柯莱特 微波烹调者",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "colette_wave_cooker",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 柯莱特 微波烹调者 武器专精。",
       "enUnlockCondition": "Complete a Colette Wave Cooker weapon mastery dive",
-      "completionRate": null,
+      "completionRate": 8.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/5a544f53ceb9e64c141e8cc15d5ef166.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Impact Axe",
-      "chineseName": {
-        "weaponRef": "impact_axe",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - 冲击战斧",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "impact_axe",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 冲击战斧 武器专精。",
       "enUnlockCondition": "Complete an Impact Axe weapon mastery dive",
       "completionRate": 7.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/9c4d7d9d1ae44d520b731e2348ef8e7a.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Neurotoxin Grenade",
-      "chineseName": {
-        "weaponRef": "neurotoxin_grenade",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - 神经毒素手雷",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "neurotoxin_grenade",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 神经毒素手雷 武器专精。",
       "enUnlockCondition": "Complete a Neurotoxin Grenade weapon mastery dive",
-      "completionRate": 6.4,
+      "completionRate": 6.6,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/33cfa825e2238212dfc58056d53d8aa2.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Cryo Cannon",
-      "chineseName": {
-        "weaponRef": "cryo_cannon",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - 急冻喷射炮",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "cryo_cannon",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 急冻喷射炮 武器专精。",
       "enUnlockCondition": "Complete a Cryo Cannon weapon mastery dive",
-      "completionRate": 5.6,
+      "completionRate": 5.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/ea209086ff88111abb3878617be55e45.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: K1-P Viper Drone",
-      "chineseName": "由浅入深：酸液无人机",
+      "chineseName": "由浅入深 - K1-P “毒蟒” 腐蚀毒素无人机",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "k1_p_viper_drone",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 K1-P “毒蟒” 腐蚀毒素无人机 武器专精。",
       "enUnlockCondition": "Complete a K1-P Viper Drone weapon mastery dive",
-      "completionRate": 5.5,
+      "completionRate": 5.6,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/314a8545a66684449cce2a2cbcc14105.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mastery: Plasma Charger",
-      "chineseName": {
-        "weaponRef": "experimental_plasma_charger",
-        "name": "由浅入深：{weapon}"
-      },
+      "chineseName": "由浅入深 - 实验性等离子蓄能手枪",
       "category": "武器专精",
-      "unlockCondition": {
-        "weaponRef": "experimental_plasma_charger",
-        "unlockCondition": "完成 {weapon} 武器专精深潜"
-      },
+      "unlockCondition": "完成任意风险等级的 实验性等离子蓄能手枪 武器专精。",
       "enUnlockCondition": "Complete a Experimental Plasma Charger weapon mastery dive",
       "completionRate": 4.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/eed9cfbbf01525ed64248e010a9e7c1e.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: DeepCore GK2",
-      "chineseName": {
-        "weaponRef": "deepcore_gk2",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - 深核 GK2 突击步枪",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "deepcore_gk2",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 深核 GK2 突击步枪 武器专精。",
       "enUnlockCondition": "Complete a DeepCore GK2 weapon mastery dive at Hazard 5",
       "completionRate": 2.4,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/7704fac1c4907be43c58344d4a586229.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Zhukov NUK17",
-      "chineseName": {
-        "weaponRef": "zhukov_nuk17",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - 朱可夫 NUK17 双持冲锋枪",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "zhukov_nuk17",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 朱可夫 NUK17 双持冲锋枪 武器专精。",
       "enUnlockCondition": "Complete a Zhukov NUK17 weapon mastery dive at Hazard 5",
       "completionRate": 2.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/4656830f5f6b80afac7d228522901d70.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Cryo Grenade",
-      "chineseName": {
-        "weaponRef": "cryo_grenade",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - 急冻手雷",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "cryo_grenade",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 急冻手雷 武器专精。",
       "enUnlockCondition": "Complete a Cryo Grenade weapon mastery dive at Hazard 5",
       "completionRate": 2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/a8f68c069626d307b7e45c1f560bd47f.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Jury-Rigged Boomstick",
-      "chineseName": {
-        "weaponRef": "jury_rigged_boomstick",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - 应急霰弹枪",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "jury_rigged_boomstick",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 应急霰弹枪 武器专精。",
       "enUnlockCondition": "Complete a Jury-Rigged Boomstick weapon mastery dive at Hazard 5",
       "completionRate": 2.2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/bfcad9e0adc311c524ce02f4bd24c0a2.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: M1000",
-      "chineseName": {
-        "weaponRef": "m1000",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - M1000 经典型步枪",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "m1000",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 M1000 经典型步枪 武器专精。",
       "enUnlockCondition": "Complete a M1000 weapon mastery dive at Hazard 5",
-      "completionRate": 2.6,
+      "completionRate": 2.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/c8194139285c86c40d28c0c0017710b9.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Stun Sweeper",
-      "chineseName": {
-        "weaponRef": "voltaic_stun_sweeper",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - “雷神之罚” 电击枪",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "voltaic_stun_sweeper",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 “雷神之罚” 电击枪 武器专精。",
       "enUnlockCondition": "Complete a Voltaic Stun Sweeper weapon mastery dive at Hazard 5",
-      "completionRate": null,
+      "completionRate": 1.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/9bc38a28f93ab8f2fc7851bb0dbee812.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: TH-0R Bug Taser",
-      "chineseName": {
-        "weaponRef": "th_0r_bug_taser",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - 强电震击镖",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "th_0r_bug_taser",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 强电震击镖 武器专精。",
       "enUnlockCondition": "Complete a TH-0R Bug Taser weapon mastery dive at Hazard 5",
-      "completionRate": null,
+      "completionRate": 1.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/024a45cd37683d4dd731398eb544965b.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Cryo Guard",
-      "chineseName": {
-        "weaponRef": "arc_tek_cryo_guard",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - Arc-Tek 急冻护卫无人机",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "arc_tek_cryo_guard",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 Arc-Tek 急冻护卫无人机 武器专精。",
       "enUnlockCondition": "Complete a Arc-Tek Cryo Guard weapon mastery dive at Hazard 5",
-      "completionRate": null,
+      "completionRate": 1.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/7deb8c682bcd98b236c93e1708d896d3.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Plasma Carbine",
-      "chineseName": {
-        "weaponRef": "drak_25_plasma_carbine",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - DRAK-25 电浆卡宾枪",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "drak_25_plasma_carbine",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 DRAK-25 电浆卡宾枪 武器专精。",
       "enUnlockCondition": "Complete a DRAK-25 Plasma Carbine weapon mastery dive at Hazard 5",
       "completionRate": 2.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/15e1286c111effcb38fb28a63ae7a2f1.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Nishanka Boltshark",
-      "chineseName": {
-        "weaponRef": "nishanka_boltshark",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - 尼桑卡 X-80 “闪电鲨” 战术弩",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "nishanka_boltshark",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 尼桑卡 X-80 “闪电鲨” 战术弩 武器专精。",
       "enUnlockCondition": "Complete a Nishanka Boltshark weapon mastery dive at Hazard 5",
       "completionRate": 2.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/1aed47e6cffe35fb1bb76c83ebcaab5e.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Heavy Revolver",
-      "chineseName": {
-        "weaponRef": "bulldog_heavy_revolver",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - “斗牛犬” 重型左轮手枪",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "bulldog_heavy_revolver",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 “斗牛犬” 重型左轮手枪 武器专精。",
       "enUnlockCondition": "Complete a Bulldog Heavy Revolver weapon mastery dive at Hazard 5",
-      "completionRate": null,
+      "completionRate": 1.6,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/2f5174776b0d881388a4b95057c53cfe.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Incendiary Grenade",
-      "chineseName": {
-        "weaponRef": "incendiary_grenade",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - 燃烧手雷",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "incendiary_grenade",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 燃烧手雷 武器专精。",
       "enUnlockCondition": "Complete a Incendiary Grenade weapon mastery dive at Hazard 5",
       "completionRate": 2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/ff4212b2a370fd4cd0104003b826fcb3.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Powered Minigun",
-      "chineseName": {
-        "weaponRef": "lead_storm_powered_minigun",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - “铅暴” 转管机枪",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "lead_storm_powered_minigun",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 “铅暴” 转管机枪 武器专精。",
       "enUnlockCondition": "Complete a Lead Storm Powered Minigun weapon mastery dive at Hazard 5",
-      "completionRate": null,
+      "completionRate": 1.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/9d11588e14992be0891509c184444d9b.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Burst Fire Gun",
-      "chineseName": {
-        "weaponRef": "brt7_burst_fire_gun",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - BRT7 连发手枪",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "brt7_burst_fire_gun",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 BRT7 连发手枪 武器专精。",
       "enUnlockCondition": "Complete a BRT7 Burst Fire Gun weapon mastery dive at Hazard 5",
-      "completionRate": null,
+      "completionRate": 1.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/f92cd2597e0e7aca25bfceca275efbc7.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Tactical Leadburster",
-      "chineseName": {
-        "weaponRef": "tactical_leadburster",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - 战术铅暴雷",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "tactical_leadburster",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 战术铅暴雷 武器专精。",
       "enUnlockCondition": "Complete a Tactical Leadburster weapon mastery dive at Hazard 5",
       "completionRate": 2.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/1d251df03042e7b43147b5ce124bec68.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Heavy Autocannon",
-      "chineseName": {
-        "weaponRef": "thunderhead_heavy_autocannon",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - “雷暴云砧” 重型双管机炮",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "thunderhead_heavy_autocannon",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 “雷暴云砧” 重型双管机炮 武器专精。",
       "enUnlockCondition": "Complete a Thunderhead Heavy Autocannon weapon mastery dive at Hazard 5",
       "completionRate": 2.2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/8f7eb9c68509a01e3c551f87a720f727.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Firefly Hunter Drone",
-      "chineseName": {
-        "weaponRef": "firefly_hunter_drone",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - “萤火虫” 燃烧狩猎无人机",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "firefly_hunter_drone",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 “萤火虫” 燃烧狩猎无人机 武器专精。",
       "enUnlockCondition": "Complete a Firefly Hunter Drone weapon mastery dive at Hazard 5",
       "completionRate": 2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/8a91de00ce17a5c99914bb12c0283aca.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Hurricane",
-      "chineseName": {
-        "weaponRef": "hurricane_guided_rocket_system",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - “飓风” 制导火箭系统",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "hurricane_guided_rocket_system",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 “飓风” 制导火箭系统 武器专精。",
       "enUnlockCondition": "Complete a Hurricane Guided Rocket System weapon mastery dive at Hazard 5",
       "completionRate": 2.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/c7ffaac428878fcb485e9778ab1a960f.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Seismic Repulsor",
-      "chineseName": "深得精髓：地震哨戒炮",
+      "chineseName": "深得精髓 - “地震冲击” 重锤哨戒炮",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "seismic_repulsor",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 “地震冲击” 重锤哨戒炮 武器专精。",
       "enUnlockCondition": "Complete a Seismic Repulsor weapon mastery dive at Hazard 5",
       "completionRate": 2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/95a8851956aaf408145de5dc56e7af9b.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Coil Gun",
-      "chineseName": {
-        "weaponRef": "breach_cutter_armskore_coil_gun",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - “武装核心” 电磁手炮",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "armskore_coil_gun",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 “武装核心” 电磁手炮 武器专精。",
       "enUnlockCondition": "Complete a ArmsKore Coil Gun weapon mastery dive at Hazard 5",
       "completionRate": 2.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/5e7c5be3508ed8f49353e0aaa038812c.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Warthog Auto",
-      "chineseName": {
-        "weaponRef": "warthog_auto_210",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - “疣猪” 210 自动霰弹枪",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "warthog_auto_210",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 “疣猪” 210 自动霰弹枪 武器专精。",
       "enUnlockCondition": "Complete a Warthog Auto 210 weapon mastery dive at Hazard 5",
       "completionRate": 2.2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/9739078e8db4fa6e07f262e6f24dacf2.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Voltaic SMG",
-      "chineseName": {
-        "weaponRef": "stubby_voltaic_smg",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - “百万” 伏特微型冲锋枪",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "stubby_voltaic_smg",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 “百万” 伏特微型冲锋枪 武器专精。",
       "enUnlockCondition": "Complete a Stubby Voltaic SMG weapon mastery dive at Hazard 5",
-      "completionRate": null,
+      "completionRate": 1.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/76d59433e8b1f5af6ad2101c5538eca9.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Hi-Volt Thunderbird",
-      "chineseName": {
-        "weaponRef": "hi_volt_thunderbird",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - Hi-Volt “雷鸟” 电击护卫无人机",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "hi_volt_thunderbird",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 Hi-Volt “雷鸟” 电击护卫无人机 武器专精。",
       "enUnlockCondition": "Complete a Hi-Volt Thunderbird weapon mastery dive at Hazard 5",
-      "completionRate": null,
+      "completionRate": 1.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/bd439f62f7eba610723c2b09c73be734.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: LMG Gun Platform",
-      "chineseName": {
-        "weaponRef": "lmg_gun_platform",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - 轻机枪哨戒炮",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "lmg_gun_platform",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 轻机枪哨戒炮 武器专精。",
       "enUnlockCondition": "Complete a LMG Gun Platform weapon mastery dive at Hazard 5",
       "completionRate": 2.6,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/6b100924a5747007592f955bcfd468dc.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Voltaic Shock Fence",
-      "chineseName": {
-        "weaponRef": "voltaic_shock_fence",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - 强电防护网",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "voltaic_shock_fence",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 强电防护网 武器专精。",
       "enUnlockCondition": "Complete a Voltaic Shock Fence weapon mastery dive at Hazard 5",
-      "completionRate": null,
+      "completionRate": 1.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/5711f3607a6d2f0b77fe765d10177361.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: LOK-1 Smart Rifle",
-      "chineseName": {
-        "weaponRef": "lok_1_smart_rifle",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - LOK-1 智能步枪",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "lok_1_smart_rifle",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 LOK-1 智能步枪 武器专精。",
       "enUnlockCondition": "Complete a LOK-1 Smart Rifle weapon mastery dive at Hazard 5",
-      "completionRate": null,
+      "completionRate": 1.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/1668b31b6e8a5ea551160e0e7b71cf36.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: DeepCore PGL",
-      "chineseName": {
-        "weaponRef": "deepcore_pgl",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - 深核 40mm 便携式榴弹发射器",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "deepcore_pgl",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 深核 40mm 便携式榴弹发射器 武器专精。",
       "enUnlockCondition": "Complete a DeepCore PGL weapon mastery dive at Hazard 5",
       "completionRate": 2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/6b80e879d2f81ec78fdc6cd8a2c54b9f.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Breach Cutter",
-      "chineseName": {
-        "weaponRef": "breach_cutter_armskore_coil_gun",
-        "name": "深得精髓：{weapon}II"
-      },
+      "chineseName": "深得精髓 - 等离子切割器",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "breach_cutter_armskore_coil_gun",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 等离子切割器 武器专精。",
       "enUnlockCondition": "Complete a Breach Cutter weapon mastery dive at Hazard 5",
-      "completionRate": null,
+      "completionRate": 1.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/437dffe3091859b8f2d4a9257ec86290.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Shard Diffractor",
-      "chineseName": {
-        "weaponRef": "shard_diffractor",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - 心石聚能炮",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "shard_diffractor",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 心石聚能炮 武器专精。",
       "enUnlockCondition": "Complete a Shard Diffractor weapon mastery dive at Hazard 5",
-      "completionRate": null,
+      "completionRate": 1.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/f16c9651fc971c5504795a5d0db95e6a.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Plasma Burster",
-      "chineseName": {
-        "weaponRef": "plasma_burster",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - 电浆连爆雷",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "plasma_burster",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 电浆连爆雷 武器专精。",
       "enUnlockCondition": "Complete a Plasma Burster weapon mastery dive at Hazard 5",
-      "completionRate": null,
+      "completionRate": 1.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/ede69b8de6f063ba802668d9eaae22c4.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Swarm Grenade",
-      "chineseName": {
-        "weaponRef": "shredder_swarm_grenade",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - 蜂群手雷",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "shredder_swarm_grenade",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 蜂群手雷 武器专精。",
       "enUnlockCondition": "Complete a Shredder Swarm Grenade weapon mastery dive at Hazard 5",
-      "completionRate": null,
+      "completionRate": 1.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/08e5991d374b822892df042c3b08a57c.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Subata 120",
-      "chineseName": {
-        "weaponRef": "subata_120",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - 苏巴特 120 半自动手枪",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "subata_120",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 苏巴特 120 半自动手枪 武器专精。",
       "enUnlockCondition": "Complete a Subata 120 weapon mastery dive at Hazard 5",
-      "completionRate": null,
+      "completionRate": 1.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/c110a5d9f5c81e58fef6f2a8cfde26c4.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Krakatoa Sentinel",
-      "chineseName": {
-        "weaponRef": "krakatoa_sentinel",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - “喀拉喀托” 单兵喷火哨戒炮",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "krakatoa_sentinel",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 “喀拉喀托” 单兵喷火哨戒炮 武器专精。",
       "enUnlockCondition": "Complete a Krakatoa Sentinel weapon mastery dive at Hazard 5",
       "completionRate": 2.2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/91c4fe3e39cafe9f2aaed2536f9a5f5c.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: HE Grenade",
-      "chineseName": {
-        "weaponRef": "high_explosive_grenade",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - 高爆手雷",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "high_explosive_grenade",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 高爆手雷 武器专精。",
       "enUnlockCondition": "Complete a High Explosive Grenade weapon mastery dive at Hazard 5",
-      "completionRate": null,
+      "completionRate": 1.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/d2ece4786e5d41e558e92b2bab601d04.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: CRSPR Flamethrower",
-      "chineseName": {
-        "weaponRef": "crspr_flamethrower",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - CRSPR 火焰喷射器",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "crspr_flamethrower",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 CRSPR 火焰喷射器 武器专精。",
       "enUnlockCondition": "Complete a CRSPR Flamethrower weapon mastery dive at Hazard 5",
       "completionRate": 2.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/6f1ab72589c9ba70c10aa237b1c54a66.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Sludge Pump",
-      "chineseName": {
-        "weaponRef": "corrosive_sludge_pump",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - 蚀泥喷射泵",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "corrosive_sludge_pump",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 蚀泥喷射泵 武器专精。",
       "enUnlockCondition": "Complete a Corrosive Sludge Pump weapon mastery dive at Hazard 5",
       "completionRate": 2.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/3ddaf5ecaf1120c3d1714485bbe8cfca.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Wave Cooker",
-      "chineseName": {
-        "weaponRef": "colette_wave_cooker",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - 柯莱特 微波烹调者",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "colette_wave_cooker",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 柯莱特 微波烹调者 武器专精。",
       "enUnlockCondition": "Complete a Colette Wave Cooker weapon mastery dive at Hazard 5",
       "completionRate": 2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/fb927cda027f59a33d2eb333e08ffd1c.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Impact Axe",
-      "chineseName": {
-        "weaponRef": "impact_axe",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - 冲击战斧",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "impact_axe",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 冲击战斧 武器专精。",
       "enUnlockCondition": "Complete an Impact Axe weapon mastery dive at Hazard 5",
       "completionRate": 2.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/e9138839ca9b444594f65b4053a9d61f.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Neurotoxin Grenade",
-      "chineseName": {
-        "weaponRef": "neurotoxin_grenade",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - 神经毒素手雷",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "neurotoxin_grenade",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 神经毒素手雷 武器专精。",
       "enUnlockCondition": "Complete a Neurotoxin Grenade weapon mastery dive at Hazard 5",
       "completionRate": 2.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/940264b2590ead8a0d0c5293311a2eee.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Cryo Cannon",
-      "chineseName": {
-        "weaponRef": "cryo_cannon",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - 急冻喷射炮",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "cryo_cannon",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 急冻喷射炮 武器专精。",
       "enUnlockCondition": "Complete a Cryo Cannon weapon mastery dive at Hazard 5",
-      "completionRate": null,
+      "completionRate": 1.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/63eb15b7f7e5139a8558e876ea75f291.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: K1-P Viper Drone",
-      "chineseName": "深得精髓：酸液无人机",
+      "chineseName": "深得精髓 - K1-P “毒蟒” 腐蚀毒素无人机",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "k1_p_viper_drone",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 K1-P “毒蟒” 腐蚀毒素无人机 武器专精。",
       "enUnlockCondition": "Complete a K1-P Viper Drone weapon mastery dive at Hazard 5",
-      "completionRate": 2,
+      "completionRate": 2.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/9e8b4a9bab1c90dd9169011950cc42ab.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "True Mastery: Plasma Charger",
-      "chineseName": {
-        "weaponRef": "experimental_plasma_charger",
-        "name": "深得精髓：{weapon}"
-      },
+      "chineseName": "深得精髓 - 实验性等离子蓄能手枪",
       "category": "武器真专精",
-      "unlockCondition": {
-        "weaponRef": "experimental_plasma_charger",
-        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
-      },
+      "unlockCondition": "完成风险等级 5 的 实验性等离子蓄能手枪 武器专精。",
       "enUnlockCondition": "Complete a Experimental Plasma Charger weapon mastery dive at Hazard 5",
-      "completionRate": null,
+      "completionRate": 1.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/9b54d4232a7e94162825046e4c115482.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Crystalline Caverns",
       "chineseName": "水晶洞穴",
       "category": "生物群系",
-      "unlockCondition": "赢取 水晶洞穴 危险等级 5 深潜",
+      "unlockCondition": "完成风险等级 5 的水晶洞穴深潜。",
       "enUnlockCondition": "Win a Crystalline Caverns Hazard 5 dive",
       "completionRate": 6.2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/ce2c9d47cd7849c86b85c0653030d4d2.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前",
       "biomeTier": "H5"
     },
     {
       "englishName": "Mastery - Crystalline Caverns",
-      "chineseName": "专精 - 水晶洞穴",
+      "chineseName": "初试锋芒 - 水晶洞穴",
       "category": "生物群系",
-      "unlockCondition": "完成 水晶洞穴 专精深潜",
+      "unlockCondition": "完成任意风险等级的 水晶洞穴 生态区域专精。",
       "enUnlockCondition": "Complete a Crystalline Caverns mastery dive",
-      "completionRate": 11.3,
+      "completionRate": 11.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/4eb7878a730d7382023ea52a3f5b51a2.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前",
       "biomeTier": "Mastery"
     },
     {
       "englishName": "True Mastery - Crystalline Caverns",
-      "chineseName": "真专精 - 水晶洞穴",
+      "chineseName": "驾轻就熟 - 水晶洞穴",
       "category": "生物群系",
-      "unlockCondition": "危险等级 5 完成 水晶洞穴 专精深潜",
+      "unlockCondition": "完成风险等级 5 的 水晶洞穴 生态区域专精。",
       "enUnlockCondition": "Complete a Crystalline Caverns mastery dive at Hazard 5",
       "completionRate": 3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/f915c87ba9a7b4143463326569404f2c.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前",
       "biomeTier": "TrueMastery"
     },
     {
       "englishName": "Magma Core",
-      "chineseName": "岩浆核心",
+      "chineseName": "熔岩之心",
       "category": "生物群系",
-      "unlockCondition": "赢取 岩浆核心 危险等级 5 深潜",
+      "unlockCondition": "完成风险等级 5 的熔岩之心深潜。",
       "enUnlockCondition": "Win a Magma Core Hazard 5 dive",
       "completionRate": 5.4,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/cc89127af1d24cfa52f5afc7b015fd18.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前",
       "biomeTier": "H5"
     },
     {
       "englishName": "Mastery - Magma Core",
-      "chineseName": "专精 - 岩浆核心",
+      "chineseName": "初试锋芒 - 熔岩之心",
       "category": "生物群系",
-      "unlockCondition": "完成 岩浆核心 专精深潜",
+      "unlockCondition": "完成任意风险等级的 熔岩之心 生态区域专精。",
       "enUnlockCondition": "Complete a Magma Core mastery dive",
       "completionRate": 8.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/95751d52c5dcbccb7ae08d7e9d9389b4.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前",
       "biomeTier": "Mastery"
     },
     {
       "englishName": "True Mastery - Magma Core",
-      "chineseName": "真专精 - 岩浆核心",
+      "chineseName": "驾轻就熟 - 熔岩之心",
       "category": "生物群系",
-      "unlockCondition": "危险等级 5 完成 岩浆核心 专精深潜",
+      "unlockCondition": "完成风险等级 5 的 熔岩之心 生态区域专精。",
       "enUnlockCondition": "Complete a Magma Core mastery dive at Hazard 5",
-      "completionRate": 2.5,
+      "completionRate": 2.6,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/31a752ed2b754f5cac2c01f3c53a99f1.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前",
       "biomeTier": "TrueMastery"
     },
     {
       "englishName": "Hollow Bough",
-      "chineseName": "空洞枝桠",
+      "chineseName": "藤络树洞",
       "category": "生物群系",
-      "unlockCondition": "赢取 空洞枝桠 危险等级 5 深潜",
+      "unlockCondition": "完成风险等级 5 的藤络树洞深潜。",
       "enUnlockCondition": "Win a Hollow Bough Hazard 5 dive",
       "completionRate": 4.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/11fbdeb18a271644e2f3e2035c721ccd.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前",
       "biomeTier": "H5"
     },
     {
       "englishName": "Mastery - Hollow Bough",
-      "chineseName": "专精 - 空洞枝桠",
+      "chineseName": "初试锋芒 - 藤络树洞",
       "category": "生物群系",
-      "unlockCondition": "完成 空洞枝桠 专精深潜",
+      "unlockCondition": "完成任意风险等级的 藤络树洞 生态区域专精。",
       "enUnlockCondition": "Complete a Hollow Bough mastery dive",
-      "completionRate": 7.9,
+      "completionRate": 8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/108be96488ed3951af7578c5c4ec9d35.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前",
       "biomeTier": "Mastery"
     },
     {
       "englishName": "True Mastery - Hollow Bough",
-      "chineseName": "真专精 - 空洞枝桠",
+      "chineseName": "驾轻就熟 - 藤络树洞",
       "category": "生物群系",
-      "unlockCondition": "危险等级 5 完成 空洞枝桠 专精深潜",
+      "unlockCondition": "完成风险等级 5 的 藤络树洞 生态区域专精。",
       "enUnlockCondition": "Complete a Hollow Bough mastery dive at Hazard 5",
       "completionRate": 2.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/8664196379e80e16818899593d16fc0a.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前",
       "biomeTier": "TrueMastery"
     },
@@ -3519,999 +3161,1216 @@
       "englishName": "Salt Pits",
       "chineseName": "盐坑",
       "category": "生物群系",
-      "unlockCondition": "赢取 盐坑 危险等级 5 深潜",
+      "unlockCondition": "完成风险等级 5 的盐坑深潜。",
       "enUnlockCondition": "Win a Salt Pits Hazard 5 dive",
-      "completionRate": 5.2,
+      "completionRate": 5.4,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/2702d2a53232978c46a6bbda0f5048d8.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前",
       "biomeTier": "H5"
     },
     {
       "englishName": "Mastery - Salt Pits",
-      "chineseName": "专精 - 盐坑",
+      "chineseName": "初试锋芒 - 盐坑",
       "category": "生物群系",
-      "unlockCondition": "完成 盐坑 专精深潜",
+      "unlockCondition": "完成任意风险等级的 盐坑 生态区域专精。",
       "enUnlockCondition": "Complete a Salt Pits mastery dive",
       "completionRate": 7.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/fbc21837d4c314a25f2a687d837a3117.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前",
       "biomeTier": "Mastery"
     },
     {
       "englishName": "True Mastery - Salt Pits",
-      "chineseName": "真专精 - 盐坑",
+      "chineseName": "驾轻就熟 - 盐坑",
       "category": "生物群系",
-      "unlockCondition": "危险等级 5 完成 盐坑 专精深潜",
+      "unlockCondition": "完成风险等级 5 的 盐坑 生态区域专精。",
       "enUnlockCondition": "Complete a Salt Pits mastery dive at Hazard 5",
-      "completionRate": 2.4,
+      "completionRate": 2.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/c7e852672e3141530b4bb99712112f82.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前",
       "biomeTier": "TrueMastery"
     },
     {
       "englishName": "Azure Weald",
-      "chineseName": "蔚蓝荒野",
+      "chineseName": "蔚蓝花甸",
       "category": "生物群系",
-      "unlockCondition": "赢取 蔚蓝荒野 危险等级 5 深潜",
+      "unlockCondition": "完成风险等级 5 的蔚蓝花甸深潜。",
       "enUnlockCondition": "Win an Azure Weald Hazard 5 dive",
-      "completionRate": 4.1,
+      "completionRate": 4.2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/fae83e1a3c566b52f9a4643c20ffa960.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前",
       "biomeTier": "H5"
     },
     {
       "englishName": "Mastery - Azure Weald",
-      "chineseName": "专精 - 蔚蓝荒野",
+      "chineseName": "初试锋芒 - 蔚蓝花甸",
       "category": "生物群系",
-      "unlockCondition": "完成 蔚蓝荒野 专精深潜",
+      "unlockCondition": "完成任意风险等级的 蔚蓝花甸 生态区域专精。",
       "enUnlockCondition": "Complete an Azure Weald mastery dive",
-      "completionRate": 6.7,
+      "completionRate": 6.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/3016ec8bba548485e7c2631e3413684e.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前",
       "biomeTier": "Mastery"
     },
     {
       "englishName": "True Mastery - Azure Weald",
-      "chineseName": "深得精髓：蔚蓝花甸",
+      "chineseName": "驾轻就熟 - 蔚蓝花甸",
       "category": "生物群系",
-      "unlockCondition": "危险等级 5 完成 蔚蓝花甸 专精深潜",
+      "unlockCondition": "完成风险等级 5 的 蔚蓝花甸 生态区域专精。",
       "enUnlockCondition": "Complete an Azure Weald mastery dive at Hazard 5",
-      "completionRate": 2.2,
+      "completionRate": 2.3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/f29ae714f846500493e096380f278b95.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前",
       "biomeTier": "TrueMastery"
     },
     {
       "englishName": "Feeling a bit sour",
-      "chineseName": "酸意盎然",
+      "chineseName": "酸不自已",
       "category": "武器标签",
-      "unlockCondition": "装备 3 把 [腐蚀] 武器完成深潜",
+      "unlockCondition": "携带 3 个[腐蚀]武器完成深潜。",
       "enUnlockCondition": "Complete a dive with 3 [ACID] weapons equipped",
-      "completionRate": 3.8,
+      "completionRate": 3.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/42d11892e98a6ca5585aa639706457a5.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Zone of control",
-      "chineseName": "控制区",
+      "chineseName": "区域控制",
       "category": "武器标签",
-      "unlockCondition": "装备 3 把 [范围] 武器完成深潜",
+      "unlockCondition": "携带 3 个[范围]武器完成深潜。",
       "enUnlockCondition": "Complete a dive with 3 [AREA] weapons equipped",
-      "completionRate": 3.9,
+      "completionRate": 4.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/e73a46813a6f1d6c91a02f692cf7c7e6.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Cross the beams",
-      "chineseName": "光束交错",
+      "chineseName": "穿虫走线",
       "category": "武器标签",
-      "unlockCondition": "装备 4 把 [光束] 武器完成深潜",
+      "unlockCondition": "携带 4 个[射线]武器完成深潜。",
       "enUnlockCondition": "Complete a dive with 4 [BEAM] weapons equipped",
-      "completionRate": 8.2,
+      "completionRate": 8.3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/14a2265ec02f820887037179e2dcc27e.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Dwarven architecture",
-      "chineseName": "矮人建筑学",
+      "chineseName": "矮人工艺",
       "category": "武器标签",
-      "unlockCondition": "装备 4 把 [建造] 武器完成深潜",
+      "unlockCondition": "携带 4 个[建造物]武器完成深潜。",
       "enUnlockCondition": "Complete a dive with 4 [CONSTRUCT] weapons equipped",
-      "completionRate": 11.5,
+      "completionRate": 11.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/3470fb376c52c495ba5481c115c8b266.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Deep freeze",
-      "chineseName": "深度冰冻",
+      "chineseName": "深度冻结",
       "category": "武器标签",
-      "unlockCondition": "装备 4 把 [冰冻] 武器完成深潜",
+      "unlockCondition": "携带 4 个[急冻]武器完成深潜。",
       "enUnlockCondition": "Complete a dive with 4 [COLD] weapons equipped",
-      "completionRate": null,
+      "completionRate": 1.6,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/bba4307f69fa09afa9de08b4258ef45a.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Modern warfare",
       "chineseName": "现代战争",
       "category": "武器标签",
-      "unlockCondition": "装备 3 把 [无人机] 武器完成深潜",
+      "unlockCondition": "携带 3 个[无人机]武器完成深潜。",
       "enUnlockCondition": "Complete a dive with 3 [DRONE] weapons equipped",
       "completionRate": 4.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/311155184c7b3a4fa57ea1f8c0817ce5.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Stormbringer",
-      "chineseName": "风暴使者",
+      "chineseName": "雷暴席卷",
       "category": "武器标签",
-      "unlockCondition": "装备 4 把 [电击] 武器完成深潜",
+      "unlockCondition": "携带 4 个[电击]武器完成深潜。",
       "enUnlockCondition": "Complete a dive with 4 [ELECTRICAL] weapons equipped",
-      "completionRate": 7.8,
+      "completionRate": 7.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/e388f3a56f8b25b2042780e598bf920d.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Bomberman",
-      "chineseName": "炸弹人",
+      "chineseName": "炸弹矮人",
       "category": "武器标签",
-      "unlockCondition": "装备 4 把 [爆炸] 武器完成深潜",
+      "unlockCondition": "携带 4 个[爆炸]武器完成深潜。",
       "enUnlockCondition": "Complete a dive with 4 [EXPLOSIVE] weapons equipped",
-      "completionRate": 6.2,
+      "completionRate": 6.3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/bc23683373ab6a582447b40796e897bf.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Keeper of the flame",
-      "chineseName": "火焰守护者",
+      "chineseName": "驭火使者",
       "category": "武器标签",
-      "unlockCondition": "装备 4 把 [火焰] 武器完成深潜",
+      "unlockCondition": "携带 4 个[燃烧]武器完成深潜。",
       "enUnlockCondition": "Complete a dive with 4 [FIRE] weapons equipped",
-      "completionRate": null,
+      "completionRate": 8.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/2d8fd1a4247e44aeb348c1653cccd907.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Who touched my gun!?",
-      "chineseName": "谁动我枪了",
+      "chineseName": "谁动了我的枪!?",
       "category": "武器标签",
-      "unlockCondition": "装备 4 把 [重型] 武器完成深潜",
+      "unlockCondition": "携带 4 个[重型]武器完成深潜。",
       "enUnlockCondition": "Complete a dive with 4 [HEAVY] weapons equipped",
-      "completionRate": 4.9,
+      "completionRate": 5.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/d5a371eaf5af65f6d0a1be3b754c4192.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Blunt force trauma",
-      "chineseName": "钝器创伤",
+      "chineseName": "硬性创伤",
       "category": "武器标签",
-      "unlockCondition": "装备 4 把 [动能] 武器完成深潜",
+      "unlockCondition": "携带 4 个[动能]武器完成深潜。",
       "enUnlockCondition": "Complete a dive with 4 [KINETIC] weapons equipped",
-      "completionRate": 17.2,
+      "completionRate": 17.4,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/15c9812351851d59af448adbb3a4741b.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Delayed gratification",
       "chineseName": "延迟满足",
       "category": "武器标签",
-      "unlockCondition": "装备 4 把 [持续] 武器完成深潜",
+      "unlockCondition": "携带 4 个[长时]武器完成深潜。",
       "enUnlockCondition": "Complete a dive with 4 [LASTING] weapons equipped",
-      "completionRate": 17.3,
+      "completionRate": 17.4,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/5aa5fa50b60af8d833f320e395b34cf5.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Fleet of foot",
-      "chineseName": "健步如飞",
+      "chineseName": "轻装疾行",
       "category": "武器标签",
-      "unlockCondition": "装备 4 把 [轻型] 武器完成深潜",
+      "unlockCondition": "携带 4 个[轻型]武器完成深潜。",
       "enUnlockCondition": "Complete a dive with 4 [LIGHT] weapons equipped",
       "completionRate": 4.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/34eb2047ece29b599fee70c6a720706b.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Tried and tested",
-      "chineseName": "久经考验",
+      "chineseName": "实战可靠",
       "category": "武器标签",
-      "unlockCondition": "装备 4 把 [中型] 武器完成深潜",
+      "unlockCondition": "携带 4 个[中型]武器完成深潜。",
       "enUnlockCondition": "Complete a dive with 4 [MEDIUM] weapons equipped",
-      "completionRate": 5.8,
+      "completionRate": 5.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/6b572013358b1427e122a4a2d8572205.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Light show",
-      "chineseName": "光影秀",
+      "chineseName": "电浆盛宴",
       "category": "武器标签",
-      "unlockCondition": "装备 4 把 [等离子] 武器完成深潜",
+      "unlockCondition": "携带 4 个[电浆]武器完成深潜。",
       "enUnlockCondition": "Complete a dive with 4 [PLASMA] weapons equipped",
       "completionRate": 2.4,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/73d85993df383a9d921da7781058896a.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Professionals have standards",
-      "chineseName": "专业有标准",
+      "chineseName": "专业人士可是有风度的",
       "category": "武器标签",
-      "unlockCondition": "装备 4 把 [精准] 武器完成深潜",
+      "unlockCondition": "携带 4 个[精密]武器完成深潜。",
       "enUnlockCondition": "Complete a dive with 4 [PRECISE] weapons equipped",
-      "completionRate": null,
+      "completionRate": 1.2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/a426c973ed88dbd742ceae643614b222.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Weight of fire",
-      "chineseName": "火力权重",
+      "chineseName": "沉重射击",
       "category": "武器标签",
-      "unlockCondition": "装备 4 把 [弹道] 武器完成深潜",
+      "unlockCondition": "携带 4 个[发射物]武器完成深潜。",
       "enUnlockCondition": "Complete a dive with 4 [PROJECTILE] weapons equipped",
-      "completionRate": 25.2,
+      "completionRate": 25.6,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/c9241f83d4d8eb81d2ad00fc531d3f0b.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Spray 'n pray",
-      "chineseName": "喷了就求",
+      "chineseName": "雨露均沾",
       "category": "武器标签",
-      "unlockCondition": "装备 4 把 [散射] 武器完成深潜",
+      "unlockCondition": "携带 4 个[散射]武器完成深潜。",
       "enUnlockCondition": "Complete a dive with 4 [SPRAY] weapons equipped",
-      "completionRate": 10.3,
+      "completionRate": 10.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/6bd297d2803f87e3c057d3ecff64afff.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "It's all in the wrist",
-      "chineseName": "全凭手腕",
+      "chineseName": "全靠手腕",
       "category": "武器标签",
-      "unlockCondition": "装备 4 把 [投掷] 武器完成深潜",
+      "unlockCondition": "携带 4 个[投掷物]武器完成深潜。",
       "enUnlockCondition": "Complete a dive with 4 [THROWABLE] weapons equipped",
-      "completionRate": 5.5,
+      "completionRate": 5.6,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/74d4e2360423038a8813b9813328d2ab.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Sentry goin' up",
-      "chineseName": "炮塔立起",
+      "chineseName": "步哨枪建立中",
       "category": "武器标签",
-      "unlockCondition": "装备 4 把 [炮塔] 武器完成深潜",
+      "unlockCondition": "携带 4 个[哨戒炮]武器完成深潜。",
       "enUnlockCondition": "Complete a dive with 4 [TURRET] weapons equipped",
-      "completionRate": null,
+      "completionRate": 1.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/604ac16bda317408d6b35fa01f3d01f6.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Got bait?",
-      "chineseName": "有诱饵吗？",
+      "chineseName": "永不空军",
       "category": "生物",
-      "unlockCondition": "单次深潜击杀 3 只 胡利囤积者",
+      "unlockCondition": "在单次深潜中杀死 3 只嗜矿异虫。",
       "enUnlockCondition": "Kill 3 Huuli Hoarders in one dive",
       "completionRate": 20,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/16d7effad2a32a4d5262d3d59a18e7c7.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "The dwarf with the golden bug",
-      "chineseName": "带金虫的矮人",
+      "chineseName": "矮人和他的金色朋友",
       "category": "生物",
-      "unlockCondition": "击杀一只金色 掠夺虫（稀有变种）",
+      "unlockCondition": "杀死一只黄金掠夺虫。",
       "enUnlockCondition": "Kill a golden lootbug",
-      "completionRate": 17.4,
+      "completionRate": 17.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/d68ed97fa601b5322efc94a72a7a5b80.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Still only counts as one!",
-      "chineseName": "仍只算一个！",
+      "chineseName": "那样也只能算一个！",
       "category": "生物",
-      "unlockCondition": "不受任何伤害击杀 无畏舰",
+      "unlockCondition": "在不受到任何伤害的情况下击杀无畏异虫。",
       "enUnlockCondition": "Kill the Dreadnought without taking any damage",
       "completionRate": 13.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/75ae577f293887cc1f3ded83924844ed.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Denied",
-      "chineseName": "拒绝",
+      "chineseName": "初生的孩子没奶喝",
       "category": "生物",
-      "unlockCondition": "在 无畏舰 双子 互相治疗前击杀它们",
+      "unlockCondition": "在双生无畏异虫进行治疗之前将它们击杀。",
       "enUnlockCondition": "Kill the Dreadnought Twins before they can heal",
-      "completionRate": 13.3,
+      "completionRate": 13.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/ae83d2d47929f0881802eb528c3ba973.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Bullseye",
-      "chineseName": "靶心",
+      "chineseName": "正中圆圈",
       "category": "生物",
-      "unlockCondition": "用补给舱击杀 Q'ronar Shellback",
+      "unlockCondition": "用补给舱压死一只丘罗那地虱。",
       "enUnlockCondition": "Kill a Q'ronar Shellback with the Supply Pod",
-      "completionRate": 7.8,
+      "completionRate": 8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/adc2f744ea0823824012a2c1db93c43a.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "This hurts me more",
-      "chineseName": "这更伤我",
+      "chineseName": "伤在虫身，痛在我心",
       "category": "生物",
-      "unlockCondition": "单次深潜击杀所有 掠夺虫（补货虫）",
+      "unlockCondition": "在单次深潜内击杀所有的掠夺虫。",
       "enUnlockCondition": "Kill all the lootbugs in a single dive",
-      "completionRate": 7.5,
+      "completionRate": 7.6,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/e8c8130abcbbf93bf667ead021afa1b4.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Get that Midas touch",
-      "chineseName": "获得迈达斯之触",
+      "chineseName": "生财之道",
       "category": "资源",
-      "unlockCondition": "收集 250 金",
+      "unlockCondition": "累计收集 250 单位黄金。",
       "enUnlockCondition": "Collect 250 Gold in a single dive",
       "completionRate": 91.2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/2f43b56d1d0d9f8b932b81888898248e.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Au-fully rich",
-      "chineseName": "极其富有",
+      "chineseName": "“金”人地富有",
       "category": "资源",
-      "unlockCondition": "收集 2,000 金（解锁 黄金 扫描器）",
+      "unlockCondition": "累计收集 2000 单位黄金。",
       "enUnlockCondition": "Collect 2,000 Gold",
-      "completionRate": 73.4,
+      "completionRate": 76,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/6a22ef1649281baf4d5bdd546c477464.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Gotta stay Nitrated",
-      "chineseName": "必须保持硝化",
+      "chineseName": "硝石充足",
       "category": "资源",
-      "unlockCondition": "收集 250 硝化铁",
+      "unlockCondition": "累计收集 250 单位硝石。",
       "enUnlockCondition": "Collect 250 Nitra",
-      "completionRate": 87.3,
+      "completionRate": 87.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/5293755c89227961a7b0c8431ee85cd3.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Sprinkle of Nitra",
-      "chineseName": "硝石井喷（少许 硝化铁）",
+      "chineseName": "硝石井喷",
       "category": "资源",
-      "unlockCondition": "收集 2,000 硝化铁（解锁 硝化铁 扫描器；中文指南称硝石井喷）",
+      "unlockCondition": "累计收集 2,000 单位硝石。",
       "enUnlockCondition": "Collect 2,000 Nitra",
-      "completionRate": 58.7,
+      "completionRate": 61.3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/2fb0d0e703d489e11a68bf04c345355e.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Works 100% of the time",
-      "chineseName": "百发百中（磁铁）",
+      "chineseName": "磁铁强者",
       "category": "资源",
-      "unlockCondition": "单次深潜收集 25 个磁铁",
+      "unlockCondition": "累计收集 25 块磁铁。",
       "enUnlockCondition": "Collect 25 magnets",
       "completionRate": 34.2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/06982be5934185589c65d3aaa51e6728.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "They belong in a museum",
-      "chineseName": "它们属于博物馆",
+      "chineseName": "附加的东西我们不要",
       "category": "神器",
-      "unlockCondition": "不使用任何神器完成深潜",
+      "unlockCondition": "完成任意深潜，且未获取任何附加装备。",
       "enUnlockCondition": "Complete a dive without any artifacts",
-      "completionRate": null,
+      "completionRate": 1.4,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/ec453b8950f189f8deb1d4c17eb3861a.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Deep scan",
-      "chineseName": "深度扫描",
+      "chineseName": "深度探测",
       "category": "神器",
-      "unlockCondition": "单次拥有 5 个 扫描器 神器（经验/黄金/硝化铁 扫描器）",
+      "unlockCondition": "在单次深潜内同时拥有 5 个探测仪类附加装备。",
       "enUnlockCondition": "Have 5 scanner artifacts in a single dive",
-      "completionRate": null,
+      "completionRate": 1.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/94773af184290bade7020ff72b95f327.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Corporate Discount",
-      "chineseName": "公司折扣",
+      "chineseName": "官方打折",
       "category": "商店",
-      "unlockCondition": "花费 2,500 金",
+      "unlockCondition": "累计花费 2,500 单位黄金。",
       "enUnlockCondition": "Spend 2,500 Gold",
-      "completionRate": 41.5,
+      "completionRate": 42,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/725f2cffe20d7aecac9ba57e8ce46170.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Big spender",
-      "chineseName": "大买家",
+      "chineseName": "花钱如流水",
       "category": "商店",
-      "unlockCondition": "花费 20,000 金",
+      "unlockCondition": "累计花费 20,000 单位黄金。",
       "enUnlockCondition": "Spend 20,000 Gold",
-      "completionRate": 23.3,
+      "completionRate": 23.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/66da79ab2fcf11aeefcdf0ace902366c.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "I ain't buying it",
-      "chineseName": "我才不买",
+      "chineseName": "不买立省百分百",
       "category": "商店",
-      "unlockCondition": "危险等级 3 不购买任何商店物品完成深潜",
+      "unlockCondition": "完成风险等级 3 的深潜，且未在商店购买任何升级。",
       "enUnlockCondition": "Complete a dive without buying anything in the shop at Hazard 3",
-      "completionRate": null,
+      "completionRate": 0.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/be8b89a0522c28dacfe06d4afec416cd.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Cheapskate",
-      "chineseName": "小气鬼",
+      "chineseName": "守财奴",
       "category": "商店",
-      "unlockCondition": "不花费任何金或 硝化铁 完成深潜",
+      "unlockCondition": "完成任意深潜，且未花费任何黄金或硝石。",
       "enUnlockCondition": "Complete a dive without spending any gold or nitra",
-      "completionRate": null,
+      "completionRate": 1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/217f204c353331038adf0324adad484d.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Extreme indecision",
-      "chineseName": "极度犹豫",
+      "chineseName": "犹豫不定",
       "category": "商店",
-      "unlockCondition": "单次执行 50 次重摇",
+      "unlockCondition": "在单次深潜内进行 50 次任意类型的刷新。",
       "enUnlockCondition": "Perform 50 rerolls during a single dive",
-      "completionRate": 2.1,
+      "completionRate": 2.2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/03ccaf9ca8bac928ae58dcfb46a6cff5.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Jetty boots",
-      "chineseName": "喷射靴",
+      "chineseName": "飞扬的小靴",
       "category": "环境",
-      "unlockCondition": "单次落在岩石上 200 次",
+      "unlockCondition": "在单次深潜中累计降落到 200 块岩体上。",
       "enUnlockCondition": "Land on 200 blocks in one dive",
-      "completionRate": 23.9,
+      "completionRate": 24.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/ce358e88219135dd0c7a6f340653dca6.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "They fly now?",
-      "chineseName": "它们现在会飞了？",
+      "chineseName": "他们现在能飞了？",
       "category": "环境",
-      "unlockCondition": "单一阶段弹跳 100 次",
+      "unlockCondition": "在单个阶段内，飞向高空 100 次。",
       "enUnlockCondition": "Bounce 100 times in one stage",
-      "completionRate": null,
+      "completionRate": 0.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/79242049a8892abc77a140fbd3f409d4.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Axe in face!",
-      "chineseName": "斧头面对面！",
+      "chineseName": "勤恳过度",
       "category": "环境",
-      "unlockCondition": "主任务阶段破坏所有岩石",
+      "unlockCondition": "摧毁基础任务中单个阶段内的全部岩体。",
       "enUnlockCondition": "Destroy all rocks in one main mission stage",
       "completionRate": 7.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/11ac49d064d891b56c8d7c333df47697.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Early access",
-      "chineseName": "提前进入",
+      "chineseName": "抢先体验",
       "category": "环境",
-      "unlockCondition": "剩余超过 30 秒进入降落舱",
+      "unlockCondition": "在撤离倒计时多于 30 秒时进入空降舱。",
       "enUnlockCondition": "Enter the drop pod with more than 30 seconds remaining",
-      "completionRate": 7.6,
+      "completionRate": 7.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/59f16abab2978728530f03484d391e9f.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Mission Possible",
-      "chineseName": "可能任务",
+      "chineseName": "叠中叠",
       "category": "环境",
-      "unlockCondition": "用喷射靴在降落舱坡道着陆 3 次",
+      "unlockCondition": "利用喷气靴，降落在空降舱斜坡 3 次。",
       "enUnlockCondition": "Land on the drop pod ramp 3 times using jet boots",
-      "completionRate": null,
+      "completionRate": 1.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/d30170e7b9aab90443e9c7c5be7cce69.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Salvage operation",
-      "chineseName": "打捞行动",
+      "chineseName": "回炉再造",
       "category": "环境",
-      "unlockCondition": "单次深潜回收 10 个 超频",
+      "unlockCondition": "在单次深潜中回收 10 个超频模组。",
       "enUnlockCondition": "Salvage 10 overclocks in a single dive",
-      "completionRate": null,
+      "completionRate": 0.6,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/4e44135181240b6014701829d834f6b0.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Tower defense",
-      "chineseName": "塔防",
+      "chineseName": "塔防游戏",
       "category": "环境",
-      "unlockCondition": "同时存活 50 个炮塔",
+      "unlockCondition": "使场上同时存在 50 个哨戒炮。",
       "enUnlockCondition": "Have 50 turrets alive at the same time",
-      "completionRate": 2.7,
+      "completionRate": 2.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/37e7faf32c7191917999d77c3be8eba5.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "A freeze is coming",
-      "chineseName": "寒霜将至",
+      "chineseName": "寒流来袭",
       "category": "伤害",
-      "unlockCondition": "造成 250,000 冰冻伤害",
+      "unlockCondition": "累计造成 250,000 急冻伤害。",
       "enUnlockCondition": "Deal 250,000 Cryo damage",
-      "completionRate": 86.7,
+      "completionRate": 87.3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/6f56998856f3b3087ab4f4e7484484ca.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Hot, hot, hot!",
-      "chineseName": "热，热，热！",
+      "chineseName": "烫，烫，烫！",
       "category": "伤害",
-      "unlockCondition": "造成 250,000 火焰伤害",
+      "unlockCondition": "累计造成 250,000 燃烧伤害。",
       "enUnlockCondition": "Deal 250,000 Fire damage",
-      "completionRate": 79.6,
+      "completionRate": 83,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/e27c31da3de4ca71a592b920f19366d5.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Relish the pain",
-      "chineseName": "享受痛苦",
+      "chineseName": "释放苦痛",
       "category": "伤害",
-      "unlockCondition": "单次攻击造成超过 1337 伤害",
+      "unlockCondition": "单次攻击的伤害达到 1337 以上。",
       "enUnlockCondition": "Deal over 1337 damage in one attack",
-      "completionRate": 65,
+      "completionRate": 65.6,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/8e42e719d40b1d2ec05599fe74187372.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Freezing hot acid",
-      "chineseName": "冰火酸",
+      "chineseName": "冰火酸三重天",
       "category": "伤害",
-      "unlockCondition": "单次造成 2,500,000 状态效果伤害",
+      "unlockCondition": "在单次深潜中累计造成 2,500,000 持续效果伤害。",
       "enUnlockCondition": "Deal 2,500,000 Status Effect Damage in a single dive",
-      "completionRate": 41,
+      "completionRate": 41.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/9dc5a77be42ca8e871ab6cade636d604.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Multitool",
-      "chineseName": "多功能工具",
+      "chineseName": "万用集一身",
       "category": "伤害",
-      "unlockCondition": "单次使用 5 种伤害类型造成伤害",
+      "unlockCondition": "在单次深潜中造成 5 种不同的伤害类型。",
       "enUnlockCondition": "Do damage with 5 types in one dive",
-      "completionRate": 28.7,
+      "completionRate": 31,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/50c04bc02e42296ca4abc559bc9a9bc8.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Perfect run",
-      "chineseName": "完美跑图",
+      "chineseName": "完美无瑕",
       "category": "伤害",
-      "unlockCondition": "不受任何伤害完成深潜",
+      "unlockCondition": "完成任意深潜，且未受到任何伤害。",
       "enUnlockCondition": "Complete a dive without taking any damage",
-      "completionRate": null,
+      "completionRate": 1.3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/fc192cb7c15defc161042ecd25db09b1.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Drill baby, drill",
-      "chineseName": "钻吧宝贝，钻",
+      "chineseName": "掘进不停歇",
       "category": "护卫",
-      "unlockCondition": "单一阶段收集所有油页岩后完成深潜",
+      "unlockCondition": "完成任意执勤护送，并在任一阶段内挖掘地图内的所有油页岩。",
       "enUnlockCondition": "Collect all the oil shale on one stage, then complete the dive",
-      "completionRate": 16.2,
+      "completionRate": 16.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/434464c67ca1106d5ef63c8029aeab35.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Fill 'er up",
-      "chineseName": "给 小鲍勃33号 加满油",
+      "chineseName": "给它满上",
       "category": "护卫",
-      "unlockCondition": "为 小鲍勃33号 完全加注燃料",
+      "unlockCondition": "将小鲍勃-33加满油。",
       "enUnlockCondition": "Fully fuel B0b-33",
-      "completionRate": 7,
+      "completionRate": 7.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/b8c69def4dccd06efc3b71dd233d913f.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Roadkill",
-      "chineseName": "辗毙",
+      "chineseName": "路杀惨案",
       "category": "护卫",
-      "unlockCondition": "用 小鲍勃33号 钻穿一只 掠夺虫",
+      "unlockCondition": "驾驶小鲍勃-33钻死一只掠夺虫。",
       "enUnlockCondition": "Drill through a lootbug with B0b-33",
-      "completionRate": 19.8,
+      "completionRate": 20,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/47130009ee2a913ebccf885f8fb04c1f.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "The only drilldozer here is me",
-      "chineseName": "这里唯一的钻机是我",
+      "chineseName": "我才是掘进机",
       "category": "护卫",
-      "unlockCondition": "移动 小鲍勃33号 前挖空整个阶段后完成深潜",
+      "unlockCondition": "完成任意执勤护送，并在任一阶段内赶在小鲍勃-33开动前提前挖光整个地图。",
       "enUnlockCondition": "Mine an entire stage before moving B0b-33, then complete the dive",
-      "completionRate": null,
+      "completionRate": 0.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/4b83f59ebd8cc9c9099599321147a1e3.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Now, where did I put my keys?",
-      "chineseName": "我把钥匙放哪了？",
+      "chineseName": "——我把钥匙放哪来着了？",
       "category": "护卫",
-      "unlockCondition": "移动 小鲍勃33号 前使外星威胁达等级 2 后完成深潜",
+      "unlockCondition": "完成任意执勤护送，并在任一阶段内等待异虫强度达到 2 级后开动小鲍勃-33。",
       "enUnlockCondition": "Have the alien threat reach level 2 before moving B0b-33, then complete the dive",
-      "completionRate": null,
+      "completionRate": 1.4,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/44403caa92202f4d5fb3d1cf156d64a9.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Anomaly - Hazard 1",
-      "chineseName": "异常 - 危险 1",
+      "chineseName": "异常任务 - 风险等级 1",
       "category": "异常·先锋·致命",
-      "unlockCondition": "完成 危险等级 1 异常 深潜",
+      "unlockCondition": "完成风险等级 1 的任意异常任务。",
       "enUnlockCondition": "Complete an anomaly dive at Hazard 1",
-      "completionRate": 4.2,
+      "completionRate": 4.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/5366cedd5e0cbb71ba22a8c03bdb7595.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Anomaly - Hazard 2",
-      "chineseName": "异常 - 危险 2",
+      "chineseName": "异常任务 - 风险等级 2",
       "category": "异常·先锋·致命",
-      "unlockCondition": "完成 危险等级 2 异常 深潜",
+      "unlockCondition": "完成风险等级 2 的任意异常任务。",
       "enUnlockCondition": "Complete an anomaly dive at Hazard 2",
       "completionRate": 3.2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/36253230fde9935b82d98226e56ca17d.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Anomaly - Hazard 3",
-      "chineseName": "异常 - 危险 3",
+      "chineseName": "异常任务 - 风险等级 3",
       "category": "异常·先锋·致命",
-      "unlockCondition": "完成 危险等级 3 异常 深潜",
+      "unlockCondition": "完成风险等级 3 的任意异常任务。",
       "enUnlockCondition": "Complete an anomaly dive at Hazard 3",
-      "completionRate": 2.3,
+      "completionRate": 2.4,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/ae6b4a28b4666ea3ae106a285692323c.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Anomaly - Hazard 4",
-      "chineseName": "异常 - 危险 4",
+      "chineseName": "异常任务 - 风险等级 4",
       "category": "异常·先锋·致命",
-      "unlockCondition": "完成 危险等级 4 异常 深潜",
+      "unlockCondition": "完成风险等级 4 的任意异常任务。",
       "enUnlockCondition": "Complete an anomaly dive at Hazard 4",
-      "completionRate": null,
+      "completionRate": 1.3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/58e0ea16ab830a4917e538117a513305.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Anomaly - Hazard 5",
-      "chineseName": "异常 - 危险 5",
+      "chineseName": "异常任务 - 风险等级 5",
       "category": "异常·先锋·致命",
-      "unlockCondition": "完成 危险等级 5 异常 深潜",
+      "unlockCondition": "完成风险等级 5 的任意异常任务。",
       "enUnlockCondition": "Complete an anomaly dive at Hazard 5",
-      "completionRate": null,
+      "completionRate": 0.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/b7bba0b0ce0d6b433e28a610bc3fd2b0.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Vanguard - Hazard 3",
-      "chineseName": "先锋 - 危险 3",
+      "chineseName": "精英合约 - 风险等级 3",
       "category": "异常·先锋·致命",
-      "unlockCondition": "完成 危险等级 3 先锋 契约深潜",
+      "unlockCondition": "完成风险等级 3 的精英合约。",
       "enUnlockCondition": "Complete a vanguard contract dive at Hazard 3",
-      "completionRate": 7.4,
+      "completionRate": 7.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/b01e793d25d99c310114826d34496f0a.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Vanguard - Hazard 4",
-      "chineseName": "先锋 - 危险 4",
+      "chineseName": "精英合约 - 风险等级 4",
       "category": "异常·先锋·致命",
-      "unlockCondition": "完成 危险等级 4 先锋 契约深潜",
+      "unlockCondition": "完成风险等级 4 的精英合约。",
       "enUnlockCondition": "Complete a vanguard contract dive at Hazard 4",
-      "completionRate": 2.9,
+      "completionRate": 3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/9e59346f577cc760293bd8ce886f7180.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Vanguard - Hazard 5",
-      "chineseName": "先锋 - 危险 5",
+      "chineseName": "精英合约 - 风险等级 5",
       "category": "异常·先锋·致命",
-      "unlockCondition": "完成 危险等级 5 先锋 契约深潜",
+      "unlockCondition": "完成风险等级 5 的精英合约。",
       "enUnlockCondition": "Complete a vanguard contract dive at Hazard 5",
-      "completionRate": null,
+      "completionRate": 1.6,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/16989111f7e159d9939b525c7286cb2c.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Employee of the Week",
-      "chineseName": "本周员工",
+      "chineseName": "本周最佳员工",
       "category": "异常·先锋·致命",
-      "unlockCondition": "完成 1 次 致命行动深潜（英文指南旧称 Employee of the Day）",
+      "unlockCondition": "完成 1 次致命行动。",
       "enUnlockCondition": "Complete a lethal operation dive",
-      "completionRate": 2.8,
+      "completionRate": 2.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/0ad4fe3439c34e2dacca4b68e6d3622d.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Employee of the Month",
-      "chineseName": "本月员工",
+      "chineseName": "本月最佳员工",
       "category": "异常·先锋·致命",
-      "unlockCondition": "完成 5 次 致命行动深潜",
+      "unlockCondition": "完成 5 次致命行动。",
       "enUnlockCondition": "Complete 5 lethal operation dives",
-      "completionRate": null,
+      "completionRate": 0.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/dd27e6fa7efb2835d6f2bd03c0feede9.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Employee of the Year",
-      "chineseName": "年度员工",
+      "chineseName": "年度最佳员工",
       "category": "异常·先锋·致命",
-      "unlockCondition": "完成 10 次 致命行动深潜",
+      "unlockCondition": "完成 10 次致命行动。",
       "enUnlockCondition": "Complete 10 lethal operation dives",
-      "completionRate": null,
+      "completionRate": 0.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/153f116ff5fdf028cd02fb78147dae16.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Endurance: Dives I",
-      "chineseName": "持之以恒：深潜 I",
+      "chineseName": "持之以恒 - 深潜 I",
       "category": "耐力",
-      "unlockCondition": "完成 5 次深潜",
+      "unlockCondition": "累计完成 5 次深潜。",
       "enUnlockCondition": "Complete 5 dives",
-      "completionRate": 23.5,
+      "completionRate": 24,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/cb3dc680e9a40a21c499065ba0de48ca.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Endurance: Dives II",
-      "chineseName": "持之以恒：深潜 II",
+      "chineseName": "持之以恒 - 深潜 II",
       "category": "耐力",
-      "unlockCondition": "完成 25 次深潜",
+      "unlockCondition": "累计完成 25 次深潜。",
       "enUnlockCondition": "Complete 25 dives",
-      "completionRate": 8.8,
+      "completionRate": 8.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/737efe0e04b106802495c7cd5ecc7bd3.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Endurance: Dives III",
-      "chineseName": "持之以恒：深潜 III",
+      "chineseName": "持之以恒 - 深潜 III",
       "category": "耐力",
-      "unlockCondition": "完成 50 次深潜",
+      "unlockCondition": "累计完成 50 次深潜。",
       "enUnlockCondition": "Complete 50 dives",
-      "completionRate": 4.7,
+      "completionRate": 4.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/902c64fcb73ecb2690ee698720647353.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Endurance: Dives IV",
-      "chineseName": "持之以恒：深潜 IV",
+      "chineseName": "持之以恒 - 深潜 IV",
       "category": "耐力",
-      "unlockCondition": "完成 75 次深潜",
+      "unlockCondition": "累计完成 75 次深潜。",
       "enUnlockCondition": "Complete 75 dives",
-      "completionRate": 2.9,
+      "completionRate": 3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/b88efeb716a58c02e71f51bc7cea8bc5.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Endurance: Dives V",
-      "chineseName": "持之以恒：深潜 V",
+      "chineseName": "持之以恒 - 深潜 V",
       "category": "耐力",
-      "unlockCondition": "完成 100 次深潜",
+      "unlockCondition": "累计完成 100 次深潜。",
       "enUnlockCondition": "Complete 100 dives",
-      "completionRate": null,
+      "completionRate": 1.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/9542e24a68fd516de5a6750b975c6d84.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Endurance: Kills I",
-      "chineseName": "持之以恒：击杀 I",
+      "chineseName": "持之以恒 - 击杀 I",
       "category": "耐力",
-      "unlockCondition": "击杀 50,000 敌人",
+      "unlockCondition": "累计击杀 50,000 个敌人。",
       "enUnlockCondition": "Kill 50,000 enemies",
-      "completionRate": 22.4,
+      "completionRate": 22.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/ab31ff3ab8a36f72e7bbfb572e50f3d5.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Endurance: Kills II",
-      "chineseName": "持之以恒：击杀 II",
+      "chineseName": "持之以恒 - 击杀 II",
       "category": "耐力",
-      "unlockCondition": "击杀 100,000 敌人",
+      "unlockCondition": "累计击杀 100,000 个敌人。",
       "enUnlockCondition": "Kill 100,000 enemies",
-      "completionRate": 16,
+      "completionRate": 16.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/364c973dc016c47b1dc26281260758a1.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Endurance: Kills III",
-      "chineseName": "持之以恒：击杀 III",
+      "chineseName": "持之以恒 - 击杀 III",
       "category": "耐力",
-      "unlockCondition": "击杀 250,000 敌人",
+      "unlockCondition": "累计击杀 250,000 个敌人。",
       "enUnlockCondition": "Kill 250,000 enemies",
-      "completionRate": 8.5,
+      "completionRate": 8.6,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/2794f0ff6a3031038c22b59a6c500f65.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Endurance: Kills IV",
-      "chineseName": "持之以恒：击杀 IV",
+      "chineseName": "持之以恒 - 击杀 IV",
       "category": "耐力",
-      "unlockCondition": "击杀 500,000 敌人",
+      "unlockCondition": "累计击杀 500,000 个敌人。",
       "enUnlockCondition": "Kill 500,000 enemies",
-      "completionRate": 4.6,
+      "completionRate": 4.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/f2ece20b0f650745b0a2a67b371a9264.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Endurance: Kills V",
-      "chineseName": "持之以恒：击杀 V",
+      "chineseName": "持之以恒 - 击杀 V",
       "category": "耐力",
-      "unlockCondition": "击杀 1,000,000 敌人",
+      "unlockCondition": "累计击杀 1,000,000 个敌人。",
       "enUnlockCondition": "Kill 1,000,000 enemies",
-      "completionRate": null,
+      "completionRate": 2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/a5c9246eeb5e27c678762e8bbf611419.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Endurance: Damage I",
-      "chineseName": "持之以恒：伤害 I",
+      "chineseName": "持之以恒 - 伤害输出 I",
       "category": "耐力",
-      "unlockCondition": "造成 100,000,000 伤害",
+      "unlockCondition": "累计造成 100,000,000 伤害。",
       "enUnlockCondition": "Deal 100,000,000 damage",
-      "completionRate": 18.7,
+      "completionRate": 18.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/4a6847f99ec99bd49c415e48091e6974.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Endurance: Damage II",
-      "chineseName": "持之以恒：伤害 II",
+      "chineseName": "持之以恒 - 伤害输出 II",
       "category": "耐力",
-      "unlockCondition": "造成 250,000,000 伤害",
+      "unlockCondition": "累计造成 250,000,000 伤害。",
       "enUnlockCondition": "Deal 250,000,000 damage",
-      "completionRate": 12.5,
+      "completionRate": 12.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/317eff4405a5de4f70e74c2ab56e0339.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Endurance: Damage III",
-      "chineseName": "持之以恒：伤害 III",
+      "chineseName": "持之以恒 - 伤害输出 III",
       "category": "耐力",
-      "unlockCondition": "造成 500,000,000 伤害",
+      "unlockCondition": "累计造成 500,000,000 伤害。",
       "enUnlockCondition": "Deal 500,000,000 damage",
-      "completionRate": 9.4,
+      "completionRate": 9.6,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/2d66c5485f63ca5428f9bc12a3036586.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Endurance: Damage IV",
-      "chineseName": "持之以恒：伤害 IV",
+      "chineseName": "持之以恒 - 伤害输出 IV",
       "category": "耐力",
-      "unlockCondition": "造成 1,000,000,000 伤害",
+      "unlockCondition": "累计造成 1,000,000,000 伤害。",
       "enUnlockCondition": "Deal 1,000,000,000 damage",
-      "completionRate": 6.8,
+      "completionRate": 7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/0fbcd3d7a9b1fdcaae038f943f9ec49c.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Endurance: Damage V",
-      "chineseName": "持之以恒：伤害 V",
+      "chineseName": "持之以恒 - 伤害输出 V",
       "category": "耐力",
-      "unlockCondition": "造成 2,000,000,000 伤害",
+      "unlockCondition": "累计造成 2,000,000,000 伤害。",
       "enUnlockCondition": "Deal 2,000,000,000 damage",
-      "completionRate": 4.5,
+      "completionRate": 4.6,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/7a3900ba98ee14be757638ef293c6f16.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Endurance: Mine I",
-      "chineseName": "持之以恒：挖掘 I",
+      "chineseName": "持之以恒 - 挖掘 I",
       "category": "耐力",
-      "unlockCondition": "挖掘 15,000 方块",
+      "unlockCondition": "累计挖掘 15,000 块岩体。",
       "enUnlockCondition": "Mine 15,000 blocks",
-      "completionRate": 21.8,
+      "completionRate": 22,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/8b987f91da990b321d818ff7a5603079.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Endurance: Mine II",
-      "chineseName": "持之以恒：挖掘 II",
+      "chineseName": "持之以恒 - 挖掘 II",
       "category": "耐力",
-      "unlockCondition": "挖掘 50,000 方块",
+      "unlockCondition": "累计挖掘 50,000 块岩体。",
       "enUnlockCondition": "Mine 50,000 blocks",
       "completionRate": 12,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/4aafccf55145b65c9fcaf1342c86efa7.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Endurance: Mine III",
-      "chineseName": "持之以恒：挖掘 III",
+      "chineseName": "持之以恒 - 挖掘 III",
       "category": "耐力",
-      "unlockCondition": "挖掘 100,000 方块",
+      "unlockCondition": "累计挖掘 100,000 块岩体。",
       "enUnlockCondition": "Mine 100,000 blocks",
       "completionRate": 7.6,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/69a73ed3364f06ef39c3c429f52e1397.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Endurance: Mine IV",
-      "chineseName": "持之以恒：挖掘 IV",
+      "chineseName": "持之以恒 - 挖掘 IV",
       "category": "耐力",
-      "unlockCondition": "挖掘 150,000 方块",
+      "unlockCondition": "累计挖掘 150,000 块岩体。",
       "enUnlockCondition": "Mine 150,000 blocks",
-      "completionRate": 5.4,
+      "completionRate": 5.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/1946e52557d8aa9082f5555de503b5a7.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Endurance: Mine V",
-      "chineseName": "持之以恒：挖掘 V",
+      "chineseName": "持之以恒 - 挖掘 V",
       "category": "耐力",
-      "unlockCondition": "挖掘 250,000 方块",
+      "unlockCondition": "累计挖掘 250,000 块岩体。",
       "enUnlockCondition": "Mine 250,000 blocks",
-      "completionRate": 3.2,
+      "completionRate": 3.4,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/0cffff7106d38a1f9ec756d1019bbabc.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Endurance: Run I",
-      "chineseName": "持之以恒：奔跑 I",
+      "chineseName": "持之以恒 - 行进距离 I",
       "category": "耐力",
-      "unlockCondition": "跑 10,000 步",
+      "unlockCondition": "累计走过 10,000 步。",
       "enUnlockCondition": "Run 10,000 steps",
-      "completionRate": 32.6,
+      "completionRate": 34.3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/0b923e22a1747caebae40751b32e9a56.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Endurance: Run II",
-      "chineseName": "持之以恒：奔跑 II",
+      "chineseName": "持之以恒 - 行进距离 II",
       "category": "耐力",
-      "unlockCondition": "跑 50,000 步",
+      "unlockCondition": "累计走过 50,000 步。",
       "enUnlockCondition": "Run 50,000 steps",
-      "completionRate": 21.9,
+      "completionRate": 22.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/1b315297226d646e86f6b7010f23f0a0.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Endurance: Run III",
-      "chineseName": "持之以恒：奔跑 III",
+      "chineseName": "持之以恒 - 行进距离 III",
       "category": "耐力",
-      "unlockCondition": "跑 100,000 步",
+      "unlockCondition": "累计走过 100,000 步。",
       "enUnlockCondition": "Run 100,000 steps",
-      "completionRate": 14.9,
+      "completionRate": 15.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/6a0d4b5d4997829bf085ecd985df0475.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Endurance: Run IV",
-      "chineseName": "持之以恒：奔跑 IV",
+      "chineseName": "持之以恒 - 行进距离 IV",
       "category": "耐力",
-      "unlockCondition": "跑 250,000 步",
+      "unlockCondition": "累计走过 250,000 步。",
       "enUnlockCondition": "Run 250,000 steps",
       "completionRate": 7.6,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/3d144eb3b35e959dff3eed89eb07151c.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Endurance: Run V",
-      "chineseName": "持之以恒：奔跑 V",
+      "chineseName": "持之以恒 - 行进距离 V",
       "category": "耐力",
-      "unlockCondition": "跑 500,000 步",
+      "unlockCondition": "累计走过 500,000 步。",
       "enUnlockCondition": "Run 500,000 steps",
-      "completionRate": 3.6,
+      "completionRate": 3.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/e0f0794bee0c8f209547be3301940a8d.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Rock and Stone!",
-      "chineseName": "岩石与矿石！",
+      "chineseName": "挖到手软，赚到盆满！",
       "category": "其他动作",
-      "unlockCondition": "记得 岩石与矿石！（致敬彩蛋成就）",
+      "unlockCondition": "记得喊出“挖到手软，赚到盆满”！",
       "enUnlockCondition": "Remember to Rock and Stone!",
-      "completionRate": 10,
+      "completionRate": 10.1,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/61f76fb0f1d6cfef35705da18484ce0d.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Underclocked",
-      "chineseName": "降频运行",
+      "chineseName": "模组“频”乏",
       "category": "其他动作",
-      "unlockCondition": "不装备任何 超频 完成深潜",
+      "unlockCondition": "完成任意深潜，且未获取任何超频模组。",
       "enUnlockCondition": "Complete a dive without any overclocks",
-      "completionRate": null,
+      "completionRate": 0.8,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/69e25f652729463f4894fe94665e4d7e.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Pro side wobble compensator",
-      "chineseName": "专业侧摆补偿器",
+      "chineseName": "“侧边抖动抑制器”",
       "category": "其他动作",
-      "unlockCondition": "单次深潜装备 10 个 超频",
+      "unlockCondition": "在单次深潜中获得 10 个超频模组。",
       "enUnlockCondition": "Equip 10 Overclocks in a single dive",
-      "completionRate": 24.1,
+      "completionRate": 24.4,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/3a25675859ad4a1924bbd82ad2cc00c8.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Eye of the storm",
-      "chineseName": "风暴之眼",
+      "chineseName": "风暴中心",
       "category": "其他动作",
-      "unlockCondition": {
-        "weaponRef": "zhukov_nuk17",
-        "unlockCondition": "{weapon} 与 BRT7 连发手枪 均装不稳定 超频 完成深潜"
-      },
+      "unlockCondition": "完成任意深潜，且同时拥有 朱可夫 NUK17 双持冲锋枪 和 BRT7 连发手枪 的不稳定超频模组。",
       "enUnlockCondition": "Complete a dive with unstable overclocks on both the NUK17 and the BRT7",
-      "completionRate": 3,
+      "completionRate": 3.2,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/5ddd7202dc3686406048ec0cbd441ae4.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "They see 'em rollin', they hatin'",
-      "chineseName": "他们看它滚，他们恨",
+      "chineseName": "他们见我驶于路上，他们狠得牙痒",
       "category": "其他动作",
-      "unlockCondition": "单次深潜有 3 个 坦克履带 超频",
+      "unlockCondition": "在单次深潜内同时拥有 3 个“坦克履带”超频模组。",
       "enUnlockCondition": "Have 3 'Tank Tracks' overclocks in a single dive",
-      "completionRate": null,
+      "completionRate": 1.3,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/8efad21677e593ca8bb6565d8d5ced71.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "All sides",
-      "chineseName": "全副武装（副武器）",
+      "chineseName": "一把好枪三个帮",
       "category": "其他动作",
-      "unlockCondition": "单次深潜有 3 个 副武器 超频",
+      "unlockCondition": "在单次深潜内同时拥有 3 个“指定副手”超频模组。",
       "enUnlockCondition": "Have 3 'Sidearm' overclocks in a single dive",
-      "completionRate": null,
+      "completionRate": 0.6,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/cd6523eedb9f949106e45d6342eab70e.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "This is brilliant, but I like this",
-      "chineseName": "这绝妙，但我喜欢这个",
+      "chineseName": "既要也要",
       "category": "其他动作",
-      "unlockCondition": "单次深潜有 2 个 最爱 超频",
+      "unlockCondition": "在单次深潜内同时拥有 2 个“心头之好”超频模组。",
       "enUnlockCondition": "Have 2 'The Favourite' overclocks in a single dive",
-      "completionRate": null,
+      "completionRate": 1.5,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/b12b234552bfd30bde0aa2e70feb822e.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Perfectly balanced",
-      "chineseName": "完美平衡",
+      "chineseName": "完美的平衡",
       "category": "其他动作",
-      "unlockCondition": "4 把及以上武器同级完成深潜",
+      "unlockCondition": "完成任意深潜，且至少 4 把武器的等级相同。",
       "enUnlockCondition": "Complete a dive with 4 (or more) of your weapons at the same level",
-      "completionRate": null,
+      "completionRate": 1.4,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/f0790d6d86cb387553b3ecd3502f672d.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "Underpromise, overdeliver",
-      "chineseName": "低承诺，高交付",
+      "chineseName": "低承诺，高兑现",
       "category": "其他动作",
-      "unlockCondition": "所有武器 1 级完成深潜",
+      "unlockCondition": "完成任意深潜，且所有武器的等级维持 1 级。",
       "enUnlockCondition": "Complete a dive with all of your weapons at level 1",
-      "completionRate": null,
+      "completionRate": 0.7,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/8f66275ff2e7d3c03a475576668010cf.jpg?imageMogr2/format/webp",
+      "rarity": "稀有",
       "version": "当前"
     },
     {
       "englishName": "What's in the box!?",
-      "chineseName": "盒子里是什么！",
+      "chineseName": "开箱体验",
       "category": "其他动作",
-      "unlockCondition": "获得 10 个武器专精等级",
+      "unlockCondition": "累计获得 10 个武器专精等级。",
       "enUnlockCondition": "Gain 10 weapon mastery levels",
-      "completionRate": 20.1,
+      "completionRate": 21.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/3645e3c36042923fa4beec3de5bad77d.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Count em!",
-      "chineseName": "数一数！",
+      "chineseName": "数不胜防",
       "category": "其他动作",
-      "unlockCondition": "单次深潜发射 150,000 发弹丸",
+      "unlockCondition": "在单次深潜中射出 150,000 个发射物。",
       "enUnlockCondition": "Fire 150,000 projectiles in a single dive",
       "completionRate": 11.4,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/b7bbe7d15572320bb625cabdd7c2ba98.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     },
     {
       "englishName": "Close call",
       "chineseName": "千钧一发",
       "category": "其他动作",
-      "unlockCondition": "以低于 30 生命值 击杀 无畏舰",
+      "unlockCondition": "在血量低于 30 的情况下击杀无畏异虫。",
       "enUnlockCondition": "Kill the dreadnaught while you have less than 30 HP",
-      "completionRate": 34.2,
+      "completionRate": 34.9,
+      "icon": "https://heyboxbj.max-c.com/gameimg/steam_item_assets/2321470/2ce3f6d42943d366d423382243b6ea29.jpg?imageMogr2/format/webp",
+      "rarity": "普通",
       "version": "当前"
     }
   ],

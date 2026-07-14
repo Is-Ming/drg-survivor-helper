@@ -68,13 +68,12 @@ describe('filterAchievements', () => {
     )
     expect(r.every((a) => a.completionRate !== null && a.completionRate <= 20)).toBe(true)
   })
-  it('难度筛选：普通 含空达成率与 >20%', () => {
+  it('难度筛选：普通 仅保留 >20%', () => {
     const r = filterAchievements(
       achievements,
       baseState({ achievement: { categories: [] as any, onlyDifficult: true, difficulty: ['moderate'] } }),
     )
-    expect(r.every((a) => a.completionRate === null || (a.completionRate as number) > 20)).toBe(true)
-    expect(r.some((a) => a.completionRate === null)).toBe(true)
+    expect(r.every((a) => (a.completionRate as number) > 20)).toBe(true)
   })
 })
 

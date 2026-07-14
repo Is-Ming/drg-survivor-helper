@@ -151,6 +151,16 @@ export const DIFFICULTY_LABEL: Record<DifficultyTier, { zh: string; en: string }
   moderate: { zh: '普通', en: 'Moderate' },
 }
 
+/**
+ * 稀有度中英双存映射（用于成就卡片徽标着色文案）。
+ * 与难度分档（getDifficultyTier/DIFFICULTY_LABEL）相互独立：
+ * 稀有度来自抓包 ach_level，不再由达成率动态推算。
+ */
+export const RARITY_LABEL: Record<'普通' | '稀有', { zh: string; en: string }> = {
+  '普通': { zh: '普通', en: 'Common' },
+  '稀有': { zh: '稀有', en: 'Rare' },
+}
+
 export const RATING_LABEL: Record<Rating, string> = {
   S: 'S',
   A: 'A',

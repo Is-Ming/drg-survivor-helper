@@ -46,9 +46,13 @@ export interface Achievement {
   enUnlockCondition?: string
   /** 仅生物群系类有值；其余为 undefined */
   biomeTier?: BiomeTier
-  /** 关键：达成率。239/300 有值，61 条为空 → 用 number | null。
-   *  空值 UI 一律不渲染徽标、不高亮（决策 5）。 */
+  /** 关键：达成率。现已全量回填抓包真实值（无 null）。 */
   completionRate: number | null
+  /** 稀有度（抓包 ach_level：2→普通，3→稀有）。
+   *  与 category 是两个独立维度，仅用于成就卡片徽标着色，不进筛选器。 */
+  rarity: '普通' | '稀有'
+  /** 成就图标 URL（抓包 icon 列）。 */
+  icon?: string
   /** 版本标记：原样保留 '当前' / '待核' 等（决策 6，不杜撰）。 */
   version: string
 }

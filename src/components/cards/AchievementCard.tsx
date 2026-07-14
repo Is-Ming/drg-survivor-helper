@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { Card, CardContent, Typography, Box, Chip, TextField, IconButton } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add'
 import type { Achievement, Lang } from '../../data/types'
-import { getDifficultyTier, ACHIEVEMENT_CATEGORY_LABEL } from '../../data/enums'
+import { ACHIEVEMENT_CATEGORY_LABEL } from '../../data/enums'
 import { DifficultyBadge } from '../badges/DifficultyBadge'
 import { useTagEditor } from '../../hooks/useTagEditor'
 import { useOverrides } from '../../hooks/useOverrides'
@@ -66,14 +66,12 @@ export function AchievementCard({
   const displayCondition = editable
     ? editCondition || resolvedCondition
     : lang === 'zh' ? resolvedCondition : (ach.enUnlockCondition || resolvedCondition)
-  const tier = getDifficultyTier(ach.completionRate)
+  // 边框按稀有度着色：稀有高亮橙红、普通低调灰蓝（不再用完成率算难度分档）
   const borderColor =
-    highlight && tier
-      ? tier === 'extreme'
-        ? 'rgba(255,23,68,0.9)'
-        : tier === 'hard'
-          ? 'rgba(255,145,0,0.7)'
-          : 'rgba(144,164,174,0.5)'
+    highlight && ach.rarity
+      ? ach.rarity === '稀有'
+        ? 'rgba(255,145,0,0.9)'
+        : 'rgba(144,164,174,0.6)'
       : undefined
 
   const commitEdit = (field: string, value: string) => {
@@ -106,7 +104,7 @@ export function AchievementCard({
   }
 
   return (
-    <Card sx={{ borderColor, borderWidth: highlight && tier ? 2 : 1, height: '100%' }}>
+    <Card sx={{ borderColor, borderWidth: highlight && ach.rarity ? 2 : 1, height: '100%' }}>
       <CardContent>
         <Box display="flex" justifyContent="space-between" alignItems="flex-start" gap={1}>
           <Box minWidth={0} flex={1}>
@@ -141,7 +139,7 @@ export function AchievementCard({
             </Typography>
           </Box>
           <Box flexShrink={0}>
-            <DifficultyBadge rate={ach.completionRate} show={highlight} lang={lang} />
+            <DifficultyBadge rarity={ach.rarity} show={highlight} lang={lang} />
           </Box>
         </Box>
 

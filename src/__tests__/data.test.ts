@@ -19,9 +19,9 @@ describe('三大模块数据完整（验收点 1）', () => {
 })
 
 describe('空达成率约定（验收点 2：决策 5）', () => {
-  it('恰好 61 条成就 completionRate 为 null', () => {
+  it('0 条成就 completionRate 为 null（抓包全量回填，决策：不留空）', () => {
     const nullCount = achievements.filter((a) => a.completionRate === null).length
-    expect(nullCount).toBe(61)
+    expect(nullCount).toBe(0)
   })
   it('每条成就 completionRate 均为 number | null（无 undefined）', () => {
     for (const a of achievements) {
@@ -30,14 +30,37 @@ describe('空达成率约定（验收点 2：决策 5）', () => {
       ).toBe(true)
     }
   })
-  it('有值的 239 条达成率均为 0–100 的百分比', () => {
+  it('全部 300 条成就均带有效达成率（0–100）', () => {
     const valued = achievements.filter((a) => a.completionRate !== null)
-    expect(valued).toHaveLength(239)
+    expect(valued).toHaveLength(300)
     for (const a of valued) {
       const r = a.completionRate as number
       expect(r).toBeGreaterThanOrEqual(0)
       expect(r).toBeLessThanOrEqual(100)
     }
+  })
+})
+
+describe('稀有度与图标（数据写回新增字段）', () => {
+  it('每条成就均带合法 rarity（普通/稀有）', () => {
+    const valid = new Set(['普通', '稀有'])
+    expect(achievements).toHaveLength(300)
+    for (const a of achievements) {
+      expect(valid.has(a.rarity)).toBe(true)
+    }
+  })
+  it('每条成就均带非空 icon URL', () => {
+    for (const a of achievements) {
+      expect(typeof a.icon).toBe('string')
+      expect(a.icon!.length).toBeGreaterThan(0)
+    }
+  })
+  it('稀有/普通分布合理（抓包：约 普通107 / 稀有193）', () => {
+    const common = achievements.filter((a) => a.rarity === '普通').length
+    const rare = achievements.filter((a) => a.rarity === '稀有').length
+    expect(common + rare).toBe(300)
+    expect(common).toBeGreaterThan(0)
+    expect(rare).toBeGreaterThan(0)
   })
 })
 
