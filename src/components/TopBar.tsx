@@ -9,11 +9,12 @@ import Brightness4Icon from '@mui/icons-material/Brightness4'
 import Brightness7Icon from '@mui/icons-material/Brightness7'
 import TranslateIcon from '@mui/icons-material/Translate'
 import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings'
-import RestoreIcon from '@mui/icons-material/Restore'
+import LockClockIcon from '@mui/icons-material/LockClock'
+import RestartAltIcon from '@mui/icons-material/RestartAlt'
 import { useLang } from '../i18n/LangContext'
 import { useTheme } from '../theme/ThemeContext'
 import { checkAdminLoggedIn, adminLogout } from './AdminLogin'
-import { resetAllCustomData } from '../hooks/useTagEditor'
+import { useOverrides } from '../hooks/useOverrides'
 
 export function TopBar() {
   const { lang, toggleLang, t } = useLang()
@@ -23,9 +24,20 @@ export function TopBar() {
   const isAdmin = location.pathname.startsWith('/admin')
   const isLoggedIn = checkAdminLoggedIn()
   const [resetOpen, setResetOpen] = useState(false)
+  const { resetOverrides, pinBaseline } = useOverrides()
 
-  const handleReset = () => {
-    resetAllCustomData()
+  const handlePin = async () => {
+    // 固化：将当前 overrides 固化进 baseline（服务端会清空 overrides），前端整体刷新
+    await pinBaseline()
+    setResetOpen(false)
+    window.location.reload()
+  }
+
+  const handleReset = async () => {
+    // 清空服务端所有自定义覆盖（回落最新固化基准，非出厂）
+    try {
+      await resetOverrides()
+    } catch { /* ignore */ }
     setResetOpen(false)
     window.location.reload()
   }
@@ -45,23 +57,35 @@ export function TopBar() {
           <Box display="flex" alignItems="center" gap={1}>
             {isAdmin && isLoggedIn ? (
               <>
-                <Button
-                  size="small"
-                  color="error"
-                  variant="outlined"
-                  onClick={() => { adminLogout(); navigate('/') }}
-                  sx={{ textTransform: 'none' }}
-                >
-                  {lang === 'zh' ? '退出管理' : 'Logout'}
-                </Button>
-                <IconButton
-                  onClick={() => setResetOpen(true)}
-                  title={lang === 'zh' ? '恢复默认' : 'Reset all'}
-                  aria-label="reset all data"
-                  color="error"
-                >
-                  <RestoreIcon />
-                </IconButton>
+              <Button
+                size="small"
+                color="error"
+                variant="outlined"
+                onClick={() => { adminLogout(); navigate('/') }}
+                sx={{ textTransform: 'none' }}
+              >
+                {lang === 'zh' ? '退出管理' : 'Logout'}
+              </Button>
+              <Button
+                size="small"
+                color="warning"
+                variant="outlined"
+                startIcon={<LockClockIcon />}
+                onClick={handlePin}
+                sx={{ textTransform: 'none' }}
+              >
+                {lang === 'zh' ? '固化基准' : 'Pin'}
+              </Button>
+              <Button
+                size="small"
+                color="error"
+                variant="outlined"
+                startIcon={<RestartAltIcon />}
+                onClick={() => setResetOpen(true)}
+                sx={{ textTransform: 'none' }}
+              >
+                {lang === 'zh' ? '恢复默认' : 'Reset'}
+              </Button>
               </>
             ) : null}
             <IconButton

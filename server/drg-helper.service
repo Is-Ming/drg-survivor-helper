@@ -1,0 +1,15 @@
+[Unit]
+Description=DRG Survivor Helper Server
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/var/www/drg-helper
+ExecStart=/usr/bin/node server/index.js
+Environment=PORT=8787
+EnvironmentFile=/var/www/drg-helper/server/.env
+Restart=on-failure
+User=ubuntu
+
+[Install]
+WantedBy=multi-user.target

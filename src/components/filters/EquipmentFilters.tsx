@@ -1,55 +1,52 @@
-// 装备筛选：类型 + 来源（类型来自标签管理，实时生效）
-import { Box, FormControl, InputLabel, MenuItem, Select } from '@mui/material'
-import { EQUIPMENT_SOURCES, EQUIPMENT_SOURCE_LABEL, EQUIPMENT_TYPE_LABEL } from '../../data/enums'
+// 装备筛选：类型多选（来源标签管理）+ 来源
+import { Box, Autocomplete, TextField, Chip, FormControl, InputLabel, MenuItem, Select } from '@mui/material'
+import { EQUIPMENT_SOURCES, EQUIPMENT_SOURCE_LABEL } from '../../data/enums'
 import type { EquipmentSource, Lang, SearchState } from '../../data/types'
-import { getEquipmentTypes } from '../../hooks/useTagEditor'
+import { useTagEditor } from '../../hooks/useTagEditor'
 
 export function EquipmentFilters({
-  state,
-  setEquipmentType,
-  setEquipmentSource,
-  lang,
+  state, addType, removeType, setEquipmentSource, lang,
 }: {
-  state: SearchState
-  setEquipmentType: (t?: string) => void
-  setEquipmentSource: (s?: EquipmentSource) => void
-  lang: Lang
+  state: SearchState; addType: (t: string) => void; removeType: (t: string) => void
+  setEquipmentSource: (s?: EquipmentSource) => void; lang: Lang
 }) {
-  // 从标签管理读取自定义装备类型（实时生效）
-  const eqTypes = getEquipmentTypes()
+  const editor = useTagEditor()
+  const eqTypes = editor.getTypes()
 
   return (
     <Box display="flex" flexWrap="wrap" gap={2} alignItems="center">
-      <FormControl size="small" sx={{ minWidth: 140 }}>
-        <InputLabel id="eq-type-label">{lang === 'zh' ? '类型' : 'Type'}</InputLabel>
-        <Select
-          labelId="eq-type-label"
-          label={lang === 'zh' ? '类型' : 'Type'}
-          value={state.equipment.type ?? ''}
-          onChange={(e) => setEquipmentType(e.target.value || undefined)}
-        >
-          <MenuItem value="">{lang === 'zh' ? '全部' : 'All'}</MenuItem>
-          {eqTypes.map((t) => (
-            <MenuItem key={t} value={t}>
-              {EQUIPMENT_TYPE_LABEL[t]?.[lang] ?? t}
-            </MenuItem>
-          ))}
-        </Select>
-      </FormControl>
+      <Autocomplete
+        multiple size="small"
+        options={eqTypes}
+        value={state.equipment.types}
+        getOptionLabel={(o) => o}
+        isOptionEqualToValue={(opt, val) => opt === val}
+        onChange={(_e, value) => {
+          const added = value.filter((t) => !state.equipment.types.includes(t))
+          const removed = state.equipment.types.filter((t) => !value.includes(t))
+          added.forEach((t) => addType(t))
+          removed.forEach((t) => removeType(t))
+        }}
+        renderInput={(params) => (
+          <TextField {...params} label={lang === 'zh' ? '类型' : 'Type'} sx={{ minWidth: 200 }} />
+        )}
+        sx={{ minWidth: 200 }}
+      />
+
+      <Box display="flex" flexWrap="wrap" gap={0.5} alignItems="center">
+        {state.equipment.types.map((t) => (
+          <Chip key={t} size="small" label={t} color="primary" onDelete={() => removeType(t)} />
+        ))}
+      </Box>
 
       <FormControl size="small" sx={{ minWidth: 140 }}>
         <InputLabel id="eq-src-label">{lang === 'zh' ? '来源' : 'Source'}</InputLabel>
-        <Select
-          labelId="eq-src-label"
-          label={lang === 'zh' ? '来源' : 'Source'}
+        <Select labelId="eq-src-label" label={lang === 'zh' ? '来源' : 'Source'}
           value={state.equipment.source ?? ''}
-          onChange={(e) => setEquipmentSource((e.target.value || undefined) as EquipmentSource | undefined)}
-        >
+          onChange={(e) => setEquipmentSource((e.target.value || undefined) as EquipmentSource | undefined)}>
           <MenuItem value="">{lang === 'zh' ? '全部' : 'All'}</MenuItem>
           {EQUIPMENT_SOURCES.map((s) => (
-            <MenuItem key={s} value={s}>
-              {EQUIPMENT_SOURCE_LABEL[s]?.[lang] ?? s}
-            </MenuItem>
+            <MenuItem key={s} value={s}>{EQUIPMENT_SOURCE_LABEL[s]?.[lang] ?? s}</MenuItem>
           ))}
         </Select>
       </FormControl>

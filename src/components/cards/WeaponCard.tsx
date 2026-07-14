@@ -1,7 +1,6 @@
 // 武器卡片：评级 + 超频(名框+效果) + 职业 + 标签(可编辑框) + 超频增删
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Card, CardContent, Typography, Box, Chip, Popover, IconButton, Button, FormControl, Select, MenuItem } from '@mui/material'
-import CloseIcon from '@mui/icons-material/Close'
 import AddIcon from '@mui/icons-material/Add'
 import type { Lang, Rating, Weapon, WeaponTag } from '../../data/types'
 import { WEAPON_CLASS_LABEL } from '../../data/enums'
@@ -10,80 +9,62 @@ import { weapons } from '../../data/weapons'
 import { RatingBadge } from '../badges/RatingBadge'
 import { TagChip } from '../badges/TagChip'
 import { useWeaponOverclockEditor } from '../../hooks/useWeaponOverclockEditor'
-import { getWeaponTags, getWeaponTagLabel } from '../../hooks/useTagEditor'
+import { useTagEditor } from '../../hooks/useTagEditor'
+import { useOverrides } from '../../hooks/useOverrides'
+import { bundledWeaponNameResolver, slugify, type WeaponNameResolver } from '../../utils/weaponName'
 import { TagPickerDialog } from '../TagPickerDialog'
 import { OverclockPickerDialog } from '../OverclockPickerDialog'
+import { RemovableChip } from '../RemovableChip'
 import { overclocks } from '../../data/overclocks'
 
-const RATING_STORAGE_PREFIX = 'drg-wpn-rating-'
-const CARD_TAG_STORAGE_PREFIX = 'drg-wpn-cardtags-'
-
-function getStoredRating(englishName: string, defaultRating: Rating): Rating {
-  try { return (localStorage.getItem(RATING_STORAGE_PREFIX + englishName) as Rating) || defaultRating
-  } catch { return defaultRating }
-}
-function setStoredRating(englishName: string, rating: Rating): void {
-  try { localStorage.setItem(RATING_STORAGE_PREFIX + englishName, rating) } catch { /* ignore */ }
-}
-
-// 卡片标签（来源 + 自定义）
-function getCardTags(englishName: string, defaultTags: WeaponTag[]): WeaponTag[] {
-  try {
-    const saved = localStorage.getItem(CARD_TAG_STORAGE_PREFIX + englishName)
-    if (saved) return JSON.parse(saved) as WeaponTag[]
-  } catch { /* ignore */ }
-  return defaultTags
-}
-function saveCardTags(englishName: string, tags: WeaponTag[]): void {
-  try { localStorage.setItem(CARD_TAG_STORAGE_PREFIX + englishName, JSON.stringify(tags)) } catch { /* ignore */ }
-}
-
-/** [x 名称] 框 */
-function RemovableChip({ label, onRemove, color }: { label: string; onRemove: () => void; color?: string }) {
-  return (
-    <Box component="span" sx={{
-      display: 'inline-flex', alignItems: 'center', gap: 0.3,
-      border: 1, borderColor: color ?? 'divider', borderRadius: 1.5,
-      px: 0.8, py: 0.2, fontSize: '0.8125rem', whiteSpace: 'nowrap',
-    }}>
-      <CloseIcon sx={{ fontSize: 14, cursor: 'pointer', color: 'error.light', '&:hover': { color: 'error.main' } }}
-        onClick={onRemove} />
-      {label}
-    </Box>
-  )
-}
-
 export function WeaponCard({
-  weapon, selectedTags, onTagClick, lang, getOverclockName, getOverclockEffect, editable,
+  weapon, selectedTags, onTagClick, lang, getOverclockName, getOverclockEffect, getWeaponName, editable,
 }: {
   weapon: Weapon; selectedTags: WeaponTag[]; onTagClick?: (tag: WeaponTag) => void;
-  lang: Lang; getOverclockName?: (id: string) => string; getOverclockEffect?: (id: string) => string; editable?: boolean
+  lang: Lang; getOverclockName?: (id: string) => string; getOverclockEffect?: (id: string) => string;
+  getWeaponName?: WeaponNameResolver; editable?: boolean
 }) {
+  const { merged, saveWeaponRating, saveCardTags } = useOverrides()
+  const editor = useTagEditor()
   const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null)
-  const [currentRating, setCurrentRating] = useState<Rating>(getStoredRating(weapon.englishName, weapon.rating))
-  const [cardTags, setCardTags] = useState<WeaponTag[]>(() => getCardTags(weapon.englishName, weapon.tags))
+  // 评级：来自 merged.weapons[en].rating（override 优先），本地态仅用于即时渲染
+  const [currentRating, setCurrentRating] = useState<Rating>(weapon.rating)
+  // 卡片标签：来自 merged.cardTags[en]，回落武器默认标签
+  const [cardTags, setCardTags] = useState<WeaponTag[]>(() => {
+    const stored = merged?.cardTags?.[weapon.englishName]
+    return (stored ?? weapon.tags) as WeaponTag[]
+  })
   const open = Boolean(anchorEl)
   const gameClass = getClassByEnglishName(weapon.class)
   const ocEditor = useWeaponOverclockEditor()
+  // 武器名解析：优先使用上层注入的运行时 resolver（服务端合并数据），无 Provider 时回落 bundled。
+  const resolveName = getWeaponName ?? bundledWeaponNameResolver
+  const weaponName = resolveName(slugify(weapon.englishName), lang)
   const yellowIds = ocEditor.getWeaponOverclockIds(weapon.englishName, 'yellow')
   const redIds = ocEditor.getWeaponOverclockIds(weapon.englishName, 'red')
-  const [, forceUpdate] = useState(0)
   const [tagPickerOpen, setTagPickerOpen] = useState(false)
   const [ocPickerOpen, setOcPickerOpen] = useState(false)
 
-  const handleRatingChange = (r: Rating) => { setStoredRating(weapon.englishName, r); setCurrentRating(r) }
+  // 与服务端合并值保持同步（评级 / 卡片标签）
+  useEffect(() => { setCurrentRating(weapon.rating) }, [weapon.rating])
+  useEffect(() => {
+    const stored = merged?.cardTags?.[weapon.englishName]
+    if (Array.isArray(stored)) setCardTags(stored as WeaponTag[])
+  }, [merged, weapon.englishName])
+
+  const handleRatingChange = (r: Rating) => { setCurrentRating(r); saveWeaponRating(weapon.englishName, r) }
 
   const ocLabel = (id: string) => getOverclockName ? getOverclockName(id) : id
 
   const removeTag = (tag: WeaponTag) => {
     const next = cardTags.filter((t) => t !== tag)
-    setCardTags(next); saveCardTags(weapon.englishName, next); forceUpdate((n) => n + 1)
+    setCardTags(next); saveCardTags(weapon.englishName, next)
   }
 
   const addTag = (tag: WeaponTag) => {
     if (cardTags.includes(tag)) return
     const next = [...cardTags, tag]
-    setCardTags(next); saveCardTags(weapon.englishName, next); forceUpdate((n) => n + 1)
+    setCardTags(next); saveCardTags(weapon.englishName, next)
   }
 
   const classLabel = lang === 'zh'
@@ -94,7 +75,7 @@ export function WeaponCard({
     if (!startWeapon) return ''
     const w = weapons.find((item) => item.englishName === startWeapon)
     if (!w) return startWeapon
-    return lang === 'zh' ? w.chineseName : w.englishName
+    return resolveName(slugify(startWeapon), lang)
   }
 
   return (
@@ -103,10 +84,10 @@ export function WeaponCard({
         <Box display="flex" justifyContent="space-between" alignItems="flex-start" gap={1}>
           <Box minWidth={0}>
             <Typography variant="subtitle1" fontWeight={700} noWrap>
-              {lang === 'zh' ? weapon.chineseName : weapon.englishName}
+              {weaponName}
             </Typography>
             <Typography variant="caption" color="text.secondary" noWrap>
-              {lang === 'zh' ? weapon.englishName : weapon.chineseName}
+              {lang === 'zh' ? weapon.englishName : resolveName(slugify(weapon.englishName), 'zh')}
             </Typography>
           </Box>
           {editable ? (
@@ -124,7 +105,7 @@ export function WeaponCard({
             onClick={(e) => setAnchorEl(e.currentTarget)} />
           {cardTags.map((tag) => (
             editable ? (
-              <RemovableChip key={tag} label={getWeaponTagLabel(tag, lang)} onRemove={() => removeTag(tag)} color="primary.light" />
+              <RemovableChip key={tag} label={editor.getTagLabel(tag, lang)} onRemove={() => removeTag(tag)} color="primary.light" />
             ) : (
               <TagChip key={tag} tag={tag} lang={lang} active={selectedTags.includes(tag)}
                 onClick={onTagClick ? () => onTagClick(tag) : undefined} />
@@ -231,7 +212,7 @@ export function WeaponCard({
         open={tagPickerOpen}
         onClose={() => setTagPickerOpen(false)}
         title={lang === 'zh' ? '选择标签添加到卡片' : 'Add Tags'}
-        availableTags={getWeaponTags()}
+        availableTags={editor.getTags()}
         selectedTags={cardTags}
         onToggle={(tag) => {
           if (cardTags.includes(tag as WeaponTag)) {
@@ -240,7 +221,7 @@ export function WeaponCard({
             addTag(tag as WeaponTag)
           }
         }}
-        getLabel={(tag) => getWeaponTagLabel(tag, lang)}
+        getLabel={(tag) => editor.getTagLabel(tag, lang)}
         lang={lang}
       />
 

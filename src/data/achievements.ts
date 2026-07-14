@@ -499,7 +499,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: DeepCore GK2",
-    chineseName: "超频：GK2 步枪",
+    chineseName: "完全超频：GK2 步枪",
     category: "武器超频",
     unlockCondition: "GK2 步枪 达 18 级",
     enUnlockCondition: "Reach level 18 with the DeepCore GK2",
@@ -508,7 +508,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Zhukov NUK17",
-    chineseName: "超频：朱可夫 SMG",
+    chineseName: "完全超频：朱可夫 SMG",
     category: "武器超频",
     unlockCondition: "朱可夫 SMG 达 18 级",
     enUnlockCondition: "Reach level 18 with the Zhukov NUK17",
@@ -517,7 +517,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Cryo Grenade",
-    chineseName: "超频：冰冻手雷",
+    chineseName: "完全超频：冰冻手雷",
     category: "武器超频",
     unlockCondition: "冰冻手雷 达 18 级",
     enUnlockCondition: "Reach level 18 with the Cryo Grenade",
@@ -526,7 +526,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Jury-Rigged Boomstick",
-    chineseName: "超频：双管霰弹枪",
+    chineseName: "完全超频：双管霰弹枪",
     category: "武器超频",
     unlockCondition: "双管霰弹枪 达 18 级",
     enUnlockCondition: "Reach level 18 with the Jury-Rigged Boomstick",
@@ -535,7 +535,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: M1000",
-    chineseName: "超频：M1000 狙击枪",
+    chineseName: "完全超频：M1000 狙击枪",
     category: "武器超频",
     unlockCondition: "M1000 狙击枪 达 18 级",
     enUnlockCondition: "Reach level 18 with the M1000",
@@ -544,7 +544,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Stun Sweeper",
-    chineseName: "超频：雷神手枪",
+    chineseName: "完全超频：雷神手枪",
     category: "武器超频",
     unlockCondition: "雷神手枪 达 18 级",
     enUnlockCondition: "Reach level 18 with the Voltaic Stun Sweeper",
@@ -553,7 +553,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: TH-0R Bug Taser",
-    chineseName: "超频：雷电回旋镖",
+    chineseName: "完全超频：雷电回旋镖",
     category: "武器超频",
     unlockCondition: "雷电回旋镖 达 18 级",
     enUnlockCondition: "Reach level 18 with the TH-0R Bug Taser",
@@ -562,7 +562,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Cryo Guard",
-    chineseName: "超频：冰冻无人机",
+    chineseName: "完全超频：冰冻无人机",
     category: "武器超频",
     unlockCondition: "冰冻无人机 达 18 级",
     enUnlockCondition: "Reach level 18 with the Arc-Tek Cryo Guard",
@@ -571,7 +571,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Plasma Carbine",
-    chineseName: "超频：电浆卡宾枪",
+    chineseName: "完全超频：电浆卡宾枪",
     category: "武器超频",
     unlockCondition: "电浆卡宾枪 达 18 级",
     enUnlockCondition: "Reach level 18 with the DRAK-25 Plasma Carbine",
@@ -580,7 +580,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Nishanka Boltshark",
-    chineseName: "超频：战术弩",
+    chineseName: "完全超频：战术弩",
     category: "武器超频",
     unlockCondition: "战术弩 达 18 级",
     enUnlockCondition: "Reach level 18 with the Nishanka Boltshark",
@@ -589,7 +589,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Heavy Revolver",
-    chineseName: "超频：斗牛犬手枪",
+    chineseName: "完全超频：斗牛犬手枪",
     category: "武器超频",
     unlockCondition: "斗牛犬手枪 达 18 级",
     enUnlockCondition: "Reach level 18 with the Bulldog Heavy Revolver",
@@ -598,7 +598,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Incendiary Grenade",
-    chineseName: "超频：燃烧手雷",
+    chineseName: "完全超频：燃烧手雷",
     category: "武器超频",
     unlockCondition: "燃烧手雷 达 18 级",
     enUnlockCondition: "Reach level 18 with the Incendiary Grenade",
@@ -607,7 +607,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Powered Minigun",
-    chineseName: "超频：铅爆机枪",
+    chineseName: "完全超频：铅爆机枪",
     category: "武器超频",
     unlockCondition: "铅爆机枪 达 18 级",
     enUnlockCondition: "Reach level 18 with the Lead Storm Powered Minigun",
@@ -616,7 +616,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Burst Fire Gun",
-    chineseName: "超频：BRT7 步枪",
+    chineseName: "完全超频：BRT7 步枪",
     category: "武器超频",
     unlockCondition: "BRT7 步枪 达 18 级",
     enUnlockCondition: "Reach level 18 with the BRT7 Burst Fire Gun",
@@ -625,7 +625,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Tactical Leadburster",
-    chineseName: "超频：战术铅爆雷",
+    chineseName: "完全超频：战术铅爆雷",
     category: "武器超频",
     unlockCondition: "战术铅爆雷 达 18 级",
     enUnlockCondition: "Reach level 18 with the Tactical Leadburster",
@@ -634,7 +634,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Heavy Autocannon",
-    chineseName: "超频：双管机炮",
+    chineseName: "完全超频：双管机炮",
     category: "武器超频",
     unlockCondition: "双管机炮 达 18 级",
     enUnlockCondition: "Reach level 18 with the Thunderhead Heavy Autocannon",
@@ -643,7 +643,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Firefly Hunter Drone",
-    chineseName: "超频：火焰无人机",
+    chineseName: "完全超频：火焰无人机",
     category: "武器超频",
     unlockCondition: "火焰无人机 达 18 级",
     enUnlockCondition: "Reach level 18 with the Firefly Hunter Drone",
@@ -652,7 +652,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Hurricane",
-    chineseName: "超频：火箭弹",
+    chineseName: "完全超频：火箭弹",
     category: "武器超频",
     unlockCondition: "火箭弹 达 18 级",
     enUnlockCondition: "Reach level 18 with the Hurricane Guided Rocket System",
@@ -661,7 +661,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Seismic Repulsor",
-    chineseName: "超频：地震哨戒炮",
+    chineseName: "完全超频：地震哨戒炮",
     category: "武器超频",
     unlockCondition: "地震炮/地震哨戒炮 达 18 级",
     enUnlockCondition: "Reach level 18 with the Seismic Repulsor",
@@ -670,7 +670,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Coil Gun",
-    chineseName: "超频：等离子切割器",
+    chineseName: "完全超频：等离子切割器",
     category: "武器超频",
     unlockCondition: "电磁手炮 达 18 级",
     enUnlockCondition: "Reach level 18 with the ArmsKore Coil Gun",
@@ -679,7 +679,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Warthog Auto",
-    chineseName: "超频：210 霰弹枪",
+    chineseName: "完全超频：210 霰弹枪",
     category: "武器超频",
     unlockCondition: "210 霰弹枪 达 18 级",
     enUnlockCondition: "Reach level 18 with the Warthog Auto 210",
@@ -688,7 +688,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Voltaic SMG",
-    chineseName: "超频：百万伏特冲锋枪",
+    chineseName: "完全超频：百万伏特冲锋枪",
     category: "武器超频",
     unlockCondition: "百万伏特冲锋枪 达 18 级",
     enUnlockCondition: "Reach level 18 with the Stubby Voltaic SMG",
@@ -697,7 +697,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Hi-Volt Thunderbird",
-    chineseName: "超频：雷电无人机",
+    chineseName: "完全超频：雷电无人机",
     category: "武器超频",
     unlockCondition: "雷电无人机 达 18 级",
     enUnlockCondition: "Reach level 18 with the Hi-Volt Thunderbird",
@@ -706,7 +706,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: LMG Gun Platform",
-    chineseName: "超频：机枪哨戒炮",
+    chineseName: "完全超频：机枪哨戒炮",
     category: "武器超频",
     unlockCondition: "机枪哨戒炮 达 18 级",
     enUnlockCondition: "Reach level 18 with the LMG Gun Platform",
@@ -715,7 +715,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Voltaic Shock Fence",
-    chineseName: "超频：电网",
+    chineseName: "完全超频：电网",
     category: "武器超频",
     unlockCondition: "电网 达 18 级",
     enUnlockCondition: "Reach level 18 with the Voltaic Shock Fence",
@@ -724,7 +724,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: LOK-1 Smart Rifle",
-    chineseName: "超频：智能步枪",
+    chineseName: "完全超频：智能步枪",
     category: "武器超频",
     unlockCondition: "智能步枪 达 18 级",
     enUnlockCondition: "Reach level 18 with the LOK-1 Smart Rifle",
@@ -733,7 +733,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: DeepCore PGL",
-    chineseName: "超频：PGL 榴弹发射器",
+    chineseName: "完全超频：PGL 榴弹发射器",
     category: "武器超频",
     unlockCondition: "PGL 榴弹发射器 达 18 级",
     enUnlockCondition: "Reach level 18 with the DeepCore PGL",
@@ -742,7 +742,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Breach Cutter",
-    chineseName: "超频：等离子切割器II",
+    chineseName: "完全超频：等离子切割器II",
     category: "武器超频",
     unlockCondition: "等离子切割器 达 18 级",
     enUnlockCondition: "Reach level 18 with the Breach Cutter",
@@ -751,7 +751,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Shard Diffractor",
-    chineseName: "超频：激光笔",
+    chineseName: "完全超频：激光笔",
     category: "武器超频",
     unlockCondition: "激光笔 达 18 级",
     enUnlockCondition: "Reach level 18 with the Shard Diffractor",
@@ -760,7 +760,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Plasma Burster",
-    chineseName: "超频：电浆手雷",
+    chineseName: "完全超频：电浆手雷",
     category: "武器超频",
     unlockCondition: "电浆手雷 达 18 级",
     enUnlockCondition: "Reach level 18 with the Plasma Burster",
@@ -769,7 +769,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Swarm Grenade",
-    chineseName: "超频：群蜂手雷",
+    chineseName: "完全超频：群蜂手雷",
     category: "武器超频",
     unlockCondition: "群蜂手雷 达 18 级",
     enUnlockCondition: "Reach level 18 with the Shredder Swarm Grenade",
@@ -778,7 +778,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Subata 120",
-    chineseName: "超频：苏巴塔120",
+    chineseName: "完全超频：苏巴塔120",
     category: "武器超频",
     unlockCondition: "苏巴塔120 达 18 级",
     enUnlockCondition: "Reach level 18 with the Subata 120",
@@ -787,7 +787,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Krakatoa Sentinel",
-    chineseName: "超频：火焰哨戒炮",
+    chineseName: "完全超频：火焰哨戒炮",
     category: "武器超频",
     unlockCondition: "火焰哨戒炮 达 18 级",
     enUnlockCondition: "Reach level 18 with the Krakatoa Sentinel",
@@ -796,7 +796,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: HE Grenade",
-    chineseName: "超频：高爆手榴弹",
+    chineseName: "完全超频：高爆手榴弹",
     category: "武器超频",
     unlockCondition: "高爆手榴弹 达 18 级",
     enUnlockCondition: "Reach level 18 with the High Explosive Grenade",
@@ -805,7 +805,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: CRSPR Flamethrower",
-    chineseName: "超频：火焰喷射器",
+    chineseName: "完全超频：火焰喷射器",
     category: "武器超频",
     unlockCondition: "火焰喷射器 达 18 级",
     enUnlockCondition: "Reach level 18 with the CRSPR Flamethrower",
@@ -814,7 +814,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Sludge Pump",
-    chineseName: "超频：污泥泵",
+    chineseName: "完全超频：污泥泵",
     category: "武器超频",
     unlockCondition: "污泥泵 达 18 级",
     enUnlockCondition: "Reach level 18 with the Corrosive Sludge Pump",
@@ -823,7 +823,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Wave Cooker",
-    chineseName: "超频：微波枪",
+    chineseName: "完全超频：微波枪",
     category: "武器超频",
     unlockCondition: "微波枪 达 18 级",
     enUnlockCondition: "Reach level 18 with the Colette Wave Cooker",
@@ -832,7 +832,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Impact Axe",
-    chineseName: "超频：冲击斧",
+    chineseName: "完全超频：冲击斧",
     category: "武器超频",
     unlockCondition: "冲击斧 达 18 级",
     enUnlockCondition: "Reach level 18 with the Impact Axe",
@@ -841,7 +841,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Neurotoxin Grenade",
-    chineseName: "超频：酸液手雷",
+    chineseName: "完全超频：酸液手雷",
     category: "武器超频",
     unlockCondition: "酸液手雷 达 18 级",
     enUnlockCondition: "Reach level 18 with the Neurotoxin Grenade",
@@ -850,7 +850,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Cryo Cannon",
-    chineseName: "超频：急冻加农炮",
+    chineseName: "完全超频：急冻加农炮",
     category: "武器超频",
     unlockCondition: "急冻加农炮 达 18 级",
     enUnlockCondition: "Reach level 18 with the Cryo Cannon",
@@ -859,7 +859,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: K1-P Viper Drone",
-    chineseName: "超频：酸液无人机",
+    chineseName: "完全超频：酸液无人机",
     category: "武器超频",
     unlockCondition: "毒液无人机 达 18 级",
     enUnlockCondition: "Reach level 18 with the K1-P Viper Drone",
@@ -868,7 +868,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Overclock: Plasma Charger",
-    chineseName: "超频：等离子手枪",
+    chineseName: "完全超频：等离子手枪",
     category: "武器超频",
     unlockCondition: "等离子手枪 达 18 级",
     enUnlockCondition: "Reach level 18 with the Experimental Plasma Charger",
@@ -877,7 +877,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: DeepCore GK2",
-    chineseName: "专精：GK2 步枪",
+    chineseName: "由浅入深：GK2 步枪",
     category: "武器专精",
     unlockCondition: "完成 GK2 步枪 武器专精深潜",
     enUnlockCondition: "Complete a DeepCore GK2 weapon mastery dive",
@@ -886,7 +886,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Zhukov NUK17",
-    chineseName: "专精：朱可夫 SMG",
+    chineseName: "由浅入深：朱可夫 SMG",
     category: "武器专精",
     unlockCondition: "完成 朱可夫 SMG 武器专精深潜",
     enUnlockCondition: "Complete a Zhukov NUK17 weapon mastery dive",
@@ -895,7 +895,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Cryo Grenade",
-    chineseName: "专精：冰冻手雷",
+    chineseName: "由浅入深：冰冻手雷",
     category: "武器专精",
     unlockCondition: "完成 冰冻手雷 武器专精深潜",
     enUnlockCondition: "Complete a Cryo Grenade weapon mastery dive",
@@ -904,7 +904,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Jury-Rigged Boomstick",
-    chineseName: "专精：双管霰弹枪",
+    chineseName: "由浅入深：双管霰弹枪",
     category: "武器专精",
     unlockCondition: "完成 双管霰弹枪 武器专精深潜",
     enUnlockCondition: "Complete a Jury-Rigged Boomstick weapon mastery dive",
@@ -913,7 +913,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: M1000",
-    chineseName: "专精：M1000 狙击枪",
+    chineseName: "由浅入深：M1000 狙击枪",
     category: "武器专精",
     unlockCondition: "完成 M1000 狙击枪 武器专精深潜",
     enUnlockCondition: "Complete a M1000 weapon mastery dive",
@@ -922,7 +922,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Stun Sweeper",
-    chineseName: "专精：雷神手枪",
+    chineseName: "由浅入深：雷神手枪",
     category: "武器专精",
     unlockCondition: "完成 雷神手枪 武器专精深潜",
     enUnlockCondition: "Complete a Voltaic Stun Sweeper weapon mastery dive",
@@ -931,7 +931,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: TH-0R Bug Taser",
-    chineseName: "专精：雷电回旋镖",
+    chineseName: "由浅入深：雷电回旋镖",
     category: "武器专精",
     unlockCondition: "完成 雷电回旋镖 武器专精深潜",
     enUnlockCondition: "Complete a TH-0R Bug Taser weapon mastery dive",
@@ -940,7 +940,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Cryo Guard",
-    chineseName: "专精：冰冻无人机",
+    chineseName: "由浅入深：冰冻无人机",
     category: "武器专精",
     unlockCondition: "完成 冰冻无人机 武器专精深潜",
     enUnlockCondition: "Complete a Arc-Tek Cryo Guard weapon mastery dive",
@@ -949,7 +949,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Plasma Carbine",
-    chineseName: "专精：电浆卡宾枪",
+    chineseName: "由浅入深：电浆卡宾枪",
     category: "武器专精",
     unlockCondition: "完成 电浆卡宾枪 武器专精深潜",
     enUnlockCondition: "Complete a DRAK-25 Plasma Carbine weapon mastery dive",
@@ -958,7 +958,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Nishanka Boltshark",
-    chineseName: "专精：战术弩",
+    chineseName: "由浅入深：战术弩",
     category: "武器专精",
     unlockCondition: "完成 战术弩 武器专精深潜",
     enUnlockCondition: "Complete a Nishanka Boltshark weapon mastery dive",
@@ -967,7 +967,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Heavy Revolver",
-    chineseName: "专精：斗牛犬手枪",
+    chineseName: "由浅入深：斗牛犬手枪",
     category: "武器专精",
     unlockCondition: "完成 斗牛犬手枪 武器专精深潜",
     enUnlockCondition: "Complete a Bulldog Heavy Revolver weapon mastery dive",
@@ -976,7 +976,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Incendiary Grenade",
-    chineseName: "专精：燃烧手雷",
+    chineseName: "由浅入深：燃烧手雷",
     category: "武器专精",
     unlockCondition: "完成 燃烧手雷 武器专精深潜",
     enUnlockCondition: "Complete a Incendiary Grenade weapon mastery dive",
@@ -985,7 +985,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Powered Minigun",
-    chineseName: "专精：铅爆机枪",
+    chineseName: "由浅入深：铅爆机枪",
     category: "武器专精",
     unlockCondition: "完成 铅爆机枪 武器专精深潜",
     enUnlockCondition: "Complete a Lead Storm Powered Minigun weapon mastery dive",
@@ -994,7 +994,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Burst Fire Gun",
-    chineseName: "专精：BRT7 步枪",
+    chineseName: "由浅入深：BRT7 步枪",
     category: "武器专精",
     unlockCondition: "完成 BRT7 步枪 武器专精深潜",
     enUnlockCondition: "Complete a BRT7 Burst Fire Gun weapon mastery dive",
@@ -1003,7 +1003,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Tactical Leadburster",
-    chineseName: "专精：战术铅爆雷",
+    chineseName: "由浅入深：战术铅爆雷",
     category: "武器专精",
     unlockCondition: "完成 战术铅爆雷 武器专精深潜",
     enUnlockCondition: "Complete a Tactical Leadburster weapon mastery dive",
@@ -1012,7 +1012,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Heavy Autocannon",
-    chineseName: "专精：双管机炮",
+    chineseName: "由浅入深：双管机炮",
     category: "武器专精",
     unlockCondition: "完成 双管机炮 武器专精深潜",
     enUnlockCondition: "Complete a Thunderhead Heavy Autocannon weapon mastery dive",
@@ -1021,7 +1021,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Firefly Hunter Drone",
-    chineseName: "专精：火焰无人机",
+    chineseName: "由浅入深：火焰无人机",
     category: "武器专精",
     unlockCondition: "完成 火焰无人机 武器专精深潜",
     enUnlockCondition: "Complete a Firefly Hunter Drone weapon mastery dive",
@@ -1030,7 +1030,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Hurricane",
-    chineseName: "专精：火箭弹",
+    chineseName: "由浅入深：火箭弹",
     category: "武器专精",
     unlockCondition: "完成 火箭弹 武器专精深潜",
     enUnlockCondition: "Complete a Hurricane Guided Rocket System weapon mastery dive",
@@ -1039,7 +1039,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Seismic Repulsor",
-    chineseName: "专精：地震哨戒炮",
+    chineseName: "由浅入深：地震哨戒炮",
     category: "武器专精",
     unlockCondition: "完成 地震炮/地震哨戒炮 武器专精深潜",
     enUnlockCondition: "Complete a Seismic Repulsor weapon mastery dive",
@@ -1048,7 +1048,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Coil Gun",
-    chineseName: "专精：等离子切割器",
+    chineseName: "由浅入深：等离子切割器",
     category: "武器专精",
     unlockCondition: "完成 电磁手炮 武器专精深潜",
     enUnlockCondition: "Complete a ArmsKore Coil Gun weapon mastery dive",
@@ -1057,7 +1057,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Warthog Auto",
-    chineseName: "专精：210 霰弹枪",
+    chineseName: "由浅入深：210 霰弹枪",
     category: "武器专精",
     unlockCondition: "完成 210 霰弹枪 武器专精深潜",
     enUnlockCondition: "Complete a Warthog Auto 210 weapon mastery dive",
@@ -1066,7 +1066,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Voltaic SMG",
-    chineseName: "专精：百万伏特冲锋枪",
+    chineseName: "由浅入深：百万伏特冲锋枪",
     category: "武器专精",
     unlockCondition: "完成 百万伏特冲锋枪 武器专精深潜",
     enUnlockCondition: "Complete a Stubby Voltaic SMG weapon mastery dive",
@@ -1075,7 +1075,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Hi-Volt Thunderbird",
-    chineseName: "专精：雷电无人机",
+    chineseName: "由浅入深：雷电无人机",
     category: "武器专精",
     unlockCondition: "完成 雷电无人机 武器专精深潜",
     enUnlockCondition: "Complete a Hi-Volt Thunderbird weapon mastery dive",
@@ -1084,7 +1084,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: LMG Gun Platform",
-    chineseName: "专精：机枪哨戒炮",
+    chineseName: "由浅入深：机枪哨戒炮",
     category: "武器专精",
     unlockCondition: "完成 机枪哨戒炮 武器专精深潜",
     enUnlockCondition: "Complete a LMG Gun Platform weapon mastery dive",
@@ -1093,7 +1093,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Voltaic Shock Fence",
-    chineseName: "专精：电网",
+    chineseName: "由浅入深：电网",
     category: "武器专精",
     unlockCondition: "完成 电网 武器专精深潜",
     enUnlockCondition: "Complete a Voltaic Shock Fence weapon mastery dive",
@@ -1102,7 +1102,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: LOK-1 Smart Rifle",
-    chineseName: "专精：智能步枪",
+    chineseName: "由浅入深：智能步枪",
     category: "武器专精",
     unlockCondition: "完成 智能步枪 武器专精深潜",
     enUnlockCondition: "Complete a LOK-1 Smart Rifle weapon mastery dive",
@@ -1111,7 +1111,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: DeepCore PGL",
-    chineseName: "专精：PGL 榴弹发射器",
+    chineseName: "由浅入深：PGL 榴弹发射器",
     category: "武器专精",
     unlockCondition: "完成 PGL 榴弹发射器 武器专精深潜",
     enUnlockCondition: "Complete a DeepCore PGL weapon mastery dive",
@@ -1120,7 +1120,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Breach Cutter",
-    chineseName: "专精：等离子切割器II",
+    chineseName: "由浅入深：等离子切割器II",
     category: "武器专精",
     unlockCondition: "完成 等离子切割器 武器专精深潜",
     enUnlockCondition: "Complete a Breach Cutter weapon mastery dive",
@@ -1129,7 +1129,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Shard Diffractor",
-    chineseName: "专精：激光笔",
+    chineseName: "由浅入深：激光笔",
     category: "武器专精",
     unlockCondition: "完成 激光笔 武器专精深潜",
     enUnlockCondition: "Complete a Shard Diffractor weapon mastery dive",
@@ -1138,7 +1138,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Plasma Burster",
-    chineseName: "专精：电浆手雷",
+    chineseName: "由浅入深：电浆手雷",
     category: "武器专精",
     unlockCondition: "完成 电浆手雷 武器专精深潜",
     enUnlockCondition: "Complete a Plasma Burster weapon mastery dive",
@@ -1147,7 +1147,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Swarm Grenade",
-    chineseName: "专精：群蜂手雷",
+    chineseName: "由浅入深：群蜂手雷",
     category: "武器专精",
     unlockCondition: "完成 群蜂手雷 武器专精深潜",
     enUnlockCondition: "Complete a Shredder Swarm Grenade weapon mastery dive",
@@ -1156,7 +1156,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Subata 120",
-    chineseName: "专精：苏巴塔120",
+    chineseName: "由浅入深：苏巴塔120",
     category: "武器专精",
     unlockCondition: "完成 苏巴塔120 武器专精深潜",
     enUnlockCondition: "Complete a Subata 120 weapon mastery dive",
@@ -1165,7 +1165,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Krakatoa Sentinel",
-    chineseName: "专精：火焰哨戒炮",
+    chineseName: "由浅入深：火焰哨戒炮",
     category: "武器专精",
     unlockCondition: "完成 火焰哨戒炮 武器专精深潜",
     enUnlockCondition: "Complete a Krakatoa Sentinel weapon mastery dive",
@@ -1174,7 +1174,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: HE Grenade",
-    chineseName: "专精：高爆手榴弹",
+    chineseName: "由浅入深：高爆手榴弹",
     category: "武器专精",
     unlockCondition: "完成 高爆手榴弹 武器专精深潜",
     enUnlockCondition: "Complete a High Explosive Grenade weapon mastery dive",
@@ -1183,7 +1183,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: CRSPR Flamethrower",
-    chineseName: "专精：火焰喷射器",
+    chineseName: "由浅入深：火焰喷射器",
     category: "武器专精",
     unlockCondition: "完成 火焰喷射器 武器专精深潜",
     enUnlockCondition: "Complete a CRSPR Flamethrower weapon mastery dive",
@@ -1192,7 +1192,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Sludge Pump",
-    chineseName: "专精：污泥泵",
+    chineseName: "由浅入深：污泥泵",
     category: "武器专精",
     unlockCondition: "完成 污泥泵 武器专精深潜",
     enUnlockCondition: "Complete a Corrosive Sludge Pump weapon mastery dive",
@@ -1201,7 +1201,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Wave Cooker",
-    chineseName: "专精：微波枪",
+    chineseName: "由浅入深：微波枪",
     category: "武器专精",
     unlockCondition: "完成 微波枪 武器专精深潜",
     enUnlockCondition: "Complete a Colette Wave Cooker weapon mastery dive",
@@ -1210,7 +1210,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Impact Axe",
-    chineseName: "专精：冲击斧",
+    chineseName: "由浅入深：冲击斧",
     category: "武器专精",
     unlockCondition: "完成 冲击斧 武器专精深潜",
     enUnlockCondition: "Complete an Impact Axe weapon mastery dive",
@@ -1219,7 +1219,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Neurotoxin Grenade",
-    chineseName: "专精：酸液手雷",
+    chineseName: "由浅入深：酸液手雷",
     category: "武器专精",
     unlockCondition: "完成 酸液手雷 武器专精深潜",
     enUnlockCondition: "Complete a Neurotoxin Grenade weapon mastery dive",
@@ -1228,7 +1228,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Cryo Cannon",
-    chineseName: "专精：急冻加农炮",
+    chineseName: "由浅入深：急冻加农炮",
     category: "武器专精",
     unlockCondition: "完成 急冻加农炮 武器专精深潜",
     enUnlockCondition: "Complete a Cryo Cannon weapon mastery dive",
@@ -1237,7 +1237,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: K1-P Viper Drone",
-    chineseName: "专精：酸液无人机",
+    chineseName: "由浅入深：酸液无人机",
     category: "武器专精",
     unlockCondition: "完成 毒液无人机 武器专精深潜",
     enUnlockCondition: "Complete a K1-P Viper Drone weapon mastery dive",
@@ -1246,7 +1246,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Mastery: Plasma Charger",
-    chineseName: "专精：等离子手枪",
+    chineseName: "由浅入深：等离子手枪",
     category: "武器专精",
     unlockCondition: "完成 等离子手枪 武器专精深潜",
     enUnlockCondition: "Complete a Experimental Plasma Charger weapon mastery dive",
@@ -1255,7 +1255,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: DeepCore GK2",
-    chineseName: "真专精：GK2 步枪",
+    chineseName: "深得精髓：GK2 步枪",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 GK2 步枪 专精深潜",
     enUnlockCondition: "Complete a DeepCore GK2 weapon mastery dive at Hazard 5",
@@ -1264,7 +1264,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Zhukov NUK17",
-    chineseName: "真专精：朱可夫 SMG",
+    chineseName: "深得精髓：朱可夫 SMG",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 朱可夫 SMG 专精深潜",
     enUnlockCondition: "Complete a Zhukov NUK17 weapon mastery dive at Hazard 5",
@@ -1273,7 +1273,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Cryo Grenade",
-    chineseName: "真专精：冰冻手雷",
+    chineseName: "深得精髓：冰冻手雷",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 冰冻手雷 专精深潜",
     enUnlockCondition: "Complete a Cryo Grenade weapon mastery dive at Hazard 5",
@@ -1282,7 +1282,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Jury-Rigged Boomstick",
-    chineseName: "真专精：双管霰弹枪",
+    chineseName: "深得精髓：双管霰弹枪",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 双管霰弹枪 专精深潜",
     enUnlockCondition: "Complete a Jury-Rigged Boomstick weapon mastery dive at Hazard 5",
@@ -1291,7 +1291,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: M1000",
-    chineseName: "真专精：M1000 狙击枪",
+    chineseName: "深得精髓：M1000 狙击枪",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 M1000 狙击枪 专精深潜",
     enUnlockCondition: "Complete a M1000 weapon mastery dive at Hazard 5",
@@ -1300,7 +1300,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Stun Sweeper",
-    chineseName: "真专精：雷神手枪",
+    chineseName: "深得精髓：雷神手枪",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 雷神手枪 专精深潜",
     enUnlockCondition: "Complete a Voltaic Stun Sweeper weapon mastery dive at Hazard 5",
@@ -1309,7 +1309,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: TH-0R Bug Taser",
-    chineseName: "真专精：雷电回旋镖",
+    chineseName: "深得精髓：雷电回旋镖",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 雷电回旋镖 专精深潜",
     enUnlockCondition: "Complete a TH-0R Bug Taser weapon mastery dive at Hazard 5",
@@ -1318,7 +1318,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Cryo Guard",
-    chineseName: "真专精：冰冻无人机",
+    chineseName: "深得精髓：冰冻无人机",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 冰冻无人机 专精深潜",
     enUnlockCondition: "Complete a Arc-Tek Cryo Guard weapon mastery dive at Hazard 5",
@@ -1327,7 +1327,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Plasma Carbine",
-    chineseName: "真专精：电浆卡宾枪",
+    chineseName: "深得精髓：电浆卡宾枪",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 电浆卡宾枪 专精深潜",
     enUnlockCondition: "Complete a DRAK-25 Plasma Carbine weapon mastery dive at Hazard 5",
@@ -1336,7 +1336,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Nishanka Boltshark",
-    chineseName: "真专精：战术弩",
+    chineseName: "深得精髓：战术弩",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 战术弩 专精深潜",
     enUnlockCondition: "Complete a Nishanka Boltshark weapon mastery dive at Hazard 5",
@@ -1345,7 +1345,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Heavy Revolver",
-    chineseName: "真专精：斗牛犬手枪",
+    chineseName: "深得精髓：斗牛犬手枪",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 斗牛犬手枪 专精深潜",
     enUnlockCondition: "Complete a Bulldog Heavy Revolver weapon mastery dive at Hazard 5",
@@ -1354,7 +1354,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Incendiary Grenade",
-    chineseName: "真专精：燃烧手雷",
+    chineseName: "深得精髓：燃烧手雷",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 燃烧手雷 专精深潜",
     enUnlockCondition: "Complete a Incendiary Grenade weapon mastery dive at Hazard 5",
@@ -1363,7 +1363,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Powered Minigun",
-    chineseName: "真专精：铅爆机枪",
+    chineseName: "深得精髓：铅爆机枪",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 铅爆机枪 专精深潜",
     enUnlockCondition: "Complete a Lead Storm Powered Minigun weapon mastery dive at Hazard 5",
@@ -1372,7 +1372,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Burst Fire Gun",
-    chineseName: "真专精：BRT7 步枪",
+    chineseName: "深得精髓：BRT7 步枪",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 BRT7 步枪 专精深潜",
     enUnlockCondition: "Complete a BRT7 Burst Fire Gun weapon mastery dive at Hazard 5",
@@ -1381,7 +1381,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Tactical Leadburster",
-    chineseName: "真专精：战术铅爆雷",
+    chineseName: "深得精髓：战术铅爆雷",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 战术铅爆雷 专精深潜",
     enUnlockCondition: "Complete a Tactical Leadburster weapon mastery dive at Hazard 5",
@@ -1390,7 +1390,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Heavy Autocannon",
-    chineseName: "真专精：双管机炮",
+    chineseName: "深得精髓：双管机炮",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 双管机炮 专精深潜",
     enUnlockCondition: "Complete a Thunderhead Heavy Autocannon weapon mastery dive at Hazard 5",
@@ -1399,7 +1399,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Firefly Hunter Drone",
-    chineseName: "真专精：火焰无人机",
+    chineseName: "深得精髓：火焰无人机",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 火焰无人机 专精深潜",
     enUnlockCondition: "Complete a Firefly Hunter Drone weapon mastery dive at Hazard 5",
@@ -1408,7 +1408,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Hurricane",
-    chineseName: "真专精：火箭弹",
+    chineseName: "深得精髓：火箭弹",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 火箭弹 专精深潜",
     enUnlockCondition: "Complete a Hurricane Guided Rocket System weapon mastery dive at Hazard 5",
@@ -1417,7 +1417,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Seismic Repulsor",
-    chineseName: "真专精：地震哨戒炮",
+    chineseName: "深得精髓：地震哨戒炮",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 地震炮/地震哨戒炮 专精深潜",
     enUnlockCondition: "Complete a Seismic Repulsor weapon mastery dive at Hazard 5",
@@ -1426,7 +1426,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Coil Gun",
-    chineseName: "真专精：等离子切割器",
+    chineseName: "深得精髓：等离子切割器",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 电磁手炮 专精深潜",
     enUnlockCondition: "Complete a ArmsKore Coil Gun weapon mastery dive at Hazard 5",
@@ -1435,7 +1435,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Warthog Auto",
-    chineseName: "真专精：210 霰弹枪",
+    chineseName: "深得精髓：210 霰弹枪",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 210 霰弹枪 专精深潜",
     enUnlockCondition: "Complete a Warthog Auto 210 weapon mastery dive at Hazard 5",
@@ -1444,7 +1444,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Voltaic SMG",
-    chineseName: "真专精：百万伏特冲锋枪",
+    chineseName: "深得精髓：百万伏特冲锋枪",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 百万伏特冲锋枪 专精深潜",
     enUnlockCondition: "Complete a Stubby Voltaic SMG weapon mastery dive at Hazard 5",
@@ -1453,7 +1453,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Hi-Volt Thunderbird",
-    chineseName: "真专精：雷电无人机",
+    chineseName: "深得精髓：雷电无人机",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 雷电无人机 专精深潜",
     enUnlockCondition: "Complete a Hi-Volt Thunderbird weapon mastery dive at Hazard 5",
@@ -1462,7 +1462,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: LMG Gun Platform",
-    chineseName: "真专精：机枪哨戒炮",
+    chineseName: "深得精髓：机枪哨戒炮",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 机枪哨戒炮 专精深潜",
     enUnlockCondition: "Complete a LMG Gun Platform weapon mastery dive at Hazard 5",
@@ -1471,7 +1471,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Voltaic Shock Fence",
-    chineseName: "真专精：电网",
+    chineseName: "深得精髓：电网",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 电网 专精深潜",
     enUnlockCondition: "Complete a Voltaic Shock Fence weapon mastery dive at Hazard 5",
@@ -1480,7 +1480,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: LOK-1 Smart Rifle",
-    chineseName: "真专精：智能步枪",
+    chineseName: "深得精髓：智能步枪",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 智能步枪 专精深潜",
     enUnlockCondition: "Complete a LOK-1 Smart Rifle weapon mastery dive at Hazard 5",
@@ -1489,7 +1489,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: DeepCore PGL",
-    chineseName: "真专精：PGL 榴弹发射器",
+    chineseName: "深得精髓：PGL 榴弹发射器",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 PGL 榴弹发射器 专精深潜",
     enUnlockCondition: "Complete a DeepCore PGL weapon mastery dive at Hazard 5",
@@ -1498,7 +1498,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Breach Cutter",
-    chineseName: "真专精：等离子切割器II",
+    chineseName: "深得精髓：等离子切割器II",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 等离子切割器 专精深潜",
     enUnlockCondition: "Complete a Breach Cutter weapon mastery dive at Hazard 5",
@@ -1507,7 +1507,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Shard Diffractor",
-    chineseName: "真专精：激光笔",
+    chineseName: "深得精髓：激光笔",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 激光笔 专精深潜",
     enUnlockCondition: "Complete a Shard Diffractor weapon mastery dive at Hazard 5",
@@ -1516,7 +1516,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Plasma Burster",
-    chineseName: "真专精：电浆手雷",
+    chineseName: "深得精髓：电浆手雷",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 电浆手雷 专精深潜",
     enUnlockCondition: "Complete a Plasma Burster weapon mastery dive at Hazard 5",
@@ -1525,7 +1525,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Swarm Grenade",
-    chineseName: "真专精：群蜂手雷",
+    chineseName: "深得精髓：群蜂手雷",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 群蜂手雷 专精深潜",
     enUnlockCondition: "Complete a Shredder Swarm Grenade weapon mastery dive at Hazard 5",
@@ -1534,7 +1534,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Subata 120",
-    chineseName: "真专精：苏巴塔120",
+    chineseName: "深得精髓：苏巴塔120",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 苏巴塔120 专精深潜",
     enUnlockCondition: "Complete a Subata 120 weapon mastery dive at Hazard 5",
@@ -1543,7 +1543,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Krakatoa Sentinel",
-    chineseName: "真专精：火焰哨戒炮",
+    chineseName: "深得精髓：火焰哨戒炮",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 火焰哨戒炮 专精深潜",
     enUnlockCondition: "Complete a Krakatoa Sentinel weapon mastery dive at Hazard 5",
@@ -1552,7 +1552,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: HE Grenade",
-    chineseName: "真专精：高爆手榴弹",
+    chineseName: "深得精髓：高爆手榴弹",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 高爆手榴弹 专精深潜",
     enUnlockCondition: "Complete a High Explosive Grenade weapon mastery dive at Hazard 5",
@@ -1561,7 +1561,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: CRSPR Flamethrower",
-    chineseName: "真专精：火焰喷射器",
+    chineseName: "深得精髓：火焰喷射器",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 火焰喷射器 专精深潜",
     enUnlockCondition: "Complete a CRSPR Flamethrower weapon mastery dive at Hazard 5",
@@ -1570,7 +1570,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Sludge Pump",
-    chineseName: "真专精：污泥泵",
+    chineseName: "深得精髓：污泥泵",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 污泥泵 专精深潜",
     enUnlockCondition: "Complete a Corrosive Sludge Pump weapon mastery dive at Hazard 5",
@@ -1579,7 +1579,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Wave Cooker",
-    chineseName: "真专精：微波枪",
+    chineseName: "深得精髓：微波枪",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 微波枪 专精深潜",
     enUnlockCondition: "Complete a Colette Wave Cooker weapon mastery dive at Hazard 5",
@@ -1588,7 +1588,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Impact Axe",
-    chineseName: "真专精：冲击斧",
+    chineseName: "深得精髓：冲击斧",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 冲击斧 专精深潜",
     enUnlockCondition: "Complete an Impact Axe weapon mastery dive at Hazard 5",
@@ -1597,7 +1597,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Neurotoxin Grenade",
-    chineseName: "真专精：酸液手雷",
+    chineseName: "深得精髓：酸液手雷",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 酸液手雷 专精深潜",
     enUnlockCondition: "Complete a Neurotoxin Grenade weapon mastery dive at Hazard 5",
@@ -1606,7 +1606,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Cryo Cannon",
-    chineseName: "真专精：急冻加农炮",
+    chineseName: "深得精髓：急冻加农炮",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 急冻加农炮 专精深潜",
     enUnlockCondition: "Complete a Cryo Cannon weapon mastery dive at Hazard 5",
@@ -1615,7 +1615,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: K1-P Viper Drone",
-    chineseName: "真专精：酸液无人机",
+    chineseName: "深得精髓：酸液无人机",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 毒液无人机 专精深潜",
     enUnlockCondition: "Complete a K1-P Viper Drone weapon mastery dive at Hazard 5",
@@ -1624,7 +1624,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "True Mastery: Plasma Charger",
-    chineseName: "真专精：等离子手枪",
+    chineseName: "深得精髓：等离子手枪",
     category: "武器真专精",
     unlockCondition: "危险等级 5 完成 等离子手枪 专精深潜",
     enUnlockCondition: "Complete a Experimental Plasma Charger weapon mastery dive at Hazard 5",
@@ -2386,7 +2386,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Endurance: Dives I",
-    chineseName: "耐力：深潜 I",
+    chineseName: "持之以恒：深潜 I",
     category: "耐力",
     unlockCondition: "完成 5 次深潜",
     enUnlockCondition: "Complete 5 dives",
@@ -2395,7 +2395,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Endurance: Dives II",
-    chineseName: "耐力：深潜 II",
+    chineseName: "持之以恒：深潜 II",
     category: "耐力",
     unlockCondition: "完成 25 次深潜",
     enUnlockCondition: "Complete 25 dives",
@@ -2404,7 +2404,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Endurance: Dives III",
-    chineseName: "耐力：深潜 III",
+    chineseName: "持之以恒：深潜 III",
     category: "耐力",
     unlockCondition: "完成 50 次深潜",
     enUnlockCondition: "Complete 50 dives",
@@ -2413,7 +2413,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Endurance: Dives IV",
-    chineseName: "耐力：深潜 IV",
+    chineseName: "持之以恒：深潜 IV",
     category: "耐力",
     unlockCondition: "完成 75 次深潜",
     enUnlockCondition: "Complete 75 dives",
@@ -2422,7 +2422,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Endurance: Dives V",
-    chineseName: "耐力：深潜 V",
+    chineseName: "持之以恒：深潜 V",
     category: "耐力",
     unlockCondition: "完成 100 次深潜",
     enUnlockCondition: "Complete 100 dives",
@@ -2431,7 +2431,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Endurance: Kills I",
-    chineseName: "耐力：击杀 I",
+    chineseName: "持之以恒：击杀 I",
     category: "耐力",
     unlockCondition: "击杀 50,000 敌人",
     enUnlockCondition: "Kill 50,000 enemies",
@@ -2440,7 +2440,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Endurance: Kills II",
-    chineseName: "耐力：击杀 II",
+    chineseName: "持之以恒：击杀 II",
     category: "耐力",
     unlockCondition: "击杀 100,000 敌人",
     enUnlockCondition: "Kill 100,000 enemies",
@@ -2449,7 +2449,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Endurance: Kills III",
-    chineseName: "耐力：击杀 III",
+    chineseName: "持之以恒：击杀 III",
     category: "耐力",
     unlockCondition: "击杀 250,000 敌人",
     enUnlockCondition: "Kill 250,000 enemies",
@@ -2458,7 +2458,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Endurance: Kills IV",
-    chineseName: "耐力：击杀 IV",
+    chineseName: "持之以恒：击杀 IV",
     category: "耐力",
     unlockCondition: "击杀 500,000 敌人",
     enUnlockCondition: "Kill 500,000 enemies",
@@ -2467,7 +2467,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Endurance: Kills V",
-    chineseName: "耐力：击杀 V",
+    chineseName: "持之以恒：击杀 V",
     category: "耐力",
     unlockCondition: "击杀 1,000,000 敌人",
     enUnlockCondition: "Kill 1,000,000 enemies",
@@ -2476,7 +2476,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Endurance: Damage I",
-    chineseName: "耐力：伤害 I",
+    chineseName: "持之以恒：伤害 I",
     category: "耐力",
     unlockCondition: "造成 100,000,000 伤害",
     enUnlockCondition: "Deal 100,000,000 damage",
@@ -2485,7 +2485,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Endurance: Damage II",
-    chineseName: "耐力：伤害 II",
+    chineseName: "持之以恒：伤害 II",
     category: "耐力",
     unlockCondition: "造成 250,000,000 伤害",
     enUnlockCondition: "Deal 250,000,000 damage",
@@ -2494,7 +2494,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Endurance: Damage III",
-    chineseName: "耐力：伤害 III",
+    chineseName: "持之以恒：伤害 III",
     category: "耐力",
     unlockCondition: "造成 500,000,000 伤害",
     enUnlockCondition: "Deal 500,000,000 damage",
@@ -2503,7 +2503,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Endurance: Damage IV",
-    chineseName: "耐力：伤害 IV",
+    chineseName: "持之以恒：伤害 IV",
     category: "耐力",
     unlockCondition: "造成 1,000,000,000 伤害",
     enUnlockCondition: "Deal 1,000,000,000 damage",
@@ -2512,7 +2512,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Endurance: Damage V",
-    chineseName: "耐力：伤害 V",
+    chineseName: "持之以恒：伤害 V",
     category: "耐力",
     unlockCondition: "造成 2,000,000,000 伤害",
     enUnlockCondition: "Deal 2,000,000,000 damage",
@@ -2521,7 +2521,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Endurance: Mine I",
-    chineseName: "耐力：挖掘 I",
+    chineseName: "持之以恒：挖掘 I",
     category: "耐力",
     unlockCondition: "挖掘 15,000 方块",
     enUnlockCondition: "Mine 15,000 blocks",
@@ -2530,7 +2530,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Endurance: Mine II",
-    chineseName: "耐力：挖掘 II",
+    chineseName: "持之以恒：挖掘 II",
     category: "耐力",
     unlockCondition: "挖掘 50,000 方块",
     enUnlockCondition: "Mine 50,000 blocks",
@@ -2539,7 +2539,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Endurance: Mine III",
-    chineseName: "耐力：挖掘 III",
+    chineseName: "持之以恒：挖掘 III",
     category: "耐力",
     unlockCondition: "挖掘 100,000 方块",
     enUnlockCondition: "Mine 100,000 blocks",
@@ -2548,7 +2548,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Endurance: Mine IV",
-    chineseName: "耐力：挖掘 IV",
+    chineseName: "持之以恒：挖掘 IV",
     category: "耐力",
     unlockCondition: "挖掘 150,000 方块",
     enUnlockCondition: "Mine 150,000 blocks",
@@ -2557,7 +2557,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Endurance: Mine V",
-    chineseName: "耐力：挖掘 V",
+    chineseName: "持之以恒：挖掘 V",
     category: "耐力",
     unlockCondition: "挖掘 250,000 方块",
     enUnlockCondition: "Mine 250,000 blocks",
@@ -2566,7 +2566,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Endurance: Run I",
-    chineseName: "耐力：奔跑 I",
+    chineseName: "持之以恒：奔跑 I",
     category: "耐力",
     unlockCondition: "跑 10,000 步",
     enUnlockCondition: "Run 10,000 steps",
@@ -2575,7 +2575,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Endurance: Run II",
-    chineseName: "耐力：奔跑 II",
+    chineseName: "持之以恒：奔跑 II",
     category: "耐力",
     unlockCondition: "跑 50,000 步",
     enUnlockCondition: "Run 50,000 steps",
@@ -2584,7 +2584,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Endurance: Run III",
-    chineseName: "耐力：奔跑 III",
+    chineseName: "持之以恒：奔跑 III",
     category: "耐力",
     unlockCondition: "跑 100,000 步",
     enUnlockCondition: "Run 100,000 steps",
@@ -2593,7 +2593,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Endurance: Run IV",
-    chineseName: "耐力：奔跑 IV",
+    chineseName: "持之以恒：奔跑 IV",
     category: "耐力",
     unlockCondition: "跑 250,000 步",
     enUnlockCondition: "Run 250,000 steps",
@@ -2602,7 +2602,7 @@ export const achievements: Achievement[] = [
   },
   {
     englishName: "Endurance: Run V",
-    chineseName: "耐力：奔跑 V",
+    chineseName: "持之以恒：奔跑 V",
     category: "耐力",
     unlockCondition: "跑 500,000 步",
     enUnlockCondition: "Run 500,000 steps",

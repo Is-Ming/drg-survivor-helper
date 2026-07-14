@@ -6,6 +6,7 @@ import { HashRouter, Routes, Route } from 'react-router-dom'
 import { ThemeProvider, CssBaseline } from '@mui/material'
 import { useTheme } from './theme/ThemeContext'
 import { createAppTheme } from './theme/createAppTheme'
+import { OverridesProvider } from './hooks/useOverrides'
 import { TopBar } from './components/TopBar'
 import { PublicPage } from './pages/PublicPage'
 import { AdminPage } from './pages/AdminPage'
@@ -17,13 +18,15 @@ export function App() {
   return (
     <ThemeProvider theme={muiTheme}>
       <CssBaseline />
-      <HashRouter>
-        <TopBar />
-        <Routes>
-          <Route path="/" element={<PublicPage />} />
-          <Route path="/admin" element={<AdminPage />} />
-        </Routes>
-      </HashRouter>
+      <OverridesProvider>
+        <HashRouter>
+          <TopBar />
+          <Routes>
+            <Route path="/" element={<PublicPage />} />
+            <Route path="/admin" element={<AdminPage />} />
+          </Routes>
+        </HashRouter>
+      </OverridesProvider>
     </ThemeProvider>
   )
 }

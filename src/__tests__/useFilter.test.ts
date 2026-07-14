@@ -11,9 +11,9 @@ function baseState(over: Partial<SearchState> = {}): SearchState {
   return {
     query: '',
     activeModule: 'achievements',
-    achievement: { onlyDifficult: true },
+    achievement: { categories: [], onlyDifficult: true },
     weapon: { tags: [] },
-    equipment: {},
+    equipment: { types: [] },
     ...over,
   }
 }
@@ -38,7 +38,7 @@ describe('filterAchievements', () => {
   it('分类筛选', () => {
     const r = filterAchievements(
       achievements,
-      baseState({ achievement: { onlyDifficult: true, category: '生物群系' } }),
+      baseState({ achievement: { categories: ['生物群系' as any], onlyDifficult: true } }),
     )
     expect(r.length).toBe(15)
     expect(r.every((a) => a.category === '生物群系')).toBe(true)
@@ -57,21 +57,21 @@ describe('filterAchievements', () => {
   it('query 与分类 AND 组合', () => {
     const r = filterAchievements(
       achievements,
-      baseState({ query: 'grenade', achievement: { onlyDifficult: true, category: '武器超频' } }),
+      baseState({ query: 'grenade', achievement: { categories: ['武器超频' as any], onlyDifficult: true } }),
     )
     expect(r.every((a) => a.category === '武器超频')).toBe(true)
   })
   it('难度筛选：极难+难 仅保留 ≤20%', () => {
     const r = filterAchievements(
       achievements,
-      baseState({ achievement: { onlyDifficult: true, difficulty: ['extreme', 'hard'] } }),
+      baseState({ achievement: { categories: [] as any, onlyDifficult: true, difficulty: ['extreme', 'hard'] } }),
     )
     expect(r.every((a) => a.completionRate !== null && a.completionRate <= 20)).toBe(true)
   })
   it('难度筛选：普通 含空达成率与 >20%', () => {
     const r = filterAchievements(
       achievements,
-      baseState({ achievement: { onlyDifficult: true, difficulty: ['moderate'] } }),
+      baseState({ achievement: { categories: [] as any, onlyDifficult: true, difficulty: ['moderate'] } }),
     )
     expect(r.every((a) => a.completionRate === null || (a.completionRate as number) > 20)).toBe(true)
     expect(r.some((a) => a.completionRate === null)).toBe(true)
@@ -102,7 +102,7 @@ describe('filterEquipments', () => {
     expect(filterEquipments(equipments, baseState()).length).toBe(20)
   })
   it('来源筛选', () => {
-    const r = filterEquipments(equipments, baseState({ equipment: { source: '成就解锁' } }))
+    const r = filterEquipments(equipments, baseState({ equipment: { types: [], source: '成就解锁' } }))
     expect(r.every((e) => e.source === '成就解锁')).toBe(true)
     expect(r.length).toBe(3)
   })

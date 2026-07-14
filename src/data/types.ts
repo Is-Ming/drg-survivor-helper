@@ -25,11 +25,23 @@ export type AchievementCategory =
 /** 生物群系档位（仅“生物群系”类成就填，其余为空） */
 export type BiomeTier = 'H5' | 'Mastery' | 'TrueMastery'
 
+/**
+ * 武器名模板引用：将硬编码武器名替换为 {weapon} 占位符，并标注 weaponRef（= 武器 englishName 的 slug）。
+ * 渲染时由 getWeaponName(weaponRef, lang) 实时拼装，武器名变更后成就自动同步。
+ * 仅承载中文名的字段用 name 键；仅承载解锁条件的字段用 unlockCondition 键；二者互斥。
+ */
+export interface WeaponRefTemplate {
+  weaponRef: string
+  name?: string
+  unlockCondition?: string
+}
+
 export interface Achievement {
   englishName: string
-  chineseName: string
-  category: AchievementCategory
-  unlockCondition: string
+  chineseName: string | WeaponRefTemplate
+  /** 分类：单值（原 19 类）或主理人拍板的多值数组，均允许 */
+  category: string | string[]
+  unlockCondition: string | WeaponRefTemplate
   /** 英文解锁条件（TrueAchievements 来源） */
   enUnlockCondition?: string
   /** 仅生物群系类有值；其余为 undefined */
@@ -55,6 +67,16 @@ export type WeaponTag =
   | 'PROJECTILE' | 'EXPLOSIVE' | 'DRONE' | 'TURRET' | 'GROUNDZONE'
   // 射击类型 Firing type
   | 'PRECISE' | 'SPRAY' | 'AREA' | 'BEAM' | 'LASTING'
+
+/**
+ * 武器标签展示名覆盖：中英独立，写入 overrides.tags.weaponTagLabels。
+ * - 仅覆盖有值的维度；某维度写空串等同清除该维度（回落静态/ID）。
+ * - 值为 null（仅 overrides 侧合法）表示该 tag 的覆盖被清除（回落静态）。
+ */
+export interface WeaponTagLabel {
+  zh?: string
+  en?: string
+}
 
 /** 小职业（Class Mod）—— 中文译名（4 职业 × 3 = 12） */
 export interface ClassMod {
@@ -124,7 +146,8 @@ export type EquipmentSource = '局内附加' | '成就解锁'
 
 export interface Equipment {
   name: string
-  type: string
+  /** 类型：单值（原默认值）或主理人拍板的多值数组，均允许 */
+  type: string | string[]
   effect: string
   source: EquipmentSource
   /** 成就解锁类填对应成就（含英文名/旧名注释）；局内附加为空 */
@@ -159,7 +182,7 @@ export interface SearchState {
   query: string
   activeModule: ModuleKey
   achievement: {
-    category?: AchievementCategory
+    categories: AchievementCategory[]
     /** 疑难高亮开关（默认开，决策 7 默认开） */
     onlyDifficult: boolean
     /** 难度三档多选筛选（R2）；空/未定义=不过滤 */
@@ -171,7 +194,7 @@ export interface SearchState {
     tags: WeaponTag[]
   }
   equipment: {
-    type?: string
+    types: string[]
     source?: EquipmentSource
   }
 }

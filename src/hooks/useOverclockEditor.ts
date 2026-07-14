@@ -1,71 +1,65 @@
-// 超频中文名 + 效果编辑器：可编辑 + localStorage 持久化
-import { useState, useCallback } from 'react'
+// 超频中文名 + 效果编辑器：可编辑 + 持久化经 useOverrides（overrides.overclocks）
+import { useCallback } from 'react'
 import { overclockMap } from '../data/overclocks'
 import type { Lang } from '../data/types'
-
-const STORAGE_KEY = 'drg-overclock-edits'
+import { useOverrides } from './useOverrides'
 
 interface OverclockEdit {
   chineseName?: string
   effect?: string
 }
 
-/** 从 localStorage 加载用户自定义名称/效果 */
-function loadCustomEdits(): Record<string, OverclockEdit> {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY)
-    if (raw) return JSON.parse(raw)
-  } catch { /* ignore */ }
-  return {}
-}
-
 export function useOverclockEditor() {
-  const [edits, setEdits] = useState<Record<string, OverclockEdit>>(loadCustomEdits)
+  const { merged, overrides, saveOverclockEdit, resetOverrides } = useOverrides()
+  // 派生自 overrides.overclocks（不再本地 localStorage）
+  const edits = overrides?.overclocks ?? {}
 
   const getEntry = useCallback(
     (id: string): OverclockEdit & { chineseName: string; effect: string; englishName: string } => {
-      const oc = overclockMap[id]
-      const edit = edits[id]
+      const mergedOc = merged?.overclocks?.find((o) => o.id === id)
+      const staticOc = overclockMap[id]
       return {
-        chineseName: edit?.chineseName ?? oc?.chineseName ?? id,
-        effect: edit?.effect ?? oc?.effect ?? '',
-        englishName: oc?.englishName ?? id,
+        chineseName: mergedOc?.chineseName ?? staticOc?.chineseName ?? id,
+        effect: mergedOc?.effect ?? staticOc?.effect ?? '',
+        englishName: mergedOc?.englishName ?? staticOc?.englishName ?? id,
       }
     },
-    [edits],
+    [merged],
   )
 
   /** 获取超频当前显示名称（lang-aware：en 时显示英文名） */
-  const getName = useCallback((id: string, lang?: Lang): string => {
-    if (lang === 'en') return getEntry(id).englishName
-    return getEntry(id).chineseName
-  }, [getEntry])
+  const getName = useCallback(
+    (id: string, lang?: Lang): string => {
+      if (lang === 'en') return getEntry(id).englishName
+      return getEntry(id).chineseName
+    },
+    [getEntry],
+  )
 
   /** 获取超频当前显示效果（lang-aware：en 时显示英文效果） */
-  const getEffect = useCallback((id: string, lang?: Lang): string => {
-    if (lang === 'en') return overclockMap[id]?.enEffect ?? getEntry(id).effect
-    return getEntry(id).effect
-  }, [getEntry])
+  const getEffect = useCallback(
+    (id: string, lang?: Lang): string => {
+      if (lang === 'en') return overclockMap[id]?.enEffect ?? getEntry(id).effect
+      return getEntry(id).effect
+    },
+    [getEntry],
+  )
 
   /** 获取超频英文名 */
   const getEnglishName = useCallback((id: string): string => getEntry(id).englishName, [getEntry])
 
-  /** 保存编辑（合并到现有 edits） */
-  const saveEdit = useCallback((id: string, patch: OverclockEdit) => {
-    setEdits((prev) => {
-      const next = { ...prev, [id]: { ...prev[id], ...patch } }
-      // 清理无效条目（没有自定义内容的）
-      if (!next[id].chineseName && !next[id].effect) delete next[id]
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(next))
-      return next
-    })
-  }, [])
+  /** 保存编辑（合并进 overrides.overclocks，由 useOverrides 深合并并回写服务端） */
+  const saveEdit = useCallback(
+    (id: string, patch: OverclockEdit) => {
+      saveOverclockEdit(id, patch)
+    },
+    [saveOverclockEdit],
+  )
 
-  /** 重置所有编辑为默认值 */
+  /** 重置所有编辑（委托 useOverrides 清空全部 overrides） */
   const resetAll = useCallback(() => {
-    localStorage.removeItem(STORAGE_KEY)
-    setEdits({})
-  }, [])
+    resetOverrides()
+  }, [resetOverrides])
 
   return { getName, getEffect, getEnglishName, saveEdit, resetAll, edits }
 }

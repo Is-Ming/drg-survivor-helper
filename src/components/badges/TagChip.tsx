@@ -1,9 +1,9 @@
 // 可点击标签 chip：点击回填搜索/筛选（P1）
-// label 改为接收官网标签英文枚举，组件内按当前 lang 经 WEAPON_TAG_LABEL 渲染
-// zh → 中文(英文)，en → 英文，保证全站去中英混杂。
+// 展示名经 useTagEditor().getTagLabel 实时解析（覆盖 → 静态 → ID），保证全站联动、无中英混杂。
+// zh → 中文(英文)，en → 英文。
 import { Chip } from '@mui/material'
 import type { Lang, WeaponTag } from '../../data/types'
-import { WEAPON_TAG_LABEL } from '../../data/enums'
+import { useTagEditor } from '../../hooks/useTagEditor'
 
 export function TagChip({
   tag,
@@ -16,7 +16,11 @@ export function TagChip({
   onClick?: () => void
   active?: boolean
 }) {
-  const label = lang === 'zh' ? `${WEAPON_TAG_LABEL[tag].zh}(${WEAPON_TAG_LABEL[tag].en})` : WEAPON_TAG_LABEL[tag].en
+  const { getTagLabel } = useTagEditor()
+  const label =
+    lang === 'zh'
+      ? `${getTagLabel(tag, 'zh')}(${getTagLabel(tag, 'en')})`
+      : getTagLabel(tag, 'en')
   return (
     <Chip
       size="small"

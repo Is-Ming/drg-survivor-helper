@@ -5,50 +5,67 @@ import AddIcon from '@mui/icons-material/Add'
 import type { Achievement, Lang } from '../../data/types'
 import { getDifficultyTier, ACHIEVEMENT_CATEGORY_LABEL } from '../../data/enums'
 import { DifficultyBadge } from '../badges/DifficultyBadge'
-import { getAchievementCategories } from '../../hooks/useTagEditor'
+import { useTagEditor } from '../../hooks/useTagEditor'
+import { useOverrides } from '../../hooks/useOverrides'
+import { bundledWeaponNameResolver, resolveField, type WeaponNameResolver } from '../../utils/weaponName'
 import { TagPickerDialog } from '../TagPickerDialog'
+import { RemovableChip } from '../RemovableChip'
+
+/** 归一化分类为字符串数组（单值/多值/空均兼容） */
+function normalizeCategories(c: string | string[] | undefined, fallback: string): string[] {
+  if (Array.isArray(c)) {
+    const filtered = c.filter((x): x is string => typeof x === 'string' && x.length > 0)
+    if (filtered.length > 0) return filtered
+  } else if (typeof c === 'string' && c) {
+    return [c]
+  }
+  return fallback ? [fallback] : []
+}
+
+function catLabel(cat: string, lang: Lang): string {
+  return ACHIEVEMENT_CATEGORY_LABEL[cat as keyof typeof ACHIEVEMENT_CATEGORY_LABEL]?.[lang] ?? cat
+}
 
 export function AchievementCard({
   ach,
   highlight,
   lang,
   editable,
+  getWeaponName,
   onSave,
 }: {
   ach: Achievement
   highlight: boolean
   lang: Lang
   editable?: boolean
+  getWeaponName?: WeaponNameResolver
   onSave?: (patch: Record<string, string>) => void
 }) {
   const [editName, setEditName] = useState('')
   const [editCondition, setEditCondition] = useState('')
   const [editingField, setEditingField] = useState<string | null>(null)
 
-  // 从 localStorage 加载已保存的编辑
-  const storageKey = `drg-ach-edit-${ach.englishName}`
+  // 武器名解析：优先使用上层注入的运行时 resolver（服务端合并数据），无 Provider 时回落 bundled。
+  const resolveName = getWeaponName ?? bundledWeaponNameResolver
+  const resolvedName = resolveField(ach.chineseName, resolveName, lang)
+  const resolvedCondition = resolveField(ach.unlockCondition, resolveName, lang)
+
+  const { merged, saveAchievementEdit } = useOverrides()
+  const editor = useTagEditor()
 
   const loadSaved = () => {
-    try {
-      const saved = JSON.parse(localStorage.getItem(storageKey) || '{}')
-      if (saved.chineseName) setEditName(saved.chineseName)
-      else setEditName(ach.chineseName)
-      if (saved.unlockCondition) setEditCondition(saved.unlockCondition)
-      else setEditCondition(lang === 'zh' ? ach.unlockCondition : (ach.enUnlockCondition || ach.unlockCondition))
-    } catch {
-      setEditName(ach.chineseName)
-      setEditCondition(lang === 'zh' ? ach.unlockCondition : (ach.enUnlockCondition || ach.unlockCondition))
-    }
+    setEditName(resolvedName)
+    setEditCondition(resolvedCondition)
   }
 
   useEffect(() => {
     if (editable) loadSaved()
   }, [editable, ach.englishName])
 
-  const displayName = editable ? editName || ach.chineseName : ach.chineseName
+  const displayName = editable ? editName || resolvedName : resolvedName
   const displayCondition = editable
-    ? editCondition || (lang === 'zh' ? ach.unlockCondition : (ach.enUnlockCondition || ach.unlockCondition))
-    : lang === 'zh' ? ach.unlockCondition : (ach.enUnlockCondition || ach.unlockCondition)
+    ? editCondition || resolvedCondition
+    : lang === 'zh' ? resolvedCondition : (ach.enUnlockCondition || resolvedCondition)
   const tier = getDifficultyTier(ach.completionRate)
   const borderColor =
     highlight && tier
@@ -65,20 +82,27 @@ export function AchievementCard({
   }
 
   const [catPickerOpen, setCatPickerOpen] = useState(false)
-  const allCategories = getAchievementCategories()
-  // 分类显示：优先读取 localStorage 已保存的自定义分类，回落硬编码值
-  const currentCategory = (() => {
-    try {
-      const saved = JSON.parse(localStorage.getItem(storageKey) || '{}')
-      return saved.category || ach.category
-    } catch { return ach.category }
-  })()
-  const catLabel = ACHIEVEMENT_CATEGORY_LABEL[currentCategory as keyof typeof ACHIEVEMENT_CATEGORY_LABEL]?.[lang] ?? currentCategory
+  const allCategories = editor.getCategories()
+  // 分类显示：优先读取 merged.achievements[en].category（多值数组，override 优先），回落硬编码单值
+  const [currentCategories, setCurrentCategories] = useState<string[]>(() => {
+    const ov = merged?.achievements?.find((a) => a.englishName === ach.englishName)?.category
+    const fb = Array.isArray(ach.category) ? (ach.category[0] ?? '') : ach.category
+    return normalizeCategories(ov, fb)
+  })
 
-  const handleCategoryChange = (newCat: string) => {
-    if (newCat !== currentCategory) {
-      commitEdit('category', newCat)
-    }
+  // 与服务端合并值保持同步（异步加载 / 其它编辑触发）
+  useEffect(() => {
+    const ov = merged?.achievements?.find((a) => a.englishName === ach.englishName)?.category
+    if (ov !== undefined) setCurrentCategories(normalizeCategories(ov, ''))
+  }, [merged, ach.englishName])
+
+  const toggleCategory = (cat: string) => {
+    const next = currentCategories.includes(cat)
+      ? currentCategories.filter((c) => c !== cat)
+      : [...currentCategories, cat]
+    setCurrentCategories(next)
+    // 卡片标签并入成就迁移：分类写入 overrides.achievements[en].category（多值）
+    saveAchievementEdit(ach.englishName, { category: next })
   }
 
   return (
@@ -95,7 +119,7 @@ export function AchievementCard({
                 onBlur={() => commitEdit('chineseName', editName)}
                 onKeyDown={(e) => {
                   if (e.key === 'Enter') commitEdit('chineseName', editName)
-                  if (e.key === 'Escape') { setEditName(ach.chineseName); setEditingField(null) }
+                  if (e.key === 'Escape') { setEditName(resolvedName); setEditingField(null) }
                 }}
                 autoFocus
                 sx={{ mb: 0.5 }}
@@ -113,7 +137,7 @@ export function AchievementCard({
               </Typography>
             )}
             <Typography variant="caption" color="text.secondary" noWrap>
-              {lang === 'zh' ? ach.englishName : ach.chineseName}
+              {lang === 'zh' ? ach.englishName : resolvedName}
             </Typography>
           </Box>
           <Box flexShrink={0}>
@@ -124,15 +148,18 @@ export function AchievementCard({
         <Box mt={1} mb={1} display="flex" flexWrap="wrap" gap={0.5} alignItems="center">
           {editable ? (
             <>
-              <Chip size="small" label={catLabel} variant="outlined" onClick={() => setCatPickerOpen(true)}
-                sx={{ cursor: 'pointer', '&:hover': { borderColor: 'primary.main' } }} />
+              {currentCategories.map((cat) => (
+                <RemovableChip key={cat} label={catLabel(cat, lang)} onRemove={() => toggleCategory(cat)} color="primary.light" />
+              ))}
               <IconButton size="small" color="primary" onClick={() => setCatPickerOpen(true)}
                 sx={{ border: 1, borderColor: 'divider', borderRadius: 1.5, width: 28, height: 28 }}>
                 <AddIcon sx={{ fontSize: 16 }} />
               </IconButton>
             </>
           ) : (
-            <Chip size="small" label={catLabel} variant="outlined" />
+            currentCategories.map((cat) => (
+              <Chip key={cat} size="small" label={catLabel(cat, lang)} variant="outlined" />
+            ))
           )}
           {ach.biomeTier && (
             <Chip size="small" label={ach.biomeTier} color="secondary" variant="outlined" />
@@ -150,7 +177,7 @@ export function AchievementCard({
             onBlur={() => commitEdit('unlockCondition', editCondition)}
             onKeyDown={(e) => {
               if (e.key === 'Enter' && !e.shiftKey) commitEdit('unlockCondition', editCondition)
-              if (e.key === 'Escape') { setEditCondition(ach.unlockCondition); setEditingField(null) }
+              if (e.key === 'Escape') { setEditCondition(resolvedCondition); setEditingField(null) }
             }}
             autoFocus
           />
@@ -176,11 +203,11 @@ export function AchievementCard({
       <TagPickerDialog
         open={catPickerOpen}
         onClose={() => setCatPickerOpen(false)}
-        title={lang === 'zh' ? '选择分类' : 'Select Category'}
+        title={lang === 'zh' ? '选择分类（可多选）' : 'Select Categories (multi)'}
         availableTags={allCategories}
-        selectedTags={[currentCategory]}
-        onToggle={(tag) => handleCategoryChange(tag)}
-        getLabel={(tag) => ACHIEVEMENT_CATEGORY_LABEL[tag as keyof typeof ACHIEVEMENT_CATEGORY_LABEL]?.[lang] ?? tag}
+        selectedTags={currentCategories}
+        onToggle={(tag) => toggleCategory(tag)}
+        getLabel={(tag) => catLabel(tag, lang)}
         lang={lang}
       />
     </Card>

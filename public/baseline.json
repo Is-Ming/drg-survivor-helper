@@ -1,0 +1,6002 @@
+{
+  "weapons": [
+    {
+      "englishName": "M1000",
+      "chineseName": "M1000 经典型步枪",
+      "class": "Scout",
+      "tags": [
+        "KINETIC",
+        "MEDIUM",
+        "PRECISE",
+        "PROJECTILE"
+      ],
+      "yellowOverclock": "+15%伤+25%装填；+100%弹匣-20%装填；+25%射速+25%装填；火焰伤害；+15%伤+击退",
+      "redOverclock": "更多子弹更小射程；壮男孩(组合投射物大伤降装填)",
+      "yellowOverclockIds": [
+        "a-little-more-oomph",
+        "bigger-mags-unstable",
+        "gas-rerouting",
+        "pan-fried-shells",
+        "rubber-tip"
+      ],
+      "redOverclockIds": [
+        "sawn-off"
+      ],
+      "rating": "S",
+      "version": "当前"
+    },
+    {
+      "englishName": "DeepCore GK2",
+      "chineseName": "深核 GK2 突击步枪",
+      "class": "Scout",
+      "tags": [
+        "KINETIC",
+        "MEDIUM",
+        "PRECISE",
+        "PROJECTILE"
+      ],
+      "yellowOverclock": "+15%伤+25%装填；电击；冰冻；目标高HP；+100%穿透+30%伤-30%射速",
+      "redOverclock": "+150%伤-20%射速装填；+100%伤+100%射速(他枪-30%)",
+      "yellowOverclockIds": [
+        "a-little-more-oomph",
+        "battery-bullets",
+        "big-game-hunter",
+        "high-caliber-rounds",
+        "refrigerated-gunpowder"
+      ],
+      "redOverclockIds": [
+        "lead-wrapped-ammo"
+      ],
+      "rating": "A",
+      "version": "当前"
+    },
+    {
+      "englishName": "DRAK-25 Plasma Carbine",
+      "chineseName": "DRAK-25 电浆卡宾枪",
+      "class": "Scout",
+      "tags": [
+        "PLASMA",
+        "MEDIUM",
+        "SPRAY",
+        "PROJECTILE"
+      ],
+      "yellowOverclock": "+15%伤+25%装填；+100%弹匣-20%装填；过冷减速；+25%射速装填；燃烧",
+      "redOverclock": "更多子弹小射程；最后子弹四散",
+      "yellowOverclockIds": [
+        "a-little-more-oomph",
+        "bigger-mags-unstable",
+        "cold-plasma",
+        "gas-rerouting",
+        "hot-plasma-unstable"
+      ],
+      "redOverclockIds": [
+        "sawn-off",
+        "storm-e-mag"
+      ],
+      "rating": "S",
+      "version": "当前"
+    },
+    {
+      "englishName": "Nishanka Boltshark",
+      "chineseName": "尼桑卡 X-80 \"闪电鲨\" 战术弩",
+      "class": "Scout",
+      "tags": [
+        "ACID",
+        "ELECTRIC",
+        "MEDIUM",
+        "PRECISE",
+        "PROJECTILE"
+      ],
+      "yellowOverclock": "冰冻弩箭；火焰弩箭；+25%射速装填；+15%伤击退",
+      "redOverclock": "全类型弩箭齐射；大敌留电场",
+      "yellowOverclockIds": [
+        "cryo-bolt",
+        "fire-bolt",
+        "gas-rerouting",
+        "rubber-tip"
+      ],
+      "redOverclockIds": [
+        "bolt-volley",
+        "payload",
+        "storm-e-mag"
+      ],
+      "rating": "A",
+      "version": "当前"
+    },
+    {
+      "englishName": "Cryo Grenade",
+      "chineseName": "急冻手雷",
+      "class": "Scout",
+      "tags": [
+        "COLD",
+        "THROWABLE",
+        "AREA",
+        "EXPLOSIVE"
+      ],
+      "yellowOverclock": "+15%伤+25%装填；分裂3弱；+30%范围；地形伤害",
+      "redOverclock": "+25%范围拉拢；+75%伤强(他枪-30%持效)",
+      "yellowOverclockIds": [
+        "cluster-grenades",
+        "compact-explosives",
+        "true-tnt"
+      ],
+      "redOverclockIds": [
+        "gravitational-core",
+        "the-favourite"
+      ],
+      "rating": "A",
+      "version": "当前"
+    },
+    {
+      "englishName": "Arc-Tek Cryo Guard",
+      "chineseName": "Arc-Tek 急冻无人护卫机",
+      "class": "Scout",
+      "tags": [
+        "COLD",
+        "CONSTRUCT",
+        "LASTING",
+        "DRONE"
+      ],
+      "yellowOverclock": "主动寻敌；+30%装填-20%生命爆裂；+1无人机；-50%射程盘旋",
+      "redOverclock": "+20%伤+50%装填保护；+3无人机",
+      "yellowOverclockIds": [
+        "behaviour-chip-aggro",
+        "disposable-tech-unstable",
+        "more-drones-unstable"
+      ],
+      "redOverclockIds": [
+        "crisis-protocol",
+        "more-drones-unstable"
+      ],
+      "rating": "-",
+      "version": "当前"
+    },
+    {
+      "englishName": "Jury-Rigged Boomstick",
+      "chineseName": "应急霰弹枪",
+      "class": "Scout",
+      "tags": [
+        "KINETIC",
+        "MEDIUM",
+        "SPRAY",
+        "PROJECTILE"
+      ],
+      "yellowOverclock": "电击；+100%弹匣-20%装填；+50%射程+10%伤；冰冻",
+      "redOverclock": "双倍弹丸少伤；粗壮男孩(大伤降装填)",
+      "yellowOverclockIds": [
+        "battery-bullets",
+        "bigger-mags-unstable",
+        "high-velocity-bullets",
+        "mini-pellets",
+        "refrigerated-gunpowder"
+      ],
+      "redOverclockIds": [
+        "mini-pellets",
+        "double-barrel"
+      ],
+      "rating": "-",
+      "version": "当前"
+    },
+    {
+      "englishName": "Voltaic Stun Sweeper",
+      "chineseName": "“雷神之罚”电击枪",
+      "class": "Scout",
+      "tags": [
+        "ELECTRIC",
+        "LIGHT",
+        "THROWABLE"
+      ],
+      "yellowOverclock": "+15%伤装填；装填爆炸；+1射线；-25%伤他枪+25%",
+      "redOverclock": "+3射线；射线分裂",
+      "yellowOverclockIds": [
+        "kinda-looks-like-a-magnet",
+        "knuckle-grip",
+        "lightweight-alloy",
+        "potent-juice"
+      ],
+      "redOverclockIds": [
+        "disposable-tech-unstable",
+        "one-handed"
+      ],
+      "rating": "-",
+      "version": "当前"
+    },
+    {
+      "englishName": "TH-0R Bug Taser",
+      "chineseName": "强电震击镖",
+      "class": "Scout",
+      "tags": [
+        "ELECTRIC",
+        "LIGHT",
+        "BEAM"
+      ],
+      "yellowOverclock": "高HP目标；+50%射程+10%伤；拾取经验；+350%射程-40%装填螺旋",
+      "redOverclock": "不返回爆裂；反向投掷",
+      "yellowOverclockIds": [
+        "a-little-more-oomph",
+        "explosive-reload",
+        "more-beams",
+        "sidearm"
+      ],
+      "redOverclockIds": [
+        "even-more-beams"
+      ],
+      "rating": "-",
+      "version": "当前"
+    },
+    {
+      "englishName": "Zhukov NUK17",
+      "chineseName": "朱可夫 NUK17双持冲锋枪",
+      "class": "Scout",
+      "tags": [
+        "KINETIC",
+        "LIGHT",
+        "SPRAY",
+        "PROJECTILE"
+      ],
+      "yellowOverclock": "+100%弹匣-20%装填；电击；冰冻；装填爆炸；+25%射速装填",
+      "redOverclock": "射速+200%弹匣+100%螺旋；+200%装填+30%伤八方向",
+      "yellowOverclockIds": [
+        "battery-bullets",
+        "bigger-mags-unstable",
+        "explosive-reload",
+        "gas-rerouting",
+        "refrigerated-gunpowder"
+      ],
+      "redOverclockIds": [
+        "death-spiral",
+        "omni-barrel"
+      ],
+      "rating": "-",
+      "version": "当前"
+    },
+    {
+      "englishName": "Thunderhead Heavy Autocannon",
+      "chineseName": "“雷暴云砧”重型双管机炮",
+      "class": "Gunner",
+      "tags": [
+        "KINETIC",
+        "HEAVY",
+        "PRECISE",
+        "PROJECTILE"
+      ],
+      "yellowOverclock": "+15%伤装填；+100%弹匣-20%装填；+25%射速装填；+100%穿透+30%伤-30%射速；+15%伤击退",
+      "redOverclock": "最后子弹四散；+150%射速-15命中",
+      "yellowOverclockIds": [
+        "a-little-more-oomph",
+        "bigger-mags-unstable",
+        "gas-rerouting",
+        "high-caliber-rounds",
+        "rubber-tip"
+      ],
+      "redOverclockIds": [
+        "storm-e-mag"
+      ],
+      "rating": "S",
+      "version": "当前"
+    },
+    {
+      "englishName": "Seismic Repulsor",
+      "chineseName": "“地震冲击”重锤哨戒炮",
+      "class": "Gunner",
+      "tags": [
+        "KINETIC",
+        "CONSTRUCT",
+        "AREA",
+        "LASTING",
+        "TURRET"
+      ],
+      "yellowOverclock": "减慢敌人；+30%装填-20%生命爆；+1容量；跟随",
+      "redOverclock": "+3容量；+100%伤+50%寿命(他枪-30%)",
+      "yellowOverclockIds": [
+        "coolant-leak",
+        "disposable-tech-balanced",
+        "extra-capacity-balanced",
+        "tank-tracks"
+      ],
+      "redOverclockIds": [
+        "extra-capacity-unstable",
+        "rapid-deployment"
+      ],
+      "rating": "S",
+      "version": "当前"
+    },
+    {
+      "englishName": "Tactical Leadburster",
+      "chineseName": "战术铅爆雷",
+      "class": "Gunner",
+      "tags": [
+        "KINETIC",
+        "THROWABLE",
+        "LASTING",
+        "SPRAY",
+        "PROJECTILE"
+      ],
+      "yellowOverclock": "分裂3弱；燃烧；+200%穿透-30%寿命",
+      "redOverclock": "+150%伤-20%射速装填；+100%伤+100%射速(他枪-30%)",
+      "yellowOverclockIds": [
+        "cluster-grenades",
+        "fire-bullets",
+        "fusion-turbines",
+        "piercing-projectiles"
+      ],
+      "redOverclockIds": [
+        "lead-wrapped-ammo"
+      ],
+      "rating": "S",
+      "version": "当前"
+    },
+    {
+      "englishName": "Lead Storm Powered Minigun",
+      "chineseName": "“铅暴”转管机枪",
+      "class": "Gunner",
+      "tags": [
+        "KINETIC",
+        "HEAVY",
+        "SPRAY",
+        "PROJECTILE"
+      ],
+      "yellowOverclock": "+100%弹匣-20%装填；+25%射速装填；+100%穿透+30%伤-30%射速；火焰；装填护甲翻倍",
+      "redOverclock": "+150%伤-20%射速装填；+100%伤+100%射速(他枪-30%)",
+      "yellowOverclockIds": [
+        "bigger-mags-unstable",
+        "gas-rerouting",
+        "high-caliber-rounds",
+        "pan-fried-shells",
+        "reload-shield"
+      ],
+      "redOverclockIds": [
+        "lead-wrapped-ammo"
+      ],
+      "rating": "-",
+      "version": "当前"
+    },
+    {
+      "englishName": "Bulldog Heavy Revolver",
+      "chineseName": "“斗牛犬”重型左轮手枪",
+      "class": "Gunner",
+      "tags": [
+        "KINETIC",
+        "MEDIUM",
+        "PRECISE",
+        "PROJECTILE"
+      ],
+      "yellowOverclock": "+100%弹匣-20%装填；+100%穿透+30%伤-30%射速；燃烧；装填护甲翻倍；+15%伤击退",
+      "redOverclock": "双平行弹；+150%伤-20%射速装填",
+      "yellowOverclockIds": [
+        "bigger-mags-unstable",
+        "high-caliber-rounds",
+        "pan-fried-shells",
+        "reload-shield"
+      ],
+      "redOverclockIds": [
+        "double-barrel",
+        "super-reload-shield"
+      ],
+      "rating": "-",
+      "version": "当前"
+    },
+    {
+      "englishName": "ArmsKore Coil Gun",
+      "chineseName": "“武装核心”电磁手炮",
+      "class": "Gunner",
+      "tags": [
+        "KINETIC",
+        "MEDIUM",
+        "BEAM",
+        "LASTING"
+      ],
+      "yellowOverclock": "+15%伤装填；地形伤；装填爆炸；+50%射程+10%伤",
+      "redOverclock": "+1射线；+3射线",
+      "yellowOverclockIds": [
+        "a-little-more-oomph",
+        "coilgun-mining-damage",
+        "explosive-reload",
+        "more-beams"
+      ],
+      "redOverclockIds": [
+        "even-more-beams",
+        "spliced-emitter"
+      ],
+      "rating": "A",
+      "version": "当前"
+    },
+    {
+      "englishName": "Hurricane Guided Rocket System",
+      "chineseName": "“飓风”制导火箭系统",
+      "class": "Gunner",
+      "tags": [
+        "KINETIC",
+        "HEAVY",
+        "SPRAY",
+        "AREA",
+        "EXPLOSIVE"
+      ],
+      "yellowOverclock": "+15%伤装填；点燃地面；+50%范围；+3火箭",
+      "redOverclock": "+100%弹匣；+75%伤+30%范围(他枪-25%)",
+      "yellowOverclockIds": [
+        "a-little-more-oomph",
+        "incendiary-payload",
+        "runic-warhead",
+        "spare-rockets"
+      ],
+      "redOverclockIds": [
+        "extra-rocket-drum"
+      ],
+      "rating": "A",
+      "version": "当前"
+    },
+    {
+      "englishName": "BRT7 Burst Fire Gun",
+      "chineseName": "BRT7 连发手枪",
+      "class": "Gunner",
+      "tags": [
+        "KINETIC",
+        "LIGHT",
+        "SPRAY",
+        "PROJECTILE"
+      ],
+      "yellowOverclock": "+100%弹匣-20%装填；+25%射速装填；+100%穿透+30%伤-30%射速；燃烧；-25%伤他枪+25%",
+      "redOverclock": "射速+200%弹匣+100%螺旋；+200%装填+30%伤八方向",
+      "yellowOverclockIds": [
+        "bigger-mags-unstable",
+        "gas-rerouting",
+        "high-caliber-rounds",
+        "pan-fried-shells",
+        "sidearm"
+      ],
+      "redOverclockIds": [
+        "bullet-helix",
+        "omni-barrel"
+      ],
+      "rating": "-",
+      "version": "当前"
+    },
+    {
+      "englishName": "Firefly Hunter Drone",
+      "chineseName": "“萤火虫”燃烧狩猎无人机",
+      "class": "Gunner",
+      "tags": [
+        "FIRE",
+        "CONSTRUCT",
+        "LASTING",
+        "DRONE"
+      ],
+      "yellowOverclock": "盘旋；+30%装填-20%寿命爆；地形破坏；+1无人机",
+      "redOverclock": "火迹；+3无人机",
+      "yellowOverclockIds": [
+        "behaviour-chip-defensive",
+        "disposable-tech-unstable",
+        "drone-mining-damage",
+        "more-drones-unstable"
+      ],
+      "redOverclockIds": [
+        "fuel-leak",
+        "more-drones-unstable"
+      ],
+      "rating": "-",
+      "version": "当前"
+    },
+    {
+      "englishName": "Incendiary Grenade",
+      "chineseName": "燃烧手雷",
+      "class": "Gunner",
+      "tags": [
+        "FIRE",
+        "THROWABLE",
+        "LASTING",
+        "EXPLOSIVE",
+        "GROUNDZONE"
+      ],
+      "yellowOverclock": "分裂3弱；+30%范围；+35%强-10%伤；额外动能爆",
+      "redOverclock": "受伤投雷；+25%范围拉拢",
+      "yellowOverclockIds": [
+        "cluster-grenades",
+        "compact-explosives",
+        "tape-some-nails-to-it"
+      ],
+      "redOverclockIds": [
+        "feedback-harness",
+        "gravitational-core"
+      ],
+      "rating": "-",
+      "version": "当前"
+    },
+    {
+      "englishName": "Warthog Auto 210",
+      "chineseName": "“疣猪”210 自动霰弹枪",
+      "class": "Engineer",
+      "tags": [
+        "KINETIC",
+        "MEDIUM",
+        "SPRAY",
+        "PROJECTILE"
+      ],
+      "yellowOverclock": "电击；电浆；+25%射速装填；+50%射程+10%伤",
+      "redOverclock": "反向射；双倍弹丸少伤",
+      "yellowOverclockIds": [
+        "battery-bullets",
+        "gas-rerouting",
+        "high-velocity-bullets",
+        "plasma-coating"
+      ],
+      "redOverclockIds": [
+        "akimbo-unstable",
+        "mini-pellets"
+      ],
+      "rating": "A",
+      "version": "当前"
+    },
+    {
+      "englishName": "Shard Diffractor",
+      "chineseName": "心石聚能炮",
+      "class": "Engineer",
+      "tags": [
+        "PLASMA",
+        "HEAVY",
+        "BEAM",
+        "LASTING"
+      ],
+      "yellowOverclock": "+15%伤装填；减速；燃烧；感电；+1射线；+100%伤-35%寿命",
+      "redOverclock": "+3射线；+150%伤-50%寿命",
+      "yellowOverclockIds": [
+        "a-little-more-oomph",
+        "cold-plasma",
+        "hot-plasma-unstable",
+        "ionized-plasma-unstable",
+        "more-beams",
+        "overheat"
+      ],
+      "redOverclockIds": [
+        "even-more-beams",
+        "overcharged-fuelcells"
+      ],
+      "rating": "A",
+      "version": "当前"
+    },
+    {
+      "englishName": "Plasma Burster",
+      "chineseName": "电浆连爆雷",
+      "class": "Engineer",
+      "tags": [
+        "PLASMA",
+        "THROWABLE",
+        "AREA",
+        "EXPLOSIVE"
+      ],
+      "yellowOverclock": "+15%伤装填；减速；感电；额外动能爆",
+      "redOverclock": "更多弹跳；+75%伤+30%范围(他枪-25%)",
+      "yellowOverclockIds": [
+        "a-little-more-oomph",
+        "cold-plasma",
+        "ionized-plasma-unstable",
+        "tape-some-nails-to-it"
+      ],
+      "redOverclockIds": [
+        "more-bounce"
+      ],
+      "rating": "A",
+      "version": "当前"
+    },
+    {
+      "englishName": "Breach Cutter / ArmsKore Coil Gun",
+      "chineseName": "等离子切割机",
+      "class": "Engineer",
+      "tags": [
+        "PLASMA",
+        "HEAVY",
+        "BEAM",
+        "LASTING"
+      ],
+      "yellowOverclock": "+15%伤装填；燃烧；感电；+1射线",
+      "redOverclock": "+3射线",
+      "yellowOverclockIds": [
+        "a-little-more-oomph",
+        "hot-plasma-unstable",
+        "ionized-plasma-unstable",
+        "more-beams"
+      ],
+      "redOverclockIds": [
+        "even-more-beams",
+        "experimental-cluster-projectiles"
+      ],
+      "rating": "-",
+      "version": "待核(规范名映射)"
+    },
+    {
+      "englishName": "LMG Gun Platform",
+      "chineseName": "轻机枪哨戒炮",
+      "class": "Engineer",
+      "tags": [
+        "KINETIC",
+        "CONSTRUCT",
+        "LASTING",
+        "TURRET",
+        "PROJECTILE"
+      ],
+      "yellowOverclock": "电击；电浆；+1容量；墙伤；跟随",
+      "redOverclock": "+3容量；+150%射速-15命中",
+      "yellowOverclockIds": [
+        "battery-bullets",
+        "extra-capacity-balanced",
+        "mining-directive",
+        "plasma-coating"
+      ],
+      "redOverclockIds": [
+        "extra-capacity-unstable",
+        "lmg-overload"
+      ],
+      "rating": "-",
+      "version": "当前"
+    },
+    {
+      "englishName": "Krakatoa Sentinel",
+      "chineseName": "“喀拉喀托”单兵喷火哨戒炮",
+      "class": "Engineer",
+      "tags": [
+        "FIRE",
+        "CONSTRUCT",
+        "BEAM",
+        "LASTING",
+        "TURRET"
+      ],
+      "yellowOverclock": "+30%装填-20%寿命爆；+1容量；采墙；+1射线；跟随",
+      "redOverclock": "+3容量；死爆火滩",
+      "yellowOverclockIds": [
+        "extra-capacity-balanced",
+        "mining-directive",
+        "more-beams",
+        "tank-tracks"
+      ],
+      "redOverclockIds": [
+        "extra-capacity-unstable",
+        "krakatoa-protocol"
+      ],
+      "rating": "A",
+      "version": "当前"
+    },
+    {
+      "englishName": "Voltaic Shock Fence",
+      "chineseName": "强电防护网",
+      "class": "Engineer",
+      "tags": [
+        "ELECTRIC",
+        "CONSTRUCT",
+        "LASTING",
+        "TURRET"
+      ],
+      "yellowOverclock": "减慢；+1容量；拾经验；+30%装填-20%寿命爆",
+      "redOverclock": "射结构光束；+3容量",
+      "yellowOverclockIds": [
+        "coolant-leak",
+        "disposable-tech-balanced",
+        "extra-capacity-balanced",
+        "magnetic-alloy"
+      ],
+      "redOverclockIds": [
+        "conduit",
+        "extra-capacity-unstable",
+        "rapid-deployment"
+      ],
+      "rating": "-",
+      "version": "当前"
+    },
+    {
+      "englishName": "DeepCore PGL",
+      "chineseName": "深核 40mm 便携式榴弹发射器",
+      "class": "Engineer",
+      "tags": [
+        "KINETIC",
+        "MEDIUM",
+        "PRECISE",
+        "EXPLOSIVE"
+      ],
+      "yellowOverclock": "+100%弹匣-20%装填；分裂3弱；+30%范围；+25%射速装填",
+      "redOverclock": "反向射；+75%伤+30%范围(他枪-25%)",
+      "yellowOverclockIds": [
+        "a-little-more-oomph",
+        "cluster-grenades",
+        "compact-explosives",
+        "gas-rerouting"
+      ],
+      "redOverclockIds": [
+        "bigger-mags-unstable"
+      ],
+      "rating": "-",
+      "version": "当前"
+    },
+    {
+      "englishName": "Hi-Volt Thunderbird",
+      "chineseName": "Hi-Volt 雷鸟无人机",
+      "class": "Engineer",
+      "tags": [
+        "ELECTRIC",
+        "CONSTRUCT",
+        "LASTING",
+        "DRONE"
+      ],
+      "yellowOverclock": "寻敌；+30%装填-20%寿命爆；+1无人机",
+      "redOverclock": "射建造物；缰绳；+20%伤+50%装填保护",
+      "yellowOverclockIds": [
+        "behaviour-chip-aggro",
+        "disposable-tech-unstable",
+        "potent-juice"
+      ],
+      "redOverclockIds": [
+        "conduit",
+        "electrical-tether",
+        "more-drones-unstable"
+      ],
+      "rating": "-",
+      "version": "当前"
+    },
+    {
+      "englishName": "LOK-1 Smart Rifle",
+      "chineseName": "LOK-1 智能步枪",
+      "class": "Engineer",
+      "tags": [
+        "KINETIC",
+        "MEDIUM",
+        "PRECISE",
+        "PROJECTILE"
+      ],
+      "yellowOverclock": "电击；+100%弹匣-20%装填；+25%射速装填；+100%穿透+30%伤-30%射速",
+      "redOverclock": "+150%伤-20%射速装填；+100%伤+100%射速(他枪-30%)",
+      "yellowOverclockIds": [
+        "battery-bullets",
+        "bigger-mags-unstable",
+        "gas-rerouting",
+        "high-caliber-rounds"
+      ],
+      "redOverclockIds": [
+        "lead-wrapped-ammo"
+      ],
+      "rating": "-",
+      "version": "当前"
+    },
+    {
+      "englishName": "Shredder Swarm Grenade",
+      "chineseName": "群蜂手雷",
+      "class": "Engineer",
+      "tags": [
+        "KINETIC",
+        "THROWABLE",
+        "LASTING",
+        "DRONE"
+      ],
+      "yellowOverclock": "+15%伤装填；分裂3弱；+1无人机",
+      "redOverclock": "+3无人机",
+      "yellowOverclockIds": [
+        "cluster-grenades",
+        "more-drones-unstable",
+        "tape-some-ice-to-it"
+      ],
+      "redOverclockIds": [
+        "electrified-dispenser",
+        "more-drones-unstable"
+      ],
+      "rating": "-",
+      "version": "当前"
+    },
+    {
+      "englishName": "Stubby Voltaic SMG",
+      "chineseName": "“百万”伏特微型冲锋枪",
+      "class": "Engineer",
+      "tags": [
+        "ELECTRIC",
+        "LIGHT",
+        "SPRAY",
+        "PROJECTILE"
+      ],
+      "yellowOverclock": "装填爆；+25%射速装填；-25%伤他枪+25%",
+      "redOverclock": "+25%射速装填+100%强+30弹匣-50精；射哨戒炮",
+      "yellowOverclockIds": [
+        "explosive-reload",
+        "gas-rerouting",
+        "potent-juice",
+        "secret-sauce",
+        "sidearm"
+      ],
+      "redOverclockIds": [
+        "em-discharge",
+        "mk-11",
+        "storm-e-mag"
+      ],
+      "rating": "-",
+      "version": "当前"
+    },
+    {
+      "englishName": "Colette Wave Cooker",
+      "chineseName": "柯莱特微波烹调者",
+      "class": "Driller",
+      "tags": [
+        "FIRE",
+        "MEDIUM",
+        "BEAM",
+        "LASTING"
+      ],
+      "yellowOverclock": "旋转速；射线宽；射线长少宽优先高血；+100%强-30%伤",
+      "redOverclock": "+50%伤加减速",
+      "yellowOverclockIds": [
+        "better-ball-bearings",
+        "crowd-cooker",
+        "focused-lens",
+        "nano-waves"
+      ],
+      "redOverclockIds": [
+        "centralized-reflector"
+      ],
+      "rating": "S",
+      "version": "当前"
+    },
+    {
+      "englishName": "Corrosive Sludge Pump",
+      "chineseName": "蚀泥喷射泵",
+      "class": "Driller",
+      "tags": [
+        "ACID",
+        "HEAVY",
+        "BEAM",
+        "LASTING",
+        "GROUNDZONE"
+      ],
+      "yellowOverclock": "+15%伤装填；+100%持续；+35%伤-10%强；+1射线",
+      "redOverclock": "+3射线",
+      "yellowOverclockIds": [
+        "a-little-more-oomph",
+        "bigger-tanks",
+        "impact-punch",
+        "more-beams"
+      ],
+      "redOverclockIds": [
+        "even-more-beams",
+        "spliced-emitter"
+      ],
+      "rating": "A",
+      "version": "当前"
+    },
+    {
+      "englishName": "Cryo Cannon",
+      "chineseName": "急冻喷射炮",
+      "class": "Driller",
+      "tags": [
+        "COLD",
+        "HEAVY",
+        "BEAM",
+        "LASTING"
+      ],
+      "yellowOverclock": "+100%持续；+1射线；+35%强-10%伤；+15%伤燃烧",
+      "redOverclock": "+3射线；+50%寿命射程伤",
+      "yellowOverclockIds": [
+        "bigger-tanks",
+        "frostburn",
+        "impact-punch",
+        "more-beams"
+      ],
+      "redOverclockIds": [
+        "even-more-beams",
+        "spliced-emitter"
+      ],
+      "rating": "A",
+      "version": "当前"
+    },
+    {
+      "englishName": "Impact Axe",
+      "chineseName": "冲击战斧",
+      "class": "Driller",
+      "tags": [
+        "KINETIC",
+        "THROWABLE",
+        "PRECISE",
+        "EXPLOSIVE"
+      ],
+      "yellowOverclock": "+15%伤装填；酸痕；火迹；+50%射程",
+      "redOverclock": "+100%弹匣",
+      "yellowOverclockIds": [
+        "corrosive-coating",
+        "diesel-soaked",
+        "lightweight-alloy"
+      ],
+      "redOverclockIds": [
+        "colossal-twinblade",
+        "fan-of-axes"
+      ],
+      "rating": "A",
+      "version": "当前"
+    },
+    {
+      "englishName": "K1-P Viper Drone",
+      "chineseName": "K1-P \"毒蟒\" 腐蚀毒素无人机",
+      "class": "Driller",
+      "tags": [
+        "ACID",
+        "CONSTRUCT",
+        "LASTING",
+        "DRONE",
+        "GROUNDZONE"
+      ],
+      "yellowOverclock": "盘旋；+30%装填-20%寿命爆；+1无人机",
+      "redOverclock": "+20%伤+50%装填保护；+3无人机",
+      "yellowOverclockIds": [
+        "behaviour-chip-defensive",
+        "disposable-tech-unstable",
+        "more-drones-unstable",
+        "potent-juice"
+      ],
+      "redOverclockIds": [
+        "crisis-protocol",
+        "more-drones-unstable"
+      ],
+      "rating": "A",
+      "version": "当前"
+    },
+    {
+      "englishName": "CRSPR Flamethrower",
+      "chineseName": "CRSPR 火焰喷射器",
+      "class": "Driller",
+      "tags": [
+        "FIRE",
+        "HEAVY",
+        "BEAM",
+        "LASTING"
+      ],
+      "yellowOverclock": "+15%伤装填；+100%持续；+1射线；+35%伤-10%强",
+      "redOverclock": "+3射线；火墙；+50%寿命射程伤",
+      "yellowOverclockIds": [
+        "a-little-more-oomph",
+        "bigger-tanks",
+        "more-beams",
+        "overheat"
+      ],
+      "redOverclockIds": [
+        "even-more-beams",
+        "spliced-emitter",
+        "sticky-fuel"
+      ],
+      "rating": "-",
+      "version": "当前"
+    },
+    {
+      "englishName": "Subata 120",
+      "chineseName": "苏巴塔120半自动手枪",
+      "class": "Driller",
+      "tags": [
+        "KINETIC",
+        "LIGHT",
+        "SPRAY",
+        "PROJECTILE"
+      ],
+      "yellowOverclock": "酸液；+100%弹匣-20%装填；+25%射速装填；火焰；-25%伤他枪+25%",
+      "redOverclock": "反向射；双平行弹",
+      "yellowOverclockIds": [
+        "acid-dipped-tips",
+        "bigger-mags-balanced",
+        "gas-rerouting",
+        "pan-fried-shells",
+        "sidearm"
+      ],
+      "redOverclockIds": [
+        "akimbo-unstable",
+        "double-barrel"
+      ],
+      "rating": "-",
+      "version": "当前"
+    },
+    {
+      "englishName": "Experimental Plasma Charger",
+      "chineseName": "实验性等离子聚能手枪",
+      "class": "Driller",
+      "tags": [
+        "PLASMA",
+        "LIGHT",
+        "PRECISE",
+        "PROJECTILE"
+      ],
+      "yellowOverclock": "+15%伤装填；减速；燃烧；拉敌",
+      "redOverclock": "地面火；分裂",
+      "yellowOverclockIds": [
+        "cold-plasma",
+        "hot-plasma-unstable",
+        "vortex-core"
+      ],
+      "redOverclockIds": [
+        "drippin-balls",
+        "experimental-cluster-projectiles"
+      ],
+      "rating": "-",
+      "version": "待核(规范名映射)"
+    },
+    {
+      "englishName": "High Explosive Grenade",
+      "chineseName": "高爆手雷",
+      "class": "Driller",
+      "tags": [
+        "KINETIC",
+        "THROWABLE",
+        "AREA",
+        "EXPLOSIVE"
+      ],
+      "yellowOverclock": "+15%伤装填；分裂3弱；+30%范围；地形伤",
+      "redOverclock": "受伤投雷；恐惧逃跑",
+      "yellowOverclockIds": [
+        "cluster-grenades",
+        "compact-explosives"
+      ],
+      "redOverclockIds": [
+        "feedback-harness",
+        "hallucinogenic"
+      ],
+      "rating": "-",
+      "version": "当前"
+    },
+    {
+      "englishName": "Neurotoxin Grenade",
+      "chineseName": "神经毒素手雷",
+      "class": "Driller",
+      "tags": [
+        "ACID",
+        "THROWABLE",
+        "LASTING",
+        "AREA",
+        "EXPLOSIVE",
+        "GROUNDZONE"
+      ],
+      "yellowOverclock": "分裂3弱；+30%范围；+35%强-10%伤；额外动能爆",
+      "redOverclock": "受伤投雷；恐惧逃跑",
+      "yellowOverclockIds": [
+        "cluster-grenades",
+        "compact-explosives",
+        "potent-juice",
+        "tape-some-nails-to-it"
+      ],
+      "redOverclockIds": [
+        "feedback-harness",
+        "hallucinogenic"
+      ],
+      "rating": "-",
+      "version": "当前"
+    }
+  ],
+  "achievements": [
+    {
+      "englishName": "Run for the hills",
+      "chineseName": "跑向山丘",
+      "category": "职业解锁",
+      "unlockCondition": "解锁 侦察兵（默认解锁）",
+      "enUnlockCondition": "Unlock the Scout",
+      "completionRate": 99.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "Lock and load",
+      "chineseName": "上膛待发",
+      "category": "职业解锁",
+      "unlockCondition": "解锁 机枪手（玩家等级 3）",
+      "enUnlockCondition": "Unlock the Gunner",
+      "completionRate": 83,
+      "version": "当前"
+    },
+    {
+      "englishName": "Enjoy a relaxing stroll",
+      "chineseName": "享受轻松漫步",
+      "category": "职业解锁",
+      "unlockCondition": "解锁 工程师（玩家等级 5）",
+      "enUnlockCondition": "Unlock the Engineer",
+      "completionRate": 76,
+      "version": "当前"
+    },
+    {
+      "englishName": "Dig down deep",
+      "chineseName": "向下深掘",
+      "category": "职业解锁",
+      "unlockCondition": "解锁 钻机手（玩家等级 7）",
+      "enUnlockCondition": "Unlock the Driller",
+      "completionRate": 71.2,
+      "version": "当前"
+    },
+    {
+      "englishName": "The journey begins",
+      "chineseName": "旅程开始",
+      "category": "职业进阶",
+      "unlockCondition": "用 经典 侦察兵 完成一次深潜",
+      "enUnlockCondition": "Complete a dive with the Classic",
+      "completionRate": 25.7,
+      "version": "当前"
+    },
+    {
+      "englishName": "Adventure awaits",
+      "chineseName": "冒险在召唤",
+      "category": "职业进阶",
+      "unlockCondition": "用 侦察 完成一次深潜（需 侦察兵 9 级）",
+      "enUnlockCondition": "Complete a dive with the Recon",
+      "completionRate": 18,
+      "version": "当前"
+    },
+    {
+      "englishName": "Measure twice, shoot once",
+      "chineseName": "量两次，射一次",
+      "category": "职业进阶",
+      "unlockCondition": "用 神射手 完成一次深潜（需 侦察兵 18 级）",
+      "enUnlockCondition": "Complete a dive with the Sharpshooter",
+      "completionRate": 12.3,
+      "version": "当前"
+    },
+    {
+      "englishName": "10,000 rounds per minute",
+      "chineseName": "每分钟一万发",
+      "category": "职业进阶",
+      "unlockCondition": "用 武器专家 完成一次深潜",
+      "enUnlockCondition": "Complete a dive with the Weapons Specialist",
+      "completionRate": 22.7,
+      "version": "当前"
+    },
+    {
+      "englishName": "Tough as nails",
+      "chineseName": "硬如铁钉",
+      "category": "职业进阶",
+      "unlockCondition": "用 重装兵 完成一次深潜（需 机枪手 9 级）",
+      "enUnlockCondition": "Complete a dive with the Juggernaut",
+      "completionRate": 12.8,
+      "version": "当前"
+    },
+    {
+      "englishName": "Ka-boom!",
+      "chineseName": "咔 轰！",
+      "category": "职业进阶",
+      "unlockCondition": "用 重机枪手 完成一次深潜（需 机枪手 18 级）",
+      "enUnlockCondition": "Complete a dive with the Heavy Gunner",
+      "completionRate": 9.5,
+      "version": "当前"
+    },
+    {
+      "englishName": "I solve problems",
+      "chineseName": "我解决问题",
+      "category": "职业进阶",
+      "unlockCondition": "用 维修工 完成一次深潜",
+      "enUnlockCondition": "Complete a dive with the Maintenance Worker",
+      "completionRate": 22.3,
+      "version": "当前"
+    },
+    {
+      "englishName": "Brainstorming",
+      "chineseName": "头脑风暴",
+      "category": "职业进阶",
+      "unlockCondition": "用 工匠 完成一次深潜（需 工程师 9 级）",
+      "enUnlockCondition": "Complete a dive with the Tinkerer",
+      "completionRate": 13.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "A whiff of brimstone",
+      "chineseName": "一缕硫磺味",
+      "category": "职业进阶",
+      "unlockCondition": "用 爆破手 完成一次深潜（需 工程师 18 级）",
+      "enUnlockCondition": "Complete a dive with the Demolitionist",
+      "completionRate": 8.8,
+      "version": "当前"
+    },
+    {
+      "englishName": "Diggy diggy hole",
+      "chineseName": "挖呀挖个坑",
+      "category": "职业进阶",
+      "unlockCondition": "用 工头 完成一次深潜",
+      "enUnlockCondition": "Complete a dive with the Foreman",
+      "completionRate": 16.8,
+      "version": "当前"
+    },
+    {
+      "englishName": "Chemical burns",
+      "chineseName": "化学灼伤",
+      "category": "职业进阶",
+      "unlockCondition": "用 审讯者 完成一次深潜（需 钻机手 9 级）",
+      "enUnlockCondition": "Complete a dive with the Interrogator",
+      "completionRate": 15.4,
+      "version": "当前"
+    },
+    {
+      "englishName": "And my axe",
+      "chineseName": "还有我的斧",
+      "category": "职业进阶",
+      "unlockCondition": "用 强臂 完成一次深潜（需 钻机手 18 级）",
+      "enUnlockCondition": "Complete a dive with the Strong Armed",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Grow fat from strength",
+      "chineseName": "从力量中变胖",
+      "category": "职业进阶",
+      "unlockCondition": "作为 经典 侦察兵 拥有 1000 最大生命值",
+      "enUnlockCondition": "Have 1000 max HP as the Classic Scout",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "BOOM! Headshot",
+      "chineseName": "砰！爆头",
+      "category": "职业进阶",
+      "unlockCondition": "作为 神射手 单次深潜拥有 +250% 暴击几率",
+      "enUnlockCondition": "Have +250% Crit Chance with the Sharpshooter in a single dive",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "You're locked in here with me",
+      "chineseName": "你和我一起被锁在这里",
+      "category": "职业进阶",
+      "unlockCondition": "作为 侦察 在单一阶段存活 10 分钟",
+      "enUnlockCondition": "Survive in 1 stage for 10 minutes as the Recon",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Lord of war",
+      "chineseName": "战争之王",
+      "category": "职业进阶",
+      "unlockCondition": "作为 武器专家 单次发射 250,000 发子弹",
+      "enUnlockCondition": "Fire 250,000 bullets as the Weapons Specialist in a single dive",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Know no fear",
+      "chineseName": "不知恐惧",
+      "category": "职业进阶",
+      "unlockCondition": "作为 重装兵 拥有 300 护甲",
+      "enUnlockCondition": "Have 300 armor as the Juggernaut",
+      "completionRate": 3.3,
+      "version": "当前"
+    },
+    {
+      "englishName": "Walk without rhythm",
+      "chineseName": "无节奏行走",
+      "category": "职业进阶",
+      "unlockCondition": "作为 重机枪手 同时部署 30 个震击排斥炮塔",
+      "enUnlockCondition": "Deploy 30 seismic repulsor turrets at the same time with the Heavy Gunner",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Unreasonable uptime",
+      "chineseName": "不合理的在线率",
+      "category": "职业进阶",
+      "unlockCondition": "作为 维修工 使一件武器寿命达 30 秒（指南称 60 秒，1.0 以游戏内为准）",
+      "enUnlockCondition": "Have a 60 second lifetime on one weapon with the Maintenance Worker",
+      "completionRate": 3.8,
+      "version": "当前"
+    },
+    {
+      "englishName": "Fully overclocked",
+      "chineseName": "完全超频",
+      "category": "职业进阶",
+      "unlockCondition": "作为 工匠 将 4 件武器升至 21 级（英文指南）/ TrueAchievements：5 件武器达 18 级（数值待核）",
+      "enUnlockCondition": "Get 5 weapons to level 18 as the Tinkerer",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Going nuclear",
+      "chineseName": "进入核时代",
+      "category": "职业进阶",
+      "unlockCondition": "作为 爆破手 拥有 +250% 爆炸半径",
+      "enUnlockCondition": "Have +250% explosion radius as the Demolitionist",
+      "completionRate": 6.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "With fire and blood",
+      "chineseName": "以火与血",
+      "category": "职业进阶",
+      "unlockCondition": "作为 工头 单次造成 10,000,000 火焰伤害",
+      "enUnlockCondition": "Deal 10,000,000 fire damage as the Foreman in a single dive",
+      "completionRate": 7.2,
+      "version": "当前"
+    },
+    {
+      "englishName": "Elemental avatar",
+      "chineseName": "元素化身",
+      "category": "职业进阶",
+      "unlockCondition": "作为 审讯者 单次施加 5,000,000 状态叠层",
+      "enUnlockCondition": "Apply 5,000,000 status effect stacks as the Interrogator in a single dive",
+      "completionRate": 3.3,
+      "version": "当前"
+    },
+    {
+      "englishName": "Fastest hands on the rig",
+      "chineseName": "钻机上最快的手",
+      "category": "职业进阶",
+      "unlockCondition": "作为 强臂 拥有 +500% 装填速度",
+      "enUnlockCondition": "Have +500% reload speed as the Strong Armed",
+      "completionRate": 6.3,
+      "version": "当前"
+    },
+    {
+      "englishName": "Delicious BLT",
+      "chineseName": "美味的 培根三明治",
+      "category": "属性统计",
+      "unlockCondition": "达到 300 最大生命值",
+      "enUnlockCondition": "Reach 300 Max HP",
+      "completionRate": 65.6,
+      "version": "当前"
+    },
+    {
+      "englishName": "It's got electrolytes",
+      "chineseName": "含电解质",
+      "category": "属性统计",
+      "unlockCondition": "达到 50% 移动速度",
+      "enUnlockCondition": "Reach 50% move speed",
+      "completionRate": 54.3,
+      "version": "当前"
+    },
+    {
+      "englishName": "Swift guns for swift hands",
+      "chineseName": "快手配快枪",
+      "category": "属性统计",
+      "unlockCondition": "达到 75% 装填速度",
+      "enUnlockCondition": "Reach 75% reload speed",
+      "completionRate": 42,
+      "version": "当前"
+    },
+    {
+      "englishName": "Squint and squeeze the trigger",
+      "chineseName": "眯眼扣扳机",
+      "category": "属性统计",
+      "unlockCondition": "达到 75% 暴击几率",
+      "enUnlockCondition": "Reach 75% crit chance",
+      "completionRate": 40.3,
+      "version": "当前"
+    },
+    {
+      "englishName": "Why so Salty?",
+      "chineseName": "为何如此咸",
+      "category": "属性统计",
+      "unlockCondition": "达到 50 护甲",
+      "enUnlockCondition": "Reach 50 armor",
+      "completionRate": 39,
+      "version": "当前"
+    },
+    {
+      "englishName": "Book of Experience",
+      "chineseName": "经验之书",
+      "category": "属性统计",
+      "unlockCondition": "深潜期间达到等级 50",
+      "enUnlockCondition": "Reach level 50 during a dive",
+      "completionRate": 52.3,
+      "version": "当前"
+    },
+    {
+      "englishName": "Feeling lucky punk?",
+      "chineseName": "觉得幸运吗，朋克",
+      "category": "属性统计",
+      "unlockCondition": "单次深潜获得 5 个幸运升级",
+      "enUnlockCondition": "Get 5 luck upgrades in one dive",
+      "completionRate": 15.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "Hangry?",
+      "chineseName": "饿怒？",
+      "category": "属性统计",
+      "unlockCondition": "累计获得 1,000 次等级提升",
+      "enUnlockCondition": "Gain 1,000 level ups",
+      "completionRate": 31,
+      "version": "当前"
+    },
+    {
+      "englishName": "Survivor squad",
+      "chineseName": "幸存者小队",
+      "category": "属性统计",
+      "unlockCondition": "全部 4 个职业均达到等级 30",
+      "enUnlockCondition": "Reach level 30 with all 4 classes",
+      "completionRate": 6,
+      "version": "当前"
+    },
+    {
+      "englishName": "Fully armed and operational",
+      "chineseName": "全副武装且可运作",
+      "category": "属性统计",
+      "unlockCondition": "购买每一个 meta 升级",
+      "enUnlockCondition": "Purchase every single meta upgrade",
+      "completionRate": 8.9,
+      "version": "当前"
+    },
+    {
+      "englishName": "Slick, like butter",
+      "chineseName": "油滑矮人（闪避）",
+      "category": "属性统计",
+      "unlockCondition": "单次深潜闪避 100 次（英文指南旧名 Greased Little Dwarf）",
+      "enUnlockCondition": "Dodge 100 times during a run",
+      "completionRate": 7.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "No pain, no gain",
+      "chineseName": "不挨打，不成器",
+      "category": "属性统计",
+      "unlockCondition": "单次深潜承受 2,000 伤害（英文指南旧名 Without Pain No Gain）",
+      "enUnlockCondition": "Took 2,000 damage during a dive",
+      "completionRate": 34.9,
+      "version": "当前"
+    },
+    {
+      "englishName": "That's how the cookie crumbles",
+      "chineseName": "甜食慰藉",
+      "category": "属性统计",
+      "unlockCondition": "单次深潜累计回复 500 血量（英文指南旧名 Sweet Comfort）",
+      "enUnlockCondition": "Heal 500 HP during one dive",
+      "completionRate": 31.4,
+      "version": "当前"
+    },
+    {
+      "englishName": "Pillar of society",
+      "chineseName": "不动如山",
+      "category": "属性统计",
+      "unlockCondition": "站立不动时击杀 15,000 敌人",
+      "enUnlockCondition": "Kill 15,000 enemies while standing still",
+      "completionRate": 64.6,
+      "version": "当前"
+    },
+    {
+      "englishName": "Back from the brink!",
+      "chineseName": "起死回生",
+      "category": "属性统计",
+      "unlockCondition": "低于 5 生命值 后回满生命",
+      "enUnlockCondition": "Reach max HP after having dropped below 5 HP",
+      "completionRate": 11.9,
+      "version": "当前"
+    },
+    {
+      "englishName": "Hoxxes Manual",
+      "chineseName": "霍克斯手册",
+      "category": "属性统计",
+      "unlockCondition": "死亡 3 次",
+      "enUnlockCondition": "Die 3 times",
+      "completionRate": 61.3,
+      "version": "当前"
+    },
+    {
+      "englishName": "Custom rig",
+      "chineseName": "定制装备",
+      "category": "装备",
+      "unlockCondition": "装备 6 件 普通 物品",
+      "enUnlockCondition": "Have 6 uncommon items equipped",
+      "completionRate": 13.7,
+      "version": "当前"
+    },
+    {
+      "englishName": "Professional setup",
+      "chineseName": "专业配置",
+      "category": "装备",
+      "unlockCondition": "装备 6 件 稀有 物品",
+      "enUnlockCondition": "Have 6 rare items equipped",
+      "completionRate": 11.8,
+      "version": "当前"
+    },
+    {
+      "englishName": "Truly epic",
+      "chineseName": "真正史诗",
+      "category": "装备",
+      "unlockCondition": "装备 1 件 史诗 物品",
+      "enUnlockCondition": "Equip an epic item",
+      "completionRate": 27,
+      "version": "当前"
+    },
+    {
+      "englishName": "Expertly tuned",
+      "chineseName": "专家调校",
+      "category": "装备",
+      "unlockCondition": "装备 6 件 史诗 物品",
+      "enUnlockCondition": "Have 6 epic items equipped",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Legendary!",
+      "chineseName": "传奇！",
+      "category": "装备",
+      "unlockCondition": "装备 1 件 传说 物品",
+      "enUnlockCondition": "Equip a legendary item",
+      "completionRate": 17.5,
+      "version": "当前"
+    },
+    {
+      "englishName": "Fabled fittings",
+      "chineseName": "传说配件",
+      "category": "装备",
+      "unlockCondition": "装备 6 件 传说 物品",
+      "enUnlockCondition": "Have 6 legendary items equipped",
+      "completionRate": 3.5,
+      "version": "当前"
+    },
+    {
+      "englishName": "We're keeping this one",
+      "chineseName": "这个我们留着",
+      "category": "装备",
+      "unlockCondition": "完全升级一件装备",
+      "enUnlockCondition": "Fully upgrade a piece of gear",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Master artificer",
+      "chineseName": "大师工匠",
+      "category": "装备",
+      "unlockCondition": "完全升级一件 传说 装备",
+      "enUnlockCondition": "Fully upgrade a legendary piece of gear",
+      "completionRate": 5.7,
+      "version": "当前"
+    },
+    {
+      "englishName": "Karl, is that you?",
+      "chineseName": "卡尔，是你吗？",
+      "category": "装备",
+      "unlockCondition": "装备 6 件完全升级的 传说 装备",
+      "enUnlockCondition": "Have 6 fully upgraded legendary pieces of gear equipped",
+      "completionRate": 2.4,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mind over matter",
+      "chineseName": "精神胜于物质",
+      "category": "装备",
+      "unlockCondition": "无任何装备完成 危险等级 4 深潜",
+      "enUnlockCondition": "Complete a Hazard 4 dive without any gear equipped",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Just like the old days",
+      "chineseName": "如同旧日",
+      "category": "装备",
+      "unlockCondition": "无任何装备完成 危险等级 5 深潜",
+      "enUnlockCondition": "Complete a Hazard 5 dive without any gear equipped",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: DeepCore GK2",
+      "chineseName": {
+        "weaponRef": "deepcore_gk2",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "deepcore_gk2",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the DeepCore GK2",
+      "completionRate": 25.6,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Zhukov NUK17",
+      "chineseName": {
+        "weaponRef": "zhukov_nuk17",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "zhukov_nuk17",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Zhukov NUK17",
+      "completionRate": 20,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Cryo Grenade",
+      "chineseName": {
+        "weaponRef": "cryo_grenade",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "cryo_grenade",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Cryo Grenade",
+      "completionRate": 12.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Jury-Rigged Boomstick",
+      "chineseName": {
+        "weaponRef": "jury_rigged_boomstick",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "jury_rigged_boomstick",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Jury-Rigged Boomstick",
+      "completionRate": 15.4,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: M1000",
+      "chineseName": {
+        "weaponRef": "m1000",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "m1000",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the M1000",
+      "completionRate": 22,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Stun Sweeper",
+      "chineseName": {
+        "weaponRef": "voltaic_stun_sweeper",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "voltaic_stun_sweeper",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Voltaic Stun Sweeper",
+      "completionRate": 12.8,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: TH-0R Bug Taser",
+      "chineseName": {
+        "weaponRef": "th_0r_bug_taser",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "th_0r_bug_taser",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the TH-0R Bug Taser",
+      "completionRate": 9.8,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Cryo Guard",
+      "chineseName": {
+        "weaponRef": "arc_tek_cryo_guard",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "arc_tek_cryo_guard",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Arc-Tek Cryo Guard",
+      "completionRate": 9.8,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Plasma Carbine",
+      "chineseName": {
+        "weaponRef": "drak_25_plasma_carbine",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "drak_25_plasma_carbine",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the DRAK-25 Plasma Carbine",
+      "completionRate": 10.2,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Nishanka Boltshark",
+      "chineseName": {
+        "weaponRef": "nishanka_boltshark",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "nishanka_boltshark",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Nishanka Boltshark",
+      "completionRate": 8.3,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Heavy Revolver",
+      "chineseName": {
+        "weaponRef": "bulldog_heavy_revolver",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "bulldog_heavy_revolver",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Bulldog Heavy Revolver",
+      "completionRate": 13.2,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Incendiary Grenade",
+      "chineseName": {
+        "weaponRef": "incendiary_grenade",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "incendiary_grenade",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Incendiary Grenade",
+      "completionRate": 10.8,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Powered Minigun",
+      "chineseName": {
+        "weaponRef": "lead_storm_powered_minigun",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "lead_storm_powered_minigun",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Lead Storm Powered Minigun",
+      "completionRate": 24.4,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Burst Fire Gun",
+      "chineseName": {
+        "weaponRef": "brt7_burst_fire_gun",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "brt7_burst_fire_gun",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the BRT7 Burst Fire Gun",
+      "completionRate": 11.8,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Tactical Leadburster",
+      "chineseName": {
+        "weaponRef": "tactical_leadburster",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "tactical_leadburster",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Tactical Leadburster",
+      "completionRate": 10.7,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Heavy Autocannon",
+      "chineseName": {
+        "weaponRef": "thunderhead_heavy_autocannon",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "thunderhead_heavy_autocannon",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Thunderhead Heavy Autocannon",
+      "completionRate": 13.7,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Firefly Hunter Drone",
+      "chineseName": {
+        "weaponRef": "firefly_hunter_drone",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "firefly_hunter_drone",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Firefly Hunter Drone",
+      "completionRate": 9.4,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Hurricane",
+      "chineseName": {
+        "weaponRef": "hurricane_guided_rocket_system",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "hurricane_guided_rocket_system",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Hurricane Guided Rocket System",
+      "completionRate": 8.3,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Seismic Repulsor",
+      "chineseName": "完全超频：地震哨戒炮",
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "seismic_repulsor",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Seismic Repulsor",
+      "completionRate": 5.9,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Coil Gun",
+      "chineseName": {
+        "weaponRef": "breach_cutter_armskore_coil_gun",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "armskore_coil_gun",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the ArmsKore Coil Gun",
+      "completionRate": 5.8,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Warthog Auto",
+      "chineseName": {
+        "weaponRef": "warthog_auto_210",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "warthog_auto_210",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Warthog Auto 210",
+      "completionRate": 16.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Voltaic SMG",
+      "chineseName": {
+        "weaponRef": "stubby_voltaic_smg",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "stubby_voltaic_smg",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Stubby Voltaic SMG",
+      "completionRate": 13,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Hi-Volt Thunderbird",
+      "chineseName": {
+        "weaponRef": "hi_volt_thunderbird",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "hi_volt_thunderbird",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Hi-Volt Thunderbird",
+      "completionRate": 11.7,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: LMG Gun Platform",
+      "chineseName": {
+        "weaponRef": "lmg_gun_platform",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "lmg_gun_platform",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the LMG Gun Platform",
+      "completionRate": 25.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Voltaic Shock Fence",
+      "chineseName": {
+        "weaponRef": "voltaic_shock_fence",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "voltaic_shock_fence",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Voltaic Shock Fence",
+      "completionRate": 10.7,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: LOK-1 Smart Rifle",
+      "chineseName": {
+        "weaponRef": "lok_1_smart_rifle",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "lok_1_smart_rifle",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the LOK-1 Smart Rifle",
+      "completionRate": 12.9,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: DeepCore PGL",
+      "chineseName": {
+        "weaponRef": "deepcore_pgl",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "deepcore_pgl",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the DeepCore PGL",
+      "completionRate": 11.5,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Breach Cutter",
+      "chineseName": {
+        "weaponRef": "breach_cutter_armskore_coil_gun",
+        "name": "完全超频：{weapon}II"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "breach_cutter_armskore_coil_gun",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Breach Cutter",
+      "completionRate": 10.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Shard Diffractor",
+      "chineseName": {
+        "weaponRef": "shard_diffractor",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "shard_diffractor",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Shard Diffractor",
+      "completionRate": 7.9,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Plasma Burster",
+      "chineseName": {
+        "weaponRef": "plasma_burster",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "plasma_burster",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Plasma Burster",
+      "completionRate": 7.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Swarm Grenade",
+      "chineseName": {
+        "weaponRef": "shredder_swarm_grenade",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "shredder_swarm_grenade",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Shredder Swarm Grenade",
+      "completionRate": 6.4,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Subata 120",
+      "chineseName": {
+        "weaponRef": "subata_120",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "subata_120",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Subata 120",
+      "completionRate": 15.4,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Krakatoa Sentinel",
+      "chineseName": {
+        "weaponRef": "krakatoa_sentinel",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "krakatoa_sentinel",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Krakatoa Sentinel",
+      "completionRate": 15.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: HE Grenade",
+      "chineseName": {
+        "weaponRef": "high_explosive_grenade",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "high_explosive_grenade",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the High Explosive Grenade",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: CRSPR Flamethrower",
+      "chineseName": {
+        "weaponRef": "crspr_flamethrower",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "crspr_flamethrower",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the CRSPR Flamethrower",
+      "completionRate": 18.8,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Sludge Pump",
+      "chineseName": {
+        "weaponRef": "corrosive_sludge_pump",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "corrosive_sludge_pump",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Corrosive Sludge Pump",
+      "completionRate": 13.3,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Wave Cooker",
+      "chineseName": {
+        "weaponRef": "colette_wave_cooker",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "colette_wave_cooker",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Colette Wave Cooker",
+      "completionRate": 13.2,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Impact Axe",
+      "chineseName": {
+        "weaponRef": "impact_axe",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "impact_axe",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Impact Axe",
+      "completionRate": 10.7,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Neurotoxin Grenade",
+      "chineseName": {
+        "weaponRef": "neurotoxin_grenade",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "neurotoxin_grenade",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Neurotoxin Grenade",
+      "completionRate": 8.8,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Cryo Cannon",
+      "chineseName": {
+        "weaponRef": "cryo_cannon",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "cryo_cannon",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Cryo Cannon",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: K1-P Viper Drone",
+      "chineseName": "完全超频：酸液无人机",
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "k1_p_viper_drone",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the K1-P Viper Drone",
+      "completionRate": 7.4,
+      "version": "当前"
+    },
+    {
+      "englishName": "Overclock: Plasma Charger",
+      "chineseName": {
+        "weaponRef": "experimental_plasma_charger",
+        "name": "完全超频：{weapon}"
+      },
+      "category": "武器超频",
+      "unlockCondition": {
+        "weaponRef": "experimental_plasma_charger",
+        "unlockCondition": "{weapon} 达 18 级"
+      },
+      "enUnlockCondition": "Reach level 18 with the Experimental Plasma Charger",
+      "completionRate": 5.6,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: DeepCore GK2",
+      "chineseName": {
+        "weaponRef": "deepcore_gk2",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "deepcore_gk2",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a DeepCore GK2 weapon mastery dive",
+      "completionRate": 14.6,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Zhukov NUK17",
+      "chineseName": {
+        "weaponRef": "zhukov_nuk17",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "zhukov_nuk17",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Zhukov NUK17 weapon mastery dive",
+      "completionRate": 12,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Cryo Grenade",
+      "chineseName": {
+        "weaponRef": "cryo_grenade",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "cryo_grenade",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Cryo Grenade weapon mastery dive",
+      "completionRate": 8.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Jury-Rigged Boomstick",
+      "chineseName": {
+        "weaponRef": "jury_rigged_boomstick",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "jury_rigged_boomstick",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Jury-Rigged Boomstick weapon mastery dive",
+      "completionRate": 10.7,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: M1000",
+      "chineseName": {
+        "weaponRef": "m1000",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "m1000",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a M1000 weapon mastery dive",
+      "completionRate": 11.4,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Stun Sweeper",
+      "chineseName": {
+        "weaponRef": "voltaic_stun_sweeper",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "voltaic_stun_sweeper",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Voltaic Stun Sweeper weapon mastery dive",
+      "completionRate": 8.3,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: TH-0R Bug Taser",
+      "chineseName": {
+        "weaponRef": "th_0r_bug_taser",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "th_0r_bug_taser",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a TH-0R Bug Taser weapon mastery dive",
+      "completionRate": 7.3,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Cryo Guard",
+      "chineseName": {
+        "weaponRef": "arc_tek_cryo_guard",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "arc_tek_cryo_guard",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Arc-Tek Cryo Guard weapon mastery dive",
+      "completionRate": 7.5,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Plasma Carbine",
+      "chineseName": {
+        "weaponRef": "drak_25_plasma_carbine",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "drak_25_plasma_carbine",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a DRAK-25 Plasma Carbine weapon mastery dive",
+      "completionRate": 7.6,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Nishanka Boltshark",
+      "chineseName": {
+        "weaponRef": "nishanka_boltshark",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "nishanka_boltshark",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Nishanka Boltshark weapon mastery dive",
+      "completionRate": 6.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Heavy Revolver",
+      "chineseName": {
+        "weaponRef": "bulldog_heavy_revolver",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "bulldog_heavy_revolver",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Bulldog Heavy Revolver weapon mastery dive",
+      "completionRate": 8.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Incendiary Grenade",
+      "chineseName": {
+        "weaponRef": "incendiary_grenade",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "incendiary_grenade",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Incendiary Grenade weapon mastery dive",
+      "completionRate": 8,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Powered Minigun",
+      "chineseName": {
+        "weaponRef": "lead_storm_powered_minigun",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "lead_storm_powered_minigun",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Lead Storm Powered Minigun weapon mastery dive",
+      "completionRate": 13.8,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Burst Fire Gun",
+      "chineseName": {
+        "weaponRef": "brt7_burst_fire_gun",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "brt7_burst_fire_gun",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a BRT7 Burst Fire Gun weapon mastery dive",
+      "completionRate": 7.9,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Tactical Leadburster",
+      "chineseName": {
+        "weaponRef": "tactical_leadburster",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "tactical_leadburster",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Tactical Leadburster weapon mastery dive",
+      "completionRate": 7.9,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Heavy Autocannon",
+      "chineseName": {
+        "weaponRef": "thunderhead_heavy_autocannon",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "thunderhead_heavy_autocannon",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Thunderhead Heavy Autocannon weapon mastery dive",
+      "completionRate": 9.2,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Firefly Hunter Drone",
+      "chineseName": {
+        "weaponRef": "firefly_hunter_drone",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "firefly_hunter_drone",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Firefly Hunter Drone weapon mastery dive",
+      "completionRate": 7,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Hurricane",
+      "chineseName": {
+        "weaponRef": "hurricane_guided_rocket_system",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "hurricane_guided_rocket_system",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Hurricane Guided Rocket System weapon mastery dive",
+      "completionRate": 7,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Seismic Repulsor",
+      "chineseName": "由浅入深：地震哨戒炮",
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "seismic_repulsor",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Seismic Repulsor weapon mastery dive",
+      "completionRate": 4.9,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Coil Gun",
+      "chineseName": {
+        "weaponRef": "breach_cutter_armskore_coil_gun",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "armskore_coil_gun",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a ArmsKore Coil Gun weapon mastery dive",
+      "completionRate": 4.8,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Warthog Auto",
+      "chineseName": {
+        "weaponRef": "warthog_auto_210",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "warthog_auto_210",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Warthog Auto 210 weapon mastery dive",
+      "completionRate": 10.6,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Voltaic SMG",
+      "chineseName": {
+        "weaponRef": "stubby_voltaic_smg",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "stubby_voltaic_smg",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Stubby Voltaic SMG weapon mastery dive",
+      "completionRate": 8.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Hi-Volt Thunderbird",
+      "chineseName": {
+        "weaponRef": "hi_volt_thunderbird",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "hi_volt_thunderbird",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Hi-Volt Thunderbird weapon mastery dive",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: LMG Gun Platform",
+      "chineseName": {
+        "weaponRef": "lmg_gun_platform",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "lmg_gun_platform",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a LMG Gun Platform weapon mastery dive",
+      "completionRate": 17.4,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Voltaic Shock Fence",
+      "chineseName": {
+        "weaponRef": "voltaic_shock_fence",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "voltaic_shock_fence",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Voltaic Shock Fence weapon mastery dive",
+      "completionRate": 7.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: LOK-1 Smart Rifle",
+      "chineseName": {
+        "weaponRef": "lok_1_smart_rifle",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "lok_1_smart_rifle",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a LOK-1 Smart Rifle weapon mastery dive",
+      "completionRate": 8.6,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: DeepCore PGL",
+      "chineseName": {
+        "weaponRef": "deepcore_pgl",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "deepcore_pgl",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a DeepCore PGL weapon mastery dive",
+      "completionRate": 8,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Breach Cutter",
+      "chineseName": {
+        "weaponRef": "breach_cutter_armskore_coil_gun",
+        "name": "由浅入深：{weapon}II"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "breach_cutter_armskore_coil_gun",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Breach Cutter weapon mastery dive",
+      "completionRate": 7.3,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Shard Diffractor",
+      "chineseName": {
+        "weaponRef": "shard_diffractor",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "shard_diffractor",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Shard Diffractor weapon mastery dive",
+      "completionRate": 5.5,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Plasma Burster",
+      "chineseName": {
+        "weaponRef": "plasma_burster",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "plasma_burster",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Plasma Burster weapon mastery dive",
+      "completionRate": 5.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Swarm Grenade",
+      "chineseName": {
+        "weaponRef": "shredder_swarm_grenade",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "shredder_swarm_grenade",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Shredder Swarm Grenade weapon mastery dive",
+      "completionRate": 4.7,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Subata 120",
+      "chineseName": {
+        "weaponRef": "subata_120",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "subata_120",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Subata 120 weapon mastery dive",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Krakatoa Sentinel",
+      "chineseName": {
+        "weaponRef": "krakatoa_sentinel",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "krakatoa_sentinel",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Krakatoa Sentinel weapon mastery dive",
+      "completionRate": 10.7,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: HE Grenade",
+      "chineseName": {
+        "weaponRef": "high_explosive_grenade",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "high_explosive_grenade",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a High Explosive Grenade weapon mastery dive",
+      "completionRate": 6.6,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: CRSPR Flamethrower",
+      "chineseName": {
+        "weaponRef": "crspr_flamethrower",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "crspr_flamethrower",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a CRSPR Flamethrower weapon mastery dive",
+      "completionRate": 12.9,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Sludge Pump",
+      "chineseName": {
+        "weaponRef": "corrosive_sludge_pump",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "corrosive_sludge_pump",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Corrosive Sludge Pump weapon mastery dive",
+      "completionRate": 8.7,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Wave Cooker",
+      "chineseName": {
+        "weaponRef": "colette_wave_cooker",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "colette_wave_cooker",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Colette Wave Cooker weapon mastery dive",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Impact Axe",
+      "chineseName": {
+        "weaponRef": "impact_axe",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "impact_axe",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete an Impact Axe weapon mastery dive",
+      "completionRate": 7.8,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Neurotoxin Grenade",
+      "chineseName": {
+        "weaponRef": "neurotoxin_grenade",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "neurotoxin_grenade",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Neurotoxin Grenade weapon mastery dive",
+      "completionRate": 6.4,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Cryo Cannon",
+      "chineseName": {
+        "weaponRef": "cryo_cannon",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "cryo_cannon",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Cryo Cannon weapon mastery dive",
+      "completionRate": 5.6,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: K1-P Viper Drone",
+      "chineseName": "由浅入深：酸液无人机",
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "k1_p_viper_drone",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a K1-P Viper Drone weapon mastery dive",
+      "completionRate": 5.5,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mastery: Plasma Charger",
+      "chineseName": {
+        "weaponRef": "experimental_plasma_charger",
+        "name": "由浅入深：{weapon}"
+      },
+      "category": "武器专精",
+      "unlockCondition": {
+        "weaponRef": "experimental_plasma_charger",
+        "unlockCondition": "完成 {weapon} 武器专精深潜"
+      },
+      "enUnlockCondition": "Complete a Experimental Plasma Charger weapon mastery dive",
+      "completionRate": 4.5,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: DeepCore GK2",
+      "chineseName": {
+        "weaponRef": "deepcore_gk2",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "deepcore_gk2",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a DeepCore GK2 weapon mastery dive at Hazard 5",
+      "completionRate": 2.4,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Zhukov NUK17",
+      "chineseName": {
+        "weaponRef": "zhukov_nuk17",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "zhukov_nuk17",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Zhukov NUK17 weapon mastery dive at Hazard 5",
+      "completionRate": 2.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Cryo Grenade",
+      "chineseName": {
+        "weaponRef": "cryo_grenade",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "cryo_grenade",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Cryo Grenade weapon mastery dive at Hazard 5",
+      "completionRate": 2,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Jury-Rigged Boomstick",
+      "chineseName": {
+        "weaponRef": "jury_rigged_boomstick",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "jury_rigged_boomstick",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Jury-Rigged Boomstick weapon mastery dive at Hazard 5",
+      "completionRate": 2.2,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: M1000",
+      "chineseName": {
+        "weaponRef": "m1000",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "m1000",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a M1000 weapon mastery dive at Hazard 5",
+      "completionRate": 2.6,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Stun Sweeper",
+      "chineseName": {
+        "weaponRef": "voltaic_stun_sweeper",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "voltaic_stun_sweeper",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Voltaic Stun Sweeper weapon mastery dive at Hazard 5",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: TH-0R Bug Taser",
+      "chineseName": {
+        "weaponRef": "th_0r_bug_taser",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "th_0r_bug_taser",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a TH-0R Bug Taser weapon mastery dive at Hazard 5",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Cryo Guard",
+      "chineseName": {
+        "weaponRef": "arc_tek_cryo_guard",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "arc_tek_cryo_guard",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Arc-Tek Cryo Guard weapon mastery dive at Hazard 5",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Plasma Carbine",
+      "chineseName": {
+        "weaponRef": "drak_25_plasma_carbine",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "drak_25_plasma_carbine",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a DRAK-25 Plasma Carbine weapon mastery dive at Hazard 5",
+      "completionRate": 2.5,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Nishanka Boltshark",
+      "chineseName": {
+        "weaponRef": "nishanka_boltshark",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "nishanka_boltshark",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Nishanka Boltshark weapon mastery dive at Hazard 5",
+      "completionRate": 2.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Heavy Revolver",
+      "chineseName": {
+        "weaponRef": "bulldog_heavy_revolver",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "bulldog_heavy_revolver",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Bulldog Heavy Revolver weapon mastery dive at Hazard 5",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Incendiary Grenade",
+      "chineseName": {
+        "weaponRef": "incendiary_grenade",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "incendiary_grenade",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Incendiary Grenade weapon mastery dive at Hazard 5",
+      "completionRate": 2,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Powered Minigun",
+      "chineseName": {
+        "weaponRef": "lead_storm_powered_minigun",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "lead_storm_powered_minigun",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Lead Storm Powered Minigun weapon mastery dive at Hazard 5",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Burst Fire Gun",
+      "chineseName": {
+        "weaponRef": "brt7_burst_fire_gun",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "brt7_burst_fire_gun",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a BRT7 Burst Fire Gun weapon mastery dive at Hazard 5",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Tactical Leadburster",
+      "chineseName": {
+        "weaponRef": "tactical_leadburster",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "tactical_leadburster",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Tactical Leadburster weapon mastery dive at Hazard 5",
+      "completionRate": 2.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Heavy Autocannon",
+      "chineseName": {
+        "weaponRef": "thunderhead_heavy_autocannon",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "thunderhead_heavy_autocannon",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Thunderhead Heavy Autocannon weapon mastery dive at Hazard 5",
+      "completionRate": 2.2,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Firefly Hunter Drone",
+      "chineseName": {
+        "weaponRef": "firefly_hunter_drone",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "firefly_hunter_drone",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Firefly Hunter Drone weapon mastery dive at Hazard 5",
+      "completionRate": 2,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Hurricane",
+      "chineseName": {
+        "weaponRef": "hurricane_guided_rocket_system",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "hurricane_guided_rocket_system",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Hurricane Guided Rocket System weapon mastery dive at Hazard 5",
+      "completionRate": 2.5,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Seismic Repulsor",
+      "chineseName": "深得精髓：地震哨戒炮",
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "seismic_repulsor",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Seismic Repulsor weapon mastery dive at Hazard 5",
+      "completionRate": 2,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Coil Gun",
+      "chineseName": {
+        "weaponRef": "breach_cutter_armskore_coil_gun",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "armskore_coil_gun",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a ArmsKore Coil Gun weapon mastery dive at Hazard 5",
+      "completionRate": 2.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Warthog Auto",
+      "chineseName": {
+        "weaponRef": "warthog_auto_210",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "warthog_auto_210",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Warthog Auto 210 weapon mastery dive at Hazard 5",
+      "completionRate": 2.2,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Voltaic SMG",
+      "chineseName": {
+        "weaponRef": "stubby_voltaic_smg",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "stubby_voltaic_smg",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Stubby Voltaic SMG weapon mastery dive at Hazard 5",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Hi-Volt Thunderbird",
+      "chineseName": {
+        "weaponRef": "hi_volt_thunderbird",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "hi_volt_thunderbird",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Hi-Volt Thunderbird weapon mastery dive at Hazard 5",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: LMG Gun Platform",
+      "chineseName": {
+        "weaponRef": "lmg_gun_platform",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "lmg_gun_platform",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a LMG Gun Platform weapon mastery dive at Hazard 5",
+      "completionRate": 2.6,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Voltaic Shock Fence",
+      "chineseName": {
+        "weaponRef": "voltaic_shock_fence",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "voltaic_shock_fence",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Voltaic Shock Fence weapon mastery dive at Hazard 5",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: LOK-1 Smart Rifle",
+      "chineseName": {
+        "weaponRef": "lok_1_smart_rifle",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "lok_1_smart_rifle",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a LOK-1 Smart Rifle weapon mastery dive at Hazard 5",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: DeepCore PGL",
+      "chineseName": {
+        "weaponRef": "deepcore_pgl",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "deepcore_pgl",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a DeepCore PGL weapon mastery dive at Hazard 5",
+      "completionRate": 2,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Breach Cutter",
+      "chineseName": {
+        "weaponRef": "breach_cutter_armskore_coil_gun",
+        "name": "深得精髓：{weapon}II"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "breach_cutter_armskore_coil_gun",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Breach Cutter weapon mastery dive at Hazard 5",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Shard Diffractor",
+      "chineseName": {
+        "weaponRef": "shard_diffractor",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "shard_diffractor",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Shard Diffractor weapon mastery dive at Hazard 5",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Plasma Burster",
+      "chineseName": {
+        "weaponRef": "plasma_burster",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "plasma_burster",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Plasma Burster weapon mastery dive at Hazard 5",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Swarm Grenade",
+      "chineseName": {
+        "weaponRef": "shredder_swarm_grenade",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "shredder_swarm_grenade",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Shredder Swarm Grenade weapon mastery dive at Hazard 5",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Subata 120",
+      "chineseName": {
+        "weaponRef": "subata_120",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "subata_120",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Subata 120 weapon mastery dive at Hazard 5",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Krakatoa Sentinel",
+      "chineseName": {
+        "weaponRef": "krakatoa_sentinel",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "krakatoa_sentinel",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Krakatoa Sentinel weapon mastery dive at Hazard 5",
+      "completionRate": 2.2,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: HE Grenade",
+      "chineseName": {
+        "weaponRef": "high_explosive_grenade",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "high_explosive_grenade",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a High Explosive Grenade weapon mastery dive at Hazard 5",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: CRSPR Flamethrower",
+      "chineseName": {
+        "weaponRef": "crspr_flamethrower",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "crspr_flamethrower",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a CRSPR Flamethrower weapon mastery dive at Hazard 5",
+      "completionRate": 2.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Sludge Pump",
+      "chineseName": {
+        "weaponRef": "corrosive_sludge_pump",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "corrosive_sludge_pump",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Corrosive Sludge Pump weapon mastery dive at Hazard 5",
+      "completionRate": 2.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Wave Cooker",
+      "chineseName": {
+        "weaponRef": "colette_wave_cooker",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "colette_wave_cooker",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Colette Wave Cooker weapon mastery dive at Hazard 5",
+      "completionRate": 2,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Impact Axe",
+      "chineseName": {
+        "weaponRef": "impact_axe",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "impact_axe",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete an Impact Axe weapon mastery dive at Hazard 5",
+      "completionRate": 2.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Neurotoxin Grenade",
+      "chineseName": {
+        "weaponRef": "neurotoxin_grenade",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "neurotoxin_grenade",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Neurotoxin Grenade weapon mastery dive at Hazard 5",
+      "completionRate": 2.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Cryo Cannon",
+      "chineseName": {
+        "weaponRef": "cryo_cannon",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "cryo_cannon",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Cryo Cannon weapon mastery dive at Hazard 5",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: K1-P Viper Drone",
+      "chineseName": "深得精髓：酸液无人机",
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "k1_p_viper_drone",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a K1-P Viper Drone weapon mastery dive at Hazard 5",
+      "completionRate": 2,
+      "version": "当前"
+    },
+    {
+      "englishName": "True Mastery: Plasma Charger",
+      "chineseName": {
+        "weaponRef": "experimental_plasma_charger",
+        "name": "深得精髓：{weapon}"
+      },
+      "category": "武器真专精",
+      "unlockCondition": {
+        "weaponRef": "experimental_plasma_charger",
+        "unlockCondition": "危险等级 5 完成 {weapon} 专精深潜"
+      },
+      "enUnlockCondition": "Complete a Experimental Plasma Charger weapon mastery dive at Hazard 5",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Crystalline Caverns",
+      "chineseName": "水晶洞穴",
+      "category": "生物群系",
+      "unlockCondition": "赢取 水晶洞穴 危险等级 5 深潜",
+      "enUnlockCondition": "Win a Crystalline Caverns Hazard 5 dive",
+      "completionRate": 6.2,
+      "version": "当前",
+      "biomeTier": "H5"
+    },
+    {
+      "englishName": "Mastery - Crystalline Caverns",
+      "chineseName": "专精 - 水晶洞穴",
+      "category": "生物群系",
+      "unlockCondition": "完成 水晶洞穴 专精深潜",
+      "enUnlockCondition": "Complete a Crystalline Caverns mastery dive",
+      "completionRate": 11.3,
+      "version": "当前",
+      "biomeTier": "Mastery"
+    },
+    {
+      "englishName": "True Mastery - Crystalline Caverns",
+      "chineseName": "真专精 - 水晶洞穴",
+      "category": "生物群系",
+      "unlockCondition": "危险等级 5 完成 水晶洞穴 专精深潜",
+      "enUnlockCondition": "Complete a Crystalline Caverns mastery dive at Hazard 5",
+      "completionRate": 3,
+      "version": "当前",
+      "biomeTier": "TrueMastery"
+    },
+    {
+      "englishName": "Magma Core",
+      "chineseName": "岩浆核心",
+      "category": "生物群系",
+      "unlockCondition": "赢取 岩浆核心 危险等级 5 深潜",
+      "enUnlockCondition": "Win a Magma Core Hazard 5 dive",
+      "completionRate": 5.4,
+      "version": "当前",
+      "biomeTier": "H5"
+    },
+    {
+      "englishName": "Mastery - Magma Core",
+      "chineseName": "专精 - 岩浆核心",
+      "category": "生物群系",
+      "unlockCondition": "完成 岩浆核心 专精深潜",
+      "enUnlockCondition": "Complete a Magma Core mastery dive",
+      "completionRate": 8.7,
+      "version": "当前",
+      "biomeTier": "Mastery"
+    },
+    {
+      "englishName": "True Mastery - Magma Core",
+      "chineseName": "真专精 - 岩浆核心",
+      "category": "生物群系",
+      "unlockCondition": "危险等级 5 完成 岩浆核心 专精深潜",
+      "enUnlockCondition": "Complete a Magma Core mastery dive at Hazard 5",
+      "completionRate": 2.5,
+      "version": "当前",
+      "biomeTier": "TrueMastery"
+    },
+    {
+      "englishName": "Hollow Bough",
+      "chineseName": "空洞枝桠",
+      "category": "生物群系",
+      "unlockCondition": "赢取 空洞枝桠 危险等级 5 深潜",
+      "enUnlockCondition": "Win a Hollow Bough Hazard 5 dive",
+      "completionRate": 4.7,
+      "version": "当前",
+      "biomeTier": "H5"
+    },
+    {
+      "englishName": "Mastery - Hollow Bough",
+      "chineseName": "专精 - 空洞枝桠",
+      "category": "生物群系",
+      "unlockCondition": "完成 空洞枝桠 专精深潜",
+      "enUnlockCondition": "Complete a Hollow Bough mastery dive",
+      "completionRate": 7.9,
+      "version": "当前",
+      "biomeTier": "Mastery"
+    },
+    {
+      "englishName": "True Mastery - Hollow Bough",
+      "chineseName": "真专精 - 空洞枝桠",
+      "category": "生物群系",
+      "unlockCondition": "危险等级 5 完成 空洞枝桠 专精深潜",
+      "enUnlockCondition": "Complete a Hollow Bough mastery dive at Hazard 5",
+      "completionRate": 2.5,
+      "version": "当前",
+      "biomeTier": "TrueMastery"
+    },
+    {
+      "englishName": "Salt Pits",
+      "chineseName": "盐坑",
+      "category": "生物群系",
+      "unlockCondition": "赢取 盐坑 危险等级 5 深潜",
+      "enUnlockCondition": "Win a Salt Pits Hazard 5 dive",
+      "completionRate": 5.2,
+      "version": "当前",
+      "biomeTier": "H5"
+    },
+    {
+      "englishName": "Mastery - Salt Pits",
+      "chineseName": "专精 - 盐坑",
+      "category": "生物群系",
+      "unlockCondition": "完成 盐坑 专精深潜",
+      "enUnlockCondition": "Complete a Salt Pits mastery dive",
+      "completionRate": 7.8,
+      "version": "当前",
+      "biomeTier": "Mastery"
+    },
+    {
+      "englishName": "True Mastery - Salt Pits",
+      "chineseName": "真专精 - 盐坑",
+      "category": "生物群系",
+      "unlockCondition": "危险等级 5 完成 盐坑 专精深潜",
+      "enUnlockCondition": "Complete a Salt Pits mastery dive at Hazard 5",
+      "completionRate": 2.4,
+      "version": "当前",
+      "biomeTier": "TrueMastery"
+    },
+    {
+      "englishName": "Azure Weald",
+      "chineseName": "蔚蓝荒野",
+      "category": "生物群系",
+      "unlockCondition": "赢取 蔚蓝荒野 危险等级 5 深潜",
+      "enUnlockCondition": "Win an Azure Weald Hazard 5 dive",
+      "completionRate": 4.1,
+      "version": "当前",
+      "biomeTier": "H5"
+    },
+    {
+      "englishName": "Mastery - Azure Weald",
+      "chineseName": "专精 - 蔚蓝荒野",
+      "category": "生物群系",
+      "unlockCondition": "完成 蔚蓝荒野 专精深潜",
+      "enUnlockCondition": "Complete an Azure Weald mastery dive",
+      "completionRate": 6.7,
+      "version": "当前",
+      "biomeTier": "Mastery"
+    },
+    {
+      "englishName": "True Mastery - Azure Weald",
+      "chineseName": "深得精髓：蔚蓝花甸",
+      "category": "生物群系",
+      "unlockCondition": "危险等级 5 完成 蔚蓝花甸 专精深潜",
+      "enUnlockCondition": "Complete an Azure Weald mastery dive at Hazard 5",
+      "completionRate": 2.2,
+      "version": "当前",
+      "biomeTier": "TrueMastery"
+    },
+    {
+      "englishName": "Feeling a bit sour",
+      "chineseName": "酸意盎然",
+      "category": "武器标签",
+      "unlockCondition": "装备 3 把 [腐蚀] 武器完成深潜",
+      "enUnlockCondition": "Complete a dive with 3 [ACID] weapons equipped",
+      "completionRate": 3.8,
+      "version": "当前"
+    },
+    {
+      "englishName": "Zone of control",
+      "chineseName": "控制区",
+      "category": "武器标签",
+      "unlockCondition": "装备 3 把 [范围] 武器完成深潜",
+      "enUnlockCondition": "Complete a dive with 3 [AREA] weapons equipped",
+      "completionRate": 3.9,
+      "version": "当前"
+    },
+    {
+      "englishName": "Cross the beams",
+      "chineseName": "光束交错",
+      "category": "武器标签",
+      "unlockCondition": "装备 4 把 [光束] 武器完成深潜",
+      "enUnlockCondition": "Complete a dive with 4 [BEAM] weapons equipped",
+      "completionRate": 8.2,
+      "version": "当前"
+    },
+    {
+      "englishName": "Dwarven architecture",
+      "chineseName": "矮人建筑学",
+      "category": "武器标签",
+      "unlockCondition": "装备 4 把 [建造] 武器完成深潜",
+      "enUnlockCondition": "Complete a dive with 4 [CONSTRUCT] weapons equipped",
+      "completionRate": 11.5,
+      "version": "当前"
+    },
+    {
+      "englishName": "Deep freeze",
+      "chineseName": "深度冰冻",
+      "category": "武器标签",
+      "unlockCondition": "装备 4 把 [冰冻] 武器完成深潜",
+      "enUnlockCondition": "Complete a dive with 4 [COLD] weapons equipped",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Modern warfare",
+      "chineseName": "现代战争",
+      "category": "武器标签",
+      "unlockCondition": "装备 3 把 [无人机] 武器完成深潜",
+      "enUnlockCondition": "Complete a dive with 3 [DRONE] weapons equipped",
+      "completionRate": 4.5,
+      "version": "当前"
+    },
+    {
+      "englishName": "Stormbringer",
+      "chineseName": "风暴使者",
+      "category": "武器标签",
+      "unlockCondition": "装备 4 把 [电击] 武器完成深潜",
+      "enUnlockCondition": "Complete a dive with 4 [ELECTRICAL] weapons equipped",
+      "completionRate": 7.8,
+      "version": "当前"
+    },
+    {
+      "englishName": "Bomberman",
+      "chineseName": "炸弹人",
+      "category": "武器标签",
+      "unlockCondition": "装备 4 把 [爆炸] 武器完成深潜",
+      "enUnlockCondition": "Complete a dive with 4 [EXPLOSIVE] weapons equipped",
+      "completionRate": 6.2,
+      "version": "当前"
+    },
+    {
+      "englishName": "Keeper of the flame",
+      "chineseName": "火焰守护者",
+      "category": "武器标签",
+      "unlockCondition": "装备 4 把 [火焰] 武器完成深潜",
+      "enUnlockCondition": "Complete a dive with 4 [FIRE] weapons equipped",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Who touched my gun!?",
+      "chineseName": "谁动我枪了",
+      "category": "武器标签",
+      "unlockCondition": "装备 4 把 [重型] 武器完成深潜",
+      "enUnlockCondition": "Complete a dive with 4 [HEAVY] weapons equipped",
+      "completionRate": 4.9,
+      "version": "当前"
+    },
+    {
+      "englishName": "Blunt force trauma",
+      "chineseName": "钝器创伤",
+      "category": "武器标签",
+      "unlockCondition": "装备 4 把 [动能] 武器完成深潜",
+      "enUnlockCondition": "Complete a dive with 4 [KINETIC] weapons equipped",
+      "completionRate": 17.2,
+      "version": "当前"
+    },
+    {
+      "englishName": "Delayed gratification",
+      "chineseName": "延迟满足",
+      "category": "武器标签",
+      "unlockCondition": "装备 4 把 [持续] 武器完成深潜",
+      "enUnlockCondition": "Complete a dive with 4 [LASTING] weapons equipped",
+      "completionRate": 17.3,
+      "version": "当前"
+    },
+    {
+      "englishName": "Fleet of foot",
+      "chineseName": "健步如飞",
+      "category": "武器标签",
+      "unlockCondition": "装备 4 把 [轻型] 武器完成深潜",
+      "enUnlockCondition": "Complete a dive with 4 [LIGHT] weapons equipped",
+      "completionRate": 4.8,
+      "version": "当前"
+    },
+    {
+      "englishName": "Tried and tested",
+      "chineseName": "久经考验",
+      "category": "武器标签",
+      "unlockCondition": "装备 4 把 [中型] 武器完成深潜",
+      "enUnlockCondition": "Complete a dive with 4 [MEDIUM] weapons equipped",
+      "completionRate": 5.8,
+      "version": "当前"
+    },
+    {
+      "englishName": "Light show",
+      "chineseName": "光影秀",
+      "category": "武器标签",
+      "unlockCondition": "装备 4 把 [等离子] 武器完成深潜",
+      "enUnlockCondition": "Complete a dive with 4 [PLASMA] weapons equipped",
+      "completionRate": 2.4,
+      "version": "当前"
+    },
+    {
+      "englishName": "Professionals have standards",
+      "chineseName": "专业有标准",
+      "category": "武器标签",
+      "unlockCondition": "装备 4 把 [精准] 武器完成深潜",
+      "enUnlockCondition": "Complete a dive with 4 [PRECISE] weapons equipped",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Weight of fire",
+      "chineseName": "火力权重",
+      "category": "武器标签",
+      "unlockCondition": "装备 4 把 [弹道] 武器完成深潜",
+      "enUnlockCondition": "Complete a dive with 4 [PROJECTILE] weapons equipped",
+      "completionRate": 25.2,
+      "version": "当前"
+    },
+    {
+      "englishName": "Spray 'n pray",
+      "chineseName": "喷了就求",
+      "category": "武器标签",
+      "unlockCondition": "装备 4 把 [散射] 武器完成深潜",
+      "enUnlockCondition": "Complete a dive with 4 [SPRAY] weapons equipped",
+      "completionRate": 10.3,
+      "version": "当前"
+    },
+    {
+      "englishName": "It's all in the wrist",
+      "chineseName": "全凭手腕",
+      "category": "武器标签",
+      "unlockCondition": "装备 4 把 [投掷] 武器完成深潜",
+      "enUnlockCondition": "Complete a dive with 4 [THROWABLE] weapons equipped",
+      "completionRate": 5.5,
+      "version": "当前"
+    },
+    {
+      "englishName": "Sentry goin' up",
+      "chineseName": "炮塔立起",
+      "category": "武器标签",
+      "unlockCondition": "装备 4 把 [炮塔] 武器完成深潜",
+      "enUnlockCondition": "Complete a dive with 4 [TURRET] weapons equipped",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Got bait?",
+      "chineseName": "有诱饵吗？",
+      "category": "生物",
+      "unlockCondition": "单次深潜击杀 3 只 胡利囤积者",
+      "enUnlockCondition": "Kill 3 Huuli Hoarders in one dive",
+      "completionRate": 20,
+      "version": "当前"
+    },
+    {
+      "englishName": "The dwarf with the golden bug",
+      "chineseName": "带金虫的矮人",
+      "category": "生物",
+      "unlockCondition": "击杀一只金色 掠夺虫（稀有变种）",
+      "enUnlockCondition": "Kill a golden lootbug",
+      "completionRate": 17.4,
+      "version": "当前"
+    },
+    {
+      "englishName": "Still only counts as one!",
+      "chineseName": "仍只算一个！",
+      "category": "生物",
+      "unlockCondition": "不受任何伤害击杀 无畏舰",
+      "enUnlockCondition": "Kill the Dreadnought without taking any damage",
+      "completionRate": 13.7,
+      "version": "当前"
+    },
+    {
+      "englishName": "Denied",
+      "chineseName": "拒绝",
+      "category": "生物",
+      "unlockCondition": "在 无畏舰 双子 互相治疗前击杀它们",
+      "enUnlockCondition": "Kill the Dreadnought Twins before they can heal",
+      "completionRate": 13.3,
+      "version": "当前"
+    },
+    {
+      "englishName": "Bullseye",
+      "chineseName": "靶心",
+      "category": "生物",
+      "unlockCondition": "用补给舱击杀 Q'ronar Shellback",
+      "enUnlockCondition": "Kill a Q'ronar Shellback with the Supply Pod",
+      "completionRate": 7.8,
+      "version": "当前"
+    },
+    {
+      "englishName": "This hurts me more",
+      "chineseName": "这更伤我",
+      "category": "生物",
+      "unlockCondition": "单次深潜击杀所有 掠夺虫（补货虫）",
+      "enUnlockCondition": "Kill all the lootbugs in a single dive",
+      "completionRate": 7.5,
+      "version": "当前"
+    },
+    {
+      "englishName": "Get that Midas touch",
+      "chineseName": "获得迈达斯之触",
+      "category": "资源",
+      "unlockCondition": "收集 250 金",
+      "enUnlockCondition": "Collect 250 Gold in a single dive",
+      "completionRate": 91.2,
+      "version": "当前"
+    },
+    {
+      "englishName": "Au-fully rich",
+      "chineseName": "极其富有",
+      "category": "资源",
+      "unlockCondition": "收集 2,000 金（解锁 黄金 扫描器）",
+      "enUnlockCondition": "Collect 2,000 Gold",
+      "completionRate": 73.4,
+      "version": "当前"
+    },
+    {
+      "englishName": "Gotta stay Nitrated",
+      "chineseName": "必须保持硝化",
+      "category": "资源",
+      "unlockCondition": "收集 250 硝化铁",
+      "enUnlockCondition": "Collect 250 Nitra",
+      "completionRate": 87.3,
+      "version": "当前"
+    },
+    {
+      "englishName": "Sprinkle of Nitra",
+      "chineseName": "硝石井喷（少许 硝化铁）",
+      "category": "资源",
+      "unlockCondition": "收集 2,000 硝化铁（解锁 硝化铁 扫描器；中文指南称硝石井喷）",
+      "enUnlockCondition": "Collect 2,000 Nitra",
+      "completionRate": 58.7,
+      "version": "当前"
+    },
+    {
+      "englishName": "Works 100% of the time",
+      "chineseName": "百发百中（磁铁）",
+      "category": "资源",
+      "unlockCondition": "单次深潜收集 25 个磁铁",
+      "enUnlockCondition": "Collect 25 magnets",
+      "completionRate": 34.2,
+      "version": "当前"
+    },
+    {
+      "englishName": "They belong in a museum",
+      "chineseName": "它们属于博物馆",
+      "category": "神器",
+      "unlockCondition": "不使用任何神器完成深潜",
+      "enUnlockCondition": "Complete a dive without any artifacts",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Deep scan",
+      "chineseName": "深度扫描",
+      "category": "神器",
+      "unlockCondition": "单次拥有 5 个 扫描器 神器（经验/黄金/硝化铁 扫描器）",
+      "enUnlockCondition": "Have 5 scanner artifacts in a single dive",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Corporate Discount",
+      "chineseName": "公司折扣",
+      "category": "商店",
+      "unlockCondition": "花费 2,500 金",
+      "enUnlockCondition": "Spend 2,500 Gold",
+      "completionRate": 41.5,
+      "version": "当前"
+    },
+    {
+      "englishName": "Big spender",
+      "chineseName": "大买家",
+      "category": "商店",
+      "unlockCondition": "花费 20,000 金",
+      "enUnlockCondition": "Spend 20,000 Gold",
+      "completionRate": 23.3,
+      "version": "当前"
+    },
+    {
+      "englishName": "I ain't buying it",
+      "chineseName": "我才不买",
+      "category": "商店",
+      "unlockCondition": "危险等级 3 不购买任何商店物品完成深潜",
+      "enUnlockCondition": "Complete a dive without buying anything in the shop at Hazard 3",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Cheapskate",
+      "chineseName": "小气鬼",
+      "category": "商店",
+      "unlockCondition": "不花费任何金或 硝化铁 完成深潜",
+      "enUnlockCondition": "Complete a dive without spending any gold or nitra",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Extreme indecision",
+      "chineseName": "极度犹豫",
+      "category": "商店",
+      "unlockCondition": "单次执行 50 次重摇",
+      "enUnlockCondition": "Perform 50 rerolls during a single dive",
+      "completionRate": 2.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "Jetty boots",
+      "chineseName": "喷射靴",
+      "category": "环境",
+      "unlockCondition": "单次落在岩石上 200 次",
+      "enUnlockCondition": "Land on 200 blocks in one dive",
+      "completionRate": 23.9,
+      "version": "当前"
+    },
+    {
+      "englishName": "They fly now?",
+      "chineseName": "它们现在会飞了？",
+      "category": "环境",
+      "unlockCondition": "单一阶段弹跳 100 次",
+      "enUnlockCondition": "Bounce 100 times in one stage",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Axe in face!",
+      "chineseName": "斧头面对面！",
+      "category": "环境",
+      "unlockCondition": "主任务阶段破坏所有岩石",
+      "enUnlockCondition": "Destroy all rocks in one main mission stage",
+      "completionRate": 7.5,
+      "version": "当前"
+    },
+    {
+      "englishName": "Early access",
+      "chineseName": "提前进入",
+      "category": "环境",
+      "unlockCondition": "剩余超过 30 秒进入降落舱",
+      "enUnlockCondition": "Enter the drop pod with more than 30 seconds remaining",
+      "completionRate": 7.6,
+      "version": "当前"
+    },
+    {
+      "englishName": "Mission Possible",
+      "chineseName": "可能任务",
+      "category": "环境",
+      "unlockCondition": "用喷射靴在降落舱坡道着陆 3 次",
+      "enUnlockCondition": "Land on the drop pod ramp 3 times using jet boots",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Salvage operation",
+      "chineseName": "打捞行动",
+      "category": "环境",
+      "unlockCondition": "单次深潜回收 10 个 超频",
+      "enUnlockCondition": "Salvage 10 overclocks in a single dive",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Tower defense",
+      "chineseName": "塔防",
+      "category": "环境",
+      "unlockCondition": "同时存活 50 个炮塔",
+      "enUnlockCondition": "Have 50 turrets alive at the same time",
+      "completionRate": 2.7,
+      "version": "当前"
+    },
+    {
+      "englishName": "A freeze is coming",
+      "chineseName": "寒霜将至",
+      "category": "伤害",
+      "unlockCondition": "造成 250,000 冰冻伤害",
+      "enUnlockCondition": "Deal 250,000 Cryo damage",
+      "completionRate": 86.7,
+      "version": "当前"
+    },
+    {
+      "englishName": "Hot, hot, hot!",
+      "chineseName": "热，热，热！",
+      "category": "伤害",
+      "unlockCondition": "造成 250,000 火焰伤害",
+      "enUnlockCondition": "Deal 250,000 Fire damage",
+      "completionRate": 79.6,
+      "version": "当前"
+    },
+    {
+      "englishName": "Relish the pain",
+      "chineseName": "享受痛苦",
+      "category": "伤害",
+      "unlockCondition": "单次攻击造成超过 1337 伤害",
+      "enUnlockCondition": "Deal over 1337 damage in one attack",
+      "completionRate": 65,
+      "version": "当前"
+    },
+    {
+      "englishName": "Freezing hot acid",
+      "chineseName": "冰火酸",
+      "category": "伤害",
+      "unlockCondition": "单次造成 2,500,000 状态效果伤害",
+      "enUnlockCondition": "Deal 2,500,000 Status Effect Damage in a single dive",
+      "completionRate": 41,
+      "version": "当前"
+    },
+    {
+      "englishName": "Multitool",
+      "chineseName": "多功能工具",
+      "category": "伤害",
+      "unlockCondition": "单次使用 5 种伤害类型造成伤害",
+      "enUnlockCondition": "Do damage with 5 types in one dive",
+      "completionRate": 28.7,
+      "version": "当前"
+    },
+    {
+      "englishName": "Perfect run",
+      "chineseName": "完美跑图",
+      "category": "伤害",
+      "unlockCondition": "不受任何伤害完成深潜",
+      "enUnlockCondition": "Complete a dive without taking any damage",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Drill baby, drill",
+      "chineseName": "钻吧宝贝，钻",
+      "category": "护卫",
+      "unlockCondition": "单一阶段收集所有油页岩后完成深潜",
+      "enUnlockCondition": "Collect all the oil shale on one stage, then complete the dive",
+      "completionRate": 16.2,
+      "version": "当前"
+    },
+    {
+      "englishName": "Fill 'er up",
+      "chineseName": "给 小鲍勃33号 加满油",
+      "category": "护卫",
+      "unlockCondition": "为 小鲍勃33号 完全加注燃料",
+      "enUnlockCondition": "Fully fuel B0b-33",
+      "completionRate": 7,
+      "version": "当前"
+    },
+    {
+      "englishName": "Roadkill",
+      "chineseName": "辗毙",
+      "category": "护卫",
+      "unlockCondition": "用 小鲍勃33号 钻穿一只 掠夺虫",
+      "enUnlockCondition": "Drill through a lootbug with B0b-33",
+      "completionRate": 19.8,
+      "version": "当前"
+    },
+    {
+      "englishName": "The only drilldozer here is me",
+      "chineseName": "这里唯一的钻机是我",
+      "category": "护卫",
+      "unlockCondition": "移动 小鲍勃33号 前挖空整个阶段后完成深潜",
+      "enUnlockCondition": "Mine an entire stage before moving B0b-33, then complete the dive",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Now, where did I put my keys?",
+      "chineseName": "我把钥匙放哪了？",
+      "category": "护卫",
+      "unlockCondition": "移动 小鲍勃33号 前使外星威胁达等级 2 后完成深潜",
+      "enUnlockCondition": "Have the alien threat reach level 2 before moving B0b-33, then complete the dive",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Anomaly - Hazard 1",
+      "chineseName": "异常 - 危险 1",
+      "category": "异常·先锋·致命",
+      "unlockCondition": "完成 危险等级 1 异常 深潜",
+      "enUnlockCondition": "Complete an anomaly dive at Hazard 1",
+      "completionRate": 4.2,
+      "version": "当前"
+    },
+    {
+      "englishName": "Anomaly - Hazard 2",
+      "chineseName": "异常 - 危险 2",
+      "category": "异常·先锋·致命",
+      "unlockCondition": "完成 危险等级 2 异常 深潜",
+      "enUnlockCondition": "Complete an anomaly dive at Hazard 2",
+      "completionRate": 3.2,
+      "version": "当前"
+    },
+    {
+      "englishName": "Anomaly - Hazard 3",
+      "chineseName": "异常 - 危险 3",
+      "category": "异常·先锋·致命",
+      "unlockCondition": "完成 危险等级 3 异常 深潜",
+      "enUnlockCondition": "Complete an anomaly dive at Hazard 3",
+      "completionRate": 2.3,
+      "version": "当前"
+    },
+    {
+      "englishName": "Anomaly - Hazard 4",
+      "chineseName": "异常 - 危险 4",
+      "category": "异常·先锋·致命",
+      "unlockCondition": "完成 危险等级 4 异常 深潜",
+      "enUnlockCondition": "Complete an anomaly dive at Hazard 4",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Anomaly - Hazard 5",
+      "chineseName": "异常 - 危险 5",
+      "category": "异常·先锋·致命",
+      "unlockCondition": "完成 危险等级 5 异常 深潜",
+      "enUnlockCondition": "Complete an anomaly dive at Hazard 5",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Vanguard - Hazard 3",
+      "chineseName": "先锋 - 危险 3",
+      "category": "异常·先锋·致命",
+      "unlockCondition": "完成 危险等级 3 先锋 契约深潜",
+      "enUnlockCondition": "Complete a vanguard contract dive at Hazard 3",
+      "completionRate": 7.4,
+      "version": "当前"
+    },
+    {
+      "englishName": "Vanguard - Hazard 4",
+      "chineseName": "先锋 - 危险 4",
+      "category": "异常·先锋·致命",
+      "unlockCondition": "完成 危险等级 4 先锋 契约深潜",
+      "enUnlockCondition": "Complete a vanguard contract dive at Hazard 4",
+      "completionRate": 2.9,
+      "version": "当前"
+    },
+    {
+      "englishName": "Vanguard - Hazard 5",
+      "chineseName": "先锋 - 危险 5",
+      "category": "异常·先锋·致命",
+      "unlockCondition": "完成 危险等级 5 先锋 契约深潜",
+      "enUnlockCondition": "Complete a vanguard contract dive at Hazard 5",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Employee of the Week",
+      "chineseName": "本周员工",
+      "category": "异常·先锋·致命",
+      "unlockCondition": "完成 1 次 致命行动深潜（英文指南旧称 Employee of the Day）",
+      "enUnlockCondition": "Complete a lethal operation dive",
+      "completionRate": 2.8,
+      "version": "当前"
+    },
+    {
+      "englishName": "Employee of the Month",
+      "chineseName": "本月员工",
+      "category": "异常·先锋·致命",
+      "unlockCondition": "完成 5 次 致命行动深潜",
+      "enUnlockCondition": "Complete 5 lethal operation dives",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Employee of the Year",
+      "chineseName": "年度员工",
+      "category": "异常·先锋·致命",
+      "unlockCondition": "完成 10 次 致命行动深潜",
+      "enUnlockCondition": "Complete 10 lethal operation dives",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Endurance: Dives I",
+      "chineseName": "持之以恒：深潜 I",
+      "category": "耐力",
+      "unlockCondition": "完成 5 次深潜",
+      "enUnlockCondition": "Complete 5 dives",
+      "completionRate": 23.5,
+      "version": "当前"
+    },
+    {
+      "englishName": "Endurance: Dives II",
+      "chineseName": "持之以恒：深潜 II",
+      "category": "耐力",
+      "unlockCondition": "完成 25 次深潜",
+      "enUnlockCondition": "Complete 25 dives",
+      "completionRate": 8.8,
+      "version": "当前"
+    },
+    {
+      "englishName": "Endurance: Dives III",
+      "chineseName": "持之以恒：深潜 III",
+      "category": "耐力",
+      "unlockCondition": "完成 50 次深潜",
+      "enUnlockCondition": "Complete 50 dives",
+      "completionRate": 4.7,
+      "version": "当前"
+    },
+    {
+      "englishName": "Endurance: Dives IV",
+      "chineseName": "持之以恒：深潜 IV",
+      "category": "耐力",
+      "unlockCondition": "完成 75 次深潜",
+      "enUnlockCondition": "Complete 75 dives",
+      "completionRate": 2.9,
+      "version": "当前"
+    },
+    {
+      "englishName": "Endurance: Dives V",
+      "chineseName": "持之以恒：深潜 V",
+      "category": "耐力",
+      "unlockCondition": "完成 100 次深潜",
+      "enUnlockCondition": "Complete 100 dives",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Endurance: Kills I",
+      "chineseName": "持之以恒：击杀 I",
+      "category": "耐力",
+      "unlockCondition": "击杀 50,000 敌人",
+      "enUnlockCondition": "Kill 50,000 enemies",
+      "completionRate": 22.4,
+      "version": "当前"
+    },
+    {
+      "englishName": "Endurance: Kills II",
+      "chineseName": "持之以恒：击杀 II",
+      "category": "耐力",
+      "unlockCondition": "击杀 100,000 敌人",
+      "enUnlockCondition": "Kill 100,000 enemies",
+      "completionRate": 16,
+      "version": "当前"
+    },
+    {
+      "englishName": "Endurance: Kills III",
+      "chineseName": "持之以恒：击杀 III",
+      "category": "耐力",
+      "unlockCondition": "击杀 250,000 敌人",
+      "enUnlockCondition": "Kill 250,000 enemies",
+      "completionRate": 8.5,
+      "version": "当前"
+    },
+    {
+      "englishName": "Endurance: Kills IV",
+      "chineseName": "持之以恒：击杀 IV",
+      "category": "耐力",
+      "unlockCondition": "击杀 500,000 敌人",
+      "enUnlockCondition": "Kill 500,000 enemies",
+      "completionRate": 4.6,
+      "version": "当前"
+    },
+    {
+      "englishName": "Endurance: Kills V",
+      "chineseName": "持之以恒：击杀 V",
+      "category": "耐力",
+      "unlockCondition": "击杀 1,000,000 敌人",
+      "enUnlockCondition": "Kill 1,000,000 enemies",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Endurance: Damage I",
+      "chineseName": "持之以恒：伤害 I",
+      "category": "耐力",
+      "unlockCondition": "造成 100,000,000 伤害",
+      "enUnlockCondition": "Deal 100,000,000 damage",
+      "completionRate": 18.7,
+      "version": "当前"
+    },
+    {
+      "englishName": "Endurance: Damage II",
+      "chineseName": "持之以恒：伤害 II",
+      "category": "耐力",
+      "unlockCondition": "造成 250,000,000 伤害",
+      "enUnlockCondition": "Deal 250,000,000 damage",
+      "completionRate": 12.5,
+      "version": "当前"
+    },
+    {
+      "englishName": "Endurance: Damage III",
+      "chineseName": "持之以恒：伤害 III",
+      "category": "耐力",
+      "unlockCondition": "造成 500,000,000 伤害",
+      "enUnlockCondition": "Deal 500,000,000 damage",
+      "completionRate": 9.4,
+      "version": "当前"
+    },
+    {
+      "englishName": "Endurance: Damage IV",
+      "chineseName": "持之以恒：伤害 IV",
+      "category": "耐力",
+      "unlockCondition": "造成 1,000,000,000 伤害",
+      "enUnlockCondition": "Deal 1,000,000,000 damage",
+      "completionRate": 6.8,
+      "version": "当前"
+    },
+    {
+      "englishName": "Endurance: Damage V",
+      "chineseName": "持之以恒：伤害 V",
+      "category": "耐力",
+      "unlockCondition": "造成 2,000,000,000 伤害",
+      "enUnlockCondition": "Deal 2,000,000,000 damage",
+      "completionRate": 4.5,
+      "version": "当前"
+    },
+    {
+      "englishName": "Endurance: Mine I",
+      "chineseName": "持之以恒：挖掘 I",
+      "category": "耐力",
+      "unlockCondition": "挖掘 15,000 方块",
+      "enUnlockCondition": "Mine 15,000 blocks",
+      "completionRate": 21.8,
+      "version": "当前"
+    },
+    {
+      "englishName": "Endurance: Mine II",
+      "chineseName": "持之以恒：挖掘 II",
+      "category": "耐力",
+      "unlockCondition": "挖掘 50,000 方块",
+      "enUnlockCondition": "Mine 50,000 blocks",
+      "completionRate": 12,
+      "version": "当前"
+    },
+    {
+      "englishName": "Endurance: Mine III",
+      "chineseName": "持之以恒：挖掘 III",
+      "category": "耐力",
+      "unlockCondition": "挖掘 100,000 方块",
+      "enUnlockCondition": "Mine 100,000 blocks",
+      "completionRate": 7.6,
+      "version": "当前"
+    },
+    {
+      "englishName": "Endurance: Mine IV",
+      "chineseName": "持之以恒：挖掘 IV",
+      "category": "耐力",
+      "unlockCondition": "挖掘 150,000 方块",
+      "enUnlockCondition": "Mine 150,000 blocks",
+      "completionRate": 5.4,
+      "version": "当前"
+    },
+    {
+      "englishName": "Endurance: Mine V",
+      "chineseName": "持之以恒：挖掘 V",
+      "category": "耐力",
+      "unlockCondition": "挖掘 250,000 方块",
+      "enUnlockCondition": "Mine 250,000 blocks",
+      "completionRate": 3.2,
+      "version": "当前"
+    },
+    {
+      "englishName": "Endurance: Run I",
+      "chineseName": "持之以恒：奔跑 I",
+      "category": "耐力",
+      "unlockCondition": "跑 10,000 步",
+      "enUnlockCondition": "Run 10,000 steps",
+      "completionRate": 32.6,
+      "version": "当前"
+    },
+    {
+      "englishName": "Endurance: Run II",
+      "chineseName": "持之以恒：奔跑 II",
+      "category": "耐力",
+      "unlockCondition": "跑 50,000 步",
+      "enUnlockCondition": "Run 50,000 steps",
+      "completionRate": 21.9,
+      "version": "当前"
+    },
+    {
+      "englishName": "Endurance: Run III",
+      "chineseName": "持之以恒：奔跑 III",
+      "category": "耐力",
+      "unlockCondition": "跑 100,000 步",
+      "enUnlockCondition": "Run 100,000 steps",
+      "completionRate": 14.9,
+      "version": "当前"
+    },
+    {
+      "englishName": "Endurance: Run IV",
+      "chineseName": "持之以恒：奔跑 IV",
+      "category": "耐力",
+      "unlockCondition": "跑 250,000 步",
+      "enUnlockCondition": "Run 250,000 steps",
+      "completionRate": 7.6,
+      "version": "当前"
+    },
+    {
+      "englishName": "Endurance: Run V",
+      "chineseName": "持之以恒：奔跑 V",
+      "category": "耐力",
+      "unlockCondition": "跑 500,000 步",
+      "enUnlockCondition": "Run 500,000 steps",
+      "completionRate": 3.6,
+      "version": "当前"
+    },
+    {
+      "englishName": "Rock and Stone!",
+      "chineseName": "岩石与矿石！",
+      "category": "其他动作",
+      "unlockCondition": "记得 岩石与矿石！（致敬彩蛋成就）",
+      "enUnlockCondition": "Remember to Rock and Stone!",
+      "completionRate": 10,
+      "version": "当前"
+    },
+    {
+      "englishName": "Underclocked",
+      "chineseName": "降频运行",
+      "category": "其他动作",
+      "unlockCondition": "不装备任何 超频 完成深潜",
+      "enUnlockCondition": "Complete a dive without any overclocks",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Pro side wobble compensator",
+      "chineseName": "专业侧摆补偿器",
+      "category": "其他动作",
+      "unlockCondition": "单次深潜装备 10 个 超频",
+      "enUnlockCondition": "Equip 10 Overclocks in a single dive",
+      "completionRate": 24.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "Eye of the storm",
+      "chineseName": "风暴之眼",
+      "category": "其他动作",
+      "unlockCondition": {
+        "weaponRef": "zhukov_nuk17",
+        "unlockCondition": "{weapon} 与 BRT7 连发手枪 均装不稳定 超频 完成深潜"
+      },
+      "enUnlockCondition": "Complete a dive with unstable overclocks on both the NUK17 and the BRT7",
+      "completionRate": 3,
+      "version": "当前"
+    },
+    {
+      "englishName": "They see 'em rollin', they hatin'",
+      "chineseName": "他们看它滚，他们恨",
+      "category": "其他动作",
+      "unlockCondition": "单次深潜有 3 个 坦克履带 超频",
+      "enUnlockCondition": "Have 3 'Tank Tracks' overclocks in a single dive",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "All sides",
+      "chineseName": "全副武装（副武器）",
+      "category": "其他动作",
+      "unlockCondition": "单次深潜有 3 个 副武器 超频",
+      "enUnlockCondition": "Have 3 'Sidearm' overclocks in a single dive",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "This is brilliant, but I like this",
+      "chineseName": "这绝妙，但我喜欢这个",
+      "category": "其他动作",
+      "unlockCondition": "单次深潜有 2 个 最爱 超频",
+      "enUnlockCondition": "Have 2 'The Favourite' overclocks in a single dive",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Perfectly balanced",
+      "chineseName": "完美平衡",
+      "category": "其他动作",
+      "unlockCondition": "4 把及以上武器同级完成深潜",
+      "enUnlockCondition": "Complete a dive with 4 (or more) of your weapons at the same level",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "Underpromise, overdeliver",
+      "chineseName": "低承诺，高交付",
+      "category": "其他动作",
+      "unlockCondition": "所有武器 1 级完成深潜",
+      "enUnlockCondition": "Complete a dive with all of your weapons at level 1",
+      "completionRate": null,
+      "version": "当前"
+    },
+    {
+      "englishName": "What's in the box!?",
+      "chineseName": "盒子里是什么！",
+      "category": "其他动作",
+      "unlockCondition": "获得 10 个武器专精等级",
+      "enUnlockCondition": "Gain 10 weapon mastery levels",
+      "completionRate": 20.1,
+      "version": "当前"
+    },
+    {
+      "englishName": "Count em!",
+      "chineseName": "数一数！",
+      "category": "其他动作",
+      "unlockCondition": "单次深潜发射 150,000 发弹丸",
+      "enUnlockCondition": "Fire 150,000 projectiles in a single dive",
+      "completionRate": 11.4,
+      "version": "当前"
+    },
+    {
+      "englishName": "Close call",
+      "chineseName": "千钧一发",
+      "category": "其他动作",
+      "unlockCondition": "以低于 30 生命值 击杀 无畏舰",
+      "enUnlockCondition": "Kill the dreadnaught while you have less than 30 HP",
+      "completionRate": 34.2,
+      "version": "当前"
+    }
+  ],
+  "equipments": [
+    {
+      "name": "商店折扣券",
+      "type": "召唤",
+      "effect": "商店打折，生态专精初期值得刷",
+      "source": "局内附加",
+      "officialName": "DRG Coupon",
+      "officialEffect": "Gives a 20% discount to all shop purchases.",
+      "version": "当前"
+    },
+    {
+      "name": "集团配发磁铁",
+      "type": "拾取",
+      "effect": "自身拾取弱时拿，增强拾取能力",
+      "source": "局内附加",
+      "officialName": "Company-issued Magnet",
+      "officialEffect": "Spawns a magnet at the end of a stage that collects 50% of the XP.",
+      "version": "当前"
+    },
+    {
+      "name": "红糖块",
+      "type": "生存",
+      "effect": "吃红糖加血量上限，多碰瓷吃红糖",
+      "source": "局内附加",
+      "officialName": "Red Sugar Cube",
+      "officialEffect": "Collecting Red Sugar increases your Max HP by 3.",
+      "version": "当前"
+    },
+    {
+      "name": "挖矿概率得黄金/硝石/经验",
+      "type": "发育",
+      "effect": "挖矿时概率获得资源，适合钻机/高挖速",
+      "source": "局内附加",
+      "officialName": "Gold Scanner / Nitra Scanner / XP Scanner",
+      "officialEffect": "Small chance to find Gold/Nitra/XP when mining rock.",
+      "version": "当前"
+    },
+    {
+      "name": "记仇名单",
+      "type": "经验",
+      "effect": "受伤获得经验，熔岩之心碰瓷岩浆好用",
+      "source": "局内附加",
+      "officialName": "Clipboard of Grudges",
+      "officialEffect": "+10% XP Gain; Gain XP when you take damage.",
+      "version": "当前"
+    },
+    {
+      "name": "武器补给箱",
+      "type": "武器",
+      "effect": "抽别的职业武器，上下限大，勿轻易开",
+      "source": "局内附加",
+      "officialName": "Weapon Box",
+      "officialEffect": "Equip an additional random level 6 weapon with a random overclock.",
+      "version": "当前"
+    },
+    {
+      "name": "复古知识库",
+      "type": "发育",
+      "effect": "直升 3 级，后期 T2",
+      "source": "局内附加",
+      "officialName": "Ancient Knowledge",
+      "officialEffect": "Gain 3 Levels.",
+      "version": "当前"
+    },
+    {
+      "name": "侧目目镜 / EE5 目镜",
+      "type": "直伤/混伤",
+      "effect": "-30%伤害 +30%暴击 +100%暴伤，后期 T0.5",
+      "source": "局内附加",
+      "officialName": "Squint-EE5",
+      "officialEffect": "+30% Critical Chance, +100% Critical Damage, -30% Damage.",
+      "version": "当前"
+    },
+    {
+      "name": "P2W 控制器",
+      "type": "战力",
+      "effect": "原版每分钟-50黄金+100%伤；新版本改永久叠伤",
+      "source": "局内附加",
+      "officialName": "Pay2Win Console",
+      "officialEffect": "+2.5% damage whenever you reroll, stacks up to 100.",
+      "version": "当前"
+    },
+    {
+      "name": "涡轮解码器",
+      "type": "战力",
+      "effect": "降挖速，加伤和装填；小心被地刺困",
+      "source": "局内附加",
+      "officialName": "Turbo Encabulator",
+      "officialEffect": "+3% Damage, +3% Reload Speed, -5% Mining Speed for every equipped Overclock.",
+      "version": "当前"
+    },
+    {
+      "name": "三明治",
+      "type": "生存",
+      "effect": "回血，配能量棒抵消扣血",
+      "source": "局内附加",
+      "officialName": "待核（疑似 Tactical Cookie）",
+      "officialEffect": "Tactical Cookie：进入逃生舱时回复 50% 最大生命值（待核：官方无 exact 对应）",
+      "version": "待核"
+    },
+    {
+      "name": "椒盐卷饼",
+      "type": "生存",
+      "effect": "回血，配狂人头盔提低血脉容错",
+      "source": "局内附加",
+      "officialName": "Salty Pretzel",
+      "officialEffect": "+1 Armor for every 2% of missing HP.",
+      "version": "当前"
+    },
+    {
+      "name": "能量棒",
+      "type": "生存",
+      "effect": "配三明治",
+      "source": "局内附加",
+      "officialName": "Energy Bars",
+      "officialEffect": "+1% Damage, -3 Max HP for every player level.",
+      "version": "当前"
+    },
+    {
+      "name": "挖他命",
+      "type": "生存/升级",
+      "effect": "提升升级回复血量，后期收益低",
+      "source": "局内附加",
+      "officialName": "待核（疑似 Vita-miner Pills）",
+      "officialEffect": "Vita-miner Pills：+5% 最大生命值；升级时提升治疗效果（待核：官方无 exact 对应）",
+      "version": "待核"
+    },
+    {
+      "name": "狂人头盔",
+      "type": "战力",
+      "effect": "低血量容错，配椒盐卷饼/三明治",
+      "source": "局内附加",
+      "officialName": "待核（无 exact 对应）",
+      "officialEffect": "—（待核）",
+      "version": "待核"
+    },
+    {
+      "name": "腌制硝石",
+      "type": "直伤核心",
+      "effect": "加伤，直伤流关键",
+      "source": "局内附加",
+      "officialName": "Pickled Nitra",
+      "officialEffect": "+2% Damage and -0.5% Move Speed for every Nitra you have.",
+      "version": "当前"
+    },
+    {
+      "name": "反射调节仪",
+      "type": "闪避",
+      "effect": "每次受伤+5%闪避，最高 5 层",
+      "source": "局内附加",
+      "officialName": "Reflex Calibrator",
+      "officialEffect": "+5% Armor; +5% Dodge for 10s when taking damage, stacks 5.",
+      "version": "当前"
+    },
+    {
+      "name": "护甲润滑油",
+      "type": "闪避",
+      "effect": "+10% 闪避加成",
+      "source": "成就解锁",
+      "relatedAchievement": "油滑矮人（Slick, like butter / Greased Little Dwarf）",
+      "officialName": "Armor Grease",
+      "officialEffect": "+5% Move Speed; +2% Dodge while moving, stacks 5.",
+      "version": "当前"
+    },
+    {
+      "name": "硝基火药",
+      "type": "暴击",
+      "effect": "加暴击率",
+      "source": "成就解锁",
+      "relatedAchievement": "硝石井喷（Sprinkle of Nitra，收集 2000 Nitra）",
+      "officialName": "Nitragenic Powder",
+      "officialEffect": "+0.5% Critical Chance for every Nitra, max 500 stacks.",
+      "version": "当前"
+    },
+    {
+      "name": "嗜矿异虫召唤装备",
+      "type": "召唤",
+      "effect": "一次性召唤 4 只嗜矿异虫，全杀收益高",
+      "source": "成就解锁",
+      "relatedAchievement": "永不空军（Got bait?，单次击杀 3 只 Huuli Hoarders）",
+      "officialName": "Huuli Bait",
+      "officialEffect": "Lure out a bunch of Huuli Hoarders.",
+      "version": "当前"
+    }
+  ],
+  "overclocks": [
+    {
+      "id": "a-little-more-oomph",
+      "englishName": "A Little More Oomph!",
+      "chineseName": "威力提升",
+      "type": "balanced",
+      "effect": "+25% 伤害，+25% 装填速度",
+      "enEffect": "+25% Damage, +25% Reload Speed"
+    },
+    {
+      "id": "acid-blades",
+      "englishName": "Acid Blades",
+      "chineseName": "酸蚀利刃",
+      "type": "balanced",
+      "effect": "+15% 伤害，附加腐蚀",
+      "enEffect": "+15% Damage, +Corrosion"
+    },
+    {
+      "id": "acid-dipped-tips",
+      "englishName": "Acid Dipped Tips",
+      "chineseName": "酸浸箭尖",
+      "type": "balanced",
+      "effect": "伤害类型改为酸液",
+      "enEffect": "Changes damage type to Acid"
+    },
+    {
+      "id": "afterburner",
+      "englishName": "Afterburner",
+      "chineseName": "加力燃烧",
+      "type": "balanced",
+      "effect": "每有一条激活的光束，+10% 移动速度",
+      "enEffect": "+10% Move Speed per active beam"
+    },
+    {
+      "id": "akimbo-balanced",
+      "englishName": "Akimbo",
+      "chineseName": "双持",
+      "type": "balanced",
+      "effect": "-20% 武器范围，向相反方向额外射击一次",
+      "enEffect": "-20% Weapon Range, fires an additional shot in opposite direction"
+    },
+    {
+      "id": "battery-bullets",
+      "englishName": "Battery Bullets",
+      "chineseName": "电击弹匣",
+      "type": "balanced",
+      "effect": "伤害类型改为电击，+10% 伤害",
+      "enEffect": "Changes damage type to Electric, +10% Damage"
+    },
+    {
+      "id": "behaviour-chip-defensive",
+      "englishName": "Behaviour Chip: Defensive",
+      "chineseName": "防御芯片",
+      "type": "balanced",
+      "effect": "+2 额外无人机，无人机在玩家周围盘旋",
+      "enEffect": "+2 Drones, drones circle around the player"
+    },
+    {
+      "id": "behaviour-chip-aggro",
+      "englishName": "Behaviour Chip: Aggro",
+      "chineseName": "主动寻敌",
+      "type": "balanced",
+      "effect": "无人机主动寻找敌人",
+      "enEffect": "Drones actively seek enemies"
+    },
+    {
+      "id": "better-ball-bearings",
+      "englishName": "Better Ball Bearings",
+      "chineseName": "顺滑轴承",
+      "type": "balanced",
+      "effect": "增加旋转速度",
+      "enEffect": "Increases rotation speed"
+    },
+    {
+      "id": "big-game-hunter",
+      "englishName": "Big Game Hunter",
+      "chineseName": "狩猎大型猎物",
+      "type": "balanced",
+      "effect": "+20% 暴击伤害，+20% 暴击几率，以生命值最高敌人为目标",
+      "enEffect": "+20% Crit Dmg, +20% Crit Chance, targets highest HP enemy"
+    },
+    {
+      "id": "bigger-mags-balanced",
+      "englishName": "Bigger Mags",
+      "chineseName": "扩容弹匣",
+      "type": "balanced",
+      "effect": "+100% 弹匣容量（部分武器有负面调整）",
+      "enEffect": "+100% Magazine Size (may have trade-offs)"
+    },
+    {
+      "id": "bigger-tanks",
+      "englishName": "Bigger Tanks",
+      "chineseName": "扩容储罐",
+      "type": "balanced",
+      "effect": "+100% 持续/寿命，+10%/25% 武器范围",
+      "enEffect": "+100% Duration, +10%/25% Weapon Range"
+    },
+    {
+      "id": "charged-reload",
+      "englishName": "Charged Reload",
+      "chineseName": "充能装填",
+      "type": "balanced",
+      "effect": "装填时释放大型电击地面区域",
+      "enEffect": "Creates a large Electric ground zone on reload"
+    },
+    {
+      "id": "chemical-reload",
+      "englishName": "Chemical Reload",
+      "chineseName": "化学装填",
+      "type": "balanced",
+      "effect": "+25% 射速，-25% 装填速度；装填时 +25% 状态效果伤害",
+      "enEffect": "+25% Fire Rate, -25% Reload; +25% Status Dmg on reload"
+    },
+    {
+      "id": "cluster-grenades",
+      "englishName": "Cluster Grenades",
+      "chineseName": "集束手雷",
+      "type": "balanced",
+      "effect": "手雷分裂成 3 个较弱的版本",
+      "enEffect": "Grenades split into 3 weaker versions"
+    },
+    {
+      "id": "coilgun-mining-damage",
+      "englishName": "Coilgun Mining Damage",
+      "chineseName": "线圈炮挖矿",
+      "type": "balanced",
+      "effect": "射击可对地形造成伤害",
+      "enEffect": "Shots can damage terrain"
+    },
+    {
+      "id": "cold-blades",
+      "englishName": "Cold Blades",
+      "chineseName": "寒冰刀片",
+      "type": "balanced",
+      "effect": "+15% 伤害，附加减速",
+      "enEffect": "+15% Damage, +Slow"
+    },
+    {
+      "id": "cold-plasma",
+      "englishName": "Cold Plasma",
+      "chineseName": "低温等离子体",
+      "type": "balanced",
+      "effect": "+15% 伤害，附加减速",
+      "enEffect": "+15% Damage, +Slow"
+    },
+    {
+      "id": "compact-explosives",
+      "englishName": "Compact Explosives",
+      "chineseName": "紧凑炸药",
+      "type": "balanced",
+      "effect": "+30% 爆炸半径",
+      "enEffect": "+30% Explosion Radius"
+    },
+    {
+      "id": "coolant-leak",
+      "englishName": "Coolant Leak",
+      "chineseName": "冷却液泄漏",
+      "type": "balanced",
+      "effect": "炮塔减速附近的敌人",
+      "enEffect": "Turrets slow nearby enemies"
+    },
+    {
+      "id": "corrosive-coating",
+      "englishName": "Corrosive Coating",
+      "chineseName": "腐蚀涂层",
+      "type": "balanced",
+      "effect": "投掷斧留下酸液痕迹",
+      "enEffect": "Throwing axes leave Acid trail"
+    },
+    {
+      "id": "corrosive-thunder",
+      "englishName": "Corrosive Thunder",
+      "chineseName": "腐蚀雷霆",
+      "type": "balanced",
+      "effect": "感应地雷变为酸液和电击",
+      "enEffect": "Mines become Acid and Electric"
+    },
+    {
+      "id": "crowd-cooker",
+      "englishName": "Crowd Cooker",
+      "chineseName": "群体灼烧",
+      "type": "balanced",
+      "effect": "增加光束宽度",
+      "enEffect": "Increases beam width"
+    },
+    {
+      "id": "cryo-bolt",
+      "englishName": "Cryo Bolt",
+      "chineseName": "冰冻箭矢",
+      "type": "balanced",
+      "effect": "箭矢循环中添加冰冻箭矢",
+      "enEffect": "Adds a Cryo arrow to the cycle"
+    },
+    {
+      "id": "diesel-soaked",
+      "englishName": "Diesel Soaked",
+      "chineseName": "浸油",
+      "type": "balanced",
+      "effect": "投掷斧留下火焰痕迹",
+      "enEffect": "Throwing axes leave Fire trail"
+    },
+    {
+      "id": "diffractor-prism",
+      "englishName": "Diffractor Prism",
+      "chineseName": "衍射棱镜",
+      "type": "balanced",
+      "effect": "光束在地形上弹射",
+      "enEffect": "Beams bounce off terrain"
+    },
+    {
+      "id": "disposable-tech-balanced",
+      "englishName": "Disposable Tech",
+      "chineseName": "一次性技术",
+      "type": "balanced",
+      "effect": "无人机/炮塔爆炸而不是返回",
+      "enEffect": "Drones/turrets explode instead of returning"
+    },
+    {
+      "id": "drone-mining-damage",
+      "englishName": "Drone Mining Damage",
+      "chineseName": "无人机挖矿",
+      "type": "balanced",
+      "effect": "无人机可对地形造成伤害",
+      "enEffect": "Drones can damage terrain"
+    },
+    {
+      "id": "electrified-rounds",
+      "englishName": "Electrified Rounds",
+      "chineseName": "电击弹",
+      "type": "balanced",
+      "effect": "+20% 射速，+20% 装填速度，伤害改为电击",
+      "enEffect": "+20% Fire Rate, +20% Reload Speed, damage becomes Electric"
+    },
+    {
+      "id": "explosive-reload",
+      "englishName": "Explosive Reload",
+      "chineseName": "爆炸装填",
+      "type": "balanced",
+      "effect": "+25% 装填速度，装填时释放爆炸",
+      "enEffect": "+25% Reload Speed, explodes on reload"
+    },
+    {
+      "id": "extra-capacity-balanced",
+      "englishName": "Extra Capacity",
+      "chineseName": "额外容量",
+      "type": "balanced",
+      "effect": "+1 炮塔/充能数",
+      "enEffect": "+1 Turret/Charge"
+    },
+    {
+      "id": "fire-bolt",
+      "englishName": "Fire Bolt",
+      "chineseName": "火焰箭矢",
+      "type": "balanced",
+      "effect": "箭矢循环中添加火焰箭矢",
+      "enEffect": "Adds a Fire arrow to the cycle"
+    },
+    {
+      "id": "fire-bullets",
+      "englishName": "Fire Bullets",
+      "chineseName": "燃烧弹",
+      "type": "balanced",
+      "effect": "伤害类型改为火焰",
+      "enEffect": "Changes damage type to Fire"
+    },
+    {
+      "id": "focused-lens",
+      "englishName": "Focused Lens",
+      "chineseName": "聚焦透镜",
+      "type": "balanced",
+      "effect": "+200% 伤害，增加长度减少宽度，以最高生命值敌人为目标",
+      "enEffect": "+200% Dmg, increased length, targets highest HP enemy"
+    },
+    {
+      "id": "frequency-amp",
+      "englishName": "Frequency Amp",
+      "chineseName": "频率放大器",
+      "type": "balanced",
+      "effect": "每激活一个无人机 +7.5% 状态效果伤害",
+      "enEffect": "+7.5% Status Effect Dmg per active drone"
+    },
+    {
+      "id": "frostburn",
+      "englishName": "Frostburn",
+      "chineseName": "霜燃",
+      "type": "balanced",
+      "effect": "+15% 伤害，附加燃烧",
+      "enEffect": "+15% Damage, +Burn"
+    },
+    {
+      "id": "fusion-turbines",
+      "englishName": "Fusion Turbines",
+      "chineseName": "聚变涡轮",
+      "type": "balanced",
+      "effect": "+25% 寿命/持续时间",
+      "enEffect": "+25% Lifetime/Duration"
+    },
+    {
+      "id": "gas-rerouting",
+      "englishName": "Gas Rerouting",
+      "chineseName": "气压重导",
+      "type": "balanced",
+      "effect": "+30% 射速，+30% 装填速度",
+      "enEffect": "+30% Fire Rate, +30% Reload Speed"
+    },
+    {
+      "id": "gold-sniffer",
+      "englishName": "Gold Sniffer",
+      "chineseName": "黄金嗅探器",
+      "type": "balanced",
+      "effect": "无人机挖矿时有几率找到黄金",
+      "enEffect": "Chance to find Gold when mining"
+    },
+    {
+      "id": "high-caliber-rounds",
+      "englishName": "High Caliber Rounds",
+      "chineseName": "大口径弹药",
+      "type": "balanced",
+      "effect": "+100% 穿透，+30% 伤害，-30% 射速",
+      "enEffect": "+100% Pierce, +30% Dmg, -30% Fire Rate"
+    },
+    {
+      "id": "high-velocity-bullets",
+      "englishName": "High Velocity Bullets",
+      "chineseName": "高速弹头",
+      "type": "balanced",
+      "effect": "+50% 武器范围，+10% 伤害",
+      "enEffect": "+50% Weapon Range, +10% Damage"
+    },
+    {
+      "id": "hot-plasma-balanced",
+      "englishName": "Hot Plasma",
+      "chineseName": "高温等离子体",
+      "type": "balanced",
+      "effect": "+15% 伤害，附加燃烧",
+      "enEffect": "+15% Damage, +Burn"
+    },
+    {
+      "id": "impact-punch",
+      "englishName": "Impact Punch",
+      "chineseName": "冲击拳",
+      "type": "balanced",
+      "effect": "+75% 伤害",
+      "enEffect": "+75% Damage"
+    },
+    {
+      "id": "incendiary-payload",
+      "englishName": "Incendiary Payload",
+      "chineseName": "燃烧弹头",
+      "type": "balanced",
+      "effect": "火箭弹点燃地面",
+      "enEffect": "Rockets ignite the ground"
+    },
+    {
+      "id": "ionized-plasma-balanced",
+      "englishName": "Ionized Plasma",
+      "chineseName": "电离等离子体",
+      "type": "balanced",
+      "effect": "+15% 伤害，附加电击",
+      "enEffect": "+15% Damage, +Electric"
+    },
+    {
+      "id": "kinda-looks-like-a-magnet",
+      "englishName": "Kinda Looks Like a Magnet",
+      "chineseName": "看着像磁铁",
+      "type": "balanced",
+      "effect": "眩晕清扫器可拾取经验和材料",
+      "enEffect": "Stun sweeper picks up XP and materials"
+    },
+    {
+      "id": "knuckle-grip",
+      "englishName": "Knuckle Grip",
+      "chineseName": "关节握把",
+      "type": "balanced",
+      "effect": "+350% 武器范围，呈螺旋飞行后返回",
+      "enEffect": "+350% Weapon Range, flies in spiral then returns"
+    },
+    {
+      "id": "lightweight-alloy",
+      "englishName": "Lightweight Alloy",
+      "chineseName": "轻量化合金",
+      "type": "balanced",
+      "effect": "+50%/30% 武器范围",
+      "enEffect": "+50%/30% Weapon Range"
+    },
+    {
+      "id": "magnetic-alloy",
+      "englishName": "Magnetic Alloy",
+      "chineseName": "磁性合金",
+      "type": "balanced",
+      "effect": "炮塔可拾取附近经验和材料",
+      "enEffect": "Turrets pick up nearby XP and materials"
+    },
+    {
+      "id": "marker-lights",
+      "englishName": "Marker Lights",
+      "chineseName": "标记灯",
+      "type": "balanced",
+      "effect": "每激活一个无人机，所有武器 +7.5% 武器范围",
+      "enEffect": "+7.5% Weapon Range to all weapons per active drone"
+    },
+    {
+      "id": "mining-directive",
+      "englishName": "Mining Directive",
+      "chineseName": "挖矿指令",
+      "type": "balanced",
+      "effect": "炮塔挖掘附近的墙壁",
+      "enEffect": "Turrets dig nearby walls"
+    },
+    {
+      "id": "more-beams",
+      "englishName": "More Beams",
+      "chineseName": "更多光束",
+      "type": "balanced",
+      "effect": "+1 光束",
+      "enEffect": "+1 Beam"
+    },
+    {
+      "id": "more-drones-balanced",
+      "englishName": "More Drones",
+      "chineseName": "更多无人机",
+      "type": "balanced",
+      "effect": "+2/+1 额外无人机",
+      "enEffect": "+2/+1 Extra Drones"
+    },
+    {
+      "id": "more-mines",
+      "englishName": "More Mines",
+      "chineseName": "更多地雷",
+      "type": "balanced",
+      "effect": "增加 2 个地雷",
+      "enEffect": "+2 Mines"
+    },
+    {
+      "id": "nano-waves",
+      "englishName": "Nano Waves",
+      "chineseName": "纳米波",
+      "type": "balanced",
+      "effect": "+100% 效力，-30% 伤害",
+      "enEffect": "+100% Potency, -30% Damage"
+    },
+    {
+      "id": "overheat",
+      "englishName": "Overheat",
+      "chineseName": "过热",
+      "type": "balanced",
+      "effect": "+100% 伤害，-30% 寿命",
+      "enEffect": "+100% Damage, -30% Lifetime"
+    },
+    {
+      "id": "pan-fried-shells",
+      "englishName": "Pan Fried Shells",
+      "chineseName": "煎烤弹壳",
+      "type": "balanced",
+      "effect": "伤害类型改为火焰",
+      "enEffect": "Changes damage type to Fire"
+    },
+    {
+      "id": "personal-space-invaders",
+      "englishName": "Personal Space Invaders",
+      "chineseName": "私人空间入侵者",
+      "type": "balanced",
+      "effect": "-50% 武器范围，+2 无人机在周围盘旋",
+      "enEffect": "-50% Weapon Range, +2 Drones circling"
+    },
+    {
+      "id": "piercing-projectiles",
+      "englishName": "Piercing Projectiles",
+      "chineseName": "穿透弹",
+      "type": "balanced",
+      "effect": "+200% 穿透，-30% 寿命",
+      "enEffect": "+200% Pierce, -30% Lifetime"
+    },
+    {
+      "id": "plasma-coating",
+      "englishName": "Plasma Coating",
+      "chineseName": "等离子涂层",
+      "type": "balanced",
+      "effect": "伤害类型改为等离子",
+      "enEffect": "Changes damage type to Plasma"
+    },
+    {
+      "id": "plasmatic-rounds",
+      "englishName": "Plasmatic Rounds",
+      "chineseName": "等离子弹",
+      "type": "balanced",
+      "effect": "伤害类型改为等离子",
+      "enEffect": "Changes damage type to Plasma"
+    },
+    {
+      "id": "potent-juice",
+      "englishName": "Potent Juice",
+      "chineseName": "强力药剂",
+      "type": "balanced",
+      "effect": "+30%/50% 效力",
+      "enEffect": "+30%/50% Potency"
+    },
+    {
+      "id": "refrigerated-gunpowder",
+      "englishName": "Refrigerated Gunpowder",
+      "chineseName": "冷藏火药",
+      "type": "balanced",
+      "effect": "伤害类型改为冰冻",
+      "enEffect": "Changes damage type to Cryo"
+    },
+    {
+      "id": "reload-shield",
+      "englishName": "Reload Shield",
+      "chineseName": "换弹护盾",
+      "type": "balanced",
+      "effect": "-25% 装填速度，+25% 射速，装填时 +100% 护甲",
+      "enEffect": "-25% Reload, +25% Fire Rate, +100% Armor on reload"
+    },
+    {
+      "id": "rubber-tip",
+      "englishName": "Rubber Tip",
+      "chineseName": "橡胶弹头",
+      "type": "balanced",
+      "effect": "+15% 伤害，附加击退",
+      "enEffect": "+15% Damage, +Knockback"
+    },
+    {
+      "id": "runic-warhead",
+      "englishName": "Runic Warhead",
+      "chineseName": "符文弹头",
+      "type": "balanced",
+      "effect": "+50% 爆炸半径",
+      "enEffect": "+50% Explosion Radius"
+    },
+    {
+      "id": "secret-sauce",
+      "englishName": "Secret Sauce",
+      "chineseName": "秘制酱料",
+      "type": "balanced",
+      "effect": "+20% 效力，所有其他武器 +10% 效力",
+      "enEffect": "+20% Potency, all other weapons +10% Potency"
+    },
+    {
+      "id": "sidearm",
+      "englishName": "Sidearm",
+      "chineseName": "指定副手",
+      "type": "balanced",
+      "effect": "-20% 伤害，所有其他武器 +25% 伤害",
+      "enEffect": "-20% Dmg, all other weapons +25% Dmg"
+    },
+    {
+      "id": "spare-rockets",
+      "englishName": "Spare Rockets",
+      "chineseName": "备用火箭",
+      "type": "balanced",
+      "effect": "+3 弹匣容量",
+      "enEffect": "+3 Magazine Capacity"
+    },
+    {
+      "id": "tank-tracks",
+      "englishName": "Tank Tracks",
+      "chineseName": "坦克履带",
+      "type": "balanced",
+      "effect": "炮塔跟随玩家移动",
+      "enEffect": "Turrets follow the player"
+    },
+    {
+      "id": "tape-some-ice-to-it",
+      "englishName": "Tape Some Ice to It!",
+      "chineseName": "绑点冰块！",
+      "type": "balanced",
+      "effect": "为手雷添加冰冻爆炸",
+      "enEffect": "Adds a Cryo explosion to grenades"
+    },
+    {
+      "id": "tape-some-nails-to-it",
+      "englishName": "Tape Some Nails to It",
+      "chineseName": "绑点钉子",
+      "type": "balanced",
+      "effect": "+10% 伤害，附加动能爆炸",
+      "enEffect": "+10% Dmg, adds Kinetic explosion"
+    },
+    {
+      "id": "thermal-overload",
+      "englishName": "Thermal Overload",
+      "chineseName": "热力过载",
+      "type": "balanced",
+      "effect": "光束可开采地形",
+      "enEffect": "Beams can mine terrain"
+    },
+    {
+      "id": "true-tnt",
+      "englishName": "True TNT",
+      "chineseName": "真·烈性炸药",
+      "type": "balanced",
+      "effect": "手雷爆炸可对地形造成伤害",
+      "enEffect": "Grenade explosions can damage terrain"
+    },
+    {
+      "id": "vortex-core",
+      "englishName": "Vortex Core",
+      "chineseName": "漩涡核心",
+      "type": "balanced",
+      "effect": "等离子投射物吸引周围物体",
+      "enEffect": "Plasma projectiles attract nearby objects"
+    },
+    {
+      "id": "widened-sprinkler-balanced",
+      "englishName": "Widened Sprinkler",
+      "chineseName": "加宽喷头",
+      "type": "balanced",
+      "effect": "+25% 地面区域半径和持续时间",
+      "enEffect": "+25% Ground Zone Radius and Duration"
+    },
+    {
+      "id": "widget-spinner",
+      "englishName": "Widget Spinner",
+      "chineseName": "旋转装置",
+      "type": "balanced",
+      "effect": "+20% 寿命，光束 360 度旋转",
+      "enEffect": "+20% Lifetime, beams rotate 360°"
+    },
+    {
+      "id": "akimbo-unstable",
+      "englishName": "Akimbo",
+      "chineseName": "双持",
+      "type": "unstable",
+      "effect": "向相反方向额外射击一次",
+      "enEffect": "Fires an additional shot in opposite direction"
+    },
+    {
+      "id": "bigger-mags-unstable",
+      "englishName": "Bigger Mags",
+      "chineseName": "超大弹匣",
+      "type": "unstable",
+      "effect": "+100% 弹匣容量，+100% 射速",
+      "enEffect": "+100% Magazine Size, +100% Fire Rate"
+    },
+    {
+      "id": "bolt-volley",
+      "englishName": "Bolt Volley",
+      "chineseName": "箭矢齐射",
+      "type": "unstable",
+      "effect": "一次射出所有类型的箭矢",
+      "enEffect": "Fires all arrow types at once"
+    },
+    {
+      "id": "bullet-helix",
+      "englishName": "Bullet Helix",
+      "chineseName": "螺旋弹道",
+      "type": "unstable",
+      "effect": "+200% 射速，+100% 弹匣容量，呈螺旋状射击",
+      "enEffect": "+200% Fire Rate, +100% Magazine, spiral pattern"
+    },
+    {
+      "id": "cataclysm-core",
+      "englishName": "Cataclysm Core",
+      "chineseName": "灾变核心",
+      "type": "unstable",
+      "effect": "+75% 地面区域半径，+50% 地面区域伤害",
+      "enEffect": "+75% Ground Zone Radius, +50% Ground Zone Damage"
+    },
+    {
+      "id": "centralized-reflector",
+      "englishName": "Centralized Reflector",
+      "chineseName": "集束反射器",
+      "type": "unstable",
+      "effect": "+10% 效力，增加一道反向光束",
+      "enEffect": "+10% Potency, adds a beam firing backwards"
+    },
+    {
+      "id": "colossal-twinblade",
+      "englishName": "Colossal Twinblade",
+      "chineseName": "巨型双刃斧",
+      "type": "unstable",
+      "effect": "+125% 伤害，+75% 爆炸半径",
+      "enEffect": "+125% Damage, +75% Explosion Radius"
+    },
+    {
+      "id": "conduit",
+      "englishName": "Conduit",
+      "chineseName": "导电管道",
+      "type": "unstable",
+      "effect": "向附近所有构造体射出电击光束",
+      "enEffect": "Fires Electric beams at nearby constructs"
+    },
+    {
+      "id": "crisis-protocol",
+      "englishName": "Crisis Protocol",
+      "chineseName": "危机协议",
+      "type": "unstable",
+      "effect": "+25% 伤害，+25% 效力，受伤时无人机保护",
+      "enEffect": "+25% Dmg, +25% Potency, drones protect when hit"
+    },
+    {
+      "id": "death-spiral",
+      "englishName": "Death Spiral",
+      "chineseName": "死亡螺旋",
+      "type": "unstable",
+      "effect": "+200% 射速，+100% 弹匣容量，螺旋射击",
+      "enEffect": "+200% Fire Rate, +100% Magazine, spiral pattern"
+    },
+    {
+      "id": "disposable-tech-unstable",
+      "englishName": "Disposable Tech",
+      "chineseName": "一次性技术",
+      "type": "unstable",
+      "effect": "眩晕清扫器爆炸成电击脉冲",
+      "enEffect": "Stun sweeper explodes into Electric pulse"
+    },
+    {
+      "id": "double-barrel",
+      "englishName": "Double Barrel!",
+      "chineseName": "双管齐下！",
+      "type": "unstable",
+      "effect": "射出两颗平行的子弹",
+      "enEffect": "Fires two parallel bullets"
+    },
+    {
+      "id": "drippin-balls",
+      "englishName": "Drippin Balls",
+      "chineseName": "滴落火球",
+      "type": "unstable",
+      "effect": "炽热等离子体点燃地面",
+      "enEffect": "Hot plasma ignites the ground"
+    },
+    {
+      "id": "electrical-tether",
+      "englishName": "Electrical Tether",
+      "chineseName": "电弧连接",
+      "type": "unstable",
+      "effect": "无人机通过电弧与玩家相连",
+      "enEffect": "Drones connect to player via arc"
+    },
+    {
+      "id": "electrified-dispenser",
+      "englishName": "Electrified Dispenser",
+      "chineseName": "通电散布器",
+      "type": "unstable",
+      "effect": "无人机通过电弧连接到手雷",
+      "enEffect": "Drones connect to grenades via arc"
+    },
+    {
+      "id": "em-discharge",
+      "englishName": "EM Discharge",
+      "chineseName": "电磁放电",
+      "type": "unstable",
+      "effect": "电击SMG可射击友方目标获得电击效果",
+      "enEffect": "SMG can shoot allies for extra Electric"
+    },
+    {
+      "id": "even-more-beams",
+      "englishName": "Even More Beams",
+      "chineseName": "更多更多光束",
+      "type": "unstable",
+      "effect": "+3/+2 光束",
+      "enEffect": "+3/+2 Beams"
+    },
+    {
+      "id": "experimental-cluster-projectiles",
+      "englishName": "Experimental Cluster Projectiles",
+      "chineseName": "实验性集束弹",
+      "type": "unstable",
+      "effect": "等离子球消失时分裂为更小投射物",
+      "enEffect": "Plasma splits into smaller projectiles when expiring"
+    },
+    {
+      "id": "extra-capacity-unstable",
+      "englishName": "Extra Capacity",
+      "chineseName": "额外容量",
+      "type": "unstable",
+      "effect": "+3/+4 炮塔/充能数",
+      "enEffect": "+3/+4 Turrets/Charges"
+    },
+    {
+      "id": "extra-rocket-drum",
+      "englishName": "Extra Rocket Drum",
+      "chineseName": "额外火箭弹鼓",
+      "type": "unstable",
+      "effect": "增加大量火箭弹",
+      "enEffect": "Adds many rockets"
+    },
+    {
+      "id": "fan-of-axes",
+      "englishName": "Fan of Axes",
+      "chineseName": "扇形飞斧",
+      "type": "unstable",
+      "effect": "-50% 伤害，+20% 效力，弧形扔出小斧头",
+      "enEffect": "-50% Dmg, +20% Potency, throws axes in arc"
+    },
+    {
+      "id": "feedback-harness",
+      "englishName": "Feedback Harness",
+      "chineseName": "反馈背带",
+      "type": "unstable",
+      "effect": "受伤时扔出手雷，10 秒冷却",
+      "enEffect": "Throws grenade when taking damage, 10s cooldown"
+    },
+    {
+      "id": "fuel-leak",
+      "englishName": "Fuel Leak",
+      "chineseName": "燃料泄漏",
+      "type": "unstable",
+      "effect": "+20% 效力，无人机飞行路径留下火焰",
+      "enEffect": "+20% Potency, drones leave fire trail"
+    },
+    {
+      "id": "gravitational-core",
+      "englishName": "Gravitational Core",
+      "chineseName": "引力核心",
+      "type": "unstable",
+      "effect": "引爆前将敌人拉向中心",
+      "enEffect": "Pulls enemies toward center before exploding"
+    },
+    {
+      "id": "hallucinogenic",
+      "englishName": "Hallucinogenic",
+      "chineseName": "致幻剂",
+      "type": "unstable",
+      "effect": "+25% 装填速度，+25% 爆炸半径，敌人恐惧逃跑",
+      "enEffect": "+25% Reload, +25% Explosion Radius, enemies flee"
+    },
+    {
+      "id": "hot-plasma-unstable",
+      "englishName": "Hot Plasma",
+      "chineseName": "高温等离子体",
+      "type": "unstable",
+      "effect": "+50% 伤害，附加燃烧",
+      "enEffect": "+50% Damage, +Burn"
+    },
+    {
+      "id": "ionized-plasma-unstable",
+      "englishName": "Ionized Plasma",
+      "chineseName": "电离等离子体",
+      "type": "unstable",
+      "effect": "+50% 伤害，附加电击",
+      "enEffect": "+50% Damage, +Electric"
+    },
+    {
+      "id": "krakatoa-protocol",
+      "englishName": "Krakatoa Protocol",
+      "chineseName": "喀拉喀托协议",
+      "type": "unstable",
+      "effect": "死亡时爆炸留下一滩带电燃料",
+      "enEffect": "Explodes on death, leaving electrified fuel"
+    },
+    {
+      "id": "lead-wrapped-ammo",
+      "englishName": "Lead Wrapped Ammo",
+      "chineseName": "铅包弹药",
+      "type": "unstable",
+      "effect": "+150% 伤害，-20% 射速，-20% 装填速度",
+      "enEffect": "+150% Damage, -20% Fire Rate, -20% Reload Speed"
+    },
+    {
+      "id": "lmg-overload",
+      "englishName": "LMG Overload",
+      "chineseName": "机枪过载",
+      "type": "unstable",
+      "effect": "+100% 射速，-15 精准度",
+      "enEffect": "+100% Fire Rate, -15 Accuracy"
+    },
+    {
+      "id": "mini-pellets",
+      "englishName": "Mini Pellets",
+      "chineseName": "微型弹丸",
+      "type": "unstable",
+      "effect": "弹丸数量翻倍，每个伤害降低",
+      "enEffect": "Double pellets, each does reduced damage"
+    },
+    {
+      "id": "mk-11",
+      "englishName": "MK 11",
+      "chineseName": "MK 11",
+      "type": "unstable",
+      "effect": "增加射速/装填/弹匣，大幅降低精准度",
+      "enEffect": "+Fire Rate, Reload, Magazine; greatly reduces Accuracy"
+    },
+    {
+      "id": "more-bounce",
+      "englishName": "More Bounce!",
+      "chineseName": "更多弹跳！",
+      "type": "unstable",
+      "effect": "引爆前可弹跳更多次",
+      "enEffect": "Bounces more times before exploding"
+    },
+    {
+      "id": "more-drones-unstable",
+      "englishName": "More Drones",
+      "chineseName": "更多无人机",
+      "type": "unstable",
+      "effect": "+6/+3 额外无人机",
+      "enEffect": "+6/+3 Extra Drones"
+    },
+    {
+      "id": "network-mines",
+      "englishName": "Network Mines",
+      "chineseName": "网络地雷",
+      "type": "unstable",
+      "effect": "每激活一个地雷 +2% 伤害",
+      "enEffect": "+2% Damage per active mine"
+    },
+    {
+      "id": "omni-barrel",
+      "englishName": "Omni Barrel",
+      "chineseName": "全能枪管",
+      "type": "unstable",
+      "effect": "+100% 装填速度，+50% 伤害，+50% 穿透，8 方向射击",
+      "enEffect": "+100% Reload, +50% Dmg, +50% Pierce, 8-direction fire"
+    },
+    {
+      "id": "one-handed",
+      "englishName": "One-Handed",
+      "chineseName": "单手操作",
+      "type": "unstable",
+      "effect": "向相反方向额外扔出一个眩晕清扫器",
+      "enEffect": "Throws an extra stun sweeper in opposite direction"
+    },
+    {
+      "id": "overcharged-fuelcells",
+      "englishName": "Overcharged Fuelcells",
+      "chineseName": "过载燃料棒",
+      "type": "unstable",
+      "effect": "+175% 伤害，-40% 寿命",
+      "enEffect": "+175% Damage, -40% Lifetime"
+    },
+    {
+      "id": "payload",
+      "englishName": "Payload",
+      "chineseName": "爆破载荷",
+      "type": "unstable",
+      "effect": "箭矢击中大型敌人时留下电击场",
+      "enEffect": "Arrows leave Electric field on large enemies"
+    },
+    {
+      "id": "rapid-deployment",
+      "englishName": "Rapid Deployment",
+      "chineseName": "快速部署",
+      "type": "unstable",
+      "effect": "+2 炮塔，-50% 装填速度，一次性部署所有",
+      "enEffect": "+2 Turrets, -50% Reload, deploys all at once"
+    },
+    {
+      "id": "sawn-off",
+      "englishName": "Sawn-Off",
+      "chineseName": "截断枪管",
+      "type": "unstable",
+      "effect": "-50% 武器范围，-10 精准度，更多子弹",
+      "enEffect": "-50% Weapon Range, -10 Accuracy, more bullets"
+    },
+    {
+      "id": "six-shooter",
+      "englishName": "Six Shooter",
+      "chineseName": "六发左轮",
+      "type": "unstable",
+      "effect": "-50% 穿透，-10 精准度，6 方向射击",
+      "enEffect": "-50% Pierce, -10 Accuracy, fires in 6 directions"
+    },
+    {
+      "id": "spliced-emitter",
+      "englishName": "Spliced Emitter",
+      "chineseName": "拼接发射器",
+      "type": "unstable",
+      "effect": "大幅增加持续时间/范围/伤害",
+      "enEffect": "Greatly increases Duration/Range/Damage"
+    },
+    {
+      "id": "sticky-fuel",
+      "englishName": "Sticky Fuel",
+      "chineseName": "黏性燃料",
+      "type": "unstable",
+      "effect": "在地面增加燃烧区域",
+      "enEffect": "Adds burning zones on ground"
+    },
+    {
+      "id": "storm-e-mag",
+      "englishName": "Storm E-Mag",
+      "chineseName": "风暴电磁弹匣",
+      "type": "unstable",
+      "effect": "增加装填速度和射速，最后一颗子弹全方向射击",
+      "enEffect": "+Reload Speed, +Fire Rate, last bullet fires in all directions"
+    },
+    {
+      "id": "super-reload-shield",
+      "englishName": "Super Reload Shield",
+      "chineseName": "超级换弹护盾",
+      "type": "unstable",
+      "effect": "+75% 伤害，+50% 射速，装填时 +100% 护甲",
+      "enEffect": "+75% Dmg, +50% Fire Rate, +100% Armor on reload"
+    },
+    {
+      "id": "superconductor",
+      "englishName": "Superconductor",
+      "chineseName": "超导体",
+      "type": "unstable",
+      "effect": "+25% 暴击几率，+50% 暴击伤害",
+      "enEffect": "+25% Crit Chance, +50% Crit Damage"
+    },
+    {
+      "id": "the-favourite",
+      "englishName": "The Favourite",
+      "chineseName": "心头之好",
+      "type": "unstable",
+      "effect": "自身高额加成，削弱所有其他武器",
+      "enEffect": "High self-bonus, weakens all other weapons"
+    },
+    {
+      "id": "widened-sprinkler-unstable",
+      "englishName": "Widened Sprinkler",
+      "chineseName": "加宽喷头",
+      "type": "unstable",
+      "effect": "增加地面区域半径和持续时间",
+      "enEffect": "Increases Ground Zone radius and duration"
+    }
+  ],
+  "tags": {
+    "weaponTags": [
+      "KINETIC",
+      "FIRE",
+      "ELECTRIC",
+      "COLD",
+      "ACID",
+      "PLASMA",
+      "LIGHT",
+      "MEDIUM",
+      "HEAVY",
+      "THROWABLE",
+      "CONSTRUCT",
+      "PROJECTILE",
+      "EXPLOSIVE",
+      "DRONE",
+      "TURRET",
+      "GROUNDZONE",
+      "PRECISE",
+      "SPRAY",
+      "AREA",
+      "BEAM",
+      "LASTING"
+    ]
+  },
+  "cardTags": {
+    "M1000": [
+      "MEDIUM",
+      "PROJECTILE",
+      "ELECTRIC",
+      "COLD",
+      "EXPLOSIVE"
+    ],
+    "DeepCore GK2": [
+      "KINETIC",
+      "MEDIUM",
+      "PRECISE",
+      "PROJECTILE"
+    ],
+    "DRAK-25 Plasma Carbine": [
+      "PLASMA",
+      "MEDIUM",
+      "SPRAY",
+      "PROJECTILE"
+    ],
+    "Nishanka Boltshark": [
+      "ACID",
+      "ELECTRIC",
+      "MEDIUM",
+      "PRECISE",
+      "PROJECTILE"
+    ],
+    "Cryo Grenade": [
+      "COLD",
+      "THROWABLE",
+      "AREA",
+      "EXPLOSIVE"
+    ],
+    "Arc-Tek Cryo Guard": [
+      "COLD",
+      "CONSTRUCT",
+      "LASTING",
+      "DRONE"
+    ],
+    "Jury-Rigged Boomstick": [
+      "KINETIC",
+      "MEDIUM",
+      "SPRAY",
+      "PROJECTILE"
+    ],
+    "Voltaic Stun Sweeper": [
+      "ELECTRIC",
+      "LIGHT",
+      "THROWABLE"
+    ],
+    "TH-0R Bug Taser": [
+      "ELECTRIC",
+      "LIGHT",
+      "BEAM"
+    ],
+    "Zhukov NUK17": [
+      "KINETIC",
+      "LIGHT",
+      "SPRAY",
+      "PROJECTILE"
+    ],
+    "Thunderhead Heavy Autocannon": [
+      "KINETIC",
+      "HEAVY",
+      "PRECISE",
+      "PROJECTILE"
+    ],
+    "Seismic Repulsor": [
+      "KINETIC",
+      "CONSTRUCT",
+      "AREA",
+      "LASTING",
+      "TURRET"
+    ],
+    "Tactical Leadburster": [
+      "KINETIC",
+      "THROWABLE",
+      "LASTING",
+      "SPRAY",
+      "PROJECTILE"
+    ],
+    "Lead Storm Powered Minigun": [
+      "KINETIC",
+      "HEAVY",
+      "SPRAY",
+      "PROJECTILE"
+    ],
+    "Bulldog Heavy Revolver": [
+      "KINETIC",
+      "MEDIUM",
+      "PRECISE",
+      "PROJECTILE"
+    ],
+    "ArmsKore Coil Gun": [
+      "KINETIC",
+      "MEDIUM",
+      "BEAM",
+      "LASTING"
+    ],
+    "Hurricane Guided Rocket System": [
+      "KINETIC",
+      "HEAVY",
+      "SPRAY",
+      "AREA",
+      "EXPLOSIVE"
+    ],
+    "BRT7 Burst Fire Gun": [
+      "KINETIC",
+      "LIGHT",
+      "SPRAY",
+      "PROJECTILE"
+    ],
+    "Firefly Hunter Drone": [
+      "FIRE",
+      "CONSTRUCT",
+      "LASTING",
+      "DRONE"
+    ],
+    "Incendiary Grenade": [
+      "FIRE",
+      "THROWABLE",
+      "LASTING",
+      "EXPLOSIVE",
+      "GROUNDZONE"
+    ],
+    "Warthog Auto 210": [
+      "KINETIC",
+      "MEDIUM",
+      "SPRAY",
+      "PROJECTILE"
+    ],
+    "Shard Diffractor": [
+      "PLASMA",
+      "HEAVY",
+      "BEAM",
+      "LASTING"
+    ],
+    "Plasma Burster": [
+      "PLASMA",
+      "THROWABLE",
+      "AREA",
+      "EXPLOSIVE"
+    ],
+    "Breach Cutter / ArmsKore Coil Gun": [
+      "PLASMA",
+      "HEAVY",
+      "BEAM",
+      "LASTING"
+    ],
+    "LMG Gun Platform": [
+      "KINETIC",
+      "CONSTRUCT",
+      "LASTING",
+      "TURRET",
+      "PROJECTILE"
+    ],
+    "Krakatoa Sentinel": [
+      "FIRE",
+      "CONSTRUCT",
+      "BEAM",
+      "LASTING",
+      "TURRET"
+    ],
+    "Voltaic Shock Fence": [
+      "ELECTRIC",
+      "CONSTRUCT",
+      "LASTING",
+      "TURRET"
+    ],
+    "DeepCore PGL": [
+      "KINETIC",
+      "MEDIUM",
+      "PRECISE",
+      "EXPLOSIVE"
+    ],
+    "Hi-Volt Thunderbird": [
+      "ELECTRIC",
+      "CONSTRUCT",
+      "LASTING",
+      "DRONE"
+    ],
+    "LOK-1 Smart Rifle": [
+      "KINETIC",
+      "MEDIUM",
+      "PRECISE",
+      "PROJECTILE"
+    ],
+    "Shredder Swarm Grenade": [
+      "KINETIC",
+      "THROWABLE",
+      "LASTING",
+      "DRONE"
+    ],
+    "Stubby Voltaic SMG": [
+      "ELECTRIC",
+      "LIGHT",
+      "SPRAY",
+      "PROJECTILE"
+    ],
+    "Colette Wave Cooker": [
+      "FIRE",
+      "MEDIUM",
+      "BEAM",
+      "LASTING"
+    ],
+    "Corrosive Sludge Pump": [
+      "ACID",
+      "HEAVY",
+      "BEAM",
+      "LASTING",
+      "GROUNDZONE"
+    ],
+    "Cryo Cannon": [
+      "COLD",
+      "HEAVY",
+      "BEAM",
+      "LASTING"
+    ],
+    "Impact Axe": [
+      "KINETIC",
+      "THROWABLE",
+      "PRECISE",
+      "EXPLOSIVE"
+    ],
+    "K1-P Viper Drone": [
+      "ACID",
+      "CONSTRUCT",
+      "LASTING",
+      "DRONE",
+      "GROUNDZONE"
+    ],
+    "CRSPR Flamethrower": [
+      "FIRE",
+      "HEAVY",
+      "BEAM",
+      "LASTING"
+    ],
+    "Subata 120": [
+      "KINETIC",
+      "LIGHT",
+      "SPRAY",
+      "PROJECTILE"
+    ],
+    "Experimental Plasma Charger": [
+      "PLASMA",
+      "LIGHT",
+      "PRECISE",
+      "PROJECTILE"
+    ],
+    "High Explosive Grenade": [
+      "KINETIC",
+      "THROWABLE",
+      "AREA",
+      "EXPLOSIVE"
+    ],
+    "Neurotoxin Grenade": [
+      "ACID",
+      "THROWABLE",
+      "LASTING",
+      "AREA",
+      "EXPLOSIVE",
+      "GROUNDZONE"
+    ]
+  }
+}

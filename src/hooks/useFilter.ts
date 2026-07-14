@@ -1,6 +1,7 @@
 // 全局检索态管理：搜索词 + 当前 Tab + 各模块筛选（AND 组合）
 import { useCallback, useMemo, useState } from 'react'
 import type {
+  AchievementCategory,
   ModuleKey,
   Rating,
   SearchState,
@@ -17,9 +18,9 @@ import { equipments } from '../data/equipments'
 const initialState: SearchState = {
   query: '',
   activeModule: 'achievements',
-  achievement: { onlyDifficult: true },
+  achievement: { categories: [], onlyDifficult: true },
   weapon: { tags: [] },
-  equipment: {},
+  equipment: { types: [] },
 }
 
 export function useFilter() {
@@ -39,6 +40,37 @@ export function useFilter() {
     },
     [],
   )
+
+  const addAchievementCategory = useCallback((cat: AchievementCategory) => {
+    setState((s) => {
+      if (s.achievement.categories.includes(cat)) return s
+      return { ...s, achievement: { ...s.achievement, categories: [...s.achievement.categories, cat] } }
+    })
+  }, [])
+
+  const removeAchievementCategory = useCallback((cat: AchievementCategory) => {
+    setState((s) => ({
+      ...s,
+      achievement: {
+        ...s.achievement,
+        categories: s.achievement.categories.filter((c) => c !== cat),
+      },
+    }))
+  }, [])
+
+  const addEquipmentType = useCallback((type: string) => {
+    setState((s) => {
+      if (s.equipment.types.includes(type)) return s
+      return { ...s, equipment: { ...s.equipment, types: [...s.equipment.types, type] } }
+    })
+  }, [])
+
+  const removeEquipmentType = useCallback((type: string) => {
+    setState((s) => ({
+      ...s,
+      equipment: { ...s.equipment, types: s.equipment.types.filter((t) => t !== type) },
+    }))
+  }, [])
 
   const setWeaponClass = useCallback((classVal?: WeaponClass) => {
     setState((s) => ({ ...s, weapon: { ...s.weapon, class: classVal } }))
@@ -62,10 +94,6 @@ export function useFilter() {
     }))
   }, [])
 
-  const setEquipmentType = useCallback((type?: string) => {
-    setState((s) => ({ ...s, equipment: { ...s.equipment, type } }))
-  }, [])
-
   const setEquipmentSource = useCallback(
     (source?: SearchState['equipment']['source']) => {
       setState((s) => ({ ...s, equipment: { ...s.equipment, source } }))
@@ -76,9 +104,9 @@ export function useFilter() {
   const clearFilters = useCallback(() => {
     setState((s) => ({
       ...s,
-      achievement: { ...s.achievement, category: undefined, difficulty: undefined },
+      achievement: { ...s.achievement, categories: [], difficulty: undefined },
       weapon: { ...s.weapon, class: undefined, rating: undefined, tags: [] },
-      equipment: {},
+      equipment: { types: [] },
     }))
   }, [])
 
@@ -103,11 +131,14 @@ export function useFilter() {
     setQuery,
     setActiveModule,
     setAchievementFilter,
+    addAchievementCategory,
+    removeAchievementCategory,
     setWeaponClass,
     setWeaponRating,
     addWeaponTag,
     removeWeaponTag,
-    setEquipmentType,
+    addEquipmentType,
+    removeEquipmentType,
     setEquipmentSource,
     clearFilters,
     filteredAchievements,

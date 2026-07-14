@@ -34,6 +34,13 @@ export default defineConfig({
   build: {
     emptyOutDir: false,
   },
+  // 开发态代理：前端（vite dev 5173）经同源 /api 访问 Node 常驻服务（8787），
+  // 避免跨域；生产构建由 Node 服务同源托管，无需此代理。
+  server: {
+    proxy: {
+      '/api': 'http://localhost:8787',
+    },
+  },
   test: {
     globals: true,
     environment: 'jsdom',

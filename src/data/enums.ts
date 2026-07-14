@@ -38,9 +38,9 @@ export const ACHIEVEMENT_CATEGORY_LABEL: Record<AchievementCategory, { zh: strin
   '职业进阶': { zh: '职业进阶', en: 'Class Mastery' },
   '属性统计': { zh: '属性统计', en: 'Stats' },
   '装备': { zh: '装备', en: 'Equipment' },
-  '武器超频': { zh: '武器超频', en: 'Weapon OC' },
+  '武器超频': { zh: '完全超频', en: 'Weapon OC' },
   '武器专精': { zh: '武器专精', en: 'Weapon Mastery' },
-  '武器真专精': { zh: '武器真专精', en: 'Weapon True Mastery' },
+  '武器真专精': { zh: '深得精髓', en: 'Weapon True Mastery' },
   '生物群系': { zh: '生物群系', en: 'Biomes' },
   '武器标签': { zh: '武器标签', en: 'Weapon Tags' },
   '生物': { zh: '生物', en: 'Enemies' },
@@ -51,7 +51,7 @@ export const ACHIEVEMENT_CATEGORY_LABEL: Record<AchievementCategory, { zh: strin
   '伤害': { zh: '伤害', en: 'Damage' },
   '护卫': { zh: '护卫', en: 'Escort' },
   '异常·先锋·致命': { zh: '异常·先锋·致命', en: 'Anomaly·Vanguard·Lethal' },
-  '耐力': { zh: '耐力', en: 'Endurance' },
+  '耐力': { zh: '持之以恒', en: 'Endurance' },
   '其他动作': { zh: '其他动作', en: 'Other Actions' },
 }
 
@@ -158,3 +158,4 @@ export const RATING_LABEL: Record<Rating, string> = {
   C: 'C',
   '-': '-',
 }
+

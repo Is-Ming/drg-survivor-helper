@@ -34,7 +34,9 @@ export function filterAchievements(data: Achievement[], state: SearchState): Ach
   const selected =
     achievement.difficulty && achievement.difficulty.length > 0 ? achievement.difficulty : null
   const filtered = data.filter((a) => {
-    if (achievement.category && a.category !== achievement.category) return false
+    const achCats = Array.isArray(a.category) ? a.category : [a.category]
+    if (achievement.categories.length > 0 && !achievement.categories.some((c) => achCats.includes(c)))
+      return false
     if (selected && !selected.includes(tierForFilter(a.completionRate))) return false
     const hay = `${a.englishName} ${a.chineseName} ${a.unlockCondition} ${a.category}`
     return matchesQuery(hay, query)

@@ -1,8 +1,8 @@
 // 武器筛选：职业 + 评级 + 标签多选（标签来自标签管理，实时联动）
 import { Box, FormControl, InputLabel, MenuItem, Select, Chip, Autocomplete, TextField } from '@mui/material'
-import { RATINGS, WEAPON_CLASSES, WEAPON_CLASS_LABEL, WEAPON_TAG_LABEL, WEAPON_TAG_GROUPS } from '../../data/enums'
+import { RATINGS, WEAPON_CLASSES, WEAPON_CLASS_LABEL, WEAPON_TAG_GROUPS } from '../../data/enums'
 import type { Lang, Rating, SearchState, WeaponClass, WeaponTag } from '../../data/types'
-import { getWeaponTags, getWeaponTagLabel } from '../../hooks/useTagEditor'
+import { useTagEditor } from '../../hooks/useTagEditor'
 
 export function WeaponFilters({
   state,
@@ -19,8 +19,9 @@ export function WeaponFilters({
   removeWeaponTag: (tag: WeaponTag) => void
   lang: Lang
 }) {
-  // 从标签管理读取自定义武器标签列表（实时联动）
-  const customTags = getWeaponTags()
+  // 从标签管理读取自定义武器标签列表（实时联动，经 useTagEditor 读 merged.tags）
+  const editor = useTagEditor()
+  const customTags = editor.getTags()
   // 对自定义标签按已有分组归类（未匹配的归入其他）
   const groupedTags = WEAPON_TAG_GROUPS.map((g) => ({
     group: g.group,
@@ -83,8 +84,8 @@ export function WeaponFilters({
         value={state.weapon.tags}
         groupBy={(option) => groupLabelOf(option)}
         getOptionLabel={(option) => {
-          const en = WEAPON_TAG_LABEL[option]?.en ?? option
-          const zh = WEAPON_TAG_LABEL[option]?.zh ?? option
+          const en = editor.getTagLabel(option, 'en')
+          const zh = editor.getTagLabel(option, 'zh')
           return lang === 'zh' ? `${zh}(${en})` : en
         }}
         isOptionEqualToValue={(opt, val) => opt === val}
@@ -105,7 +106,7 @@ export function WeaponFilters({
           <Chip
             key={tag}
             size="small"
-            label={getWeaponTagLabel(tag, lang)}
+            label={editor.getTagLabel(tag, lang)}
             color="primary"
             onDelete={() => removeWeaponTag(tag)}
           />

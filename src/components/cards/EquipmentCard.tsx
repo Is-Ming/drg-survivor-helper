@@ -1,11 +1,35 @@
-// 装备卡片：类型/来源 chip + 关联成就 + 官网/攻略双区块 + 管理编辑
-import { useState } from 'react'
+// 装备卡片：类型/来源 chip + 关联成就 + 官网/攻略双区块 + 管理编辑 + 卡片标签
+import { useState, useEffect } from 'react'
 import { Card, CardContent, Typography, Box, Chip, TextField, IconButton } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add'
 import type { Equipment, Lang } from '../../data/types'
 import { EQUIPMENT_SOURCE_LABEL } from '../../data/enums'
-import { getEquipmentTypes } from '../../hooks/useTagEditor'
+import { useTagEditor } from '../../hooks/useTagEditor'
+import { useOverrides } from '../../hooks/useOverrides'
 import { TagPickerDialog } from '../TagPickerDialog'
+import { RemovableChip } from '../RemovableChip'
+
+function eqTypeLabel(type: string, lang: Lang): string {
+  if (lang === 'zh') return type
+  const map: Record<string, string> = {
+    '生存': 'Survival', '发育': 'Development', '战力': 'Combat Power',
+    '拾取': 'Loot', '经验': 'XP', '武器': 'Weapon', '直伤/混伤': 'Raw/Hybrid',
+    '生存/升级': 'Survival/Level', '直伤核心': 'Raw Core', '闪避': 'Dodge',
+    '暴击': 'Crit', '召唤': 'Summon',
+  }
+  return map[type] ?? type
+}
+
+/** 归一化装备类型为字符串数组（单值/多值/空均兼容） */
+function normalizeType(t: string | string[] | undefined, fallback: string): string[] {
+  if (Array.isArray(t)) {
+    const filtered = t.filter((x): x is string => typeof x === 'string' && x.length > 0)
+    if (filtered.length > 0) return filtered
+  } else if (typeof t === 'string' && t) {
+    return [t]
+  }
+  return fallback ? [fallback] : []
+}
 
 export function EquipmentCard({
   equip,
@@ -14,55 +38,73 @@ export function EquipmentCard({
   editable,
 }: {
   equip: Equipment
-  onTypeClick?: () => void
+  onTypeClick?: (type: string) => void
   lang: Lang
   editable?: boolean
 }) {
   const isUnlock = equip.source === '成就解锁'
-  const [, forceUpdate] = useState(0)
+  const { merged, saveEquipmentEdit, saveCardTags } = useOverrides()
+  const editor = useTagEditor()
 
   const sourceLabel = EQUIPMENT_SOURCE_LABEL[equip.source]?.[lang] ?? equip.source
 
-  // 可编辑字段的状态
-  const storageKey = `drg-eqp-edit-${equip.name}`
+  // 已合并的装备记录（override 优先），用于读取字段/类型
+  const mergedEquip = merged?.equipments?.find((e) => e.name === equip.name)
 
-  const getSaved = (field: string, fallback: string): string => {
-    try {
-      const s = JSON.parse(localStorage.getItem(storageKey) || '{}')
-      return s[field] ?? fallback
-    } catch { return fallback }
+  // 字段读取：merged 优先，回落 equip（已合并）字段
+  const getSaved = (field: 'name' | 'officialName' | 'officialEffect' | 'effect'): string => {
+    const v = mergedEquip?.[field]
+    return typeof v === 'string' && v ? v : ((equip[field] as string) ?? '')
   }
 
-  const doSave = (field: string, value: string) => {
-    try {
-      const s = JSON.parse(localStorage.getItem(storageKey) || '{}')
-      s[field] = value
-      localStorage.setItem(storageKey, JSON.stringify(s))
-      forceUpdate((n) => n + 1)
-    } catch { /* ignore */ }
+  const doSave = (field: 'name' | 'officialName' | 'officialEffect' | 'effect', value: string) => {
+    const patch: Partial<Equipment> = {}
+    patch[field] = value
+    saveEquipmentEdit(equip.name, patch)
   }
 
   const [typePickerOpen, setTypePickerOpen] = useState(false)
-  const allEqTypes = getEquipmentTypes()
-  // 类型显示：优先读取 localStorage 已保存的自定义类型，回落硬编码值
-  const currentType = (() => {
-    try {
-      const saved = JSON.parse(localStorage.getItem(storageKey) || '{}')
-      return saved.type || equip.type
-    } catch { return equip.type }
-  })()
-  const eqTypeLabel = allEqTypes.includes(currentType)
-    ? (lang === 'zh' ? currentType : (({
-        '生存': 'Survival', '发育': 'Development', '战力': 'Combat Power',
-        '拾取': 'Loot', '经验': 'XP', '武器': 'Weapon', '直伤/混伤': 'Raw/Hybrid',
-        '生存/升级': 'Survival/Level', '直伤核心': 'Raw Core', '闪避': 'Dodge',
-        '暴击': 'Crit', '召唤': 'Summon',
-      } as Record<string, string>)[currentType] ?? currentType))
-    : currentType
+  const allEqTypes = editor.getTypes()
+  // 类型显示：优先读取 merged.equipments[name].type（多值数组），回落硬编码单值
+  const [currentTypes, setCurrentTypes] = useState<string[]>(() => {
+    const t = mergedEquip?.type
+    const fb = Array.isArray(equip.type) ? (equip.type[0] ?? '') : equip.type
+    return normalizeType(t, fb)
+  })
 
-  const handleTypeChange = (newType: string) => {
-    doSave('type', newType)
-    forceUpdate((n) => n + 1)
+  // 与服务端合并值保持同步
+  useEffect(() => {
+    const t = mergedEquip?.type
+    if (t !== undefined) setCurrentTypes(normalizeType(t, ''))
+  }, [mergedEquip])
+
+  const toggleType = (type: string) => {
+    const next = currentTypes.includes(type)
+      ? currentTypes.filter((t) => t !== type)
+      : [...currentTypes, type]
+    setCurrentTypes(next)
+    // 类型多值写入 overrides.equipments[name].type
+    saveEquipmentEdit(equip.name, { type: next })
+  }
+
+  // —— T9.5 装备卡片标签（对称武器卡片标签，经 overrides.cardTags[name] 持久化）——
+  const [cardTagPickerOpen, setCardTagPickerOpen] = useState(false)
+  const [currentCardTags, setCurrentCardTags] = useState<string[]>(() => merged?.cardTags?.[equip.name] ?? [])
+  useEffect(() => {
+    const stored = merged?.cardTags?.[equip.name]
+    if (Array.isArray(stored)) setCurrentCardTags(stored)
+  }, [merged, equip.name])
+
+  const removeCardTag = (tag: string) => {
+    const next = currentCardTags.filter((t) => t !== tag)
+    setCurrentCardTags(next)
+    saveCardTags(equip.name, next)
+  }
+  const addCardTag = (tag: string) => {
+    if (currentCardTags.includes(tag)) return
+    const next = [...currentCardTags, tag]
+    setCurrentCardTags(next)
+    saveCardTags(equip.name, next)
   }
 
   return (
@@ -76,7 +118,7 @@ export function EquipmentCard({
       <CardContent>
         <Box display="flex" justifyContent="space-between" alignItems="center">
           <EditableField
-            value={getSaved('name', equip.name)}
+            value={getSaved('name')}
             onSave={(v) => doSave('name', v)}
             editable={editable}
             variant="subtitle1"
@@ -85,15 +127,19 @@ export function EquipmentCard({
           <Box display="flex" gap={0.5} alignItems="center">
             {editable ? (
               <>
-                <Chip size="small" label={eqTypeLabel} clickable onClick={() => setTypePickerOpen(true)}
-                  sx={{ cursor: 'pointer', '&:hover': { borderColor: 'primary.main' } }} />
+                {currentTypes.map((type) => (
+                  <RemovableChip key={type} label={eqTypeLabel(type, lang)} onRemove={() => toggleType(type)} color="primary.light" />
+                ))}
                 <IconButton size="small" color="primary" onClick={() => setTypePickerOpen(true)}
                   sx={{ border: 1, borderColor: 'divider', borderRadius: 1.5, width: 28, height: 28 }}>
                   <AddIcon sx={{ fontSize: 16 }} />
                 </IconButton>
               </>
             ) : (
-              <Chip size="small" label={eqTypeLabel} clickable={!!onTypeClick} onClick={onTypeClick} />
+              currentTypes.map((type) => (
+                <Chip key={type} size="small" label={eqTypeLabel(type, lang)} clickable={!!onTypeClick}
+                  onClick={() => onTypeClick?.(type)} />
+              ))
             )}
             <Chip
               size="small"
@@ -102,6 +148,27 @@ export function EquipmentCard({
             />
           </Box>
         </Box>
+
+        {/* 装备卡片标签（可编辑） —— 对称武器卡片标签 */}
+        {editable ? (
+          <Box mt={1} mb={1} display="flex" flexWrap="wrap" gap={0.5} alignItems="center">
+            {currentCardTags.map((tag) => (
+              <RemovableChip key={tag} label={tag} onRemove={() => removeCardTag(tag)} color="secondary.light" />
+            ))}
+            <IconButton size="small" color="secondary" onClick={() => setCardTagPickerOpen(true)}
+              sx={{ border: 1, borderColor: 'divider', borderRadius: 1.5, width: 28, height: 28 }}>
+              <AddIcon sx={{ fontSize: 16 }} />
+            </IconButton>
+          </Box>
+        ) : (
+          currentCardTags.length > 0 && (
+            <Box mt={1} mb={1} display="flex" flexWrap="wrap" gap={0.5} alignItems="center">
+              {currentCardTags.map((tag) => (
+                <Chip key={tag} size="small" label={tag} variant="outlined" />
+              ))}
+            </Box>
+          )
+        )}
 
         {/* 官网描述区块（蓝色） */}
         {equip.officialName && (
@@ -120,7 +187,7 @@ export function EquipmentCard({
             </Typography>
             <Typography variant="subtitle2" fontWeight={600} sx={{ mt: 0.3 }}>
               <EditableField
-                value={getSaved('officialName', equip.officialName)}
+                value={getSaved('officialName')}
                 onSave={(v) => doSave('officialName', v)}
                 editable={editable}
                 variant="subtitle2"
@@ -129,7 +196,7 @@ export function EquipmentCard({
             </Typography>
             <Typography variant="body2" sx={{ mt: 0.3, opacity: 0.9 }}>
               <EditableField
-                value={getSaved('officialEffect', equip.officialEffect ?? '')}
+                value={getSaved('officialEffect')}
                 onSave={(v) => doSave('officialEffect', v)}
                 editable={editable}
                 variant="body2"
@@ -159,7 +226,7 @@ export function EquipmentCard({
           </Typography>
           <Typography variant="body2" sx={{ mt: 0.3, opacity: 0.9 }}>
             <EditableField
-              value={getSaved('effect', equip.effect)}
+              value={getSaved('effect')}
               onSave={(v) => doSave('effect', v)}
               editable={editable}
               variant="body2"
@@ -183,14 +250,24 @@ export function EquipmentCard({
       <TagPickerDialog
         open={typePickerOpen}
         onClose={() => setTypePickerOpen(false)}
-        title={lang === 'zh' ? '选择装备类型' : 'Select Type'}
+        title={lang === 'zh' ? '选择装备类型（可多选）' : 'Select Types (multi)'}
         availableTags={allEqTypes}
-        selectedTags={[currentType]}
+        selectedTags={currentTypes}
+        onToggle={(tag) => toggleType(tag)}
+        getLabel={(tag) => eqTypeLabel(tag, lang)}
+        lang={lang}
+      />
+
+      <TagPickerDialog
+        open={cardTagPickerOpen}
+        onClose={() => setCardTagPickerOpen(false)}
+        title={lang === 'zh' ? '选择卡片标签' : 'Card Tags'}
+        availableTags={allEqTypes}
+        selectedTags={currentCardTags}
         onToggle={(tag) => {
-          handleTypeChange(tag)
-          setTypePickerOpen(false)
+          if (currentCardTags.includes(tag)) removeCardTag(tag)
+          else addCardTag(tag)
         }}
-        getLabel={(tag) => tag}
         lang={lang}
       />
     </Card>

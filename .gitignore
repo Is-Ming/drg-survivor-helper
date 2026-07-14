@@ -4,3 +4,16 @@ dist
 dist-ssr
 *.local
 .DS_Store
+
+# deploy private key — MUST NEVER be committed to GitHub
+.deploy_key
+# server admin token（ADMIN_PASSWORD_HASH 哈希）—— 绝不可提交进仓库
+server/.env
+# local deploy artifact / scratch
+drg-deploy.tar
+check_residual2.py
+dump_maps.py
+extract_tokens.py
+nul
+# vite build temp config cache（tsc/vite 偶发残留，非交付物）
+vite.config.ts.timestamp-*.mjs
