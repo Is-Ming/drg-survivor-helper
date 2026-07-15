@@ -68,7 +68,7 @@ export function PublicPage() {
   let cards: ReactNode = null
   if (state.activeModule === 'achievements') {
     cards = filteredAchievements.map((a) => (
-      <AchievementCard key={a.englishName} ach={a} highlight={state.achievement.onlyDifficult} lang={lang} getWeaponName={getWeaponName} />
+      <AchievementCard key={a.englishName} ach={a} lang={lang} getWeaponName={getWeaponName} />
     ))
   } else if (state.activeModule === 'weapons') {
     cards = filteredWeapons.map((w) => (
@@ -104,12 +104,14 @@ export function PublicPage() {
         activeModule={state.activeModule}
         state={state}
         setAchievementFilter={f.setAchievementFilter}
+        setAchievementSort={f.setAchievementSort}
         addAchievementCategory={f.addAchievementCategory}
         removeAchievementCategory={f.removeAchievementCategory}
         setWeaponClass={f.setWeaponClass}
         setWeaponRating={f.setWeaponRating}
         addWeaponTag={f.addWeaponTag}
         removeWeaponTag={f.removeWeaponTag}
+        setWeaponSort={f.setWeaponSort}
         addEquipmentType={f.addEquipmentType}
         removeEquipmentType={f.removeEquipmentType}
         setEquipmentSource={f.setEquipmentSource}

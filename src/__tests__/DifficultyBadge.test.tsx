@@ -7,6 +7,10 @@ describe('DifficultyBadge (rarity)', () => {
     const { container } = render(<DifficultyBadge rarity="稀有" show={false} lang="zh" />)
     expect(container).toBeEmptyDOMElement()
   })
+  it('show 默认 true（常显，移除疑难高亮开关后无需外部控制）', () => {
+    render(<DifficultyBadge rarity="稀有" lang="zh" />)
+    expect(screen.getByText(/稀有/)).toBeInTheDocument()
+  })
   it('rarity 为空不渲染', () => {
     const { container } = render(<DifficultyBadge rarity={undefined} show={true} lang="zh" />)
     expect(container).toBeEmptyDOMElement()

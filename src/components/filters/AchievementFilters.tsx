@@ -1,7 +1,11 @@
-// 成就筛选：分类多选（来源标签管理）+ 难度三档 + 疑难高亮开关
-import { Box, Autocomplete, TextField, Chip, ToggleButton, ToggleButtonGroup, FormControlLabel, Switch } from '@mui/material'
-import { ACHIEVEMENT_CATEGORY_LABEL, DIFFICULTY_LABEL } from '../../data/enums'
-import type { AchievementCategory, Lang, SearchState, DifficultyTier } from '../../data/types'
+// 成就筛选：分类多选 + 稀有度三选一 + 排序（名称/完成率 + 升/降）
+import {
+  Box, Autocomplete, TextField, Chip, FormControl, InputLabel, Select, MenuItem, ToggleButton, ToggleButtonGroup,
+} from '@mui/material'
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward'
+import { ACHIEVEMENT_CATEGORY_LABEL } from '../../data/enums'
+import type { AchievementCategory, Lang, SearchState } from '../../data/types'
 import { useTagEditor } from '../../hooks/useTagEditor'
 
 export function AchievementFilters({
@@ -9,16 +13,35 @@ export function AchievementFilters({
   addCategory,
   removeCategory,
   setAchievementFilter,
+  setAchievementSort,
   lang,
 }: {
   state: SearchState
   addCategory: (cat: AchievementCategory) => void
   removeCategory: (cat: AchievementCategory) => void
   setAchievementFilter: (patch: Partial<SearchState['achievement']>) => void
+  setAchievementSort: (sort: SearchState['achievement']['sort']) => void
   lang: Lang
 }) {
   const editor = useTagEditor()
   const categories = editor.getCategories() as AchievementCategory[]
+
+  // 稀有度（全部 / 普通 / 稀有）
+  const rarityVal = state.achievement.rarity ?? 'all'
+  // 排序：默认按完成率升序（与 filterAchievements 默认行为一致）
+  const sortBy: 'name' | 'completionRate' = state.achievement.sort?.by ?? 'completionRate'
+  const sortDir: 'asc' | 'desc' = state.achievement.sort?.dir ?? 'asc'
+
+  const onRarityChange = (val: string) => {
+    setAchievementFilter({ rarity: val === 'all' ? undefined : (val as '普通' | '稀有') })
+  }
+  const onSortByChange = (by: 'name' | 'completionRate') => {
+    setAchievementSort({ by, dir: sortDir })
+  }
+  const onDirChange = (dir: 'asc' | 'desc' | null) => {
+    // ToggleButtonGroup 取消选中时回落默认（升序）
+    setAchievementSort({ by: sortBy, dir: dir ?? 'asc' })
+  }
 
   return (
     <Box display="flex" flexWrap="wrap" gap={2} alignItems="center">
@@ -48,19 +71,49 @@ export function AchievementFilters({
         ))}
       </Box>
 
-      <ToggleButtonGroup size="small" color="primary"
-        value={state.achievement.difficulty ?? []}
-        onChange={(_, val) => setAchievementFilter({ difficulty: val as DifficultyTier[] })}>
-        {(['extreme', 'hard', 'moderate'] as DifficultyTier[]).map((t) => (
-          <ToggleButton key={t} value={t}>{DIFFICULTY_LABEL[t][lang]}</ToggleButton>
-        ))}
-      </ToggleButtonGroup>
+      <FormControl size="small" sx={{ minWidth: 120 }}>
+        <InputLabel id="ach-rarity-label">{lang === 'zh' ? '稀有度' : 'Rarity'}</InputLabel>
+        <Select
+          labelId="ach-rarity-label"
+          label={lang === 'zh' ? '稀有度' : 'Rarity'}
+          value={rarityVal}
+          onChange={(e) => onRarityChange(e.target.value)}
+        >
+          <MenuItem value="all">{lang === 'zh' ? '全部' : 'All'}</MenuItem>
+          <MenuItem value="普通">{lang === 'zh' ? '普通' : 'Common'}</MenuItem>
+          <MenuItem value="稀有">{lang === 'zh' ? '稀有' : 'Rare'}</MenuItem>
+        </Select>
+      </FormControl>
 
-      <FormControlLabel
-        control={<Switch checked={state.achievement.onlyDifficult}
-          onChange={(e) => setAchievementFilter({ onlyDifficult: e.target.checked })} />}
-        label={lang === 'zh' ? '⚠ 疑难高亮' : '⚠ Hard only'}
-      />
+      <FormControl size="small" sx={{ minWidth: 130 }}>
+        <InputLabel id="ach-sort-by-label">{lang === 'zh' ? '排序' : 'Sort by'}</InputLabel>
+        <Select
+          labelId="ach-sort-by-label"
+          label={lang === 'zh' ? '排序' : 'Sort by'}
+          value={sortBy}
+          onChange={(e) => onSortByChange(e.target.value as 'name' | 'completionRate')}
+        >
+          <MenuItem value="name">{lang === 'zh' ? '名称' : 'Name'}</MenuItem>
+          <MenuItem value="completionRate">{lang === 'zh' ? '完成率' : 'Completion'}</MenuItem>
+        </Select>
+      </FormControl>
+
+      <ToggleButtonGroup
+        size="small"
+        color="primary"
+        exclusive
+        value={sortDir}
+        onChange={(_, val) => onDirChange(val as 'asc' | 'desc' | null)}
+      >
+        <ToggleButton value="asc" aria-label="asc">
+          <ArrowUpwardIcon fontSize="small" />
+          {lang === 'zh' ? '升序' : 'Asc'}
+        </ToggleButton>
+        <ToggleButton value="desc" aria-label="desc">
+          <ArrowDownwardIcon fontSize="small" />
+          {lang === 'zh' ? '降序' : 'Desc'}
+        </ToggleButton>
+      </ToggleButtonGroup>
     </Box>
   )
 }

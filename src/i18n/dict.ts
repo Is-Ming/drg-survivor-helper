@@ -27,7 +27,6 @@ export const ui: UiDict = {
   'filter.source': { zh: '来源', en: 'Source' },
   'filter.all': { zh: '全部', en: 'All' },
   'filter.clear': { zh: '清除筛选', en: 'Clear filters' },
-  'filter.onlyDifficult': { zh: '⚠ 疑难高亮', en: '⚠ Hard only' },
 
   'theme.toggle': { zh: '切换主题', en: 'Toggle theme' },
   'theme.light': { zh: '浅色', en: 'Light' },

@@ -1,9 +1,10 @@
-// 成就卡片：中/英文名 + 分类 + 解锁条件 + 生物群系档位 + 疑难分档徽标（支持管理页编辑）
+// 成就卡片：图标 + 中/英文名 + 分类 + 解锁条件 + 完成率进度条 + 稀有度徽标（支持管理页编辑）
 import { useState, useEffect } from 'react'
-import { Card, CardContent, Typography, Box, Chip, TextField, IconButton } from '@mui/material'
+import { Card, CardContent, Typography, Box, Chip, TextField, IconButton, LinearProgress } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add'
 import type { Achievement, Lang } from '../../data/types'
-import { ACHIEVEMENT_CATEGORY_LABEL } from '../../data/enums'
+import { ACHIEVEMENT_CATEGORY_LABEL, RARITY_COLOR } from '../../data/enums'
+import { ACHIEVEMENT_ICON_MAP } from '../../data/achievement-icon-map'
 import { DifficultyBadge } from '../badges/DifficultyBadge'
 import { useTagEditor } from '../../hooks/useTagEditor'
 import { useOverrides } from '../../hooks/useOverrides'
@@ -28,14 +29,12 @@ function catLabel(cat: string, lang: Lang): string {
 
 export function AchievementCard({
   ach,
-  highlight,
   lang,
   editable,
   getWeaponName,
   onSave,
 }: {
   ach: Achievement
-  highlight: boolean
   lang: Lang
   editable?: boolean
   getWeaponName?: WeaponNameResolver
@@ -44,6 +43,7 @@ export function AchievementCard({
   const [editName, setEditName] = useState('')
   const [editCondition, setEditCondition] = useState('')
   const [editingField, setEditingField] = useState<string | null>(null)
+  const [iconError, setIconError] = useState(false)
 
   // 武器名解析：优先使用上层注入的运行时 resolver（服务端合并数据），无 Provider 时回落 bundled。
   const resolveName = getWeaponName ?? bundledWeaponNameResolver
@@ -66,13 +66,14 @@ export function AchievementCard({
   const displayCondition = editable
     ? editCondition || resolvedCondition
     : lang === 'zh' ? resolvedCondition : (ach.enUnlockCondition || resolvedCondition)
-  // 边框按稀有度着色：稀有高亮橙红、普通低调灰蓝（不再用完成率算难度分档）
-  const borderColor =
-    highlight && ach.rarity
-      ? ach.rarity === '稀有'
-        ? 'rgba(255,145,0,0.9)'
-        : 'rgba(144,164,174,0.6)'
-      : undefined
+
+  // 边框按稀有度着色（单一来源 RARITY_COLOR）；恒按 rarity 着色，无开关。
+  const color = ach.rarity ? RARITY_COLOR[ach.rarity] : undefined
+
+  // 图标：优先查本地映射路径，加载失败或缺失则兜底灰色圆 + 首字（绝不热链远程 URL）
+  const localIcon = ACHIEVEMENT_ICON_MAP[ach.englishName]
+  const showIcon = !!localIcon && !iconError
+  const fallbackChar = (lang === 'zh' ? resolvedName : ach.englishName).trim().charAt(0) || '?'
 
   const commitEdit = (field: string, value: string) => {
     setEditingField(null)
@@ -103,43 +104,77 @@ export function AchievementCard({
     saveAchievementEdit(ach.englishName, { category: next })
   }
 
+  const rate = ach.completionRate
+
   return (
-    <Card sx={{ borderColor, borderWidth: highlight && ach.rarity ? 2 : 1, height: '100%' }}>
+    <Card sx={{ borderColor: color, borderWidth: ach.rarity ? 2 : 1, height: '100%' }}>
       <CardContent>
         <Box display="flex" justifyContent="space-between" alignItems="flex-start" gap={1}>
-          <Box minWidth={0} flex={1}>
-            {editable && editingField === 'name' ? (
-              <TextField
-                size="small"
-                fullWidth
-                value={editName}
-                onChange={(e) => setEditName(e.target.value)}
-                onBlur={() => commitEdit('chineseName', editName)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter') commitEdit('chineseName', editName)
-                  if (e.key === 'Escape') { setEditName(resolvedName); setEditingField(null) }
-                }}
-                autoFocus
-                sx={{ mb: 0.5 }}
+          <Box display="flex" gap={1} minWidth={0} flex={1} alignItems="flex-start">
+            {showIcon ? (
+              <img
+                src={localIcon}
+                width={40}
+                height={40}
+                alt={ach.englishName}
+                style={{ borderRadius: 8, objectFit: 'cover', flexShrink: 0 }}
+                onError={() => setIconError(true)}
               />
             ) : (
-              <Typography
-                variant="subtitle1"
-                fontWeight={700}
-                noWrap
-                onClick={() => editable && setEditingField('name')}
-                sx={editable ? { cursor: 'pointer', '&:hover': { textDecoration: 'underline', textDecorationColor: 'primary.main' } } : undefined}
-                title={editable ? (lang === 'zh' ? '点击编辑名称' : 'Click to edit name') : undefined}
+              <Box
+                sx={{
+                  width: 40,
+                  height: 40,
+                  borderRadius: '50%',
+                  bgcolor: '#cfd8dc',
+                  color: '#455a64',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontWeight: 700,
+                  fontSize: 18,
+                  flexShrink: 0,
+                }}
+                aria-label="achievement-icon-fallback"
               >
-                {lang === 'zh' ? displayName : ach.englishName}
-              </Typography>
+                {fallbackChar}
+              </Box>
             )}
-            <Typography variant="caption" color="text.secondary" noWrap>
-              {lang === 'zh' ? ach.englishName : resolvedName}
-            </Typography>
+            <Box minWidth={0} flex={1}>
+              {editable && editingField === 'name' ? (
+                <TextField
+                  size="small"
+                  fullWidth
+                  value={editName}
+                  onChange={(e) => setEditName(e.target.value)}
+                  onBlur={() => commitEdit('chineseName', editName)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter') commitEdit('chineseName', editName)
+                    if (e.key === 'Escape') { setEditName(resolvedName); setEditingField(null) }
+                  }}
+                  autoFocus
+                  sx={{ mb: 0.5 }}
+                />
+              ) : (
+                <Typography
+                  variant="subtitle1"
+                  fontWeight={700}
+                  noWrap
+                  onClick={() => editable && setEditingField('name')}
+                  sx={editable ? { cursor: 'pointer', '&:hover': { textDecoration: 'underline', textDecorationColor: 'primary.main' } } : undefined}
+                  title={editable ? (lang === 'zh' ? '点击编辑名称' : 'Click to edit name') : undefined}
+                >
+                  {lang === 'zh' ? displayName : ach.englishName}
+                </Typography>
+              )}
+              <Typography variant="caption" color="text.secondary" noWrap>
+                {lang === 'zh' ? ach.englishName : resolvedName}
+              </Typography>
+            </Box>
           </Box>
           <Box flexShrink={0}>
-            <DifficultyBadge rarity={ach.rarity} show={highlight} lang={lang} />
+            {/* 稀有度徽标常显（移除「⚠ 疑难高亮」开关） */}
+            <DifficultyBadge rarity={ach.rarity} lang={lang} />
           </Box>
         </Box>
 
@@ -164,6 +199,30 @@ export function AchievementCard({
           )}
         </Box>
 
+        {/* 完成率 + 进度条（rarity 着色）；null 仅显示暂无数据且不画进度条 */}
+        {rate === null ? (
+          <Typography variant="caption" color="text.secondary" sx={{ mt: 0.5, display: 'block' }}>
+            完成率 暂无数据
+          </Typography>
+        ) : (
+          <Box sx={{ mt: 0.5 }}>
+            <Typography variant="caption" color="text.secondary">
+              完成率 {String(rate)}%
+            </Typography>
+            <LinearProgress
+              variant="determinate"
+              value={Math.max(0, Math.min(100, rate))}
+              sx={{
+                mt: 0.5,
+                height: 6,
+                borderRadius: 3,
+                backgroundColor: 'rgba(0,0,0,0.08)',
+                '& .MuiLinearProgress-bar': { backgroundColor: color ?? RARITY_COLOR['普通'] },
+              }}
+            />
+          </Box>
+        )}
+
         {editable && editingField === 'condition' ? (
           <TextField
             size="small"
@@ -178,13 +237,14 @@ export function AchievementCard({
               if (e.key === 'Escape') { setEditCondition(resolvedCondition); setEditingField(null) }
             }}
             autoFocus
+            sx={{ mt: 1 }}
           />
         ) : (
           <Typography
             variant="body2"
             color="text.secondary"
             onClick={() => editable && setEditingField('condition')}
-            sx={editable ? { cursor: 'pointer', '&:hover': { textDecoration: 'underline', textDecorationColor: 'primary.main' } } : undefined}
+            sx={editable ? { cursor: 'pointer', '&:hover': { textDecoration: 'underline', textDecorationColor: 'primary.main' }, mt: 1 } : { mt: 1 }}
             title={editable ? (lang === 'zh' ? '点击编辑解锁条件' : 'Click to edit unlock condition') : undefined}
           >
             {displayCondition}

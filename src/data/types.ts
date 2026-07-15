@@ -187,15 +187,17 @@ export interface SearchState {
   activeModule: ModuleKey
   achievement: {
     categories: AchievementCategory[]
-    /** 疑难高亮开关（默认开，决策 7 默认开） */
-    onlyDifficult: boolean
-    /** 难度三档多选筛选（R2）；空/未定义=不过滤 */
-    difficulty?: DifficultyTier[]
+    /** 稀有度筛选（移除难度筛选后改为稀有度三选一；undefined=全部） */
+    rarity?: '普通' | '稀有'
+    /** 排序：名称 / 完成率 + 升/降（方向由按钮控制，无方向下拉）；undefined=默认（按完成率升序） */
+    sort?: { by: 'name' | 'completionRate'; dir: 'asc' | 'desc' }
   }
   weapon: {
     class?: WeaponClass
     rating?: Rating
     tags: WeaponTag[]
+    /** 武器排序：仅按名称升/降（undefined=保持原序） */
+    sort?: 'name-asc' | 'name-desc'
   }
   equipment: {
     types: string[]

@@ -18,7 +18,7 @@ import { equipments } from '../data/equipments'
 const initialState: SearchState = {
   query: '',
   activeModule: 'achievements',
-  achievement: { categories: [], onlyDifficult: true },
+  achievement: { categories: [] },
   weapon: { tags: [] },
   equipment: { types: [] },
 }
@@ -37,6 +37,20 @@ export function useFilter() {
   const setAchievementFilter = useCallback(
     (patch: Partial<SearchState['achievement']>) => {
       setState((s) => ({ ...s, achievement: { ...s.achievement, ...patch } }))
+    },
+    [],
+  )
+
+  const setAchievementSort = useCallback(
+    (sort: SearchState['achievement']['sort']) => {
+      setState((s) => ({ ...s, achievement: { ...s.achievement, sort } }))
+    },
+    [],
+  )
+
+  const setWeaponSort = useCallback(
+    (sort: SearchState['weapon']['sort']) => {
+      setState((s) => ({ ...s, weapon: { ...s.weapon, sort } }))
     },
     [],
   )
@@ -104,8 +118,8 @@ export function useFilter() {
   const clearFilters = useCallback(() => {
     setState((s) => ({
       ...s,
-      achievement: { ...s.achievement, categories: [], difficulty: undefined },
-      weapon: { ...s.weapon, class: undefined, rating: undefined, tags: [] },
+      achievement: { ...s.achievement, categories: [], rarity: undefined, sort: undefined },
+      weapon: { ...s.weapon, class: undefined, rating: undefined, tags: [], sort: undefined },
       equipment: { types: [] },
     }))
   }, [])
@@ -131,6 +145,8 @@ export function useFilter() {
     setQuery,
     setActiveModule,
     setAchievementFilter,
+    setAchievementSort,
+    setWeaponSort,
     addAchievementCategory,
     removeAchievementCategory,
     setWeaponClass,

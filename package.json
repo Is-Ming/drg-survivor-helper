@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "tsc": "tsc --noEmit"
+    "tsc": "tsc --noEmit",
+    "fetch:icons": "node scripts/fetch-achievement-icons.mjs"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",

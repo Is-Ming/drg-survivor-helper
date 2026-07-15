@@ -48,6 +48,8 @@ export default defineConfig({
     css: false,
     // 排除中断安装的备份目录 node_modules_bak（含第三方自带测试文件，会因 import 解析失败误报，
     // 属环境噪音而非应用缺陷）以及 node_modules / dist 等默认项。
+    // 另排除 QA 用 Node 内置 test-runner 脚本（server/*.test.cjs、tests/qa_*.test.cjs），
+    // 它们以 `node --test` 运行，非 vitest 套件，被默认 glob 误收集会报 “No test suite found”。
     exclude: [
       '**/node_modules_bak/**',
       '**/node_modules/**',
@@ -57,6 +59,8 @@ export default defineConfig({
       '**/cypress/**',
       '**/.{idea,git,cache,output,temp}/**',
       '**/{karma,rollup,webpack,vite,vitest,eslint,jest,ava,babel,nyc,cypress,tsup,rollup}.config.*',
+      '**/*.test.cjs',
+      '**/*.spec.cjs',
     ],
   },
 })

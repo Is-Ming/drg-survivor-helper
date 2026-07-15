@@ -1,22 +1,16 @@
-// 稀有度徽标：按 rarity 着色（普通=低调灰蓝，稀有=高亮橙红）。
-// 不再使用「完成率动态分档（极难/难/普通）」——该分档逻辑保留在 enums.getDifficultyTier，
-// 仍供成就筛选器（useAchievementFilter）使用；此处仅按用户决策改为 rarity 着色。
-import { RARITY_LABEL } from '../../data/enums'
+// 稀有度徽标：按 rarity 着色（普通=低调灰蓝，稀有=高亮橙红），常显（无开关）。
+// 着色常量统一来自 enums.RARITY_COLOR（单一来源）。
+import { RARITY_COLOR, RARITY_LABEL } from '../../data/enums'
 import type { Lang } from '../../data/types'
-
-/** 稀有度配色：稀有高亮橙红，普通低调灰蓝。 */
-const RARITY_COLOR: Record<'普通' | '稀有', string> = {
-  '普通': '#90a4ae', // 普通：低调灰蓝
-  '稀有': '#ff9100', // 稀有：高亮橙红（用户偏好强调色）
-}
 
 export function DifficultyBadge({
   rarity,
-  show,
+  show = true,
   lang,
 }: {
   rarity: '普通' | '稀有' | undefined
-  show: boolean
+  /** 是否渲染徽标；默认 true（常显，移除「⚠ 疑难高亮」开关后无需外部控制） */
+  show?: boolean
   lang: Lang
 }) {
   // 未开启高亮、或成就无稀有度（理论不应发生）→ 不渲染徽标

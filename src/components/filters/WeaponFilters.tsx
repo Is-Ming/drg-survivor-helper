@@ -1,5 +1,7 @@
-// 武器筛选：职业 + 评级 + 标签多选（标签来自标签管理，实时联动）
-import { Box, FormControl, InputLabel, MenuItem, Select, Chip, Autocomplete, TextField } from '@mui/material'
+// 武器筛选：职业 + 评级 + 标签多选（标签来自标签管理，实时联动）+ 名称排序（升/降）
+import { Box, FormControl, InputLabel, MenuItem, Select, Chip, Autocomplete, TextField, ToggleButton, ToggleButtonGroup } from '@mui/material'
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward'
 import { RATINGS, WEAPON_CLASSES, WEAPON_CLASS_LABEL, WEAPON_TAG_GROUPS } from '../../data/enums'
 import type { Lang, Rating, SearchState, WeaponClass, WeaponTag } from '../../data/types'
 import { useTagEditor } from '../../hooks/useTagEditor'
@@ -10,6 +12,7 @@ export function WeaponFilters({
   setWeaponRating,
   addWeaponTag,
   removeWeaponTag,
+  setWeaponSort,
   lang,
 }: {
   state: SearchState
@@ -17,6 +20,7 @@ export function WeaponFilters({
   setWeaponRating: (r?: Rating) => void
   addWeaponTag: (tag: WeaponTag) => void
   removeWeaponTag: (tag: WeaponTag) => void
+  setWeaponSort: (sort: SearchState['weapon']['sort']) => void
   lang: Lang
 }) {
   // 从标签管理读取自定义武器标签列表（实时联动，经 useTagEditor 读 merged.tags）
@@ -112,6 +116,24 @@ export function WeaponFilters({
           />
         ))}
       </Box>
+
+      {/* 武器排序：仅按名称升/降（方向由按钮控制；无选中=保持原序） */}
+      <ToggleButtonGroup
+        size="small"
+        color="primary"
+        exclusive
+        value={state.weapon.sort ?? ''}
+        onChange={(_, val) => setWeaponSort((val || undefined) as SearchState['weapon']['sort'])}
+      >
+        <ToggleButton value="name-asc" aria-label="name-asc">
+          <ArrowUpwardIcon fontSize="small" />
+          {lang === 'zh' ? '名称' : 'Name'}
+        </ToggleButton>
+        <ToggleButton value="name-desc" aria-label="name-desc">
+          <ArrowDownwardIcon fontSize="small" />
+          {lang === 'zh' ? '名称' : 'Name'}
+        </ToggleButton>
+      </ToggleButtonGroup>
     </Box>
   )
 }

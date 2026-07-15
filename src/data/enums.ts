@@ -161,6 +161,18 @@ export const RARITY_LABEL: Record<'普通' | '稀有', { zh: string; en: string 
   '稀有': { zh: '稀有', en: 'Rare' },
 }
 
+/**
+ * 稀有度着色单一来源（用户决策：移除「⚠ 疑难高亮」开关，稀有度徽标常显；卡片边框恒按 rarity 着色）。
+ * DifficultyBadge 与 AchievementCard（边框 + 进度条）统一从此处 import，禁止散落硬编码。
+ * 同时保留 COMMON/RARE 别名键，便于任意访问方式。
+ */
+export const RARITY_COLOR: Record<'普通' | '稀有' | 'COMMON' | 'RARE', string> = {
+  COMMON: '#90a4ae', // 普通：低调灰蓝
+  RARE: '#ff9100', // 稀有：高亮橙红（用户偏好强调色）
+  '普通': '#90a4ae',
+  '稀有': '#ff9100',
+}
+
 export const RATING_LABEL: Record<Rating, string> = {
   S: 'S',
   A: 'A',

@@ -108,7 +108,6 @@ function AdminPageInner() {
       <AchievementCard
         key={a.englishName}
         ach={a}
-        highlight={state.achievement.onlyDifficult}
         lang={lang}
         editable
         getWeaponName={getWeaponName}
@@ -171,12 +170,14 @@ function AdminPageInner() {
           activeModule={state.activeModule}
           state={state}
           setAchievementFilter={f.setAchievementFilter}
+          setAchievementSort={f.setAchievementSort}
           addAchievementCategory={f.addAchievementCategory}
           removeAchievementCategory={f.removeAchievementCategory}
           setWeaponClass={f.setWeaponClass}
           setWeaponRating={f.setWeaponRating}
           addWeaponTag={f.addWeaponTag}
           removeWeaponTag={f.removeWeaponTag}
+          setWeaponSort={f.setWeaponSort}
           addEquipmentType={f.addEquipmentType}
           removeEquipmentType={f.removeEquipmentType}
           setEquipmentSource={f.setEquipmentSource}

@@ -1,4 +1,4 @@
-// 武器筛选：职业 + 评级 + 已选标签（标签为 AND）+ 全局 query
+// 武器筛选：职业 + 评级 + 已选标签（标签为 AND）+ 全局 query + 名称排序
 import { useMemo } from 'react'
 import { weapons } from '../data/weapons'
 import type { Lang, SearchState, Weapon, WeaponTag } from '../data/types'
@@ -13,13 +13,23 @@ import { useTagEditor } from './useTagEditor'
 const defaultGetTagLabel = (tg: string, l: Lang): string =>
   WEAPON_TAG_LABEL[tg as WeaponTag]?.[l] ?? tg
 
+/**
+ * 武器排序：仅按 chineseName 本地化比较（zh-CN）。
+ * sort='name-asc' 升序 / 'name-desc' 降序 / undefined 保持原序（返回原引用）。
+ */
+export function sortWeapons(data: Weapon[], sort?: 'name-asc' | 'name-desc'): Weapon[] {
+  if (!sort) return data
+  const factor = sort === 'name-asc' ? 1 : -1
+  return [...data].sort((a, b) => a.chineseName.localeCompare(b.chineseName, 'zh-CN') * factor)
+}
+
 export function filterWeapons(
   data: Weapon[],
   state: SearchState,
   getTagLabel: (tg: string, l: Lang) => string = defaultGetTagLabel,
 ): Weapon[] {
   const { query, weapon } = state
-  return data.filter((w) => {
+  const filtered = data.filter((w) => {
     if (weapon.class && w.class !== weapon.class) return false
     if (weapon.rating && w.rating !== weapon.rating) return false
     if (weapon.tags.length > 0 && !weapon.tags.every((t) => w.tags.includes(t))) return false
@@ -34,6 +44,7 @@ export function filterWeapons(
     const hay = `${w.englishName} ${w.chineseName} ${tagText} ${w.class}`
     return matchesQuery(hay, query)
   })
+  return sortWeapons(filtered, weapon.sort)
 }
 
 export function useWeaponFilter(state: SearchState): Weapon[] {
