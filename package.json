@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "深岩银河幸存者 (DRG: Survivor) 速查 PWA 助手",
+  "description": "深岩银河：幸存者 游戏助手 —— DRG: Survivor 速查 PWA",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",

@@ -4,7 +4,7 @@ import type { Lang } from '../data/types'
 export type UiDict = Record<string, { zh: string; en: string }>
 
 export const ui: UiDict = {
-  'app.title': { zh: 'DRG: Survivor 助手', en: 'DRG: Survivor Helper' },
+  'app.title': { zh: '深岩银河：幸存者 游戏助手', en: 'Deep Rock Galactic: Survivor Helper' },
   'app.tagline': { zh: '深岩银河幸存者 · 速查', en: 'Deep Rock Galactic: Survivor · Quick Ref' },
 
   'tab.achievements': { zh: '成就', en: 'Achievements' },

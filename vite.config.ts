@@ -11,7 +11,7 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'icons/icon-192.png', 'icons/icon-512.png'],
       manifest: {
-        name: 'DRG: Survivor 助手',
+        name: '深岩银河：幸存者 游戏助手',
         short_name: 'DRG助手',
         description: '深岩银河幸存者 成就/武器/装备速查',
         theme_color: '#F5A623',
