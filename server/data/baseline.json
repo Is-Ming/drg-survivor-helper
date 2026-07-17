@@ -129,7 +129,7 @@
     },
     {
       "englishName": "Arc-Tek Cryo Guard",
-      "chineseName": "Arc-Tek 急冻无人护卫机",
+      "chineseName": "Arc-Tek 急冻护卫无人机",
       "class": "Scout",
       "tags": [
         "COLD",
@@ -179,7 +179,7 @@
     },
     {
       "englishName": "Voltaic Stun Sweeper",
-      "chineseName": "“雷神之罚”电击枪",
+      "chineseName": "强电震击镖",
       "class": "Scout",
       "tags": [
         "ELECTRIC",
@@ -203,7 +203,7 @@
     },
     {
       "englishName": "TH-0R Bug Taser",
-      "chineseName": "强电震击镖",
+      "chineseName": "“雷神之罚” 电击枪",
       "class": "Scout",
       "tags": [
         "ELECTRIC",
@@ -303,7 +303,7 @@
     },
     {
       "englishName": "Tactical Leadburster",
-      "chineseName": "战术铅爆雷",
+      "chineseName": "战术铅暴雷",
       "class": "Gunner",
       "tags": [
         "KINETIC",
@@ -580,7 +580,7 @@
     },
     {
       "englishName": "Breach Cutter / ArmsKore Coil Gun",
-      "chineseName": "等离子切割机",
+      "chineseName": "等离子切割器",
       "class": "Engineer",
       "tags": [
         "PLASMA",
@@ -707,7 +707,7 @@
     },
     {
       "englishName": "Hi-Volt Thunderbird",
-      "chineseName": "Hi-Volt 雷鸟无人机",
+      "chineseName": "Hi-Volt “雷鸟” 电击护卫无人机",
       "class": "Engineer",
       "tags": [
         "ELECTRIC",
@@ -756,7 +756,7 @@
     },
     {
       "englishName": "Shredder Swarm Grenade",
-      "chineseName": "群蜂手雷",
+      "chineseName": "蜂群手雷",
       "class": "Engineer",
       "tags": [
         "KINETIC",
@@ -958,7 +958,7 @@
     },
     {
       "englishName": "Subata 120",
-      "chineseName": "苏巴塔120半自动手枪",
+      "chineseName": "苏巴特 120 半自动手枪",
       "class": "Driller",
       "tags": [
         "KINETIC",
@@ -984,7 +984,7 @@
     },
     {
       "englishName": "Experimental Plasma Charger",
-      "chineseName": "实验性等离子聚能手枪",
+      "chineseName": "实验性等离子蓄能手枪",
       "class": "Driller",
       "tags": [
         "PLASMA",
@@ -4376,11 +4376,11 @@
   ],
   "equipments": [
     {
-      "name": "商店折扣券",
+      "name": "集团折扣券",
       "type": "召唤",
       "effect": "商店打折，生态专精初期值得刷",
       "source": "局内附加",
-      "officialName": "DRG Coupon",
+      "officialName": "DRG Coupons",
       "officialEffect": "Gives a 20% discount to all shop purchases.",
       "version": "当前"
     },
@@ -4389,7 +4389,7 @@
       "type": "拾取",
       "effect": "自身拾取弱时拿，增强拾取能力",
       "source": "局内附加",
-      "officialName": "Company-issued Magnet",
+      "officialName": "Company Issued Magnet",
       "officialEffect": "Spawns a magnet at the end of a stage that collects 50% of the XP.",
       "version": "当前"
     },
@@ -4400,15 +4400,6 @@
       "source": "局内附加",
       "officialName": "Red Sugar Cube",
       "officialEffect": "Collecting Red Sugar increases your Max HP by 3.",
-      "version": "当前"
-    },
-    {
-      "name": "挖矿概率得黄金/硝石/经验",
-      "type": "发育",
-      "effect": "挖矿时概率获得资源，适合钻机/高挖速",
-      "source": "局内附加",
-      "officialName": "Gold Scanner / Nitra Scanner / XP Scanner",
-      "officialEffect": "Small chance to find Gold/Nitra/XP when mining rock.",
       "version": "当前"
     },
     {
@@ -4439,7 +4430,7 @@
       "version": "当前"
     },
     {
-      "name": "侧目目镜 / EE5 目镜",
+      "name": "侧眼-EE5 目镜",
       "type": "直伤/混伤",
       "effect": "-30%伤害 +30%暴击 +100%暴伤，后期 T0.5",
       "source": "局内附加",
@@ -4466,11 +4457,11 @@
       "version": "当前"
     },
     {
-      "name": "三明治",
+      "name": "战术小饼干",
       "type": "生存",
       "effect": "回血，配能量棒抵消扣血",
       "source": "局内附加",
-      "officialName": "待核（疑似 Tactical Cookie）",
+      "officialName": "Tactical Cookie",
       "officialEffect": "Tactical Cookie：进入逃生舱时回复 50% 最大生命值（待核：官方无 exact 对应）",
       "version": "待核"
     },
@@ -4493,11 +4484,11 @@
       "version": "当前"
     },
     {
-      "name": "挖他命",
+      "name": "“挖”他命药丸",
       "type": "生存/升级",
       "effect": "提升升级回复血量，后期收益低",
       "source": "局内附加",
-      "officialName": "待核（疑似 Vita-miner Pills）",
+      "officialName": "Vita-Miner Pills",
       "officialEffect": "Vita-miner Pills：+5% 最大生命值；升级时提升治疗效果（待核：官方无 exact 对应）",
       "version": "待核"
     },
@@ -4506,7 +4497,7 @@
       "type": "战力",
       "effect": "低血量容错，配椒盐卷饼/三明治",
       "source": "局内附加",
-      "officialName": "待核（无 exact 对应）",
+      "officialName": "The MoCap",
       "officialEffect": "—（待核）",
       "version": "待核"
     },
@@ -4549,7 +4540,7 @@
       "version": "当前"
     },
     {
-      "name": "嗜矿异虫召唤装备",
+      "name": "嗜矿异虫用诱饵",
       "type": "召唤",
       "effect": "一次性召唤 4 只嗜矿异虫，全杀收益高",
       "source": "成就解锁",
@@ -4557,13 +4548,260 @@
       "officialName": "Huuli Bait",
       "officialEffect": "Lure out a bunch of Huuli Hoarders.",
       "version": "当前"
+    },
+    {
+      "name": "弹药背带",
+      "type": "",
+      "effect": "",
+      "source": "",
+      "officialName": "Ammo Rig",
+      "officialEffect": "",
+      "version": "当前"
+    },
+    {
+      "name": "黄金探测仪",
+      "type": "",
+      "effect": "",
+      "source": "",
+      "officialName": "Gold Scanner",
+      "officialEffect": "",
+      "version": "当前"
+    },
+    {
+      "name": "硝石探测仪",
+      "type": "",
+      "effect": "",
+      "source": "",
+      "officialName": "Nitra Scanner",
+      "officialEffect": "",
+      "version": "当前"
+    },
+    {
+      "name": "经验探测仪",
+      "type": "",
+      "effect": "",
+      "source": "",
+      "officialName": "XP Scanner",
+      "officialEffect": "",
+      "version": "当前"
+    },
+    {
+      "name": "FRZ 护盾腰带",
+      "type": "",
+      "effect": "",
+      "source": "",
+      "officialName": "FRZ Shield Belt",
+      "officialEffect": "",
+      "version": "当前"
+    },
+    {
+      "name": "BRN 护盾腰带",
+      "type": "",
+      "effect": "",
+      "source": "",
+      "officialName": "BRN Shield Belt",
+      "officialEffect": "",
+      "version": "当前"
+    },
+    {
+      "name": "喷气靴",
+      "type": "",
+      "effect": "",
+      "source": "",
+      "officialName": "Jet Boots",
+      "officialEffect": "",
+      "version": "当前"
+    },
+    {
+      "name": "便携脚架",
+      "type": "",
+      "effect": "",
+      "source": "",
+      "officialName": "Popup Tripod",
+      "officialEffect": "",
+      "version": "当前"
+    },
+    {
+      "name": "深潜宝典",
+      "type": "",
+      "effect": "",
+      "source": "",
+      "officialName": "Diver's Manual",
+      "officialEffect": "",
+      "version": "当前"
+    },
+    {
+      "name": "化学套件",
+      "type": "",
+      "effect": "",
+      "source": "",
+      "officialName": "Chemist Kit",
+      "officialEffect": "",
+      "version": "当前"
+    },
+    {
+      "name": "穿深型发射物",
+      "type": "",
+      "effect": "",
+      "source": "",
+      "officialName": "Piercing Projectiles",
+      "officialEffect": "",
+      "version": "当前"
+    },
+    {
+      "name": "万能起子",
+      "type": "",
+      "effect": "",
+      "source": "",
+      "officialName": "Multi Tool",
+      "officialEffect": "",
+      "version": "当前"
+    },
+    {
+      "name": "延长镐身",
+      "type": "",
+      "effect": "",
+      "source": "",
+      "officialName": "Pick Axtender",
+      "officialEffect": "",
+      "version": "当前"
+    },
+    {
+      "name": "老照片",
+      "type": "",
+      "effect": "",
+      "source": "",
+      "officialName": "Old Memento",
+      "officialEffect": "",
+      "version": "当前",
+      "suspected": true
+    },
+    {
+      "name": "赤火冰心",
+      "type": "",
+      "effect": "",
+      "source": "",
+      "officialName": "Frostburn",
+      "officialEffect": "",
+      "version": "当前",
+      "suspected": true
+    },
+    {
+      "name": "灼热电浆",
+      "type": "",
+      "effect": "",
+      "source": "",
+      "officialName": "Hot Plasma",
+      "officialEffect": "",
+      "version": "当前",
+      "suspected": true
+    },
+    {
+      "name": "球果原汁",
+      "type": "",
+      "effect": "",
+      "source": "",
+      "officialName": "Barley Bulb Juice",
+      "officialEffect": "",
+      "version": "当前",
+      "suspected": true
+    },
+    {
+      "name": "即时反应",
+      "type": "",
+      "effect": "",
+      "source": "",
+      "officialName": "Lightning Reflexes",
+      "officialEffect": "",
+      "version": "当前",
+      "suspected": true
+    },
+    {
+      "name": "风火前行",
+      "type": "",
+      "effect": "",
+      "source": "",
+      "officialName": "Hotstepper",
+      "officialEffect": "",
+      "version": "当前",
+      "suspected": true
+    },
+    {
+      "name": "五叶草",
+      "type": "",
+      "effect": "",
+      "source": "",
+      "officialName": "5 Leaf Clover",
+      "officialEffect": "",
+      "version": "当前",
+      "suspected": true
+    },
+    {
+      "name": "电栅行者",
+      "type": "",
+      "effect": "",
+      "source": "",
+      "officialName": "Gridrunner",
+      "officialEffect": "",
+      "version": "当前",
+      "suspected": true
+    },
+    {
+      "name": "载荷泛溢",
+      "type": "",
+      "effect": "",
+      "source": "",
+      "officialName": "Overflow",
+      "officialEffect": "",
+      "version": "当前",
+      "suspected": true
+    },
+    {
+      "name": "酸蚀雷爆",
+      "type": "",
+      "effect": "",
+      "source": "",
+      "officialName": "Corrosive Thunder",
+      "officialEffect": "",
+      "version": "当前",
+      "suspected": true
+    },
+    {
+      "name": "放电装填",
+      "type": "",
+      "effect": "",
+      "source": "",
+      "officialName": "Charged reload",
+      "officialEffect": "",
+      "version": "当前",
+      "suspected": true
+    },
+    {
+      "name": "衍射棱镜",
+      "type": "",
+      "effect": "",
+      "source": "",
+      "officialName": "Diffractor prism",
+      "officialEffect": "",
+      "version": "当前",
+      "suspected": true
+    },
+    {
+      "name": "陀螺组件",
+      "type": "",
+      "effect": "",
+      "source": "",
+      "officialName": "Widget Spinner",
+      "officialEffect": "",
+      "version": "当前",
+      "suspected": true
     }
   ],
   "overclocks": [
     {
       "id": "a-little-more-oomph",
       "englishName": "A Little More Oomph!",
-      "chineseName": "威力提升",
+      "chineseName": "活力四射",
       "type": "balanced",
       "effect": "+25% 伤害，+25% 装填速度",
       "enEffect": "+25% Damage, +25% Reload Speed"
@@ -4571,7 +4809,7 @@
     {
       "id": "acid-blades",
       "englishName": "Acid Blades",
-      "chineseName": "酸蚀利刃",
+      "chineseName": "腐蚀利刃",
       "type": "balanced",
       "effect": "+15% 伤害，附加腐蚀",
       "enEffect": "+15% Damage, +Corrosion"
@@ -4579,7 +4817,7 @@
     {
       "id": "acid-dipped-tips",
       "englishName": "Acid Dipped Tips",
-      "chineseName": "酸浸箭尖",
+      "chineseName": "淬毒弹头",
       "type": "balanced",
       "effect": "伤害类型改为酸液",
       "enEffect": "Changes damage type to Acid"
@@ -4587,7 +4825,7 @@
     {
       "id": "afterburner",
       "englishName": "Afterburner",
-      "chineseName": "加力燃烧",
+      "chineseName": "后燃加力",
       "type": "balanced",
       "effect": "每有一条激活的光束，+10% 移动速度",
       "enEffect": "+10% Move Speed per active beam"
@@ -4595,7 +4833,7 @@
     {
       "id": "akimbo-balanced",
       "englishName": "Akimbo",
-      "chineseName": "双持",
+      "chineseName": "前后互搏",
       "type": "balanced",
       "effect": "-20% 武器范围，向相反方向额外射击一次",
       "enEffect": "-20% Weapon Range, fires an additional shot in opposite direction"
@@ -4603,7 +4841,7 @@
     {
       "id": "battery-bullets",
       "englishName": "Battery Bullets",
-      "chineseName": "电击弹匣",
+      "chineseName": "蓄电子弹",
       "type": "balanced",
       "effect": "伤害类型改为电击，+10% 伤害",
       "enEffect": "Changes damage type to Electric, +10% Damage"
@@ -4611,7 +4849,7 @@
     {
       "id": "behaviour-chip-defensive",
       "englishName": "Behaviour Chip: Defensive",
-      "chineseName": "防御芯片",
+      "chineseName": "行为逻辑芯片：护卫",
       "type": "balanced",
       "effect": "+2 额外无人机，无人机在玩家周围盘旋",
       "enEffect": "+2 Drones, drones circle around the player"
@@ -4619,7 +4857,7 @@
     {
       "id": "behaviour-chip-aggro",
       "englishName": "Behaviour Chip: Aggro",
-      "chineseName": "主动寻敌",
+      "chineseName": "行为逻辑芯片：激进",
       "type": "balanced",
       "effect": "无人机主动寻找敌人",
       "enEffect": "Drones actively seek enemies"
@@ -4627,7 +4865,7 @@
     {
       "id": "better-ball-bearings",
       "englishName": "Better Ball Bearings",
-      "chineseName": "顺滑轴承",
+      "chineseName": "高端轴承",
       "type": "balanced",
       "effect": "增加旋转速度",
       "enEffect": "Increases rotation speed"
@@ -4635,7 +4873,7 @@
     {
       "id": "big-game-hunter",
       "englishName": "Big Game Hunter",
-      "chineseName": "狩猎大型猎物",
+      "chineseName": "巨兽猎人",
       "type": "balanced",
       "effect": "+20% 暴击伤害，+20% 暴击几率，以生命值最高敌人为目标",
       "enEffect": "+20% Crit Dmg, +20% Crit Chance, targets highest HP enemy"
@@ -4643,7 +4881,7 @@
     {
       "id": "bigger-mags-balanced",
       "englishName": "Bigger Mags",
-      "chineseName": "扩容弹匣",
+      "chineseName": "更大弹匣",
       "type": "balanced",
       "effect": "+100% 弹匣容量（部分武器有负面调整）",
       "enEffect": "+100% Magazine Size (may have trade-offs)"
@@ -4651,7 +4889,7 @@
     {
       "id": "bigger-tanks",
       "englishName": "Bigger Tanks",
-      "chineseName": "扩容储罐",
+      "chineseName": "更大储罐",
       "type": "balanced",
       "effect": "+100% 持续/寿命，+10%/25% 武器范围",
       "enEffect": "+100% Duration, +10%/25% Weapon Range"
@@ -4659,7 +4897,7 @@
     {
       "id": "charged-reload",
       "englishName": "Charged Reload",
-      "chineseName": "充能装填",
+      "chineseName": "放电装填",
       "type": "balanced",
       "effect": "装填时释放大型电击地面区域",
       "enEffect": "Creates a large Electric ground zone on reload"
@@ -4667,7 +4905,7 @@
     {
       "id": "chemical-reload",
       "englishName": "Chemical Reload",
-      "chineseName": "化学装填",
+      "chineseName": "化工装填",
       "type": "balanced",
       "effect": "+25% 射速，-25% 装填速度；装填时 +25% 状态效果伤害",
       "enEffect": "+25% Fire Rate, -25% Reload; +25% Status Dmg on reload"
@@ -4683,7 +4921,7 @@
     {
       "id": "coilgun-mining-damage",
       "englishName": "Coilgun Mining Damage",
-      "chineseName": "线圈炮挖矿",
+      "chineseName": "手炮地形破坏",
       "type": "balanced",
       "effect": "射击可对地形造成伤害",
       "enEffect": "Shots can damage terrain"
@@ -4691,7 +4929,7 @@
     {
       "id": "cold-blades",
       "englishName": "Cold Blades",
-      "chineseName": "寒冰刀片",
+      "chineseName": "急冻利刃",
       "type": "balanced",
       "effect": "+15% 伤害，附加减速",
       "enEffect": "+15% Damage, +Slow"
@@ -4699,7 +4937,7 @@
     {
       "id": "cold-plasma",
       "englishName": "Cold Plasma",
-      "chineseName": "低温等离子体",
+      "chineseName": "寒冷电浆",
       "type": "balanced",
       "effect": "+15% 伤害，附加减速",
       "enEffect": "+15% Damage, +Slow"
@@ -4707,7 +4945,7 @@
     {
       "id": "compact-explosives",
       "englishName": "Compact Explosives",
-      "chineseName": "紧凑炸药",
+      "chineseName": "小而精悍",
       "type": "balanced",
       "effect": "+30% 爆炸半径",
       "enEffect": "+30% Explosion Radius"
@@ -4715,7 +4953,7 @@
     {
       "id": "coolant-leak",
       "englishName": "Coolant Leak",
-      "chineseName": "冷却液泄漏",
+      "chineseName": "冷剂泄露",
       "type": "balanced",
       "effect": "炮塔减速附近的敌人",
       "enEffect": "Turrets slow nearby enemies"
@@ -4723,7 +4961,7 @@
     {
       "id": "corrosive-coating",
       "englishName": "Corrosive Coating",
-      "chineseName": "腐蚀涂层",
+      "chineseName": "涂毒毒刃",
       "type": "balanced",
       "effect": "投掷斧留下酸液痕迹",
       "enEffect": "Throwing axes leave Acid trail"
@@ -4731,7 +4969,7 @@
     {
       "id": "corrosive-thunder",
       "englishName": "Corrosive Thunder",
-      "chineseName": "腐蚀雷霆",
+      "chineseName": "酸蚀雷爆",
       "type": "balanced",
       "effect": "感应地雷变为酸液和电击",
       "enEffect": "Mines become Acid and Electric"
@@ -4739,7 +4977,7 @@
     {
       "id": "crowd-cooker",
       "englishName": "Crowd Cooker",
-      "chineseName": "群体灼烧",
+      "chineseName": "群虫鼎沸",
       "type": "balanced",
       "effect": "增加光束宽度",
       "enEffect": "Increases beam width"
@@ -4747,7 +4985,7 @@
     {
       "id": "cryo-bolt",
       "englishName": "Cryo Bolt",
-      "chineseName": "冰冻箭矢",
+      "chineseName": "冰冻弩箭",
       "type": "balanced",
       "effect": "箭矢循环中添加冰冻箭矢",
       "enEffect": "Adds a Cryo arrow to the cycle"
@@ -4755,7 +4993,7 @@
     {
       "id": "diesel-soaked",
       "englishName": "Diesel Soaked",
-      "chineseName": "浸油",
+      "chineseName": "柴油浸润",
       "type": "balanced",
       "effect": "投掷斧留下火焰痕迹",
       "enEffect": "Throwing axes leave Fire trail"
@@ -4771,7 +5009,7 @@
     {
       "id": "disposable-tech-balanced",
       "englishName": "Disposable Tech",
-      "chineseName": "一次性技术",
+      "chineseName": "即弃即炸",
       "type": "balanced",
       "effect": "无人机/炮塔爆炸而不是返回",
       "enEffect": "Drones/turrets explode instead of returning"
@@ -4779,7 +5017,7 @@
     {
       "id": "drone-mining-damage",
       "englishName": "Drone Mining Damage",
-      "chineseName": "无人机挖矿",
+      "chineseName": "无人机地形破坏",
       "type": "balanced",
       "effect": "无人机可对地形造成伤害",
       "enEffect": "Drones can damage terrain"
@@ -4787,7 +5025,7 @@
     {
       "id": "electrified-rounds",
       "englishName": "Electrified Rounds",
-      "chineseName": "电击弹",
+      "chineseName": "带电子弹",
       "type": "balanced",
       "effect": "+20% 射速，+20% 装填速度，伤害改为电击",
       "enEffect": "+20% Fire Rate, +20% Reload Speed, damage becomes Electric"
@@ -4795,7 +5033,7 @@
     {
       "id": "explosive-reload",
       "englishName": "Explosive Reload",
-      "chineseName": "爆炸装填",
+      "chineseName": "爆破装填",
       "type": "balanced",
       "effect": "+25% 装填速度，装填时释放爆炸",
       "enEffect": "+25% Reload Speed, explodes on reload"
@@ -4803,7 +5041,7 @@
     {
       "id": "extra-capacity-balanced",
       "englishName": "Extra Capacity",
-      "chineseName": "额外容量",
+      "chineseName": "额外警戒",
       "type": "balanced",
       "effect": "+1 炮塔/充能数",
       "enEffect": "+1 Turret/Charge"
@@ -4811,7 +5049,7 @@
     {
       "id": "fire-bolt",
       "englishName": "Fire Bolt",
-      "chineseName": "火焰箭矢",
+      "chineseName": "火焰弩箭",
       "type": "balanced",
       "effect": "箭矢循环中添加火焰箭矢",
       "enEffect": "Adds a Fire arrow to the cycle"
@@ -4819,7 +5057,7 @@
     {
       "id": "fire-bullets",
       "englishName": "Fire Bullets",
-      "chineseName": "燃烧弹",
+      "chineseName": "火焰铅弹",
       "type": "balanced",
       "effect": "伤害类型改为火焰",
       "enEffect": "Changes damage type to Fire"
@@ -4827,7 +5065,7 @@
     {
       "id": "focused-lens",
       "englishName": "Focused Lens",
-      "chineseName": "聚焦透镜",
+      "chineseName": "聚焦镜头",
       "type": "balanced",
       "effect": "+200% 伤害，增加长度减少宽度，以最高生命值敌人为目标",
       "enEffect": "+200% Dmg, increased length, targets highest HP enemy"
@@ -4835,7 +5073,7 @@
     {
       "id": "frequency-amp",
       "englishName": "Frequency Amp",
-      "chineseName": "频率放大器",
+      "chineseName": "同频增强",
       "type": "balanced",
       "effect": "每激活一个无人机 +7.5% 状态效果伤害",
       "enEffect": "+7.5% Status Effect Dmg per active drone"
@@ -4843,7 +5081,7 @@
     {
       "id": "frostburn",
       "englishName": "Frostburn",
-      "chineseName": "霜燃",
+      "chineseName": "赤火冰心",
       "type": "balanced",
       "effect": "+15% 伤害，附加燃烧",
       "enEffect": "+15% Damage, +Burn"
@@ -4851,7 +5089,7 @@
     {
       "id": "fusion-turbines",
       "englishName": "Fusion Turbines",
-      "chineseName": "聚变涡轮",
+      "chineseName": "热核轮机",
       "type": "balanced",
       "effect": "+25% 寿命/持续时间",
       "enEffect": "+25% Lifetime/Duration"
@@ -4867,7 +5105,7 @@
     {
       "id": "gold-sniffer",
       "englishName": "Gold Sniffer",
-      "chineseName": "黄金嗅探器",
+      "chineseName": "黄金嗅探",
       "type": "balanced",
       "effect": "无人机挖矿时有几率找到黄金",
       "enEffect": "Chance to find Gold when mining"
@@ -4875,7 +5113,7 @@
     {
       "id": "high-caliber-rounds",
       "englishName": "High Caliber Rounds",
-      "chineseName": "大口径弹药",
+      "chineseName": "大口径弹",
       "type": "balanced",
       "effect": "+100% 穿透，+30% 伤害，-30% 射速",
       "enEffect": "+100% Pierce, +30% Dmg, -30% Fire Rate"
@@ -4883,7 +5121,7 @@
     {
       "id": "high-velocity-bullets",
       "englishName": "High Velocity Bullets",
-      "chineseName": "高速弹头",
+      "chineseName": "高速子弹",
       "type": "balanced",
       "effect": "+50% 武器范围，+10% 伤害",
       "enEffect": "+50% Weapon Range, +10% Damage"
@@ -4891,7 +5129,7 @@
     {
       "id": "hot-plasma-balanced",
       "englishName": "Hot Plasma",
-      "chineseName": "高温等离子体",
+      "chineseName": "灼热电浆",
       "type": "balanced",
       "effect": "+15% 伤害，附加燃烧",
       "enEffect": "+15% Damage, +Burn"
@@ -4899,7 +5137,7 @@
     {
       "id": "impact-punch",
       "englishName": "Impact Punch",
-      "chineseName": "冲击拳",
+      "chineseName": "化学冲击",
       "type": "balanced",
       "effect": "+75% 伤害",
       "enEffect": "+75% Damage"
@@ -4907,7 +5145,7 @@
     {
       "id": "incendiary-payload",
       "englishName": "Incendiary Payload",
-      "chineseName": "燃烧弹头",
+      "chineseName": "燃剂载荷",
       "type": "balanced",
       "effect": "火箭弹点燃地面",
       "enEffect": "Rockets ignite the ground"
@@ -4915,7 +5153,7 @@
     {
       "id": "ionized-plasma-balanced",
       "englishName": "Ionized Plasma",
-      "chineseName": "电离等离子体",
+      "chineseName": "电离电浆",
       "type": "balanced",
       "effect": "+15% 伤害，附加电击",
       "enEffect": "+15% Damage, +Electric"
@@ -4923,7 +5161,7 @@
     {
       "id": "kinda-looks-like-a-magnet",
       "englishName": "Kinda Looks Like a Magnet",
-      "chineseName": "看着像磁铁",
+      "chineseName": "“有点形似磁铁...”",
       "type": "balanced",
       "effect": "眩晕清扫器可拾取经验和材料",
       "enEffect": "Stun sweeper picks up XP and materials"
@@ -4931,7 +5169,7 @@
     {
       "id": "knuckle-grip",
       "englishName": "Knuckle Grip",
-      "chineseName": "关节握把",
+      "chineseName": "指虎握把",
       "type": "balanced",
       "effect": "+350% 武器范围，呈螺旋飞行后返回",
       "enEffect": "+350% Weapon Range, flies in spiral then returns"
@@ -4939,7 +5177,7 @@
     {
       "id": "lightweight-alloy",
       "englishName": "Lightweight Alloy",
-      "chineseName": "轻量化合金",
+      "chineseName": "轻量合金",
       "type": "balanced",
       "effect": "+50%/30% 武器范围",
       "enEffect": "+50%/30% Weapon Range"
@@ -4955,7 +5193,7 @@
     {
       "id": "marker-lights",
       "englishName": "Marker Lights",
-      "chineseName": "标记灯",
+      "chineseName": "航行灯",
       "type": "balanced",
       "effect": "每激活一个无人机，所有武器 +7.5% 武器范围",
       "enEffect": "+7.5% Weapon Range to all weapons per active drone"
@@ -4963,7 +5201,7 @@
     {
       "id": "mining-directive",
       "englishName": "Mining Directive",
-      "chineseName": "挖矿指令",
+      "chineseName": "挖掘指令",
       "type": "balanced",
       "effect": "炮塔挖掘附近的墙壁",
       "enEffect": "Turrets dig nearby walls"
@@ -4971,7 +5209,7 @@
     {
       "id": "more-beams",
       "englishName": "More Beams",
-      "chineseName": "更多光束",
+      "chineseName": "更多射线",
       "type": "balanced",
       "effect": "+1 光束",
       "enEffect": "+1 Beam"
@@ -4995,7 +5233,7 @@
     {
       "id": "nano-waves",
       "englishName": "Nano Waves",
-      "chineseName": "纳米波",
+      "chineseName": "纳米微波",
       "type": "balanced",
       "effect": "+100% 效力，-30% 伤害",
       "enEffect": "+100% Potency, -30% Damage"
@@ -5003,7 +5241,7 @@
     {
       "id": "overheat",
       "englishName": "Overheat",
-      "chineseName": "过热",
+      "chineseName": "暴力超频",
       "type": "balanced",
       "effect": "+100% 伤害，-30% 寿命",
       "enEffect": "+100% Damage, -30% Lifetime"
@@ -5011,7 +5249,7 @@
     {
       "id": "pan-fried-shells",
       "englishName": "Pan Fried Shells",
-      "chineseName": "煎烤弹壳",
+      "chineseName": "油爆弹头",
       "type": "balanced",
       "effect": "伤害类型改为火焰",
       "enEffect": "Changes damage type to Fire"
@@ -5019,7 +5257,7 @@
     {
       "id": "personal-space-invaders",
       "englishName": "Personal Space Invaders",
-      "chineseName": "私人空间入侵者",
+      "chineseName": "过度保护",
       "type": "balanced",
       "effect": "-50% 武器范围，+2 无人机在周围盘旋",
       "enEffect": "-50% Weapon Range, +2 Drones circling"
@@ -5027,7 +5265,7 @@
     {
       "id": "piercing-projectiles",
       "englishName": "Piercing Projectiles",
-      "chineseName": "穿透弹",
+      "chineseName": "穿深铅弹",
       "type": "balanced",
       "effect": "+200% 穿透，-30% 寿命",
       "enEffect": "+200% Pierce, -30% Lifetime"
@@ -5035,7 +5273,7 @@
     {
       "id": "plasma-coating",
       "englishName": "Plasma Coating",
-      "chineseName": "等离子涂层",
+      "chineseName": "电浆覆盖",
       "type": "balanced",
       "effect": "伤害类型改为等离子",
       "enEffect": "Changes damage type to Plasma"
@@ -5043,7 +5281,7 @@
     {
       "id": "plasmatic-rounds",
       "englishName": "Plasmatic Rounds",
-      "chineseName": "等离子弹",
+      "chineseName": "电浆子弹",
       "type": "balanced",
       "effect": "伤害类型改为等离子",
       "enEffect": "Changes damage type to Plasma"
@@ -5051,7 +5289,7 @@
     {
       "id": "potent-juice",
       "englishName": "Potent Juice",
-      "chineseName": "强力药剂",
+      "chineseName": "强力化学",
       "type": "balanced",
       "effect": "+30%/50% 效力",
       "enEffect": "+30%/50% Potency"
@@ -5059,7 +5297,7 @@
     {
       "id": "refrigerated-gunpowder",
       "englishName": "Refrigerated Gunpowder",
-      "chineseName": "冷藏火药",
+      "chineseName": "低温火药",
       "type": "balanced",
       "effect": "伤害类型改为冰冻",
       "enEffect": "Changes damage type to Cryo"
@@ -5067,7 +5305,7 @@
     {
       "id": "reload-shield",
       "englishName": "Reload Shield",
-      "chineseName": "换弹护盾",
+      "chineseName": "换弹庇护",
       "type": "balanced",
       "effect": "-25% 装填速度，+25% 射速，装填时 +100% 护甲",
       "enEffect": "-25% Reload, +25% Fire Rate, +100% Armor on reload"
@@ -5075,7 +5313,7 @@
     {
       "id": "rubber-tip",
       "englishName": "Rubber Tip",
-      "chineseName": "橡胶弹头",
+      "chineseName": "橡胶弹尖",
       "type": "balanced",
       "effect": "+15% 伤害，附加击退",
       "enEffect": "+15% Damage, +Knockback"
@@ -5083,7 +5321,7 @@
     {
       "id": "runic-warhead",
       "englishName": "Runic Warhead",
-      "chineseName": "符文弹头",
+      "chineseName": "附魔导弹",
       "type": "balanced",
       "effect": "+50% 爆炸半径",
       "enEffect": "+50% Explosion Radius"
@@ -5091,7 +5329,7 @@
     {
       "id": "secret-sauce",
       "englishName": "Secret Sauce",
-      "chineseName": "秘制酱料",
+      "chineseName": "传奇秘方",
       "type": "balanced",
       "effect": "+20% 效力，所有其他武器 +10% 效力",
       "enEffect": "+20% Potency, all other weapons +10% Potency"
@@ -5107,7 +5345,7 @@
     {
       "id": "spare-rockets",
       "englishName": "Spare Rockets",
-      "chineseName": "备用火箭",
+      "chineseName": "额外火箭",
       "type": "balanced",
       "effect": "+3 弹匣容量",
       "enEffect": "+3 Magazine Capacity"
@@ -5123,7 +5361,7 @@
     {
       "id": "tape-some-ice-to-it",
       "englishName": "Tape Some Ice to It!",
-      "chineseName": "绑点冰块！",
+      "chineseName": "土制降温",
       "type": "balanced",
       "effect": "为手雷添加冰冻爆炸",
       "enEffect": "Adds a Cryo explosion to grenades"
@@ -5131,7 +5369,7 @@
     {
       "id": "tape-some-nails-to-it",
       "englishName": "Tape Some Nails to It",
-      "chineseName": "绑点钉子",
+      "chineseName": "土制增伤",
       "type": "balanced",
       "effect": "+10% 伤害，附加动能爆炸",
       "enEffect": "+10% Dmg, adds Kinetic explosion"
@@ -5139,7 +5377,7 @@
     {
       "id": "thermal-overload",
       "englishName": "Thermal Overload",
-      "chineseName": "热力过载",
+      "chineseName": "铝热过载",
       "type": "balanced",
       "effect": "光束可开采地形",
       "enEffect": "Beams can mine terrain"
@@ -5147,7 +5385,7 @@
     {
       "id": "true-tnt",
       "englishName": "True TNT",
-      "chineseName": "真·烈性炸药",
+      "chineseName": "矿山炸药",
       "type": "balanced",
       "effect": "手雷爆炸可对地形造成伤害",
       "enEffect": "Grenade explosions can damage terrain"
@@ -5163,7 +5401,7 @@
     {
       "id": "widened-sprinkler-balanced",
       "englishName": "Widened Sprinkler",
-      "chineseName": "加宽喷头",
+      "chineseName": "拓宽喷口",
       "type": "balanced",
       "effect": "+25% 地面区域半径和持续时间",
       "enEffect": "+25% Ground Zone Radius and Duration"
@@ -5171,7 +5409,7 @@
     {
       "id": "widget-spinner",
       "englishName": "Widget Spinner",
-      "chineseName": "旋转装置",
+      "chineseName": "陀螺组件",
       "type": "balanced",
       "effect": "+20% 寿命，光束 360 度旋转",
       "enEffect": "+20% Lifetime, beams rotate 360°"
@@ -5179,7 +5417,7 @@
     {
       "id": "akimbo-unstable",
       "englishName": "Akimbo",
-      "chineseName": "双持",
+      "chineseName": "前后互搏",
       "type": "unstable",
       "effect": "向相反方向额外射击一次",
       "enEffect": "Fires an additional shot in opposite direction"
@@ -5187,7 +5425,7 @@
     {
       "id": "bigger-mags-unstable",
       "englishName": "Bigger Mags",
-      "chineseName": "超大弹匣",
+      "chineseName": "更大弹匣",
       "type": "unstable",
       "effect": "+100% 弹匣容量，+100% 射速",
       "enEffect": "+100% Magazine Size, +100% Fire Rate"
@@ -5195,7 +5433,7 @@
     {
       "id": "bolt-volley",
       "englishName": "Bolt Volley",
-      "chineseName": "箭矢齐射",
+      "chineseName": "万箭齐发",
       "type": "unstable",
       "effect": "一次射出所有类型的箭矢",
       "enEffect": "Fires all arrow types at once"
@@ -5203,7 +5441,7 @@
     {
       "id": "bullet-helix",
       "englishName": "Bullet Helix",
-      "chineseName": "螺旋弹道",
+      "chineseName": "子弹漩涡",
       "type": "unstable",
       "effect": "+200% 射速，+100% 弹匣容量，呈螺旋状射击",
       "enEffect": "+200% Fire Rate, +100% Magazine, spiral pattern"
@@ -5219,7 +5457,7 @@
     {
       "id": "centralized-reflector",
       "englishName": "Centralized Reflector",
-      "chineseName": "集束反射器",
+      "chineseName": "中心反射",
       "type": "unstable",
       "effect": "+10% 效力，增加一道反向光束",
       "enEffect": "+10% Potency, adds a beam firing backwards"
@@ -5227,7 +5465,7 @@
     {
       "id": "colossal-twinblade",
       "englishName": "Colossal Twinblade",
-      "chineseName": "巨型双刃斧",
+      "chineseName": "巨型双头斧",
       "type": "unstable",
       "effect": "+125% 伤害，+75% 爆炸半径",
       "enEffect": "+125% Damage, +75% Explosion Radius"
@@ -5235,7 +5473,7 @@
     {
       "id": "conduit",
       "englishName": "Conduit",
-      "chineseName": "导电管道",
+      "chineseName": "电流疏导",
       "type": "unstable",
       "effect": "向附近所有构造体射出电击光束",
       "enEffect": "Fires Electric beams at nearby constructs"
@@ -5251,7 +5489,7 @@
     {
       "id": "death-spiral",
       "englishName": "Death Spiral",
-      "chineseName": "死亡螺旋",
+      "chineseName": "死亡回旋",
       "type": "unstable",
       "effect": "+200% 射速，+100% 弹匣容量，螺旋射击",
       "enEffect": "+200% Fire Rate, +100% Magazine, spiral pattern"
@@ -5259,7 +5497,7 @@
     {
       "id": "disposable-tech-unstable",
       "englishName": "Disposable Tech",
-      "chineseName": "一次性技术",
+      "chineseName": "即弃即炸",
       "type": "unstable",
       "effect": "眩晕清扫器爆炸成电击脉冲",
       "enEffect": "Stun sweeper explodes into Electric pulse"
@@ -5267,7 +5505,7 @@
     {
       "id": "double-barrel",
       "englishName": "Double Barrel!",
-      "chineseName": "双管齐下！",
+      "chineseName": "双重枪管",
       "type": "unstable",
       "effect": "射出两颗平行的子弹",
       "enEffect": "Fires two parallel bullets"
@@ -5275,7 +5513,7 @@
     {
       "id": "drippin-balls",
       "englishName": "Drippin Balls",
-      "chineseName": "滴落火球",
+      "chineseName": "热得流油",
       "type": "unstable",
       "effect": "炽热等离子体点燃地面",
       "enEffect": "Hot plasma ignites the ground"
@@ -5283,7 +5521,7 @@
     {
       "id": "electrical-tether",
       "englishName": "Electrical Tether",
-      "chineseName": "电弧连接",
+      "chineseName": "电流缰绳",
       "type": "unstable",
       "effect": "无人机通过电弧与玩家相连",
       "enEffect": "Drones connect to player via arc"
@@ -5291,7 +5529,7 @@
     {
       "id": "electrified-dispenser",
       "englishName": "Electrified Dispenser",
-      "chineseName": "通电散布器",
+      "chineseName": "电力分流",
       "type": "unstable",
       "effect": "无人机通过电弧连接到手雷",
       "enEffect": "Drones connect to grenades via arc"
@@ -5299,7 +5537,7 @@
     {
       "id": "em-discharge",
       "englishName": "EM Discharge",
-      "chineseName": "电磁放电",
+      "chineseName": "电磁爆炸",
       "type": "unstable",
       "effect": "电击SMG可射击友方目标获得电击效果",
       "enEffect": "SMG can shoot allies for extra Electric"
@@ -5307,7 +5545,7 @@
     {
       "id": "even-more-beams",
       "englishName": "Even More Beams",
-      "chineseName": "更多更多光束",
+      "chineseName": "超多射线",
       "type": "unstable",
       "effect": "+3/+2 光束",
       "enEffect": "+3/+2 Beams"
@@ -5315,7 +5553,7 @@
     {
       "id": "experimental-cluster-projectiles",
       "englishName": "Experimental Cluster Projectiles",
-      "chineseName": "实验性集束弹",
+      "chineseName": "电浆离散",
       "type": "unstable",
       "effect": "等离子球消失时分裂为更小投射物",
       "enEffect": "Plasma splits into smaller projectiles when expiring"
@@ -5323,7 +5561,7 @@
     {
       "id": "extra-capacity-unstable",
       "englishName": "Extra Capacity",
-      "chineseName": "额外容量",
+      "chineseName": "额外警戒",
       "type": "unstable",
       "effect": "+3/+4 炮塔/充能数",
       "enEffect": "+3/+4 Turrets/Charges"
@@ -5331,7 +5569,7 @@
     {
       "id": "extra-rocket-drum",
       "englishName": "Extra Rocket Drum",
-      "chineseName": "额外火箭弹鼓",
+      "chineseName": "额外弹鼓",
       "type": "unstable",
       "effect": "增加大量火箭弹",
       "enEffect": "Adds many rockets"
@@ -5339,7 +5577,7 @@
     {
       "id": "fan-of-axes",
       "englishName": "Fan of Axes",
-      "chineseName": "扇形飞斧",
+      "chineseName": "英勇扇战",
       "type": "unstable",
       "effect": "-50% 伤害，+20% 效力，弧形扔出小斧头",
       "enEffect": "-50% Dmg, +20% Potency, throws axes in arc"
@@ -5347,7 +5585,7 @@
     {
       "id": "feedback-harness",
       "englishName": "Feedback Harness",
-      "chineseName": "反馈背带",
+      "chineseName": "触发背带",
       "type": "unstable",
       "effect": "受伤时扔出手雷，10 秒冷却",
       "enEffect": "Throws grenade when taking damage, 10s cooldown"
@@ -5355,7 +5593,7 @@
     {
       "id": "fuel-leak",
       "englishName": "Fuel Leak",
-      "chineseName": "燃料泄漏",
+      "chineseName": "油料泄露",
       "type": "unstable",
       "effect": "+20% 效力，无人机飞行路径留下火焰",
       "enEffect": "+20% Potency, drones leave fire trail"
@@ -5371,7 +5609,7 @@
     {
       "id": "hallucinogenic",
       "englishName": "Hallucinogenic",
-      "chineseName": "致幻剂",
+      "chineseName": "致幻药物",
       "type": "unstable",
       "effect": "+25% 装填速度，+25% 爆炸半径，敌人恐惧逃跑",
       "enEffect": "+25% Reload, +25% Explosion Radius, enemies flee"
@@ -5379,7 +5617,7 @@
     {
       "id": "hot-plasma-unstable",
       "englishName": "Hot Plasma",
-      "chineseName": "高温等离子体",
+      "chineseName": "灼热电浆",
       "type": "unstable",
       "effect": "+50% 伤害，附加燃烧",
       "enEffect": "+50% Damage, +Burn"
@@ -5387,7 +5625,7 @@
     {
       "id": "ionized-plasma-unstable",
       "englishName": "Ionized Plasma",
-      "chineseName": "电离等离子体",
+      "chineseName": "电离电浆",
       "type": "unstable",
       "effect": "+50% 伤害，附加电击",
       "enEffect": "+50% Damage, +Electric"
@@ -5395,7 +5633,7 @@
     {
       "id": "krakatoa-protocol",
       "englishName": "Krakatoa Protocol",
-      "chineseName": "喀拉喀托协议",
+      "chineseName": "喷发协议",
       "type": "unstable",
       "effect": "死亡时爆炸留下一滩带电燃料",
       "enEffect": "Explodes on death, leaving electrified fuel"
@@ -5403,7 +5641,7 @@
     {
       "id": "lead-wrapped-ammo",
       "englishName": "Lead Wrapped Ammo",
-      "chineseName": "铅包弹药",
+      "chineseName": "镀铅弹药",
       "type": "unstable",
       "effect": "+150% 伤害，-20% 射速，-20% 装填速度",
       "enEffect": "+150% Damage, -20% Fire Rate, -20% Reload Speed"
@@ -5419,7 +5657,7 @@
     {
       "id": "mini-pellets",
       "englishName": "Mini Pellets",
-      "chineseName": "微型弹丸",
+      "chineseName": "迷你弹丸",
       "type": "unstable",
       "effect": "弹丸数量翻倍，每个伤害降低",
       "enEffect": "Double pellets, each does reduced damage"
@@ -5427,7 +5665,7 @@
     {
       "id": "mk-11",
       "englishName": "MK 11",
-      "chineseName": "MK 11",
+      "chineseName": "型号 11",
       "type": "unstable",
       "effect": "增加射速/装填/弹匣，大幅降低精准度",
       "enEffect": "+Fire Rate, Reload, Magazine; greatly reduces Accuracy"
@@ -5435,7 +5673,7 @@
     {
       "id": "more-bounce",
       "englishName": "More Bounce!",
-      "chineseName": "更多弹跳！",
+      "chineseName": "好事多弹",
       "type": "unstable",
       "effect": "引爆前可弹跳更多次",
       "enEffect": "Bounces more times before exploding"
@@ -5451,7 +5689,7 @@
     {
       "id": "network-mines",
       "englishName": "Network Mines",
-      "chineseName": "网络地雷",
+      "chineseName": "地雷链络",
       "type": "unstable",
       "effect": "每激活一个地雷 +2% 伤害",
       "enEffect": "+2% Damage per active mine"
@@ -5459,7 +5697,7 @@
     {
       "id": "omni-barrel",
       "englishName": "Omni Barrel",
-      "chineseName": "全能枪管",
+      "chineseName": "威震八方",
       "type": "unstable",
       "effect": "+100% 装填速度，+50% 伤害，+50% 穿透，8 方向射击",
       "enEffect": "+100% Reload, +50% Dmg, +50% Pierce, 8-direction fire"
@@ -5467,7 +5705,7 @@
     {
       "id": "one-handed",
       "englishName": "One-Handed",
-      "chineseName": "单手操作",
+      "chineseName": "单手技巧",
       "type": "unstable",
       "effect": "向相反方向额外扔出一个眩晕清扫器",
       "enEffect": "Throws an extra stun sweeper in opposite direction"
@@ -5475,7 +5713,7 @@
     {
       "id": "overcharged-fuelcells",
       "englishName": "Overcharged Fuelcells",
-      "chineseName": "过载燃料棒",
+      "chineseName": "燃料过充",
       "type": "unstable",
       "effect": "+175% 伤害，-40% 寿命",
       "enEffect": "+175% Damage, -40% Lifetime"
@@ -5483,7 +5721,7 @@
     {
       "id": "payload",
       "englishName": "Payload",
-      "chineseName": "爆破载荷",
+      "chineseName": "电磁负荷",
       "type": "unstable",
       "effect": "箭矢击中大型敌人时留下电击场",
       "enEffect": "Arrows leave Electric field on large enemies"
@@ -5499,7 +5737,7 @@
     {
       "id": "sawn-off",
       "englishName": "Sawn-Off",
-      "chineseName": "截断枪管",
+      "chineseName": "枪管截短",
       "type": "unstable",
       "effect": "-50% 武器范围，-10 精准度，更多子弹",
       "enEffect": "-50% Weapon Range, -10 Accuracy, more bullets"
@@ -5507,7 +5745,7 @@
     {
       "id": "six-shooter",
       "englishName": "Six Shooter",
-      "chineseName": "六发左轮",
+      "chineseName": "枪射六路",
       "type": "unstable",
       "effect": "-50% 穿透，-10 精准度，6 方向射击",
       "enEffect": "-50% Pierce, -10 Accuracy, fires in 6 directions"
@@ -5515,7 +5753,7 @@
     {
       "id": "spliced-emitter",
       "englishName": "Spliced Emitter",
-      "chineseName": "拼接发射器",
+      "chineseName": "复合发射口",
       "type": "unstable",
       "effect": "大幅增加持续时间/范围/伤害",
       "enEffect": "Greatly increases Duration/Range/Damage"
@@ -5523,7 +5761,7 @@
     {
       "id": "sticky-fuel",
       "englishName": "Sticky Fuel",
-      "chineseName": "黏性燃料",
+      "chineseName": "黏性燃油",
       "type": "unstable",
       "effect": "在地面增加燃烧区域",
       "enEffect": "Adds burning zones on ground"
@@ -5531,7 +5769,7 @@
     {
       "id": "storm-e-mag",
       "englishName": "Storm E-Mag",
-      "chineseName": "风暴电磁弹匣",
+      "chineseName": "暴风退匣",
       "type": "unstable",
       "effect": "增加装填速度和射速，最后一颗子弹全方向射击",
       "enEffect": "+Reload Speed, +Fire Rate, last bullet fires in all directions"
@@ -5539,7 +5777,7 @@
     {
       "id": "super-reload-shield",
       "englishName": "Super Reload Shield",
-      "chineseName": "超级换弹护盾",
+      "chineseName": "强效换弹庇护",
       "type": "unstable",
       "effect": "+75% 伤害，+50% 射速，装填时 +100% 护甲",
       "enEffect": "+75% Dmg, +50% Fire Rate, +100% Armor on reload"
@@ -5563,7 +5801,7 @@
     {
       "id": "widened-sprinkler-unstable",
       "englishName": "Widened Sprinkler",
-      "chineseName": "加宽喷头",
+      "chineseName": "拓宽喷口",
       "type": "unstable",
       "effect": "增加地面区域半径和持续时间",
       "enEffect": "Increases Ground Zone radius and duration"
