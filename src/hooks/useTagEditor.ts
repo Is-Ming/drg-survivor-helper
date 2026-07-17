@@ -19,6 +19,9 @@ const DEFAULT_EQUIPMENT_TYPES = [
   '战力', '生存/升级', '直伤核心', '闪避', '暴击', '召唤',
 ]
 
+// 装备来源默认值（用户确认：仅 局内附加 / 成就解锁，可增删改，持久化到 overrides.tags.equipmentSources）
+const DEFAULT_EQUIPMENT_SOURCES = ['局内附加', '成就解锁']
+
 export function useTagEditor() {
   const { merged, saveTags } = useOverrides()
   const tags = merged?.tags
@@ -32,6 +35,9 @@ export function useTagEditor() {
   /** 获取装备类型列表（回落默认） */
   const getTypes = useCallback((): string[] => tags?.equipmentTypes ?? DEFAULT_EQUIPMENT_TYPES, [tags])
 
+  /** 获取装备来源列表（回落默认 局内附加/成就解锁） */
+  const getSources = useCallback((): string[] => tags?.equipmentSources ?? DEFAULT_EQUIPMENT_SOURCES, [tags])
+
   const setCategories = useCallback((list: string[]) => {
     saveTags({ achievementCategories: list })
   }, [saveTags])
@@ -42,6 +48,10 @@ export function useTagEditor() {
 
   const setTypes = useCallback((list: string[]) => {
     saveTags({ equipmentTypes: list })
+  }, [saveTags])
+
+  const setSources = useCallback((list: string[]) => {
+    saveTags({ equipmentSources: list })
   }, [saveTags])
 
   /**
@@ -65,7 +75,7 @@ export function useTagEditor() {
   }, [saveTags])
 
   return {
-    getCategories, getTags, getTypes, setCategories, setTags, setTypes,
+    getCategories, getTags, getTypes, getSources, setCategories, setTags, setTypes, setSources,
     getTagLabel, saveTagLabel, resetTagLabel,
   }
 }

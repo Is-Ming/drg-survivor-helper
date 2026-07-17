@@ -1,13 +1,13 @@
-// 装备卡片：类型/来源 chip + 关联成就 + 官网/攻略双区块 + 管理编辑 + 卡片标签
+// 装备卡片：类型/来源 chip + 关联成就 + 官网/攻略双区块 + 管理编辑
 import { useState, useEffect } from 'react'
 import {
   Card, CardContent, Typography, Box, Chip, TextField, IconButton,
   FormControl, Select, MenuItem,
 } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add'
-import DeleteIcon from '@mui/icons-material/Delete'
+import CloseIcon from '@mui/icons-material/Close'
 import type { Equipment, EquipmentSource, Lang } from '../../data/types'
-import { EQUIPMENT_SOURCE_LABEL, EQUIPMENT_SOURCES } from '../../data/enums'
+import { EQUIPMENT_SOURCE_LABEL } from '../../data/enums'
 import { useTagEditor } from '../../hooks/useTagEditor'
 import { useOverrides } from '../../hooks/useOverrides'
 import { TagPickerDialog } from '../TagPickerDialog'
@@ -47,7 +47,7 @@ export function EquipmentCard({
   editable?: boolean
 }) {
   const isUnlock = equip.source === '成就解锁'
-  const { merged, saveEquipmentEdit, saveCardTags, deleteEquipment } = useOverrides()
+  const { merged, saveEquipmentEdit } = useOverrides()
   const editor = useTagEditor()
 
   // 已合并的装备记录（override 优先），用于读取字段/类型
@@ -66,6 +66,11 @@ export function EquipmentCard({
     const patch: Partial<Equipment> = {}
     patch[field] = value
     saveEquipmentEdit(equip.name, patch)
+  }
+
+  /** 清除待定标记：仅把该装备 suspected 置为 false（装备本身保留，区别于硬删 deleteEquipment） */
+  const clearSuspected = (name: string) => {
+    saveEquipmentEdit(name, { suspected: false })
   }
 
   const [typePickerOpen, setTypePickerOpen] = useState(false)
@@ -92,40 +97,20 @@ export function EquipmentCard({
     saveEquipmentEdit(equip.name, { type: next })
   }
 
-  // —— 来源（B）：可编辑选择器，写入 overrides.equipments[name].source ——
+  // —— 来源：可编辑选择器，写入 overrides.equipments[name].source（单选，池子来自动态管理）——
   const handleSourceChange = (value: string) => {
     const next = (value || '') as EquipmentSource | ''
     saveEquipmentEdit(equip.name, { source: next })
   }
 
-  // —— 待定装备删除（D）：调后端永久删除，成功后基线重拉使卡片消失 ——
-  const handleDelete = () => {
+  // —— 待定徽标内置清除：点击胶囊 ✕ 只清 suspected，装备保留（不调 deleteEquipment）——
+  const handleClearSuspected = () => {
     const msg =
       lang === 'zh'
-        ? `确定永久删除装备「${equip.name}」？此操作不可撤销。`
-        : `Permanently delete equipment "${equip.name}"? This cannot be undone.`
+        ? `确认将「${equip.name}」移出待定列表？装备本身保留，仅清除「待定」标记。`
+        : `Mark "${equip.name}" as verified? The equipment is kept; only the "unverified" flag is cleared.`
     if (typeof window !== 'undefined' && !window.confirm(msg)) return
-    void deleteEquipment(equip.name)
-  }
-
-  // —— T9.5 装备卡片标签（对称武器卡片标签，经 overrides.cardTags[name] 持久化）——
-  const [cardTagPickerOpen, setCardTagPickerOpen] = useState(false)
-  const [currentCardTags, setCurrentCardTags] = useState<string[]>(() => merged?.cardTags?.[equip.name] ?? [])
-  useEffect(() => {
-    const stored = merged?.cardTags?.[equip.name]
-    if (Array.isArray(stored)) setCurrentCardTags(stored)
-  }, [merged, equip.name])
-
-  const removeCardTag = (tag: string) => {
-    const next = currentCardTags.filter((t) => t !== tag)
-    setCurrentCardTags(next)
-    saveCardTags(equip.name, next)
-  }
-  const addCardTag = (tag: string) => {
-    if (currentCardTags.includes(tag)) return
-    const next = [...currentCardTags, tag]
-    setCurrentCardTags(next)
-    saveCardTags(equip.name, next)
+    clearSuspected(equip.name)
   }
 
   return (
@@ -137,7 +122,7 @@ export function EquipmentCard({
       }}
     >
       <CardContent>
-        {/* 第 1 行：名称独占整行（可编辑保持）；右侧为「待定」徽标与删除按钮 */}
+        {/* 第 1 行：名称独占整行（可编辑保持）；右侧为「待定」徽标（内置 ✕ 清除） */}
         <Box display="flex" justifyContent="space-between" alignItems="center" gap={1}>
           <Box minWidth={0} flex={1}>
             <EditableField
@@ -153,25 +138,18 @@ export function EquipmentCard({
               <Chip
                 size="small"
                 color="warning"
+                variant="outlined"
                 label={lang === 'zh' ? '待定' : 'Unverified'}
+                onDelete={handleClearSuspected}
+                deleteIcon={<CloseIcon sx={{ fontSize: 16 }} />}
+                title={lang === 'zh' ? '点击 ✕ 移出待定（装备保留）' : 'Click ✕ to mark verified (equipment kept)'}
+                aria-label={lang === 'zh' ? '移出待定' : 'Clear unverified'}
               />
-            )}
-            {editable && suspected && (
-              <IconButton
-                size="small"
-                color="error"
-                onClick={handleDelete}
-                title={lang === 'zh' ? '删除此待定装备' : 'Delete this unverified equipment'}
-                aria-label={lang === 'zh' ? '删除此待定装备' : 'Delete this unverified equipment'}
-                sx={{ border: 1, borderColor: 'divider', borderRadius: 1.5, width: 28, height: 28 }}
-              >
-                <DeleteIcon sx={{ fontSize: 16 }} />
-              </IconButton>
             )}
           </Box>
         </Box>
 
-        {/* 第 2 行：分类类型 + 来源选择器 + 卡片标签，同一行 flex wrap */}
+        {/* 第 2 行：分类类型 + 来源选择器，同一行 flex wrap */}
         <Box mt={1} display="flex" flexWrap="wrap" gap={0.5} alignItems="center">
           {/* 装备类型 chips + 添加 */}
           {editable ? (
@@ -191,7 +169,7 @@ export function EquipmentCard({
             ))
           )}
 
-          {/* 来源选择器：可编辑态为 Select，只读态为只读 Chip（source 为空则不显示） */}
+          {/* 来源选择器：可编辑态为 Select（池子来自动态管理页），只读态为只读 Chip（source 为空则不显示） */}
           {editable ? (
             <FormControl size="small" sx={{ minWidth: 110 }}>
               <Select
@@ -201,8 +179,8 @@ export function EquipmentCard({
                 onChange={(e) => handleSourceChange(e.target.value)}
               >
                 <MenuItem value="">{lang === 'zh' ? '未设置' : 'Unset'}</MenuItem>
-                {EQUIPMENT_SOURCES.map((s) => (
-                  <MenuItem key={s} value={s}>{EQUIPMENT_SOURCE_LABEL[s]?.[lang] ?? s}</MenuItem>
+                {editor.getSources().map((s) => (
+                  <MenuItem key={s} value={s}>{EQUIPMENT_SOURCE_LABEL[s as EquipmentSource]?.[lang] ?? s}</MenuItem>
                 ))}
               </Select>
             </FormControl>
@@ -214,23 +192,6 @@ export function EquipmentCard({
                 label={EQUIPMENT_SOURCE_LABEL[equip.source]?.[lang] ?? equip.source}
               />
             )
-          )}
-
-          {/* 装备卡片标签 chips + 添加 */}
-          {editable ? (
-            <>
-              {currentCardTags.map((tag) => (
-                <RemovableChip key={tag} label={tag} onRemove={() => removeCardTag(tag)} color="secondary.light" />
-              ))}
-              <IconButton size="small" color="secondary" onClick={() => setCardTagPickerOpen(true)}
-                sx={{ border: 1, borderColor: 'divider', borderRadius: 1.5, width: 28, height: 28 }}>
-                <AddIcon sx={{ fontSize: 16 }} />
-              </IconButton>
-            </>
-          ) : (
-            currentCardTags.length > 0 && currentCardTags.map((tag) => (
-              <Chip key={tag} size="small" label={tag} variant="outlined" />
-            ))
           )}
         </Box>
 
@@ -319,19 +280,6 @@ export function EquipmentCard({
         selectedTags={currentTypes}
         onToggle={(tag) => toggleType(tag)}
         getLabel={(tag) => eqTypeLabel(tag, lang)}
-        lang={lang}
-      />
-
-      <TagPickerDialog
-        open={cardTagPickerOpen}
-        onClose={() => setCardTagPickerOpen(false)}
-        title={lang === 'zh' ? '选择卡片标签' : 'Card Tags'}
-        availableTags={allEqTypes}
-        selectedTags={currentCardTags}
-        onToggle={(tag) => {
-          if (currentCardTags.includes(tag)) removeCardTag(tag)
-          else addCardTag(tag)
-        }}
         lang={lang}
       />
     </Card>

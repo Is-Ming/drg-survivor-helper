@@ -40,6 +40,7 @@ export interface BaselineData {
     weaponTags?: string[]
     achievementCategories?: string[]
     equipmentTypes?: string[]
+    equipmentSources?: string[]
     weaponTagLabels?: Record<string, WeaponTagLabel>
   }
   cardTags: Record<string, string[]>
@@ -62,6 +63,7 @@ export interface OverridesData {
     weaponTags?: string[]
     achievementCategories?: string[]
     equipmentTypes?: string[]
+    equipmentSources?: string[]
     weaponTagLabels?: Record<string, WeaponTagLabel | null>
   }
   cardTags?: Record<string, string[]>
@@ -79,6 +81,7 @@ export interface OverridesContextValue {
     weaponTags?: string[]
     achievementCategories?: string[]
     equipmentTypes?: string[]
+    equipmentSources?: string[]
     weaponTagLabels?: Record<string, WeaponTagLabel | null>
   }) => void
   saveWeaponRating: (englishName: string, rating: Rating | '') => void

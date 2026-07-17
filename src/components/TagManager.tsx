@@ -210,6 +210,14 @@ export function TagManager() {
             addPlaceholder={lang === 'zh' ? '新类型' : 'New type'}
           />
           <Divider sx={{ my: 2 }} />
+          <PlainTagList
+            key="source-list"
+            title={lang === 'zh' ? '⚙ 装备来源' : '⚙ Equipment Sources'}
+            items={editor.getSources()}
+            onSave={editor.setSources}
+            addPlaceholder={lang === 'zh' ? '新来源' : 'New source'}
+          />
+          <Divider sx={{ my: 2 }} />
           <WeaponNameSection />
         </CardContent>
       </Card>
