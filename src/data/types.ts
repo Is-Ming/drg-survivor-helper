@@ -145,15 +145,16 @@ export interface Weapon {
   note?: string
 }
 
-/** 装备来源 */
-export type EquipmentSource = '局内附加' | '成就解锁'
+/** 装备来源（'来源' 为用户从游戏提取表新增、尚未归类的占位来源） */
+export type EquipmentSource = '来源' | '局内附加' | '成就解锁'
 
 export interface Equipment {
   name: string
   /** 类型：单值（原默认值）或主理人拍板的多值数组，均允许 */
   type: string | string[]
   effect: string
-  source: EquipmentSource
+  /** 来源枚举；数据里约 26 条为空（''），故允许空串表示「未设置」 */
+  source: EquipmentSource | ''
   /** 成就解锁类填对应成就（含英文名/旧名注释）；局内附加为空 */
   relatedAchievement?: string
   /** 官网名（官方 Artifacts 表，R5）；查不到标「待核」 */
@@ -162,6 +163,8 @@ export interface Equipment {
   officialEffect?: string
   /** 版本标记；允许 '待核'（1.0 可能新增，决策 6） */
   version: string
+  /** 待定标记：用户从游戏提取表「待定」新增、尚未核实的装备（baseline 中 13 条为 true） */
+  suspected?: boolean
 }
 
 // ---------- UI 偏好 / 检索态 ----------

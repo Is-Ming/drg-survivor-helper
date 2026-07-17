@@ -1,9 +1,13 @@
 // 装备卡片：类型/来源 chip + 关联成就 + 官网/攻略双区块 + 管理编辑 + 卡片标签
 import { useState, useEffect } from 'react'
-import { Card, CardContent, Typography, Box, Chip, TextField, IconButton } from '@mui/material'
+import {
+  Card, CardContent, Typography, Box, Chip, TextField, IconButton,
+  FormControl, Select, MenuItem,
+} from '@mui/material'
 import AddIcon from '@mui/icons-material/Add'
-import type { Equipment, Lang } from '../../data/types'
-import { EQUIPMENT_SOURCE_LABEL } from '../../data/enums'
+import DeleteIcon from '@mui/icons-material/Delete'
+import type { Equipment, EquipmentSource, Lang } from '../../data/types'
+import { EQUIPMENT_SOURCE_LABEL, EQUIPMENT_SOURCES } from '../../data/enums'
 import { useTagEditor } from '../../hooks/useTagEditor'
 import { useOverrides } from '../../hooks/useOverrides'
 import { TagPickerDialog } from '../TagPickerDialog'
@@ -43,13 +47,14 @@ export function EquipmentCard({
   editable?: boolean
 }) {
   const isUnlock = equip.source === '成就解锁'
-  const { merged, saveEquipmentEdit, saveCardTags } = useOverrides()
+  const { merged, saveEquipmentEdit, saveCardTags, deleteEquipment } = useOverrides()
   const editor = useTagEditor()
-
-  const sourceLabel = EQUIPMENT_SOURCE_LABEL[equip.source]?.[lang] ?? equip.source
 
   // 已合并的装备记录（override 优先），用于读取字段/类型
   const mergedEquip = merged?.equipments?.find((e) => e.name === equip.name)
+
+  // 待定徽标：优先读取装备记录自身 suspected，回落 merged 合并值
+  const suspected = Boolean(equip.suspected ?? mergedEquip?.suspected)
 
   // 字段读取：merged 优先，回落 equip（已合并）字段
   const getSaved = (field: 'name' | 'officialName' | 'officialEffect' | 'effect'): string => {
@@ -87,6 +92,22 @@ export function EquipmentCard({
     saveEquipmentEdit(equip.name, { type: next })
   }
 
+  // —— 来源（B）：可编辑选择器，写入 overrides.equipments[name].source ——
+  const handleSourceChange = (value: string) => {
+    const next = (value || '') as EquipmentSource | ''
+    saveEquipmentEdit(equip.name, { source: next })
+  }
+
+  // —— 待定装备删除（D）：调后端永久删除，成功后基线重拉使卡片消失 ——
+  const handleDelete = () => {
+    const msg =
+      lang === 'zh'
+        ? `确定永久删除装备「${equip.name}」？此操作不可撤销。`
+        : `Permanently delete equipment "${equip.name}"? This cannot be undone.`
+    if (typeof window !== 'undefined' && !window.confirm(msg)) return
+    void deleteEquipment(equip.name)
+  }
+
   // —— T9.5 装备卡片标签（对称武器卡片标签，经 overrides.cardTags[name] 持久化）——
   const [cardTagPickerOpen, setCardTagPickerOpen] = useState(false)
   const [currentCardTags, setCurrentCardTags] = useState<string[]>(() => merged?.cardTags?.[equip.name] ?? [])
@@ -116,59 +137,102 @@ export function EquipmentCard({
       }}
     >
       <CardContent>
-        <Box display="flex" justifyContent="space-between" alignItems="center">
-          <EditableField
-            value={getSaved('name')}
-            onSave={(v) => doSave('name', v)}
-            editable={editable}
-            variant="subtitle1"
-            fontWeight={700}
-          />
-          <Box display="flex" gap={0.5} alignItems="center">
-            {editable ? (
-              <>
-                {currentTypes.map((type) => (
-                  <RemovableChip key={type} label={eqTypeLabel(type, lang)} onRemove={() => toggleType(type)} color="primary.light" />
-                ))}
-                <IconButton size="small" color="primary" onClick={() => setTypePickerOpen(true)}
-                  sx={{ border: 1, borderColor: 'divider', borderRadius: 1.5, width: 28, height: 28 }}>
-                  <AddIcon sx={{ fontSize: 16 }} />
-                </IconButton>
-              </>
-            ) : (
-              currentTypes.map((type) => (
-                <Chip key={type} size="small" label={eqTypeLabel(type, lang)} clickable={!!onTypeClick}
-                  onClick={() => onTypeClick?.(type)} />
-              ))
-            )}
-            <Chip
-              size="small"
-              label={sourceLabel}
-              variant="outlined"
+        {/* 第 1 行：名称独占整行（可编辑保持）；右侧为「待定」徽标与删除按钮 */}
+        <Box display="flex" justifyContent="space-between" alignItems="center" gap={1}>
+          <Box minWidth={0} flex={1}>
+            <EditableField
+              value={getSaved('name')}
+              onSave={(v) => doSave('name', v)}
+              editable={editable}
+              variant="subtitle1"
+              fontWeight={700}
             />
+          </Box>
+          <Box display="flex" gap={0.5} alignItems="center">
+            {suspected && (
+              <Chip
+                size="small"
+                color="warning"
+                label={lang === 'zh' ? '待定' : 'Unverified'}
+              />
+            )}
+            {editable && suspected && (
+              <IconButton
+                size="small"
+                color="error"
+                onClick={handleDelete}
+                title={lang === 'zh' ? '删除此待定装备' : 'Delete this unverified equipment'}
+                aria-label={lang === 'zh' ? '删除此待定装备' : 'Delete this unverified equipment'}
+                sx={{ border: 1, borderColor: 'divider', borderRadius: 1.5, width: 28, height: 28 }}
+              >
+                <DeleteIcon sx={{ fontSize: 16 }} />
+              </IconButton>
+            )}
           </Box>
         </Box>
 
-        {/* 装备卡片标签（可编辑） —— 对称武器卡片标签 */}
-        {editable ? (
-          <Box mt={1} mb={1} display="flex" flexWrap="wrap" gap={0.5} alignItems="center">
-            {currentCardTags.map((tag) => (
-              <RemovableChip key={tag} label={tag} onRemove={() => removeCardTag(tag)} color="secondary.light" />
-            ))}
-            <IconButton size="small" color="secondary" onClick={() => setCardTagPickerOpen(true)}
-              sx={{ border: 1, borderColor: 'divider', borderRadius: 1.5, width: 28, height: 28 }}>
-              <AddIcon sx={{ fontSize: 16 }} />
-            </IconButton>
-          </Box>
-        ) : (
-          currentCardTags.length > 0 && (
-            <Box mt={1} mb={1} display="flex" flexWrap="wrap" gap={0.5} alignItems="center">
-              {currentCardTags.map((tag) => (
-                <Chip key={tag} size="small" label={tag} variant="outlined" />
+        {/* 第 2 行：分类类型 + 来源选择器 + 卡片标签，同一行 flex wrap */}
+        <Box mt={1} display="flex" flexWrap="wrap" gap={0.5} alignItems="center">
+          {/* 装备类型 chips + 添加 */}
+          {editable ? (
+            <>
+              {currentTypes.map((type) => (
+                <RemovableChip key={type} label={eqTypeLabel(type, lang)} onRemove={() => toggleType(type)} color="primary.light" />
               ))}
-            </Box>
-          )
-        )}
+              <IconButton size="small" color="primary" onClick={() => setTypePickerOpen(true)}
+                sx={{ border: 1, borderColor: 'divider', borderRadius: 1.5, width: 28, height: 28 }}>
+                <AddIcon sx={{ fontSize: 16 }} />
+              </IconButton>
+            </>
+          ) : (
+            currentTypes.map((type) => (
+              <Chip key={type} size="small" label={eqTypeLabel(type, lang)} clickable={!!onTypeClick}
+                onClick={() => onTypeClick?.(type)} />
+            ))
+          )}
+
+          {/* 来源选择器：可编辑态为 Select，只读态为只读 Chip（source 为空则不显示） */}
+          {editable ? (
+            <FormControl size="small" sx={{ minWidth: 110 }}>
+              <Select
+                displayEmpty
+                size="small"
+                value={equip.source || ''}
+                onChange={(e) => handleSourceChange(e.target.value)}
+              >
+                <MenuItem value="">{lang === 'zh' ? '未设置' : 'Unset'}</MenuItem>
+                {EQUIPMENT_SOURCES.map((s) => (
+                  <MenuItem key={s} value={s}>{EQUIPMENT_SOURCE_LABEL[s]?.[lang] ?? s}</MenuItem>
+                ))}
+              </Select>
+            </FormControl>
+          ) : (
+            equip.source && (
+              <Chip
+                size="small"
+                variant="outlined"
+                label={EQUIPMENT_SOURCE_LABEL[equip.source]?.[lang] ?? equip.source}
+              />
+            )
+          )}
+
+          {/* 装备卡片标签 chips + 添加 */}
+          {editable ? (
+            <>
+              {currentCardTags.map((tag) => (
+                <RemovableChip key={tag} label={tag} onRemove={() => removeCardTag(tag)} color="secondary.light" />
+              ))}
+              <IconButton size="small" color="secondary" onClick={() => setCardTagPickerOpen(true)}
+                sx={{ border: 1, borderColor: 'divider', borderRadius: 1.5, width: 28, height: 28 }}>
+                <AddIcon sx={{ fontSize: 16 }} />
+              </IconButton>
+            </>
+          ) : (
+            currentCardTags.length > 0 && currentCardTags.map((tag) => (
+              <Chip key={tag} size="small" label={tag} variant="outlined" />
+            ))
+          )}
+        </Box>
 
         {/* 官网描述区块（蓝色） */}
         {equip.officialName && (

@@ -87,6 +87,7 @@ export interface OverridesContextValue {
   saveOverclockEdit: (id: string, patch: { chineseName?: string; effect?: string }) => void
   saveAchievementEdit: (englishName: string, patch: { chineseName?: string; unlockCondition?: string; category?: string | string[] }) => void
   saveEquipmentEdit: (name: string, patch: Partial<Equipment>) => void
+  deleteEquipment: (name: string) => Promise<{ ok: boolean }>
   resetOverrides: () => Promise<void>
   pinBaseline: () => Promise<{ ok: boolean; version?: number }>
   ready: boolean
@@ -257,6 +258,30 @@ export function OverridesProvider({ children }: { children: ReactNode }) {
     [saveOverride],
   )
 
+  // 永久删除某装备：DELETE /api/equipment/:name（需 X-Admin-Token）；成功后重拉 baseline 同步状态。
+  const deleteEquipment = useCallback(async (name: string): Promise<{ ok: boolean }> => {
+    if (!serverAvailableRef.current) return { ok: false }
+    try {
+      const token = getAdminToken()
+      const res = await fetch(`${API_BASE}/equipment/${encodeURIComponent(name)}`, {
+        method: 'DELETE',
+        headers: { 'X-Admin-Token': token },
+      })
+      // 404：未找到该装备；其余非 2xx：失败
+      if (!res.ok) return { ok: false }
+      const data = (await res.json()) as { ok: boolean }
+      // 链路：删除成功后重新拉取 baseline，使 merged 重算、对应卡片消失
+      const bRes = await fetch(`${API_BASE}/baseline`, { cache: 'no-store' })
+      if (bRes.ok) {
+        const base = (await bRes.json()) as BaselineData
+        setBaseline(base)
+      }
+      return data
+    } catch {
+      return { ok: false }
+    }
+  }, [])
+
   const resetOverrides = useCallback(async () => {
     overridesRef.current = EMPTY_OVERRIDES
     setOverrides(EMPTY_OVERRIDES)
@@ -381,6 +406,7 @@ export function OverridesProvider({ children }: { children: ReactNode }) {
       saveOverclockEdit,
       saveAchievementEdit,
       saveEquipmentEdit,
+      deleteEquipment,
       resetOverrides,
       pinBaseline,
       ready,
@@ -399,6 +425,7 @@ export function OverridesProvider({ children }: { children: ReactNode }) {
       saveOverclockEdit,
       saveAchievementEdit,
       saveEquipmentEdit,
+      deleteEquipment,
       resetOverrides,
       pinBaseline,
       ready,

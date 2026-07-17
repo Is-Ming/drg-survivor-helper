@@ -30,7 +30,7 @@ describe('WeaponCard', () => {
   it('标签 chip 显示官网中文标签', () => {
     render(<OverridesProvider><WeaponCard weapon={weapon} selectedTags={[]} lang="zh" /></OverridesProvider>)
     expect(screen.getByText('动能(KINETIC)')).toBeInTheDocument()
-    expect(screen.getByText('精准(PRECISE)')).toBeInTheDocument()
+    expect(screen.getByText('精密(PRECISE)')).toBeInTheDocument()
   })
 
   it('点击标签回填筛选（官网枚举）', () => {

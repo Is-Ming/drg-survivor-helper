@@ -140,6 +140,21 @@ async function handleApi(req, res, urlPath) {
       const version = pinBaseline()
       return sendJson(res, 200, { ok: true, version })
     }
+    // 永久删除某装备：从 baseline.json 的 equipments 按 name 移除该条（需 X-Admin-Token，已在上方校验）。
+    // urlPath 已在入口处 decodeURIComponent，此处直接取末段为装备名。
+    const eqMatch = /^\/api\/equipment\/(.+)$/.exec(urlPath)
+    if (req.method === 'DELETE' && eqMatch) {
+      const name = eqMatch[1]
+      const baseline = readJsonFile(BASELINE_FILE)
+      const before = baseline.equipments.length
+      baseline.equipments = baseline.equipments.filter((e) => e.name !== name)
+      if (baseline.equipments.length === before) {
+        // 未找到该装备
+        return sendJson(res, 404, { ok: false })
+      }
+      writeJsonFile(BASELINE_FILE, baseline)
+      return sendJson(res, 200, { ok: true })
+    }
     return sendJson(res, 404, { error: 'not found' })
   } catch (err) {
     return sendJson(res, 500, { error: 'internal error', message: String(err && err.message || err) })

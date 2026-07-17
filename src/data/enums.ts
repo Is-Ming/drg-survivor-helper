@@ -64,10 +64,11 @@ export const WEAPON_CLASSES: WeaponClass[] = ['Scout', 'Gunner', 'Engineer', 'Dr
 /** 强度评级（顺序：S→-） */
 export const RATINGS: Rating[] = ['S', 'A', 'B', 'C', '-']
 
-/** 装备来源 */
-export const EQUIPMENT_SOURCES: EquipmentSource[] = ['局内附加', '成就解锁']
+/** 装备来源（'来源' 为用户从游戏提取表新增的待归类装备占位，置于最前） */
+export const EQUIPMENT_SOURCES: EquipmentSource[] = ['来源', '局内附加', '成就解锁']
 
 export const EQUIPMENT_SOURCE_LABEL: Record<EquipmentSource, { zh: string; en: string }> = {
+  '来源': { zh: '来源', en: 'Source' },
   '局内附加': { zh: '局内附加', en: 'In-run' },
   '成就解锁': { zh: '成就解锁', en: 'Unlock' },
 }
@@ -94,26 +95,26 @@ export const EQUIPMENT_TYPE_LABEL: Record<string, { zh: string; en: string }> = 
  */
 export const WEAPON_TAG_LABEL: Record<WeaponTag, { zh: string; en: string }> = {
   KINETIC: { zh: '动能', en: 'KINETIC' },
-  FIRE: { zh: '火焰', en: 'FIRE' },
+  FIRE: { zh: '燃烧', en: 'FIRE' },
   ELECTRIC: { zh: '电击', en: 'ELECTRIC' },
-  COLD: { zh: '冰冻', en: 'COLD' },
+  COLD: { zh: '急冻', en: 'COLD' },
   ACID: { zh: '腐蚀', en: 'ACID' },
-  PLASMA: { zh: '等离子', en: 'PLASMA' },
+  PLASMA: { zh: '电浆', en: 'PLASMA' },
   LIGHT: { zh: '轻型', en: 'LIGHT' },
   MEDIUM: { zh: '中型', en: 'MEDIUM' },
   HEAVY: { zh: '重型', en: 'HEAVY' },
-  THROWABLE: { zh: '投掷', en: 'THROWABLE' },
-  CONSTRUCT: { zh: '建造', en: 'CONSTRUCT' },
-  PROJECTILE: { zh: '弹道', en: 'PROJECTILE' },
+  THROWABLE: { zh: '投掷物', en: 'THROWABLE' },
+  CONSTRUCT: { zh: '建造物', en: 'CONSTRUCT' },
+  PROJECTILE: { zh: '发射物', en: 'PROJECTILE' },
   EXPLOSIVE: { zh: '爆炸', en: 'EXPLOSIVE' },
   DRONE: { zh: '无人机', en: 'DRONE' },
-  TURRET: { zh: '炮塔', en: 'TURRET' },
-  GROUNDZONE: { zh: '地面区域', en: 'GROUNDZONE' },
-  PRECISE: { zh: '精准', en: 'PRECISE' },
+  TURRET: { zh: '哨戒炮', en: 'TURRET' },
+  GROUNDZONE: { zh: '弥留区域', en: 'GROUNDZONE' },
+  PRECISE: { zh: '精密', en: 'PRECISE' },
   SPRAY: { zh: '散射', en: 'SPRAY' },
   AREA: { zh: '范围', en: 'AREA' },
-  BEAM: { zh: '光束', en: 'BEAM' },
-  LASTING: { zh: '持续', en: 'LASTING' },
+  BEAM: { zh: '射线', en: 'BEAM' },
+  LASTING: { zh: '长时', en: 'LASTING' },
 }
 
 /** 标签下拉分组（按四类），组名与 dict 的 tag.group.* 保持一致（单一来源，避免双写漂移） */
