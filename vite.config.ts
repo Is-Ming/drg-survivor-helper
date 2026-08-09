@@ -5,6 +5,9 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  // 部署在子路径 /game/drg/ 下（公用 nginx 已将该前缀剥离后转发到本机 8002）。
+  // 改 base 后，所有打包资源、manifest、sw 注册路径自动带此前缀。
+  base: '/game/drg/',
   plugins: [
     react(),
     VitePWA({
@@ -17,7 +20,7 @@ export default defineConfig({
         theme_color: '#F5A623',
         background_color: '#0d0d0d',
         display: 'standalone',
-        start_url: '/',
+        start_url: '/game/drg/',
         icons: [
           { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
           { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any maskable' },
@@ -26,6 +29,7 @@ export default defineConfig({
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
         cleanupOutdatedCaches: true,
+        navigateFallback: '/game/drg/index.html',
       },
     }),
   ],

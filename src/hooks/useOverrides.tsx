@@ -26,8 +26,10 @@ import type {
 import { buildSlugMap, type WeaponNameResolver, type WeaponRef } from '../utils/weaponName'
 import { migrateLegacyOverrides } from './useOverridesMigration'
 
-const API_BASE = '/api'
-const PUBLIC_BASELINE = '/baseline.json'
+// 路径前缀跟随 Vite base（生产部署在 /game/drg/ 子路径下，公用 nginx 剥前缀后转发）。
+// 开发态（npm run dev）base 仍为 /，且根 /api 已被主站占用，故 dev 直接回退 /api（走 vite 代理到 8787）。
+const API_BASE = import.meta.env.DEV ? '/api' : import.meta.env.BASE_URL + 'api'
+const PUBLIC_BASELINE = import.meta.env.DEV ? '/baseline.json' : import.meta.env.BASE_URL + 'baseline.json'
 const ADMIN_TOKEN_KEY = 'drg-helper-admin-token'
 const EMPTY_OVERRIDES: OverridesData = {}
 
