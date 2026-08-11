@@ -71,8 +71,12 @@ export function AchievementCard({
   const color = ach.rarity ? RARITY_COLOR[ach.rarity] : undefined
 
   // 图标：优先查本地映射路径，加载失败或缺失则兜底灰色圆 + 首字（绝不热链远程 URL）
+  // map 中路径为以 / 开头的绝对路径（/achievement-icons/...），需按部署 base 前缀化，
+  // 兼容生产(/game/drg/)与开发(/)。
   const localIcon = ACHIEVEMENT_ICON_MAP[ach.englishName]
-  const showIcon = !!localIcon && !iconError
+  const localIconUrl =
+    localIcon != null ? import.meta.env.BASE_URL.replace(/\/$/, '') + localIcon : undefined
+  const showIcon = !!localIconUrl && !iconError
   const fallbackChar = (lang === 'zh' ? resolvedName : ach.englishName).trim().charAt(0) || '?'
 
   const commitEdit = (field: string, value: string) => {
@@ -113,7 +117,7 @@ export function AchievementCard({
           <Box display="flex" gap={1} minWidth={0} flex={1} alignItems="flex-start">
             {showIcon ? (
               <img
-                src={localIcon}
+                src={localIconUrl}
                 width={40}
                 height={40}
                 alt={ach.englishName}
