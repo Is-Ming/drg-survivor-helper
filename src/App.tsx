@@ -1,6 +1,4 @@
-// 顶层布局：HashRouter 路由分流
-//   /        → PublicPage（只读，无超频 TAB）
-//   /admin   → AdminPage（密码登录，全部可编辑）
+// 顶层布局：公开站只读，单一 PublicPage 路由（编辑已迁至个人控制台）
 import { useMemo } from 'react'
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import { ThemeProvider, CssBaseline } from '@mui/material'
@@ -9,7 +7,6 @@ import { createAppTheme } from './theme/createAppTheme'
 import { OverridesProvider } from './hooks/useOverrides'
 import { TopBar } from './components/TopBar'
 import { PublicPage } from './pages/PublicPage'
-import { AdminPage } from './pages/AdminPage'
 
 export function App() {
   const { theme } = useTheme()
@@ -23,7 +20,6 @@ export function App() {
           <TopBar />
           <Routes>
             <Route path="/" element={<PublicPage />} />
-            <Route path="/admin" element={<AdminPage />} />
           </Routes>
         </HashRouter>
       </OverridesProvider>
