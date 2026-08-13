@@ -5,11 +5,11 @@ import { weapons } from '../data/weapons'
 import type { WeaponClass } from '../data/types'
 
 describe('classes 职业 / 小职业数据结构（验收点 1）', () => {
-  it('共 4 职业，每职业 3 小职业，合计 12', () => {
-    expect(classes.length).toBe(4)
+  it('共 5 职业（含 DLC 破拆员），每职业 3 小职业，合计 15', () => {
+    expect(classes.length).toBe(5)
     classes.forEach((c) => expect(c.subclasses.length).toBe(3))
     const total = classes.reduce((n, c) => n + c.subclasses.length, 0)
-    expect(total).toBe(12)
+    expect(total).toBe(15)
   })
 
   it('所有小职业 isTentative 均为 false（译名已确认）', () => {
@@ -24,6 +24,7 @@ describe('classes 职业 / 小职业数据结构（验收点 1）', () => {
       Gunner: '机枪手',
       Engineer: '工程师',
       Driller: '钻机手',
+      Demolisher: '破拆员',
     }
     classes.forEach((c) => expect(c.chineseName).toBe(expected[c.englishName]))
   })

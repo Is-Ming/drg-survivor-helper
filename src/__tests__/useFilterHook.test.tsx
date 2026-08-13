@@ -29,14 +29,14 @@ describe('useFilter hook（验收点 4：全局搜索）', () => {
     act(() => result.current.setActiveModule('weapons'))
     act(() => result.current.setQuery('test'))
     // 武器数据本身真实存在，过滤仅作用于当前模块数据集
-    expect(result.current._raw.weapons).toHaveLength(42)
+    expect(result.current._raw.weapons).toHaveLength(53)
   })
 
   it('setActiveModule 切换模块并刷新对应数据', () => {
     const { result } = renderHook(() => useFilter(), { wrapper: OverridesProvider })
     act(() => result.current.setActiveModule('weapons'))
     expect(result.current.state.activeModule).toBe('weapons')
-    expect(result.current.filteredWeapons).toHaveLength(42)
+    expect(result.current.filteredWeapons).toHaveLength(53)
 
     act(() => result.current.setActiveModule('equipments'))
     expect(result.current.state.activeModule).toBe('equipments')
@@ -47,7 +47,7 @@ describe('useFilter hook（验收点 4：全局搜索）', () => {
     const { result } = renderHook(() => useFilter(), { wrapper: OverridesProvider })
     expect(result.current.resultCount).toBe(300)
     act(() => result.current.setActiveModule('weapons'))
-    expect(result.current.resultCount).toBe(42)
+    expect(result.current.resultCount).toBe(53)
     act(() => result.current.setActiveModule('equipments'))
     expect(result.current.resultCount).toBe(20)
   })

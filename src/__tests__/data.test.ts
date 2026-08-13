@@ -10,8 +10,8 @@ describe('三大模块数据完整（验收点 1）', () => {
   it('achievements 长度 = 300', () => {
     expect(achievements).toHaveLength(300)
   })
-  it('weapons 长度 = 42', () => {
-    expect(weapons).toHaveLength(42)
+  it('weapons 长度 = 53', () => {
+    expect(weapons).toHaveLength(53)
   })
   it('equipments 长度 = 20', () => {
     expect(equipments).toHaveLength(20)

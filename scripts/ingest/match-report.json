@@ -1,0 +1,1877 @@
+{
+  "meta": {
+    "generatedBy": "scripts/ingest/apply-zh.mjs",
+    "generatedAt": "2026-08-12T09:44:17.195Z",
+    "baseline": "server/data/baseline.json",
+    "zhMap": "dict/zh-map.json",
+    "nameMapEntries": 764,
+    "norm": "strip ASCII quotes/apostrophes + lowercase + collapse internal whitespace",
+    "achievementsFrozen": true
+  },
+  "summary": {
+    "equipments": {
+      "total": 45,
+      "matched": 45,
+      "review": 0,
+      "changed": 0
+    },
+    "weapons": {
+      "total": 42,
+      "matched": 39,
+      "review": 3,
+      "changed": 13
+    },
+    "overclocks": {
+      "total": 126,
+      "matched": 117,
+      "review": 9,
+      "changed": 0
+    },
+    "achievements": {
+      "total": 300,
+      "frozen": true,
+      "touched": 0
+    }
+  },
+  "applied": [
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "DRG Coupons",
+      "currentZh": "集团折扣券",
+      "suggestedZh": "集团折扣券",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Company Issued Magnet",
+      "currentZh": "集团配发磁铁",
+      "suggestedZh": "集团配发磁铁",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Red Sugar Cube",
+      "currentZh": "红糖块",
+      "suggestedZh": "红糖块",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Clipboard of Grudges",
+      "currentZh": "记仇名单",
+      "suggestedZh": "记仇名单",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Weapon Box",
+      "currentZh": "武器补给箱",
+      "suggestedZh": "武器补给箱",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Ancient Knowledge",
+      "currentZh": "复古知识库",
+      "suggestedZh": "复古知识库",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Squint-EE5",
+      "currentZh": "侧眼-EE5 目镜",
+      "suggestedZh": "侧眼-EE5 目镜",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Pay2Win Console",
+      "currentZh": "P2W 控制器",
+      "suggestedZh": "P2W 控制器",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Turbo Encabulator",
+      "currentZh": "涡轮解码器",
+      "suggestedZh": "涡轮解码器",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Tactical Cookie",
+      "currentZh": "战术小饼干",
+      "suggestedZh": "战术小饼干",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Salty Pretzel",
+      "currentZh": "椒盐卷饼",
+      "suggestedZh": "椒盐卷饼",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Energy Bars",
+      "currentZh": "能量棒",
+      "suggestedZh": "能量棒",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Vita-Miner Pills",
+      "currentZh": "“挖”他命药丸",
+      "suggestedZh": "“挖”他命药丸",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "The MoCap",
+      "currentZh": "狂人头盔",
+      "suggestedZh": "狂人头盔",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Pickled Nitra",
+      "currentZh": "腌制硝石",
+      "suggestedZh": "腌制硝石",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Reflex Calibrator",
+      "currentZh": "反射调节仪",
+      "suggestedZh": "反射调节仪",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Armor Grease",
+      "currentZh": "护甲润滑油",
+      "suggestedZh": "护甲润滑油",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Nitragenic Powder",
+      "currentZh": "硝基火药",
+      "suggestedZh": "硝基火药",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Huuli Bait",
+      "currentZh": "嗜矿异虫用诱饵",
+      "suggestedZh": "嗜矿异虫用诱饵",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Ammo Rig",
+      "currentZh": "弹药背带",
+      "suggestedZh": "弹药背带",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Gold Scanner",
+      "currentZh": "黄金探测仪",
+      "suggestedZh": "黄金探测仪",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Nitra Scanner",
+      "currentZh": "硝石探测仪",
+      "suggestedZh": "硝石探测仪",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "XP Scanner",
+      "currentZh": "经验探测仪",
+      "suggestedZh": "经验探测仪",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "FRZ Shield Belt",
+      "currentZh": "FRZ 护盾腰带",
+      "suggestedZh": "FRZ 护盾腰带",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "BRN Shield Belt",
+      "currentZh": "BRN 护盾腰带",
+      "suggestedZh": "BRN 护盾腰带",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Jet Boots",
+      "currentZh": "喷气靴",
+      "suggestedZh": "喷气靴",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Popup Tripod",
+      "currentZh": "便携脚架",
+      "suggestedZh": "便携脚架",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Diver's Manual",
+      "currentZh": "深潜宝典",
+      "suggestedZh": "深潜宝典",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Chemist Kit",
+      "currentZh": "化学套件",
+      "suggestedZh": "化学套件",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Piercing Projectiles",
+      "currentZh": "穿深型发射物",
+      "suggestedZh": "穿深型发射物",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Multi Tool",
+      "currentZh": "万能起子",
+      "suggestedZh": "万能起子",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Pick Axtender",
+      "currentZh": "延长镐身",
+      "suggestedZh": "延长镐身",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Old Memento",
+      "currentZh": "老照片",
+      "suggestedZh": "老照片",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Frostburn",
+      "currentZh": "赤火冰心",
+      "suggestedZh": "赤火冰心",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Hot Plasma",
+      "currentZh": "灼热电浆",
+      "suggestedZh": "灼热电浆",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Barley Bulb Juice",
+      "currentZh": "球果原汁",
+      "suggestedZh": "球果原汁",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Lightning Reflexes",
+      "currentZh": "即时反应",
+      "suggestedZh": "即时反应",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Hotstepper",
+      "currentZh": "风火前行",
+      "suggestedZh": "风火前行",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "5 Leaf Clover",
+      "currentZh": "五叶草",
+      "suggestedZh": "五叶草",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Gridrunner",
+      "currentZh": "电栅行者",
+      "suggestedZh": "电栅行者",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Overflow",
+      "currentZh": "载荷泛溢",
+      "suggestedZh": "载荷泛溢",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Corrosive Thunder",
+      "currentZh": "酸蚀雷爆",
+      "suggestedZh": "酸蚀雷爆",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Charged reload",
+      "currentZh": "放电装填",
+      "suggestedZh": "放电装填",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Diffractor prism",
+      "currentZh": "衍射棱镜",
+      "suggestedZh": "衍射棱镜",
+      "changed": false
+    },
+    {
+      "kind": "equipment",
+      "id": null,
+      "englishName": "Widget Spinner",
+      "currentZh": "陀螺组件",
+      "suggestedZh": "陀螺组件",
+      "changed": false
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "DeepCore GK2",
+      "currentZh": "深核 GK2 突击步枪",
+      "suggestedZh": "深核 GK2 突击步枪",
+      "changed": false
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "DRAK-25 Plasma Carbine",
+      "currentZh": "DRAK-25 电浆卡宾枪",
+      "suggestedZh": "DRAK-25 电浆卡宾枪",
+      "changed": false
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Cryo Grenade",
+      "currentZh": "急冻手雷",
+      "suggestedZh": "急冻手雷",
+      "changed": false
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Arc-Tek Cryo Guard",
+      "currentZh": "Arc-Tek 急冻护卫无人机",
+      "suggestedZh": "Arc-Tek 急冻护卫无人机",
+      "changed": false
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Jury-Rigged Boomstick",
+      "currentZh": "应急霰弹枪",
+      "suggestedZh": "应急霰弹枪",
+      "changed": false
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Voltaic Stun Sweeper",
+      "currentZh": "强电震击镖",
+      "suggestedZh": "强电震击镖",
+      "changed": false
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "TH-0R Bug Taser",
+      "currentZh": "“雷神之罚” 电击枪",
+      "suggestedZh": "“雷神之罚” 电击枪",
+      "changed": false
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Zhukov NUK17",
+      "currentZh": "朱可夫 NUK17双持冲锋枪",
+      "suggestedZh": "朱可夫 NUK17 双持冲锋枪",
+      "changed": true
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Thunderhead Heavy Autocannon",
+      "currentZh": "“雷暴云砧”重型双管机炮",
+      "suggestedZh": "“雷暴云砧” 重型双管机炮",
+      "changed": true
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Seismic Repulsor",
+      "currentZh": "“地震冲击”重锤哨戒炮",
+      "suggestedZh": "“地震冲击” 重锤哨戒炮",
+      "changed": true
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Tactical Leadburster",
+      "currentZh": "战术铅暴雷",
+      "suggestedZh": "战术铅暴雷",
+      "changed": false
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Lead Storm Powered Minigun",
+      "currentZh": "“铅暴”转管机枪",
+      "suggestedZh": "“铅暴” 转管机枪",
+      "changed": true
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Bulldog Heavy Revolver",
+      "currentZh": "“斗牛犬”重型左轮手枪",
+      "suggestedZh": "“斗牛犬” 重型左轮手枪",
+      "changed": true
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "ArmsKore Coil Gun",
+      "currentZh": "“武装核心”电磁手炮",
+      "suggestedZh": "“武装核心” 电磁手炮",
+      "changed": true
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Hurricane Guided Rocket System",
+      "currentZh": "“飓风”制导火箭系统",
+      "suggestedZh": "“飓风” 制导火箭系统",
+      "changed": true
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "BRT7 Burst Fire Gun",
+      "currentZh": "BRT7 连发手枪",
+      "suggestedZh": "BRT7 连发手枪",
+      "changed": false
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Firefly Hunter Drone",
+      "currentZh": "“萤火虫”燃烧狩猎无人机",
+      "suggestedZh": "“萤火虫” 燃烧狩猎无人机",
+      "changed": true
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Incendiary Grenade",
+      "currentZh": "燃烧手雷",
+      "suggestedZh": "燃烧手雷",
+      "changed": false
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Warthog Auto 210",
+      "currentZh": "“疣猪”210 自动霰弹枪",
+      "suggestedZh": "“疣猪” 210 自动霰弹枪",
+      "changed": true
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Shard Diffractor",
+      "currentZh": "心石聚能炮",
+      "suggestedZh": "心石聚能炮",
+      "changed": false
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Plasma Burster",
+      "currentZh": "电浆连爆雷",
+      "suggestedZh": "电浆连爆雷",
+      "changed": false,
+      "note": "bg-source mismatch(localPair=\"Подобрена броня\")"
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "LMG Gun Platform",
+      "currentZh": "轻机枪哨戒炮",
+      "suggestedZh": "轻机枪哨戒炮",
+      "changed": false
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Krakatoa Sentinel",
+      "currentZh": "“喀拉喀托”单兵喷火哨戒炮",
+      "suggestedZh": "“喀拉喀托” 单兵喷火哨戒炮",
+      "changed": true
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Voltaic Shock Fence",
+      "currentZh": "强电防护网",
+      "suggestedZh": "强电防护网",
+      "changed": false
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "DeepCore PGL",
+      "currentZh": "深核 40mm 便携式榴弹发射器",
+      "suggestedZh": "深核 40mm 便携式榴弹发射器",
+      "changed": false
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Hi-Volt Thunderbird",
+      "currentZh": "Hi-Volt “雷鸟” 电击护卫无人机",
+      "suggestedZh": "Hi-Volt “雷鸟” 电击护卫无人机",
+      "changed": false
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "LOK-1 Smart Rifle",
+      "currentZh": "LOK-1 智能步枪",
+      "suggestedZh": "LOK-1 智能步枪",
+      "changed": false
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Shredder Swarm Grenade",
+      "currentZh": "蜂群手雷",
+      "suggestedZh": "蜂群手雷",
+      "changed": false
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Stubby Voltaic SMG",
+      "currentZh": "“百万”伏特微型冲锋枪",
+      "suggestedZh": "“百万” 伏特微型冲锋枪",
+      "changed": true
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Colette Wave Cooker",
+      "currentZh": "柯莱特微波烹调者",
+      "suggestedZh": "柯莱特 微波烹调者",
+      "changed": true
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Corrosive Sludge Pump",
+      "currentZh": "蚀泥喷射泵",
+      "suggestedZh": "蚀泥喷射泵",
+      "changed": false
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Cryo Cannon",
+      "currentZh": "急冻喷射炮",
+      "suggestedZh": "急冻喷射炮",
+      "changed": false
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Impact Axe",
+      "currentZh": "冲击战斧",
+      "suggestedZh": "冲击战斧",
+      "changed": false
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "K1-P Viper Drone",
+      "currentZh": "K1-P \"毒蟒\" 腐蚀毒素无人机",
+      "suggestedZh": "K1-P “毒蟒” 腐蚀毒素无人机",
+      "changed": true
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "CRSPR Flamethrower",
+      "currentZh": "CRSPR 火焰喷射器",
+      "suggestedZh": "CRSPR 火焰喷射器",
+      "changed": false
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Subata 120",
+      "currentZh": "苏巴特 120 半自动手枪",
+      "suggestedZh": "苏巴特 120 半自动手枪",
+      "changed": false
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Experimental Plasma Charger",
+      "currentZh": "实验性等离子蓄能手枪",
+      "suggestedZh": "实验性等离子蓄能手枪",
+      "changed": false
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "High Explosive Grenade",
+      "currentZh": "高爆手雷",
+      "suggestedZh": "高爆手雷",
+      "changed": false
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Neurotoxin Grenade",
+      "currentZh": "神经毒素手雷",
+      "suggestedZh": "神经毒素手雷",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "a-little-more-oomph",
+      "englishName": "A Little More Oomph!",
+      "currentZh": "活力四射",
+      "suggestedZh": "活力四射",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "acid-blades",
+      "englishName": "Acid Blades",
+      "currentZh": "腐蚀利刃",
+      "suggestedZh": "腐蚀利刃",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "acid-dipped-tips",
+      "englishName": "Acid Dipped Tips",
+      "currentZh": "淬毒弹头",
+      "suggestedZh": "淬毒弹头",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "afterburner",
+      "englishName": "Afterburner",
+      "currentZh": "后燃加力",
+      "suggestedZh": "后燃加力",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "akimbo-balanced",
+      "englishName": "Akimbo",
+      "currentZh": "前后互搏",
+      "suggestedZh": "前后互搏",
+      "changed": false,
+      "note": "conflict(\"武器双持\"|\"前后互搏\")"
+    },
+    {
+      "kind": "overclock",
+      "id": "battery-bullets",
+      "englishName": "Battery Bullets",
+      "currentZh": "蓄电子弹",
+      "suggestedZh": "蓄电子弹",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "better-ball-bearings",
+      "englishName": "Better Ball Bearings",
+      "currentZh": "高端轴承",
+      "suggestedZh": "高端轴承",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "big-game-hunter",
+      "englishName": "Big Game Hunter",
+      "currentZh": "巨兽猎人",
+      "suggestedZh": "巨兽猎人",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "bigger-mags-balanced",
+      "englishName": "Bigger Mags",
+      "currentZh": "更大弹匣",
+      "suggestedZh": "更大弹匣",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "bigger-tanks",
+      "englishName": "Bigger Tanks",
+      "currentZh": "更大储罐",
+      "suggestedZh": "更大储罐",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "chemical-reload",
+      "englishName": "Chemical Reload",
+      "currentZh": "化工装填",
+      "suggestedZh": "化工装填",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "cluster-grenades",
+      "englishName": "Cluster Grenades",
+      "currentZh": "集束手雷",
+      "suggestedZh": "集束手雷",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "coilgun-mining-damage",
+      "englishName": "Coilgun Mining Damage",
+      "currentZh": "手炮地形破坏",
+      "suggestedZh": "手炮地形破坏",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "cold-blades",
+      "englishName": "Cold Blades",
+      "currentZh": "急冻利刃",
+      "suggestedZh": "急冻利刃",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "cold-plasma",
+      "englishName": "Cold Plasma",
+      "currentZh": "寒冷电浆",
+      "suggestedZh": "寒冷电浆",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "compact-explosives",
+      "englishName": "Compact Explosives",
+      "currentZh": "小而精悍",
+      "suggestedZh": "小而精悍",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "coolant-leak",
+      "englishName": "Coolant Leak",
+      "currentZh": "冷剂泄露",
+      "suggestedZh": "冷剂泄露",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "corrosive-coating",
+      "englishName": "Corrosive Coating",
+      "currentZh": "涂毒毒刃",
+      "suggestedZh": "涂毒毒刃",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "crowd-cooker",
+      "englishName": "Crowd Cooker",
+      "currentZh": "群虫鼎沸",
+      "suggestedZh": "群虫鼎沸",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "cryo-bolt",
+      "englishName": "Cryo Bolt",
+      "currentZh": "冰冻弩箭",
+      "suggestedZh": "冰冻弩箭",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "diesel-soaked",
+      "englishName": "Diesel Soaked",
+      "currentZh": "柴油浸润",
+      "suggestedZh": "柴油浸润",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "disposable-tech-balanced",
+      "englishName": "Disposable Tech",
+      "currentZh": "即弃即炸",
+      "suggestedZh": "即弃即炸",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "drone-mining-damage",
+      "englishName": "Drone Mining Damage",
+      "currentZh": "无人机地形破坏",
+      "suggestedZh": "无人机地形破坏",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "electrified-rounds",
+      "englishName": "Electrified Rounds",
+      "currentZh": "带电子弹",
+      "suggestedZh": "带电子弹",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "explosive-reload",
+      "englishName": "Explosive Reload",
+      "currentZh": "爆破装填",
+      "suggestedZh": "爆破装填",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "extra-capacity-balanced",
+      "englishName": "Extra Capacity",
+      "currentZh": "额外警戒",
+      "suggestedZh": "额外警戒",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "fire-bolt",
+      "englishName": "Fire Bolt",
+      "currentZh": "火焰弩箭",
+      "suggestedZh": "火焰弩箭",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "fire-bullets",
+      "englishName": "Fire Bullets",
+      "currentZh": "火焰铅弹",
+      "suggestedZh": "火焰铅弹",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "focused-lens",
+      "englishName": "Focused Lens",
+      "currentZh": "聚焦镜头",
+      "suggestedZh": "聚焦镜头",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "frequency-amp",
+      "englishName": "Frequency Amp",
+      "currentZh": "同频增强",
+      "suggestedZh": "同频增强",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "fusion-turbines",
+      "englishName": "Fusion Turbines",
+      "currentZh": "热核轮机",
+      "suggestedZh": "热核轮机",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "gas-rerouting",
+      "englishName": "Gas Rerouting",
+      "currentZh": "气压重导",
+      "suggestedZh": "气压重导",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "gold-sniffer",
+      "englishName": "Gold Sniffer",
+      "currentZh": "黄金嗅探",
+      "suggestedZh": "黄金嗅探",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "high-caliber-rounds",
+      "englishName": "High Caliber Rounds",
+      "currentZh": "大口径弹",
+      "suggestedZh": "大口径弹",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "high-velocity-bullets",
+      "englishName": "High Velocity Bullets",
+      "currentZh": "高速子弹",
+      "suggestedZh": "高速子弹",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "hot-plasma-balanced",
+      "englishName": "Hot Plasma",
+      "currentZh": "灼热电浆",
+      "suggestedZh": "灼热电浆",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "impact-punch",
+      "englishName": "Impact Punch",
+      "currentZh": "化学冲击",
+      "suggestedZh": "化学冲击",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "incendiary-payload",
+      "englishName": "Incendiary Payload",
+      "currentZh": "燃剂载荷",
+      "suggestedZh": "燃剂载荷",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "ionized-plasma-balanced",
+      "englishName": "Ionized Plasma",
+      "currentZh": "电离电浆",
+      "suggestedZh": "电离电浆",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "kinda-looks-like-a-magnet",
+      "englishName": "Kinda Looks Like a Magnet",
+      "currentZh": "“有点形似磁铁...”",
+      "suggestedZh": "“有点形似磁铁...”",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "knuckle-grip",
+      "englishName": "Knuckle Grip",
+      "currentZh": "指虎握把",
+      "suggestedZh": "指虎握把",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "lightweight-alloy",
+      "englishName": "Lightweight Alloy",
+      "currentZh": "轻量合金",
+      "suggestedZh": "轻量合金",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "magnetic-alloy",
+      "englishName": "Magnetic Alloy",
+      "currentZh": "磁性合金",
+      "suggestedZh": "磁性合金",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "marker-lights",
+      "englishName": "Marker Lights",
+      "currentZh": "航行灯",
+      "suggestedZh": "航行灯",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "mining-directive",
+      "englishName": "Mining Directive",
+      "currentZh": "挖掘指令",
+      "suggestedZh": "挖掘指令",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "more-beams",
+      "englishName": "More Beams",
+      "currentZh": "更多射线",
+      "suggestedZh": "更多射线",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "more-drones-balanced",
+      "englishName": "More Drones",
+      "currentZh": "更多无人机",
+      "suggestedZh": "更多无人机",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "more-mines",
+      "englishName": "More Mines",
+      "currentZh": "更多地雷",
+      "suggestedZh": "更多地雷",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "nano-waves",
+      "englishName": "Nano Waves",
+      "currentZh": "纳米微波",
+      "suggestedZh": "纳米微波",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "overheat",
+      "englishName": "Overheat",
+      "currentZh": "暴力超频",
+      "suggestedZh": "暴力超频",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "pan-fried-shells",
+      "englishName": "Pan Fried Shells",
+      "currentZh": "油爆弹头",
+      "suggestedZh": "油爆弹头",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "personal-space-invaders",
+      "englishName": "Personal Space Invaders",
+      "currentZh": "过度保护",
+      "suggestedZh": "过度保护",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "piercing-projectiles",
+      "englishName": "Piercing Projectiles",
+      "currentZh": "穿深铅弹",
+      "suggestedZh": "穿深铅弹",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "plasma-coating",
+      "englishName": "Plasma Coating",
+      "currentZh": "电浆覆盖",
+      "suggestedZh": "电浆覆盖",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "plasmatic-rounds",
+      "englishName": "Plasmatic Rounds",
+      "currentZh": "电浆子弹",
+      "suggestedZh": "电浆子弹",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "potent-juice",
+      "englishName": "Potent Juice",
+      "currentZh": "强力化学",
+      "suggestedZh": "强力化学",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "refrigerated-gunpowder",
+      "englishName": "Refrigerated Gunpowder",
+      "currentZh": "低温火药",
+      "suggestedZh": "低温火药",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "reload-shield",
+      "englishName": "Reload Shield",
+      "currentZh": "换弹庇护",
+      "suggestedZh": "换弹庇护",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "rubber-tip",
+      "englishName": "Rubber Tip",
+      "currentZh": "橡胶弹尖",
+      "suggestedZh": "橡胶弹尖",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "secret-sauce",
+      "englishName": "Secret Sauce",
+      "currentZh": "传奇秘方",
+      "suggestedZh": "传奇秘方",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "sidearm",
+      "englishName": "Sidearm",
+      "currentZh": "指定副手",
+      "suggestedZh": "指定副手",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "spare-rockets",
+      "englishName": "Spare Rockets",
+      "currentZh": "额外火箭",
+      "suggestedZh": "额外火箭",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "tank-tracks",
+      "englishName": "Tank Tracks",
+      "currentZh": "坦克履带",
+      "suggestedZh": "坦克履带",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "tape-some-nails-to-it",
+      "englishName": "Tape Some Nails to It",
+      "currentZh": "土制增伤",
+      "suggestedZh": "土制增伤",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "thermal-overload",
+      "englishName": "Thermal Overload",
+      "currentZh": "铝热过载",
+      "suggestedZh": "铝热过载",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "true-tnt",
+      "englishName": "True TNT",
+      "currentZh": "矿山炸药",
+      "suggestedZh": "矿山炸药",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "vortex-core",
+      "englishName": "Vortex Core",
+      "currentZh": "漩涡核心",
+      "suggestedZh": "漩涡核心",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "widened-sprinkler-balanced",
+      "englishName": "Widened Sprinkler",
+      "currentZh": "拓宽喷口",
+      "suggestedZh": "拓宽喷口",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "akimbo-unstable",
+      "englishName": "Akimbo",
+      "currentZh": "前后互搏",
+      "suggestedZh": "前后互搏",
+      "changed": false,
+      "note": "conflict(\"武器双持\"|\"前后互搏\")"
+    },
+    {
+      "kind": "overclock",
+      "id": "bigger-mags-unstable",
+      "englishName": "Bigger Mags",
+      "currentZh": "更大弹匣",
+      "suggestedZh": "更大弹匣",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "bolt-volley",
+      "englishName": "Bolt Volley",
+      "currentZh": "万箭齐发",
+      "suggestedZh": "万箭齐发",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "bullet-helix",
+      "englishName": "Bullet Helix",
+      "currentZh": "子弹漩涡",
+      "suggestedZh": "子弹漩涡",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "cataclysm-core",
+      "englishName": "Cataclysm Core",
+      "currentZh": "灾变核心",
+      "suggestedZh": "灾变核心",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "centralized-reflector",
+      "englishName": "Centralized Reflector",
+      "currentZh": "中心反射",
+      "suggestedZh": "中心反射",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "colossal-twinblade",
+      "englishName": "Colossal Twinblade",
+      "currentZh": "巨型双头斧",
+      "suggestedZh": "巨型双头斧",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "conduit",
+      "englishName": "Conduit",
+      "currentZh": "电流疏导",
+      "suggestedZh": "电流疏导",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "crisis-protocol",
+      "englishName": "Crisis Protocol",
+      "currentZh": "危机协议",
+      "suggestedZh": "危机协议",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "death-spiral",
+      "englishName": "Death Spiral",
+      "currentZh": "死亡回旋",
+      "suggestedZh": "死亡回旋",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "disposable-tech-unstable",
+      "englishName": "Disposable Tech",
+      "currentZh": "即弃即炸",
+      "suggestedZh": "即弃即炸",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "double-barrel",
+      "englishName": "Double Barrel!",
+      "currentZh": "双重枪管",
+      "suggestedZh": "双重枪管",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "drippin-balls",
+      "englishName": "Drippin Balls",
+      "currentZh": "热得流油",
+      "suggestedZh": "热得流油",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "electrical-tether",
+      "englishName": "Electrical Tether",
+      "currentZh": "电流缰绳",
+      "suggestedZh": "电流缰绳",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "electrified-dispenser",
+      "englishName": "Electrified Dispenser",
+      "currentZh": "电力分流",
+      "suggestedZh": "电力分流",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "em-discharge",
+      "englishName": "EM Discharge",
+      "currentZh": "电磁爆炸",
+      "suggestedZh": "电磁爆炸",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "even-more-beams",
+      "englishName": "Even More Beams",
+      "currentZh": "超多射线",
+      "suggestedZh": "超多射线",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "experimental-cluster-projectiles",
+      "englishName": "Experimental Cluster Projectiles",
+      "currentZh": "电浆离散",
+      "suggestedZh": "电浆离散",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "extra-capacity-unstable",
+      "englishName": "Extra Capacity",
+      "currentZh": "额外警戒",
+      "suggestedZh": "额外警戒",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "extra-rocket-drum",
+      "englishName": "Extra Rocket Drum",
+      "currentZh": "额外弹鼓",
+      "suggestedZh": "额外弹鼓",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "fan-of-axes",
+      "englishName": "Fan of Axes",
+      "currentZh": "英勇扇战",
+      "suggestedZh": "英勇扇战",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "feedback-harness",
+      "englishName": "Feedback Harness",
+      "currentZh": "触发背带",
+      "suggestedZh": "触发背带",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "fuel-leak",
+      "englishName": "Fuel Leak",
+      "currentZh": "油料泄露",
+      "suggestedZh": "油料泄露",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "gravitational-core",
+      "englishName": "Gravitational Core",
+      "currentZh": "引力核心",
+      "suggestedZh": "引力核心",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "hallucinogenic",
+      "englishName": "Hallucinogenic",
+      "currentZh": "致幻药物",
+      "suggestedZh": "致幻药物",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "hot-plasma-unstable",
+      "englishName": "Hot Plasma",
+      "currentZh": "灼热电浆",
+      "suggestedZh": "灼热电浆",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "ionized-plasma-unstable",
+      "englishName": "Ionized Plasma",
+      "currentZh": "电离电浆",
+      "suggestedZh": "电离电浆",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "krakatoa-protocol",
+      "englishName": "Krakatoa Protocol",
+      "currentZh": "喷发协议",
+      "suggestedZh": "喷发协议",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "lead-wrapped-ammo",
+      "englishName": "Lead Wrapped Ammo",
+      "currentZh": "镀铅弹药",
+      "suggestedZh": "镀铅弹药",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "lmg-overload",
+      "englishName": "LMG Overload",
+      "currentZh": "机枪过载",
+      "suggestedZh": "机枪过载",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "mini-pellets",
+      "englishName": "Mini Pellets",
+      "currentZh": "迷你弹丸",
+      "suggestedZh": "迷你弹丸",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "mk-11",
+      "englishName": "MK 11",
+      "currentZh": "型号 11",
+      "suggestedZh": "型号 11",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "more-bounce",
+      "englishName": "More Bounce!",
+      "currentZh": "好事多弹",
+      "suggestedZh": "好事多弹",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "more-drones-unstable",
+      "englishName": "More Drones",
+      "currentZh": "更多无人机",
+      "suggestedZh": "更多无人机",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "network-mines",
+      "englishName": "Network Mines",
+      "currentZh": "地雷链络",
+      "suggestedZh": "地雷链络",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "omni-barrel",
+      "englishName": "Omni Barrel",
+      "currentZh": "威震八方",
+      "suggestedZh": "威震八方",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "one-handed",
+      "englishName": "One-Handed",
+      "currentZh": "单手技巧",
+      "suggestedZh": "单手技巧",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "overcharged-fuelcells",
+      "englishName": "Overcharged Fuelcells",
+      "currentZh": "燃料过充",
+      "suggestedZh": "燃料过充",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "payload",
+      "englishName": "Payload",
+      "currentZh": "电磁负荷",
+      "suggestedZh": "电磁负荷",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "rapid-deployment",
+      "englishName": "Rapid Deployment",
+      "currentZh": "快速部署",
+      "suggestedZh": "快速部署",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "sawn-off",
+      "englishName": "Sawn-Off",
+      "currentZh": "枪管截短",
+      "suggestedZh": "枪管截短",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "six-shooter",
+      "englishName": "Six Shooter",
+      "currentZh": "枪射六路",
+      "suggestedZh": "枪射六路",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "spliced-emitter",
+      "englishName": "Spliced Emitter",
+      "currentZh": "复合发射口",
+      "suggestedZh": "复合发射口",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "sticky-fuel",
+      "englishName": "Sticky Fuel",
+      "currentZh": "黏性燃油",
+      "suggestedZh": "黏性燃油",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "storm-e-mag",
+      "englishName": "Storm E-Mag",
+      "currentZh": "暴风退匣",
+      "suggestedZh": "暴风退匣",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "super-reload-shield",
+      "englishName": "Super Reload Shield",
+      "currentZh": "强效换弹庇护",
+      "suggestedZh": "强效换弹庇护",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "superconductor",
+      "englishName": "Superconductor",
+      "currentZh": "超导体",
+      "suggestedZh": "超导体",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "the-favourite",
+      "englishName": "The Favourite",
+      "currentZh": "心头之好",
+      "suggestedZh": "心头之好",
+      "changed": false
+    },
+    {
+      "kind": "overclock",
+      "id": "widened-sprinkler-unstable",
+      "englishName": "Widened Sprinkler",
+      "currentZh": "拓宽喷口",
+      "suggestedZh": "拓宽喷口",
+      "changed": false
+    }
+  ],
+  "review": [
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "M1000",
+      "currentZh": "M1000 经典型步枪",
+      "reason": "no exact match in zh-map",
+      "suggestions": [
+        {
+          "zh": "Z1000 电击步枪",
+          "key": "z1000",
+          "score": 0.8,
+          "dist": 1,
+          "autoApply": false
+        },
+        {
+          "zh": "M1000 经典型步枪",
+          "key": "m1000 classic",
+          "score": 0.5,
+          "dist": 8,
+          "autoApply": false
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Nishanka Boltshark",
+      "currentZh": "尼桑卡 X-80 \"闪电鲨\" 战术弩",
+      "reason": "no exact match in zh-map",
+      "suggestions": [
+        {
+          "zh": "尼桑卡 X-80 “闪电鲨” 战术弩",
+          "key": "nishanka boltshark x-80",
+          "score": 0.783,
+          "dist": 5,
+          "autoApply": false
+        }
+      ]
+    },
+    {
+      "kind": "weapon",
+      "id": null,
+      "englishName": "Breach Cutter / ArmsKore Coil Gun",
+      "currentZh": "等离子切割器",
+      "reason": "no exact match in zh-map",
+      "suggestions": [
+        {
+          "zh": "“武装核心” 电磁手炮",
+          "key": "armskore coil gun",
+          "score": 0.6,
+          "dist": 16,
+          "autoApply": false
+        }
+      ]
+    },
+    {
+      "kind": "overclock",
+      "id": "behaviour-chip-defensive",
+      "englishName": "Behaviour Chip: Defensive",
+      "currentZh": "行为逻辑芯片：护卫",
+      "reason": "no exact match in zh-map",
+      "suggestions": [
+        {
+          "zh": "行为逻辑芯片：护卫",
+          "key": "behaviour chip : defensive",
+          "score": 1,
+          "dist": 1,
+          "autoApply": false
+        },
+        {
+          "zh": "行为逻辑芯片：激进",
+          "key": "behaviour chip : aggro",
+          "score": 0.6,
+          "dist": 10,
+          "autoApply": false
+        }
+      ]
+    },
+    {
+      "kind": "overclock",
+      "id": "behaviour-chip-aggro",
+      "englishName": "Behaviour Chip: Aggro",
+      "currentZh": "行为逻辑芯片：激进",
+      "reason": "no exact match in zh-map",
+      "suggestions": [
+        {
+          "zh": "行为逻辑芯片：激进",
+          "key": "behaviour chip : aggro",
+          "score": 1,
+          "dist": 1,
+          "autoApply": false
+        },
+        {
+          "zh": "行为逻辑芯片：护卫",
+          "key": "behaviour chip : defensive",
+          "score": 0.615,
+          "dist": 10,
+          "autoApply": false
+        }
+      ]
+    },
+    {
+      "kind": "overclock",
+      "id": "charged-reload",
+      "englishName": "Charged Reload",
+      "currentZh": "放电装填",
+      "reason": "no exact match in zh-map",
+      "suggestions": [
+        {
+          "zh": "化工装填",
+          "key": "chemical reload",
+          "score": 0.6,
+          "dist": 6,
+          "autoApply": false
+        },
+        {
+          "zh": "铝热过载",
+          "key": "thermal overload",
+          "score": 0.5,
+          "dist": 8,
+          "autoApply": false
+        }
+      ]
+    },
+    {
+      "kind": "overclock",
+      "id": "corrosive-thunder",
+      "englishName": "Corrosive Thunder",
+      "currentZh": "酸蚀雷爆",
+      "reason": "no exact match in zh-map",
+      "suggestions": [
+        {
+          "zh": "涂毒毒刃",
+          "key": "corrosive coating",
+          "score": 0.588,
+          "dist": 7,
+          "autoApply": false
+        },
+        {
+          "zh": "蚀泥喷射泵",
+          "key": "corrosive sludge pump",
+          "score": 0.571,
+          "dist": 9,
+          "autoApply": false
+        }
+      ]
+    },
+    {
+      "kind": "overclock",
+      "id": "diffractor-prism",
+      "englishName": "Diffractor Prism",
+      "currentZh": "衍射棱镜",
+      "reason": "no exact match in zh-map",
+      "suggestions": []
+    },
+    {
+      "kind": "overclock",
+      "id": "frostburn",
+      "englishName": "Frostburn",
+      "currentZh": "赤火冰心",
+      "reason": "no exact match in zh-map",
+      "suggestions": [
+        {
+          "zh": "低温灼烧",
+          "key": "frost burn",
+          "score": 0.9,
+          "dist": 1,
+          "autoApply": false
+        }
+      ]
+    },
+    {
+      "kind": "overclock",
+      "id": "runic-warhead",
+      "englishName": "Runic Warhead",
+      "currentZh": "附魔导弹",
+      "reason": "no exact match in zh-map",
+      "suggestions": [
+        {
+          "zh": "附魔导弹",
+          "key": "runic warheads",
+          "score": 0.929,
+          "dist": 1,
+          "autoApply": false
+        }
+      ]
+    },
+    {
+      "kind": "overclock",
+      "id": "tape-some-ice-to-it",
+      "englishName": "Tape Some Ice to It!",
+      "currentZh": "土制降温",
+      "reason": "no exact match in zh-map",
+      "suggestions": [
+        {
+          "zh": "土制降温",
+          "key": "tape some ice to it",
+          "score": 1,
+          "dist": 1,
+          "autoApply": false
+        },
+        {
+          "zh": "土制增伤",
+          "key": "tape some nails to it",
+          "score": 0.762,
+          "dist": 5,
+          "autoApply": false
+        }
+      ]
+    },
+    {
+      "kind": "overclock",
+      "id": "widget-spinner",
+      "englishName": "Widget Spinner",
+      "currentZh": "陀螺组件",
+      "reason": "no exact match in zh-map",
+      "suggestions": [
+        {
+          "zh": "拓宽喷口",
+          "key": "widened sprinkler",
+          "score": 0.647,
+          "dist": 6,
+          "autoApply": false
+        }
+      ]
+    }
+  ]
+}

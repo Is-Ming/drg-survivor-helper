@@ -112,6 +112,33 @@ export const classes: GameClass[] = [
       },
     ],
   },
+  {
+    englishName: 'Demolisher',
+    chineseName: '破拆员',
+    subclasses: [
+      {
+        englishName: 'Contractor',
+        chineseName: '合同工',
+        isTentative: false,
+        desc: '全能型，擅长在矿洞中留下毁灭轨迹',
+        startWeapon: 'Dragonstorm Incinerator',
+      },
+      {
+        englishName: 'Gridrunner',
+        chineseName: '电栅行者',
+        isTentative: false,
+        desc: '专精电击武器，强化效力以最大化状态效果武器效率',
+        startWeapon: 'Voltaic Field Generator',
+      },
+      {
+        englishName: 'Operator',
+        chineseName: '操作员',
+        isTentative: false,
+        desc: '专精无人机作战，提升寿命以确保无人机持续压制',
+        startWeapon: 'Carrier Drone',
+      },
+    ],
+  },
 ]
 
 /** 按 WeaponClass 取职业（含小职业） */

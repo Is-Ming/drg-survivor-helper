@@ -1,0 +1,2639 @@
+{
+  "generatedAt": "2026-08-12T11:52:15.902Z",
+  "source": "wiki.gg Deep Rock Galactic: Survivor",
+  "overclockTemplates": [
+    {
+      "name": "A Little More Oomph!",
+      "type": "balanced",
+      "effects": [
+        "+25% Damage",
+        "+25% Reload Speed"
+      ],
+      "gameDescription": "Increases damage and reload speed",
+      "availableOn": [
+        "&quot;Hurricane&quot; Guided Rocket System",
+        "&quot;Thunderhead&quot; Heavy Autocannon",
+        "ArmsKore Coil Gun",
+        "Breach Cutter",
+        "Chimera Fragcannon",
+        "Corrosive Sludge Pump",
+        "CRSPR Flamethrower",
+        "Cryo Grenade",
+        "Deepcore GK2",
+        "Deepcore PGL",
+        "Drak-25 Plasma Carbine",
+        "Experimental Plasma Charger",
+        "High Explosive Grenade",
+        "Impact Axe",
+        "Kaisong Scissor Ray",
+        "M1000 Classic",
+        "Plasma Burster",
+        "Proximity Mines",
+        "Shard Diffractor",
+        "Shredder Swarm Grenade",
+        "Springloaded Ripper",
+        "TH-0R Bug Taser",
+        "Toxic Sludge Spreader",
+        "Voltaic Field Generator"
+      ],
+      "chineseName": "活力四射",
+      "proposedId": "a-little-more-oomph"
+    },
+    {
+      "name": "Acid Blades",
+      "type": "balanced",
+      "effects": [
+        "+15% Damage",
+        "+X Corrode"
+      ],
+      "gameDescription": "Coat the blades with acid, corroding enemies",
+      "availableOn": [
+        "Springloaded Ripper"
+      ],
+      "chineseName": "腐蚀利刃",
+      "proposedId": "acid-blades"
+    },
+    {
+      "name": "Acid Dipped Tips",
+      "type": "balanced",
+      "effects": [
+        "Change the damage type to [ACID]"
+      ],
+      "gameDescription": "—",
+      "availableOn": [
+        "Subata 120"
+      ],
+      "chineseName": "淬毒弹头",
+      "proposedId": "acid-dipped-tips"
+    },
+    {
+      "name": "Afterburner",
+      "type": "balanced",
+      "effects": [
+        "+10% Move Speed"
+      ],
+      "gameDescription": "Per active beam",
+      "availableOn": [
+        "Dragonstorm Incinerator"
+      ],
+      "chineseName": "后燃加力",
+      "proposedId": "afterburner"
+    },
+    {
+      "name": "Akimbo",
+      "type": "balanced",
+      "effects": [
+        "-20% Weapon Range"
+      ],
+      "gameDescription": "Shoot an additional time in the opposite direction",
+      "availableOn": [
+        "E1M1 Caustic Scattergun"
+      ],
+      "chineseName": "前后互搏",
+      "proposedId": "akimbo-balanced"
+    },
+    {
+      "name": "Battery Bullets",
+      "type": "balanced",
+      "effects": [
+        "Change the damage type to [ELECTRICAL]",
+        "+10% Damage"
+      ],
+      "gameDescription": "[Weapon] fires electrical bullets",
+      "availableOn": [
+        "Deepcore GK2",
+        "Jury-Rigged Boomstick",
+        "LMG Gun Platform",
+        "LOK-1 Smart Rifle",
+        "Zhukov NUK17",
+        "&quot;Warthog&quot; Auto 210"
+      ],
+      "chineseName": "蓄电子弹",
+      "proposedId": "battery-bullets"
+    },
+    {
+      "name": "Behaviour Chip: Defensive",
+      "type": "balanced",
+      "effects": [
+        "+2 Extra Drones",
+        "-10% Weapon Range"
+      ],
+      "gameDescription": "Drones will circle around the player",
+      "availableOn": [
+        "Firefly Hunter Drone",
+        "K1-P Viper Drone"
+      ],
+      "chineseName": null,
+      "proposedId": "behaviour-chip-defensive"
+    },
+    {
+      "name": "Behaviour Chip: Aggro",
+      "type": "balanced",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Drones will seek out enemies",
+      "availableOn": [
+        "Arc-Tek Cryo Guard",
+        "Carrier Drone",
+        "Hi-Volt Thunderbird",
+        "Slither Drones"
+      ],
+      "chineseName": null,
+      "proposedId": "behaviour-chip-aggro"
+    },
+    {
+      "name": "Better Ball Bearings",
+      "type": "balanced",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Increase rotation speed",
+      "availableOn": [
+        "Colette Wave Cooker"
+      ],
+      "chineseName": "高端轴承",
+      "proposedId": "better-ball-bearings"
+    },
+    {
+      "name": "Big Game Hunter",
+      "type": "balanced",
+      "effects": [
+        "+20% Critical Damage",
+        "+20% Critical Chance"
+      ],
+      "gameDescription": "Targets the enemy with the highest HP",
+      "availableOn": [
+        "Deepcore GK2"
+      ],
+      "chineseName": "巨兽猎人",
+      "proposedId": "big-game-hunter"
+    },
+    {
+      "name": "Bigger Mags",
+      "type": "balanced",
+      "effects": [
+        "+100% Clip Size",
+        "-10% Reload Speed"
+      ],
+      "gameDescription": "Increases the clip size at the cost of reload speed",
+      "availableOn": [
+        "&quot;Bulldog&quot; Heavy Revolver",
+        "&quot;Lead Storm&quot; Powered Minigun",
+        "&quot;Thunderhead&quot; Heavy Autocannon",
+        "BRT7 Burst Fire Gun",
+        "Drak-25 Plasma Carbine",
+        "E1M1 Caustic Scattergun",
+        "Jury-Rigged Boomstick",
+        "LOK-1 Smart Rifle",
+        "M1000 Classic",
+        "Springloaded Ripper",
+        "Subata 120",
+        "Zhukov NUK17"
+      ],
+      "chineseName": "更大弹匣",
+      "proposedId": "bigger-mags-balanced"
+    },
+    {
+      "name": "Bigger Tanks",
+      "type": "balanced",
+      "effects": [
+        "+100% Lifetime",
+        "+10% Weapon Range"
+      ],
+      "gameDescription": "Increases the lifetime of your beam",
+      "availableOn": [
+        "Corrosive Sludge Pump",
+        "CRSPR Flamethrower",
+        "Cryo Cannon",
+        "Toxic Sludge Spreader",
+        "Dragonstorm Incinerator",
+        "Voltaic Field Generator"
+      ],
+      "chineseName": "更大储罐",
+      "proposedId": "bigger-tanks"
+    },
+    {
+      "name": "Charged Reload",
+      "type": "balanced",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Release a large electrical groundzone when the weapon reloads",
+      "availableOn": [
+        "Voltaic Field Generator"
+      ],
+      "chineseName": null,
+      "proposedId": "charged-reload"
+    },
+    {
+      "name": "Chemical Reload",
+      "type": "balanced",
+      "effects": [
+        "+25% Fire Rate",
+        "-25% Reload Speed",
+        "While reloading:",
+        "+25% Status Effect Damage"
+      ],
+      "gameDescription": "Increases your Status Effect Damage while the weapon is reloading",
+      "availableOn": [
+        "Twincoil Arc Burster"
+      ],
+      "chineseName": "化工装填",
+      "proposedId": "chemical-reload"
+    },
+    {
+      "name": "Cluster Grenades",
+      "type": "balanced",
+      "effects": [
+        "-30% Damage",
+        "-20% Explosion Radius"
+      ],
+      "gameDescription": "The grenade now splits into 3 weaker versions",
+      "availableOn": [
+        "Deepcore PGL",
+        "High Explosive Grenade",
+        "Cryo Grenade",
+        "Incendiary Grenade",
+        "Neurotoxin Grenade",
+        "Shredder Swarm Grenade",
+        "Tactical Leadburster"
+      ],
+      "chineseName": "集束手雷",
+      "proposedId": "cluster-grenades"
+    },
+    {
+      "name": "Coilgun Mining Damage",
+      "type": "balanced",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Shots now do damage to the terrain",
+      "availableOn": [
+        "ArmsKore Coil Gun"
+      ],
+      "chineseName": "手炮地形破坏",
+      "proposedId": "coilgun-mining-damage"
+    },
+    {
+      "name": "Cold Blades",
+      "type": "balanced",
+      "effects": [
+        "+15% Damage",
+        "+X Slow"
+      ],
+      "gameDescription": "Supercooled blades slows enemies",
+      "availableOn": [
+        "Springloaded Ripper"
+      ],
+      "chineseName": "急冻利刃",
+      "proposedId": "cold-blades"
+    },
+    {
+      "name": "Cold Plasma",
+      "type": "balanced",
+      "effects": [
+        "+15% Damage",
+        "+X Slow"
+      ],
+      "gameDescription": "Supercooled plasma slows enemies",
+      "availableOn": [
+        "Drak-25 Plasma Carbine",
+        "Experimental Plasma Charger",
+        "Plasma Burster",
+        "Shard Diffractor"
+      ],
+      "chineseName": "寒冷电浆",
+      "proposedId": "cold-plasma"
+    },
+    {
+      "name": "Compact Explosives",
+      "type": "balanced",
+      "effects": [
+        "+30% Explosion Radius"
+      ],
+      "gameDescription": "Increase the size of explosions",
+      "availableOn": [
+        "Cryo Grenade",
+        "Deepcore PGL",
+        "High Explosive Grenade",
+        "Incendiary Grenade",
+        "Neurotoxin Grenade",
+        "Proximity Mines"
+      ],
+      "chineseName": "小而精悍",
+      "proposedId": "compact-explosives"
+    },
+    {
+      "name": "Coolant Leak",
+      "type": "balanced",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Turrets slow nearby enemies",
+      "availableOn": [
+        "Seismic Repulsor",
+        "Voltaic Shock Fence"
+      ],
+      "chineseName": "冷剂泄露",
+      "proposedId": "coolant-leak"
+    },
+    {
+      "name": "Corrosive Coating",
+      "type": "balanced",
+      "effects": [
+        "X [ACID] and Y Corrode over 2 seconds"
+      ],
+      "gameDescription": "Impact axe leaves an acid trail",
+      "availableOn": [
+        "Impact Axe"
+      ],
+      "chineseName": "涂毒毒刃",
+      "proposedId": "corrosive-coating"
+    },
+    {
+      "name": "Corrosive Thunder",
+      "type": "balanced",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Change the proximity mines to Acid and Electrical mines",
+      "availableOn": [
+        "Proximity Mines"
+      ],
+      "chineseName": null,
+      "proposedId": "corrosive-thunder"
+    },
+    {
+      "name": "Crowd Cooker",
+      "type": "balanced",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Increase beam width",
+      "availableOn": [
+        "Colette Wave Cooker"
+      ],
+      "chineseName": "群虫鼎沸",
+      "proposedId": "crowd-cooker"
+    },
+    {
+      "name": "Cryo Bolt",
+      "type": "balanced",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Adds a Cryo bolt to the rotation",
+      "availableOn": [
+        "Nishanka Boltshark X-80"
+      ],
+      "chineseName": "冰冻弩箭",
+      "proposedId": "cryo-bolt"
+    },
+    {
+      "name": "Diesel Soaked",
+      "type": "balanced",
+      "effects": [
+        "X [FIRE] and Y Burn over 2 seconds"
+      ],
+      "gameDescription": "Impact axe leaves a fire trail",
+      "availableOn": [
+        "Impact Axe"
+      ],
+      "chineseName": "柴油浸润",
+      "proposedId": "diesel-soaked"
+    },
+    {
+      "name": "Diffractor Prism",
+      "type": "balanced",
+      "effects": [
+        "+10% Weapon Range"
+      ],
+      "gameDescription": "Beams now bounce off the terrain",
+      "availableOn": [
+        "Kaisong Scissor Ray"
+      ],
+      "chineseName": null,
+      "proposedId": "diffractor-prism"
+    },
+    {
+      "name": "Disposable Tech",
+      "type": "balanced",
+      "effects": [
+        "+100% Lifetime",
+        "+40% Reload Speed"
+      ],
+      "gameDescription": "Drones explode instead of returning.; Lifetime upgrades now shorten the lifetime of the drones.",
+      "availableOn": [
+        "Arc-Tek Cryo Guard",
+        "Firefly Hunter Drone",
+        "Hi-Volt Thunderbird",
+        "K1-P Viper Drone",
+        "Seismic Repulsor",
+        "Voltaic Shock Fence"
+      ],
+      "chineseName": "即弃即炸",
+      "proposedId": "disposable-tech-balanced"
+    },
+    {
+      "name": "Drone Mining Damage",
+      "type": "balanced",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Drones now do damage to the terrain",
+      "availableOn": [
+        "Firefly Hunter Drone"
+      ],
+      "chineseName": "无人机地形破坏",
+      "proposedId": "drone-mining-damage"
+    },
+    {
+      "name": "Electrified Rounds",
+      "type": "balanced",
+      "effects": [
+        "+20% Fire Rate",
+        "+20% Reload Speed",
+        "Change the damage type to [ELECTRICAL]"
+      ],
+      "gameDescription": "Increased Fire Rate and Reload Speed",
+      "availableOn": [
+        "Chimera Fragcannon"
+      ],
+      "chineseName": "带电子弹",
+      "proposedId": "electrified-rounds"
+    },
+    {
+      "name": "Explosive Reload",
+      "type": "balanced",
+      "effects": [
+        "+25% Reload Speed"
+      ],
+      "gameDescription": "Release an explosion whenever the weapon reloads",
+      "availableOn": [
+        "&quot;Stubby&quot; Voltaic SMG",
+        "ArmsKore Coil Gun",
+        "TH-0R Bug Taser",
+        "Twincoil Arc Burster",
+        "Zhukov NUK17"
+      ],
+      "chineseName": "爆破装填",
+      "proposedId": "explosive-reload"
+    },
+    {
+      "name": "Extra Capacity",
+      "type": "balanced",
+      "effects": [
+        "+1 Turrets",
+        "+20% Weapon Range"
+      ],
+      "gameDescription": "Adds 1 extra charges[sic]",
+      "availableOn": [
+        "Krakatoa Sentinel",
+        "LMG Gun Platform",
+        "Seismic Repulsor",
+        "Voltaic Shock Fence"
+      ],
+      "chineseName": "额外警戒",
+      "proposedId": "extra-capacity-balanced"
+    },
+    {
+      "name": "Fire Bolt",
+      "type": "balanced",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Adds a Fire bolt to the rotation",
+      "availableOn": [
+        "Nishanka Boltshark X-80"
+      ],
+      "chineseName": "火焰弩箭",
+      "proposedId": "fire-bolt"
+    },
+    {
+      "name": "Fire Bullets",
+      "type": "balanced",
+      "effects": [
+        "Change the damage type to [FIRE]"
+      ],
+      "gameDescription": "Now shoots fire bullets",
+      "availableOn": [
+        "Tactical Leadburster"
+      ],
+      "chineseName": "火焰铅弹",
+      "proposedId": "fire-bullets"
+    },
+    {
+      "name": "Focused Lens",
+      "type": "balanced",
+      "effects": [
+        "+200% Damage"
+      ],
+      "gameDescription": "Increase beam length but reduce width. Target the enemy with the largest total HP",
+      "availableOn": [
+        "Colette Wave Cooker"
+      ],
+      "chineseName": "聚焦镜头",
+      "proposedId": "focused-lens"
+    },
+    {
+      "name": "Frequency Amp",
+      "type": "balanced",
+      "effects": [
+        "+7.5% Status Effect Damage"
+      ],
+      "gameDescription": "For each active Carrier Drone",
+      "availableOn": [
+        "Carrier Drone"
+      ],
+      "chineseName": "同频增强",
+      "proposedId": "frequency-amp"
+    },
+    {
+      "name": "Frostburn",
+      "type": "balanced",
+      "effects": [
+        "+15% Damage",
+        "+Burn"
+      ],
+      "gameDescription": "It's so cold that... it... burns?",
+      "availableOn": [
+        "Cryo Cannon"
+      ],
+      "chineseName": null,
+      "proposedId": "frostburn"
+    },
+    {
+      "name": "Fusion Turbines",
+      "type": "balanced",
+      "effects": [
+        "+25% Lifetime"
+      ],
+      "gameDescription": "Increases the lifespan of each grenade",
+      "availableOn": [
+        "Tactical Leadburster"
+      ],
+      "chineseName": "热核轮机",
+      "proposedId": "fusion-turbines"
+    },
+    {
+      "name": "Gas Rerouting",
+      "type": "balanced",
+      "effects": [
+        "+30% Fire Rate",
+        "+30% Reload Speed"
+      ],
+      "gameDescription": "Increase fire rate and reload speed",
+      "availableOn": [
+        "&quot;Lead Storm&quot; Powered Minigun",
+        "&quot;Stubby&quot; Voltaic SMG",
+        "&quot;Thunderhead&quot; Heavy Autocannon",
+        "&quot;Warthog&quot; Auto 210",
+        "BRT7 Burst Fire Gun",
+        "Chimera Fragcannon",
+        "Deepcore PGL",
+        "Drak-25 Plasma Carbine",
+        "LOK-1 Smart Rifle",
+        "M1000 Classic",
+        "Nishanka Boltshark X-80",
+        "Subata 120",
+        "Twincoil Arc Burster",
+        "Zhukov NUK17"
+      ],
+      "chineseName": "气压重导",
+      "proposedId": "gas-rerouting"
+    },
+    {
+      "name": "Gold Sniffer",
+      "type": "balanced",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "There is a small chance to find Gold when the drones mine rock",
+      "availableOn": [
+        "Slither Drones"
+      ],
+      "chineseName": "黄金嗅探",
+      "proposedId": "gold-sniffer"
+    },
+    {
+      "name": "High Caliber Rounds",
+      "type": "balanced",
+      "effects": [
+        "+100% Piercing",
+        "+30% Damage",
+        "-30% Fire Rate"
+      ],
+      "gameDescription": "Adds more damage and piercing, at the cost of fire rate",
+      "availableOn": [
+        "&quot;Bulldog&quot; Heavy Revolver",
+        "&quot;Lead Storm&quot; Powered Minigun",
+        "&quot;Thunderhead&quot; Heavy Autocannon",
+        "BRT7 Burst Fire Gun",
+        "Deepcore GK2",
+        "LOK-1 Smart Rifle"
+      ],
+      "chineseName": "大口径弹",
+      "proposedId": "high-caliber-rounds"
+    },
+    {
+      "name": "High Velocity Bullets",
+      "type": "balanced",
+      "effects": [
+        "+50% Weapon Range",
+        "+10% Damage"
+      ],
+      "gameDescription": "Increase the range of your projectiles",
+      "availableOn": [
+        "&quot;Warthog&quot; Auto 210",
+        "E1M1 Caustic Scattergun",
+        "Jury-Rigged Boomstick"
+      ],
+      "chineseName": "高速子弹",
+      "proposedId": "high-velocity-bullets"
+    },
+    {
+      "name": "Hot Plasma",
+      "type": "balanced",
+      "effects": [
+        "+15% Damage",
+        "+X Burn"
+      ],
+      "gameDescription": "Superheats the plamsa, burning enemies",
+      "availableOn": [
+        "Breach Cutter",
+        "Drak-25 Plasma Carbine",
+        "Experimental Plasma Charger",
+        "Shard Diffractor"
+      ],
+      "chineseName": "灼热电浆",
+      "proposedId": "hot-plasma-balanced"
+    },
+    {
+      "name": "Impact Punch",
+      "type": "balanced",
+      "effects": [
+        "+75% Damage"
+      ],
+      "gameDescription": "Greatly increases damage",
+      "availableOn": [
+        "Corrosive Sludge Pump",
+        "Cryo Cannon",
+        "Toxic Sludge Spreader",
+        "Voltaic Field Generator"
+      ],
+      "chineseName": "化学冲击",
+      "proposedId": "impact-punch"
+    },
+    {
+      "name": "Incendiary Payload",
+      "type": "balanced",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Rockets set the ground on fire",
+      "availableOn": [
+        "&quot;Hurricane&quot; Guided Rocket System"
+      ],
+      "chineseName": "燃剂载荷",
+      "proposedId": "incendiary-payload"
+    },
+    {
+      "name": "Ionized Plasma",
+      "type": "balanced",
+      "effects": [
+        "+15% Damage",
+        "+&lt",
+        "1.1 Potency&gt",
+        "Shock"
+      ],
+      "gameDescription": "Ionizes the plasma, shocking enemies",
+      "availableOn": [
+        "Breach Cutter",
+        "Plasma Burster",
+        "Shard Diffractor"
+      ],
+      "chineseName": "电离电浆",
+      "proposedId": "ionized-plasma-balanced"
+    },
+    {
+      "name": "Kinda Looks Like a Magnet",
+      "type": "balanced",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "The Stun Sweeper will now pick up XP and Materials",
+      "availableOn": [
+        "Voltaic Stun Sweeper"
+      ],
+      "chineseName": "“有点形似磁铁...”",
+      "proposedId": "kinda-looks-like-a-magnet"
+    },
+    {
+      "name": "Knuckle Grip",
+      "type": "balanced",
+      "effects": [
+        "+350% Weapon Range",
+        "-25% Reload Speed"
+      ],
+      "gameDescription": "Files in an outward spiral before returning",
+      "availableOn": [
+        "Voltaic Stun Sweeper"
+      ],
+      "chineseName": "指虎握把",
+      "proposedId": "knuckle-grip"
+    },
+    {
+      "name": "Lightweight Alloy",
+      "type": "balanced",
+      "effects": [
+        "+50% Weapon Range"
+      ],
+      "gameDescription": "Increase the range of your projectiles",
+      "availableOn": [
+        "Impact Axe",
+        "Voltaic Stun Sweeper"
+      ],
+      "chineseName": "轻量合金",
+      "proposedId": "lightweight-alloy"
+    },
+    {
+      "name": "Magnetic Alloy",
+      "type": "balanced",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Turrets will now pick up nearby XP and Materials",
+      "availableOn": [
+        "Voltaic Shock Fence"
+      ],
+      "chineseName": "磁性合金",
+      "proposedId": "magnetic-alloy"
+    },
+    {
+      "name": "Marker Lights",
+      "type": "balanced",
+      "effects": [
+        "+7.5% Weapon Range"
+      ],
+      "gameDescription": "Per active drone for ALL WEAPONS",
+      "availableOn": [
+        "Slither Drones"
+      ],
+      "chineseName": "航行灯",
+      "proposedId": "marker-lights"
+    },
+    {
+      "name": "Mining Directive",
+      "type": "balanced",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Turrets mine nearby walls",
+      "availableOn": [
+        "Krakatoa Sentinel",
+        "LMG Gun Platform"
+      ],
+      "chineseName": "挖掘指令",
+      "proposedId": "mining-directive"
+    },
+    {
+      "name": "More Beams",
+      "type": "balanced",
+      "effects": [
+        "+1 Beams"
+      ],
+      "gameDescription": "Adds more beams",
+      "availableOn": [
+        "ArmsKore Coil Gun",
+        "Breach Cutter",
+        "Corrosive Sludge Pump",
+        "CRSPR Flamethrower",
+        "Cryo Cannon",
+        "Dragonstorm Incinerator",
+        "Kaisong Scissor Ray",
+        "Krakatoa Sentinel",
+        "Shard Diffractor",
+        "TH-0R Bug Taser"
+      ],
+      "chineseName": "更多射线",
+      "proposedId": "more-beams"
+    },
+    {
+      "name": "More Drones",
+      "type": "balanced",
+      "effects": [
+        "+2 Extra Drones"
+      ],
+      "gameDescription": "Add more drones",
+      "availableOn": [
+        "Slither Drones",
+        "Arc-Tek Cryo Guard",
+        "Carrier Drone",
+        "Firefly Hunter Drone",
+        "Hi-Volt Thunderbird",
+        "K1-P Viper Drone",
+        "Shredder Swarm Grenade"
+      ],
+      "chineseName": "更多无人机",
+      "proposedId": "more-drones-balanced"
+    },
+    {
+      "name": "More Mines",
+      "type": "balanced",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Add 2 more mines",
+      "availableOn": [
+        "Proximity Mines"
+      ],
+      "chineseName": "更多地雷",
+      "proposedId": "more-mines"
+    },
+    {
+      "name": "Nano Waves",
+      "type": "balanced",
+      "effects": [
+        "+100% Potency",
+        "-30% Damage"
+      ],
+      "gameDescription": "Less initial damage, but increases the applied burn stacks",
+      "availableOn": [
+        "Colette Wave Cooker"
+      ],
+      "chineseName": "纳米微波",
+      "proposedId": "nano-waves"
+    },
+    {
+      "name": "Overheat",
+      "type": "balanced",
+      "effects": [
+        "+100% Damage",
+        "-30% Lifetime"
+      ],
+      "gameDescription": "Greatly increases damage at the cost of lifetime",
+      "availableOn": [
+        "CRSPR Flamethrower",
+        "Shard Diffractor"
+      ],
+      "chineseName": "暴力超频",
+      "proposedId": "overheat"
+    },
+    {
+      "name": "Pan Fried Shells",
+      "type": "balanced",
+      "effects": [
+        "Change the damage type to [FIRE]"
+      ],
+      "gameDescription": "—",
+      "availableOn": [
+        "&quot;Bulldog&quot; Heavy Revolver",
+        "&quot;Lead Storm&quot; Powered Minigun",
+        "BRT7 Burst Fire Gun",
+        "M1000 Classic",
+        "Subata 120"
+      ],
+      "chineseName": "油爆弹头",
+      "proposedId": "pan-fried-shells"
+    },
+    {
+      "name": "Personal Space Invaders",
+      "type": "balanced",
+      "effects": [
+        "-50% Weapon Range",
+        "+2 Extra Drones"
+      ],
+      "gameDescription": "Drones will patrol your personal space",
+      "availableOn": [
+        "Arc-Tek Cryo Guard"
+      ],
+      "chineseName": "过度保护",
+      "proposedId": "personal-space-invaders"
+    },
+    {
+      "name": "Piercing Projectiles",
+      "type": "balanced",
+      "effects": [
+        "+200% Piercing",
+        "-30% Lifetime"
+      ],
+      "gameDescription": "Leadburster projectiles pierce even more enemies",
+      "availableOn": [
+        "Tactical Leadburster"
+      ],
+      "chineseName": "穿深铅弹",
+      "proposedId": "piercing-projectiles"
+    },
+    {
+      "name": "Plasma Coating",
+      "type": "balanced",
+      "effects": [
+        "Changes damage type to [PLASMA]"
+      ],
+      "gameDescription": "[Weapon] fires plasma bullets",
+      "availableOn": [
+        "LMG Gun Platform",
+        "&quot;Warthog&quot; Auto 210"
+      ],
+      "chineseName": "电浆覆盖",
+      "proposedId": "plasma-coating"
+    },
+    {
+      "name": "Plasmatic Rounds",
+      "type": "balanced",
+      "effects": [
+        "Change the damage type to [PLASMA]"
+      ],
+      "gameDescription": "Change the damage type to Plasma",
+      "availableOn": [
+        "Chimera Fragcannon"
+      ],
+      "chineseName": "电浆子弹",
+      "proposedId": "plasmatic-rounds"
+    },
+    {
+      "name": "Potent Juice",
+      "type": "balanced",
+      "effects": [
+        "+30% Potency"
+      ],
+      "gameDescription": "Greatly increase potency",
+      "availableOn": [
+        "&quot;Stubby&quot; Voltaic SMG",
+        "Hi-Volt Thunderbird",
+        "Incendiary Grenade",
+        "K1-P Viper Drone",
+        "Neurotoxin Grenade",
+        "Voltaic Stun Sweeper",
+        "E1M1 Caustic Scattergun"
+      ],
+      "chineseName": "强力化学",
+      "proposedId": "potent-juice"
+    },
+    {
+      "name": "Refrigerated Gunpowder",
+      "type": "balanced",
+      "effects": [
+        "Change the damage type to [COLD]"
+      ],
+      "gameDescription": "—",
+      "availableOn": [
+        "Deepcore GK2",
+        "Jury-Rigged Boomstick",
+        "Zhukov NUK17"
+      ],
+      "chineseName": "低温火药",
+      "proposedId": "refrigerated-gunpowder"
+    },
+    {
+      "name": "Reload Shield",
+      "type": "balanced",
+      "effects": [
+        "-25% Reload Speed",
+        "+25% Fire Rate",
+        "While reloading:",
+        "+100% Armor"
+      ],
+      "gameDescription": "Doubles your Armor while the weapon is reloading",
+      "availableOn": [
+        "&quot;Bulldog&quot; Heavy Revolver",
+        "&quot;Lead Storm&quot; Powered Minigun"
+      ],
+      "chineseName": "换弹庇护",
+      "proposedId": "reload-shield"
+    },
+    {
+      "name": "Rubber Tip",
+      "type": "balanced",
+      "effects": [
+        "+15% Damage",
+        "+Knockback"
+      ],
+      "gameDescription": "Knock back enemies",
+      "availableOn": [
+        "&quot;Thunderhead&quot; Heavy Autocannon",
+        "M1000 Classic",
+        "Nishanka Boltshark X-80"
+      ],
+      "chineseName": "橡胶弹尖",
+      "proposedId": "rubber-tip"
+    },
+    {
+      "name": "Runic Warhead",
+      "type": "balanced",
+      "effects": [
+        "+50% Explosion Radius"
+      ],
+      "gameDescription": "Bigger explosions",
+      "availableOn": [
+        "&quot;Hurricane&quot; Guided Rocket System"
+      ],
+      "chineseName": null,
+      "proposedId": "runic-warhead"
+    },
+    {
+      "name": "Secret Sauce",
+      "type": "balanced",
+      "effects": [
+        "+20% Potency",
+        "All Other Weapons:",
+        "+10% Potency"
+      ],
+      "gameDescription": "Not only is this weapon deadly it is also a great potency mixer",
+      "availableOn": [
+        "Twincoil Arc Burster"
+      ],
+      "chineseName": "传奇秘方",
+      "proposedId": "secret-sauce"
+    },
+    {
+      "name": "Sidearm",
+      "type": "balanced",
+      "effects": [
+        "-20% Damage",
+        "All Other Weapons:",
+        "+25% Damage"
+      ],
+      "gameDescription": "Reduces the damage, but increases the damage for all other weapons. Adds [SIDEARM] tag",
+      "availableOn": [
+        "&quot;Stubby&quot; Voltaic SMG",
+        "BRT7 Burst Fire Gun",
+        "Subata 120",
+        "TH-0R Bug Taser",
+        "Twincoil Arc Burster",
+        "Carrier Drone"
+      ],
+      "chineseName": "指定副手",
+      "proposedId": "sidearm"
+    },
+    {
+      "name": "Spare Rockets",
+      "type": "balanced",
+      "effects": [
+        "+3 Clip Size"
+      ],
+      "gameDescription": "Add 3 more rockets",
+      "availableOn": [
+        "&quot;Hurricane&quot; Guided Rocket System"
+      ],
+      "chineseName": "额外火箭",
+      "proposedId": "spare-rockets"
+    },
+    {
+      "name": "Tank Tracks",
+      "type": "balanced",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "The turrets will follow you around",
+      "availableOn": [
+        "Krakatoa Sentinel",
+        "LMG Gun Platform",
+        "Seismic Repulsor"
+      ],
+      "chineseName": "坦克履带",
+      "proposedId": "tank-tracks"
+    },
+    {
+      "name": "Tape Some Ice to It!",
+      "type": "balanced",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Adds a highly potent cryo explosion to the grenade",
+      "availableOn": [
+        "Shredder Swarm Grenade"
+      ],
+      "chineseName": null,
+      "proposedId": "tape-some-ice-to-it"
+    },
+    {
+      "name": "Tape Some Nails to It",
+      "type": "balanced",
+      "effects": [
+        "+10% Damage"
+      ],
+      "gameDescription": "Adds an additional explosion that deals [KINETIC] damage",
+      "availableOn": [
+        "Incendiary Grenade",
+        "Neurotoxin Grenade",
+        "Plasma Burster"
+      ],
+      "chineseName": "土制增伤",
+      "proposedId": "tape-some-nails-to-it"
+    },
+    {
+      "name": "Thermal Overload",
+      "type": "balanced",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Beams now mine the terrain",
+      "availableOn": [
+        "Dragonstorm Incinerator"
+      ],
+      "chineseName": "铝热过载",
+      "proposedId": "thermal-overload"
+    },
+    {
+      "name": "True TNT",
+      "type": "balanced",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Grenade explosions now deal damage to the terrain",
+      "availableOn": [
+        "Cryo Grenade"
+      ],
+      "chineseName": "矿山炸药",
+      "proposedId": "true-tnt"
+    },
+    {
+      "name": "Vortex Core",
+      "type": "balanced",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "EPC projectiles now pull in a radius around them",
+      "availableOn": [
+        "Experimental Plasma Charger"
+      ],
+      "chineseName": "漩涡核心",
+      "proposedId": "vortex-core"
+    },
+    {
+      "name": "Widened Sprinkler",
+      "type": "balanced",
+      "effects": [
+        "+25% Groundzone Radius",
+        "+25% Groundzone Lifetime"
+      ],
+      "gameDescription": "Increases groundzone radius and groundzone lifetime",
+      "availableOn": [
+        "Toxic Sludge Spreader"
+      ],
+      "chineseName": "拓宽喷口",
+      "proposedId": "widened-sprinkler"
+    },
+    {
+      "name": "Widget Spinner",
+      "type": "balanced",
+      "effects": [
+        "+20% Lifetime"
+      ],
+      "gameDescription": "Beams now have a 360-degree rotation",
+      "availableOn": [
+        "Kaisong Scissor Ray"
+      ],
+      "chineseName": null,
+      "proposedId": "widget-spinner"
+    },
+    {
+      "name": "Akimbo",
+      "type": "unstable",
+      "effects": [],
+      "gameDescription": "Shoots an additional time in the opposite direction",
+      "availableOn": [
+        "&quot;Warthog&quot; Auto 210",
+        "Subata 120"
+      ],
+      "chineseName": "前后互搏",
+      "proposedId": "akimbo-unstable"
+    },
+    {
+      "name": "Bigger Mags",
+      "type": "unstable",
+      "effects": [
+        "+100% Clip Size",
+        "+100% Fire Rate"
+      ],
+      "gameDescription": "—",
+      "availableOn": [
+        "Deepcore PGL"
+      ],
+      "chineseName": "更大弹匣",
+      "proposedId": "bigger-mags-unstable"
+    },
+    {
+      "name": "Bolt Volley",
+      "type": "unstable",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Shoot all bolt types at once!",
+      "availableOn": [
+        "Nishanka Boltshark X-80"
+      ],
+      "chineseName": "万箭齐发",
+      "proposedId": "bolt-volley"
+    },
+    {
+      "name": "Bullet Helix",
+      "type": "unstable",
+      "effects": [
+        "+200% Fire Rate",
+        "+100% Clip Size"
+      ],
+      "gameDescription": "Shoot in a spiral pattern",
+      "availableOn": [
+        "BRT7 Burst Fire Gun"
+      ],
+      "chineseName": "子弹漩涡",
+      "proposedId": "bullet-helix"
+    },
+    {
+      "name": "Cataclysm Core",
+      "type": "unstable",
+      "effects": [
+        "+75% Groundzone Radius",
+        "+50% Groundzone Damage"
+      ],
+      "gameDescription": "Bigger, more deadly groundzones",
+      "availableOn": [
+        "Voltaic Field Generator"
+      ],
+      "chineseName": "灾变核心",
+      "proposedId": "cataclysm-core"
+    },
+    {
+      "name": "Centralized Reflector",
+      "type": "unstable",
+      "effects": [
+        "+10% Potency"
+      ],
+      "gameDescription": "Adds an additional beam that fires in the opposite direction",
+      "availableOn": [
+        "Colette Wave Cooker"
+      ],
+      "chineseName": "中心反射",
+      "proposedId": "centralized-reflector"
+    },
+    {
+      "name": "Colossal Twinblade",
+      "type": "unstable",
+      "effects": [
+        "+125% Damage",
+        "+75% Explosion Radius"
+      ],
+      "gameDescription": "An ancient weapon from a more civilized age",
+      "availableOn": [
+        "Impact Axe"
+      ],
+      "chineseName": "巨型双头斧",
+      "proposedId": "colossal-twinblade"
+    },
+    {
+      "name": "Conduit",
+      "type": "unstable",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Shoot out electrical beams to all nearby constructs",
+      "availableOn": [
+        "Hi-Volt Thunderbird",
+        "Voltaic Shock Fence"
+      ],
+      "chineseName": "电流疏导",
+      "proposedId": "conduit"
+    },
+    {
+      "name": "Crisis Protocol",
+      "type": "unstable",
+      "effects": [
+        "+25% Damage",
+        "+25% Potency"
+      ],
+      "gameDescription": "Drones rush to protect you when you take damage",
+      "availableOn": [
+        "Arc-Tek Cryo Guard",
+        "K1-P Viper Drone"
+      ],
+      "chineseName": "危机协议",
+      "proposedId": "crisis-protocol"
+    },
+    {
+      "name": "Death Spiral",
+      "type": "unstable",
+      "effects": [
+        "+200% Fire Rate",
+        "+100% Clip Size"
+      ],
+      "gameDescription": "Bullets now fire in a spiral pattern",
+      "availableOn": [
+        "Zhukov NUK17"
+      ],
+      "chineseName": "死亡回旋",
+      "proposedId": "death-spiral"
+    },
+    {
+      "name": "Disposable Tech",
+      "type": "unstable",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "The Stun Sweeper no longer returns to you, but instead explodes in an electrical burst",
+      "availableOn": [
+        "Voltaic Stun Sweeper"
+      ],
+      "chineseName": "即弃即炸",
+      "proposedId": "disposable-tech-unstable"
+    },
+    {
+      "name": "Double Barrel!",
+      "type": "unstable",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Shoot two parallel bullets",
+      "availableOn": [
+        "&quot;Bulldog&quot; Heavy Revolver",
+        "Subata 120"
+      ],
+      "chineseName": "双重枪管",
+      "proposedId": "double-barrel"
+    },
+    {
+      "name": "Drippin Balls",
+      "type": "unstable",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Dripping hot plasma sets the ground on fire",
+      "availableOn": [
+        "Experimental Plasma Charger"
+      ],
+      "chineseName": "热得流油",
+      "proposedId": "drippin-balls"
+    },
+    {
+      "name": "Electrical Tether",
+      "type": "unstable",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Drones are now tethered to you by an arc of electricity",
+      "availableOn": [
+        "Hi-Volt Thunderbird"
+      ],
+      "chineseName": "电流缰绳",
+      "proposedId": "electrical-tether"
+    },
+    {
+      "name": "Electrified Dispenser",
+      "type": "unstable",
+      "effects": [],
+      "gameDescription": "Drones tether to the grenade with an electrical arc",
+      "availableOn": [
+        "Shredder Swarm Grenade"
+      ],
+      "chineseName": "电力分流",
+      "proposedId": "electrified-dispenser"
+    },
+    {
+      "name": "EM Discharge",
+      "type": "unstable",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Stubby can now shoot friendly targets for extra Electrical goodness",
+      "availableOn": [
+        "&quot;Stubby&quot; Voltaic SMG"
+      ],
+      "chineseName": "电磁爆炸",
+      "proposedId": "em-discharge"
+    },
+    {
+      "name": "Even More Beams",
+      "type": "unstable",
+      "effects": [
+        "+3 Beams"
+      ],
+      "gameDescription": "That's a lot of beams",
+      "availableOn": [
+        "ArmsKore Coil Gun",
+        "Breach Cutter",
+        "Corrosive Sludge Pump",
+        "CRSPR Flamethrower",
+        "Cryo Cannon",
+        "Kaisong Scissor Ray",
+        "Shard Diffractor",
+        "TH-0R Bug Taser",
+        "Dragonstorm Incinerator",
+        "Toxic Sludge Spreader"
+      ],
+      "chineseName": "超多射线",
+      "proposedId": "even-more-beams"
+    },
+    {
+      "name": "Experimental Cluster Projectiles",
+      "type": "unstable",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Plasma balls split into smaller projectiles when they expire",
+      "availableOn": [
+        "Breach Cutter",
+        "Experimental Plasma Charger"
+      ],
+      "chineseName": "电浆离散",
+      "proposedId": "experimental-cluster-projectiles"
+    },
+    {
+      "name": "Extra Capacity",
+      "type": "unstable",
+      "effects": [
+        "+3 Turrets",
+        "+10% Weapon Range"
+      ],
+      "gameDescription": "Adds 3 extra charges",
+      "availableOn": [
+        "Krakatoa Sentinel",
+        "LMG Gun Platform",
+        "Seismic Repulsor",
+        "Voltaic Shock Fence"
+      ],
+      "chineseName": "额外警戒",
+      "proposedId": "extra-capacity-unstable"
+    },
+    {
+      "name": "Extra Rocket Drum",
+      "type": "unstable",
+      "effects": [
+        "Add a lot more rockets"
+      ],
+      "gameDescription": "",
+      "availableOn": [
+        "&quot;Hurricane&quot; Guided Rocket System"
+      ],
+      "chineseName": "额外弹鼓",
+      "proposedId": "extra-rocket-drum"
+    },
+    {
+      "name": "Fan of Axes",
+      "type": "unstable",
+      "effects": [
+        "-50% Damage",
+        "+20% Potency"
+      ],
+      "gameDescription": "Throw smaller axes in an arc",
+      "availableOn": [
+        "Impact Axe"
+      ],
+      "chineseName": "英勇扇战",
+      "proposedId": "fan-of-axes"
+    },
+    {
+      "name": "Feedback Harness",
+      "type": "unstable",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Throws grenades on damage taken. 10 sec cooldown.",
+      "availableOn": [
+        "High Explosive Grenade",
+        "Incendiary Grenade",
+        "Neurotoxin Grenade"
+      ],
+      "chineseName": "触发背带",
+      "proposedId": "feedback-harness"
+    },
+    {
+      "name": "Fuel Leak",
+      "type": "unstable",
+      "effects": [
+        "+20% Potency"
+      ],
+      "gameDescription": "Fire drones leave a trail of fire",
+      "availableOn": [
+        "Firefly Hunter Drone"
+      ],
+      "chineseName": "油料泄露",
+      "proposedId": "fuel-leak"
+    },
+    {
+      "name": "Gravitational Core",
+      "type": "unstable",
+      "effects": [
+        "+25% Explosion Radius"
+      ],
+      "gameDescription": "Pulls in enemies before detonation",
+      "availableOn": [
+        "Cryo Grenade",
+        "Incendiary Grenade"
+      ],
+      "chineseName": "引力核心",
+      "proposedId": "gravitational-core"
+    },
+    {
+      "name": "Hallucinogenic",
+      "type": "unstable",
+      "effects": [
+        "+25% Reload Speed",
+        "+25% Explosive Radius"
+      ],
+      "gameDescription": "Enemies run away in fear",
+      "availableOn": [
+        "High Explosive Grenade",
+        "Neurotoxin Grenade"
+      ],
+      "chineseName": "致幻药物",
+      "proposedId": "hallucinogenic"
+    },
+    {
+      "name": "Hot Plasma",
+      "type": "unstable",
+      "effects": [
+        "+50% Damage",
+        "+X Burn"
+      ],
+      "gameDescription": "Superheats the plasma, burning enemies",
+      "availableOn": [
+        "Chimera Fragcannon"
+      ],
+      "chineseName": "灼热电浆",
+      "proposedId": "hot-plasma-unstable"
+    },
+    {
+      "name": "Ionized Plasma",
+      "type": "unstable",
+      "effects": [
+        "+50% Damage",
+        "+X Shock"
+      ],
+      "gameDescription": "Ionizes the plasma, shocking enemies",
+      "availableOn": [
+        "Chimera Fragcannon"
+      ],
+      "chineseName": "电离电浆",
+      "proposedId": "ionized-plasma-unstable"
+    },
+    {
+      "name": "Krakatoa Protocol",
+      "type": "unstable",
+      "effects": [],
+      "gameDescription": "Explode on death, leaving a puddle of electrified fuel",
+      "availableOn": [
+        "Krakatoa Sentinel"
+      ],
+      "chineseName": "喷发协议",
+      "proposedId": "krakatoa-protocol"
+    },
+    {
+      "name": "Lead Wrapped Ammo",
+      "type": "unstable",
+      "effects": [
+        "+150% Damage",
+        "-20% Fire Rate",
+        "-20% Reload Speed"
+      ],
+      "gameDescription": "—",
+      "availableOn": [
+        "&quot;Lead Storm&quot; Powered Minigun",
+        "Deepcore GK2",
+        "LOK-1 Smart Rifle",
+        "Tactical Leadburster",
+        "Chimera Fragcannon"
+      ],
+      "chineseName": "镀铅弹药",
+      "proposedId": "lead-wrapped-ammo"
+    },
+    {
+      "name": "LMG Overload",
+      "type": "unstable",
+      "effects": [
+        "+100% Fire Rate",
+        "-15 Accuracy"
+      ],
+      "gameDescription": "Greatly increase fire rate at the cost of accuracy",
+      "availableOn": [
+        "LMG Gun Platform"
+      ],
+      "chineseName": "机枪过载",
+      "proposedId": "lmg-overload"
+    },
+    {
+      "name": "Mini Pellets",
+      "type": "unstable",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Shotgun shells contain twice as many pellets, but they do less damage",
+      "availableOn": [
+        "&quot;Warthog&quot; Auto 210",
+        "Jury-Rigged Boomstick"
+      ],
+      "chineseName": "迷你弹丸",
+      "proposedId": "mini-pellets"
+    },
+    {
+      "name": "MK 11",
+      "type": "unstable",
+      "effects": [
+        "+25% Fire Rate",
+        "+25% Reload Speed",
+        "+100% Potency",
+        "+30 Clip Size",
+        "-50 Accuracy"
+      ],
+      "gameDescription": "Turn it up to 11",
+      "availableOn": [
+        "&quot;Stubby&quot; Voltaic SMG",
+        "Springloaded Ripper"
+      ],
+      "chineseName": "型号 11",
+      "proposedId": "mk-11"
+    },
+    {
+      "name": "More Bounce!",
+      "type": "unstable",
+      "effects": [
+        "Bounce more times before detonating"
+      ],
+      "gameDescription": "",
+      "availableOn": [
+        "Plasma Burster"
+      ],
+      "chineseName": "好事多弹",
+      "proposedId": "more-bounce"
+    },
+    {
+      "name": "More Drones",
+      "type": "unstable",
+      "effects": [
+        "+6 Extra Drones",
+        "+25% Weapon Range"
+      ],
+      "gameDescription": "Add more drones",
+      "availableOn": [
+        "Slither Drones",
+        "Arc-Tek Cryo Guard",
+        "Carrier Drone",
+        "Firefly Hunter Drone",
+        "Hi-Volt Thunderbird",
+        "K1-P Viper Drone",
+        "Shredder Swarm Grenade"
+      ],
+      "chineseName": "更多无人机",
+      "proposedId": "more-drones-unstable"
+    },
+    {
+      "name": "Network Mines",
+      "type": "unstable",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "+2% DAMAGE for each active mine; Max value: +100% DAMAGE",
+      "availableOn": [
+        "Proximity Mines"
+      ],
+      "chineseName": "地雷链络",
+      "proposedId": "network-mines"
+    },
+    {
+      "name": "Omni Barrel",
+      "type": "unstable",
+      "effects": [
+        "+100% Reload Speed",
+        "+50% Damage",
+        "+50% Piercing"
+      ],
+      "gameDescription": "Fires in 8 directions",
+      "availableOn": [
+        "BRT7 Burst Fire Gun",
+        "Zhukov NUK17"
+      ],
+      "chineseName": "威震八方",
+      "proposedId": "omni-barrel"
+    },
+    {
+      "name": "One-Handed",
+      "type": "unstable",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Throw an additional Stun Sweeper in the opposite direction",
+      "availableOn": [
+        "Voltaic Stun Sweeper"
+      ],
+      "chineseName": "单手技巧",
+      "proposedId": "one-handed"
+    },
+    {
+      "name": "Overcharged Fuelcells",
+      "type": "unstable",
+      "effects": [
+        "+175% Damage, -40% Lifetime"
+      ],
+      "gameDescription": "Greatly increase damage at the cost of life time",
+      "availableOn": [
+        "Shard Diffractor"
+      ],
+      "chineseName": "燃料过充",
+      "proposedId": "overcharged-fuelcells"
+    },
+    {
+      "name": "Payload",
+      "type": "unstable",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "When hitting large enemies or rocks, arrows leave behind an electrical field that deals damage",
+      "availableOn": [
+        "Nishanka Boltshark X-80"
+      ],
+      "chineseName": "电磁负荷",
+      "proposedId": "payload"
+    },
+    {
+      "name": "Rapid Deployment",
+      "type": "unstable",
+      "effects": [
+        "+2 Turrets",
+        "-50% Reload Speed",
+        "-50% Lifetime"
+      ],
+      "gameDescription": "Places all turrets at once",
+      "availableOn": [
+        "Voltaic Shock Fence"
+      ],
+      "chineseName": "快速部署",
+      "proposedId": "rapid-deployment"
+    },
+    {
+      "name": "Sawn-Off",
+      "type": "unstable",
+      "effects": [
+        "-50% Weapon Range",
+        "-10 Accuracy"
+      ],
+      "gameDescription": "More bullets, less range",
+      "availableOn": [
+        "Drak-25 Plasma Carbine",
+        "M1000 Classic"
+      ],
+      "chineseName": "枪管截短",
+      "proposedId": "sawn-off"
+    },
+    {
+      "name": "Six Shooter",
+      "type": "unstable",
+      "effects": [
+        "-50% Piercing",
+        "-10 Accuracy"
+      ],
+      "gameDescription": "Shoots in 6 directions",
+      "availableOn": [
+        "Twincoil Arc Burster"
+      ],
+      "chineseName": "枪射六路",
+      "proposedId": "six-shooter"
+    },
+    {
+      "name": "Spliced Emitter",
+      "type": "unstable",
+      "effects": [
+        "+75% Lifetime",
+        "+75% Weapon Range",
+        "+75% Damage"
+      ],
+      "gameDescription": "Better Beams",
+      "availableOn": [
+        "ArmsKore Coil Gun",
+        "Dragonstorm Incinerator",
+        "CRSPR Flamethrower",
+        "Cryo Cannon",
+        "Toxic Sludge Spreader",
+        "Kaisong Scissor Ray"
+      ],
+      "chineseName": "复合发射口",
+      "proposedId": "spliced-emitter"
+    },
+    {
+      "name": "Sticky Fuel",
+      "type": "unstable",
+      "effects": [
+        "—"
+      ],
+      "gameDescription": "Add burning zones to the ground",
+      "availableOn": [
+        "CRSPR Flamethrower"
+      ],
+      "chineseName": "黏性燃油",
+      "proposedId": "sticky-fuel"
+    },
+    {
+      "name": "Storm E-Mag",
+      "type": "unstable",
+      "effects": [
+        "+10% Reload Speed",
+        "+10% Fire Rate"
+      ],
+      "gameDescription": "The Last bullet fires in all direction[sic]",
+      "availableOn": [
+        "&quot;Stubby&quot; Voltaic SMG",
+        "&quot;Thunderhead&quot; Heavy Autocannon",
+        "Drak-25 Plasma Carbine",
+        "Nishanka Boltshark X-80",
+        "Springloaded Ripper",
+        "Chimera Fragcannon"
+      ],
+      "chineseName": "暴风退匣",
+      "proposedId": "storm-e-mag"
+    },
+    {
+      "name": "Super Reload Shield",
+      "type": "unstable",
+      "effects": [
+        "+75% Damage",
+        "+50% Fire rate",
+        "-25% Reload Speed",
+        "While reloading:",
+        "+100% Armor"
+      ],
+      "gameDescription": "Increases your Armor while the weapon is reloading",
+      "availableOn": [
+        "&quot;Bulldog&quot; Heavy Revolver"
+      ],
+      "chineseName": "强效换弹庇护",
+      "proposedId": "super-reload-shield"
+    },
+    {
+      "name": "Superconductor",
+      "type": "unstable",
+      "effects": [
+        "+25% Critical Chance",
+        "+50% Critical Damage"
+      ],
+      "gameDescription": "Increases crit chance and crit damage",
+      "availableOn": [
+        "Voltaic Field Generator"
+      ],
+      "chineseName": "超导体",
+      "proposedId": "superconductor"
+    },
+    {
+      "name": "The Favourite",
+      "type": "unstable",
+      "effects": [
+        "+75% Damage",
+        "+75% Potency",
+        "All other weapons:",
+        "-20% Potency",
+        "-20% Reload Speed"
+      ],
+      "gameDescription": "You really like this one.",
+      "availableOn": [
+        "Cryo Grenade",
+        "&quot;Hurricane&quot; Guided Rocket System",
+        "Deepcore PGL",
+        "Plasma Burster",
+        "&quot;Lead Storm&quot; Powered Minigun",
+        "Deepcore GK2",
+        "LOK-1 Smart Rifle",
+        "Proximity Mines",
+        "Carrier Drone",
+        "Seismic Repulsor",
+        "Slither Drones",
+        "Tactical Leadburster"
+      ],
+      "chineseName": "心头之好",
+      "proposedId": "the-favourite"
+    },
+    {
+      "name": "The Reaper",
+      "type": "unstable",
+      "effects": [
+        "+100% Damage"
+      ],
+      "gameDescription": "One big blade that explodes at the end of its lifetime",
+      "availableOn": [
+        "Springloaded Ripper"
+      ],
+      "chineseName": "死神收割",
+      "proposedId": "the-reaper"
+    },
+    {
+      "name": "The Tightest of Springs",
+      "type": "unstable",
+      "effects": [
+        "+125% Fire Rate",
+        "-15 Accuracy"
+      ],
+      "gameDescription": "",
+      "availableOn": [
+        "&quot;Thunderhead&quot; Heavy Autocannon",
+        "Chimera Fragcannon"
+      ],
+      "chineseName": "过紧枪簧",
+      "proposedId": "the-tightest-of-springs"
+    },
+    {
+      "name": "Thermal Oscillator",
+      "type": "unstable",
+      "effects": [
+        "+25% Damage",
+        "+&lt",
+        "30% Potency&gt",
+        "Slow"
+      ],
+      "gameDescription": "WaveCooker now also applies Slow",
+      "availableOn": [
+        "Colette Wave Cooker"
+      ],
+      "chineseName": "热声制冷",
+      "proposedId": "thermal-oscillator"
+    },
+    {
+      "name": "Thick Boy",
+      "type": "unstable",
+      "effects": [
+        "+100% Piercing",
+        "+100% Weapon Range",
+        "+50% Potency"
+      ],
+      "gameDescription": "Combines all your projectiles into one thick boy, greatly increasing damage while reducing reload speed",
+      "availableOn": [
+        "E1M1 Caustic Scattergun",
+        "Jury-Rigged Boomstick",
+        "M1000 Classic",
+        "Twincoil Arc Burster"
+      ],
+      "chineseName": "壮男孩",
+      "proposedId": "thick-boy"
+    },
+    {
+      "name": "Top-Shelf Sludge",
+      "type": "unstable",
+      "effects": [
+        "+X Burn",
+        "+X Shock"
+      ],
+      "gameDescription": "Adds Burn and Shock status effects to ground zones",
+      "availableOn": [
+        "Corrosive Sludge Pump"
+      ],
+      "chineseName": "顶好蚀泥",
+      "proposedId": "top-shelf-sludge"
+    },
+    {
+      "name": "Tri-Shells",
+      "type": "unstable",
+      "effects": [
+        "-10% Damage"
+      ],
+      "gameDescription": "Shoots 3 times as many bullets in a wider angle",
+      "availableOn": [
+        "E1M1 Caustic Scattergun"
+      ],
+      "chineseName": "三倍偿还",
+      "proposedId": "tri-shells"
+    },
+    {
+      "name": "Ultimate Sidearm",
+      "type": "unstable",
+      "effects": [
+        "All other weapons:",
+        "+60% Damage"
+      ],
+      "gameDescription": "Increases the damage for all other weapons",
+      "availableOn": [
+        "&quot;Stubby&quot; Voltaic SMG",
+        "BRT7 Burst Fire Gun",
+        "Carrier Drone",
+        "Subata 120",
+        "TH-0R Bug Taser",
+        "Twincoil Arc Burster"
+      ],
+      "chineseName": "究极副手",
+      "proposedId": "ultimate-sidearm"
+    },
+    {
+      "name": "Unlimited Power",
+      "type": "unstable",
+      "effects": [
+        "Splits into multiple beams"
+      ],
+      "gameDescription": "",
+      "availableOn": [
+        "TH-0R Bug Taser"
+      ],
+      "chineseName": "无限电力",
+      "proposedId": "unlimited-power"
+    },
+    {
+      "name": "Volt Splitter",
+      "type": "unstable",
+      "effects": [
+        "-25% Damage",
+        "-50% Weapon Range"
+      ],
+      "gameDescription": "Reduce range and add a lot more bullets",
+      "availableOn": [
+        "Chimera Fragcannon"
+      ],
+      "chineseName": "伏特喷射",
+      "proposedId": "volt-splitter"
+    }
+  ],
+  "demolisherWeapons": [
+    "Dragonstorm Incinerator",
+    "Twincoil Arc Burster",
+    "Proximity Mines",
+    "Chimera Fragcannon",
+    "Voltaic Field Generator",
+    "Slither Drones",
+    "E1M1 Caustic Scattergun",
+    "Toxic Sludge Spreader",
+    "Springloaded Ripper",
+    "Kaisong Scissor Ray",
+    "Carrier Drone"
+  ],
+  "weaponMap": {
+    "ArmsKore Coil Gun": "ArmsKore Coil Gun",
+    "Breach Cutter": "Breach Cutter",
+    "Corrosive Sludge Pump": "Corrosive Sludge Pump",
+    "CRSPR Flamethrower": "CRSPR Flamethrower",
+    "Cryo Grenade": "Cryo Grenade",
+    "Deepcore GK2": "DeepCore GK2",
+    "Deepcore PGL": "DeepCore PGL",
+    "Drak-25 Plasma Carbine": "DRAK-25 Plasma Carbine",
+    "Experimental Plasma Charger": "Experimental Plasma Charger",
+    "High Explosive Grenade": "High Explosive Grenade",
+    "Impact Axe": "Impact Axe",
+    "M1000 Classic": "M1000",
+    "Plasma Burster": "Plasma Burster",
+    "Shard Diffractor": "Shard Diffractor",
+    "Shredder Swarm Grenade": "Shredder Swarm Grenade",
+    "TH-0R Bug Taser": "TH-0R Bug Taser",
+    "Subata 120": "Subata 120",
+    "Jury-Rigged Boomstick": "Jury-Rigged Boomstick",
+    "LMG Gun Platform": "LMG Gun Platform",
+    "LOK-1 Smart Rifle": "LOK-1 Smart Rifle",
+    "Zhukov NUK17": "Zhukov NUK17",
+    "Firefly Hunter Drone": "Firefly Hunter Drone",
+    "K1-P Viper Drone": "K1-P Viper Drone",
+    "Arc-Tek Cryo Guard": "Arc-Tek Cryo Guard",
+    "Hi-Volt Thunderbird": "Hi-Volt Thunderbird",
+    "Colette Wave Cooker": "Colette Wave Cooker",
+    "BRT7 Burst Fire Gun": "BRT7 Burst Fire Gun",
+    "Cryo Cannon": "Cryo Cannon",
+    "Incendiary Grenade": "Incendiary Grenade",
+    "Neurotoxin Grenade": "Neurotoxin Grenade",
+    "Tactical Leadburster": "Tactical Leadburster",
+    "Seismic Repulsor": "Seismic Repulsor",
+    "Voltaic Shock Fence": "Voltaic Shock Fence",
+    "Krakatoa Sentinel": "Krakatoa Sentinel",
+    "Voltaic Stun Sweeper": "Voltaic Stun Sweeper"
+  },
+  "unmappedWeapons": [
+    "&quot;Hurricane&quot; Guided Rocket System",
+    "&quot;Thunderhead&quot; Heavy Autocannon",
+    "Chimera Fragcannon",
+    "Kaisong Scissor Ray",
+    "Proximity Mines",
+    "Springloaded Ripper",
+    "Toxic Sludge Spreader",
+    "Voltaic Field Generator",
+    "Dragonstorm Incinerator",
+    "E1M1 Caustic Scattergun",
+    "&quot;Warthog&quot; Auto 210",
+    "Carrier Drone",
+    "Slither Drones",
+    "&quot;Bulldog&quot; Heavy Revolver",
+    "&quot;Lead Storm&quot; Powered Minigun",
+    "Twincoil Arc Burster",
+    "Nishanka Boltshark X-80",
+    "&quot;Stubby&quot; Voltaic SMG"
+  ],
+  "weaponOverclockIds": {
+    "ArmsKore Coil Gun": {
+      "yellow": [
+        "a-little-more-oomph",
+        "coilgun-mining-damage",
+        "explosive-reload",
+        "more-beams"
+      ],
+      "red": [
+        "even-more-beams",
+        "spliced-emitter"
+      ]
+    },
+    "Breach Cutter": {
+      "yellow": [
+        "a-little-more-oomph",
+        "hot-plasma-balanced",
+        "ionized-plasma-balanced",
+        "more-beams"
+      ],
+      "red": [
+        "even-more-beams",
+        "experimental-cluster-projectiles"
+      ]
+    },
+    "Corrosive Sludge Pump": {
+      "yellow": [
+        "a-little-more-oomph",
+        "bigger-tanks",
+        "impact-punch",
+        "more-beams"
+      ],
+      "red": [
+        "even-more-beams",
+        "top-shelf-sludge"
+      ]
+    },
+    "CRSPR Flamethrower": {
+      "yellow": [
+        "a-little-more-oomph",
+        "bigger-tanks",
+        "more-beams",
+        "overheat"
+      ],
+      "red": [
+        "even-more-beams",
+        "spliced-emitter",
+        "sticky-fuel"
+      ]
+    },
+    "Cryo Grenade": {
+      "yellow": [
+        "a-little-more-oomph",
+        "cluster-grenades",
+        "compact-explosives",
+        "true-tnt"
+      ],
+      "red": [
+        "gravitational-core",
+        "the-favourite"
+      ]
+    },
+    "DeepCore GK2": {
+      "yellow": [
+        "a-little-more-oomph",
+        "battery-bullets",
+        "big-game-hunter",
+        "high-caliber-rounds",
+        "refrigerated-gunpowder"
+      ],
+      "red": [
+        "lead-wrapped-ammo",
+        "the-favourite"
+      ]
+    },
+    "DeepCore PGL": {
+      "yellow": [
+        "a-little-more-oomph",
+        "cluster-grenades",
+        "compact-explosives",
+        "gas-rerouting"
+      ],
+      "red": [
+        "bigger-mags-unstable",
+        "the-favourite"
+      ]
+    },
+    "DRAK-25 Plasma Carbine": {
+      "yellow": [
+        "a-little-more-oomph",
+        "bigger-mags-balanced",
+        "cold-plasma",
+        "gas-rerouting",
+        "hot-plasma-balanced"
+      ],
+      "red": [
+        "sawn-off",
+        "storm-e-mag"
+      ]
+    },
+    "Experimental Plasma Charger": {
+      "yellow": [
+        "a-little-more-oomph",
+        "cold-plasma",
+        "hot-plasma-balanced",
+        "vortex-core"
+      ],
+      "red": [
+        "drippin-balls",
+        "experimental-cluster-projectiles"
+      ]
+    },
+    "High Explosive Grenade": {
+      "yellow": [
+        "a-little-more-oomph",
+        "cluster-grenades",
+        "compact-explosives"
+      ],
+      "red": [
+        "feedback-harness",
+        "hallucinogenic"
+      ]
+    },
+    "Impact Axe": {
+      "yellow": [
+        "a-little-more-oomph",
+        "corrosive-coating",
+        "diesel-soaked",
+        "lightweight-alloy"
+      ],
+      "red": [
+        "colossal-twinblade",
+        "fan-of-axes"
+      ]
+    },
+    "M1000": {
+      "yellow": [
+        "a-little-more-oomph",
+        "bigger-mags-balanced",
+        "gas-rerouting",
+        "pan-fried-shells",
+        "rubber-tip"
+      ],
+      "red": [
+        "sawn-off",
+        "thick-boy"
+      ]
+    },
+    "Plasma Burster": {
+      "yellow": [
+        "a-little-more-oomph",
+        "cold-plasma",
+        "ionized-plasma-balanced",
+        "tape-some-nails-to-it"
+      ],
+      "red": [
+        "more-bounce",
+        "the-favourite"
+      ]
+    },
+    "Shard Diffractor": {
+      "yellow": [
+        "a-little-more-oomph",
+        "cold-plasma",
+        "hot-plasma-balanced",
+        "ionized-plasma-balanced",
+        "more-beams",
+        "overheat"
+      ],
+      "red": [
+        "even-more-beams",
+        "overcharged-fuelcells"
+      ]
+    },
+    "Shredder Swarm Grenade": {
+      "yellow": [
+        "a-little-more-oomph",
+        "cluster-grenades",
+        "more-drones-balanced",
+        "tape-some-ice-to-it"
+      ],
+      "red": [
+        "electrified-dispenser",
+        "more-drones-unstable"
+      ]
+    },
+    "TH-0R Bug Taser": {
+      "yellow": [
+        "a-little-more-oomph",
+        "explosive-reload",
+        "more-beams",
+        "sidearm"
+      ],
+      "red": [
+        "even-more-beams",
+        "ultimate-sidearm",
+        "unlimited-power"
+      ]
+    },
+    "Subata 120": {
+      "yellow": [
+        "acid-dipped-tips",
+        "bigger-mags-balanced",
+        "gas-rerouting",
+        "pan-fried-shells",
+        "sidearm"
+      ],
+      "red": [
+        "akimbo-unstable",
+        "double-barrel",
+        "ultimate-sidearm"
+      ]
+    },
+    "Jury-Rigged Boomstick": {
+      "yellow": [
+        "battery-bullets",
+        "bigger-mags-balanced",
+        "high-velocity-bullets",
+        "refrigerated-gunpowder"
+      ],
+      "red": [
+        "mini-pellets",
+        "thick-boy"
+      ]
+    },
+    "LMG Gun Platform": {
+      "yellow": [
+        "battery-bullets",
+        "extra-capacity-balanced",
+        "mining-directive",
+        "plasma-coating",
+        "tank-tracks"
+      ],
+      "red": [
+        "extra-capacity-unstable",
+        "lmg-overload"
+      ]
+    },
+    "LOK-1 Smart Rifle": {
+      "yellow": [
+        "battery-bullets",
+        "bigger-mags-balanced",
+        "gas-rerouting",
+        "high-caliber-rounds"
+      ],
+      "red": [
+        "lead-wrapped-ammo",
+        "the-favourite"
+      ]
+    },
+    "Zhukov NUK17": {
+      "yellow": [
+        "battery-bullets",
+        "bigger-mags-balanced",
+        "explosive-reload",
+        "gas-rerouting",
+        "refrigerated-gunpowder"
+      ],
+      "red": [
+        "death-spiral",
+        "omni-barrel"
+      ]
+    },
+    "Firefly Hunter Drone": {
+      "yellow": [
+        "behaviour-chip-defensive",
+        "disposable-tech-balanced",
+        "drone-mining-damage",
+        "more-drones-balanced"
+      ],
+      "red": [
+        "fuel-leak",
+        "more-drones-unstable"
+      ]
+    },
+    "K1-P Viper Drone": {
+      "yellow": [
+        "behaviour-chip-defensive",
+        "disposable-tech-balanced",
+        "more-drones-balanced",
+        "potent-juice"
+      ],
+      "red": [
+        "crisis-protocol",
+        "more-drones-unstable"
+      ]
+    },
+    "Arc-Tek Cryo Guard": {
+      "yellow": [
+        "behaviour-chip-aggro",
+        "disposable-tech-balanced",
+        "more-drones-balanced",
+        "personal-space-invaders"
+      ],
+      "red": [
+        "crisis-protocol",
+        "more-drones-unstable"
+      ]
+    },
+    "Hi-Volt Thunderbird": {
+      "yellow": [
+        "behaviour-chip-aggro",
+        "disposable-tech-balanced",
+        "more-drones-balanced",
+        "potent-juice"
+      ],
+      "red": [
+        "conduit",
+        "electrical-tether",
+        "more-drones-unstable"
+      ]
+    },
+    "Colette Wave Cooker": {
+      "yellow": [
+        "better-ball-bearings",
+        "crowd-cooker",
+        "focused-lens",
+        "nano-waves"
+      ],
+      "red": [
+        "centralized-reflector",
+        "thermal-oscillator"
+      ]
+    },
+    "BRT7 Burst Fire Gun": {
+      "yellow": [
+        "bigger-mags-balanced",
+        "gas-rerouting",
+        "high-caliber-rounds",
+        "pan-fried-shells",
+        "sidearm"
+      ],
+      "red": [
+        "bullet-helix",
+        "omni-barrel",
+        "ultimate-sidearm"
+      ]
+    },
+    "Cryo Cannon": {
+      "yellow": [
+        "bigger-tanks",
+        "frostburn",
+        "impact-punch",
+        "more-beams"
+      ],
+      "red": [
+        "even-more-beams",
+        "spliced-emitter"
+      ]
+    },
+    "Incendiary Grenade": {
+      "yellow": [
+        "cluster-grenades",
+        "compact-explosives",
+        "potent-juice",
+        "tape-some-nails-to-it"
+      ],
+      "red": [
+        "feedback-harness",
+        "gravitational-core"
+      ]
+    },
+    "Neurotoxin Grenade": {
+      "yellow": [
+        "cluster-grenades",
+        "compact-explosives",
+        "potent-juice",
+        "tape-some-nails-to-it"
+      ],
+      "red": [
+        "feedback-harness",
+        "hallucinogenic"
+      ]
+    },
+    "Tactical Leadburster": {
+      "yellow": [
+        "cluster-grenades",
+        "fire-bullets",
+        "fusion-turbines",
+        "piercing-projectiles"
+      ],
+      "red": [
+        "lead-wrapped-ammo",
+        "the-favourite"
+      ]
+    },
+    "Seismic Repulsor": {
+      "yellow": [
+        "coolant-leak",
+        "disposable-tech-balanced",
+        "extra-capacity-balanced",
+        "tank-tracks"
+      ],
+      "red": [
+        "extra-capacity-unstable",
+        "the-favourite"
+      ]
+    },
+    "Voltaic Shock Fence": {
+      "yellow": [
+        "coolant-leak",
+        "disposable-tech-balanced",
+        "extra-capacity-balanced",
+        "magnetic-alloy"
+      ],
+      "red": [
+        "conduit",
+        "extra-capacity-unstable",
+        "rapid-deployment"
+      ]
+    },
+    "Krakatoa Sentinel": {
+      "yellow": [
+        "extra-capacity-balanced",
+        "mining-directive",
+        "more-beams",
+        "tank-tracks"
+      ],
+      "red": [
+        "extra-capacity-unstable",
+        "krakatoa-protocol"
+      ]
+    },
+    "Voltaic Stun Sweeper": {
+      "yellow": [
+        "kinda-looks-like-a-magnet",
+        "knuckle-grip",
+        "lightweight-alloy",
+        "potent-juice"
+      ],
+      "red": [
+        "disposable-tech-unstable",
+        "one-handed"
+      ]
+    }
+  },
+  "diff": {
+    "wikiOverclockTemplates": 134,
+    "baselineOverclocks": 126,
+    "newOverclocks": [
+      {
+        "proposedId": "widened-sprinkler",
+        "name": "Widened Sprinkler",
+        "type": "balanced",
+        "chineseName": "拓宽喷口"
+      },
+      {
+        "proposedId": "the-reaper",
+        "name": "The Reaper",
+        "type": "unstable",
+        "chineseName": "死神收割"
+      },
+      {
+        "proposedId": "the-tightest-of-springs",
+        "name": "The Tightest of Springs",
+        "type": "unstable",
+        "chineseName": "过紧枪簧"
+      },
+      {
+        "proposedId": "thermal-oscillator",
+        "name": "Thermal Oscillator",
+        "type": "unstable",
+        "chineseName": "热声制冷"
+      },
+      {
+        "proposedId": "thick-boy",
+        "name": "Thick Boy",
+        "type": "unstable",
+        "chineseName": "壮男孩"
+      },
+      {
+        "proposedId": "top-shelf-sludge",
+        "name": "Top-Shelf Sludge",
+        "type": "unstable",
+        "chineseName": "顶好蚀泥"
+      },
+      {
+        "proposedId": "tri-shells",
+        "name": "Tri-Shells",
+        "type": "unstable",
+        "chineseName": "三倍偿还"
+      },
+      {
+        "proposedId": "ultimate-sidearm",
+        "name": "Ultimate Sidearm",
+        "type": "unstable",
+        "chineseName": "究极副手"
+      },
+      {
+        "proposedId": "unlimited-power",
+        "name": "Unlimited Power",
+        "type": "unstable",
+        "chineseName": "无限电力"
+      },
+      {
+        "proposedId": "volt-splitter",
+        "name": "Volt Splitter",
+        "type": "unstable",
+        "chineseName": "伏特喷射"
+      }
+    ],
+    "baselineOrphans": [
+      "acid-blades",
+      "afterburner",
+      "akimbo-balanced",
+      "charged-reload",
+      "chemical-reload",
+      "cold-blades",
+      "corrosive-thunder",
+      "diffractor-prism",
+      "electrified-rounds",
+      "frequency-amp",
+      "gold-sniffer",
+      "hot-plasma-balanced",
+      "ionized-plasma-balanced",
+      "marker-lights",
+      "more-drones-balanced",
+      "more-mines",
+      "personal-space-invaders",
+      "plasmatic-rounds",
+      "thermal-overload",
+      "widened-sprinkler-balanced",
+      "widget-spinner",
+      "cataclysm-core",
+      "network-mines",
+      "six-shooter",
+      "superconductor",
+      "widened-sprinkler-unstable"
+    ]
+  }
+}

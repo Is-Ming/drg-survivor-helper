@@ -85,7 +85,7 @@ describe('resetWeaponNames（Hook 返回）清空所有自定义', () => {
     act(() => result.current.resetWeaponNames())
     expect(localStorage.getItem(WEAPON_NAME_STORAGE_KEY)).toBeNull()
     expect(result.current.getWeaponName(TEST_EN, 'zh')).toBe(TEST_ZH_DEFAULT)
-    expect(result.current.getWeaponName('DeepCore GK2', 'zh')).toBe('GK2 步枪')
+    expect(result.current.getWeaponName('DeepCore GK2', 'zh')).toBe('深核 GK2 突击步枪')
   })
 })
 

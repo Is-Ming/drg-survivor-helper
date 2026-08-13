@@ -133,6 +133,15 @@ export const overclocks: Overclock[] = [
   { id: 'superconductor', englishName: 'Superconductor', chineseName: '超导体', type: 'unstable', effect: '+25% 暴击几率，+50% 暴击伤害', enEffect: "+25% Crit Chance, +50% Crit Damage" },
   { id: 'the-favourite', englishName: 'The Favourite', chineseName: '心头之好', type: 'unstable', effect: '自身高额加成，削弱所有其他武器', enEffect: "High self-bonus, weakens all other weapons" },
   { id: 'widened-sprinkler-unstable', englishName: 'Widened Sprinkler', chineseName: '加宽喷头', type: 'unstable', effect: '增加地面区域半径和持续时间', enEffect: "Increases Ground Zone radius and duration" },
+  { id: 'the-reaper', englishName: 'The Reaper', chineseName: '死神收割', type: 'unstable', effect: '死神收割', enEffect: '+100% Damage', dlc: true },
+  { id: 'the-tightest-of-springs', englishName: 'The Tightest of Springs', chineseName: '过紧枪簧', type: 'unstable', effect: '过紧枪簧', enEffect: '+125% Fire Rate; -15 Accuracy', dlc: true },
+  { id: 'thermal-oscillator', englishName: 'Thermal Oscillator', chineseName: '热声制冷', type: 'unstable', effect: '热声制冷', enEffect: '+25% Damage; +< 30% Potency> Slow', dlc: true },
+  { id: 'thick-boy', englishName: 'Thick Boy', chineseName: '壮男孩', type: 'unstable', effect: '壮男孩', enEffect: '+100% Piercing; +100% Weapon Range; +50% Potency', dlc: true },
+  { id: 'top-shelf-sludge', englishName: 'Top-Shelf Sludge', chineseName: '顶好蚀泥', type: 'unstable', effect: '顶好蚀泥', enEffect: '+X Burn; +X Shock', dlc: true },
+  { id: 'tri-shells', englishName: 'Tri-Shells', chineseName: '三倍偿还', type: 'unstable', effect: '三倍偿还', enEffect: '-10% Damage', dlc: true },
+  { id: 'ultimate-sidearm', englishName: 'Ultimate Sidearm', chineseName: '究极副手', type: 'unstable', effect: '究极副手', enEffect: 'All other weapons:; +60% Damage', dlc: true },
+  { id: 'unlimited-power', englishName: 'Unlimited Power', chineseName: '无限电力', type: 'unstable', effect: '无限电力', enEffect: 'Splits into multiple beams', dlc: true },
+  { id: 'volt-splitter', englishName: 'Volt Splitter', chineseName: '伏特喷射', type: 'unstable', effect: '伏特喷射', enEffect: '-25% Damage; -50% Weapon Range', dlc: true },
 ]
 
 /** 按 id 快速查找 */

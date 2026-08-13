@@ -105,8 +105,8 @@ describe('成就排序（filterAchievements 应用点）', () => {
 })
 
 describe('filterWeapons', () => {
-  it('返回 42 把', () => {
-    expect(filterWeapons(weapons, baseState()).length).toBe(42)
+  it('返回 53 把', () => {
+    expect(filterWeapons(weapons, baseState()).length).toBe(53)
   })
   it('职业筛选', () => {
     const r = filterWeapons(weapons, baseState({ weapon: { class: 'Scout', tags: [] } }))

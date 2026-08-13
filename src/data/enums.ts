@@ -58,8 +58,8 @@ export const ACHIEVEMENT_CATEGORY_LABEL: Record<AchievementCategory, { zh: strin
 /** 生物群系档位 */
 export const BIOME_TIERS: BiomeTier[] = ['H5', 'Mastery', 'TrueMastery']
 
-/** 职业 */
-export const WEAPON_CLASSES: WeaponClass[] = ['Scout', 'Gunner', 'Engineer', 'Driller']
+/** 职业（含 DLC 职业 Demolisher 破拆员） */
+export const WEAPON_CLASSES: WeaponClass[] = ['Scout', 'Gunner', 'Engineer', 'Driller', 'Demolisher']
 
 /** 强度评级（顺序：S→-） */
 export const RATINGS: Rating[] = ['S', 'A', 'B', 'C', '-']
@@ -131,6 +131,7 @@ export const WEAPON_CLASS_LABEL: Record<WeaponClass, { zh: string; en: string }>
   Gunner: { zh: '机枪手', en: 'Gunner' },
   Engineer: { zh: '工程师', en: 'Engineer' },
   Driller: { zh: '钻机手', en: 'Driller' },
+  Demolisher: { zh: '破拆员', en: 'Demolisher' },
 }
 
 /**

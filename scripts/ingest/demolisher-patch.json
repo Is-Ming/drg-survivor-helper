@@ -1,0 +1,464 @@
+{
+  "newWeapons": [
+    {
+      "englishName": "Dragonstorm Incinerator",
+      "chineseName": "“龙袭风暴” 焚烧器",
+      "class": "Demolisher",
+      "tags": [
+        "FIRE",
+        "MEDIUM",
+        "LASTING",
+        "BEAM",
+        "GROUNDZONE"
+      ],
+      "yellowOverclock": "后燃加力；更大储罐；更多射线；铝热过载",
+      "redOverclock": "超多射线；复合发射口",
+      "yellowOverclockIds": [
+        "afterburner",
+        "bigger-tanks",
+        "more-beams",
+        "thermal-overload"
+      ],
+      "redOverclockIds": [
+        "even-more-beams",
+        "spliced-emitter"
+      ],
+      "rating": "-",
+      "version": "当前",
+      "dlc": true
+    },
+    {
+      "englishName": "Twincoil Arc Burster",
+      "chineseName": "“电弧喷吐” 双线圈自动手枪",
+      "class": "Demolisher",
+      "tags": [
+        "ELECTRIC",
+        "LIGHT",
+        "SPRAY",
+        "PROJECTILE"
+      ],
+      "yellowOverclock": "化工装填；爆破装填；气压重导；传奇秘方；指定副手",
+      "redOverclock": "枪射六路；壮男孩；究极副手",
+      "yellowOverclockIds": [
+        "chemical-reload",
+        "explosive-reload",
+        "gas-rerouting",
+        "secret-sauce",
+        "sidearm"
+      ],
+      "redOverclockIds": [
+        "six-shooter",
+        "thick-boy",
+        "ultimate-sidearm"
+      ],
+      "rating": "-",
+      "version": "当前",
+      "dlc": true
+    },
+    {
+      "englishName": "Proximity Mines",
+      "chineseName": "感应地雷",
+      "class": "Demolisher",
+      "tags": [
+        "KINETIC",
+        "THROWABLE",
+        "CONSTRUCT",
+        "AREA",
+        "EXPLOSIVE"
+      ],
+      "yellowOverclock": "活力四射；小而精悍；酸蚀雷爆；更多地雷",
+      "redOverclock": "地雷链络；心头之好",
+      "yellowOverclockIds": [
+        "a-little-more-oomph",
+        "compact-explosives",
+        "corrosive-thunder",
+        "more-mines"
+      ],
+      "redOverclockIds": [
+        "network-mines",
+        "the-favourite"
+      ],
+      "rating": "-",
+      "version": "当前",
+      "dlc": true
+    },
+    {
+      "englishName": "Chimera Fragcannon",
+      "chineseName": "“奇美拉” 破片炮",
+      "class": "Demolisher",
+      "tags": [
+        "KINETIC",
+        "HEAVY",
+        "PRECISE",
+        "PROJECTILE"
+      ],
+      "yellowOverclock": "活力四射；带电子弹；气压重导；电浆子弹",
+      "redOverclock": "灼热电浆；电离电浆；镀铅弹药；暴风退匣；过紧枪簧；伏特喷射",
+      "yellowOverclockIds": [
+        "a-little-more-oomph",
+        "electrified-rounds",
+        "gas-rerouting",
+        "plasmatic-rounds"
+      ],
+      "redOverclockIds": [
+        "hot-plasma-unstable",
+        "ionized-plasma-unstable",
+        "lead-wrapped-ammo",
+        "storm-e-mag",
+        "the-tightest-of-springs",
+        "volt-splitter"
+      ],
+      "rating": "-",
+      "version": "当前",
+      "dlc": true
+    },
+    {
+      "englishName": "Voltaic Field Generator",
+      "chineseName": "强电域发生器",
+      "class": "Demolisher",
+      "tags": [
+        "ELECTRIC",
+        "MEDIUM",
+        "LASTING",
+        "GROUNDZONE"
+      ],
+      "yellowOverclock": "活力四射；更大储罐；放电装填；化学冲击",
+      "redOverclock": "灾变核心；超导体",
+      "yellowOverclockIds": [
+        "a-little-more-oomph",
+        "bigger-tanks",
+        "charged-reload",
+        "impact-punch"
+      ],
+      "redOverclockIds": [
+        "cataclysm-core",
+        "superconductor"
+      ],
+      "rating": "-",
+      "version": "当前",
+      "dlc": true
+    },
+    {
+      "englishName": "Slither Drones",
+      "chineseName": "蛇行跟随无人机",
+      "class": "Demolisher",
+      "tags": [
+        "KINETIC",
+        "CONSTRUCT",
+        "LASTING",
+        "DRONE"
+      ],
+      "yellowOverclock": "行为逻辑芯片：激进；黄金嗅探；航行灯；更多无人机",
+      "redOverclock": "更多无人机；心头之好",
+      "yellowOverclockIds": [
+        "behaviour-chip-aggro",
+        "gold-sniffer",
+        "marker-lights",
+        "more-drones-balanced"
+      ],
+      "redOverclockIds": [
+        "more-drones-unstable",
+        "the-favourite"
+      ],
+      "rating": "-",
+      "version": "当前",
+      "dlc": true
+    },
+    {
+      "englishName": "E1M1 Caustic Scattergun",
+      "chineseName": "E1M1 腐蚀散射枪",
+      "class": "Demolisher",
+      "tags": [
+        "ACID",
+        "MEDIUM",
+        "SPRAY",
+        "PROJECTILE"
+      ],
+      "yellowOverclock": "前后互搏；更大弹匣；高速子弹；强力化学",
+      "redOverclock": "壮男孩；三倍偿还",
+      "yellowOverclockIds": [
+        "akimbo-balanced",
+        "bigger-mags-balanced",
+        "high-velocity-bullets",
+        "potent-juice"
+      ],
+      "redOverclockIds": [
+        "thick-boy",
+        "tri-shells"
+      ],
+      "rating": "-",
+      "version": "当前",
+      "dlc": true
+    },
+    {
+      "englishName": "Toxic Sludge Spreader",
+      "chineseName": "蚀泥铺设器",
+      "class": "Demolisher",
+      "tags": [
+        "ACID",
+        "HEAVY",
+        "BEAM",
+        "LASTING",
+        "GROUNDZONE"
+      ],
+      "yellowOverclock": "活力四射；更大储罐；化学冲击；widened-sprinkler",
+      "redOverclock": "超多射线；复合发射口",
+      "yellowOverclockIds": [
+        "a-little-more-oomph",
+        "bigger-tanks",
+        "impact-punch",
+        "widened-sprinkler"
+      ],
+      "redOverclockIds": [
+        "even-more-beams",
+        "spliced-emitter"
+      ],
+      "rating": "-",
+      "version": "当前",
+      "dlc": true
+    },
+    {
+      "englishName": "Springloaded Ripper",
+      "chineseName": "旋锯开膛手",
+      "class": "Demolisher",
+      "tags": [
+        "KINETIC",
+        "LIGHT",
+        "THROWABLE",
+        "SPRAY",
+        "PROJECTILE"
+      ],
+      "yellowOverclock": "活力四射；腐蚀利刃；更大弹匣；急冻利刃",
+      "redOverclock": "型号 11；暴风退匣；死神收割",
+      "yellowOverclockIds": [
+        "a-little-more-oomph",
+        "acid-blades",
+        "bigger-mags-balanced",
+        "cold-blades"
+      ],
+      "redOverclockIds": [
+        "mk-11",
+        "storm-e-mag",
+        "the-reaper"
+      ],
+      "rating": "-",
+      "version": "当前",
+      "dlc": true
+    },
+    {
+      "englishName": "Kaisong Scissor Ray",
+      "chineseName": "“剀松” 切剪射线发射器",
+      "class": "Demolisher",
+      "tags": [
+        "KINETIC",
+        "MEDIUM",
+        "BEAM",
+        "LASTING"
+      ],
+      "yellowOverclock": "活力四射；衍射棱镜；更多射线；陀螺组件",
+      "redOverclock": "超多射线；复合发射口",
+      "yellowOverclockIds": [
+        "a-little-more-oomph",
+        "diffractor-prism",
+        "more-beams",
+        "widget-spinner"
+      ],
+      "redOverclockIds": [
+        "even-more-beams",
+        "spliced-emitter"
+      ],
+      "rating": "-",
+      "version": "当前",
+      "dlc": true
+    },
+    {
+      "englishName": "Carrier Drone",
+      "chineseName": "子母护卫无人机",
+      "class": "Demolisher",
+      "tags": [
+        "ELECTRIC",
+        "ACID",
+        "COLD",
+        "FIRE",
+        "CONSTRUCT",
+        "LASTING",
+        "DRONE"
+      ],
+      "yellowOverclock": "行为逻辑芯片：激进；同频增强；更多无人机；指定副手",
+      "redOverclock": "更多无人机；心头之好；究极副手",
+      "yellowOverclockIds": [
+        "behaviour-chip-aggro",
+        "frequency-amp",
+        "more-drones-balanced",
+        "sidearm"
+      ],
+      "redOverclockIds": [
+        "more-drones-unstable",
+        "the-favourite",
+        "ultimate-sidearm"
+      ],
+      "rating": "-",
+      "version": "当前",
+      "dlc": true
+    }
+  ],
+  "newOverclocks": [
+    {
+      "id": "the-reaper",
+      "englishName": "The Reaper",
+      "chineseName": "死神收割",
+      "type": "unstable",
+      "effect": "死神收割",
+      "enEffect": "+100% Damage",
+      "dlc": true
+    },
+    {
+      "id": "the-tightest-of-springs",
+      "englishName": "The Tightest of Springs",
+      "chineseName": "过紧枪簧",
+      "type": "unstable",
+      "effect": "过紧枪簧",
+      "enEffect": "+125% Fire Rate; -15 Accuracy",
+      "dlc": true
+    },
+    {
+      "id": "thermal-oscillator",
+      "englishName": "Thermal Oscillator",
+      "chineseName": "热声制冷",
+      "type": "unstable",
+      "effect": "热声制冷",
+      "enEffect": "+25% Damage; +< 30% Potency> Slow",
+      "dlc": true
+    },
+    {
+      "id": "thick-boy",
+      "englishName": "Thick Boy",
+      "chineseName": "壮男孩",
+      "type": "unstable",
+      "effect": "壮男孩",
+      "enEffect": "+100% Piercing; +100% Weapon Range; +50% Potency",
+      "dlc": true
+    },
+    {
+      "id": "top-shelf-sludge",
+      "englishName": "Top-Shelf Sludge",
+      "chineseName": "顶好蚀泥",
+      "type": "unstable",
+      "effect": "顶好蚀泥",
+      "enEffect": "+X Burn; +X Shock",
+      "dlc": true
+    },
+    {
+      "id": "tri-shells",
+      "englishName": "Tri-Shells",
+      "chineseName": "三倍偿还",
+      "type": "unstable",
+      "effect": "三倍偿还",
+      "enEffect": "-10% Damage",
+      "dlc": true
+    },
+    {
+      "id": "ultimate-sidearm",
+      "englishName": "Ultimate Sidearm",
+      "chineseName": "究极副手",
+      "type": "unstable",
+      "effect": "究极副手",
+      "enEffect": "All other weapons:; +60% Damage",
+      "dlc": true
+    },
+    {
+      "id": "unlimited-power",
+      "englishName": "Unlimited Power",
+      "chineseName": "无限电力",
+      "type": "unstable",
+      "effect": "无限电力",
+      "enEffect": "Splits into multiple beams",
+      "dlc": true
+    },
+    {
+      "id": "volt-splitter",
+      "englishName": "Volt Splitter",
+      "chineseName": "伏特喷射",
+      "type": "unstable",
+      "effect": "伏特喷射",
+      "enEffect": "-25% Damage; -50% Weapon Range",
+      "dlc": true
+    }
+  ],
+  "deltas": [
+    {
+      "weapon": "M1000",
+      "color": "red",
+      "added": [
+        {
+          "id": "thick-boy",
+          "label": "壮男孩"
+        }
+      ]
+    },
+    {
+      "weapon": "Jury-Rigged Boomstick",
+      "color": "red",
+      "added": [
+        {
+          "id": "thick-boy",
+          "label": "壮男孩"
+        }
+      ]
+    },
+    {
+      "weapon": "TH-0R Bug Taser",
+      "color": "red",
+      "added": [
+        {
+          "id": "ultimate-sidearm",
+          "label": "究极副手"
+        },
+        {
+          "id": "unlimited-power",
+          "label": "无限电力"
+        }
+      ]
+    },
+    {
+      "weapon": "BRT7 Burst Fire Gun",
+      "color": "red",
+      "added": [
+        {
+          "id": "ultimate-sidearm",
+          "label": "究极副手"
+        }
+      ]
+    },
+    {
+      "weapon": "Colette Wave Cooker",
+      "color": "red",
+      "added": [
+        {
+          "id": "thermal-oscillator",
+          "label": "热声制冷"
+        }
+      ]
+    },
+    {
+      "weapon": "Corrosive Sludge Pump",
+      "color": "red",
+      "added": [
+        {
+          "id": "top-shelf-sludge",
+          "label": "顶好蚀泥"
+        }
+      ]
+    },
+    {
+      "weapon": "Subata 120",
+      "color": "red",
+      "added": [
+        {
+          "id": "ultimate-sidearm",
+          "label": "究极副手"
+        }
+      ]
+    }
+  ]
+}

@@ -57,8 +57,8 @@ export interface Achievement {
   version: string
 }
 
-/** 职业 */
-export type WeaponClass = 'Scout' | 'Gunner' | 'Engineer' | 'Driller'
+/** 职业（含 DLC 职业 Demolisher 破拆员） */
+export type WeaponClass = 'Scout' | 'Gunner' | 'Engineer' | 'Driller' | 'Demolisher'
 
 /** 武器官网标签（四类，源自官方 Wiki Survivor:Weapons）。
  *  存英文枚举，展示经 WEAPON_TAG_LABEL 映射为中文（中文(英文) / 英文）。 */
@@ -122,6 +122,8 @@ export interface Overclock {
   effect: string
   /** 效果描述（英文，原始 Wiki） */
   enEffect?: string
+  /** DLC 标记：属于 DLC 内容（游戏本体无） */
+  dlc?: boolean
 }
 
 export interface Weapon {
@@ -130,6 +132,10 @@ export interface Weapon {
   class: WeaponClass
   /** 官网四类标签枚举（英存中显），供 chip 渲染与标签筛选 */
   tags: WeaponTag[]
+  /** 标签中文名（与 tags 一一对应），便于数据核对与展示；不破代码/筛选 */
+  tagLabels?: string[]
+  /** DLC 标记：属于 DLC 内容（游戏本体无） */
+  dlc?: boolean
   /** 黄色超频（6/12 级），整列文本展示 */
   yellowOverclock: string
   /** 红色超频（18 级），整列文本展示 */
