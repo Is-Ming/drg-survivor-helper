@@ -5420,10 +5420,10 @@
     {
       "name": "弹药背带",
       "type": "",
-      "effect": "",
+      "effect": "+50% 射速，-15% 移动速度",
       "source": "",
       "officialName": "Ammo Rig",
-      "officialEffect": "",
+      "officialEffect": "+50% Fire Rate, -15% Move Speed",
       "version": "当前",
       "needsReview": true
     },
@@ -5433,7 +5433,7 @@
       "effect": "挖掘任意岩体时，有很小几率挖到黄金！",
       "source": "",
       "officialName": "Gold Scanner",
-      "officialEffect": "",
+      "officialEffect": "You get a small chance to find Gold, when mining any kind of rock!",
       "version": "当前"
     },
     {
@@ -5442,7 +5442,7 @@
       "effect": "挖掘任意岩体时，有很小几率挖到硝石！",
       "source": "",
       "officialName": "Nitra Scanner",
-      "officialEffect": "",
+      "officialEffect": "You get a small chance to find Nitra, when mining any kind of rock!",
       "version": "当前"
     },
     {
@@ -5451,7 +5451,7 @@
       "effect": "挖掘任意岩体时，有很小几率挖到经验！",
       "source": "",
       "officialName": "XP Scanner",
-      "officialEffect": "",
+      "officialEffect": "You get a small chance to find XP, when mining any kind of rock!",
       "version": "当前"
     },
     {
@@ -5460,7 +5460,7 @@
       "effect": "在受到伤害时，对周围的敌人造成击退和减速。",
       "source": "",
       "officialName": "FRZ Shield Belt",
-      "officialEffect": "",
+      "officialEffect": "Knock back and slow nearby enemies when you take damage.",
       "version": "当前"
     },
     {
@@ -5469,16 +5469,16 @@
       "effect": "在受到伤害时向周围释放一圈火焰，对周围的敌人造成伤害并赋予燃烧。",
       "source": "",
       "officialName": "BRN Shield Belt",
-      "officialEffect": "",
+      "officialEffect": "Explode in a ring of fire dealing damage and burning nearby enemies when you take damage.",
       "version": "当前"
     },
     {
       "name": "喷气靴",
       "type": "",
-      "effect": "",
+      "effect": "在受到伤害时迅速逃离危险。\n冷却时间 {cooldown} 秒。",
       "source": "",
       "officialName": "Jet Boots",
-      "officialEffect": "",
+      "officialEffect": "Allows you to make a quick escape when taking damage. {cooldown}s cooldown.",
       "version": "当前",
       "needsReview": true
     },
@@ -5488,16 +5488,16 @@
       "effect": "站定不动时将提升射击速度和换弹速度。",
       "source": "",
       "officialName": "Popup Tripod",
-      "officialEffect": "",
+      "officialEffect": "Increase your fire rate and reload speed when standing still",
       "version": "当前"
     },
     {
       "name": "深潜宝典",
       "type": "",
-      "effect": "",
+      "effect": "即时反应",
       "source": "",
       "officialName": "Diver's Manual",
-      "officialEffect": "",
+      "officialEffect": "Lightning Reflexes",
       "version": "当前",
       "needsReview": true
     },
@@ -5507,26 +5507,26 @@
       "effect": "穿深型发射物",
       "source": "",
       "officialName": "Chemist Kit",
-      "officialEffect": "",
+      "officialEffect": "Piercing Projectiles",
       "version": "当前"
     },
     {
       "name": "穿深型发射物",
       "type": "",
-      "effect": "",
+      "effect": "武器补给箱",
       "source": "",
       "officialName": "Piercing Projectiles",
-      "officialEffect": "",
+      "officialEffect": "Weapon Box",
       "version": "当前",
       "needsReview": true
     },
     {
       "name": "万能起子",
       "type": "",
-      "effect": "",
+      "effect": "持有的武器每包含一个非重复 [标签] 将获得：{stats}",
       "source": "",
       "officialName": "Multi Tool",
-      "officialEffect": "",
+      "officialEffect": "{stats} for every unique [Tag] equipped",
       "version": "当前",
       "needsReview": true
     },
@@ -5536,7 +5536,7 @@
       "effect": "提升挖掘的最远距离。",
       "source": "",
       "officialName": "Pick Axtender",
-      "officialEffect": "",
+      "officialEffect": "Increases your reach when mining",
       "version": "当前"
     },
     {
@@ -5545,7 +5545,7 @@
       "effect": "基于当前损失的血量提升伤害。",
       "source": "",
       "officialName": "Old Memento",
-      "officialEffect": "",
+      "officialEffect": "Increases your damage for every point of missing HP",
       "version": "当前",
       "suspected": true
     },
@@ -5555,7 +5555,7 @@
       "effect": "燃烧伤害现在会附加减速效果。",
       "source": "",
       "officialName": "Frostburn",
-      "officialEffect": "",
+      "officialEffect": "Dealing fire damage now applies slow",
       "version": "当前",
       "suspected": true
     },
@@ -5565,7 +5565,7 @@
       "effect": "电浆伤害现在会附加燃烧效果。",
       "source": "",
       "officialName": "Hot Plasma",
-      "officialEffect": "",
+      "officialEffect": "Dealing plasma damage now applies burn",
       "version": "当前",
       "suspected": true
     },
@@ -5575,7 +5575,7 @@
       "effect": "站定不动将获得短暂的移动速度提升。",
       "source": "",
       "officialName": "Barley Bulb Juice",
-      "officialEffect": "",
+      "officialEffect": "Gain a temporary movespeed buff when standing still",
       "version": "当前",
       "suspected": true
     },
@@ -5585,7 +5585,7 @@
       "effect": "惊人的好身法！",
       "source": "",
       "officialName": "Lightning Reflexes",
-      "officialEffect": "",
+      "officialEffect": "Shockingly good reflexes",
       "version": "当前",
       "suspected": true
     },
@@ -5595,7 +5595,7 @@
       "effect": "在受到伤害时将短暂提升移动速度，同时点燃经过的地面。冷却时间 30 秒。",
       "source": "",
       "officialName": "Hotstepper",
-      "officialEffect": "",
+      "officialEffect": "After taking damage you gain a boost of speed and leave fire puddle on the ground for a short period of time. 30 second cooldown.",
       "version": "当前",
       "suspected": true
     },
@@ -5605,17 +5605,18 @@
       "effect": "每当进行（任意类型的）刷新将获得：",
       "source": "",
       "officialName": "5 Leaf Clover",
-      "officialEffect": "",
+      "officialEffect": "Increases your Luck whenever you reroll anything",
       "version": "当前",
-      "suspected": true
+      "suspected": true,
+      "needsReview": true
     },
     {
       "name": "电栅行者",
       "type": "",
-      "effect": "",
+      "effect": "操作员",
       "source": "",
       "officialName": "Gridrunner",
-      "officialEffect": "",
+      "officialEffect": "Operator",
       "version": "当前",
       "suspected": true,
       "needsReview": true
@@ -5623,10 +5624,10 @@
     {
       "name": "载荷泛溢",
       "type": "",
-      "effect": "",
+      "effect": "酸蚀雷爆",
       "source": "",
       "officialName": "Overflow",
-      "officialEffect": "",
+      "officialEffect": "Corrosive Thunder",
       "version": "当前",
       "suspected": true,
       "needsReview": true
@@ -5637,7 +5638,7 @@
       "effect": "将感应地雷变为腐蚀电击地雷。",
       "source": "",
       "officialName": "Corrosive Thunder",
-      "officialEffect": "",
+      "officialEffect": "Change the proximity mines to Acid and Electrical mines",
       "version": "当前",
       "suspected": true
     },
@@ -5647,7 +5648,7 @@
       "effect": "武器开始换弹时将在自身位置留下大范围的弥留电场。",
       "source": "",
       "officialName": "Charged reload",
-      "officialEffect": "",
+      "officialEffect": "Release a large electrical groundzone when the weapon reloads",
       "version": "当前",
       "suspected": true
     },
@@ -5657,17 +5658,17 @@
       "effect": "你知道该拿它干什么。",
       "source": "",
       "officialName": "Diffractor prism",
-      "officialEffect": "",
+      "officialEffect": "You know what do to with this",
       "version": "当前",
       "suspected": true
     },
     {
       "name": "陀螺组件",
       "type": "",
-      "effect": "",
+      "effect": "已获得：{amount}",
       "source": "",
       "officialName": "Widget Spinner",
-      "officialEffect": "",
+      "officialEffect": "Collected {amount}",
       "version": "当前",
       "suspected": true,
       "needsReview": true
