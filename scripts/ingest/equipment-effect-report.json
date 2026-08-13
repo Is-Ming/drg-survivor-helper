@@ -1,0 +1,505 @@
+{
+  "summary": {
+    "total": 45,
+    "paired": 38,
+    "resolvedFully": 32,
+    "withStatsFlag": 2,
+    "unmatched": 7
+  },
+  "items": [
+    {
+      "name": "集团折扣券",
+      "officialName": "DRG Coupons",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "获得 20% 商店物品折扣。",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "集团配发磁铁",
+      "officialName": "Company Issued Magnet",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "阶段结束时将生成一个仅吸取场上 50% 经验的磁铁。",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "红糖块",
+      "officialName": "Red Sugar Cube",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "获取红糖时将获得：\n最大生命值 +3",
+      "needsReview": false,
+      "fallback": true,
+      "unresolvedPlaceholders": [],
+      "note": "stats 机翻兜底(非官方译)"
+    },
+    {
+      "name": "记仇名单",
+      "officialName": "Clipboard of Grudges",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "受到伤害将获得经验。",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "武器补给箱",
+      "officialName": "Weapon Box",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "额外装备一把随机武器。武器初始等级为 6 级，并带有随机超频模组。",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "复古知识库",
+      "officialName": "Ancient Knowledge",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "直接提升 3 级。",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "侧眼-EE5 目镜",
+      "officialName": "Squint-EE5",
+      "matched": false,
+      "method": "",
+      "zhEffect": null,
+      "needsReview": true,
+      "note": "未配对：官方包无对应效果条目"
+    },
+    {
+      "name": "P2W 控制器",
+      "officialName": "Pay2Win Console",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "每进行一次（任意类型的）刷新将获得：",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "涡轮解码器",
+      "officialName": "Turbo Encabulator",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "每拥有一个超频模组将获得：\n+3% 伤害、+3% 装填速度、-5% 挖速",
+      "needsReview": false,
+      "fallback": true,
+      "unresolvedPlaceholders": [],
+      "note": "stats 机翻兜底(非官方译)"
+    },
+    {
+      "name": "战术小饼干",
+      "officialName": "Tactical Cookie",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "登上空降舱后立刻回复 {target} 血量。",
+      "needsReview": true,
+      "fallback": false,
+      "unresolvedPlaceholders": [
+        "{target}"
+      ],
+      "note": "占位符未解析"
+    },
+    {
+      "name": "椒盐卷饼",
+      "officialName": "Salty Pretzel",
+      "matched": false,
+      "method": "",
+      "zhEffect": null,
+      "needsReview": true,
+      "note": "未配对：官方包无对应效果条目"
+    },
+    {
+      "name": "能量棒",
+      "officialName": "Energy Bars",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "基于当前等级，每一级将获得：\n+1% 伤害、-3 最大生命值",
+      "needsReview": false,
+      "fallback": true,
+      "unresolvedPlaceholders": [],
+      "note": "stats 机翻兜底(非官方译)"
+    },
+    {
+      "name": "“挖”他命药丸",
+      "officialName": "Vita-Miner Pills",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "提升升级时的血量回复量。",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "狂人头盔",
+      "officialName": "The MoCap",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "每损失 {hpCount}% 最大血量将获得：\n{stats}",
+      "needsReview": true,
+      "fallback": false,
+      "unresolvedPlaceholders": [
+        "{hpCount}",
+        "{stats}"
+      ],
+      "note": "含 {stats} 统计块待人工核对"
+    },
+    {
+      "name": "腌制硝石",
+      "officialName": "Pickled Nitra",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "每拥有 1 单位硝石将获得：\n+2% 伤害、-0.5% 移动速度",
+      "needsReview": false,
+      "fallback": true,
+      "unresolvedPlaceholders": [],
+      "note": "stats 机翻兜底(非官方译)"
+    },
+    {
+      "name": "反射调节仪",
+      "officialName": "Reflex Calibrator",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "累计收集 {target} 单位黄金。",
+      "needsReview": true,
+      "fallback": false,
+      "unresolvedPlaceholders": [
+        "{target}"
+      ],
+      "note": "占位符未解析"
+    },
+    {
+      "name": "护甲润滑油",
+      "officialName": "Armor Grease",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "提升移动时的闪避几率。",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "硝基火药",
+      "officialName": "Nitragenic Powder",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "每拥有 1 单位硝石将提升 0.5% 暴击几率。",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "嗜矿异虫用诱饵",
+      "officialName": "Huuli Bait",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "引出大量嗜矿异虫。\n不要放过任何一个！",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "弹药背带",
+      "officialName": "Ammo Rig",
+      "matched": false,
+      "method": "",
+      "zhEffect": null,
+      "needsReview": true,
+      "note": "未配对：官方包无对应效果条目"
+    },
+    {
+      "name": "黄金探测仪",
+      "officialName": "Gold Scanner",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "挖掘任意岩体时，有很小几率挖到黄金！",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "硝石探测仪",
+      "officialName": "Nitra Scanner",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "挖掘任意岩体时，有很小几率挖到硝石！",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "经验探测仪",
+      "officialName": "XP Scanner",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "挖掘任意岩体时，有很小几率挖到经验！",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "FRZ 护盾腰带",
+      "officialName": "FRZ Shield Belt",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "在受到伤害时，对周围的敌人造成击退和减速。",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "BRN 护盾腰带",
+      "officialName": "BRN Shield Belt",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "在受到伤害时向周围释放一圈火焰，对周围的敌人造成伤害并赋予燃烧。",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "喷气靴",
+      "officialName": "Jet Boots",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "在受到伤害时迅速逃离危险。\n冷却时间 {cooldown} 妙。",
+      "needsReview": true,
+      "fallback": false,
+      "unresolvedPlaceholders": [
+        "{cooldown}"
+      ],
+      "note": "占位符未解析"
+    },
+    {
+      "name": "便携脚架",
+      "officialName": "Popup Tripod",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "站定不动时将提升射击速度和换弹速度。",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "深潜宝典",
+      "officialName": "Diver's Manual",
+      "matched": false,
+      "method": "",
+      "zhEffect": null,
+      "needsReview": true,
+      "note": "未配对：官方包无对应效果条目"
+    },
+    {
+      "name": "化学套件",
+      "officialName": "Chemist Kit",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "穿深型发射物",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "穿深型发射物",
+      "officialName": "Piercing Projectiles",
+      "matched": false,
+      "method": "",
+      "zhEffect": null,
+      "needsReview": true,
+      "note": "未配对：官方包无对应效果条目"
+    },
+    {
+      "name": "万能起子",
+      "officialName": "Multi Tool",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "持有的武器每包含一个非重复 [标签] 将获得：{stats}",
+      "needsReview": true,
+      "fallback": false,
+      "unresolvedPlaceholders": [
+        "{stats}"
+      ],
+      "note": "含 {stats} 统计块待人工核对"
+    },
+    {
+      "name": "延长镐身",
+      "officialName": "Pick Axtender",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "提升挖掘的最远距离。",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "老照片",
+      "officialName": "Old Memento",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "基于当前损失的血量提升伤害。",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "赤火冰心",
+      "officialName": "Frostburn",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "燃烧伤害现在会附加减速效果。",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "灼热电浆",
+      "officialName": "Hot Plasma",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "电浆伤害现在会附加燃烧效果。",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "球果原汁",
+      "officialName": "Barley Bulb Juice",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "站定不动将获得短暂的移动速度提升。",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "即时反应",
+      "officialName": "Lightning Reflexes",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "惊人的好身法！",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "风火前行",
+      "officialName": "Hotstepper",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "在受到伤害时将短暂提升移动速度，同时点燃经过的地面。冷却时间 30 秒。",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "五叶草",
+      "officialName": "5 Leaf Clover",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "每当进行（任意类型的）刷新将获得：",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "电栅行者",
+      "officialName": "Gridrunner",
+      "matched": false,
+      "method": "",
+      "zhEffect": null,
+      "needsReview": true,
+      "note": "未配对：官方包无对应效果条目"
+    },
+    {
+      "name": "载荷泛溢",
+      "officialName": "Overflow",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "摧毁 {target} 个绿色冰锥。",
+      "needsReview": true,
+      "fallback": false,
+      "unresolvedPlaceholders": [
+        "{target}"
+      ],
+      "note": "占位符未解析"
+    },
+    {
+      "name": "酸蚀雷爆",
+      "officialName": "Corrosive Thunder",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "将感应地雷变为腐蚀电击地雷。",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "放电装填",
+      "officialName": "Charged reload",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "武器开始换弹时将在自身位置留下大范围的弥留电场。",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "衍射棱镜",
+      "officialName": "Diffractor prism",
+      "matched": true,
+      "method": "name+adjacent",
+      "zhEffect": "你知道该拿它干什么。",
+      "needsReview": false,
+      "fallback": false,
+      "unresolvedPlaceholders": [],
+      "note": "已解析"
+    },
+    {
+      "name": "陀螺组件",
+      "officialName": "Widget Spinner",
+      "matched": false,
+      "method": "",
+      "zhEffect": null,
+      "needsReview": true,
+      "note": "未配对：官方包无对应效果条目"
+    }
+  ]
+}

@@ -56,6 +56,9 @@ export function EquipmentCard({
   // 待定徽标：优先读取装备记录自身 suspected，回落 merged 合并值
   const suspected = Boolean(equip.suspected ?? mergedEquip?.suspected)
 
+  // 待核对徽标：effect 暂用 wiki 英文兜底，待人工补中文；优先装备记录自身，回落 merged
+  const needsReview = Boolean(equip.needsReview ?? mergedEquip?.needsReview)
+
   // 字段读取：merged 优先，回落 equip（已合并）字段
   const getSaved = (field: 'name' | 'officialName' | 'officialEffect' | 'effect'): string => {
     const v = mergedEquip?.[field]
@@ -246,9 +249,19 @@ export function EquipmentCard({
             borderColor: 'warning.light',
           }}
         >
-          <Typography variant="caption" color="warning.light" fontWeight={700}>
-            {lang === 'zh' ? '📝 攻略' : '📝 Guide'}
-          </Typography>
+          <Box display="flex" alignItems="center" gap={0.5}>
+            <Typography variant="caption" color="warning.light" fontWeight={700}>
+              {lang === 'zh' ? '📝 攻略' : '📝 Guide'}
+            </Typography>
+            {needsReview && (
+              <Chip
+                size="small"
+                color="warning"
+                label={lang === 'zh' ? '待核对' : 'Review'}
+                title={lang === 'zh' ? 'effect 暂用 wiki 英文兜底，待补中文' : 'effect is wiki EN fallback, awaiting CN'}
+              />
+            )}
+          </Box>
           <Typography variant="body2" sx={{ mt: 0.3, opacity: 0.9 }}>
             <EditableField
               value={getSaved('effect')}

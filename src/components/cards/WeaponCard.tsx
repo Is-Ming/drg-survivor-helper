@@ -68,8 +68,10 @@ export function WeaponCard({
   }
 
   const classLabel = lang === 'zh'
-    ? `${WEAPON_CLASS_LABEL[weapon.class].zh}(${WEAPON_CLASS_LABEL[weapon.class].en})`
-    : WEAPON_CLASS_LABEL[weapon.class].en
+    ? (weapon.classLabels?.zh
+        ? `${weapon.classLabels.zh}(${weapon.classLabels.en ?? WEAPON_CLASS_LABEL[weapon.class].en})`
+        : `${WEAPON_CLASS_LABEL[weapon.class].zh}(${WEAPON_CLASS_LABEL[weapon.class].en})`)
+    : (weapon.classLabels?.en ?? WEAPON_CLASS_LABEL[weapon.class].en)
 
   const resolveStartWeapon = (startWeapon?: string): string => {
     if (!startWeapon) return ''

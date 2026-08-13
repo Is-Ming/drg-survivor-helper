@@ -30,7 +30,11 @@
         "thick-boy"
       ],
       "rating": "S",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "侦察兵",
+        "en": "Scout"
+      }
     },
     {
       "englishName": "DeepCore GK2",
@@ -62,7 +66,11 @@
         "the-favourite"
       ],
       "rating": "A",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "侦察兵",
+        "en": "Scout"
+      }
     },
     {
       "englishName": "DRAK-25 Plasma Carbine",
@@ -94,7 +102,11 @@
         "storm-e-mag"
       ],
       "rating": "S",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "侦察兵",
+        "en": "Scout"
+      }
     },
     {
       "englishName": "Nishanka Boltshark",
@@ -128,7 +140,11 @@
         "storm-e-mag"
       ],
       "rating": "A",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "侦察兵",
+        "en": "Scout"
+      }
     },
     {
       "englishName": "Cryo Grenade",
@@ -158,7 +174,11 @@
         "the-favourite"
       ],
       "rating": "A",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "侦察兵",
+        "en": "Scout"
+      }
     },
     {
       "englishName": "Arc-Tek Cryo Guard",
@@ -188,7 +208,11 @@
         "more-drones-unstable"
       ],
       "rating": "-",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "侦察兵",
+        "en": "Scout"
+      }
     },
     {
       "englishName": "Jury-Rigged Boomstick",
@@ -221,7 +245,11 @@
         "thick-boy"
       ],
       "rating": "-",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "侦察兵",
+        "en": "Scout"
+      }
     },
     {
       "englishName": "Voltaic Stun Sweeper",
@@ -250,7 +278,11 @@
         "one-handed"
       ],
       "rating": "-",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "侦察兵",
+        "en": "Scout"
+      }
     },
     {
       "englishName": "TH-0R Bug Taser",
@@ -280,7 +312,11 @@
         "unlimited-power"
       ],
       "rating": "-",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "侦察兵",
+        "en": "Scout"
+      }
     },
     {
       "englishName": "Zhukov NUK17",
@@ -312,7 +348,11 @@
         "omni-barrel"
       ],
       "rating": "-",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "侦察兵",
+        "en": "Scout"
+      }
     },
     {
       "englishName": "Thunderhead Heavy Autocannon",
@@ -344,7 +384,11 @@
         "the-tightest-of-springs"
       ],
       "rating": "S",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "机枪手",
+        "en": "Gunner"
+      }
     },
     {
       "englishName": "Seismic Repulsor",
@@ -378,7 +422,11 @@
         "the-favourite"
       ],
       "rating": "S",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "机枪手",
+        "en": "Gunner"
+      }
     },
     {
       "englishName": "Tactical Leadburster",
@@ -411,7 +459,11 @@
         "the-favourite"
       ],
       "rating": "S",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "机枪手",
+        "en": "Gunner"
+      }
     },
     {
       "englishName": "Lead Storm Powered Minigun",
@@ -443,7 +495,11 @@
         "the-favourite"
       ],
       "rating": "-",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "机枪手",
+        "en": "Gunner"
+      }
     },
     {
       "englishName": "Bulldog Heavy Revolver",
@@ -474,7 +530,11 @@
         "super-reload-shield"
       ],
       "rating": "-",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "机枪手",
+        "en": "Gunner"
+      }
     },
     {
       "englishName": "ArmsKore Coil Gun",
@@ -505,7 +565,11 @@
         "spliced-emitter"
       ],
       "rating": "A",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "机枪手",
+        "en": "Gunner"
+      }
     },
     {
       "englishName": "Hurricane Guided Rocket System",
@@ -538,7 +602,11 @@
         "the-favourite"
       ],
       "rating": "A",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "机枪手",
+        "en": "Gunner"
+      }
     },
     {
       "englishName": "BRT7 Burst Fire Gun",
@@ -571,7 +639,11 @@
         "ultimate-sidearm"
       ],
       "rating": "-",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "机枪手",
+        "en": "Gunner"
+      }
     },
     {
       "englishName": "Firefly Hunter Drone",
@@ -602,7 +674,11 @@
         "more-drones-unstable"
       ],
       "rating": "-",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "机枪手",
+        "en": "Gunner"
+      }
     },
     {
       "englishName": "Incendiary Grenade",
@@ -634,7 +710,11 @@
         "gravitational-core"
       ],
       "rating": "-",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "机枪手",
+        "en": "Gunner"
+      }
     },
     {
       "englishName": "Warthog Auto 210",
@@ -665,7 +745,11 @@
         "mini-pellets"
       ],
       "rating": "A",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "工程师",
+        "en": "Engineer"
+      }
     },
     {
       "englishName": "Shard Diffractor",
@@ -698,7 +782,11 @@
         "overcharged-fuelcells"
       ],
       "rating": "A",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "工程师",
+        "en": "Engineer"
+      }
     },
     {
       "englishName": "Plasma Burster",
@@ -729,7 +817,11 @@
         "the-favourite"
       ],
       "rating": "A",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "工程师",
+        "en": "Engineer"
+      }
     },
     {
       "englishName": "Breach Cutter / ArmsKore Coil Gun",
@@ -760,7 +852,11 @@
         "experimental-cluster-projectiles"
       ],
       "rating": "-",
-      "version": "待核(规范名映射)"
+      "version": "待核(规范名映射)",
+      "classLabels": {
+        "zh": "工程师",
+        "en": "Engineer"
+      }
     },
     {
       "englishName": "LMG Gun Platform",
@@ -793,7 +889,11 @@
         "lmg-overload"
       ],
       "rating": "-",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "工程师",
+        "en": "Engineer"
+      }
     },
     {
       "englishName": "Krakatoa Sentinel",
@@ -826,7 +926,11 @@
         "krakatoa-protocol"
       ],
       "rating": "A",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "工程师",
+        "en": "Engineer"
+      }
     },
     {
       "englishName": "Voltaic Shock Fence",
@@ -858,7 +962,11 @@
         "rapid-deployment"
       ],
       "rating": "-",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "工程师",
+        "en": "Engineer"
+      }
     },
     {
       "englishName": "DeepCore PGL",
@@ -889,7 +997,11 @@
         "the-favourite"
       ],
       "rating": "-",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "工程师",
+        "en": "Engineer"
+      }
     },
     {
       "englishName": "Hi-Volt Thunderbird",
@@ -920,7 +1032,11 @@
         "more-drones-unstable"
       ],
       "rating": "-",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "工程师",
+        "en": "Engineer"
+      }
     },
     {
       "englishName": "LOK-1 Smart Rifle",
@@ -951,7 +1067,11 @@
         "the-favourite"
       ],
       "rating": "-",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "工程师",
+        "en": "Engineer"
+      }
     },
     {
       "englishName": "Shredder Swarm Grenade",
@@ -981,7 +1101,11 @@
         "more-drones-unstable"
       ],
       "rating": "-",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "工程师",
+        "en": "Engineer"
+      }
     },
     {
       "englishName": "Stubby Voltaic SMG",
@@ -1014,7 +1138,11 @@
         "storm-e-mag"
       ],
       "rating": "-",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "工程师",
+        "en": "Engineer"
+      }
     },
     {
       "englishName": "Colette Wave Cooker",
@@ -1045,7 +1173,11 @@
         "thermal-oscillator"
       ],
       "rating": "S",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "钻机手",
+        "en": "Driller"
+      }
     },
     {
       "englishName": "Corrosive Sludge Pump",
@@ -1079,7 +1211,11 @@
         "top-shelf-sludge"
       ],
       "rating": "A",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "钻机手",
+        "en": "Driller"
+      }
     },
     {
       "englishName": "Cryo Cannon",
@@ -1110,7 +1246,11 @@
         "spliced-emitter"
       ],
       "rating": "A",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "钻机手",
+        "en": "Driller"
+      }
     },
     {
       "englishName": "Impact Axe",
@@ -1140,7 +1280,11 @@
         "fan-of-axes"
       ],
       "rating": "A",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "钻机手",
+        "en": "Driller"
+      }
     },
     {
       "englishName": "K1-P Viper Drone",
@@ -1173,7 +1317,11 @@
         "more-drones-unstable"
       ],
       "rating": "A",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "钻机手",
+        "en": "Driller"
+      }
     },
     {
       "englishName": "CRSPR Flamethrower",
@@ -1205,7 +1353,11 @@
         "sticky-fuel"
       ],
       "rating": "-",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "钻机手",
+        "en": "Driller"
+      }
     },
     {
       "englishName": "Subata 120",
@@ -1238,7 +1390,11 @@
         "ultimate-sidearm"
       ],
       "rating": "-",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "钻机手",
+        "en": "Driller"
+      }
     },
     {
       "englishName": "Experimental Plasma Charger",
@@ -1268,7 +1424,11 @@
         "experimental-cluster-projectiles"
       ],
       "rating": "-",
-      "version": "待核(规范名映射)"
+      "version": "待核(规范名映射)",
+      "classLabels": {
+        "zh": "钻机手",
+        "en": "Driller"
+      }
     },
     {
       "englishName": "High Explosive Grenade",
@@ -1297,7 +1457,11 @@
         "hallucinogenic"
       ],
       "rating": "-",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "钻机手",
+        "en": "Driller"
+      }
     },
     {
       "englishName": "Neurotoxin Grenade",
@@ -1332,7 +1496,11 @@
         "hallucinogenic"
       ],
       "rating": "-",
-      "version": "当前"
+      "version": "当前",
+      "classLabels": {
+        "zh": "钻机手",
+        "en": "Driller"
+      }
     },
     {
       "englishName": "Dragonstorm Incinerator",
@@ -1366,7 +1534,11 @@
       ],
       "rating": "-",
       "version": "当前",
-      "dlc": true
+      "dlc": true,
+      "classLabels": {
+        "zh": "破拆员",
+        "en": "Demolisher"
+      }
     },
     {
       "englishName": "Twincoil Arc Burster",
@@ -1400,7 +1572,11 @@
       ],
       "rating": "-",
       "version": "当前",
-      "dlc": true
+      "dlc": true,
+      "classLabels": {
+        "zh": "破拆员",
+        "en": "Demolisher"
+      }
     },
     {
       "englishName": "Proximity Mines",
@@ -1434,7 +1610,11 @@
       ],
       "rating": "-",
       "version": "当前",
-      "dlc": true
+      "dlc": true,
+      "classLabels": {
+        "zh": "破拆员",
+        "en": "Demolisher"
+      }
     },
     {
       "englishName": "Chimera Fragcannon",
@@ -1470,7 +1650,11 @@
       ],
       "rating": "-",
       "version": "当前",
-      "dlc": true
+      "dlc": true,
+      "classLabels": {
+        "zh": "破拆员",
+        "en": "Demolisher"
+      }
     },
     {
       "englishName": "Voltaic Field Generator",
@@ -1502,7 +1686,11 @@
       ],
       "rating": "-",
       "version": "当前",
-      "dlc": true
+      "dlc": true,
+      "classLabels": {
+        "zh": "破拆员",
+        "en": "Demolisher"
+      }
     },
     {
       "englishName": "Slither Drones",
@@ -1534,7 +1722,11 @@
       ],
       "rating": "-",
       "version": "当前",
-      "dlc": true
+      "dlc": true,
+      "classLabels": {
+        "zh": "破拆员",
+        "en": "Demolisher"
+      }
     },
     {
       "englishName": "E1M1 Caustic Scattergun",
@@ -1566,7 +1758,11 @@
       ],
       "rating": "-",
       "version": "当前",
-      "dlc": true
+      "dlc": true,
+      "classLabels": {
+        "zh": "破拆员",
+        "en": "Demolisher"
+      }
     },
     {
       "englishName": "Toxic Sludge Spreader",
@@ -1599,7 +1795,11 @@
       ],
       "rating": "-",
       "version": "当前",
-      "dlc": true
+      "dlc": true,
+      "classLabels": {
+        "zh": "破拆员",
+        "en": "Demolisher"
+      }
     },
     {
       "englishName": "Springloaded Ripper",
@@ -1634,7 +1834,11 @@
       ],
       "rating": "-",
       "version": "当前",
-      "dlc": true
+      "dlc": true,
+      "classLabels": {
+        "zh": "破拆员",
+        "en": "Demolisher"
+      }
     },
     {
       "englishName": "Kaisong Scissor Ray",
@@ -1666,7 +1870,11 @@
       ],
       "rating": "-",
       "version": "当前",
-      "dlc": true
+      "dlc": true,
+      "classLabels": {
+        "zh": "破拆员",
+        "en": "Demolisher"
+      }
     },
     {
       "englishName": "Carrier Drone",
@@ -1705,7 +1913,11 @@
       ],
       "rating": "-",
       "version": "当前",
-      "dlc": true
+      "dlc": true,
+      "classLabels": {
+        "zh": "破拆员",
+        "en": "Demolisher"
+      }
     }
   ],
   "achievements": [
@@ -5029,7 +5241,7 @@
     {
       "name": "集团折扣券",
       "type": "召唤",
-      "effect": "商店打折，生态专精初期值得刷",
+      "effect": "获得 20% 商店物品折扣。",
       "source": "局内附加",
       "officialName": "DRG Coupons",
       "officialEffect": "Gives a 20% discount to all shop purchases.",
@@ -5038,7 +5250,7 @@
     {
       "name": "集团配发磁铁",
       "type": "拾取",
-      "effect": "自身拾取弱时拿，增强拾取能力",
+      "effect": "阶段结束时将生成一个仅吸取场上 50% 经验的磁铁。",
       "source": "局内附加",
       "officialName": "Company Issued Magnet",
       "officialEffect": "Spawns a magnet at the end of a stage that collects 50% of the XP.",
@@ -5047,7 +5259,7 @@
     {
       "name": "红糖块",
       "type": "生存",
-      "effect": "吃红糖加血量上限，多碰瓷吃红糖",
+      "effect": "获取红糖时将获得：\n最大生命值 +3（非官方译）",
       "source": "局内附加",
       "officialName": "Red Sugar Cube",
       "officialEffect": "Collecting Red Sugar increases your Max HP by 3.",
@@ -5056,7 +5268,7 @@
     {
       "name": "记仇名单",
       "type": "经验",
-      "effect": "受伤获得经验，熔岩之心碰瓷岩浆好用",
+      "effect": "受到伤害将获得经验。",
       "source": "局内附加",
       "officialName": "Clipboard of Grudges",
       "officialEffect": "+10% XP Gain; Gain XP when you take damage.",
@@ -5065,7 +5277,7 @@
     {
       "name": "武器补给箱",
       "type": "武器",
-      "effect": "抽别的职业武器，上下限大，勿轻易开",
+      "effect": "额外装备一把随机武器。武器初始等级为 6 级，并带有随机超频模组。",
       "source": "局内附加",
       "officialName": "Weapon Box",
       "officialEffect": "Equip an additional random level 6 weapon with a random overclock.",
@@ -5074,7 +5286,7 @@
     {
       "name": "复古知识库",
       "type": "发育",
-      "effect": "直升 3 级，后期 T2",
+      "effect": "直接提升 3 级。",
       "source": "局内附加",
       "officialName": "Ancient Knowledge",
       "officialEffect": "Gain 3 Levels.",
@@ -5083,16 +5295,17 @@
     {
       "name": "侧眼-EE5 目镜",
       "type": "直伤/混伤",
-      "effect": "-30%伤害 +30%暴击 +100%暴伤，后期 T0.5",
+      "effect": "+30% Critical Chance, +100% Critical Damage, -30% Damage.",
       "source": "局内附加",
       "officialName": "Squint-EE5",
       "officialEffect": "+30% Critical Chance, +100% Critical Damage, -30% Damage.",
-      "version": "当前"
+      "version": "当前",
+      "needsReview": true
     },
     {
       "name": "P2W 控制器",
       "type": "战力",
-      "effect": "原版每分钟-50黄金+100%伤；新版本改永久叠伤",
+      "effect": "每进行一次（任意类型的）刷新将获得：",
       "source": "局内附加",
       "officialName": "Pay2Win Console",
       "officialEffect": "+2.5% damage whenever you reroll, stacks up to 100.",
@@ -5101,7 +5314,7 @@
     {
       "name": "涡轮解码器",
       "type": "战力",
-      "effect": "降挖速，加伤和装填；小心被地刺困",
+      "effect": "每拥有一个超频模组将获得：\n+3% 伤害、+3% 装填速度、-5% 挖速（非官方译）",
       "source": "局内附加",
       "officialName": "Turbo Encabulator",
       "officialEffect": "+3% Damage, +3% Reload Speed, -5% Mining Speed for every equipped Overclock.",
@@ -5110,25 +5323,27 @@
     {
       "name": "战术小饼干",
       "type": "生存",
-      "effect": "回血，配能量棒抵消扣血",
+      "effect": "Tactical Cookie：进入逃生舱时回复 50% 最大生命值（待核：官方无 exact 对应）",
       "source": "局内附加",
       "officialName": "Tactical Cookie",
       "officialEffect": "Tactical Cookie：进入逃生舱时回复 50% 最大生命值（待核：官方无 exact 对应）",
-      "version": "待核"
+      "version": "待核",
+      "needsReview": true
     },
     {
       "name": "椒盐卷饼",
       "type": "生存",
-      "effect": "回血，配狂人头盔提低血脉容错",
+      "effect": "+1 Armor for every 2% of missing HP.",
       "source": "局内附加",
       "officialName": "Salty Pretzel",
       "officialEffect": "+1 Armor for every 2% of missing HP.",
-      "version": "当前"
+      "version": "当前",
+      "needsReview": true
     },
     {
       "name": "能量棒",
       "type": "生存",
-      "effect": "配三明治",
+      "effect": "基于当前等级，每一级将获得：\n+1% 伤害、-3 最大生命值（非官方译）",
       "source": "局内附加",
       "officialName": "Energy Bars",
       "officialEffect": "+1% Damage, -3 Max HP for every player level.",
@@ -5137,7 +5352,7 @@
     {
       "name": "“挖”他命药丸",
       "type": "生存/升级",
-      "effect": "提升升级回复血量，后期收益低",
+      "effect": "提升升级时的血量回复量。",
       "source": "局内附加",
       "officialName": "Vita-Miner Pills",
       "officialEffect": "Vita-miner Pills：+5% 最大生命值；升级时提升治疗效果（待核：官方无 exact 对应）",
@@ -5150,12 +5365,13 @@
       "source": "局内附加",
       "officialName": "The MoCap",
       "officialEffect": "—（待核）",
-      "version": "待核"
+      "version": "待核",
+      "needsReview": true
     },
     {
       "name": "腌制硝石",
       "type": "直伤核心",
-      "effect": "加伤，直伤流关键",
+      "effect": "每拥有 1 单位硝石将获得：\n+2% 伤害、-0.5% 移动速度（非官方译）",
       "source": "局内附加",
       "officialName": "Pickled Nitra",
       "officialEffect": "+2% Damage and -0.5% Move Speed for every Nitra you have.",
@@ -5164,16 +5380,17 @@
     {
       "name": "反射调节仪",
       "type": "闪避",
-      "effect": "每次受伤+5%闪避，最高 5 层",
+      "effect": "+5% Armor; +5% Dodge for 10s when taking damage, stacks 5.",
       "source": "局内附加",
       "officialName": "Reflex Calibrator",
       "officialEffect": "+5% Armor; +5% Dodge for 10s when taking damage, stacks 5.",
-      "version": "当前"
+      "version": "当前",
+      "needsReview": true
     },
     {
       "name": "护甲润滑油",
       "type": "闪避",
-      "effect": "+10% 闪避加成",
+      "effect": "提升移动时的闪避几率。",
       "source": "成就解锁",
       "relatedAchievement": "油滑矮人（Slick, like butter / Greased Little Dwarf）",
       "officialName": "Armor Grease",
@@ -5183,7 +5400,7 @@
     {
       "name": "硝基火药",
       "type": "暴击",
-      "effect": "加暴击率",
+      "effect": "每拥有 1 单位硝石将提升 0.5% 暴击几率。",
       "source": "成就解锁",
       "relatedAchievement": "硝石井喷（Sprinkle of Nitra，收集 2000 Nitra）",
       "officialName": "Nitragenic Powder",
@@ -5193,7 +5410,7 @@
     {
       "name": "嗜矿异虫用诱饵",
       "type": "召唤",
-      "effect": "一次性召唤 4 只嗜矿异虫，全杀收益高",
+      "effect": "引出大量嗜矿异虫。\n不要放过任何一个！",
       "source": "成就解锁",
       "relatedAchievement": "永不空军（Got bait?，单次击杀 3 只 Huuli Hoarders）",
       "officialName": "Huuli Bait",
@@ -5207,12 +5424,13 @@
       "source": "",
       "officialName": "Ammo Rig",
       "officialEffect": "",
-      "version": "当前"
+      "version": "当前",
+      "needsReview": true
     },
     {
       "name": "黄金探测仪",
       "type": "",
-      "effect": "",
+      "effect": "挖掘任意岩体时，有很小几率挖到黄金！",
       "source": "",
       "officialName": "Gold Scanner",
       "officialEffect": "",
@@ -5221,7 +5439,7 @@
     {
       "name": "硝石探测仪",
       "type": "",
-      "effect": "",
+      "effect": "挖掘任意岩体时，有很小几率挖到硝石！",
       "source": "",
       "officialName": "Nitra Scanner",
       "officialEffect": "",
@@ -5230,7 +5448,7 @@
     {
       "name": "经验探测仪",
       "type": "",
-      "effect": "",
+      "effect": "挖掘任意岩体时，有很小几率挖到经验！",
       "source": "",
       "officialName": "XP Scanner",
       "officialEffect": "",
@@ -5239,7 +5457,7 @@
     {
       "name": "FRZ 护盾腰带",
       "type": "",
-      "effect": "",
+      "effect": "在受到伤害时，对周围的敌人造成击退和减速。",
       "source": "",
       "officialName": "FRZ Shield Belt",
       "officialEffect": "",
@@ -5248,7 +5466,7 @@
     {
       "name": "BRN 护盾腰带",
       "type": "",
-      "effect": "",
+      "effect": "在受到伤害时向周围释放一圈火焰，对周围的敌人造成伤害并赋予燃烧。",
       "source": "",
       "officialName": "BRN Shield Belt",
       "officialEffect": "",
@@ -5261,12 +5479,13 @@
       "source": "",
       "officialName": "Jet Boots",
       "officialEffect": "",
-      "version": "当前"
+      "version": "当前",
+      "needsReview": true
     },
     {
       "name": "便携脚架",
       "type": "",
-      "effect": "",
+      "effect": "站定不动时将提升射击速度和换弹速度。",
       "source": "",
       "officialName": "Popup Tripod",
       "officialEffect": "",
@@ -5279,12 +5498,13 @@
       "source": "",
       "officialName": "Diver's Manual",
       "officialEffect": "",
-      "version": "当前"
+      "version": "当前",
+      "needsReview": true
     },
     {
       "name": "化学套件",
       "type": "",
-      "effect": "",
+      "effect": "穿深型发射物",
       "source": "",
       "officialName": "Chemist Kit",
       "officialEffect": "",
@@ -5297,7 +5517,8 @@
       "source": "",
       "officialName": "Piercing Projectiles",
       "officialEffect": "",
-      "version": "当前"
+      "version": "当前",
+      "needsReview": true
     },
     {
       "name": "万能起子",
@@ -5306,12 +5527,13 @@
       "source": "",
       "officialName": "Multi Tool",
       "officialEffect": "",
-      "version": "当前"
+      "version": "当前",
+      "needsReview": true
     },
     {
       "name": "延长镐身",
       "type": "",
-      "effect": "",
+      "effect": "提升挖掘的最远距离。",
       "source": "",
       "officialName": "Pick Axtender",
       "officialEffect": "",
@@ -5320,7 +5542,7 @@
     {
       "name": "老照片",
       "type": "",
-      "effect": "",
+      "effect": "基于当前损失的血量提升伤害。",
       "source": "",
       "officialName": "Old Memento",
       "officialEffect": "",
@@ -5330,7 +5552,7 @@
     {
       "name": "赤火冰心",
       "type": "",
-      "effect": "",
+      "effect": "燃烧伤害现在会附加减速效果。",
       "source": "",
       "officialName": "Frostburn",
       "officialEffect": "",
@@ -5340,7 +5562,7 @@
     {
       "name": "灼热电浆",
       "type": "",
-      "effect": "",
+      "effect": "电浆伤害现在会附加燃烧效果。",
       "source": "",
       "officialName": "Hot Plasma",
       "officialEffect": "",
@@ -5350,7 +5572,7 @@
     {
       "name": "球果原汁",
       "type": "",
-      "effect": "",
+      "effect": "站定不动将获得短暂的移动速度提升。",
       "source": "",
       "officialName": "Barley Bulb Juice",
       "officialEffect": "",
@@ -5360,7 +5582,7 @@
     {
       "name": "即时反应",
       "type": "",
-      "effect": "",
+      "effect": "惊人的好身法！",
       "source": "",
       "officialName": "Lightning Reflexes",
       "officialEffect": "",
@@ -5370,7 +5592,7 @@
     {
       "name": "风火前行",
       "type": "",
-      "effect": "",
+      "effect": "在受到伤害时将短暂提升移动速度，同时点燃经过的地面。冷却时间 30 秒。",
       "source": "",
       "officialName": "Hotstepper",
       "officialEffect": "",
@@ -5380,7 +5602,7 @@
     {
       "name": "五叶草",
       "type": "",
-      "effect": "",
+      "effect": "每当进行（任意类型的）刷新将获得：",
       "source": "",
       "officialName": "5 Leaf Clover",
       "officialEffect": "",
@@ -5395,7 +5617,8 @@
       "officialName": "Gridrunner",
       "officialEffect": "",
       "version": "当前",
-      "suspected": true
+      "suspected": true,
+      "needsReview": true
     },
     {
       "name": "载荷泛溢",
@@ -5405,12 +5628,13 @@
       "officialName": "Overflow",
       "officialEffect": "",
       "version": "当前",
-      "suspected": true
+      "suspected": true,
+      "needsReview": true
     },
     {
       "name": "酸蚀雷爆",
       "type": "",
-      "effect": "",
+      "effect": "将感应地雷变为腐蚀电击地雷。",
       "source": "",
       "officialName": "Corrosive Thunder",
       "officialEffect": "",
@@ -5420,7 +5644,7 @@
     {
       "name": "放电装填",
       "type": "",
-      "effect": "",
+      "effect": "武器开始换弹时将在自身位置留下大范围的弥留电场。",
       "source": "",
       "officialName": "Charged reload",
       "officialEffect": "",
@@ -5430,7 +5654,7 @@
     {
       "name": "衍射棱镜",
       "type": "",
-      "effect": "",
+      "effect": "你知道该拿它干什么。",
       "source": "",
       "officialName": "Diffractor prism",
       "officialEffect": "",
@@ -5445,7 +5669,8 @@
       "officialName": "Widget Spinner",
       "officialEffect": "",
       "version": "当前",
-      "suspected": true
+      "suspected": true,
+      "needsReview": true
     }
   ],
   "overclocks": [

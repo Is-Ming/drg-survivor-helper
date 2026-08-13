@@ -130,6 +130,8 @@ export interface Weapon {
   englishName: string
   chineseName: string
   class: WeaponClass
+  /** 职业中文标签（与 class 对应，写入武器对象实现数据自包含；渲染回落 WEAPON_CLASS_LABEL） */
+  classLabels?: { zh?: string; en?: string }
   /** 官网四类标签枚举（英存中显），供 chip 渲染与标签筛选 */
   tags: WeaponTag[]
   /** 标签中文名（与 tags 一一对应），便于数据核对与展示；不破代码/筛选 */
@@ -171,6 +173,8 @@ export interface Equipment {
   version: string
   /** 待定标记：用户从游戏提取表「待定」新增、尚未核实的装备（baseline 中 13 条为 true） */
   suspected?: boolean
+  /** 待核对标记：effect 暂用 wiki 英文原文兜底（无官方中文效果），待人工补中文后清除 */
+  needsReview?: boolean
 }
 
 // ---------- UI 偏好 / 检索态 ----------
