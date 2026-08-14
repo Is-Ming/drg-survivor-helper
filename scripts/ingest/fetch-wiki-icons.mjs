@@ -57,15 +57,13 @@ const WEAPON_ALIASES = {
   'Proximity Mines': 'Proximity Mine',
 }
 const EQUIPMENT_ALIASES = {
-  "Diver's Manual": "Diver's Manual",
   'Clipboard of Grudges': 'Clipboard Grudges',
-  SquintEE5: 'Squintee',
-  'Piercing Projectiles': 'Piercing Bullets',
   'Barley Bulb Juice': 'Barley Juice',
-  '5 Leaf Clover': 'Lucky Clover',
-  'Huuli Bait': 'Bait Bucket',
   'Diffractor prism': 'Shard Diffractor',
-  'Corrosive Thunder': 'Corrosive Thunder',
+  'Energy Bars': 'Energybar',
+  'Multi Tool': 'Multitool',
+  'DRG Coupons': 'Coupon',
+  'Squint-EE5': 'Squintee',
 }
 
 /** 从 wiki HTML 抽取 alt="Survivor <Name>.png" -> 相对/绝对图标 url（去重，保留首个） */
@@ -74,7 +72,13 @@ function extractIcons(html) {
   const re = /alt="Survivor ([^"]+?)(?: \(cropped\))?\.png"[^>]*src="([^"]+)"/g
   let m
   while ((m = re.exec(html)) !== null) {
-    const name = m[1].replace(/ \(cropped\)$/, '')
+    const raw = m[1].replace(/ \(cropped\)$/, '')
+    const name = raw
+      .replace(/&#39;/g, "'")
+      .replace(/&amp;/g, '&')
+      .replace(/&quot;/g, '"')
+      .replace(/&lt;/g, '<')
+      .replace(/&gt;/g, '>')
     const url = m[2]
     if (!(name in map)) map[name] = url
   }
@@ -132,15 +136,22 @@ function fuzzyMatch(n, wikiTokensArr) {
   return bestScore >= 0.6 ? best : -1
 }
 
-function matchEntities(items, keyFn, iconMap, wikiTransform = (k) => k, { fuzzy = true } = {}) {
+/**
+ * @param {(it:any)=>string} keyFn 取「用作 map key 的原始名」(卡片运行时查的字段)
+ * @param {(wikiName:string)=>string} wikiTransform 比对前对 wiki 名做变换（去前缀等）
+ * @param {(name:string)=>string} [lookupFn] 去 wiki 匹配时用的名（可走别名），默认等于 keyFn
+ */
+function matchEntities(items, keyFn, iconMap, wikiTransform = (k) => k, { fuzzy = true, lookupFn } = {}) {
   const matched = {}
   const misses = []
   const wikiEntries = Object.entries(iconMap).map(([name, url]) => [wikiTransform(name), url, name])
   const wikiTok = wikiEntries.map(([t]) => tokens(t))
+  const lookup = lookupFn || keyFn
   for (const it of items) {
     const en = keyFn(it)
+    const lk = lookup(it)
     let idx = -1
-    if (fuzzy) idx = fuzzyMatch(en, wikiTok)
+    if (fuzzy) idx = fuzzyMatch(lk, wikiTok)
     if (idx !== -1) matched[en] = wikiEntries[idx][1]
     else misses.push(en)
   }
@@ -193,14 +204,17 @@ async function main() {
 
   const wm = matchEntities(
     baseline.weapons,
-    (w) => WEAPON_ALIASES[w.englishName] || w.englishName,
-    W
+    (w) => w.englishName,
+    W,
+    (k) => k,
+    { lookupFn: (w) => WEAPON_ALIASES[w.englishName] || w.englishName }
   )
   const em = matchEntities(
     baseline.equipments,
-    (e) => EQUIPMENT_ALIASES[e.officialName] || e.officialName,
+    (e) => e.officialName,
     E,
-    (k) => k.replace(/^artifact\s+/i, '')
+    (k) => k.replace(/^artifact\s+/i, '').replace(/[^a-z0-9]+/gi, ' ').trim().replace(/\s+/g, ' '),
+    { lookupFn: (e) => EQUIPMENT_ALIASES[e.officialName] || e.officialName }
   )
   const om = matchEntities(
     baseline.overclocks,
