@@ -4,7 +4,7 @@ import { CardContent, Typography, Box, Chip, Popover, IconButton, Button, FormCo
 import AddIcon from '@mui/icons-material/Add'
 import ExpandLessIcon from '@mui/icons-material/ExpandLess'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
-import { WEAPON_ICON_MAP } from '../../data/icon-map'
+import { WEAPON_ICON_MAP, OVERCLOCK_ICON_MAP } from '../../data/icon-map'
 import type { Lang, Rating, Weapon, WeaponTag } from '../../data/types'
 import { WEAPON_CLASS_LABEL } from '../../data/enums'
 import { getClassByEnglishName } from '../../data/classes'
@@ -244,7 +244,8 @@ export function WeaponCard({
                     return (
                       <OcDetailRow key={id} type="yellow"
                         nameZh={ocLabel(id)} nameEn={oc?.englishName ?? id}
-                        effectZh={effZh} effectEn={oc?.enEffect ?? ''} />
+                        effectZh={effZh} effectEn={oc?.enEffect ?? ''}
+                        icon={oc?.englishName ? OVERCLOCK_ICON_MAP[oc.englishName] : undefined} />
                     )
                   })}
                 </Box>
@@ -261,7 +262,8 @@ export function WeaponCard({
                     return (
                       <OcDetailRow key={id} type="red"
                         nameZh={ocLabel(id)} nameEn={oc?.englishName ?? id}
-                        effectZh={effZh} effectEn={oc?.enEffect ?? ''} />
+                        effectZh={effZh} effectEn={oc?.enEffect ?? ''}
+                        icon={oc?.englishName ? OVERCLOCK_ICON_MAP[oc.englishName] : undefined} />
                     )
                   })}
                 </Box>

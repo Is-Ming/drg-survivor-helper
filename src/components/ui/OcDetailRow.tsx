@@ -1,4 +1,4 @@
-// 超频详情行：左侧类型色条 + 中/英名(等宽) + 中/英效果，展开详情区复用
+// 超频详情行：左侧类型色条 + 图标 + 中/英名(等宽) + 中/英效果，展开详情区复用
 import { Box, Typography } from '@mui/material'
 import { useTheme } from '@mui/material/styles'
 import { getDrgTokens } from '../../theme/createAppTheme'
@@ -9,12 +9,14 @@ export function OcDetailRow({
   effectZh,
   effectEn,
   type,
+  icon,
 }: {
   nameZh: string
   nameEn: string
   effectZh: string
   effectEn: string
   type: 'yellow' | 'red'
+  icon?: string
 }) {
   const mui = useTheme()
   const c = mui.drg ?? getDrgTokens(mui.palette.mode)
@@ -22,6 +24,14 @@ export function OcDetailRow({
   return (
     <Box sx={{ display: 'flex', gap: 1, mb: 0.5, alignItems: 'stretch' }}>
       <Box sx={{ width: 3, bgcolor: bar, flexShrink: 0, borderRadius: 1 }} />
+      {icon && (
+        <Box
+          component="img"
+          src={icon}
+          alt={nameEn}
+          sx={{ width: 28, height: 28, objectFit: 'contain', flexShrink: 0, alignSelf: 'center', imageRendering: 'pixelated' }}
+        />
+      )}
       <Box sx={{ minWidth: 0, flex: 1 }}>
         <Box sx={{ display: 'flex', alignItems: 'baseline', gap: 0.5, flexWrap: 'wrap' }}>
           <Typography
