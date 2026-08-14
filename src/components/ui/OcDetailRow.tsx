@@ -27,7 +27,7 @@ export function OcDetailRow({
       {icon && (
         <Box
           component="img"
-          src={icon}
+          src={import.meta.env.BASE_URL.replace(/\/$/, '') + icon}
           alt={nameEn}
           sx={{ width: 28, height: 28, objectFit: 'contain', flexShrink: 0, alignSelf: 'center', imageRendering: 'pixelated' }}
         />
