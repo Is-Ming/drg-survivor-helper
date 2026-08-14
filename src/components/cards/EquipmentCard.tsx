@@ -1,4 +1,4 @@
-// 装备卡片：类型/来源 chip + 关联成就 + 官网/攻略双区块 + 管理编辑；DRG 切角卡 + 官网(青)/攻略(琥珀)左色条
+// 装备卡片：类型/来源 chip + 关联成就 + 英文名副行 + 效果中/英双语文案（无官网/攻略二分）+ 管理编辑；DRG 切角卡
 import { useState, useEffect } from 'react'
 import {
   CardContent, Typography, Box, Chip, TextField, IconButton,
@@ -16,8 +16,6 @@ import { useOverrides } from '../../hooks/useOverrides'
 import { TagPickerDialog } from '../TagPickerDialog'
 import { RemovableChip } from '../RemovableChip'
 import { CutCard } from '../ui/CutCard'
-
-const OFFICIAL = '#3FA7C4'
 
 function eqTypeLabel(type: string, lang: Lang): string {
   if (lang === 'zh') return type
@@ -211,49 +209,29 @@ export function EquipmentCard({
             )}
           </Box>
 
-          {/* 官网描述区块（青） */}
+          {/* 英文名（官方 Artifact 名，R5）；查不到标「待核」 */}
           {equip.officialName && (
-            <Box
-              sx={{
-                mt: 1.5,
-                p: 1,
-                bgcolor: 'rgba(63,167,196,0.12)',
-                borderRadius: 1,
-                borderLeft: `3px solid ${OFFICIAL}`,
-              }}
-            >
-              <Typography variant="caption" sx={{ color: OFFICIAL, fontWeight: 700 }}>
-                {lang === 'zh' ? '📖 官网' : '📖 Official'}
-              </Typography>
-              <Typography variant="subtitle2" fontWeight={600} sx={{ mt: 0.3, color: c.text }}>
+            <Box sx={{ mt: 0.5 }}>
+              <Typography variant="body2" sx={{ color: c.textDim, fontStyle: 'italic' }}>
                 <EditableField
                   value={getSaved('officialName')}
                   onSave={(v) => doSave('officialName', v)}
                   editable={editable}
-                  variant="subtitle2"
-                  fontWeight={600}
-                />
-              </Typography>
-              <Typography variant="body2" sx={{ mt: 0.3, color: c.text, opacity: 0.9 }}>
-                <EditableField
-                  value={getSaved('officialEffect')}
-                  onSave={(v) => doSave('officialEffect', v)}
-                  editable={editable}
                   variant="body2"
                 />
               </Typography>
-              {equip.officialName?.includes('待核') && (
-                <Typography variant="caption" sx={{ mt: 0.5, display: 'block', color: c.textDim }}>
+              {equip.officialName.includes('待核') && (
+                <Typography variant="caption" sx={{ mt: 0.3, display: 'block', color: c.textDim }}>
                   ⚠ {lang === 'zh' ? '待核：官方无确切对应的 Artifact 名称' : 'Unverified: no exact Artifact match'}
                 </Typography>
               )}
             </Box>
           )}
 
-          {/* 攻略描述区块（琥珀） */}
+          {/* 效果区块：同一效果的中/英双语文案，去除「官网/攻略」误导性质 */}
           <Box
             sx={{
-              mt: 1,
+              mt: 1.5,
               p: 1,
               bgcolor: c.amberDim,
               borderRadius: 1,
@@ -262,7 +240,7 @@ export function EquipmentCard({
           >
             <Box display="flex" alignItems="center" gap={0.5}>
               <Typography variant="caption" sx={{ color: c.amber, fontWeight: 700 }}>
-                {lang === 'zh' ? '📝 攻略' : '📝 Guide'}
+                {lang === 'zh' ? '📖 效果' : '📖 Effect'}
               </Typography>
               {needsReview && (
                 <Chip
@@ -273,14 +251,38 @@ export function EquipmentCard({
                 />
               )}
             </Box>
-            <Typography variant="body2" sx={{ mt: 0.3, color: c.text, opacity: 0.9 }}>
-              <EditableField
-                value={getSaved('effect')}
-                onSave={(v) => doSave('effect', v)}
-                editable={editable}
-                variant="body2"
-              />
-            </Typography>
+
+            {/* 中文效果（effect，中文原文） */}
+            <Box mt={0.5} display="flex" gap={1} alignItems="flex-start">
+              <Box component="span" sx={{ fontWeight: 700, color: c.amber, fontSize: 12, fontFamily: 'monospace', flexShrink: 0 }}>
+                {lang === 'zh' ? '中' : 'CN'}
+              </Box>
+              <Box sx={{ flex: 1, minWidth: 0 }}>
+                <EditableField
+                  value={getSaved('effect')}
+                  onSave={(v) => doSave('effect', v)}
+                  editable={editable}
+                  variant="body2"
+                />
+              </Box>
+            </Box>
+
+            {/* 英文效果（officialEffect，官方原文）；为空则不显示 */}
+            {getSaved('officialEffect') && (
+              <Box mt={0.5} display="flex" gap={1} alignItems="flex-start">
+                <Box component="span" sx={{ fontWeight: 700, color: c.amber, fontSize: 12, fontFamily: 'monospace', flexShrink: 0 }}>
+                  EN
+                </Box>
+                <Box sx={{ flex: 1, minWidth: 0 }}>
+                  <EditableField
+                    value={getSaved('officialEffect')}
+                    onSave={(v) => doSave('officialEffect', v)}
+                    editable={editable}
+                    variant="body2"
+                  />
+                </Box>
+              </Box>
+            )}
           </Box>
 
           {isUnlock && equip.relatedAchievement && (
