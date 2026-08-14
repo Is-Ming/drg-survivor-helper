@@ -5547,7 +5547,8 @@
       "officialName": "Old Memento",
       "officialEffect": "Increases your damage for every point of missing HP",
       "version": "当前",
-      "suspected": true
+      "suspected": true,
+      "needsReview": true
     },
     {
       "name": "赤火冰心",
@@ -5557,7 +5558,8 @@
       "officialName": "Frostburn",
       "officialEffect": "Dealing fire damage now applies slow",
       "version": "当前",
-      "suspected": true
+      "suspected": true,
+      "needsReview": true
     },
     {
       "name": "灼热电浆",
@@ -5567,7 +5569,8 @@
       "officialName": "Hot Plasma",
       "officialEffect": "Dealing plasma damage now applies burn",
       "version": "当前",
-      "suspected": true
+      "suspected": true,
+      "needsReview": true
     },
     {
       "name": "球果原汁",
@@ -5577,7 +5580,8 @@
       "officialName": "Barley Bulb Juice",
       "officialEffect": "Gain a temporary movespeed buff when standing still",
       "version": "当前",
-      "suspected": true
+      "suspected": true,
+      "needsReview": true
     },
     {
       "name": "即时反应",
@@ -5587,7 +5591,8 @@
       "officialName": "Lightning Reflexes",
       "officialEffect": "Shockingly good reflexes",
       "version": "当前",
-      "suspected": true
+      "suspected": true,
+      "needsReview": true
     },
     {
       "name": "风火前行",
@@ -5597,7 +5602,8 @@
       "officialName": "Hotstepper",
       "officialEffect": "After taking damage you gain a boost of speed and leave fire puddle on the ground for a short period of time. 30 second cooldown.",
       "version": "当前",
-      "suspected": true
+      "suspected": true,
+      "needsReview": true
     },
     {
       "name": "五叶草",
@@ -5640,7 +5646,8 @@
       "officialName": "Corrosive Thunder",
       "officialEffect": "Change the proximity mines to Acid and Electrical mines",
       "version": "当前",
-      "suspected": true
+      "suspected": true,
+      "needsReview": true
     },
     {
       "name": "放电装填",
@@ -5650,7 +5657,8 @@
       "officialName": "Charged reload",
       "officialEffect": "Release a large electrical groundzone when the weapon reloads",
       "version": "当前",
-      "suspected": true
+      "suspected": true,
+      "needsReview": true
     },
     {
       "name": "衍射棱镜",
@@ -5660,7 +5668,8 @@
       "officialName": "Diffractor prism",
       "officialEffect": "You know what do to with this",
       "version": "当前",
-      "suspected": true
+      "suspected": true,
+      "needsReview": true
     },
     {
       "name": "陀螺组件",
