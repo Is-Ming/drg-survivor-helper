@@ -1,11 +1,13 @@
-// 装备卡片：类型/来源 chip + 关联成就 + 官网/攻略双区块 + 管理编辑
+// 装备卡片：类型/来源 chip + 关联成就 + 官网/攻略双区块 + 管理编辑；DRG 切角卡 + 官网(青)/攻略(琥珀)左色条
 import { useState, useEffect } from 'react'
 import {
-  Card, CardContent, Typography, Box, Chip, TextField, IconButton,
+  CardContent, Typography, Box, Chip, TextField, IconButton,
   FormControl, Select, MenuItem,
 } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add'
 import CloseIcon from '@mui/icons-material/Close'
+import { useTheme } from '@mui/material/styles'
+import { getDrgTokens } from '../../theme/createAppTheme'
 import { EQUIPMENT_ICON_MAP } from '../../data/icon-map'
 import type { Equipment, EquipmentSource, Lang } from '../../data/types'
 import { EQUIPMENT_SOURCE_LABEL } from '../../data/enums'
@@ -13,6 +15,9 @@ import { useTagEditor } from '../../hooks/useTagEditor'
 import { useOverrides } from '../../hooks/useOverrides'
 import { TagPickerDialog } from '../TagPickerDialog'
 import { RemovableChip } from '../RemovableChip'
+import { CutCard } from '../ui/CutCard'
+
+const OFFICIAL = '#3FA7C4'
 
 function eqTypeLabel(type: string, lang: Lang): string {
   if (lang === 'zh') return type
@@ -50,6 +55,8 @@ export function EquipmentCard({
   const isUnlock = equip.source === '成就解锁'
   const { merged, saveEquipmentEdit } = useOverrides()
   const editor = useTagEditor()
+  const muiTheme = useTheme()
+  const c = muiTheme.drg ?? getDrgTokens(muiTheme.palette.mode)
 
   // 已合并的装备记录（override 优先），用于读取字段/类型
   const mergedEquip = merged?.equipments?.find((e) => e.name === equip.name)
@@ -118,184 +125,177 @@ export function EquipmentCard({
   }
 
   return (
-    <Card
-      sx={{
-        height: '100%',
-        borderLeft: equip.officialName ? '4px solid' : undefined,
-        borderLeftColor: 'info.main',
-      }}
-    >
-      <CardContent>
-        {/* 第 1 行：名称独占整行（可编辑保持）；右侧为「待定」徽标（内置 ✕ 清除） */}
-        <Box display="flex" justifyContent="space-between" alignItems="center" gap={1}>
-          <Box display="flex" gap={1} minWidth={0} flex={1} alignItems="center">
-            {equip.officialName && EQUIPMENT_ICON_MAP[equip.officialName] && (
-              <Box
-                component="img"
-                src={import.meta.env.BASE_URL.replace(/\/$/, '') + EQUIPMENT_ICON_MAP[equip.officialName]}
-                alt={equip.officialName}
-                sx={{ width: 36, height: 36, objectFit: 'contain', flexShrink: 0 }}
-              />
-            )}
-            <Box minWidth={0} flex={1}>
-              <EditableField
-                value={getSaved('name')}
-                onSave={(v) => doSave('name', v)}
-                editable={editable}
-                variant="subtitle1"
-                fontWeight={700}
-              />
+    <>
+      <CutCard accent={c.amber}>
+        <CardContent>
+          {/* 第 1 行：名称独占整行（可编辑保持）；右侧为「待定」徽标（内置 ✕ 清除） */}
+          <Box display="flex" justifyContent="space-between" alignItems="center" gap={1}>
+            <Box display="flex" gap={1} minWidth={0} flex={1} alignItems="center">
+              {equip.officialName && EQUIPMENT_ICON_MAP[equip.officialName] && (
+                <Box
+                  component="img"
+                  src={import.meta.env.BASE_URL.replace(/\/$/, '') + EQUIPMENT_ICON_MAP[equip.officialName]}
+                  alt={equip.officialName}
+                  sx={{ width: 36, height: 36, objectFit: 'contain', flexShrink: 0 }}
+                />
+              )}
+              <Box minWidth={0} flex={1}>
+                <EditableField
+                  value={getSaved('name')}
+                  onSave={(v) => doSave('name', v)}
+                  editable={editable}
+                  variant="subtitle1"
+                  fontWeight={700}
+                />
+              </Box>
+            </Box>
+            <Box display="flex" gap={0.5} alignItems="center">
+              {suspected && (
+                <Chip
+                  size="small"
+                  color="warning"
+                  variant="outlined"
+                  label={lang === 'zh' ? '待定' : 'Unverified'}
+                  onDelete={handleClearSuspected}
+                  deleteIcon={<CloseIcon sx={{ fontSize: 16 }} />}
+                  title={lang === 'zh' ? '点击 ✕ 移出待定（装备保留）' : 'Click ✕ to mark verified (equipment kept)'}
+                  aria-label={lang === 'zh' ? '移出待定' : 'Clear unverified'}
+                />
+              )}
             </Box>
           </Box>
-          <Box display="flex" gap={0.5} alignItems="center">
-            {suspected && (
-              <Chip
-                size="small"
-                color="warning"
-                variant="outlined"
-                label={lang === 'zh' ? '待定' : 'Unverified'}
-                onDelete={handleClearSuspected}
-                deleteIcon={<CloseIcon sx={{ fontSize: 16 }} />}
-                title={lang === 'zh' ? '点击 ✕ 移出待定（装备保留）' : 'Click ✕ to mark verified (equipment kept)'}
-                aria-label={lang === 'zh' ? '移出待定' : 'Clear unverified'}
-              />
+
+          {/* 第 2 行：分类类型 + 来源选择器，同一行 flex wrap */}
+          <Box mt={1} display="flex" flexWrap="wrap" gap={0.5} alignItems="center">
+            {/* 装备类型 chips + 添加 */}
+            {editable ? (
+              <>
+                {currentTypes.map((type) => (
+                  <RemovableChip key={type} label={eqTypeLabel(type, lang)} onRemove={() => toggleType(type)} color="primary.light" />
+                ))}
+                <IconButton size="small" color="primary" onClick={() => setTypePickerOpen(true)}
+                  sx={{ border: 1, borderColor: 'divider', borderRadius: 1.5, width: 28, height: 28 }}>
+                  <AddIcon sx={{ fontSize: 16 }} />
+                </IconButton>
+              </>
+            ) : (
+              currentTypes.map((type) => (
+                <Chip key={type} size="small" label={eqTypeLabel(type, lang)} clickable={!!onTypeClick}
+                  onClick={() => onTypeClick?.(type)} />
+              ))
+            )}
+
+            {/* 来源选择器：可编辑态为 Select（池子来自动态管理页），只读态为只读 Chip（source 为空则不显示） */}
+            {editable ? (
+              <FormControl size="small" sx={{ minWidth: 110 }}>
+                <Select
+                  displayEmpty
+                  size="small"
+                  value={equip.source || ''}
+                  onChange={(e) => handleSourceChange(e.target.value)}
+                >
+                  <MenuItem value="">{lang === 'zh' ? '未设置' : 'Unset'}</MenuItem>
+                  {editor.getSources().map((s) => (
+                    <MenuItem key={s} value={s}>{EQUIPMENT_SOURCE_LABEL[s as EquipmentSource]?.[lang] ?? s}</MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
+            ) : (
+              equip.source && (
+                <Chip
+                  size="small"
+                  variant="outlined"
+                  label={EQUIPMENT_SOURCE_LABEL[equip.source]?.[lang] ?? equip.source}
+                />
+              )
             )}
           </Box>
-        </Box>
 
-        {/* 第 2 行：分类类型 + 来源选择器，同一行 flex wrap */}
-        <Box mt={1} display="flex" flexWrap="wrap" gap={0.5} alignItems="center">
-          {/* 装备类型 chips + 添加 */}
-          {editable ? (
-            <>
-              {currentTypes.map((type) => (
-                <RemovableChip key={type} label={eqTypeLabel(type, lang)} onRemove={() => toggleType(type)} color="primary.light" />
-              ))}
-              <IconButton size="small" color="primary" onClick={() => setTypePickerOpen(true)}
-                sx={{ border: 1, borderColor: 'divider', borderRadius: 1.5, width: 28, height: 28 }}>
-                <AddIcon sx={{ fontSize: 16 }} />
-              </IconButton>
-            </>
-          ) : (
-            currentTypes.map((type) => (
-              <Chip key={type} size="small" label={eqTypeLabel(type, lang)} clickable={!!onTypeClick}
-                onClick={() => onTypeClick?.(type)} />
-            ))
+          {/* 官网描述区块（青） */}
+          {equip.officialName && (
+            <Box
+              sx={{
+                mt: 1.5,
+                p: 1,
+                bgcolor: 'rgba(63,167,196,0.12)',
+                borderRadius: 1,
+                borderLeft: `3px solid ${OFFICIAL}`,
+              }}
+            >
+              <Typography variant="caption" sx={{ color: OFFICIAL, fontWeight: 700 }}>
+                {lang === 'zh' ? '📖 官网' : '📖 Official'}
+              </Typography>
+              <Typography variant="subtitle2" fontWeight={600} sx={{ mt: 0.3, color: c.text }}>
+                <EditableField
+                  value={getSaved('officialName')}
+                  onSave={(v) => doSave('officialName', v)}
+                  editable={editable}
+                  variant="subtitle2"
+                  fontWeight={600}
+                />
+              </Typography>
+              <Typography variant="body2" sx={{ mt: 0.3, color: c.text, opacity: 0.9 }}>
+                <EditableField
+                  value={getSaved('officialEffect')}
+                  onSave={(v) => doSave('officialEffect', v)}
+                  editable={editable}
+                  variant="body2"
+                />
+              </Typography>
+              {equip.officialName?.includes('待核') && (
+                <Typography variant="caption" sx={{ mt: 0.5, display: 'block', color: c.textDim }}>
+                  ⚠ {lang === 'zh' ? '待核：官方无确切对应的 Artifact 名称' : 'Unverified: no exact Artifact match'}
+                </Typography>
+              )}
+            </Box>
           )}
 
-          {/* 来源选择器：可编辑态为 Select（池子来自动态管理页），只读态为只读 Chip（source 为空则不显示） */}
-          {editable ? (
-            <FormControl size="small" sx={{ minWidth: 110 }}>
-              <Select
-                displayEmpty
-                size="small"
-                value={equip.source || ''}
-                onChange={(e) => handleSourceChange(e.target.value)}
-              >
-                <MenuItem value="">{lang === 'zh' ? '未设置' : 'Unset'}</MenuItem>
-                {editor.getSources().map((s) => (
-                  <MenuItem key={s} value={s}>{EQUIPMENT_SOURCE_LABEL[s as EquipmentSource]?.[lang] ?? s}</MenuItem>
-                ))}
-              </Select>
-            </FormControl>
-          ) : (
-            equip.source && (
-              <Chip
-                size="small"
-                variant="outlined"
-                label={EQUIPMENT_SOURCE_LABEL[equip.source]?.[lang] ?? equip.source}
-              />
-            )
-          )}
-        </Box>
-
-        {/* 官网描述区块（蓝色） */}
-        {equip.officialName && (
+          {/* 攻略描述区块（琥珀） */}
           <Box
             sx={{
-              mt: 1.5,
+              mt: 1,
               p: 1,
-              bgcolor: 'info.dark',
+              bgcolor: c.amberDim,
               borderRadius: 1,
-              borderLeft: 3,
-              borderColor: 'info.light',
+              borderLeft: `3px solid ${c.amber}`,
             }}
           >
-            <Typography variant="caption" color="info.light" fontWeight={700}>
-              {lang === 'zh' ? '📖 官网' : '📖 Official'}
-            </Typography>
-            <Typography variant="subtitle2" fontWeight={600} sx={{ mt: 0.3 }}>
+            <Box display="flex" alignItems="center" gap={0.5}>
+              <Typography variant="caption" sx={{ color: c.amber, fontWeight: 700 }}>
+                {lang === 'zh' ? '📝 攻略' : '📝 Guide'}
+              </Typography>
+              {needsReview && (
+                <Chip
+                  size="small"
+                  color="warning"
+                  label={lang === 'zh' ? '待核对' : 'Review'}
+                  title={lang === 'zh' ? 'effect 暂用 wiki 英文兜底，待补中文' : 'effect is wiki EN fallback, awaiting CN'}
+                />
+              )}
+            </Box>
+            <Typography variant="body2" sx={{ mt: 0.3, color: c.text, opacity: 0.9 }}>
               <EditableField
-                value={getSaved('officialName')}
-                onSave={(v) => doSave('officialName', v)}
-                editable={editable}
-                variant="subtitle2"
-                fontWeight={600}
-              />
-            </Typography>
-            <Typography variant="body2" sx={{ mt: 0.3, opacity: 0.9 }}>
-              <EditableField
-                value={getSaved('officialEffect')}
-                onSave={(v) => doSave('officialEffect', v)}
+                value={getSaved('effect')}
+                onSave={(v) => doSave('effect', v)}
                 editable={editable}
                 variant="body2"
               />
             </Typography>
-            {equip.officialName?.includes('待核') && (
-              <Typography variant="caption" sx={{ mt: 0.5, display: 'block', opacity: 0.6 }}>
-                ⚠ {lang === 'zh' ? '待核：官方无确切对应的 Artifact 名称' : 'Unverified: no exact Artifact match'}
-              </Typography>
-            )}
           </Box>
-        )}
 
-        {/* 攻略描述区块（橙色） */}
-        <Box
-          sx={{
-            mt: 1,
-            p: 1,
-            bgcolor: 'warning.dark',
-            borderRadius: 1,
-            borderLeft: 3,
-            borderColor: 'warning.light',
-          }}
-        >
-          <Box display="flex" alignItems="center" gap={0.5}>
-            <Typography variant="caption" color="warning.light" fontWeight={700}>
-              {lang === 'zh' ? '📝 攻略' : '📝 Guide'}
+          {isUnlock && equip.relatedAchievement && (
+            <Typography variant="caption" display="block" sx={{ mt: 1, color: c.textDim }}>
+              {lang === 'zh' ? `关联成就：${equip.relatedAchievement}` : `Achievement: ${equip.relatedAchievement}`}
             </Typography>
-            {needsReview && (
-              <Chip
-                size="small"
-                color="warning"
-                label={lang === 'zh' ? '待核对' : 'Review'}
-                title={lang === 'zh' ? 'effect 暂用 wiki 英文兜底，待补中文' : 'effect is wiki EN fallback, awaiting CN'}
-              />
-            )}
-          </Box>
-          <Typography variant="body2" sx={{ mt: 0.3, opacity: 0.9 }}>
-            <EditableField
-              value={getSaved('effect')}
-              onSave={(v) => doSave('effect', v)}
-              editable={editable}
-              variant="body2"
-            />
-          </Typography>
-        </Box>
+          )}
 
-        {isUnlock && equip.relatedAchievement && (
-          <Typography variant="caption" display="block" sx={{ mt: 1, opacity: 0.6 }}>
-            {lang === 'zh' ? `关联成就：${equip.relatedAchievement}` : `Achievement: ${equip.relatedAchievement}`}
-          </Typography>
-        )}
-
-        {equip.version !== '当前' && (
-          <Typography variant="caption" sx={{ mt: 0.5, display: 'block', opacity: 0.6 }}>
-            ⚠ {equip.version}
-          </Typography>
-        )}
-      </CardContent>
-
+          {equip.version !== '当前' && (
+            <Typography variant="caption" sx={{ mt: 0.5, display: 'block', color: c.textDim }}>
+              ⚠ {equip.version}
+            </Typography>
+          )}
+        </CardContent>
+      </CutCard>
       <TagPickerDialog
         open={typePickerOpen}
         onClose={() => setTypePickerOpen(false)}
@@ -306,7 +306,7 @@ export function EquipmentCard({
         getLabel={(tag) => eqTypeLabel(tag, lang)}
         lang={lang}
       />
-    </Card>
+    </>
   )
 }
 
@@ -329,7 +329,7 @@ function EditableField({
 
   if (!editable) {
     return (
-      <Typography variant={variant} fontWeight={fontWeight}>
+      <Typography variant={variant} fontWeight={fontWeight} sx={{ color: 'inherit' }}>
         {value}
       </Typography>
     )
@@ -358,7 +358,7 @@ function EditableField({
       variant={variant}
       fontWeight={fontWeight}
       onClick={() => { setDraft(value); setEditing(true) }}
-      sx={{ cursor: 'pointer', '&:hover': { textDecoration: 'underline', textDecorationColor: 'primary.main' } }}
+      sx={{ cursor: 'pointer', color: 'inherit', '&:hover': { textDecoration: 'underline', textDecorationColor: 'primary.main' } }}
     >
       {value}
     </Typography>

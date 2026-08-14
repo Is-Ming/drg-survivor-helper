@@ -1,7 +1,8 @@
 // 普通页面：无超频 TAB，无编辑功能，只读展示
 // 数据来源：运行时合并 baseline/overrides（useOverrides），无服务端时回落 TS 数据。
-import { useMemo, type ReactNode } from 'react'
-import { Box, Typography } from '@mui/material'
+import { useMemo, useState, type ReactNode } from 'react'
+import { Box, Typography, useMediaQuery, useTheme, SwipeableDrawer } from '@mui/material'
+import { getDrgTokens } from '../theme/createAppTheme'
 import { useLang } from '../i18n/LangContext'
 import { useFilter } from '../hooks/useFilter'
 import { useOverrides } from '../hooks/useOverrides'
@@ -28,6 +29,10 @@ export function PublicPage() {
   const f = useFilter()
   const { state } = f
   const { merged, getWeaponName } = useOverrides()
+  const muiTheme = useTheme()
+  const c = muiTheme.drg ?? getDrgTokens(muiTheme.palette.mode)
+  const isMobile = useMediaQuery(muiTheme.breakpoints.down('sm'))
+  const [drawerOpen, setDrawerOpen] = useState(false)
 
   // 超频编辑器（仅供武器卡名称/效果显示，不提供编辑入口）
   const ocEditor = useOverclockEditor()
@@ -92,6 +97,26 @@ export function PublicPage() {
     ))
   }
 
+  const filterBar = (
+    <FilterBar
+      activeModule={state.activeModule}
+      state={state}
+      setAchievementFilter={f.setAchievementFilter}
+      setAchievementSort={f.setAchievementSort}
+      addAchievementCategory={f.addAchievementCategory}
+      removeAchievementCategory={f.removeAchievementCategory}
+      setWeaponClass={f.setWeaponClass}
+      setWeaponRating={f.setWeaponRating}
+      addWeaponTag={f.addWeaponTag}
+      removeWeaponTag={f.removeWeaponTag}
+      setWeaponSort={f.setWeaponSort}
+      addEquipmentType={f.addEquipmentType}
+      removeEquipmentType={f.removeEquipmentType}
+      setEquipmentSource={f.setEquipmentSource}
+      lang={lang}
+    />
+  )
+
   return (
     <Box component="main" sx={{ maxWidth: 1280, mx: 'auto', px: { xs: 1.5, sm: 3 }, py: 2 }}>
       <GlobalSearch value={state.query} onChange={f.setQuery} />
@@ -100,23 +125,21 @@ export function PublicPage() {
         onChange={(m: ModuleKey) => f.setActiveModule(m)}
         showOverclocks={false}
       />
-      <FilterBar
-        activeModule={state.activeModule}
-        state={state}
-        setAchievementFilter={f.setAchievementFilter}
-        setAchievementSort={f.setAchievementSort}
-        addAchievementCategory={f.addAchievementCategory}
-        removeAchievementCategory={f.removeAchievementCategory}
-        setWeaponClass={f.setWeaponClass}
-        setWeaponRating={f.setWeaponRating}
-        addWeaponTag={f.addWeaponTag}
-        removeWeaponTag={f.removeWeaponTag}
-        setWeaponSort={f.setWeaponSort}
-        addEquipmentType={f.addEquipmentType}
-        removeEquipmentType={f.removeEquipmentType}
-        setEquipmentSource={f.setEquipmentSource}
-        lang={lang}
-      />
+      {isMobile ? (
+        <SwipeableDrawer
+          anchor="bottom"
+          open={drawerOpen}
+          onClose={() => setDrawerOpen(false)}
+          onOpen={() => setDrawerOpen(true)}
+          PaperProps={{ sx: { bgcolor: c.cardBg, color: c.text } }}
+        >
+          <Box sx={{ p: 2, pb: 4, maxHeight: '70vh', overflowY: 'auto' }}>
+            {filterBar}
+          </Box>
+        </SwipeableDrawer>
+      ) : (
+        filterBar
+      )}
       <Box sx={{ mt: 1 }}>
         <Typography variant="body2" color="text.secondary">
           {resultCount} {t('result.count')}

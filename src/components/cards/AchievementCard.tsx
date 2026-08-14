@@ -1,7 +1,9 @@
-// 成就卡片：图标 + 中/英文名 + 分类 + 解锁条件 + 完成率进度条 + 稀有度徽标（支持管理页编辑）
+// 成就卡片：图标 + 中/英文名 + 分类 + 解锁条件 + 完成率进度条 + 稀有度徽标；DRG 切角卡 + 稀有度矿层带
 import { useState, useEffect } from 'react'
-import { Card, CardContent, Typography, Box, Chip, TextField, IconButton, LinearProgress } from '@mui/material'
+import { CardContent, Typography, Box, Chip, TextField, IconButton, LinearProgress } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add'
+import { useTheme } from '@mui/material/styles'
+import { getDrgTokens } from '../../theme/createAppTheme'
 import type { Achievement, Lang } from '../../data/types'
 import { ACHIEVEMENT_CATEGORY_LABEL, RARITY_COLOR } from '../../data/enums'
 import { ACHIEVEMENT_ICON_MAP } from '../../data/achievement-icon-map'
@@ -11,6 +13,7 @@ import { useOverrides } from '../../hooks/useOverrides'
 import { bundledWeaponNameResolver, resolveField, type WeaponNameResolver } from '../../utils/weaponName'
 import { TagPickerDialog } from '../TagPickerDialog'
 import { RemovableChip } from '../RemovableChip'
+import { CutCard } from '../ui/CutCard'
 
 /** 归一化分类为字符串数组（单值/多值/空均兼容） */
 function normalizeCategories(c: string | string[] | undefined, fallback: string): string[] {
@@ -52,6 +55,8 @@ export function AchievementCard({
 
   const { merged, saveAchievementEdit } = useOverrides()
   const editor = useTagEditor()
+  const muiTheme = useTheme()
+  const c = muiTheme.drg ?? getDrgTokens(muiTheme.palette.mode)
 
   const loadSaved = () => {
     setEditName(resolvedName)
@@ -101,7 +106,7 @@ export function AchievementCard({
 
   const toggleCategory = (cat: string) => {
     const next = currentCategories.includes(cat)
-      ? currentCategories.filter((c) => c !== cat)
+      ? currentCategories.filter((x) => x !== cat)
       : [...currentCategories, cat]
     setCurrentCategories(next)
     // 卡片标签并入成就迁移：分类写入 overrides.achievements[en].category（多值）
@@ -111,157 +116,157 @@ export function AchievementCard({
   const rate = ach.completionRate
 
   return (
-    <Card sx={{ borderColor: color, borderWidth: ach.rarity ? 2 : 1, height: '100%' }}>
-      <CardContent>
-        <Box display="flex" justifyContent="space-between" alignItems="flex-start" gap={1}>
-          <Box display="flex" gap={1} minWidth={0} flex={1} alignItems="flex-start">
-            {showIcon ? (
-              <img
-                src={localIconUrl}
-                width={40}
-                height={40}
-                alt={ach.englishName}
-                style={{ borderRadius: 8, objectFit: 'cover', flexShrink: 0 }}
-                onError={() => setIconError(true)}
-              />
-            ) : (
-              <Box
-                sx={{
-                  width: 40,
-                  height: 40,
-                  borderRadius: '50%',
-                  bgcolor: '#cfd8dc',
-                  color: '#455a64',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontWeight: 700,
-                  fontSize: 18,
-                  flexShrink: 0,
-                }}
-                aria-label="achievement-icon-fallback"
-              >
-                {fallbackChar}
-              </Box>
-            )}
-            <Box minWidth={0} flex={1}>
-              {editable && editingField === 'name' ? (
-                <TextField
-                  size="small"
-                  fullWidth
-                  value={editName}
-                  onChange={(e) => setEditName(e.target.value)}
-                  onBlur={() => commitEdit('chineseName', editName)}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter') commitEdit('chineseName', editName)
-                    if (e.key === 'Escape') { setEditName(resolvedName); setEditingField(null) }
-                  }}
-                  autoFocus
-                  sx={{ mb: 0.5 }}
+    <>
+      <CutCard accent={color}>
+        <CardContent>
+          <Box display="flex" justifyContent="space-between" alignItems="flex-start" gap={1}>
+            <Box display="flex" gap={1} minWidth={0} flex={1} alignItems="flex-start">
+              {showIcon ? (
+                <img
+                  src={localIconUrl}
+                  width={40}
+                  height={40}
+                  alt={ach.englishName}
+                  style={{ borderRadius: 8, objectFit: 'cover', flexShrink: 0 }}
+                  onError={() => setIconError(true)}
                 />
               ) : (
-                <Typography
-                  variant="subtitle1"
-                  fontWeight={700}
-                  noWrap
-                  onClick={() => editable && setEditingField('name')}
-                  sx={editable ? { cursor: 'pointer', '&:hover': { textDecoration: 'underline', textDecorationColor: 'primary.main' } } : undefined}
-                  title={editable ? (lang === 'zh' ? '点击编辑名称' : 'Click to edit name') : undefined}
+                <Box
+                  sx={{
+                    width: 40,
+                    height: 40,
+                    borderRadius: '50%',
+                    bgcolor: c.cardBgAlt,
+                    color: c.textDim,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontWeight: 700,
+                    fontSize: 18,
+                    flexShrink: 0,
+                  }}
+                  aria-label="achievement-icon-fallback"
                 >
-                  {lang === 'zh' ? displayName : ach.englishName}
-                </Typography>
+                  {fallbackChar}
+                </Box>
               )}
-              <Typography variant="caption" color="text.secondary" noWrap>
-                {lang === 'zh' ? ach.englishName : resolvedName}
-              </Typography>
+              <Box minWidth={0} flex={1}>
+                {editable && editingField === 'name' ? (
+                  <TextField
+                    size="small"
+                    fullWidth
+                    value={editName}
+                    onChange={(e) => setEditName(e.target.value)}
+                    onBlur={() => commitEdit('chineseName', editName)}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter') commitEdit('chineseName', editName)
+                      if (e.key === 'Escape') { setEditName(resolvedName); setEditingField(null) }
+                    }}
+                    autoFocus
+                    sx={{ mb: 0.5 }}
+                  />
+                ) : (
+                  <Typography
+                    variant="subtitle1"
+                    fontWeight={700}
+                    noWrap
+                    onClick={() => editable && setEditingField('name')}
+                    sx={editable ? { cursor: 'pointer', color: c.text, '&:hover': { textDecoration: 'underline', textDecorationColor: 'primary.main' } } : { color: c.text }}
+                    title={editable ? (lang === 'zh' ? '点击编辑名称' : 'Click to edit name') : undefined}
+                  >
+                    {lang === 'zh' ? displayName : ach.englishName}
+                  </Typography>
+                )}
+                <Typography variant="caption" color="text.secondary" noWrap>
+                  {lang === 'zh' ? ach.englishName : resolvedName}
+                </Typography>
+              </Box>
+            </Box>
+            <Box flexShrink={0}>
+              {/* 稀有度徽标常显（移除「⚠ 疑难高亮」开关） */}
+              <DifficultyBadge rarity={ach.rarity} lang={lang} />
             </Box>
           </Box>
-          <Box flexShrink={0}>
-            {/* 稀有度徽标常显（移除「⚠ 疑难高亮」开关） */}
-            <DifficultyBadge rarity={ach.rarity} lang={lang} />
+
+          <Box mt={1} mb={1} display="flex" flexWrap="wrap" gap={0.5} alignItems="center">
+            {editable ? (
+              <>
+                {currentCategories.map((cat) => (
+                  <RemovableChip key={cat} label={catLabel(cat, lang)} onRemove={() => toggleCategory(cat)} color="primary.light" />
+                ))}
+                <IconButton size="small" color="primary" onClick={() => setCatPickerOpen(true)}
+                  sx={{ border: 1, borderColor: 'divider', borderRadius: 1.5, width: 28, height: 28 }}>
+                  <AddIcon sx={{ fontSize: 16 }} />
+                </IconButton>
+              </>
+            ) : (
+              currentCategories.map((cat) => (
+                <Chip key={cat} size="small" label={catLabel(cat, lang)} variant="outlined" />
+              ))
+            )}
+            {ach.biomeTier && (
+              <Chip size="small" label={ach.biomeTier} color="secondary" variant="outlined" />
+            )}
           </Box>
-        </Box>
 
-        <Box mt={1} mb={1} display="flex" flexWrap="wrap" gap={0.5} alignItems="center">
-          {editable ? (
-            <>
-              {currentCategories.map((cat) => (
-                <RemovableChip key={cat} label={catLabel(cat, lang)} onRemove={() => toggleCategory(cat)} color="primary.light" />
-              ))}
-              <IconButton size="small" color="primary" onClick={() => setCatPickerOpen(true)}
-                sx={{ border: 1, borderColor: 'divider', borderRadius: 1.5, width: 28, height: 28 }}>
-                <AddIcon sx={{ fontSize: 16 }} />
-              </IconButton>
-            </>
-          ) : (
-            currentCategories.map((cat) => (
-              <Chip key={cat} size="small" label={catLabel(cat, lang)} variant="outlined" />
-            ))
-          )}
-          {ach.biomeTier && (
-            <Chip size="small" label={ach.biomeTier} color="secondary" variant="outlined" />
-          )}
-        </Box>
-
-        {/* 完成率 + 进度条（rarity 着色）；null 仅显示暂无数据且不画进度条 */}
-        {rate === null ? (
-          <Typography variant="caption" color="text.secondary" sx={{ mt: 0.5, display: 'block' }}>
-            完成率 暂无数据
-          </Typography>
-        ) : (
-          <Box sx={{ mt: 0.5 }}>
-            <Typography variant="caption" color="text.secondary">
-              完成率 {String(rate)}%
+          {/* 完成率 + 进度条（rarity 着色）；null 仅显示暂无数据且不画进度条 */}
+          {rate === null ? (
+            <Typography variant="caption" color="text.secondary" sx={{ mt: 0.5, display: 'block' }}>
+              完成率 暂无数据
             </Typography>
-            <LinearProgress
-              variant="determinate"
-              value={Math.max(0, Math.min(100, rate))}
-              sx={{
-                mt: 0.5,
-                height: 6,
-                borderRadius: 3,
-                backgroundColor: 'rgba(0,0,0,0.08)',
-                '& .MuiLinearProgress-bar': { backgroundColor: color ?? RARITY_COLOR['普通'] },
+          ) : (
+            <Box sx={{ mt: 0.5 }}>
+              <Typography variant="caption" color="text.secondary" sx={{ fontFamily: 'monospace' }}>
+                完成率 {String(rate)}%
+              </Typography>
+              <LinearProgress
+                variant="determinate"
+                value={Math.max(0, Math.min(100, rate))}
+                sx={{
+                  mt: 0.5,
+                  height: 6,
+                  borderRadius: 3,
+                  '& .MuiLinearProgress-bar': { backgroundColor: color ?? RARITY_COLOR['普通'] },
+                }}
+              />
+            </Box>
+          )}
+
+          {editable && editingField === 'condition' ? (
+            <TextField
+              size="small"
+              fullWidth
+              multiline
+              maxRows={3}
+              value={editCondition}
+              onChange={(e) => setEditCondition(e.target.value)}
+              onBlur={() => commitEdit('unlockCondition', editCondition)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' && !e.shiftKey) commitEdit('unlockCondition', editCondition)
+                if (e.key === 'Escape') { setEditCondition(resolvedCondition); setEditingField(null) }
               }}
+              autoFocus
+              sx={{ mt: 1 }}
             />
-          </Box>
-        )}
+          ) : (
+            <Typography
+              variant="body2"
+              color="text.secondary"
+              onClick={() => editable && setEditingField('condition')}
+              sx={editable ? { cursor: 'pointer', '&:hover': { textDecoration: 'underline', textDecorationColor: 'primary.main' }, mt: 1 } : { mt: 1 }}
+              title={editable ? (lang === 'zh' ? '点击编辑解锁条件' : 'Click to edit unlock condition') : undefined}
+            >
+              {displayCondition}
+            </Typography>
+          )}
 
-        {editable && editingField === 'condition' ? (
-          <TextField
-            size="small"
-            fullWidth
-            multiline
-            maxRows={3}
-            value={editCondition}
-            onChange={(e) => setEditCondition(e.target.value)}
-            onBlur={() => commitEdit('unlockCondition', editCondition)}
-            onKeyDown={(e) => {
-              if (e.key === 'Enter' && !e.shiftKey) commitEdit('unlockCondition', editCondition)
-              if (e.key === 'Escape') { setEditCondition(resolvedCondition); setEditingField(null) }
-            }}
-            autoFocus
-            sx={{ mt: 1 }}
-          />
-        ) : (
-          <Typography
-            variant="body2"
-            color="text.secondary"
-            onClick={() => editable && setEditingField('condition')}
-            sx={editable ? { cursor: 'pointer', '&:hover': { textDecoration: 'underline', textDecorationColor: 'primary.main' }, mt: 1 } : { mt: 1 }}
-            title={editable ? (lang === 'zh' ? '点击编辑解锁条件' : 'Click to edit unlock condition') : undefined}
-          >
-            {displayCondition}
-          </Typography>
-        )}
-
-        {ach.version !== '当前' && (
-          <Typography variant="caption" sx={{ mt: 0.5, display: 'block', opacity: 0.6 }}>
-            ⚠ {ach.version}
-          </Typography>
-        )}
-      </CardContent>
-
+          {ach.version !== '当前' && (
+            <Typography variant="caption" sx={{ mt: 0.5, display: 'block', color: c.textDim }}>
+              ⚠ {ach.version}
+            </Typography>
+          )}
+        </CardContent>
+      </CutCard>
       <TagPickerDialog
         open={catPickerOpen}
         onClose={() => setCatPickerOpen(false)}
@@ -272,6 +277,6 @@ export function AchievementCard({
         getLabel={(tag) => catLabel(tag, lang)}
         lang={lang}
       />
-    </Card>
+    </>
   )
 }

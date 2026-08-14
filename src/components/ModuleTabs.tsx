@@ -1,5 +1,6 @@
-// 模块 Tab 导航：普通页面隐藏超频/标签Tab
-import { Tabs, Tab } from '@mui/material'
+// 模块 Tab 导航：普通页面隐藏超频/标签Tab；窄屏可横向滚动 + DRG 琥珀下划线
+import { Tabs, Tab, useMediaQuery, useTheme } from '@mui/material'
+import { getDrgTokens } from '../theme/createAppTheme'
 import { useLang } from '../i18n/LangContext'
 import type { ModuleKey } from '../data/types'
 
@@ -15,14 +16,25 @@ export function ModuleTabs({
   showTags?: boolean
 }) {
   const { t } = useLang()
+  const muiTheme = useTheme()
+  const isXs = useMediaQuery(muiTheme.breakpoints.down('sm'))
+  const c = muiTheme.drg ?? getDrgTokens(muiTheme.palette.mode)
   return (
     <Tabs
       value={active}
       onChange={(_, v) => onChange(v as ModuleKey)}
-      variant="fullWidth"
+      variant={isXs ? 'scrollable' : 'fullWidth'}
+      scrollButtons={isXs ? 'auto' : false}
+      allowScrollButtonsMobile
       textColor="primary"
       indicatorColor="primary"
-      sx={{ mt: 1 }}
+      sx={{
+        mt: 1,
+        borderBottom: `2px solid ${c.borderSoft}`,
+        '& .MuiTab-root': { fontWeight: 700, letterSpacing: 0.5, textTransform: 'none' },
+        '& .Mui-selected': { color: `${c.amber} !important` },
+        '& .MuiTabs-indicator': { backgroundColor: c.amber, height: 3 },
+      }}
     >
       <Tab value="achievements" label={t('tab.achievements')} />
       <Tab value="weapons" label={t('tab.weapons')} />

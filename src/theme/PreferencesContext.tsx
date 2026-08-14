@@ -15,8 +15,13 @@ export interface PreferencesValue {
 
 const PreferencesContext = createContext<PreferencesValue | null>(null)
 
+function detectSystemTheme(): ThemeMode {
+  if (typeof window === 'undefined' || !window.matchMedia) return 'dark'
+  return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
+}
+
 function loadPreferences(): UiPreferences {
-  const fallback: UiPreferences = { theme: 'dark', lang: 'zh' }
+  const fallback: UiPreferences = { theme: detectSystemTheme(), lang: 'zh' }
   if (typeof localStorage === 'undefined') return fallback
   try {
     const raw = localStorage.getItem(STORAGE_KEY)
