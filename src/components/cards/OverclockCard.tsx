@@ -2,6 +2,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { Card, CardContent, Typography, Box, Chip, TextField } from '@mui/material'
 import type { Overclock, Lang } from '../../data/types'
+import { OVERCLOCK_ICON_MAP } from '../../data/icon-map'
 
 export function OverclockCard({
   oc,
@@ -46,7 +47,16 @@ export function OverclockCard({
     <Card sx={{ height: '100%' }}>
       <CardContent>
         <Box display="flex" justifyContent="space-between" alignItems="flex-start" gap={1} mb={1}>
-          <Box minWidth={0} flexGrow={1}>
+          <Box display="flex" gap={1} minWidth={0} flexGrow={1} alignItems="center">
+            {OVERCLOCK_ICON_MAP[oc.englishName] && (
+              <Box
+                component="img"
+                src={import.meta.env.BASE_URL.replace(/\/$/, '') + OVERCLOCK_ICON_MAP[oc.englishName]}
+                alt={oc.englishName}
+                sx={{ width: 36, height: 36, objectFit: 'contain', flexShrink: 0 }}
+              />
+            )}
+            <Box minWidth={0} flexGrow={1}>
             {editingName ? (
               <TextField
                 inputRef={nameInput}
@@ -76,6 +86,7 @@ export function OverclockCard({
             <Typography variant="caption" color="text.secondary" noWrap>
               {oc.englishName}
             </Typography>
+          </Box>
           </Box>
           <Chip
             size="small"

@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react'
 import { Card, CardContent, Typography, Box, Chip, Popover, IconButton, Button, FormControl, Select, MenuItem } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add'
+import { WEAPON_ICON_MAP } from '../../data/icon-map'
 import type { Lang, Rating, Weapon, WeaponTag } from '../../data/types'
 import { WEAPON_CLASS_LABEL } from '../../data/enums'
 import { getClassByEnglishName } from '../../data/classes'
@@ -84,13 +85,23 @@ export function WeaponCard({
     <Card sx={{ height: '100%' }}>
       <CardContent>
         <Box display="flex" justifyContent="space-between" alignItems="flex-start" gap={1}>
-          <Box minWidth={0}>
-            <Typography variant="subtitle1" fontWeight={700} noWrap>
-              {weaponName}
-            </Typography>
-            <Typography variant="caption" color="text.secondary" noWrap>
-              {lang === 'zh' ? weapon.englishName : resolveName(slugify(weapon.englishName), 'zh')}
-            </Typography>
+          <Box display="flex" gap={1} minWidth={0} alignItems="center">
+            {WEAPON_ICON_MAP[weapon.englishName] && (
+              <Box
+                component="img"
+                src={import.meta.env.BASE_URL.replace(/\/$/, '') + WEAPON_ICON_MAP[weapon.englishName]}
+                alt={weapon.englishName}
+                sx={{ width: 40, height: 40, objectFit: 'contain', flexShrink: 0 }}
+              />
+            )}
+            <Box minWidth={0}>
+              <Typography variant="subtitle1" fontWeight={700} noWrap>
+                {weaponName}
+              </Typography>
+              <Typography variant="caption" color="text.secondary" noWrap>
+                {lang === 'zh' ? weapon.englishName : resolveName(slugify(weapon.englishName), 'zh')}
+              </Typography>
+            </Box>
           </Box>
           {editable ? (
             <FormControl size="small" sx={{ minWidth: 60 }}>

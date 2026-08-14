@@ -6,6 +6,7 @@ import {
 } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add'
 import CloseIcon from '@mui/icons-material/Close'
+import { EQUIPMENT_ICON_MAP } from '../../data/icon-map'
 import type { Equipment, EquipmentSource, Lang } from '../../data/types'
 import { EQUIPMENT_SOURCE_LABEL } from '../../data/enums'
 import { useTagEditor } from '../../hooks/useTagEditor'
@@ -127,14 +128,24 @@ export function EquipmentCard({
       <CardContent>
         {/* 第 1 行：名称独占整行（可编辑保持）；右侧为「待定」徽标（内置 ✕ 清除） */}
         <Box display="flex" justifyContent="space-between" alignItems="center" gap={1}>
-          <Box minWidth={0} flex={1}>
-            <EditableField
-              value={getSaved('name')}
-              onSave={(v) => doSave('name', v)}
-              editable={editable}
-              variant="subtitle1"
-              fontWeight={700}
-            />
+          <Box display="flex" gap={1} minWidth={0} flex={1} alignItems="center">
+            {equip.officialName && EQUIPMENT_ICON_MAP[equip.officialName] && (
+              <Box
+                component="img"
+                src={import.meta.env.BASE_URL.replace(/\/$/, '') + EQUIPMENT_ICON_MAP[equip.officialName]}
+                alt={equip.officialName}
+                sx={{ width: 36, height: 36, objectFit: 'contain', flexShrink: 0 }}
+              />
+            )}
+            <Box minWidth={0} flex={1}>
+              <EditableField
+                value={getSaved('name')}
+                onSave={(v) => doSave('name', v)}
+                editable={editable}
+                variant="subtitle1"
+                fontWeight={700}
+              />
+            </Box>
           </Box>
           <Box display="flex" gap={0.5} alignItems="center">
             {suspected && (
