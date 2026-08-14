@@ -130,8 +130,8 @@ describe('filterWeapons', () => {
 })
 
 describe('filterEquipments', () => {
-  it('返回 20 件', () => {
-    expect(filterEquipments(equipments, baseState()).length).toBe(20)
+  it('返回 45 件', () => {
+    expect(filterEquipments(equipments, baseState()).length).toBe(45)
   })
   it('来源筛选', () => {
     const r = filterEquipments(equipments, baseState({ equipment: { types: [], source: '成就解锁' } }))

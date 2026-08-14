@@ -13,8 +13,8 @@ describe('三大模块数据完整（验收点 1）', () => {
   it('weapons 长度 = 53', () => {
     expect(weapons).toHaveLength(53)
   })
-  it('equipments 长度 = 20', () => {
-    expect(equipments).toHaveLength(20)
+  it('equipments 长度 = 45', () => {
+    expect(equipments).toHaveLength(45)
   })
 })
 
@@ -120,8 +120,8 @@ describe('R3 超频名字 / R5 官网数据（Round 2 增量）', () => {
       expect(e.officialEffect!.length).toBeGreaterThan(0)
     }
   })
-  it('3 件装备官方待核（三明治/狂人头盔/挖他命）', () => {
-    const pending = equipments.filter((e) => e.officialName!.includes('待核'))
-    expect(pending).toHaveLength(3)
+  it('装备官网数据已补全：无 待核 占位（baseline 45 条均带真实 officialName）', () => {
+    const pending = equipments.filter((e) => e.officialName && e.officialName.includes('待核'))
+    expect(pending).toHaveLength(0)
   })
 })

@@ -40,7 +40,7 @@ describe('useFilter hook（验收点 4：全局搜索）', () => {
 
     act(() => result.current.setActiveModule('equipments'))
     expect(result.current.state.activeModule).toBe('equipments')
-    expect(result.current.filteredEquipments).toHaveLength(20)
+    expect(result.current.filteredEquipments).toHaveLength(45)
   })
 
   it('resultCount 随当前激活模块变化', () => {
@@ -49,6 +49,6 @@ describe('useFilter hook（验收点 4：全局搜索）', () => {
     act(() => result.current.setActiveModule('weapons'))
     expect(result.current.resultCount).toBe(53)
     act(() => result.current.setActiveModule('equipments'))
-    expect(result.current.resultCount).toBe(20)
+    expect(result.current.resultCount).toBe(45)
   })
 })
