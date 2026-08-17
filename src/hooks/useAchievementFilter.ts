@@ -63,6 +63,8 @@ export function filterAchievements(data: Achievement[], state: SearchState): Ach
     const hay = `${a.englishName} ${a.chineseName} ${a.unlockCondition} ${a.category}`
     return matchesQuery(hay, query)
   })
+  // 分类分组：放行给调用方分组渲染，此处不排序
+  if (achievement.sort?.by === 'category') return filtered
   // 应用自定义排序；未指定则回落默认（按完成率升序）
   if (achievement.sort) {
     return sortAchievements(filtered, achievement.sort.by, achievement.sort.dir)

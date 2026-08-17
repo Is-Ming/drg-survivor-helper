@@ -14,6 +14,7 @@ import { bundledWeaponNameResolver, resolveField, type WeaponNameResolver } from
 import { TagPickerDialog } from '../TagPickerDialog'
 import { RemovableChip } from '../RemovableChip'
 import { CutCard } from '../ui/CutCard'
+import { Highlight } from '../ui/Highlight'
 
 /** 归一化分类为字符串数组（单值/多值/空均兼容） */
 function normalizeCategories(c: string | string[] | undefined, fallback: string): string[] {
@@ -36,12 +37,14 @@ export function AchievementCard({
   editable,
   getWeaponName,
   onSave,
+  query,
 }: {
   ach: Achievement
   lang: Lang
   editable?: boolean
   getWeaponName?: WeaponNameResolver
   onSave?: (patch: Record<string, string>) => void
+  query?: string
 }) {
   const [editName, setEditName] = useState('')
   const [editCondition, setEditCondition] = useState('')
@@ -174,11 +177,15 @@ export function AchievementCard({
                     sx={editable ? { cursor: 'pointer', color: c.text, '&:hover': { textDecoration: 'underline', textDecorationColor: 'primary.main' } } : { color: c.text }}
                     title={editable ? (lang === 'zh' ? '点击编辑名称' : 'Click to edit name') : undefined}
                   >
-                    {lang === 'zh' ? displayName : ach.englishName}
+                    {editable ? (lang === 'zh' ? displayName : ach.englishName) : (
+                      <Highlight text={lang === 'zh' ? displayName : ach.englishName} query={query} />
+                    )}
                   </Typography>
                 )}
                 <Typography variant="caption" color="text.secondary" noWrap>
-                  {lang === 'zh' ? ach.englishName : resolvedName}
+                  {editable ? (lang === 'zh' ? ach.englishName : resolvedName) : (
+                    <Highlight text={lang === 'zh' ? ach.englishName : resolvedName} query={query} />
+                  )}
                 </Typography>
               </Box>
             </Box>
@@ -212,12 +219,12 @@ export function AchievementCard({
           {/* 完成率 + 进度条（rarity 着色）；null 仅显示暂无数据且不画进度条 */}
           {rate === null ? (
             <Typography variant="caption" color="text.secondary" sx={{ mt: 0.5, display: 'block' }}>
-              完成率 暂无数据
+              全球完成度 暂无数据
             </Typography>
           ) : (
             <Box sx={{ mt: 0.5 }}>
               <Typography variant="caption" color="text.secondary" sx={{ fontFamily: 'monospace' }}>
-                完成率 {String(rate)}%
+                {lang === 'zh' ? '全球完成度' : 'Global Completion'} {String(rate)}%
               </Typography>
               <LinearProgress
                 variant="determinate"

@@ -14,6 +14,7 @@ function baseState(over: Partial<SearchState> = {}): SearchState {
     achievement: { categories: [] },
     weapon: { tags: [] },
     equipment: { types: [] },
+    overclock: { types: [] },
     ...over,
   }
 }

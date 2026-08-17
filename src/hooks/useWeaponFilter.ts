@@ -14,11 +14,22 @@ const defaultGetTagLabel = (tg: string, l: Lang): string =>
   WEAPON_TAG_LABEL[tg as WeaponTag]?.[l] ?? tg
 
 /**
- * 武器排序：仅按 chineseName 本地化比较（zh-CN）。
- * sort='name-asc' 升序 / 'name-desc' 降序 / undefined 保持原序（返回原引用）。
+ * 武器排序：名称升/降，或评级 S→C / C→S。
+ * sort='name-asc' 升序 / 'name-desc' 降序 / 'rating-desc' S→C / 'rating-asc' C→S / undefined 保持原序。
  */
-export function sortWeapons(data: Weapon[], sort?: 'name-asc' | 'name-desc'): Weapon[] {
+const RATING_RANK: Record<string, number> = { S: 0, A: 1, B: 2, C: 3, '-': 9, '': 9 }
+
+export function sortWeapons(
+  data: Weapon[],
+  sort?: 'name-asc' | 'name-desc' | 'rating-desc' | 'rating-asc',
+): Weapon[] {
   if (!sort) return data
+  if (sort === 'rating-desc' || sort === 'rating-asc') {
+    const factor = sort === 'rating-desc' ? 1 : -1
+    return [...data].sort(
+      (a, b) => ((RATING_RANK[a.rating] ?? 9) - (RATING_RANK[b.rating] ?? 9)) * factor,
+    )
+  }
   const factor = sort === 'name-asc' ? 1 : -1
   return [...data].sort((a, b) => a.chineseName.localeCompare(b.chineseName, 'zh-CN') * factor)
 }

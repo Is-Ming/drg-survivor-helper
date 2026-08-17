@@ -109,6 +109,8 @@ export interface GameClass {
 export type Rating = 'S' | 'A' | 'B' | 'C' | '-'
 
 /** 超频主表条目（用于超频管理标签页与武器引用） */
+export type OverclockType = 'balanced' | 'unstable'
+
 export interface Overclock {
   /** 唯一标识，kebab-case */
   id: string
@@ -202,18 +204,24 @@ export interface SearchState {
     categories: AchievementCategory[]
     /** 稀有度筛选（移除难度筛选后改为稀有度三选一；undefined=全部） */
     rarity?: '普通' | '稀有'
-    /** 排序：名称 / 完成率 + 升/降（方向由按钮控制，无方向下拉）；undefined=默认（按完成率升序） */
-    sort?: { by: 'name' | 'completionRate'; dir: 'asc' | 'desc' }
+    /** 排序：名称 / 完成率 / 分类分组 + 升/降；undefined=默认（按分类分组） */
+    sort?: { by: 'name' | 'completionRate' | 'category'; dir: 'asc' | 'desc' }
   }
   weapon: {
     class?: WeaponClass
     rating?: Rating
     tags: WeaponTag[]
-    /** 武器排序：仅按名称升/降（undefined=保持原序） */
-    sort?: 'name-asc' | 'name-desc'
+    /** 武器排序：名称升/降（保持原序）或评级 S→C / C→S */
+    sort?: 'name-asc' | 'name-desc' | 'rating-desc' | 'rating-asc'
   }
   equipment: {
     types: string[]
     source?: EquipmentSource
+    /** 装备排序：名称 / 类型 */
+    sort?: 'name' | 'type'
+  }
+  /** 超频模块（反查页）筛选态 */
+  overclock: {
+    types: OverclockType[]
   }
 }

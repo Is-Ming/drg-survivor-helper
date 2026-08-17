@@ -1,15 +1,14 @@
-// 超频筛选：类型 ToggleButton（多语言）
+// 超频筛选：类型 ToggleButton（多语言）。接入 SearchState.overclock.types（多选）
 import { Box, ToggleButton, ToggleButtonGroup } from '@mui/material'
-import type { Lang } from '../../data/types'
-import type { OverclockFilterState } from '../../hooks/useOverclockFilter'
+import type { Lang, OverclockType } from '../../data/types'
 
 export function OverclockFilters({
-  state,
-  setFilter,
+  types,
+  toggleType,
   lang,
 }: {
-  state: OverclockFilterState
-  setFilter: (patch: Partial<OverclockFilterState>) => void
+  types: OverclockType[]
+  toggleType: (t: OverclockType) => void
   lang: Lang
 }) {
   return (
@@ -17,11 +16,16 @@ export function OverclockFilters({
       <ToggleButtonGroup
         size="small"
         color="primary"
-        value={state.type ?? ''}
-        exclusive
-        onChange={(_, val) => setFilter({ type: val || undefined })}
+        value={types}
+        onChange={(_, val: OverclockType[]) => {
+          const next = new Set(val)
+          ;(['balanced', 'unstable'] as OverclockType[]).forEach((t) => {
+            const on = next.has(t)
+            const cur = types.includes(t)
+            if (on !== cur) toggleType(t)
+          })
+        }}
       >
-        <ToggleButton value="">{lang === 'zh' ? '全部' : 'All'}</ToggleButton>
         <ToggleButton value="balanced">{lang === 'zh' ? '平衡型' : 'Balanced'}</ToggleButton>
         <ToggleButton value="unstable">{lang === 'zh' ? '不稳定型' : 'Unstable'}</ToggleButton>
       </ToggleButtonGroup>

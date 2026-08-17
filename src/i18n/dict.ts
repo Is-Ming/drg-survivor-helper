@@ -16,6 +16,7 @@ export const ui: UiDict = {
   'search.placeholder': { zh: '搜索中/英文名、标签、条件…', en: 'Search name / tag / condition…' },
   'search.label': { zh: '全局搜索', en: 'Global Search' },
   'search.empty': { zh: '没有匹配的结果', en: 'No matching results' },
+  'search.clearAll': { zh: '清除筛选 / 搜索', en: 'Clear filters / search' },
   'result.count': { zh: '条结果', en: 'results' },
 
   'filter.title': { zh: '筛选', en: 'Filter' },
@@ -36,10 +37,16 @@ export const ui: UiDict = {
   'achievement.unlockCondition': { zh: '解锁条件', en: 'Unlock condition' },
   'achievement.biomeTier': { zh: '档位', en: 'Tier' },
   'achievement.completion': { zh: '达成率', en: 'Completion' },
+  'achievement.globalCompletion': { zh: '全球完成度', en: 'Global Completion' },
+  'achievement.categoryGroup': { zh: '分类分组', en: 'By Category' },
 
   'weapon.yellowOverclock': { zh: '黄色超频 (6/12级)', en: 'Yellow Overclock (Lv6/12)' },
   'weapon.redOverclock': { zh: '红色超频 (18级)', en: 'Red Overclock (Lv18)' },
   'weapon.class': { zh: '职业', en: 'Class' },
+  'weapon.sort.rating': { zh: '评级', en: 'Rating' },
+  'equipment.sort': { zh: '排序', en: 'Sort' },
+  'overclock.owningWeapons': { zh: '拥有武器', en: 'Owned by' },
+  'overclock.none': { zh: '无关联武器', en: 'No linked weapons' },
 
   'equipment.effect': { zh: '效果', en: 'Effect' },
   'equipment.relatedAchievement': { zh: '关联成就', en: 'Related achievement' },

@@ -8,19 +8,22 @@ import type {
   WeaponClass,
   WeaponTag,
 } from '../data/types'
-import { filterAchievements, useAchievementFilter } from './useAchievementFilter'
+import { filterAchievements, useAchievementFilter, matchesQuery } from './useAchievementFilter'
 import { filterWeapons, useWeaponFilter } from './useWeaponFilter'
 import { filterEquipments, useEquipmentFilter } from './useEquipmentFilter'
 import { achievements } from '../data/achievements'
 import { weapons } from '../data/weapons'
 import { equipments } from '../data/equipments'
+import { overclocks } from '../data/overclocks'
+import type { OverclockType } from '../data/types'
 
 const initialState: SearchState = {
   query: '',
   activeModule: 'achievements',
-  achievement: { categories: [] },
-  weapon: { tags: [] },
+  achievement: { categories: [], sort: { by: 'category', dir: 'asc' } },
+  weapon: { tags: [], sort: 'rating-desc' },
   equipment: { types: [] },
+  overclock: { types: [] },
 }
 
 export function useFilter() {
@@ -115,18 +118,47 @@ export function useFilter() {
     [],
   )
 
+  const toggleOverclockType = useCallback((type: OverclockType) => {
+    setState((s) => {
+      const has = s.overclock.types.includes(type)
+      return {
+        ...s,
+        overclock: {
+          ...s.overclock,
+          types: has ? s.overclock.types.filter((t) => t !== type) : [...s.overclock.types, type],
+        },
+      }
+    })
+  }, [])
+
+  const setEquipmentSort = useCallback((sort?: SearchState['equipment']['sort']) => {
+    setState((s) => ({ ...s, equipment: { ...s.equipment, sort } }))
+  }, [])
+
   const clearFilters = useCallback(() => {
     setState((s) => ({
       ...s,
-      achievement: { ...s.achievement, categories: [], rarity: undefined, sort: undefined },
-      weapon: { ...s.weapon, class: undefined, rating: undefined, tags: [], sort: undefined },
-      equipment: { types: [] },
+      achievement: { categories: [], rarity: undefined, sort: { by: 'category', dir: 'asc' } },
+      weapon: { class: undefined, rating: undefined, tags: [], sort: 'rating-desc' },
+      equipment: { types: [], source: undefined, sort: undefined },
+      overclock: { types: [] },
     }))
   }, [])
 
   const filteredAchievements = useAchievementFilter(state)
   const filteredWeapons = useWeaponFilter(state)
   const filteredEquipments = useEquipmentFilter(state)
+  const filteredOverclocks = useMemo(() => {
+    const types = state.overclock.types
+    return overclocks.filter((oc) => {
+      if (types.length > 0 && !types.includes(oc.type)) return false
+      if (state.query) {
+        const hay = `${oc.englishName} ${oc.chineseName} ${oc.effect}`.toLowerCase()
+        if (!matchesQuery(hay, state.query)) return false
+      }
+      return true
+    })
+  }, [state.overclock.types, state.query])
 
   // 当前模块的结果数（用于顶栏/页脚展示）
   const resultCount = useMemo(() => {
@@ -137,8 +169,10 @@ export function useFilter() {
         return filteredWeapons.length
       case 'equipments':
         return filteredEquipments.length
+      case 'overclocks':
+        return filteredOverclocks.length
     }
-  }, [state.activeModule, filteredAchievements, filteredWeapons, filteredEquipments])
+  }, [state.activeModule, filteredAchievements, filteredWeapons, filteredEquipments, filteredOverclocks])
 
   return {
     state,
@@ -156,10 +190,13 @@ export function useFilter() {
     addEquipmentType,
     removeEquipmentType,
     setEquipmentSource,
+    toggleOverclockType,
+    setEquipmentSort,
     clearFilters,
     filteredAchievements,
     filteredWeapons,
     filteredEquipments,
+    filteredOverclocks,
     resultCount,
     // 暴露纯函数便于测试
     _filterAchievements: filterAchievements,

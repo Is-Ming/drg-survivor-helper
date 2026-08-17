@@ -11,6 +11,7 @@ const RATING_COLOR: Record<Rating, string> = {
 
 export function RatingBadge({ rating, lang }: { rating: Rating; lang: Lang }) {
   const isGold = rating === 'S'
+  const label = rating === '-' ? (lang === 'zh' ? '未评级' : 'NR') : rating
   return (
     <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
       <span
@@ -28,7 +29,7 @@ export function RatingBadge({ rating, lang }: { rating: Rating; lang: Lang }) {
           fontSize: 15,
         }}
       >
-        {rating}
+        {label}
       </span>
       <span style={{ fontSize: 11, opacity: 0.7 }}>
         {lang === 'zh' ? '主观' : 'subj.'}

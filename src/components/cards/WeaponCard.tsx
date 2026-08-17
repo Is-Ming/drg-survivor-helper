@@ -23,13 +23,14 @@ import { useTheme } from '@mui/material/styles'
 import { getDrgTokens } from '../../theme/createAppTheme'
 import { CutCard } from '../ui/CutCard'
 import { OcDetailRow } from '../ui/OcDetailRow'
+import { Highlight } from '../ui/Highlight'
 
 export function WeaponCard({
-  weapon, selectedTags, onTagClick, lang, getOverclockName, getOverclockEffect, getWeaponName, editable,
+  weapon, selectedTags, onTagClick, lang, getOverclockName, getOverclockEffect, getWeaponName, editable, query,
 }: {
   weapon: Weapon; selectedTags: WeaponTag[]; onTagClick?: (tag: WeaponTag) => void;
   lang: Lang; getOverclockName?: (id: string) => string; getOverclockEffect?: (id: string) => string;
-  getWeaponName?: WeaponNameResolver; editable?: boolean
+  getWeaponName?: WeaponNameResolver; editable?: boolean; query?: string
 }) {
   const { merged, saveWeaponRating, saveCardTags } = useOverrides()
   const editor = useTagEditor()
@@ -109,10 +110,14 @@ export function WeaponCard({
               )}
               <Box minWidth={0}>
                 <Typography variant="subtitle1" fontWeight={700} noWrap>
-                  {weaponName}
+                  {query ? <Highlight text={weaponName} query={query} /> : weaponName}
                 </Typography>
                 <Typography variant="caption" color="text.secondary" noWrap>
-                  {lang === 'zh' ? weapon.englishName : resolveName(slugify(weapon.englishName), 'zh')}
+                  {query ? (
+                    <Highlight text={lang === 'zh' ? weapon.englishName : resolveName(slugify(weapon.englishName), 'zh')} query={query} />
+                  ) : (
+                    lang === 'zh' ? weapon.englishName : resolveName(slugify(weapon.englishName), 'zh')
+                  )}
                 </Typography>
               </Box>
             </Box>

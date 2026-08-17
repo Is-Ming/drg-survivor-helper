@@ -290,6 +290,7 @@ describe('向后兼容：filterWeapons 省略第三参时回落静态标签映�
       achievement: { categories: [] },
       weapon: { tags: [] },
       equipment: { types: [] },
+      overclock: { types: [] },
     } as SearchState
     const r = filterWeapons(weapons, state) // 无第三参 → 默认静态
     expect(r.length).toBeGreaterThan(0)

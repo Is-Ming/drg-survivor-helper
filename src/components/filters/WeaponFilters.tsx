@@ -117,7 +117,7 @@ export function WeaponFilters({
         ))}
       </Box>
 
-      {/* 武器排序：仅按名称升/降（方向由按钮控制；无选中=保持原序） */}
+      {/* 武器排序：名称升/降，或评级 S→C / C→S */}
       <ToggleButtonGroup
         size="small"
         color="primary"
@@ -125,6 +125,14 @@ export function WeaponFilters({
         value={state.weapon.sort ?? ''}
         onChange={(_, val) => setWeaponSort((val || undefined) as SearchState['weapon']['sort'])}
       >
+        <ToggleButton value="rating-desc" aria-label="rating-desc">
+          <ArrowUpwardIcon fontSize="small" />
+          {lang === 'zh' ? '评级' : 'Rating'}
+        </ToggleButton>
+        <ToggleButton value="rating-asc" aria-label="rating-asc">
+          <ArrowDownwardIcon fontSize="small" />
+          {lang === 'zh' ? '评级' : 'Rating'}
+        </ToggleButton>
         <ToggleButton value="name-asc" aria-label="name-asc">
           <ArrowUpwardIcon fontSize="small" />
           {lang === 'zh' ? '名称' : 'Name'}

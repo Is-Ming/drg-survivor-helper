@@ -1,17 +1,19 @@
 // 筛选区容器：随当前 Tab 切换对应模块筛选器
 import { Box, Divider } from '@mui/material'
 import type {
-  AchievementCategory, EquipmentSource, Lang, ModuleKey, Rating, SearchState, WeaponClass, WeaponTag,
+  AchievementCategory, EquipmentSource, Lang, ModuleKey, OverclockType, Rating, SearchState, WeaponClass, WeaponTag,
 } from '../data/types'
 import { AchievementFilters } from './filters/AchievementFilters'
 import { WeaponFilters } from './filters/WeaponFilters'
 import { EquipmentFilters } from './filters/EquipmentFilters'
+import { OverclockFilters } from './filters/OverclockFilters'
 
 export function FilterBar({
   activeModule, state, setAchievementFilter, setAchievementSort,
   addAchievementCategory, removeAchievementCategory,
   setWeaponClass, setWeaponRating, addWeaponTag, removeWeaponTag, setWeaponSort,
-  addEquipmentType, removeEquipmentType, setEquipmentSource, lang,
+  addEquipmentType, removeEquipmentType, setEquipmentSource, setEquipmentSort,
+  toggleOverclockType, lang,
 }: {
   activeModule: ModuleKey; state: SearchState
   setAchievementFilter: (patch: Partial<SearchState['achievement']>) => void
@@ -22,7 +24,8 @@ export function FilterBar({
   addWeaponTag: (tag: WeaponTag) => void; removeWeaponTag: (tag: WeaponTag) => void
   setWeaponSort: (sort: SearchState['weapon']['sort']) => void
   addEquipmentType: (t: string) => void; removeEquipmentType: (t: string) => void
-  setEquipmentSource: (s?: EquipmentSource) => void; lang: Lang
+  setEquipmentSource: (s?: EquipmentSource) => void; setEquipmentSort: (sort?: SearchState['equipment']['sort']) => void
+  toggleOverclockType: (t: OverclockType) => void; lang: Lang
 }) {
   return (
     <Box sx={{ mt: 1.5 }}>
@@ -38,7 +41,10 @@ export function FilterBar({
       )}
       {activeModule === 'equipments' && (
         <EquipmentFilters state={state} addType={addEquipmentType} removeType={removeEquipmentType}
-          setEquipmentSource={setEquipmentSource} lang={lang} />
+          setEquipmentSource={setEquipmentSource} setEquipmentSort={setEquipmentSort} lang={lang} />
+      )}
+      {activeModule === 'overclocks' && (
+        <OverclockFilters types={state.overclock.types} toggleType={toggleOverclockType} lang={lang} />
       )}
     </Box>
   )

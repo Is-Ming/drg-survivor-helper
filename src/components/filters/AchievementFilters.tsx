@@ -28,8 +28,8 @@ export function AchievementFilters({
 
   // 稀有度（全部 / 普通 / 稀有）
   const rarityVal = state.achievement.rarity ?? 'all'
-  // 排序：默认按完成率升序（与 filterAchievements 默认行为一致）
-  const sortBy: 'name' | 'completionRate' = state.achievement.sort?.by ?? 'completionRate'
+  // 排序：默认按分类分组（与 filterAchievements 默认行为一致）
+  const sortBy: 'name' | 'completionRate' | 'category' = state.achievement.sort?.by ?? 'category'
   const sortDir: 'asc' | 'desc' = state.achievement.sort?.dir ?? 'asc'
 
   const onRarityChange = (val: string) => {
@@ -94,7 +94,8 @@ export function AchievementFilters({
           onChange={(e) => onSortByChange(e.target.value as 'name' | 'completionRate')}
         >
           <MenuItem value="name">{lang === 'zh' ? '名称' : 'Name'}</MenuItem>
-          <MenuItem value="completionRate">{lang === 'zh' ? '完成率' : 'Completion'}</MenuItem>
+          <MenuItem value="category">{lang === 'zh' ? '分类分组' : 'By Category'}</MenuItem>
+          <MenuItem value="completionRate">{lang === 'zh' ? '全球完成度' : 'Global Completion'}</MenuItem>
         </Select>
       </FormControl>
 

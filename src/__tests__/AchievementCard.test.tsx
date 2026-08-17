@@ -62,17 +62,17 @@ describe('AchievementCard', () => {
   // ---- 完成率：位数保留 + 进度条 ----
   it('完成率整数保留位数（27%，不补 .0）并渲染进度条', () => {
     renderCard(mk({ completionRate: 27 }))
-    expect(screen.getByText(/完成率 27%/)).toBeInTheDocument()
-    expect(screen.queryByText(/完成率 27\.0%/)).toBeNull()
+    expect(screen.getByText(/全球完成度 27%/)).toBeInTheDocument()
+    expect(screen.queryByText(/全球完成度 27\.0%/)).toBeNull()
     expect(screen.getByRole('progressbar')).toBeInTheDocument()
   })
   it('完成率小数原样保留（86.7%）', () => {
     renderCard(mk({ completionRate: 86.7 }))
-    expect(screen.getByText(/完成率 86\.7%/)).toBeInTheDocument()
+    expect(screen.getByText(/全球完成度 86\.7%/)).toBeInTheDocument()
   })
   it('完成率 null 显示暂无数据且不画进度条', () => {
     renderCard(mk({ completionRate: null }))
-    expect(screen.getByText('完成率 暂无数据')).toBeInTheDocument()
+    expect(screen.getByText('全球完成度 暂无数据')).toBeInTheDocument()
     expect(screen.queryByRole('progressbar')).toBeNull()
   })
 })

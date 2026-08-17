@@ -5,7 +5,6 @@ import { ThemeProvider, CssBaseline } from '@mui/material'
 import { useTheme } from './theme/ThemeContext'
 import { createAppTheme } from './theme/createAppTheme'
 import { OverridesProvider } from './hooks/useOverrides'
-import { TopBar } from './components/TopBar'
 import { PublicPage } from './pages/PublicPage'
 
 export function App() {
@@ -17,7 +16,6 @@ export function App() {
       <CssBaseline />
       <OverridesProvider>
         <HashRouter>
-          <TopBar />
           <Routes>
             <Route path="/" element={<PublicPage />} />
           </Routes>
