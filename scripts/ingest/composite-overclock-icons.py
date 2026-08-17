@@ -36,13 +36,14 @@ except ImportError as e:
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 ICONS_DIR = ROOT / "public" / "overclock-icons"
+SOURCE_DIR = ROOT / "scripts" / "ingest" / "overclock-sources"
 ICON_MAP_PATH = ROOT / "src" / "data" / "icon-map.ts"
 BASELINE_PATH = ROOT / "server" / "data" / "baseline.json"
 TMP_DIR = ROOT / "public" / "overclock-icons-tmp"
 
 BACKGROUNDS = {
-    "balanced": ICONS_DIR / "background-balanced.png",
-    "unstable": ICONS_DIR / "background-unstable.png",
+    "balanced": SOURCE_DIR / "background-balanced.png",
+    "unstable": SOURCE_DIR / "background-unstable.png",
 }
 
 
@@ -84,12 +85,19 @@ def load_backgrounds() -> dict[str, Image.Image]:
 
 
 def composite_icon(background: Image.Image, effect: Image.Image) -> Image.Image:
-    """把效果图标居中叠到背景框上，背景框会缩放到与效果图标同尺寸。"""
-    if background.size != effect.size:
-        background = background.resize(effect.size, Image.Resampling.LANCZOS)
-    result = background.copy()
-    result.paste(effect, (0, 0), effect)
-    return result
+    """以背景框原生尺寸为画布，把效果图标居中叠到背景中心（不缩放、不溢出）。"""
+    canvas = background.copy()
+    # 保护：若效果比画布大则等比缩小适配，避免溢出边界
+    if effect.width > canvas.width or effect.height > canvas.height:
+        scale = min(canvas.width / effect.width, canvas.height / effect.height)
+        effect = effect.resize(
+            (int(effect.width * scale), int(effect.height * scale)),
+            Image.Resampling.LANCZOS,
+        )
+    x = (canvas.width - effect.width) // 2
+    y = (canvas.height - effect.height) // 2
+    canvas.paste(effect, (x, y), effect)
+    return canvas
 
 
 def main() -> int:
@@ -144,11 +152,20 @@ def main() -> int:
             print(f"跳过：{name}（无效果图标映射）")
             continue
 
-        effect_file = ICONS_DIR / Path(effect_path).name
+        kebab_name = kebab(name)
+        effect_file = SOURCE_DIR / f"{kebab_name}.png"
         if not effect_file.exists():
-            missing.append(name)
-            print(f"跳过：{name}（找不到效果图标文件 {effect_file}）")
-            continue
+            # 缺纯源：退回用已上线的合成图作效果层。
+            # 该合成图结构为「效果图标(不透明) + 透明处为背景」，
+            # 透明处贴到新背景后即为新背景，因此作效果层是干净的。
+            fb = ICONS_DIR / f"{kebab_name}.png"
+            if fb.exists():
+                effect_file = fb
+                print(f"近似源：{name}（缺纯效果源，用现有合成图作效果层）")
+            else:
+                missing.append(name)
+                print(f"跳过：{name}（既缺纯源也无现有合成图）")
+                continue
 
         effect = Image.open(effect_file).convert("RGBA")
         result = composite_icon(backgrounds[oc_type], effect)
